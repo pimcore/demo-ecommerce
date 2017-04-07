@@ -14,7 +14,6 @@ return [
         "productteaser" => "1"
     ],
     "bundle" => [
-        "ElementsWorkfrontAuthBundle\\ElementsWorkfrontAuthBundle" => TRUE,
         "Pimcore\\Bundle\\EcommerceFrameworkBundle\\PimcoreEcommerceFrameworkBundle" => TRUE,
         "OutputDataConfigToolkitBundle\\OutputDataConfigToolkitBundle" => TRUE,
         "Web2PrintToolsBundle\\Web2PrintToolsBundle" => TRUE
