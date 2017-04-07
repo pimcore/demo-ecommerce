@@ -20,7 +20,7 @@
 52	8	folder	includes	/en/shared/	3	1	1459927797	1459927797	\N	\N
 54	16	page	vouchers	/en/special-functions/	6	1	1460571223	1460571809	\N	\N
 55	16	page	backoffice	/en/special-functions/	7	1	1460572010	1460572302	\N	\N
-56	57	printcontainer	katalog	/print/	0	1	1481111340	1482157971	\N	\N
+56	57	printcontainer	katalog	/print/	0	1	1481111340	1491566388	0	0
 57	1	folder	print	/	3	1	1481111345	1481111345	\N	\N
 61	56	printpage	toc	/print/katalog/	1	1	1481296005	1482157092	\N	\N
 62	56	printpage	title	/print/katalog/	0	1	1481298535	1482149691	\N	\N

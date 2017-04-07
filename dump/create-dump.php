@@ -53,7 +53,7 @@ $dumpData .= "\n\n";
 // dump data
 foreach ($tables as $name) {
 
-    if (strstr($name, "application_logs") || in_array($name, ["tracking_events", "cache", "cache_tags", "http_error_log", "versions", "edit_lock", "locks", "email_log", "tmp_store"])) {
+    if (strstr($name, "application_logs") || in_array($name, ["application_logs", "tracking_events", "cache", "cache_tags", "http_error_log", "versions", "edit_lock", "locks", "email_log", "tmp_store"])) {
         continue;
     }
 
