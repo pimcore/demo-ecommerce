@@ -1,0 +1,754 @@
+1	multiselect	multiselect	a:0:{}
+1	myCheckbox	checkbox	
+1	myDate	date	\N
+1	myHref	href	a:3:{s:2:"id";N;s:4:"type";N;s:7:"subtype";N;}
+1	myImageBlock	block	a:0:{}
+1	myInput	input	
+1	myLink	link	a:10:{s:4:"type";s:8:"internal";s:4:"path";s:0:"";s:10:"parameters";s:0:"";s:6:"anchor";s:0:"";s:9:"accesskey";s:0:"";s:3:"rel";s:0:"";s:8:"tabindex";s:0:"";s:6:"target";s:0:"";s:5:"class";s:0:"";s:10:"attributes";s:0:"";}
+1	myMultihref	multihref	a:0:{}
+1	myNumber	numeric	
+1	mySelect	select	\N
+1	myTextarea	textarea	
+1	myWysiwyg	wysiwyg	
+3	content	areablock	a:1:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:11:"productgrid";}}
+3	enableSeocontent1	checkbox	1
+3	filtercontent1	href	a:3:{s:2:"id";i:10961;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+3	headDescription	input	
+3	header_headline	input	
+3	header_subline	input	
+3	headTitle	input	
+3	healine	input	
+3	hideSidebarcontent1	checkbox	
+3	multiselect	multiselect	a:0:{}
+3	myCheckbox	checkbox	
+3	myDate	date	\N
+3	myHref	href	a:3:{s:2:"id";N;s:4:"type";N;s:7:"subtype";N;}
+3	myImageBlock	block	a:0:{}
+3	myInput	input	
+3	myLink	link	a:10:{s:4:"type";s:8:"internal";s:4:"path";s:0:"";s:10:"parameters";s:0:"";s:6:"anchor";s:0:"";s:9:"accesskey";s:0:"";s:3:"rel";s:0:"";s:8:"tabindex";s:0:"";s:6:"target";s:0:"";s:5:"class";s:0:"";s:10:"attributes";s:0:"";}
+3	myMultihref	multihref	a:0:{}
+3	myNumber	numeric	
+3	mySelect	select	\N
+3	myTextarea	textarea	
+3	myWysiwyg	wysiwyg	
+3	no-result-doccontent1	href	a:3:{s:2:"id";N;s:4:"type";N;s:7:"subtype";N;}
+3	productFiltercontent1	href	a:3:{s:2:"id";i:10961;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	caption-text-0content4	textarea	E-Commerce Framework in Action
+4	caption-text-1content4	textarea	
+4	caption-text-2content4	textarea	
+4	caption-title-0content4	input	pimcore E-Commerce Demo
+4	caption-title-1content4	input	
+4	caption-title-2content4	input	
+4	content	areablock	a:3:{i:0;a:2:{s:3:"key";s:1:"4";s:4:"type";s:16:"gallery-carousel";}i:1;a:2:{s:3:"key";s:1:"6";s:4:"type";s:15:"icon-teaser-row";}i:2;a:2:{s:3:"key";s:1:"2";s:4:"type";s:13:"productteaser";}}
+4	contentcontent_gallerycontent44_1	wysiwyg	<p>as fsa fsadf sadf saf a sdf</p>\
+
+4	contentcontent_gallerycontent44_2	wysiwyg	<p>as fsa fsadf sadf saf a sdf&nbsp;as fsa fsadf sadf saf a sdf&nbsp;as fsa fsadf sadf saf a sdf &nbsp;as fsa fsadf sadf saf a sdf</p>\
+
+4	contentcontent_listcontent44_1	wysiwyg	<p>sdaf asdf sadf sadf&nbsp;</p>\
+\
+<p>fd sad</p>\
+\
+<p>sadf&nbsp;</p>\
+\
+<p>sadf sadf</p>\
+\
+<p>sadf sadf sadf</p>\
+\
+<p>sa</p>\
+\
+<p>sadf sadfsadf sadf sadf</p>\
+
+4	contentcontent_listcontent44_2	wysiwyg	<p>sadf sadf sadf sadf sadf&nbsp;</p>\
+\
+<div>&nbsp;</div>\
+\
+<div>\
+<p>sadf sadf</p>\
+\
+<p>sadf sadf sadf</p>\
+\
+<p>sa</p>\
+\
+<p>sadf sadfsadf sadf sadf</p>\
+\
+<div>&nbsp;</div>\
+\
+<div>\
+<p>sadf sadf</p>\
+\
+<p>sadf sadf sadf</p>\
+\
+<p>sa</p>\
+\
+<p>sadf sadfsadf sadf sadf</p>\
+\
+<div>&nbsp;</div>\
+\
+<div>\
+<p>sadf sadf</p>\
+\
+<p>sadf sadf sadf</p>\
+\
+<p>sa</p>\
+\
+<p>sadf sadfsadf sadf sadf</p>\
+</div>\
+</div>\
+</div>\
+
+4	content_1content3	wysiwyg	<p>xd asf sadf&nbsp;</p>\
+
+4	content_2content3	wysiwyg	<p>sad fsadf sadf sadf sadf sad f</p>\
+
+4	content__1content2	textarea	
+4	content__2content2	textarea	
+4	content__3content2	textarea	
+4	gallerycontent3	block	a:8:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:1:"3";i:3;s:1:"4";i:4;s:1:"5";i:5;s:1:"6";i:6;s:1:"7";i:7;s:1:"8";}
+4	gallerycontent4	block	a:2:{i:0;s:1:"1";i:1;s:1:"2";}
+4	headlinecontent2	input	t6est
+4	headlinecontent4	input	sadfsadf sadf 
+4	headlinecontent_gallerycontent44_1	input	Feature 1
+4	headlinecontent_gallerycontent44_2	input	Feature 2
+4	headline_1content1	input	E-Commerce Demo
+4	headline_1content2	input	
+4	headline_1content3	input	
+4	headline_2content1	input	Get Products
+4	headline_2content2	input	
+4	headline_2content3	input	
+4	headline_3content1	input	Get a Template
+4	headline_3content2	input	
+4	headline_4content1	input	Implement the Demo
+4	hintcontent4	input	saf sadf sadf sadf 
+4	hintcontent_quotescontent22_1	input	test
+4	icon_0content6	select	euro
+4	icon_1content6	select	plus
+4	icon_2content1	image	a:9:{s:2:"id";i:308;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	icon_2content6	select	pencil
+4	icon_3content1	image	a:9:{s:2:"id";i:314;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	icon_4content1	image	a:9:{s:2:"id";i:336;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	imagecontent3	image	a:9:{s:2:"id";i:4858;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	imagecontent_gallerycontent33_1	image	a:9:{s:2:"id";i:4855;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	imagecontent_gallerycontent33_2	image	a:9:{s:2:"id";i:4857;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	imagecontent_gallerycontent33_3	image	a:9:{s:2:"id";i:4860;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	imagecontent_gallerycontent33_4	image	a:9:{s:2:"id";i:4859;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	imagecontent_gallerycontent33_5	image	a:9:{s:2:"id";i:4862;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	imagecontent_gallerycontent33_6	image	a:9:{s:2:"id";i:4853;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	imagecontent_gallerycontent33_7	image	a:9:{s:2:"id";i:4861;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	imagecontent_gallerycontent33_8	image	a:9:{s:2:"id";i:4858;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	image_0content4	image	a:9:{s:2:"id";i:420;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	image_1content2	image	a:9:{s:2:"id";i:4486;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	image_1content3	image	a:9:{s:2:"id";i:4857;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	image_1content4	image	a:9:{s:2:"id";i:410;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	image_2content2	image	a:9:{s:2:"id";i:4486;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	image_2content3	image	a:9:{s:2:"id";i:4852;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	image_2content4	image	a:9:{s:2:"id";i:1100;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	image_3content2	image	a:9:{s:2:"id";i:4486;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+4	keywordscontent3	input	The most integrated open-source Multi-Channel  E-Commerce Platform
+4	link_0content6	link	a:10:{s:4:"type";s:8:"internal";s:4:"path";s:0:"";s:10:"parameters";s:0:"";s:6:"anchor";s:0:"";s:9:"accesskey";s:0:"";s:3:"rel";s:0:"";s:8:"tabindex";s:0:"";s:6:"target";s:0:"";s:5:"class";s:0:"";s:10:"attributes";s:0:"";}
+4	link_1content6	link	a:10:{s:4:"type";s:8:"internal";s:4:"path";s:0:"";s:10:"parameters";s:0:"";s:6:"anchor";s:0:"";s:9:"accesskey";s:0:"";s:3:"rel";s:0:"";s:8:"tabindex";s:0:"";s:6:"target";s:0:"";s:5:"class";s:0:"";s:10:"attributes";s:0:"";}
+4	link_2content6	link	a:10:{s:4:"type";s:8:"internal";s:4:"path";s:0:"";s:10:"parameters";s:0:"";s:6:"anchor";s:0:"";s:9:"accesskey";s:0:"";s:3:"rel";s:0:"";s:8:"tabindex";s:0:"";s:6:"target";s:0:"";s:5:"class";s:0:"";s:10:"attributes";s:0:"";}
+4	listcontent4	block	a:2:{i:0;s:1:"1";i:1;s:1:"2";}
+4	persona_-1-_keywordspersona_-1-_content3	input	Welcome protouch Customer
+4	persona_-1-_productteaserpersona_-1-_content_persona_-1-_teaserblockpersona_-1-_content22_1	renderlet	a:3:{s:2:"id";i:1634;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-1-_productteaserpersona_-1-_content_persona_-1-_teaserblockpersona_-1-_content22_2	renderlet	a:3:{s:2:"id";i:2066;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-1-_productteaserpersona_-1-_content_persona_-1-_teaserblockpersona_-1-_content22_3	renderlet	a:3:{s:2:"id";i:2057;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-1-_productteaserpersona_-1-_content_persona_-1-_teaserblockpersona_-1-_content22_4	renderlet	a:3:{s:2:"id";i:1767;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-2-_keywordspersona_-2-_content3	input	Welcome McKinley Customer
+4	persona_-2-_productteaserpersona_-2-_content_persona_-2-_teaserblockpersona_-2-_content22_1	renderlet	a:3:{s:2:"id";i:6901;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-2-_productteaserpersona_-2-_content_persona_-2-_teaserblockpersona_-2-_content22_2	renderlet	a:3:{s:2:"id";i:7074;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-2-_productteaserpersona_-2-_content_persona_-2-_teaserblockpersona_-2-_content22_3	renderlet	a:3:{s:2:"id";i:6986;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-2-_productteaserpersona_-2-_content_persona_-2-_teaserblockpersona_-2-_content22_4	renderlet	a:3:{s:2:"id";i:9312;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-3-_productteaserpersona_-3-_content_persona_-3-_teaserblockpersona_-3-_content22_1	renderlet	a:3:{s:2:"id";i:10388;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-3-_productteaserpersona_-3-_content_persona_-3-_teaserblockpersona_-3-_content22_2	renderlet	a:3:{s:2:"id";i:9260;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-3-_productteaserpersona_-3-_content_persona_-3-_teaserblockpersona_-3-_content22_3	renderlet	a:3:{s:2:"id";i:6509;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-3-_productteaserpersona_-3-_content_persona_-3-_teaserblockpersona_-3-_content22_4	renderlet	a:3:{s:2:"id";i:6527;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	productteasercontent_teaserblockcontent22_1	renderlet	a:3:{s:2:"id";i:1711;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	productteasercontent_teaserblockcontent22_2	renderlet	a:3:{s:2:"id";i:1529;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	productteasercontent_teaserblockcontent22_3	renderlet	a:3:{s:2:"id";i:1174;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	productteasercontent_teaserblockcontent22_4	renderlet	a:3:{s:2:"id";i:1199;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	quotecontent4	textarea	This is a new way of ecommerce
+4	quotecontent_quotescontent22_1	input	test
+4	quotescontent2	block	a:1:{i:0;s:1:"1";}
+4	showPreviewscontent4	checkbox	1
+4	slidescontent4	select	3
+4	teaserblockcontent2	block	a:4:{i:0;s:1:"1";i:1;s:1:"3";i:2;s:1:"4";i:3;s:1:"2";}
+4	text_0content6	textarea	The e-commerce framework is fully integrated into pimcore. One system for pim, cms, dam and e-commerce. 
+4	text_1content1	textarea	The Steps to a Demo
+4	text_1content6	textarea	Since it is fully integrated into pimcore, you can use the full power of pimcore within your shop application. 
+4	text_2content1	textarea	get a bunch of products
+4	text_2content6	textarea	The framework approach gives you full flexibility in creating the optimal solution for your use case. No restrictions due to technology. 
+4	text_3content1	textarea	get a nice template
+4	text_4content1	textarea	Go for it ... 
+4	title_0content6	input	Fully integrated shop
+4	title_1content6	input	Full power of pimcore
+4	title_2content6	input	Maximum flexibility
+9	headline	input	Further readings
+9	linklinks1	link	a:12:{s:4:"text";s:11:"pimcore.org";s:4:"path";s:22:"http://www.pimcore.org";s:6:"target";s:6:"_blank";s:10:"parameters";s:0:"";s:6:"anchor";s:0:"";s:5:"title";s:0:"";s:9:"accesskey";s:0:"";s:3:"rel";s:0:"";s:8:"tabindex";s:0:"";s:5:"class";s:0:"";s:10:"attributes";s:0:"";s:4:"type";s:8:"internal";}
+9	linklinks2	link	a:12:{s:4:"text";s:13:"Documentation";s:4:"path";s:28:"http://www.pimcore.org/wiki/";s:6:"target";s:6:"_blank";s:10:"parameters";s:0:"";s:6:"anchor";s:0:"";s:5:"title";s:0:"";s:9:"accesskey";s:0:"";s:3:"rel";s:0:"";s:8:"tabindex";s:0:"";s:5:"class";s:0:"";s:10:"attributes";s:0:"";s:4:"type";s:8:"internal";}
+9	linklinks3	link	a:12:{s:4:"text";s:10:"Bugtracker";s:4:"path";s:29:"http://www.pimcore.org/issues";s:6:"target";s:6:"_blank";s:10:"parameters";s:0:"";s:6:"anchor";s:0:"";s:5:"title";s:0:"";s:9:"accesskey";s:0:"";s:3:"rel";s:0:"";s:8:"tabindex";s:0:"";s:5:"class";s:0:"";s:10:"attributes";s:0:"";s:4:"type";s:8:"internal";}
+9	links	block	a:3:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:1:"3";}
+9	multiselect	multiselect	a:0:{}
+9	myCheckbox	checkbox	
+9	myDate	date	\N
+9	myHref	href	a:3:{s:2:"id";N;s:4:"type";N;s:7:"subtype";N;}
+9	myImageBlock	block	a:0:{}
+9	myInput	input	
+9	myLink	link	a:10:{s:4:"type";s:8:"internal";s:4:"path";s:0:"";s:10:"parameters";s:0:"";s:6:"anchor";s:0:"";s:9:"accesskey";s:0:"";s:3:"rel";s:0:"";s:8:"tabindex";s:0:"";s:6:"target";s:0:"";s:5:"class";s:0:"";s:10:"attributes";s:0:"";}
+9	myMultihref	multihref	a:0:{}
+9	myNumber	numeric	
+9	mySelect	select	\N
+9	myTextarea	textarea	
+9	myWysiwyg	wysiwyg	
+12	introduction	wysiwyg	<div id="cke_pastebin"><span style="color:#000000; font-family:'Times New Roman'; font-size:medium">Dear Customer,</span></div>\
+\
+<div><span style="color:#000000; font-family:'Times New Roman'; font-size:medium">thank you for your order.</span></div>\
+\
+<div><span style="color:#000000; font-family:'Times New Roman'; font-size:medium">Please bare in mind, that this is a demo system so no actual order has been created.&nbsp;</span></div>\
+
+14	content	areablock	a:1:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:11:"productgrid";}}
+14	headDescription	input	
+14	header_headline	input	Female Football Shoes
+14	header_subline	input	
+14	headline	input	This is a Landingpage for Shorts
+14	headTitle	input	
+14	healine	input	
+14	multiselect	multiselect	a:0:{}
+14	myCheckbox	checkbox	
+14	myDate	date	\N
+14	myHref	href	a:3:{s:2:"id";N;s:4:"type";N;s:7:"subtype";N;}
+14	myImageBlock	block	a:0:{}
+14	myInput	input	
+14	myLink	link	a:10:{s:4:"type";s:8:"internal";s:4:"path";s:0:"";s:10:"parameters";s:0:"";s:6:"anchor";s:0:"";s:9:"accesskey";s:0:"";s:3:"rel";s:0:"";s:8:"tabindex";s:0:"";s:6:"target";s:0:"";s:5:"class";s:0:"";s:10:"attributes";s:0:"";}
+14	myMultihref	multihref	a:0:{}
+14	myNumber	numeric	
+14	mySelect	select	\N
+14	myTextarea	textarea	
+14	myWysiwyg	wysiwyg	
+14	productFiltercontent1	href	a:3:{s:2:"id";i:11259;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+15	content	areablock	a:1:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:7:"wysiwyg";}}
+15	contentcontent1	wysiwyg	<p><span style="font-size:22px;"><strong>THIS IS JUST A SAMPLE DOCUMENT !</strong></span></p>\
+\
+<p>&nbsp;</p>\
+\
+<p><strong>INTRODUCTION</strong><br />\
+&nbsp;</p>\
+\
+<p>&nbsp;</p>\
+\
+<div>&nbsp;</div>\
+\
+<div>This Agreement contains the complete terms and conditions that apply to you in joining, buying, bidding, selling and all other activities you will make in our website. By using or shopping from this Web site, you agree to be bound by its terms of use and shall comply thereof. This Agreement describes and encompasses the entire agreement between us and you, and supersedes all prior or contemporaneous agreements, representations, warranties and understandings with respect to the Site, the content and computer programs provided by or through the Site, and the subject matter of this Agreement. Amendments to this agreement can be made and effected by us from time to time without specific notice to you end. Agreement posted on the Site reflects the latest agreement and you should carefully review the same before you use our site.</div>\
+\
+<div>&nbsp;</div>\
+\
+<div>&nbsp;</div>\
+\
+<div><strong>Use of the site &amp; PROHIBITIONS</strong></div>\
+\
+<div>&nbsp;</div>\
+\
+<div>The Site allows you to post offers, sell, advertise, bid and shop online. However, you are prohibited to do the following acts, to wit: (a) use our sites, including its services and or tools if you are not able to form legally binding contracts, are under the age of 18, or are temporarily or indefinitely suspended from using our sites, services, or tools (b) posting of an items in inappropriate category or areas on our sites and services; (c) collecting information about users’ personal information; (d) maneuvering the price of any item or interfere with other users' listings; (f) post false, inaccurate, misleading, defamatory, or libelous content; (g) take any action that may damage the rating system.</div>\
+\
+<div>For you to complete the sign-up process in our site, you must provide your full legal name, current address, a valid email address, and any other information needed in order to complete the signup process. You must qualify that you are 18 years or older and must be responsible for keeping your password secure and be responsible for all activities and contents that are uploaded under your account. You must not transmit any worms or viruses or any code of a destructive nature.</div>\
+\
+<div><br />\
+&nbsp;</div>\
+\
+<div><strong>Payments</strong><strong> AND PROCESSES OF INVIOCES</strong><br />\
+<br />\
+&nbsp;</div>\
+\
+<div>pimcore E-Commerce Demo has the sole discretion to provide the terms of payment. Unless otherwise agreed, payment must first be received by pimcore E-Commerce Demo prior to the latter’s acceptance of an order. Unless credit term has been agreed upon, payment for the products shall be made by credit card, paypal or wire transfers. Invoices are due and payable within the time period noted on your invoice, measured from the date of the invoice. An order may be invoice separately. pimcore E-Commerce Demo has all the discretion to cancel or deny orders. pimcore E-Commerce Demo is not responsible for pricing, typographical, or other errors in any offer by pimcore E-Commerce Demo and reserves the right to cancel any orders arising from such errors. Invoices must be paid within 15 days of the invoice date. For all but consumer purchases, pimcore E-Commerce Demo reserves the right to charge you a late penalty charge of 1% per month applied against undisputed overdue amounts or the maximum rate permitted by law whichever is less. Every 30 days thereafter, you will continue to be charged an additional late penalty charge.</div>\
+\
+<div><br />\
+&nbsp;</div>\
+\
+<div><strong>Refund Policy</strong></div>\
+\
+<div>We do not have to provide a refund if you have changed your mind about a particular purchase, so please choose carefully. If the goods are faulty, we will meet our obligations under the applicable laws. However, if “non-faulty” accounts are cancelled within two weeks of the first payment a full refund, will be given.”</div>\
+\
+<div>&nbsp;</div>\
+\
+<div><strong>RISK OF LOSS</strong></div>\
+\
+<div>All items purchased from our website are made pursuant to a shipment contract. The risk of loss and title for such items pass to you upon our delivery to the carrier.</div>\
+\
+<div><strong>PRODUCT PRICING &amp; DESCRIPTIONS</strong></div>\
+\
+<div>The List Price displayed for products on our website represents the full retail price listed on the product itself, suggested by the manufacturer or supplier, or estimated in accordance with standard industry practice; or the estimated retail value for a comparably featured item offered elsewhere. The List Price is a comparative price estimate and may or may not represent the prevailing price in every area on any particular day. For certain items that are offered as a set, the List Price may represent "open-stock" prices, which means the aggregate of the manufacturer's estimated or suggested retail price for each of the items included in the set. Where an item is offered for sale by one of our merchants, the List Price may be provided by the merchant. In cases of mispriced in our catalogs in which the item's correct price is higher than our stated price, we will, at our discretion, either contact you for instructions before shipping or cancel your order and notify you of such cancellation.</div>\
+\
+<div>We do not warrant that product descriptions or other content of this site is accurate, complete, reliable, current, or error-free. If a product offered in our website is not as described, your sole remedy is to return it in unused condition.</div>\
+\
+<div>&nbsp;</div>\
+\
+<div><strong>Editing, Deleting and Modification</strong></div>\
+\
+<div>&nbsp;</div>\
+\
+<div>We may edit, delete or modify any of the terms and conditions contained in this Agreement, at any time and in our sole discretion, by posting a notice or a new agreement on our site. YOUR CONTINUED PARTICIPATION IN OUR PROGRAM, VISIT AND SHOPPING IN OUR SITE FOLLOWING OUR POSTING OF A CHANGE NOTICE OR NEW AGREEMENT ON OUR SITE WILL CONSTITUTE BINDING ACCEPTANCE OF THE CHANGE.</div>\
+\
+<div>&nbsp;</div>\
+\
+<div><strong>Acknowledgment of rights</strong></div>\
+\
+<div>You hereby acknowledge that all rights, titles and interests, including but not limited to rights covered by the Intellectual Property Rights, in and to the site, and that You will not acquire any right, title, or interest in or to the Program except as expressly set forth in this Agreement. You will not modify, adapt, translate, prepare derivative works from, decompile, reverse engineer, disassemble or otherwise attempt to derive source code from any of our services, software, or documentation, or create or attempt to create a substitute or similar service or product through use of or access to the Program or proprietary information related thereto.</div>\
+\
+<div>&nbsp;</div>\
+\
+<div><strong>Fraud</strong></div>\
+\
+<div>&nbsp;</div>\
+\
+<div>FRAUDULENT ACTIVITIES are highly monitored in our site and if fraud is detected pimcore E-Commerce Demo shall resort al remedies available to us, and you shall be responsible for all costs and legal fees arising from these fraudulent activities.</div>\
+\
+<div><br />\
+&nbsp;</div>\
+\
+<div><strong>WARRANTY DISCLAIMER AND LIMITATIONS OF LIABILITY</strong></div>\
+\
+<div>&nbsp;</div>\
+\
+<div>We will not be liable for indirect, special, or consequential damages, or any loss of revenue, profits, or data, arising in connection with this Agreement or the Program, even if we have been advised of the possibility of such damages. Further, our aggregate liability arising with respect to this Agreement and the Program will not exceed USD2,000 or the total price of the subject products paid or payable to you whichever is less.</div>\
+\
+<div>We make no express or implied warranties or representations with respect to the Program or any products sold and offered in our website (including, without limitation, warranties of fitness, merchantability, non-infringement, or any implied warranties arising out of a course of performance, dealing, or trade usage). In addition, we make no representation that the operation of our site will be uninterrupted or error-free, and we will not be liable for the consequences of any interruptions or errors. This site and its information, contents, materials, products and services are provided on an “as is” and “as available” basis. You and understand and agree that your use of this site is at your own risk.</div>\
+\
+<div><br />\
+&nbsp;</div>\
+\
+<div><br />\
+<strong>Confidentiality</strong></div>\
+\
+<div>You agree not to disclose information you obtain from us and or from our clients, advertisers and suppliers. All information submitted to by an end-user customer pursuant to a Program is proprietary information of pimcore E-Commerce Demo. Such customer information is confidential and may not be disclosed. Publisher agrees not to reproduce, disseminate, sell, distribute or commercially exploit any such proprietary information in any manner.</div>\
+\
+<div><br />\
+&nbsp;</div>\
+\
+<div><strong>NON-WAIVER</strong></div>\
+\
+<div>Failure of the pimcore E-Commerce Demo to insist upon strict performance of any of the terms, conditions and covenants hereof shall not be deemed a relinquishment or waiver of any rights or remedy that the we may have, nor shall it be construed as a waiver of any subsequent breach of the terms, conditions or covenants hereof, which terms, conditions and covenants shall continue to be in full force and effect.</div>\
+\
+<div>No waiver by either party of any breach of any provision hereof shall be deemed a waiver of any subsequent or prior breach of the same or any other provision.</div>\
+\
+<div><br />\
+&nbsp;</div>\
+\
+<div><strong>MISCELLANEOUS</strong></div>\
+\
+<div>This Agreement shall be governed by and construed in accordance with the substantive laws of Salzburg, without any reference to conflict-of-laws principles.</div>\
+\
+<div>Any dispute, controversy or difference which may arise between the parties out of, in relation to or in connection with this Agreement is hereby irrevocably submitted to the exclusive jurisdiction of the courts of Salzburg, to the exclusion of any other courts without giving effect to its conflict of laws provisions or your actual state or country of residence.</div>\
+\
+<div>The entire agreement between the parties with respect to the subject matter hereof is embodied on this agreement and no other agreement relative hereto shall bind either party herein.</div>\
+\
+<div>Your rights of whatever nature cannot be assigned nor transferred to anybody, and any such attempt may result in termination of this Agreement, without liability to us. However, we may assign this Agreement to any person at any time without notice.</div>\
+\
+<p>In the event that any provision of these Terms and Conditions is found invalid or unenforceable pursuant to any judicial decree or decision, such provision shall be deemed to apply only to the maximum extent permitted by law, and the remainder of these Terms and Conditions shall remain valid and enforceable according to its terms.</p>\
+
+15	header_headline	input	Sample Terms & Conditions
+15	header_subline	input	
+15	healine	input	Sample Terms & Conditions
+15	multiselect	multiselect	a:0:{}
+15	myCheckbox	checkbox	
+15	myDate	date	\N
+15	myHref	href	a:3:{s:2:"id";N;s:4:"type";N;s:7:"subtype";N;}
+15	myImageBlock	block	a:0:{}
+15	myInput	input	
+15	myLink	link	a:10:{s:4:"type";s:8:"internal";s:4:"path";s:0:"";s:10:"parameters";s:0:"";s:6:"anchor";s:0:"";s:9:"accesskey";s:0:"";s:3:"rel";s:0:"";s:8:"tabindex";s:0:"";s:6:"target";s:0:"";s:5:"class";s:0:"";s:10:"attributes";s:0:"";}
+15	myMultihref	multihref	a:0:{}
+15	myNumber	numeric	
+15	mySelect	select	\N
+15	myTextarea	textarea	
+15	myWysiwyg	wysiwyg	
+16	content	areablock	a:1:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:7:"wysiwyg";}}
+16	contentcontent1	wysiwyg	<p>Within this pages, some special features of this demo are explained and linked.&nbsp;</p>\
+\
+<p>Currently the following features are available:&nbsp;</p>\
+\
+<ul>\
+\	<li><a href="/en/special-functions/productmodel">Multi-Level Product Model</a></li>\
+\	<li><a href="/en/special-functions/filterdefinitions">Filterdefinitions &amp; Landingpages</a></li>\
+\	<li><a href="/en/special-functions/marketing-and-pricing-rules">Marketing and Pricing Rules</a></li>\
+\	<li><a href="/en/special-functions/cross-selling">Cross Selling</a></li>\
+\	<li><a href="/en/special-functions/targeting-groups">Targeting Groups</a></li>\
+\	<li><a href="/en/special-functions/outputchannels-for-attributes">Outputchannels&nbsp;for Attributes</a></li>\
+\	<li><a href="/en/special-functions/vouchers" pimcore_id="54" pimcore_type="document">Vouchers</a></li>\
+</ul>\
+
+16	headDescription	input	
+16	header_headline	input	
+16	header_subline	input	
+16	headline	input	Special Functions implemented in this Demo
+16	headTitle	input	
+16	healine	input	
+16	multiselect	multiselect	a:0:{}
+16	myCheckbox	checkbox	
+16	myDate	date	\N
+16	myHref	href	a:3:{s:2:"id";N;s:4:"type";N;s:7:"subtype";N;}
+16	myImageBlock	block	a:0:{}
+16	myInput	input	
+16	myLink	link	a:10:{s:4:"type";s:8:"internal";s:4:"path";s:0:"";s:10:"parameters";s:0:"";s:6:"anchor";s:0:"";s:9:"accesskey";s:0:"";s:3:"rel";s:0:"";s:8:"tabindex";s:0:"";s:6:"target";s:0:"";s:5:"class";s:0:"";s:10:"attributes";s:0:"";}
+16	myMultihref	multihref	a:0:{}
+16	myNumber	numeric	
+16	mySelect	select	\N
+16	myTextarea	textarea	
+16	myWysiwyg	wysiwyg	
+17	content	areablock	a:3:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:7:"wysiwyg";}i:1;a:2:{s:3:"key";s:1:"3";s:4:"type";s:5:"image";}i:2;a:2:{s:3:"key";s:1:"4";s:4:"type";s:5:"image";}}
+17	contentcontent1	wysiwyg	<p>This demo uses a multi-level product model with following levels:</p>\
+\
+<ol>\
+\	<li><strong>Article</strong>: as product objects in pimcore (with blue icon).</li>\
+\	<li><strong>Color Variants</strong>: as product objects and direct children of Article objects (with green icon).</li>\
+\	<li><strong>Size Variants - concrete products</strong>: as pimcore variants of Color Variant objects.</li>\
+</ol>\
+\
+<p>&nbsp;</p>\
+
+17	headDescription	input	
+17	header_headline	input	Multi-Level Product Model
+17	header_subline	input	
+17	headline	input	Multi-Level Product Model
+17	headTitle	input	
+17	healine	input	
+17	imagecontent3	image	a:9:{s:2:"id";i:4850;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+17	imagecontent4	image	a:9:{s:2:"id";i:4852;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+18	content	areablock	a:3:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:7:"wysiwyg";}i:1;a:2:{s:3:"key";s:1:"4";s:4:"type";s:21:"gallery-single-images";}i:2;a:2:{s:3:"key";s:1:"2";s:4:"type";s:7:"wysiwyg";}}
+18	contentcontent1	wysiwyg	<p>For each product grid it is possible to define specific behaviours and filters. In this sample, filter definitions can be assigned to product categories for the standard category pages and to landing pages. Landing pages are pimcore documents with a special product grid area block within them.</p>\
+\
+<p>&nbsp;</p>\
+\
+<p><strong>Filter definitions them self are special pimcore objects, where the following aspects can be defined:</strong></p>\
+\
+<ul>\
+\	<li>Page size</li>\
+\	<li>Available order by options (currently not implemented in this demo)</li>\
+\	<li>Default order by</li>\
+\	<li>Preconditions for visible products in the product grid</li>\
+\	<li>Available filters in the product gird</li>\
+\	<li>Options for automatic similarity calculations</li>\
+</ul>\
+\
+<p>You also can choose between different filter types, which have influence on the frontend behaviour and on the way the filtering is made in the backend.</p>\
+\
+<p>&nbsp;</p>\
+\
+<p><strong>Available filter types in this demo are:</strong></p>\
+\
+<ul>\
+\	<li><strong>Filter Category</strong></li>\
+\	<li><strong>Filter Multi Relations</strong>: for product index fields technologies and features</li>\
+\	<li><strong>Filter Multi Select</strong>: for product index fields tentTentPegs, name</li>\
+\	<li><strong>Filter Multi Select from Multi Select</strong>: for product index fields color, gender</li>\
+\	<li><strong>Filter Number Range Selection</strong>: for product index fields matsHeight, matsLength, matsWidth, rucksacksLoad, rucksacksVolume, rucksacksWeight</li>\
+\	<li><strong>Filter Relation</strong>: for product index fields technologies and features</li>\
+</ul>\
+\
+<p>&nbsp;</p>\
+
+18	contentcontent2	wysiwyg	<p><!--class="Mso"--><!--class="Mso"--></p>\
+\
+<p><strong>Samples for different filters you find here:</strong></p>\
+\
+<ul>\
+\	<li><a href="/en/shop/outdoor/hardware/rucksacks~c6292" target="_blank" title="Female Football Shoes">Rucksacks</a></li>\
+\	<li><a href="/en/shop/outdoor/hardware/tents~c6298">Tents</a></li>\
+\	<li><a href="/en/shop/outdoor/hardware/mats~c6322">Mats</a></li>\
+</ul>\
+\
+<p>&nbsp;</p>\
+\
+<p><strong>Samples for different landing pages you find here:</strong></p>\
+\
+<ul>\
+\	<li><a href="/en/landingpages/landingpage" pimcore_id="14" pimcore_type="document">Female Football Shoes</a></li>\
+\	<li><a href="/en/landingpages/landingpage-2" pimcore_id="24" pimcore_type="document">Silver Tents</a></li>\
+</ul>\
+
+18	gallerycontent3	block	a:2:{i:0;s:1:"1";i:1;s:1:"2";}
+18	gallerycontent4	block	a:2:{i:0;s:1:"1";i:1;s:1:"2";}
+18	headDescription	input	
+18	header_headline	input	Filterdefinitions & Landingpages
+18	header_subline	input	
+18	headline	input	Filterdefinitions
+18	headTitle	input	
+18	healine	input	
+18	imagecontent_gallerycontent33_1	image	a:9:{s:2:"id";i:4853;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+18	imagecontent_gallerycontent33_2	image	a:9:{s:2:"id";i:4854;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+18	imagecontent_gallerycontent44_1	image	a:9:{s:2:"id";i:4853;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+18	imagecontent_gallerycontent44_2	image	a:9:{s:2:"id";i:4854;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+19	content	areablock	a:2:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:7:"wysiwyg";}i:1;a:2:{s:3:"key";s:1:"3";s:4:"type";s:21:"gallery-single-images";}}
+19	contentcontent1	wysiwyg	<p>The built-in marketing and pricing rule system provides functions to adapt product and cart pricings based on specific conditions.</p>\
+\
+<p>&nbsp;</p>\
+\
+<p><strong>Currently available conditions are:</strong></p>\
+\
+<ul>\
+\	<li>Date Range</li>\
+\	<li>Cart Amount</li>\
+\	<li>Product</li>\
+\	<li>Category</li>\
+\	<li>Token</li>\
+\	<li>Sold (maximum count of rules applied to current cart)</li>\
+\	<li>Sales (maximum count of rules applied to orders in total)</li>\
+\	<li>Voucher</li>\
+</ul>\
+\
+<p>&nbsp;</p>\
+\
+<p><strong>Currently available actions are:</strong></p>\
+\
+<ul>\
+\	<li>Product discount</li>\
+\	<li>Cart discount</li>\
+\	<li>Gift</li>\
+\	<li>Free Shipping</li>\
+</ul>\
+\
+<p>&nbsp;</p>\
+\
+<p><strong>In the demo, fowling rules are active;</strong></p>\
+\
+<ul>\
+\	<li>10% discount for all&nbsp;tents – see <a href="/en/shop/outdoor/hardware/tents~c6298">Tents</a></li>\
+\	<li>Order the rucksack Barrow 60 and get a headlamp for free – see <a href="/en/shop/outdoor/hardware/rucksacksbarrow-60~p10494">Barrow 60</a></li>\
+\	<li>If the cart value is above 200 get 10% discount on the cart</li>\
+\	<li>Free shipping when a handball ball is in the cart</li>\
+\	<li>Additional gift if the cart value is above 1000</li>\
+</ul>\
+
+19	gallerycontent2	block	a:5:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:1:"3";i:3;s:1:"4";i:4;s:1:"5";}
+19	gallerycontent3	block	a:3:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:1:"3";}
+19	headDescription	input	
+19	header_headline	input	Marketing and Pricing Rules
+19	header_subline	input	
+19	headline	input	Marketing and Pricing Rules
+19	headTitle	input	
+19	healine	input	
+19	imagecontent_gallerycontent22_1	image	a:9:{s:2:"id";i:4858;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+19	imagecontent_gallerycontent22_2	image	a:9:{s:2:"id";i:4859;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+19	imagecontent_gallerycontent22_3	image	a:9:{s:2:"id";i:4856;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+19	imagecontent_gallerycontent22_4	image	a:9:{s:2:"id";i:4855;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+19	imagecontent_gallerycontent22_5	image	a:9:{s:2:"id";i:4857;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+19	imagecontent_gallerycontent33_1	image	a:9:{s:2:"id";i:4858;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+19	imagecontent_gallerycontent33_2	image	a:9:{s:2:"id";i:4859;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+19	imagecontent_gallerycontent33_3	image	a:9:{s:2:"id";i:4856;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+19	imagecontent_gallerycontent33_4	image	a:9:{s:2:"id";i:4855;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+19	imagecontent_gallerycontent33_5	image	a:9:{s:2:"id";i:4857;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+20	content	areablock	a:2:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:7:"wysiwyg";}i:1;a:2:{s:3:"key";s:1:"3";s:4:"type";s:21:"gallery-single-images";}}
+20	contentcontent1	wysiwyg	<p>pimcore and the E-Commerce-Framework provide several ways to archive Cross Selling functionalities.</p>\
+\
+<p>&nbsp;</p>\
+\
+<p><strong>Following two ways are implemented in this demo:</strong></p>\
+\
+<ul>\
+\	<li>Manual assignment of related products via object relations:\
+\	<ul>\
+\	\	<li>see <a href="/en/shop/basketball/basket-ballscollege~p3279">Basketball Balls College</a></li>\
+\	</ul>\
+\	</li>\
+\	<li>Automatic calculation of similar products based on specific categories:\
+\	<ul style="list-style-type:circle;">\
+\	\	<li>The attributes used for the similarity calculation are defined in the filter definitions. In this demo, category and color are used for the calculations.</li>\
+\	\	<li>See for example <a href="/en/shop/protouch/running/footwear/road-shoestokyo-stability-ii-men~p4220">Running Shoes</a></li>\
+\	</ul>\
+\	</li>\
+</ul>\
+
+20	gallerycontent2	block	a:3:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:1:"3";}
+20	gallerycontent3	block	a:3:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:1:"3";}
+20	headDescription	input	
+20	header_headline	input	Cross Selling
+20	header_subline	input	
+20	headline	input	Cross Selling
+20	headTitle	input	
+20	healine	input	
+20	imagecontent_gallerycontent22_1	image	a:9:{s:2:"id";i:4862;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+20	imagecontent_gallerycontent22_2	image	a:9:{s:2:"id";i:4861;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+20	imagecontent_gallerycontent22_3	image	a:9:{s:2:"id";i:4860;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+20	imagecontent_gallerycontent33_1	image	a:9:{s:2:"id";i:4862;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+20	imagecontent_gallerycontent33_2	image	a:9:{s:2:"id";i:4861;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+20	imagecontent_gallerycontent33_3	image	a:9:{s:2:"id";i:4860;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+21	content	areablock	a:3:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:7:"wysiwyg";}i:1;a:2:{s:3:"key";s:1:"4";s:4:"type";s:21:"gallery-single-images";}i:2;a:2:{s:3:"key";s:1:"2";s:4:"type";s:7:"wysiwyg";}}
+21	contentcontent1	wysiwyg	<p>pimcore provides a very powerful personalization toolkit. For more information have a look at <a href="http://www.pimcore.org/en/product/targeting-personalization">http://www.pimcore.org/en/product/targeting-personalization</a>.</p>\
+\
+<p>&nbsp;</p>\
+\
+<p>This demo has a very simple use case for personalization integrated.&nbsp;There one persona (outdoor-customer). If an user visits at least 10 outdoor&nbsp;sites, it becomes the corresponding customer. Depending on the most active persona, the portal page is personalized.</p>\
+\
+<p>&nbsp;</p>\
+\
+<p>&nbsp;</p>\
+
+21	contentcontent2	wysiwyg	<p>More advanced targeting examples will follow.</p>\
+
+21	gallerycontent3	block	a:3:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:1:"3";}
+21	gallerycontent4	block	a:3:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:1:"3";}
+21	headDescription	input	
+21	header_headline	input	Targeting Groups
+21	header_subline	input	
+21	headline	input	Targeting Groups
+21	headTitle	input	
+21	healine	input	
+21	imagecontent_gallerycontent33_1	image	a:9:{s:2:"id";i:4866;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+21	imagecontent_gallerycontent33_2	image	a:9:{s:2:"id";i:4864;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+21	imagecontent_gallerycontent33_3	image	a:9:{s:2:"id";i:4865;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+21	imagecontent_gallerycontent44_1	image	a:9:{s:2:"id";i:4866;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+21	imagecontent_gallerycontent44_2	image	a:9:{s:2:"id";i:4864;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+21	imagecontent_gallerycontent44_3	image	a:9:{s:2:"id";i:4865;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+22	content	areablock	a:2:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:7:"wysiwyg";}i:1;a:2:{s:3:"key";s:1:"3";s:4:"type";s:21:"gallery-single-images";}}
+22	contentcontent1	wysiwyg	<p>For the visualization of the product attributes, this demo uses the output channel toolkit from pimcore. So it is possible to define aspects like appearance, sorting, etc. independent from the product data model.&nbsp;</p>\
+\
+<p>&nbsp;</p>\
+\
+<p>&nbsp;</p>\
+
+22	gallerycontent2	block	a:4:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:1:"3";i:3;s:1:"4";}
+22	gallerycontent3	block	a:4:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:1:"3";i:3;s:1:"4";}
+22	headDescription	input	
+22	header_headline	input	Outputchannels for Attributes
+22	header_subline	input	
+22	headline	input	Outputchannels for Attributes
+22	headTitle	input	
+22	healine	input	
+22	imagecontent_gallerycontent22_1	image	a:9:{s:2:"id";i:4868;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+22	imagecontent_gallerycontent22_2	image	a:9:{s:2:"id";i:4870;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+22	imagecontent_gallerycontent22_3	image	a:9:{s:2:"id";i:4869;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+22	imagecontent_gallerycontent22_4	image	a:9:{s:2:"id";i:4867;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+22	imagecontent_gallerycontent33_1	image	a:9:{s:2:"id";i:4867;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+22	imagecontent_gallerycontent33_2	image	a:9:{s:2:"id";i:4869;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+22	imagecontent_gallerycontent33_3	image	a:9:{s:2:"id";i:4870;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+22	imagecontent_gallerycontent33_4	image	a:9:{s:2:"id";i:4868;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+23	content	areablock	a:0:{}
+23	headDescription	input	
+23	header_headline	input	
+23	header_subline	input	
+23	headTitle	input	
+23	healine	input	
+24	content	areablock	a:1:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:11:"productgrid";}}
+24	headDescription	input	
+24	header_headline	input	Silver Tents
+24	header_subline	input	
+24	headline	input	Landingpage for Tents
+24	headTitle	input	
+24	healine	input	
+24	productFiltercontent1	href	a:3:{s:2:"id";i:11275;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+51	content	areablock	a:0:{}
+51	header_headline	input	
+51	header_subline	input	
+51	healine	input	Tenant Switches
+54	content	areablock	a:2:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:7:"wysiwyg";}i:1;a:2:{s:3:"key";s:1:"5";s:4:"type";s:21:"gallery-single-images";}}
+54	contentcontent1	wysiwyg	<p>This demo shows how vouchers can be used within the e-commerce framework.&nbsp;</p>\
+\
+<p>One sample voucher code is 'SUMMER' - use it and get free shipping on your cart.</p>\
+
+54	gallerycontent5	block	a:3:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:1:"3";}
+54	headDescription	input	
+54	headline	input	Vouchers
+54	headTitle	input	
+54	imagecontent2	image	a:9:{s:2:"id";i:4872;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+54	imagecontent3	image	a:9:{s:2:"id";i:4873;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";N;s:6:"marker";N;}
+54	imagecontent4	image	a:9:{s:2:"id";i:4874;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";N;s:6:"marker";N;}
+54	imagecontent_gallerycontent55_1	image	a:9:{s:2:"id";i:4872;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+54	imagecontent_gallerycontent55_2	image	a:9:{s:2:"id";i:4873;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+54	imagecontent_gallerycontent55_3	image	a:9:{s:2:"id";i:4874;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
+55	content	areablock	a:3:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:7:"wysiwyg";}i:1;a:2:{s:3:"key";s:1:"2";s:4:"type";s:5:"image";}i:2;a:2:{s:3:"key";s:1:"3";s:4:"type";s:5:"image";}}
+55	contentcontent1	wysiwyg	<p>Also have a look at the order backoffice in the pimcore backend.&nbsp;</p>\
+\
+<p>There you can search for orders, open detail information of&nbsp;orders and execute actions like&nbsp;cancel or complain items.&nbsp;</p>\
+\
+<p>&nbsp;</p>\
+
+55	headDescription	input	
+55	headline	input	Order Backoffice
+55	headTitle	input	
+55	imagecontent2	image	a:9:{s:2:"id";i:4875;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";N;s:6:"marker";N;}
+55	imagecontent3	image	a:9:{s:2:"id";i:4876;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";N;s:6:"marker";N;}
+61	content	areablock	a:1:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:9:"print_toc";}}
+61	headingcontent1	input	Table of Content
+61	introtextcontent1	wysiwyg	<p>This is a sample Catalog of the E-Commerce Framework Demo</p>\
+
+62	backgroundimagecontent1	image	a:9:{s:2:"id";i:4886;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";N;s:6:"marker";N;}
+62	content	areablock	a:1:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:15:"print_titlepage";}}
+62	headingcontent1	input	WEB2PRINT DEMO
+62	subheadingcontent1	input	Everything is possible.
+62	titleimagecontent1	image	a:9:{s:2:"id";i:4887;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";N;s:6:"marker";N;}
+67	content	areablock	a:4:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:15:"print_keyvisual";}i:1;a:2:{s:3:"key";s:1:"3";s:4:"type";s:16:"print_productrow";}i:2;a:2:{s:3:"key";s:1:"2";s:4:"type";s:16:"print_productrow";}i:3;a:2:{s:3:"key";s:1:"4";s:4:"type";s:16:"print_productrow";}}
+67	headlinecontent1	input	Volleyball
+67	keyvisualcontent1	image	a:9:{s:2:"id";i:4890;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";N;s:6:"marker";N;}
+67	modecontent2	select	\N
+67	modecontent3	select	left
+67	modecontent4	select	left
+67	productteaser1content2	renderlet	a:3:{s:2:"id";i:2098;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+67	productteaser1content3	renderlet	a:3:{s:2:"id";i:1936;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+67	productteaser1content4	renderlet	a:3:{s:2:"id";i:2104;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+67	productteaser2content2	renderlet	a:3:{s:2:"id";i:1434;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+67	productteaser2content3	renderlet	a:3:{s:2:"id";i:2088;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+67	productteaser2content4	renderlet	a:3:{s:2:"id";i:1445;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+68	content	areablock	a:2:{i:0;a:2:{s:3:"key";s:1:"2";s:4:"type";s:13:"print_wysiwyg";}i:1;a:2:{s:3:"key";s:1:"1";s:4:"type";s:18:"print_producttable";}}
+68	contentcontent2	wysiwyg	
+68	headlinecontent1	input	Ball for every one
+68	headlinecontent2	input	Volleyballs of this season
+68	headtextcontent1	textarea	
+68	tableconfigcontent1	outputchanneltable	a:4:{s:13:"selectedClass";s:7:"Product";s:8:"elements";a:15:{i:0;a:4:{s:2:"id";i:1469;s:4:"path";s:65:"/products/products/volleyball/fw12_13/balls/beach-camp/multicolor";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:1;a:4:{s:2:"id";i:1462;s:4:"path";s:69:"/products/products/volleyball/fw12_13/balls/beach-tec/bluelight-white";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:2;a:4:{s:2:"id";i:1458;s:4:"path";s:76:"/products/products/volleyball/fw12_13/balls/beach-top/bluelight-yellow-white";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:3;a:4:{s:2:"id";i:1472;s:4:"path";s:70:"/products/products/volleyball/fw12_13/balls/beach-volley/yellow-purple";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:4;a:4:{s:2:"id";i:1470;s:4:"path";s:74:"/products/products/volleyball/fw12_13/balls/beachgarden/green-white-orange";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:5;a:4:{s:2:"id";i:1465;s:4:"path";s:72:"/products/products/volleyball/fw12_13/balls/beachstar/purple-white-black";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:6;a:4:{s:2:"id";i:1446;s:4:"path";s:64:"/products/products/volleyball/fw12_13/balls/bv-1000/green-yellow";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:7;a:4:{s:2:"id";i:1453;s:4:"path";s:69:"/products/products/volleyball/fw12_13/balls/bv-1000/orange-white-blue";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:8;a:4:{s:2:"id";i:1428;s:4:"path";s:68:"/products/products/volleyball/fw12_13/balls/mp-100/blue-yellow-white";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:9;a:4:{s:2:"id";i:1435;s:4:"path";s:62:"/products/products/volleyball/fw12_13/balls/mp-150/blue-yellow";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:10;a:4:{s:2:"id";i:1431;s:4:"path";s:68:"/products/products/volleyball/fw12_13/balls/mp-200/blue-yellow-white";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:11;a:4:{s:2:"id";i:1423;s:4:"path";s:62:"/products/products/volleyball/fw12_13/balls/mp-250/blue-yellow";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:12;a:4:{s:2:"id";i:1412;s:4:"path";s:64:"/products/products/volleyball/fw12_13/balls/mp-50/blue-red-white";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:13;a:4:{s:2:"id";i:1420;s:4:"path";s:67:"/products/products/volleyball/fw12_13/balls/mp-lw/blue-yellow-white";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:14;a:4:{s:2:"id";i:1403;s:4:"path";s:67:"/products/products/volleyball/fw12_13/balls/mp-s/blue-yellow-silver";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}}s:13:"outputChannel";s:757:"{"id":"SOME-ID","channel":"web2print_tableconfigcontent1","o_classId":12,"configuration":[{"label":"Name","type":"value","class":"DefaultValue","attribute":"seoname","dataType":"input","childs":[],"text":"Name"},{"label":"Article#","type":"value","class":"DefaultValue","attribute":"artno","dataType":"input","childs":[],"text":"Article#"},{"label":null,"type":"value","class":"DefaultValue","attribute":"color","dataType":"multiselect","childs":[],"text":"Color(s)"},{"label":null,"type":"value","class":"DefaultValue","attribute":"collection","dataType":"objects","childs":[],"text":"Collection"},{"label":"Price","type":"value","class":"Numeric","attribute":"price","dataType":"numeric","precision":null,"formatNumber":false,"childs":[],"text":"Price"}]}";s:30:"selectedFavouriteOutputChannel";s:0:"";}
+69	content	areablock	a:7:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:15:"print_keyvisual";}i:1;a:2:{s:3:"key";s:1:"2";s:4:"type";s:16:"print_productrow";}i:2;a:2:{s:3:"key";s:1:"3";s:4:"type";s:16:"print_productrow";}i:3;a:2:{s:3:"key";s:1:"4";s:4:"type";s:16:"print_productrow";}i:4;a:2:{s:3:"key";s:1:"5";s:4:"type";s:16:"print_productrow";}i:5;a:2:{s:3:"key";s:1:"6";s:4:"type";s:16:"print_productrow";}i:6;a:2:{s:3:"key";s:1:"7";s:4:"type";s:18:"print_producttable";}}
+69	headlinecontent1	input	Football
+69	headlinecontent7	input	Even more Products...
+69	headtextcontent7	textarea	
+69	keyvisualcontent1	image	a:9:{s:2:"id";i:4885;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";N;s:6:"marker";N;}
+69	modecontent2	select	\N
+69	modecontent3	select	left
+69	modecontent4	select	\N
+69	modecontent5	select	right
+69	modecontent6	select	left
+69	productteaser1content2	renderlet	a:3:{s:2:"id";i:1204;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+69	productteaser1content3	renderlet	a:3:{s:2:"id";i:1566;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+69	productteaser1content4	renderlet	a:3:{s:2:"id";i:1678;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+69	productteaser1content5	renderlet	a:3:{s:2:"id";i:1275;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+69	productteaser1content6	renderlet	a:3:{s:2:"id";i:1271;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+69	productteaser2content2	renderlet	a:3:{s:2:"id";i:2048;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+69	productteaser2content3	renderlet	a:3:{s:2:"id";i:1176;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+69	productteaser2content4	renderlet	a:3:{s:2:"id";i:1333;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+69	productteaser2content5	renderlet	a:3:{s:2:"id";i:1305;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+69	productteaser2content6	renderlet	a:3:{s:2:"id";i:1199;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+69	tableconfigcontent7	outputchanneltable	a:4:{s:13:"selectedClass";s:7:"Product";s:8:"elements";a:10:{i:0;a:4:{s:2:"id";i:1509;s:4:"path";s:71:"/products/products/apparel/teamsport/fw12_13/jacket-fidelio/green-black";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:1;a:4:{s:2:"id";i:1516;s:4:"path";s:64:"/products/products/apparel/teamsport/fw12_13/jacket-sinclair/red";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:2;a:4:{s:2:"id";i:1536;s:4:"path";s:68:"/products/products/apparel/teamsport/fw12_13/jackets-ferdi/black-red";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:3;a:4:{s:2:"id";i:1556;s:4:"path";s:72:"/products/products/apparel/teamsport/fw12_13/shirt-art-jrs/navy-dark-red";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:4;a:4:{s:2:"id";i:1563;s:4:"path";s:71:"/products/products/apparel/teamsport/fw12_13/shirt-franklin-ux/darkblue";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:5;a:4:{s:2:"id";i:1570;s:4:"path";s:68:"/products/products/apparel/teamsport/fw12_13/shirt-fuzzy-ux/darkblue";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:6;a:4:{s:2:"id";i:1582;s:4:"path";s:63:"/products/products/apparel/teamsport/fw12_13/shirt-sabrina/pink";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:7;a:4:{s:2:"id";i:1587;s:4:"path";s:63:"/products/products/apparel/teamsport/fw12_13/shirt-salima/black";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:8;a:4:{s:2:"id";i:1616;s:4:"path";s:68:"/products/products/apparel/teamsport/fw12_13/shirt-simeon/blue-royal";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:9;a:4:{s:2:"id";i:1636;s:4:"path";s:64:"/products/products/apparel/teamsport/fw12_13/short-andy/navy-red";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}}s:13:"outputChannel";s:886:"{"id":"SOME-ID","channel":"web2print_tableconfigcontent7","o_classId":12,"configuration":[{"label":"Name","type":"value","class":"DefaultValue","attribute":"seoname","dataType":"input","childs":[],"text":"Name"},{"label":null,"type":"value","class":"DefaultValue","attribute":"description","dataType":"wysiwyg","childs":[],"text":"Description"},{"label":"Article#","type":"value","class":"DefaultValue","attribute":"artno","dataType":"input","childs":[],"text":"Article#"},{"label":null,"type":"value","class":"DefaultValue","attribute":"color","dataType":"multiselect","childs":[],"text":"Color(s)"},{"label":null,"type":"value","class":"DefaultValue","attribute":"gender","dataType":"multiselect","childs":[],"text":"Gender"},{"label":"Price","type":"value","class":"Numeric","attribute":"price","dataType":"numeric","precision":null,"formatNumber":false,"childs":[],"text":"Price"}]}";s:30:"selectedFavouriteOutputChannel";s:0:"";}
+70	content	areablock	a:4:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:15:"print_keyvisual";}i:1;a:2:{s:3:"key";s:1:"2";s:4:"type";s:16:"print_productrow";}i:2;a:2:{s:3:"key";s:1:"3";s:4:"type";s:16:"print_productrow";}i:3;a:2:{s:3:"key";s:1:"4";s:4:"type";s:16:"print_productrow";}}
+70	headlinecontent1	input	Outdoor
+70	keyvisualcontent1	image	a:9:{s:2:"id";i:4888;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";N;s:6:"marker";N;}
+70	modecontent2	select	\N
+70	modecontent3	select	left
+70	modecontent4	select	\N
+70	productteaser1content2	renderlet	a:3:{s:2:"id";i:6509;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+70	productteaser1content3	renderlet	a:3:{s:2:"id";i:6644;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+70	productteaser1content4	renderlet	a:3:{s:2:"id";i:9324;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+70	productteaser2content2	renderlet	a:3:{s:2:"id";i:6543;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+70	productteaser2content3	renderlet	a:3:{s:2:"id";i:6698;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+70	productteaser2content4	renderlet	a:3:{s:2:"id";i:6568;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+71	content	areablock	a:4:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:15:"print_keyvisual";}i:1;a:2:{s:3:"key";s:1:"2";s:4:"type";s:16:"print_productrow";}i:2;a:2:{s:3:"key";s:1:"3";s:4:"type";s:16:"print_productrow";}i:3;a:2:{s:3:"key";s:1:"4";s:4:"type";s:16:"print_productrow";}}
+71	headlinecontent1	input	Running
+71	keyvisualcontent1	image	a:9:{s:2:"id";i:4891;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";N;s:6:"marker";N;}
+71	modecontent2	select	\N
+71	modecontent3	select	left
+71	modecontent4	select	\N
+71	productteaser1content2	renderlet	a:3:{s:2:"id";i:1665;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+71	productteaser1content3	renderlet	a:3:{s:2:"id";i:1464;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+71	productteaser1content4	renderlet	a:3:{s:2:"id";i:1437;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+71	productteaser2content2	renderlet	a:3:{s:2:"id";i:1482;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+71	productteaser2content3	renderlet	a:3:{s:2:"id";i:1994;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+71	productteaser2content4	renderlet	a:3:{s:2:"id";i:1530;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+72	content	areablock	a:2:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:18:"print_producttable";}i:1;a:2:{s:3:"key";s:1:"2";s:4:"type";s:18:"print_producttable";}}
+72	headlinecontent1	input	More Running Shoes
+72	headlinecontent2	input	More Running Jackets
+72	headtextcontent1	textarea	
+72	headtextcontent2	textarea	
+72	tableconfigcontent1	outputchanneltable	a:4:{s:13:"selectedClass";s:7:"Product";s:8:"elements";a:29:{i:0;a:4:{s:2:"id";i:1483;s:4:"path";s:78:"/products/products/shoes/running/fw12_13/chicago_stability_men/black_blue_grey";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:1;a:4:{s:2:"id";i:1572;s:4:"path";s:79:"/products/products/shoes/running/fw12_13/chicago_stability_women/grey_pink_lime";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:2;a:4:{s:2:"id";i:1454;s:4:"path";s:74:"/products/products/shoes/running/fw12_13/elexir_iii_junior/blue_pink_white";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:3;a:4:{s:2:"id";i:1449;s:4:"path";s:76:"/products/products/shoes/running/fw12_13/elexir_iii_junior/grey_black_orange";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:4;a:4:{s:2:"id";i:1440;s:4:"path";s:73:"/products/products/shoes/running/fw12_13/elexir_iii_men/grey_black_orange";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:5;a:4:{s:2:"id";i:1504;s:4:"path";s:91:"/products/products/shoes/running/fw12_13/elexir_iii_velcro-lace_junior_copy/blue_pink_white";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:6;a:4:{s:2:"id";i:1501;s:4:"path";s:93:"/products/products/shoes/running/fw12_13/elexir_iii_velcro-lace_junior_copy/grey_black_orange";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:7;a:4:{s:2:"id";i:1444;s:4:"path";s:73:"/products/products/shoes/running/fw12_13/elexir_iii_women/blue_pink_white";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:8;a:4:{s:2:"id";i:1419;s:4:"path";s:71:"/products/products/shoes/running/fw12_13/oz_pro_junior/black_blue_green";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:9;a:4:{s:2:"id";i:1466;s:4:"path";s:62:"/products/products/shoes/running/fw12_13/oz_pro_men/black_blue";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:10;a:4:{s:2:"id";i:1468;s:4:"path";s:63:"/products/products/shoes/running/fw12_13/oz_pro_men/black_white";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:11;a:4:{s:2:"id";i:1463;s:4:"path";s:68:"/products/products/shoes/running/fw12_13/oz_pro_men/red_yellow_black";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:12;a:4:{s:2:"id";i:1384;s:4:"path";s:75:"/products/products/shoes/running/fw12_13/oz_pro_women/black_lightblue_white";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:13;a:4:{s:2:"id";i:1389;s:4:"path";s:72:"/products/products/shoes/running/fw12_13/oz_pro_women/black_salmon_white";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:14;a:4:{s:2:"id";i:1399;s:4:"path";s:69:"/products/products/shoes/running/fw12_13/oz_pro_women/navy_pink_white";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:15;a:4:{s:2:"id";i:1404;s:4:"path";s:72:"/products/products/shoes/running/fw12_13/oz_pro_women/violet_black_white";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:16;a:4:{s:2:"id";i:1424;s:4:"path";s:73:"/products/products/shoes/running/fw12_13/ridgerunner_ii_junior/black_pink";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:17;a:4:{s:2:"id";i:1418;s:4:"path";s:78:"/products/products/shoes/running/fw12_13/ridgerunner_ii_junior/black_red_green";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:18;a:4:{s:2:"id";i:1383;s:4:"path";s:71:"/products/products/shoes/running/fw12_13/ridgerunner_ii_men/black_green";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:19;a:4:{s:2:"id";i:1390;s:4:"path";s:75:"/products/products/shoes/running/fw12_13/ridgerunner_ii_men/black_red_green";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:20;a:4:{s:2:"id";i:1545;s:4:"path";s:84:"/products/products/shoes/running/fw12_13/ridgerunner_ii_pu_junior/black_grey_fuchsia";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:21;a:4:{s:2:"id";i:1538;s:4:"path";s:78:"/products/products/shoes/running/fw12_13/ridgerunner_ii_pu_junior/black_orange";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:22;a:4:{s:2:"id";i:1406;s:4:"path";s:76:"/products/products/shoes/running/fw12_13/ridgerunner_ii_women/grey_lightblue";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:23;a:4:{s:2:"id";i:1438;s:4:"path";s:76:"/products/products/shoes/running/fw12_13/ridgetrail_aqm_men/black_silver_red";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:24;a:4:{s:2:"id";i:1373;s:4:"path";s:82:"/products/products/shoes/running/fw12_13/ridgetrail_aqm_women/black_silver_fuchsia";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:25;a:4:{s:2:"id";i:1549;s:4:"path";s:74:"/products/products/shoes/running/fw12_13/tokyo-stability-ii-men/blue-green";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:26;a:4:{s:2:"id";i:1543;s:4:"path";s:75:"/products/products/shoes/running/fw12_13/tokyo-stability-ii-men/white-green";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:27;a:4:{s:2:"id";i:1564;s:4:"path";s:83:"/products/products/shoes/running/fw12_13/tokyo-stability-ii-w/white-light-blue-pink";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:28;a:4:{s:2:"id";i:1559;s:4:"path";s:80:"/products/products/shoes/running/fw12_13/tokyo-stability-ii-w/white-purple-black";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}}s:13:"outputChannel";s:1013:"{"id":"SOME-ID","channel":"web2print_tableconfigcontent1","o_classId":12,"configuration":[{"label":"Name","type":"value","class":"DefaultValue","attribute":"seoname","dataType":"input","childs":[],"text":"Name"},{"label":"Article #","type":"value","class":"DefaultValue","attribute":"artno","dataType":"input","childs":[],"text":"Article #"},{"label":null,"type":"value","class":"DefaultValue","attribute":"gender","dataType":"multiselect","childs":[],"text":"Gender"},{"label":null,"type":"value","class":"DefaultValue","attribute":"features","dataType":"objects","childs":[],"text":"Features"},{"label":null,"type":"value","class":"DefaultValue","attribute":"collection","dataType":"objects","childs":[],"text":"Collection"},{"label":null,"type":"value","class":"DefaultValue","attribute":"color","dataType":"multiselect","childs":[],"text":"Color(s)"},{"label":"Price","type":"value","class":"Numeric","attribute":"price","dataType":"numeric","precision":null,"formatNumber":false,"childs":[],"text":"Price"}]}";s:30:"selectedFavouriteOutputChannel";s:0:"";}
+72	tableconfigcontent2	outputchanneltable	a:4:{s:13:"selectedClass";s:7:"Product";s:8:"elements";a:8:{i:0;a:4:{s:2:"id";i:1535;s:4:"path";s:61:"/products/products/apparel/running/fw12_13/priscilla_wms/pink";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:1;a:4:{s:2:"id";i:1591;s:4:"path";s:62:"/products/products/apparel/running/fw12_13/pavel_juniors/black";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:2;a:4:{s:2:"id";i:1527;s:4:"path";s:71:"/products/products/apparel/running/fw12_13/palana_wms/purple_green_lime";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:3;a:4:{s:2:"id";i:1546;s:4:"path";s:62:"/products/products/apparel/running/fw12_13/otto_men/black_blue";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:4;a:4:{s:2:"id";i:1531;s:4:"path";s:62:"/products/products/apparel/running/fw12_13/okan_men/black_blue";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:5;a:4:{s:2:"id";i:1493;s:4:"path";s:62:"/products/products/apparel/running/fw12_13/ohio_men/blue_black";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:6;a:4:{s:2:"id";i:1562;s:4:"path";s:62:"/products/products/apparel/running/fw12_13/obil_men/black_blue";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:7;a:4:{s:2:"id";i:1517;s:4:"path";s:60:"/products/products/apparel/running/fw12_13/miranda_wms/black";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}}s:13:"outputChannel";s:886:"{"id":"SOME-ID","channel":"web2print_tableconfigcontent2","o_classId":12,"configuration":[{"label":"Name","type":"value","class":"DefaultValue","attribute":"seoname","dataType":"input","childs":[],"text":"Name"},{"label":null,"type":"value","class":"DefaultValue","attribute":"description","dataType":"wysiwyg","childs":[],"text":"Description"},{"label":"Article#","type":"value","class":"DefaultValue","attribute":"artno","dataType":"input","childs":[],"text":"Article#"},{"label":null,"type":"value","class":"DefaultValue","attribute":"gender","dataType":"multiselect","childs":[],"text":"Gender"},{"label":null,"type":"value","class":"DefaultValue","attribute":"color","dataType":"multiselect","childs":[],"text":"Color(s)"},{"label":"Price","type":"value","class":"Numeric","attribute":"price","dataType":"numeric","precision":null,"formatNumber":false,"childs":[],"text":"Price"}]}";s:30:"selectedFavouriteOutputChannel";s:0:"";}
+73	content	areablock	a:3:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:13:"print_wysiwyg";}i:1;a:2:{s:3:"key";s:1:"2";s:4:"type";s:16:"print_productrow";}i:2;a:2:{s:3:"key";s:1:"3";s:4:"type";s:18:"print_producttable";}}
+73	contentcontent1	wysiwyg	
+73	headlinecontent1	input	Tent Specials
+73	headlinecontent3	input	More Tents
+73	headtextcontent3	textarea	
+73	modecontent2	select	\N
+73	productteaser1content2	renderlet	a:3:{s:2:"id";i:7040;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+73	productteaser2content2	renderlet	a:3:{s:2:"id";i:6519;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+73	tableconfigcontent3	outputchanneltable	a:4:{s:13:"selectedClass";s:7:"Product";s:8:"elements";a:13:{i:0;a:4:{s:2:"id";i:6503;s:4:"path";s:54:"/products/products/outdoor/fw1213/hardware/tents/kea_3";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:1;a:4:{s:2:"id";i:6560;s:4:"path";s:58:"/products/products/outdoor/fw1213/hardware/tents/koala_240";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:2;a:4:{s:2:"id";i:6502;s:4:"path";s:54:"/products/products/outdoor/fw1213/hardware/tents/kos_4";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:3;a:4:{s:2:"id";i:6511;s:4:"path";s:56:"/products/products/outdoor/fw1213/hardware/tents/kreta_5";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:4;a:4:{s:2:"id";i:6514;s:4:"path";s:57:"/products/products/outdoor/fw1213/hardware/tents/manitu_3";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:5;a:4:{s:2:"id";i:9529;s:4:"path";s:62:"/products/products/outdoor/fw1213/hardware/tents/marabia_uv_40";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:6;a:4:{s:2:"id";i:6531;s:4:"path";s:57:"/products/products/outdoor/fw1213/hardware/tents/matuka_2";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:7;a:4:{s:2:"id";i:6505;s:4:"path";s:57:"/products/products/outdoor/fw1213/hardware/tents/matuka_3";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:8;a:4:{s:2:"id";i:6508;s:4:"path";s:57:"/products/products/outdoor/fw1213/hardware/tents/matuka_4";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:9;a:4:{s:2:"id";i:6496;s:4:"path";s:57:"/products/products/outdoor/fw1213/hardware/tents/nevada_3";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:10;a:4:{s:2:"id";i:6522;s:4:"path";s:61:"/products/products/outdoor/fw1213/hardware/tents/northlight_2";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:11;a:4:{s:2:"id";i:6487;s:4:"path";s:62:"/products/products/outdoor/fw1213/hardware/tents/one_pole_tent";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}i:12;a:4:{s:2:"id";i:6550;s:4:"path";s:56:"/products/products/outdoor/fw1213/hardware/tents/samos_6";s:4:"type";s:6:"object";s:7:"subtype";s:7:"Product";}}s:13:"outputChannel";s:1846:"{"id":"SOME-ID","channel":"web2print_tableconfigcontent3","o_classId":12,"configuration":[{"label":"Name","type":"value","class":"DefaultValue","attribute":"seoname","dataType":"input","childs":[],"text":"Name"},{"label":"Article#","type":"value","class":"DefaultValue","attribute":"artno","dataType":"input","childs":[],"text":"Article#"},{"label":null,"type":"value","class":"DefaultValue","attribute":"tentSpecifications~outsideMaterial","dataType":"input","childs":[],"text":"<img style=\\"height:40px; float:left; margin:-10px 10px 0 0\\" src=\\"/website/static/backend/img/bricks/tent-specs/outer-material.jpg\\"/> Outside Material"},{"label":null,"type":"value","class":"DefaultValue","attribute":"tentSpecifications~insideMaterial","dataType":"input","childs":[],"text":"<img style=\\"height:40px; float:left; margin:-10px 10px 0 0\\" src=\\"/website/static/backend/img/bricks/tent-specs/inner-material.png\\"/> Inside Material"},{"label":"Floor Material","type":"value","class":"DefaultValue","attribute":"tentSpecifications~floorMaterial","dataType":"input","childs":[],"text":"Floor Material"},{"label":null,"type":"value","class":"DefaultValue","attribute":"tentSpecifications~construction","dataType":"input","childs":[],"text":"<img style=\\"height:40px; float:left; margin:-10px 10px 0 0\\" src=\\"/website/static/backend/img/bricks/tent-specs/construction.jpg\\"/> Construction"},{"label":null,"type":"value","class":"Numeric","attribute":"tentSpecifications~weight","dataType":"numeric","precision":null,"formatNumber":false,"childs":[],"text":"<img style=\\"height:40px; float:left; margin:-10px 10px 0 0\\" src=\\"/website/static/backend/img/bricks/tent-specs/weight.jpg\\"/> Weight"},{"label":"Price","type":"value","class":"Numeric","attribute":"price","dataType":"numeric","precision":null,"formatNumber":false,"childs":[],"text":"Price"}]}";s:30:"selectedFavouriteOutputChannel";s:0:"";}

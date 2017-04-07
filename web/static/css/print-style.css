@@ -1,0 +1,659 @@
+/**
+ * Pimcore
+ *
+ * This source file is available under two different licenses:
+ * - GNU General Public License version 3 (GPLv3)
+ * - Pimcore Enterprise License (PEL)
+ * Full copyright and license information is available in
+ * LICENSE.md which is distributed with this source code.
+ *
+ * @copyright  Copyright (c) Pimcore GmbH (http://www.pimcore.org)
+ * @license    http://www.pimcore.org/license     GPLv3 and PEL
+ */
+
+
+/* font */
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('/static/fonts/OpenSans-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans Light Italic';
+    src: url('/static/fonts/OpenSans-LightItalic.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('/static/fonts/OpenSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: url('/static/fonts/OpenSans-Semibold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('/static/fonts/OpenSans-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* layout */
+.footer-text-placeholder-left, .toc-footer-text-placeholder-left {
+    position: running(footerElementLeft);
+    text-align: right;
+}
+
+.footer-text-placeholder-left:after, .toc-footer-text-placeholder-left:after {
+    content: counter(page);
+    font-family: "Open Sans Bold";
+    padding-left: 3mm;
+}
+
+.footer-text-placeholder-right, .toc-footer-text-placeholder-right {
+    position: running(footerElementRight);
+}
+
+.footer-text-placeholder-right:before, .toc-footer-text-placeholder-right:before {
+    content: counter(page);
+    font-family: "Open Sans Bold";
+    padding-right: 3mm;
+}
+
+
+.toc-footer-text-placeholder-left {
+    position: running(tocFooterElementLeft);
+    text-align: right;
+}
+.toc-footer-text-placeholder-right {
+    position: running(tocFooterElementRight);
+}
+.toc-footer-text-placeholder-left, .toc-footer-text-placeholder-right {
+    color: #ffffff;
+}
+
+
+@page {
+    counter-increment: page;
+
+    -ro-scale-content: none;
+    hyphens: auto;
+
+    size: A4 portrait;
+}
+
+@page:right {
+    margin:15mm 5mm 14mm 14mm;  /* ACHTUNG: Veränderung des margins ändert den register rechts!! */
+    @bottom-left {
+        content: element(footerElementRight);
+        text-align: left;
+    }
+}
+@page:left {
+    margin:15mm 14mm 14mm 5mm;  /* ACHTUNG: Veränderung des margins ändert den register rechts!! */
+    @bottom-right {
+        content: element(footerElementLeft);
+    }
+}
+
+@page title {
+    margin: 0;
+}
+
+@page toc {
+    background-color: #0078BD;
+    color: #ffffff;
+}
+@page toc:right {
+    margin:15mm 5mm 14mm 14mm;  /* ACHTUNG: Veränderung des margins ändert den register rechts!! */
+    @bottom-left {
+        content: element(tocFooterElementRight);
+        text-align: left;
+    }
+}
+@page toc:left {
+    margin:15mm 14mm 14mm 5mm;  /* ACHTUNG: Veränderung des margins ändert den register rechts!! */
+    @bottom-right {
+        content: element(tocFooterElementLeft);
+    }
+}
+
+.register {
+    font-size: 12pt;
+    font-family: "Open Sans Regular";
+    color: #ffffff;
+    letter-spacing: 40;
+    text-align:left;
+    display: block;
+    height: 11mm;
+    margin: 0;
+    -ro-transform-origin: 0px 0px;
+    -ro-transform: rotate(-90deg) translateY(0) translateX(15mm);
+    position: absolute;
+    left: 3.75mm;
+    padding-top: 2mm;
+    padding-left: 5mm;
+}
+.register.left {
+    right: 3.75mm;
+    left: -3mm;
+    padding-top: 4.5mm;
+    height: 8mm;
+    /*border-radius: 0 0 0 3mm;*/
+}
+
+.register-Basketball {
+    top: 79.125mm;
+    width: 79.125mm;
+    background-color: #ec6e1e;
+}
+.register-Football {
+    top: 97.25mm;
+    width: 97.25mm;
+    background-color: #cf120f;
+}
+.register-Handball {
+    top: 115.375mm;
+    width: 115.375mm;
+    background-color: #a52774;
+}
+.register-Outdoor {
+    top:133.8mm;
+    width: 133.8mm;
+    background-color: #177f17;
+}
+
+.register-Running {
+    top: 151.625mm;
+    width: 151.625mm;
+    background-color: #28ABE1;
+}
+.register-Volleyball {
+    top:170.12mm;
+    width:170.12mm;
+    background-color: #f2e552;
+    color: #000000;
+}
+
+/* Layout Tabs */
+.title-page-container {
+    page: default;
+}
+#toc-wrapper {
+    page: toc;
+}
+.page.Basketball {
+    page: Basketball;
+}
+.page.Basketball h1 {
+    color: #ec6e1e;
+}
+.page.Basketball .pimcore_area_print-product-row h4:after {
+    border-color: #ec6e1e;
+}
+.page.Basketball .pimcore_area_print-product-table .outputchannel thead td {
+    color: #ec6e1e;
+    border-color: #ec6e1e;
+}
+
+.page.Football {
+    page: Football;
+}
+.page.Football h1 {
+    color: #cf120f;
+}
+.page.Football .pimcore_area_print-product-row h4:after {
+    border-color: #cf120f;
+}
+.page.Football .pimcore_area_print-product-table .outputchannel thead td {
+    color: #cf120f;
+    border-color: #cf120f;
+}
+
+.page.Handball {
+    page: Handball;
+}
+.page.Handball h1 {
+    color: #a52774;
+}
+.page.Handball .pimcore_area_print-product-row h4:after {
+    border-color: #a52774;
+}
+.page.Handball .pimcore_area_print-product-table .outputchannel thead td {
+    color: #a52774;
+    border-color: #a52774;
+}
+
+.page.Outdoor {
+    page: Outdoor;
+}
+.page.Outdoor h1 {
+    color: #177f17;
+}
+.page.Outdoor .pimcore_area_print-product-row h4:after {
+    border-color: #177f17;
+}
+.page.Outdoor .pimcore_area_print-product-table .outputchannel thead td {
+    color: #177f17;
+    border-color: #177f17;
+}
+
+.page.Running {
+    page: Running;
+}
+.page.Running h1 {
+    color: #28ABE1;
+}
+.page.Running .pimcore_area_print-product-row h4:after {
+    border-color: #28ABE1;
+}
+.page.Running .pimcore_area_print-product-table .outputchannel thead td {
+    color: #28ABE1;
+    border-color: #28ABE1;
+}
+
+.page.Volleyball {
+    page: Volleyball;
+}
+.page.Volleyball h1 {
+    color: #f2e552
+}
+.page.Volleyball .pimcore_area_print-product-row h4:after {
+    border-color: #f2e552;
+}
+.page.Volleyball .pimcore_area_print-product-table .outputchannel thead td {
+    color: #f2e552;
+    border-color: #f2e552;
+}
+
+
+
+body {
+    font-family: 'Open Sans Regular';
+    font-size: 10pt;
+}
+
+.page {
+    page-break-after: always;
+}
+
+.site h1 {
+    font-family: 'Open Sans Bold';
+    /*border-bottom: 1px solid #7F7F7F;*/
+    line-height: 120%;
+    font-size: 16pt;
+    font-weight: 700;
+}
+
+
+.site .right h1 {
+    text-align: right;
+}
+
+.site h2 {
+    font-family: 'Open Sans Semibold';
+    /*border-bottom: 1px solid #7F7F7F;*/
+    line-height: 120%;
+    font-size: 14pt;
+    font-weight: 600;
+}
+
+
+
+.site h3 {
+    font-family: 'Open Sans Light';
+    line-height: 120%;
+    font-size: 12pt;
+    /*font-weight: 300;*/
+}
+
+
+
+
+.keyvisual img {
+    max-width: 208mm;
+    max-height: 130mm;
+    width: auto;
+    height: auto;
+    padding-top: -20mm;
+    padding-left: -10mm;
+}
+
+.pimcore_area_print-key-visual h1 {
+    text-align: center;
+    background-color: #000000;
+    display: block;
+    font-size: 35pt;
+    margin: -14.8mm 40mm 8mm 40mm;
+    font-family: "Open Sans Light";
+    text-transform: uppercase;
+}
+
+.pagebreak-force-page-break {
+    page-break-after: always;
+}
+
+.pimcore_area_print-product-row .element {
+    float: left;
+    padding: 0 3mm;
+    height: 6.64cm;
+    overflow: hidden;
+    position: relative;
+}
+
+.pimcore_area_print-product-row .element.first {
+    padding-right: 20mm;
+}
+
+.pimcore_area_print-product-row .element.small {
+    width: 6.7cm;
+}
+
+.pimcore_area_print-product-row .element.wide {
+    width: 9cm;
+}
+
+.pimcore_area_print-product-row .productrow {
+    page-break-inside: avoid;
+}
+
+.pimcore_area_print-product-row .productrow .clear {
+    clear: both;
+}
+
+
+.pimcore_area_print-product-row .texts {
+    padding-top: 2mm;
+}
+
+.pimcore_area_print-product-row h4 {
+    display: inline;
+    font-size: 13pt;
+    font-weight: normal;
+    font-family: "Open Sans Semibold";
+    text-transform: uppercase;
+}
+
+.pimcore_area_print-product-row h4:after {
+    content: ' ';
+    display: block;
+    width: 1cm;
+    border-bottom: 2px solid;
+}
+
+.pimcore_area_print-product-row .colorvariants img {
+    max-height: 1cm;
+    max-width: 1cm;
+    width: auto;
+    height: auto;
+    padding-bottom: 1mm;
+}
+
+
+.pimcore_area_print-product-row .infoblock {
+    margin: 3mm 0 5mm;
+    font-size: 8pt;
+    font-family: "Open Sans Light";
+    width: 45mm;
+}
+
+.pimcore_area_print-product-row .infoblock label {
+    font-family: "Open Sans Semibold";
+    font-size: 8pt;
+}
+
+.pimcore_area_print-product-row .infoblock p {
+    margin-bottom: 0;
+    margin-top: 1mm;
+}
+
+.pimcore_area_print-product-row .mainImage img {
+    max-height: 3cm;
+    max-width: 3cm;
+    width: auto;
+    height: auto;
+}
+
+
+.pimcore_area_print-product-row .small .mainImage {
+    text-align: center;
+    display: block;
+    width: 57mm;
+}
+
+.pimcore_area_print-product-row .small.first .mainImage {
+    width: 44mm;
+}
+
+.pimcore_area_print-product-row .small .colorvariants {
+    position: absolute;
+    width: 1cm;
+    right: 5mm;
+    top: 8mm;
+}
+
+.pimcore_area_print-product-row .small.first .colorvariants {
+    right: 24mm;
+}
+
+.pimcore_area_print-product-row .wide .texts {
+    padding-top: 15mm;
+    clear: both;
+}
+
+.pimcore_area_print-product-row .wide .colorvariants {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+}
+
+.pimcore_area_print-product-row .wide .colorvariants img {
+    padding-bottom: 0;
+    padding-top: 2mm;
+}
+
+.pimcore_area_print-product-row .wide .infoblock {
+    margin: 3mm 0 5mm;
+    font-size: 9pt;
+}
+
+
+.pimcore_area_print-product-row .wide .mainImage {
+    position: absolute;
+    top: 10mm;
+    right: 5mm;
+    display: block;
+}
+
+.pimcore_area_print-product-row .wide.first .mainImage {
+    right: 24mm;
+}
+
+.pimcore_area_print-product-row .wide .mainImage img {
+    max-height: 4.5cm;
+    max-width: 4.5cm;
+}
+
+.pimcore_area_print-title-page {
+    position: relative;
+    margin: 0;
+    padding: 0; 
+}
+
+.pimcore_area_print-title-page .title-page-container  {
+    page: title;
+    position: absolute;
+    top: -3mm;
+    left: -5mm;
+    width: 216mm;
+    height: 303mm;
+}
+
+.pimcore_area_print-title-page .title-page-container img.background {
+    max-width: 216mm;
+    max-height: 303mm;
+    width: auto;
+    height: auto;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pimcore_area_print-title-page .img-container  {
+    position: absolute;
+    z-index: 200;
+    top: 50%;
+    left: 50%;
+    margin-left: -30mm;
+    margin-right: -30mm;
+    margin-top: -30mm;
+    margin-bottom: -30mm;
+}
+
+.pimcore_area_print-title-page .title-page-container img.title {
+    max-width: 60mm;
+    max-height: 60mm;
+    width: auto;
+    height: auto;
+    z-index: 2000;
+}
+
+
+.pimcore_area_print-title-page .heading {
+    position: absolute;
+    bottom: 50mm;
+    font-family: "Open Sans Bold";
+    padding: 0 45mm;
+    font-size: 40pt;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1000;
+}
+
+
+.pimcore_area_print-title-page .subheading {
+    position: absolute;
+    bottom: 45mm;
+    color: #ffffff;
+    font-family: "Open Sans Semibold";
+    font-size: 14pt;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+
+#toc-wrapper, #toc-wrapper a  {
+    color: #ffffff;
+}
+
+#toc-wrapper h1 {
+    text-transform: uppercase;
+    padding: 40mm 15mm 5mm 15mm;
+}
+
+#toc-wrapper p {
+    padding: 0 15mm;
+    font-size: 11pt;
+}
+
+#toc-wrapper .toc.ro-toc a:after {
+    content: leader(dotted) target-counter(attr(href), page);
+}
+
+#toc-wrapper a {
+    text-decoration: none;
+}
+
+/*!* indent TOC items according to heading level of target *!*/
+#toc-wrapper .toc.ro-toc .ro-toc-level-1 {
+    padding-top: 2mm;
+    font-size: 12pt;
+    font-family: "Open Sans Semibold";
+    padding-left: 0;
+}
+#toc-wrapper .toc.ro-toc .ro-toc-level-2 {
+    padding-left: 5mm;
+    padding-right: 0.5mm;
+    padding-top: 1mm;
+    font-size: 10pt;
+    font-family: "Open Sans Regular";
+}
+#toc-wrapper .toc.ro-toc .ro-toc-level-3 {
+    padding-left: 10mm;
+    padding-top: 1mm;
+    padding-right: 0.5mm;
+    font-size: 10pt;
+    font-family: "Open Sans Light";
+}
+
+#toc-wrapper ul.toc.ro-toc {
+    list-style-type: none;
+    padding: 10mm 15mm;
+}
+
+#toc-wrapper, #toc-wrapper .ro-toc > h2 {
+    page-break-before: avoid;
+}
+
+.pimcore_area_print-toc {
+    page-break-inside: avoid;
+}
+
+
+.pimcore_area_print-product-table table.outputchannel {
+    border-collapse: collapse;
+}
+
+
+.pimcore_area_print-product-table .outputchannel thead {
+    font-family: "Open Sans Semibold";
+}
+
+.pimcore_area_print-product-table .outputchannel {
+    margin-bottom: 10mm;
+}
+
+.pimcore_area_print-product-table .outputchannel thead td {
+    border-bottom: 2px solid;
+    padding: 0 2mm 1mm 2mm;
+    vertical-align: bottom;
+    font-size: 9pt;
+    font-family: "Open Sans Semibold";
+}
+
+.pimcore_area_print-product-table .outputchannel thead td img {
+    max-height: 5mm;
+    max-width: 5mm;
+    height: auto;
+    width: auto;
+    margin: 0 1mm 0 0 !important;
+}
+
+.pimcore_area_print-product-table .outputchannel tbody td {
+    padding: 1mm 2mm 1mm 2mm;
+    vertical-align: top;
+    font-size: 9pt;
+    font-family: "Open Sans Light";
+}
+
+.pimcore_area_print-product-table .outputchannel tbody td:first-child, .pimcore_area_print-product-table .outputchannel tbody td:last-child {
+    font-family: "Open Sans Semibold";
+}
+
+.pimcore_area_print-product-table .outputchannel tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+

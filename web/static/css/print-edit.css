@@ -1,0 +1,105 @@
+/**
+ * Pimcore
+ *
+ * This source file is available under two different licenses:
+ * - GNU General Public License version 3 (GPLv3)
+ * - Pimcore Enterprise License (PEL)
+ * Full copyright and license information is available in
+ * LICENSE.md which is distributed with this source code.
+ *
+ * @copyright  Copyright (c) Pimcore GmbH (http://www.pimcore.org)
+ * @license    http://www.pimcore.org/license     GPLv3 and PEL
+ */
+
+
+body {
+	background:#CCC;
+}
+
+.site {
+	margin:0 auto;
+	width: 21cm;
+	padding:1cm 0 1cm 0;
+}
+
+.page {
+	width: 21cm;
+	padding:0.5cm 0 0.5cm 0;
+	background:#FFF;
+	-webkit-box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+
+    position: relative;
+}
+.pimcore_area_content {
+	padding: 0 10mm 0 10mm;
+}
+
+.footer-text-placeholder-left, .footer-text-placeholder-right {
+	display: none;
+}
+
+
+.keyvisual img {
+	max-width: 199mm;
+	max-height: 120mm;
+	width: auto;
+	height: auto;
+	padding-top: -20mm;
+	padding-left: -6.5mm;
+}
+
+.pimcore_area_print_keyvisual h1 {
+	text-align: center;
+	background-color: #000000;
+	display: block;
+	font-size: 35pt;
+	margin: 0 40mm 0 40mm;
+	font-family: "Open Sans Light";
+	text-transform: uppercase;
+}
+
+.pagebreak-force-page-break {
+	border-bottom: 1px solid black;
+	page-break-after: always;
+	height: 10px;
+}
+
+.pimcore_area_print_productrow .element {
+	height: 350px;
+}
+
+
+.pimcore_area_print_productrow .element.small {
+	padding-right: 5mm;
+}
+
+
+.pimcore_area_print_productrow .productCell {
+	height: 300px;
+}
+
+.pimcore_area_print_productrow .displaymode {
+	padding-bottom: 20px;
+	vertical-align: middle;
+}
+
+.pimcore_area_print_productrow .wide.first .mainImage, .pimcore_area_print_productrow .small.first .colorvariants {
+	right: 10mm;
+}
+
+
+#toc-wrapper {
+	color: #000000;
+}
+
+#toc-wrapper h1 {
+	padding-top: 0;
+	padding-left: 0;
+}
+
+
+#toc-wrapper p {
+	padding-left: 0;
+}

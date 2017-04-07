@@ -1,0 +1,14 @@
+7	FilterDefinition
+32	OfferToolCustomProduct
+30	OfferToolOffer
+31	OfferToolOfferItem
+9	OnlineShopOrder
+8	OnlineShopOrderItem
+35	OnlineShopTaxClass
+33	OnlineShopVoucherSeries
+34	OnlineShopVoucherToken
+12	Product
+23	ProductAttribute
+14	ProductCategory
+15	ProductCollection
+16	ProductTechnology

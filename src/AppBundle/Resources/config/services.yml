@@ -1,0 +1,7 @@
+services:
+    # Product Detail Specification Template Helper
+    app.templating.helper.productDetailSpecification:
+        class: AppBundle\Templating\Helper\ProductDetailSpecification
+        arguments: ['@translator', '@pimcore.locale.intl_formatter']
+        tags:
+            - { name: templating.helper, alias: productDetailSpecification }

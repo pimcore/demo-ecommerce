@@ -1,0 +1,53 @@
+4846	specificAttributes	20	30	10	Material Top	Material Bottom	210	1	1	mats.specs.doublediamondlayer,mats.specs.diamondsurface,mats.specs.diamondcore,mats.specs.diamondtecfoam,mats.specs.diamondbackstructure,mats.specs.mazefoam,mats.specs.purefoam,mats.specs.xcorefoam
+6729	specificAttributes	186	51	3.8	75D Polyester	75D Polyester	0.95	1	0	mats.specs.purefoam
+6733	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+6742	specificAttributes	186	51	3.8	R/S	70D Nylon	0.95	1	1	mats.specs.purefoam
+6743	specificAttributes	186	51	2.5	75D Polyester honeycomb R/S	75D Polyester	0.75	1	0	mats.specs.diamondtecfoam
+6759	specificAttributes	198	63	3.8	R/S	70D Nylon	1.29	1	1	mats.specs.purefoam
+6766	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+6767	specificAttributes	198	63	7	75D Polyester Peach Finish 	75D Polyester 	2.3	0	0	mats.specs.diamondsurface
+6768	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+6774	specificAttributes	198	63	10	75D Polyester Peach Finish 	75D Polyester 	2.9	0	0	mats.specs.diamondsurface
+6783	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+6785	specificAttributes	198	63	5	75D Polyester Peach Finish 	75D Polyester 	1.7	0	0	mats.specs.diamondsurface
+6792	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+6793	specificAttributes	180	57	3.8	75D Polyester	75D Polyester	1.05	1	0	mats.specs.purefoam
+6794	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+7052	specificAttributes	186	51	3.8	75D Polyester diamond R/S	70D Nylon fully bonded	0.95	1	1	mats.specs.purefoam
+7053	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+7059	specificAttributes	198	63	3.8	75D Polyester diamond R/S	70D Nylon fully bonded	1.29	1	1	mats.specs.purefoam
+7075	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+7080	specificAttributes	186	51	2.5	75D Polyester honeycomb R/S	75D Polyester fully bonded	0.75	1	0	mats.specs.diamondtecfoam
+7081	specificAttributes	198	63	7	75D Polyester Peach Finish 	75D Polyester fully bonded	2.3	0	0	mats.specs.diamondsurface,mats.specs.purefoam
+7084	specificAttributes	198	63	5	75D Polyester Peach Finish 	75D Polyester fully bonded	1.7	0	0	mats.specs.diamondsurface,mats.specs.purefoam
+7092	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+7094	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+7096	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+7098	specificAttributes	183	51	2.5	75D Polyester	75D Polyester fully bonded	0.86	1	0	mats.specs.purefoam
+7099	specificAttributes	198	63	10	75D Polyester Peach Finish 	75D Polyester fully bonded	2.9	0	0	mats.specs.diamondsurface,mats.specs.purefoam
+7100	specificAttributes	183	51	3.8	75D Polyester diamond R/S	70D Nylon fully bonded	1.09	1	1	mats.specs.purefoam
+7102	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+7103	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+7104	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+7290	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+7304	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+7323	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+7330	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+7529	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+7530	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+7535	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+7543	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+7544	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+7545	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+9440	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+10551	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+10556	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+10557	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+10566	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+10569	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+10574	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+10582	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+10583	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+10584	specificAttributes	\N	\N	\N	\N	\N	\N	0	0	\N
+10717	specificAttributes	183	51	2.5	75D Polyester	75D Polyester	0.86	1	0	mats.specs.purefoam
+10718	specificAttributes	183	51	3.8	R/S	70D Nylon	1.09	1	1	mats.specs.purefoam
