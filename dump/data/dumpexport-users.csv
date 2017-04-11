@@ -1,4 +1,4 @@
 0	0	user	system	\N	\N	\N	\N	\N	\N	1	1	\N	\N	\N	\N	\N	1	\N	\N	\N	\N	\N	\N	\N
 3	0	user	demo	$2y$10$3aTYME3Az.FOrU/ZZxdCTOdXLevkd/f6.lqju/xp9cBrmo3KWubZW				en	en_GB,de_AT,fr_FR	0	1	assets,classes,documents,document_types,glossary,http_errors,notes_events,objects,bundle_ecommerce_back-office_order,bundle_ecommerce_pricing_rules,plugin_outputDataConfigToolkit,predefined_properties,qr_codes,recyclebin,redirects,reports,robots.txt,routes,seemode,seo_document_editor,system_settings,tags_assignment,tags_configuration,tags_search,tag_snippet_management,targeting,thumbnails,translations,web2print_settings,website_settings		1	1	1	1				default	Katalog,default,PIM,DAM,CMS,Ecommerce		
-8	0	user	admin	$2y$10$VpOxBe8JpVCr.czI1R3W1u7SesJXYim1N063vHPIFqoriSNPsL4eW	\N	\N	\N	en	\N	1	1			0	1	1	1			\N	\N			
+8	0	user	admin	$2y$10$08MfopR8fDRTQwpBOOEAk.Azxa5uHa77xCSyfW0DFcDBNEpPSE8ge	\N	\N	\N	en	\N	1	1			0	1	1	1			\N	\N			
 9	0	user	test	\N				en	en_GB,de_AT,fr_FR	0	1	bundle_ecommerce_pricing_rules,bundle_outputDataConfigToolkit,bundle_web2print_favourite_output_channels		0	1	1	1				\N			

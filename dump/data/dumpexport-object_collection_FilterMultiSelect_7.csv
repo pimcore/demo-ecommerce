@@ -1,6 +1,6 @@
-11265	1	filters	TentPegs	/shop/filters/multiselect-notranslation.php	0	\N	tentTentPegs	
-11265	2	filters	WaterproofRain	/shop/filters/multiselect-notranslation.php	0	\N	tentWaterproofRain	
-11265	3	filters	WaterproofGround	/shop/filters/multiselect-notranslation.php	0	\N	tentWaterproofGround	
-11275	2	filters	TentPegs	/shop/filters/multiselect-notranslation.php	0	\N	tentTentPegs	Pegs steel
-11275	3	filters	WaterproofGround	/shop/filters/multiselect-notranslation.php	0	\N	tentWaterproofGround	
-11275	4	filters	WaterproofRain	/shop/filters/multiselect-notranslation.php	0	\N	tentWaterproofRain	
+11265	1	filters	TentPegs	Shop/filters/multiselect-notranslation.html.php	0	\N	tentTentPegs	
+11265	2	filters	WaterproofRain	Shop/filters/multiselect-notranslation.html.php	0	\N	tentWaterproofRain	
+11265	3	filters	WaterproofGround	Shop/filters/multiselect-notranslation.html.php	0	\N	tentWaterproofGround	
+11275	2	filters	TentPegs	Shop/filters/multiselect-notranslation.html.php	0	\N	tentTentPegs	
+11275	3	filters	WaterproofGround	Shop/filters/multiselect-notranslation.html.php	0	\N	tentWaterproofGround	
+11275	4	filters	WaterproofRain	Shop/filters/multiselect-notranslation.html.php	0	\N	tentWaterproofRain	

@@ -152,6 +152,6 @@ return [
         "usespecific" => FALSE
     ],
     "flags" => [
-        "useZendDate" => TRUE
+        "useZendDate" => FALSE
     ]
 ];

@@ -149,7 +149,7 @@ CREATE TABLE `bundle_web2print_favorite_outputdefinitions` (
   `description` varchar(255) COLLATE utf8_bin NOT NULL,
   `configuration` longtext CHARACTER SET latin1,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 
 

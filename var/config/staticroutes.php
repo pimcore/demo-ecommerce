@@ -79,17 +79,20 @@ return [
     8 => [
         "id" => 8,
         "name" => "action",
-        "pattern" => "#(.*?)/action/([a-z\\-\\_]+)/([a-z\\-]+)#",
+        "pattern" => "#(.*?)/action/([a-zA-Z\\-\\_]+)/([a-z\\-]+)#",
         "reverse" => "/%prefix/action/%controller/%action",
         "module" => "",
         "controller" => "%controller",
         "action" => "%action",
         "variables" => "prefix,controller,action",
         "defaults" => NULL,
-        "siteId" => NULL,
+        "siteId" => [
+
+        ],
         "priority" => 1,
+        "legacy" => FALSE,
         "creationDate" => 1460199088,
-        "modificationDate" => 1460199101
+        "modificationDate" => 1491896303
     ],
     9 => [
         "id" => 9,

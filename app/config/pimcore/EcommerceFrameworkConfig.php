@@ -534,8 +534,8 @@ return [
         "offertool" => [
             "class" => "\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\OfferTool\\DefaultService",
             "orderstorage" => [
-                "offerClass" => "Object_OfferToolOffer",
-                "offerItemClass" => "Object_OfferToolOfferItem",
+                "offerClass" => "\\Pimcore\\Model\\Object\\OfferToolOffer",
+                "offerItemClass" => "\\Pimcore\\Model\\Object\\OfferToolOfferItem",
                 "parentFolderPath" => "/offertool/offers/%Y/%m"
             ]
         ],
