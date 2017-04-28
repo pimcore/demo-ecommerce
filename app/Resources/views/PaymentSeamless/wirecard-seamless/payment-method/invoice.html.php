@@ -16,7 +16,7 @@
 /**
  * @var \Pimcore\Templating\PhpEngine $this
  * @var \Pimcore\Templating\PhpEngine $view
- * @var \Pimcore\Templating\GlobalVariables\GlobalVariables $app
+ * @var \Pimcore\Templating\GlobalVariables $app
  */
 
 $this->headScript()->appendFile('/static/js/payment/wirecard-seamless/jquery-birthday-picker.min.js');
