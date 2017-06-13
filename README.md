@@ -1,4 +1,4 @@
-# ecommerce-demo
+# Ecommerce-Demo for Pimcore 5
 E-Commerce Demo Application for Pimcore 5
 
 
