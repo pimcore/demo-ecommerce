@@ -1,5 +1,5 @@
 # ecommerce-demo
-E-Commerce Demo Application
+E-Commerce Demo Application for Pimcore 5
 
 
 TODOs for install (will we improved)
