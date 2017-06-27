@@ -20,35 +20,62 @@ use Pimcore\Bundle\EcommerceFrameworkBundle\Factory;
 
 trait Checkoutable {
 
+    /**
+     * @return mixed
+     */
     public function getOSName() {
         return $this->getName();
     }
 
+    /**
+     * @param int $quantityScale
+     * @return \Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\IPrice
+     */
     public function getOSPrice($quantityScale = 1) {
         return $this->getOSPriceInfo($quantityScale)->getPrice();
     }
 
+    /**
+     * @return string
+     */
     public function getPriceSystemName() {
         return 'default';
     }
 
+    /**
+     * @return \Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\IPriceSystem
+     */
     public function getPriceSystemImplementation() {
         return Factory::getInstance()->getPriceSystem($this->getPriceSystemName());
     }
 
+    /**
+     * @param int $quantityScale
+     * @return \Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\IPriceInfo
+     */
     public function getOSPriceInfo($quantityScale = 1) {
-        return $this->getPriceSystemImplementation()->getPriceInfo($this,$quantityScale, null);
+        return $this->getPriceSystemImplementation()->getPriceInfo($this, $quantityScale, null);
     }
 
+    /**
+     * @return int
+     */
     public function getOSProductNumber() {
         return $this->getId();
     }
 
+    /**
+     * @return string
+     */
     public function getAvailabilitySystemName()
     {
         return "default";
     }
 
+    /**
+     * @param int $quantityScale
+     * @return bool
+     */
     public function getOSIsBookable($quantityScale = 1)
     {
         $price = $this->getOSPrice($quantityScale);
@@ -56,6 +83,9 @@ trait Checkoutable {
     }
 
 
+    /**
+     * @return \Pimcore\Bundle\EcommerceFrameworkBundle\AvailabilitySystem\IAvailabilitySystem
+     */
     public function getAvailabilitySystemImplementation()
     {
         return Factory::getInstance()->getAvailabilitySystem($this->getAvailabilitySystemName());
@@ -136,6 +166,10 @@ trait Checkoutable {
     }
 
 
+    /**
+     * @param $view
+     * @return array
+     */
     public function getHeroAttributes($view) {
         $heroAttributes = [];
         if($this->getArtno()) {
