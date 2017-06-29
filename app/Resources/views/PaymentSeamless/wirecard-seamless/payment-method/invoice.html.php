@@ -22,7 +22,7 @@
 $this->headScript()->appendFile('/static/js/payment/wirecard-seamless/jquery-birthday-picker.min.js');
 ?>
 <link rel="/static/css/wirecard-checkout.css" type="text/css">
-<?
+<?php
 $this->headScript()->captureStart();
 print '$("#payolution-birthday").birthdayPicker({dateFormat:"littleEndian"});';
 $this->headScript()->captureEnd();
@@ -53,7 +53,7 @@ $this->headScript()->captureEnd();
                         <span class="custom-checkbox__fake-checkbox">
                             <span class="custom-checkbox__fake-checkbox__icon icon icon-check"></span>
                         </span>
-                        <?
+                        <?php
                         $linkOne = '<a target="_blank" href="https://payment.payolution.com/payolution-payment/infoport/agb?mId=CQ0KU21hcnRtYXh4IEdtYkg==\'"
                                         onclick="window.open(\'https://payment.payolution.com/payolution-payment/infoport/agb?mId=CQ0KU21hcnRtYXh4IEdtYkg==\',\'popup\', \'width=750,height=750,statusbar=no,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=0,menubar=no,status=no\'); return false">'
                             . $this->translate('payment-method-prepayment.agb') .

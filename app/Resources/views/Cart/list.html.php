@@ -199,12 +199,12 @@ $cart = $this->cart;
                         <div class="panel-body">
                             <form class="col-xs-12 form-inline" id="add-voucher-form" action="<?= $this->pimcoreUrl(array('action' => 'add-voucher'), 'cart') ?>">
                                 <div class="form-group">
-                                    <input type="text" name="voucherToken" class="form-control" value="<? if ($this->voucherError) { ?><?=$this->getParam('voucherToken')?><?}?>">
+                                    <input type="text" name="voucherToken" class="form-control" value="<?php if ($this->voucherError) { ?><?=$this->getParam('voucherToken')?><?php } ?>">
                                 </div>
                                 <button class="btn btn-primary btn-sm" type="submit"><span class="glyphicon glyphicon-plus"></span></button>
-                                <? if ($this->voucherError) { ?>
+                                <?php if ($this->voucherError) { ?>
                                     <div style="margin-top: 20px" class="alert alert-danger js-fadeout"><?= $this->voucherError ?></div>
-                                <? } ?>
+                                <?php } ?>
                             </form>
                         </div>
 

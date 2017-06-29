@@ -32,7 +32,7 @@
 <div class="panel-group payment-accordion"
      data-generate-redirect-url="<?= $_SERVER["REQUEST_SCHEME"] ?>://<?=$_SERVER["HTTP_HOST"]?>/<?= ltrim($this->pimcoreUrl(['controller' => "paymentSeamless",'action'=>'get-wirecard-redirect-url'],'action',true),'/')?>"
      id="checkout-accordion" role="tablist" aria-multiselectable="true">
-    <? foreach ($this->paymentMethods as $paymentMethod => $options) {
+    <?php foreach ($this->paymentMethods as $paymentMethod => $options) {
         if (is_array($this->config['disabledPaymentMethods']) and in_array($paymentMethod, $this->config['disabledPaymentMethods'])) {
             continue;
         }
@@ -44,9 +44,9 @@
                 <div class="panel-heading" role="tab">
                     <div class=" row">
                         <div class="col col-sm-3">
-                            <? if ($icon = $options->icon) { ?>
+                            <?php if ($icon = $options->icon) { ?>
                                 <img src="<?= $icon ?>" width="100" class="wirecard-payment-icon"/>
-                            <? } ?>
+                            <?php } ?>
                         </div>
                         <div class="col col-sm-9">
                             <h4 class="panel-title">
@@ -59,9 +59,9 @@
             </a>
 
             <div id="collapse<?= $paymentMethod ?>" class="panel-collapseN collapse" role="tabpanel">
-                <? if ($options->partial) { ?>
+                <?php if ($options->partial) { ?>
                     <?= $this->template($options->partial) ?>
-                <? } else { ?>
+                <?php } else { ?>
                     <div class="panel-body">
                         <div class="checkout-dropdown wirecard-checkout-dropdown">
                             <form>
@@ -72,9 +72,9 @@
                             </form>
                         </div>
                     </div>
-                <? } ?>
+                <?php } ?>
             </div>
         </div>
-    <? } ?>
+    <?php } ?>
 
 </div>

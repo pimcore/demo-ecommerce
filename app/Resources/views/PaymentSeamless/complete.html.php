@@ -27,9 +27,9 @@ $state = $this->getParam('state');
 
 
 <script type="text/javascript">
-    <?if($isCommited) {?>
+    <?php if($isCommited) {?>
     window.open('<?= $_SERVER["REQUEST_SCHEME"] ?>://<?=$_SERVER['HTTP_HOST']?><?= $this->pimcoreUrl(['action' => 'completed', 'controller' => 'checkout', 'id' => $this->order->getId(),'prefix'=>$this->language], 'action', true)?>', '_top');
-    <?}?>
+    <?php } ?>
 </script>
 
 
@@ -60,8 +60,7 @@ $state = $this->getParam('state');
                     <ul>
                         <?php for ($i = 1; $i <= $seamlessResponse['errors']; $i++) { ?>
                             <li><?= $seamlessResponse['error_' . $i . '_consumerMessage'] ?></li>
-                        <?
-                        } ?>
+                        <?php } ?>
                     </ul>
                 </div>
             <?php }
