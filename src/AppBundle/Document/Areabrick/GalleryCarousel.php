@@ -12,10 +12,7 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\Document\Areabrick;
-
-
 
 class GalleryCarousel extends AbstractAreabrick
 {

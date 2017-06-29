@@ -12,7 +12,6 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\Controller;
 
 use Pimcore\Bundle\EcommerceFrameworkBundle\Factory;
@@ -23,7 +22,6 @@ use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
 
 class QuickCheckoutController extends AbstractCartAware
 {
-
     /**
      * @var string
      */
@@ -43,31 +41,32 @@ class QuickCheckoutController extends AbstractCartAware
         $placeholder = $this->get('pimcore.templating.view_helper.placeholder');
 
         $placeholder('addBreadcrumb')->append([
-            'parentId' => $this->document->getId()
-            , 'id' => "cart"
-            , 'label' => $translator->trans("general.mycart")
-            , 'url' => $this->generateUrl('cart', ["action" => "list"])
-        ]);
-        $placeholder('addBreadcrumb')->append([
-            'parentId' => "cart"
-            , 'id' => "checkout"
-            , 'label' => $translator->trans("general.checkout")
+            'parentId' => $this->document->getId(),
+            'id' => 'cart',
+            'label' => $translator->trans('general.mycart'),
+            'url' => $this->generateUrl('cart', ['action' => 'list'])
         ]);
 
+        $placeholder('addBreadcrumb')->append([
+            'parentId' => 'cart',
+            'id' => 'checkout',
+            'label' => $translator->trans('general.checkout')
+        ]);
 
         $this->view->cart = $this->getCart('cart', $event->getRequest());
 
         //setting current checkout tenant to masterpass and saving currently set entry to reset later on
         $environment = Factory::getInstance()->getEnvironment();
-        $environment->setCurrentCheckoutTenant("masterpass", false);
-
+        $environment->setCurrentCheckoutTenant('masterpass', false);
     }
 
-    protected function getCart($cartName = 'cart', Request $request = null) {
-        if($request && $request->get("cartName") == "quickCheckout") {
-            $this->view->cartName = "quickCheckout";
-            $this->cartName = "quickCheckout";
-            return parent::getCart("quickCheckout");
+    protected function getCart($cartName = 'cart', Request $request = null)
+    {
+        if ($request && $request->get('cartName') == 'quickCheckout') {
+            $this->view->cartName = 'quickCheckout';
+            $this->cartName = 'quickCheckout';
+
+            return parent::getCart('quickCheckout');
         } else {
             return parent::getCart($cartName);
         }
@@ -82,8 +81,8 @@ class QuickCheckoutController extends AbstractCartAware
         $checkoutManager = Factory::getInstance()->getCheckoutManager($this->view->cart);
 
         $language = substr($request->getLocale(), 0, 2);
-        if($checkoutManager->hasActivePayment()) {
-            return $this->redirect($this->generateUrl('action', ["controller" => "quickCheckout", "action" => "payment", "prefix" => $language, 'cartName' => $this->cartName]));
+        if ($checkoutManager->hasActivePayment()) {
+            return $this->redirect($this->generateUrl('action', ['controller' => 'quickCheckout', 'action' => 'payment', 'prefix' => $language, 'cartName' => $this->cartName]));
         }
 
         // init
@@ -92,17 +91,17 @@ class QuickCheckoutController extends AbstractCartAware
         $this->view->showSummary = true;
 
         //if cart empty, redirect to cart list
-        if(count($cart->getItems()) == 0) {
-            return $this->redirect( $this->generateUrl('cart', ['action' => 'list']) );
+        if (count($cart->getItems()) == 0) {
+            return $this->redirect($this->generateUrl('cart', ['action' => 'list']));
         }
 
-        $checkoutManager = Factory::getInstance()->getCheckoutManager( $cart );
+        $checkoutManager = Factory::getInstance()->getCheckoutManager($cart);
 
         $payment = $checkoutManager->getPayment();
 
         // check errors
-        $this->view->errors = array();
-        if($request->get('error') != '') {
+        $this->view->errors = [];
+        if ($request->get('error') != '') {
             $this->view->errors = explode(',', $request->get('error'));
         }
 
@@ -112,28 +111,24 @@ class QuickCheckoutController extends AbstractCartAware
         $trackingManager->trackCheckoutStep($confirmStep, $cart, 2);
 
         // go to payment
-        if($request->getMethod() == 'POST')
-        {
-
-            if($request->get('agb-accepted') && $request->get('email'))
-            {
+        if ($request->getMethod() == 'POST') {
+            if ($request->get('agb-accepted') && $request->get('email')) {
                 $checkoutManager->commitStep($confirmStep, strip_tags($request->get('email')));
 
-                if($payment) {
-                    return $this->redirect($this->generateUrl('action', ["controller" => "quickCheckout", "action" => "payment", "prefix" => $language, 'cartName' => $this->cartName]));
+                if ($payment) {
+                    return $this->redirect($this->generateUrl('action', ['controller' => 'quickCheckout', 'action' => 'payment', 'prefix' => $language, 'cartName' => $this->cartName]));
                 } else {
                     $order = $checkoutManager->commitOrder();
                 }
-            }
-            else
-            {
+            } else {
                 $this->view->errors[] = 'terms';
                 $this->view->errors[] = 'email';
             }
         }
     }
 
-    public function paymentAction(Request $request) {
+    public function paymentAction(Request $request)
+    {
         $this->view->currentStep = 'payment';
 
         $cart = $this->getCart('cart', $request);
@@ -145,48 +140,45 @@ class QuickCheckoutController extends AbstractCartAware
         $trackingManager->trackCheckoutStep($paymentStep, $cart, 3, 'payment');
     }
 
-    public function paymentFrameAction(Request $request) {
-
+    public function paymentFrameAction(Request $request)
+    {
         $language = substr($request->getLocale(), 0, 2);
 
         // init
         $cart = $this->getCart('cart', $request);
-        $checkoutManager = Factory::getInstance()->getCheckoutManager( $cart );
+        $checkoutManager = Factory::getInstance()->getCheckoutManager($cart);
 
-        if($checkoutManager->isCommitted()) {
-            throw new \Exception("Cart already committed");
+        if ($checkoutManager->isCommitted()) {
+            throw new \Exception('Cart already committed');
         }
 
         $paymentInformation = $checkoutManager->startOrderPayment();
         $payment = $checkoutManager->getPayment();
 
         // payment config
-        if($payment instanceof QPay)
-        {
+        if ($payment instanceof QPay) {
             // qpay masterpass
-            $url = $_SERVER["REQUEST_SCHEME"] . '://'. $_SERVER["HTTP_HOST"] . $this->generateUrl('action', ["controller" => "quickCheckout", "action" => "payment-status", "prefix" => $language, 'cartName' => $this->cartName]) . "&mode=";
+            $url = $_SERVER['REQUEST_SCHEME'] . '://'. $_SERVER['HTTP_HOST'] . $this->generateUrl('action', ['controller' => 'quickCheckout', 'action' => 'payment-status', 'prefix' => $language, 'cartName' => $this->cartName]) . '&mode=';
             $config = [
-                'language' => $language
-                , 'successURL' => $url . 'success'
-                , 'cancelURL' => $url . 'cancel'
-                , 'failureURL' => $url . 'failure'
-                , 'serviceURL' => $url . 'service'
-                , 'confirmURL' => $_SERVER["REQUEST_SCHEME"] . '://'. $_SERVER["HTTP_HOST"] . $this->generateUrl('action', ["controller" => "handle-payment", "action" => "server-side-q-pay", "prefix" => $language, 'checkouttenant' => 'masterpass', 'elementsclientauth' => 'disabled'])
-                , 'confirmMail' => "christian.fasching@pimcore.com"
-                , 'orderDescription' => 'My Order at pimcore.org with MASTERPASS'
-                , 'imageURL' => 'https://www.pimcore.org/static/css/skins/default/logo.png'
-                , 'orderIdent' => $paymentInformation->getInternalPaymentId()
+                'language' => $language,
+                'successURL' => $url . 'success',
+                'cancelURL' => $url . 'cancel',
+                'failureURL' => $url . 'failure',
+                'serviceURL' => $url . 'service',
+                'confirmURL' => $_SERVER['REQUEST_SCHEME'] . '://'. $_SERVER['HTTP_HOST'] . $this->generateUrl('action', ['controller' => 'handle-payment', 'action' => 'server-side-q-pay', 'prefix' => $language, 'checkouttenant' => 'masterpass', 'elementsclientauth' => 'disabled']),
+                'confirmMail' => 'christian.fasching@pimcore.com',
+                'orderDescription' => 'My Order at pimcore.org with MASTERPASS',
+                'imageURL' => 'https://www.pimcore.org/static/css/skins/default/logo.png',
+                'orderIdent' => $paymentInformation->getInternalPaymentId()
             ];
-            $payment->setPaymentType("MASTERPASS");
-        }
-        else
-        {
-            throw new \Exception("Unknown Payment configured.");
+
+            $payment->setPaymentType('MASTERPASS');
+        } else {
+            throw new \Exception('Unknown Payment configured.');
         }
 
         // init payment
         $this->view->payment = $payment->initPayment($cart->getPriceCalculator()->getGrandTotal(), $config);
-
     }
 
     /**
@@ -202,21 +194,18 @@ class QuickCheckoutController extends AbstractCartAware
         $cart = $this->getCart('cart', $request);
         $checkoutManager = Factory::getInstance()->getCheckoutManager($cart);
 
-        if($request->get('mode') == "cancel") {
+        if ($request->get('mode') == 'cancel') {
             try {
                 $checkoutManager->cancelStartedOrderPayment();
             } catch (\Exception $e) {
                 //it seems that payment already canceled due to server side call.
             }
-            $paramsBag['goto'] = $this->generateUrl('action', ["controller" => "quickCheckout", "action" => "confirm", "prefix" => $language, 'cartName' => $this->cartName, "error" => strip_tags($request->get('mode'))]);
-
+            $paramsBag['goto'] = $this->generateUrl('action', ['controller' => 'quickCheckout', 'action' => 'confirm', 'prefix' => $language, 'cartName' => $this->cartName, 'error' => strip_tags($request->get('mode'))]);
         } else {
-
             $params = array_merge($request->query->all(), $request->request->all());
 
-            try
-            {
-                $order = $checkoutManager->handlePaymentResponseAndCommitOrderPayment( $params );
+            try {
+                $order = $checkoutManager->handlePaymentResponseAndCommitOrderPayment($params);
 
                 // optional to clear payment
                 // if this call is necessary depends on payment provider and configuration.
@@ -226,23 +215,18 @@ class QuickCheckoutController extends AbstractCartAware
 //            $orderAgent = Factory::getInstance()->getOrderManager()->createOrderAgent($order);
 //            $orderAgent->updatePayment($paymentStatus);
 
-                if($order && $order->getOrderState() == $order::ORDER_STATE_COMMITTED) {
-                    $paramsBag['goto'] = $this->generateUrl('action', ["controller" => "quickCheckout", "action" => "completed", "prefix" => $language, "id" => $order->getId()]);
+                if ($order && $order->getOrderState() == $order::ORDER_STATE_COMMITTED) {
+                    $paramsBag['goto'] = $this->generateUrl('action', ['controller' => 'quickCheckout', 'action' => 'completed', 'prefix' => $language, 'id' => $order->getId()]);
                 } else {
-                    $paramsBag['goto'] = $this->generateUrl('action', ["controller" => "quickCheckout", "action" => "confirm", "prefix" => $language, "error" => strip_tags($request->get('mode')), 'cartName' => $this->cartName]);
+                    $paramsBag['goto'] = $this->generateUrl('action', ['controller' => 'quickCheckout', 'action' => 'confirm', 'prefix' => $language, 'error' => strip_tags($request->get('mode')), 'cartName' => $this->cartName]);
                 }
-
+            } catch (\Exception $e) {
+                $paramsBag['goto'] = $this->generateUrl('action', ['controller' => 'quickCheckout', 'action' => 'confirm', 'prefix' => $language, 'error' => $e->getMessage(), 'cartName' => $this->cartName]);
             }
-            catch(\Exception $e)
-            {
-                $paramsBag['goto'] = $this->generateUrl('action', ["controller" => "quickCheckout", "action" => "confirm", "prefix" => $language, "error" => $e->getMessage(), 'cartName' => $this->cartName]);
-            }
-
         }
 
         return $this->render(':Payment:paymentStatus.html.php', $paramsBag);
     }
-
 
     /**
      * order completed
@@ -250,12 +234,10 @@ class QuickCheckoutController extends AbstractCartAware
     public function completedAction(Request $request)
     {
         // init
-        $order = OnlineShopOrder::getById( $request->get('id') );
+        $order = OnlineShopOrder::getById($request->get('id'));
         $this->view->order = $order;
 
         $trackingManager = Factory::getInstance()->getTrackingManager();
         $trackingManager->trackCheckoutComplete($order);
-
     }
-
 }

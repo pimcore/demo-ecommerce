@@ -12,7 +12,6 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
@@ -39,6 +38,5 @@ class AppExtension extends Extension
         );
 
         $loader->load('services.yml');
-
     }
 }

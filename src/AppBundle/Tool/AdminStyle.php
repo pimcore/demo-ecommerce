@@ -12,21 +12,21 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\Tool;
 
 use Pimcore\Model\Object\AbstractObject;
 use Pimcore\Model\Object\Product;
 
-class AdminStyle extends \Pimcore\Model\Element\AdminStyle {
-
-    public function __construct($element) {
+class AdminStyle extends \Pimcore\Model\Element\AdminStyle
+{
+    public function __construct($element)
+    {
         parent::__construct($element);
 
-        if($element instanceof Product) {
+        if ($element instanceof Product) {
             $backup = AbstractObject::doGetInheritedValues($element);
             AbstractObject::setGetInheritedValues(true);
-            if($element->getParent() instanceof Product) {
+            if ($element->getParent() instanceof Product) {
                 $this->elementIcon = '/pimcore/static6/img/icon/tag_green.png';
                 $this->elementIconClass = null;
             } else {
@@ -36,5 +36,4 @@ class AdminStyle extends \Pimcore\Model\Element\AdminStyle {
             AbstractObject::setGetInheritedValues($backup);
         }
     }
-
 }

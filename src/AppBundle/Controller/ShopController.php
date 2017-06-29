@@ -12,7 +12,6 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\Controller;
 
 use AppBundle\Ecommerce\Tool\RecentlyViewedProducts;
@@ -31,8 +30,8 @@ use Zend\Paginator\Paginator;
 
 class ShopController extends AbstractController
 {
-
-    public function onKernelController(FilterControllerEvent $event) {
+    public function onKernelController(FilterControllerEvent $event)
+    {
         parent::onKernelController($event);
         $this->view->category = ShopCategory::getById($event->getRequest()->get('category'));
     }
@@ -46,29 +45,27 @@ class ShopController extends AbstractController
 
         //check if layout should not be included
         $this->view->showLayout = true;
-        if($request->get('noLayout')) {
+        if ($request->get('noLayout')) {
             $this->view->showLayout = false;
         }
 
-        $params["parentCategoryIds"] = $params['category'];
+        $params['parentCategoryIds'] = $params['category'];
 
         $category = ShopCategory::getById($params['category']);
 
         // load current filter
-        if($category) {
+        if ($category) {
             $filterDefinition = $category->getFilterdefinition();
         }
 
-        if($request->get("filterdefinition") instanceof \Pimcore\Model\Object\FilterDefinition) {
-            $filterDefinition = $request->get("filterdefinition");
+        if ($request->get('filterdefinition') instanceof \Pimcore\Model\Object\FilterDefinition) {
+            $filterDefinition = $request->get('filterdefinition');
         }
 
-
-        if(empty($filterDefinition)) {
+        if (empty($filterDefinition)) {
             $filterDefinition = \Pimcore\Config::getWebsiteConfig()->fallbackFilterdefinition;
         }
         $this->view->filterDefinitionObject = $filterDefinition;
-
 
         // create product list
         $products = Factory::getInstance()->getIndexService()->getProductListForCurrentTenant();
@@ -79,117 +76,112 @@ class ShopController extends AbstractController
         // create and init filter service
         $filterService = Factory::getInstance()->getFilterService();
 
-
         Helper::setupProductList($filterDefinition, $products, $params, $this->view, $filterService, true);
         $this->view->filterService = $filterService;
 
-
         // init pagination
         $paginator = new Paginator($products);
-        $paginator->setCurrentPageNumber( $request->get('page') );
-        $paginator->setItemCountPerPage( $filterDefinition->getPageLimit() );
+        $paginator->setCurrentPageNumber($request->get('page'));
+        $paginator->setItemCountPerPage($filterDefinition->getPageLimit());
         $paginator->setPageRange(5);
         $this->view->paginator = $paginator;
 
         $trackingManager = Factory::getInstance()->getTrackingManager();
-        foreach($paginator as $product) {
+        foreach ($paginator as $product) {
             $trackingManager->trackProductImpression($product);
         }
 
         //breadcrumbs
-        if($category) {
+        if ($category) {
             $parentCategories = $category->getParentCategoryList(null, $this->document);
             $parentCategories[] = $category;
-            foreach($parentCategories as $parentCategory) {
-
+            foreach ($parentCategories as $parentCategory) {
                 $placeholder = $this->get('pimcore.templating.view_helper.placeholder');
                 $placeholder('addBreadcrumb')->append([
-                    'parentId' => "category-" . $parentCategory->getParentId()
-                    , 'id' => "category-" . $parentCategory->getId()
-                    , 'url' => $parentCategory->getDetailUrl(["document" => $this->document])
-                    , 'label' => $parentCategory->getName()
+                    'parentId' => 'category-' . $parentCategory->getParentId(),
+                    'id' => 'category-' . $parentCategory->getId(),
+                    'url' => $parentCategory->getDetailUrl(['document' => $this->document]),
+                    'label' => $parentCategory->getName()
                 ]);
             }
 
             $headTitle = $this->get('pimcore.templating.view_helper.head_title');
             $headTitle($category->getName());
         }
-
     }
-
 
     /**
      * show product detail page
      */
-    public function detailAction(Request $request) {
+    public function detailAction(Request $request)
+    {
 
         // load product
         /**
          * @var $product Product
          */
-        $product = DefaultProduct::getById($request->get("product"));
-        if(!$product || !$product->isActive()) {
-            throw new NotFoundHttpException("die gewünschte Seite existiert nicht mehr");
+        $product = DefaultProduct::getById($request->get('product'));
+        if (!$product || !$product->isActive()) {
+            throw new NotFoundHttpException('die gewünschte Seite existiert nicht mehr');
         }
         $this->view->product = $product;
 
-        $category = ProductCategory::getById($request->get("category"));
+        $category = ProductCategory::getById($request->get('category'));
 
         // ...
-        $this->view->specificationOutputChannel =  Service::getOutputDataConfig($product, "productdetail_specification");
+        $this->view->specificationOutputChannel = Service::getOutputDataConfig($product, 'productdetail_specification');
         $this->view->hasSpec = false;
-        foreach($this->view->specificationOutputChannel as $x) {
-            if($x->getLabeledValue($product)) {
+        foreach ($this->view->specificationOutputChannel as $x) {
+            if ($x->getLabeledValue($product)) {
                 $this->view->hasSpec = true;
                 break;
             }
         }
 
         // recently viewed products
-        $recently = new RecentlyViewedProducts( Factory::getInstance()->getEnvironment(), function($id) {
+        $recently = new RecentlyViewedProducts(Factory::getInstance()->getEnvironment(), function ($id) {
             return DefaultProduct::getById($id);
         });
 
         $sizeVariants = $product->getSizeVariants();
-        if(empty($sizeVariants)) {
+        if (empty($sizeVariants)) {
             $linkProduct = $product;
         } else {
             $tmp = array_values($sizeVariants);
             $linkProduct = array_shift($tmp);
         }
-        $this->view->recentlyViewed = $recently->addProduct( $linkProduct )->getProducts(4);
+        $this->view->recentlyViewed = $recently->addProduct($linkProduct)->getProducts(4);
 
         $filterdefinition = null;
-        if($category) {
+        if ($category) {
             $filterdefinition = $category->getFilterdefinition();
         }
-        if(empty($filterdefinition)) {
+        if (empty($filterdefinition)) {
             $filterdefinition = \Pimcore\Config::getWebsiteConfig()->fallbackFilterdefinition;
         }
         $this->view->similarProducts = $this->getSimilarProducts($product, $filterdefinition);
 
-
         //breadcrumbs
         $category = $product->getFirstCategory();
         $placeholder = $this->get('pimcore.templating.view_helper.placeholder');
-        if($category) {
+        if ($category) {
             $parentCategories = $category->getParentCategoryList(null, $this->document);
             $parentCategories[] = $category;
-            foreach($parentCategories as $index => $parentCategory) {
+            foreach ($parentCategories as $index => $parentCategory) {
                 $placeholder('addBreadcrumb')->append([
-                    'parentId' => "category-" . $parentCategory->getParentId()
-                    , 'id' => "category-" . $parentCategory->getId()
-                    , 'url' => $parentCategory->getDetailUrl(["document" => $this->document])
-                    , 'label' => $parentCategory->getName()
+                    'parentId' => 'category-' . $parentCategory->getParentId(),
+                    'id' => 'category-' . $parentCategory->getId(),
+                    'url' => $parentCategory->getDetailUrl(['document' => $this->document]),
+                    'label' => $parentCategory->getName()
                 ]);
             }
         }
 
         $placeholder('addBreadcrumb')->append([
-            'parentId' => $category ? "category-" . $category->getParentId() : ""
-            , 'id' => "product-" . $product->getId()
-            , 'url' => $product->getDetailUrl(["document" => $this->document])
-            , 'label' => $product->getName()
+            'parentId' => $category ? 'category-' . $category->getParentId() : '',
+            'id' => 'product-' . $product->getId(),
+            'url' => $product->getDetailUrl(['document' => $this->document]),
+            'label' => $product->getName()
         ]);
 
         $headTitle = $this->get('pimcore.templating.view_helper.head_title');
@@ -199,24 +191,22 @@ class ShopController extends AbstractController
         $trackingManager->trackProductView($product);
     }
 
-
-    private function getSimilarProducts(DefaultProduct $product, \Pimcore\Model\Object\FilterDefinition $filterDefinition = null) {
-
-        if($filterDefinition) {
-
-            $productList = Factory::getInstance()->getIndexService()->getProductListForCurrentTenant();;
+    private function getSimilarProducts(DefaultProduct $product, \Pimcore\Model\Object\FilterDefinition $filterDefinition = null)
+    {
+        if ($filterDefinition) {
+            $productList = Factory::getInstance()->getIndexService()->getProductListForCurrentTenant();
             $productList->setVariantMode(IProductList::VARIANT_MODE_INCLUDE_PARENT_OBJECT);
 
             $similarityFields = $filterDefinition->getSimilarityFields();
-            if($similarityFields) {
+            if ($similarityFields) {
                 $statement = $productList->buildSimularityOrderBy($filterDefinition->getSimilarityFields(), $product->getId());
             }
 
-            if(!empty($statement)) {
+            if (!empty($statement)) {
                 $productList->setLimit(4);
-                $productList->setOrder("ASC");
-                $productList->addCondition("o_virtualProductId != " . $product->internalGetBaseProduct()->getId(), "o_id");
-                if($filterDefinition->getCrossSellingCategory()) {
+                $productList->setOrder('ASC');
+                $productList->addCondition('o_virtualProductId != ' . $product->internalGetBaseProduct()->getId(), 'o_id');
+                if ($filterDefinition->getCrossSellingCategory()) {
                     $productList->setCategory($filterDefinition->getCrossSellingCategory());
                 }
                 $productList->setOrderKey($statement);
@@ -224,41 +214,41 @@ class ShopController extends AbstractController
                 return $productList->load();
             }
         }
-        return array();
 
+        return [];
     }
 
-
-
-    public function productCellAction(Request $request) {
+    public function productCellAction(Request $request)
+    {
         $paramsBag = [];
-        if($request->get("type") == "object") {
-            $product = \Pimcore\Model\Object\Product::getById($request->get("id"));
+        if ($request->get('type') == 'object') {
+            $product = \Pimcore\Model\Object\Product::getById($request->get('id'));
 
             $paramsBag['product'] = $product;
-            $paramsBag['col'] = $request->get("editmode") ? 12 : 3;
+            $paramsBag['col'] = $request->get('editmode') ? 12 : 3;
             $paramsBag['language'] = $this->view->language;
 
             $trackingManager = Factory::getInstance()->getTrackingManager();
             $trackingManager->trackProductImpression($product);
         }
+
         return $this->render(':Shop/list:product.html.php', $paramsBag);
     }
 
-
-    public function searchAction(Request $request) {
+    public function searchAction(Request $request)
+    {
         $this->view->hideNav = true;
 
-        $productList = Factory::getInstance()->getIndexService()->getProductListForCurrentTenant();;
+        $productList = Factory::getInstance()->getIndexService()->getProductListForCurrentTenant();
         $productList->setVariantMode(IProductList::VARIANT_MODE_INCLUDE_PARENT_OBJECT);
-        if($request->get("term")) {
-            foreach(explode(" ", $request->get("term")) as $term) {
-                $productList->addQueryCondition($term, "search");
+        if ($request->get('term')) {
+            foreach (explode(' ', $request->get('term')) as $term) {
+                $productList->addQueryCondition($term, 'search');
             }
         }
 
         $params = $request->query->all();
-        if(empty($filterDefinition)) {
+        if (empty($filterDefinition)) {
             $filterDefinition = \Pimcore\Config::getWebsiteConfig()->searchFilterdefinition;
         }
         $this->view->filterDefinitionObject = $filterDefinition;
@@ -272,13 +262,13 @@ class ShopController extends AbstractController
 
         // init pagination
         $paginator = new Paginator($productList);
-        $paginator->setCurrentPageNumber( $request->get('page') );
-        $paginator->setItemCountPerPage( $filterDefinition->getPageLimit() );
+        $paginator->setCurrentPageNumber($request->get('page'));
+        $paginator->setItemCountPerPage($filterDefinition->getPageLimit());
         $paginator->setPageRange(10);
         $this->view->paginator = $paginator;
 
         $trackingManager = Factory::getInstance()->getTrackingManager();
-        foreach($paginator as $product) {
+        foreach ($paginator as $product) {
             $trackingManager->trackProductImpression($product);
         }
 
@@ -287,14 +277,12 @@ class ShopController extends AbstractController
         //breadcrumbs
         $placeholder = $this->get('pimcore.templating.view_helper.placeholder');
         $placeholder('addBreadcrumb')->append([
-            'parentId' => $this->document->getId()
-            , 'id' => "search-result"
-            , 'label' => $translator->trans("shop.search-result", [$request->get("term")])
+            'parentId' => $this->document->getId(),
+            'id' => 'search-result',
+            'label' => $translator->trans('shop.search-result', [$request->get('term')])
         ]);
 
         $headTitle = $this->get('pimcore.templating.view_helper.head_title');
-        $headTitle( $translator->trans("shop.search-result", [$request->get("term")]) );
-
+        $headTitle($translator->trans('shop.search-result', [$request->get('term')]));
     }
-
 }

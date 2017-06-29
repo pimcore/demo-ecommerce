@@ -12,37 +12,39 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\Tool;
 
 use Pimcore\Model\Object\Product;
 
 class SizeSort
 {
-    static $order = array(
-        's0' => "XXXS",
-        's1' => "XXS",
-        's2' => "XS",
+    public static $order = [
+        's0' => 'XXXS',
+        's1' => 'XXS',
+        's2' => 'XS',
         's3' => 'S',
         's4' => 'M',
         's5' => 'L',
         's6' => 'XL',
         's7' => 'XXL'
-    );
+    ];
 
     /**
      * @static
+     *
      * @param Product\Listing $unorderedSizes
+     *
      * @return array;
      */
-    public static function sort($unorderedSizes) {
-        $unorderedArray = array();
-        $orphanSizes = array();
+    public static function sort($unorderedSizes)
+    {
+        $unorderedArray = [];
+        $orphanSizes = [];
 
         foreach ($unorderedSizes as $unorderedSize) {
             $size = trim($unorderedSize->getSize());
 
-            if(is_numeric($size)) {
+            if (is_numeric($size)) {
                 $unorderedArray[$size] = $unorderedSize;
             } else {
                 if ($size = array_search(strtoupper($size), self::$order)) {

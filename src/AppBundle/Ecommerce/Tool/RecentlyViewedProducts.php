@@ -12,9 +12,7 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\Ecommerce\Tool;
-
 
 use Pimcore\Bundle\EcommerceFrameworkBundle\IEnvironment;
 use Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractProduct;
@@ -44,17 +42,15 @@ class RecentlyViewedProducts
      */
     protected $loadProduct;
 
-
     /**
      * @param IEnvironment $env
      * @param callable                          $loadProduct
      */
-    public function __construct( IEnvironment $env, \closure $loadProduct )
+    public function __construct(IEnvironment $env, \closure $loadProduct)
     {
         $this->env = $env;
         $this->loadProduct = $loadProduct;
     }
-
 
     /**
      * @param int $maxCount
@@ -96,15 +92,14 @@ class RecentlyViewedProducts
         return $this->namespace;
     }
 
-
     /**
      * @return array
      */
     protected function getList()
     {
-        $recentlyViewed = $this->env->getCustomItem( $this->getNamespace() );
+        $recentlyViewed = $this->env->getCustomItem($this->getNamespace());
         if (!$recentlyViewed) {
-            $recentlyViewed = array();
+            $recentlyViewed = [];
         }
 
         return $recentlyViewed;
@@ -123,7 +118,6 @@ class RecentlyViewedProducts
         return $this;
     }
 
-
     /**
      * @param AbstractProduct $product
      *
@@ -135,29 +129,25 @@ class RecentlyViewedProducts
         $list = $this->getList();
 
         // exists?
-        if(($pos = array_search($product->getId(), $list)) > 0)
-        {
+        if (($pos = array_search($product->getId(), $list)) > 0) {
             unset($list[$pos]);
         }
 
         // add
-        if(!in_array($product->getId(), $list))
-        {
+        if (!in_array($product->getId(), $list)) {
             array_unshift($list, $product->getId());
         }
 
         // limit?
-        if(count($list) > $this->getMaxCount())
-        {
+        if (count($list) > $this->getMaxCount()) {
             array_pop($list);
         }
 
         // save
-        $this->saveList( $list );
+        $this->saveList($list);
 
         return $this;
     }
-
 
     /**
      * @param int $count
@@ -168,13 +158,12 @@ class RecentlyViewedProducts
     {
         // init
         $loader = $this->loadProduct;
-        $products = array();
+        $products = [];
 
         // load products
-        $list = array_slice( $this->getList(), 1, $count);
-        foreach($list as $id)
-        {
-            $products[] = $loader( $id );
+        $list = array_slice($this->getList(), 1, $count);
+        foreach ($list as $id) {
+            $products[] = $loader($id);
         }
 
         return $products;

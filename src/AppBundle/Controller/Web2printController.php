@@ -12,27 +12,24 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\Controller;
 
-
+use AppBundle\Model\DefaultProduct;
 use Pimcore\Model\Object\Product;
 use Symfony\Component\HttpFoundation\Request;
-use AppBundle\Model\DefaultProduct;
 
 class Web2printController extends AbstractController
 {
-
     public function defaultAction(Request $request)
     {
-        foreach($request->attributes as $key => $value) {
+        foreach ($request->attributes as $key => $value) {
             $this->view->$key = $value;
         }
     }
 
     public function containerAction(Request $request)
     {
-        foreach($request->attributes as $key => $value) {
+        foreach ($request->attributes as $key => $value) {
             $this->view->$key = $value;
         }
 
@@ -41,16 +38,17 @@ class Web2printController extends AbstractController
         $this->view->allChildren = $allChildren;
     }
 
-    public function productCellAction(Request $request) {
-        $product = Product::getById($request->get("id"));
-        if($product instanceof DefaultProduct) {
+    public function productCellAction(Request $request)
+    {
+        $product = Product::getById($request->get('id'));
+        if ($product instanceof DefaultProduct) {
             $this->view->product = $product->internalGetBaseProduct();
 
             $colorVariants = $product->getColorVariants();
             $sizes = [];
-            foreach($colorVariants as $colorVariant) {
+            foreach ($colorVariants as $colorVariant) {
                 $sizeVariants = $colorVariant->getSizeVariants();
-                foreach($sizeVariants as $sizeVariant) {
+                foreach ($sizeVariants as $sizeVariant) {
                     $sizes[] = $sizeVariant->getSize();
                 }
             }
@@ -58,6 +56,5 @@ class Web2printController extends AbstractController
             $this->view->colorVariants = $colorVariants;
             $this->view->sizes = array_unique($sizes);
         }
-
     }
 }

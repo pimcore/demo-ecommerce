@@ -12,7 +12,6 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\Controller;
 
 use Pimcore\Bundle\EcommerceFrameworkBundle\Factory;
@@ -38,23 +37,22 @@ class PaymentController extends AbstractCartAware
         $translator = $this->get('translator');
         $placeholder = $this->get('pimcore.templating.view_helper.placeholder');
 
+        $placeholder('addBreadcrumb')->append([
+            'parentId' => $this->document->getId(),
+            'id' => 'cart',
+            'label' => $translator->trans('general.mycart'),
+            'url' => $this->generateUrl('cart', ['action' => 'list'])
+        ]);
 
         $placeholder('addBreadcrumb')->append([
-            'parentId' => $this->document->getId()
-            , 'id' => "cart"
-            , 'label' => $translator->trans("general.mycart")
-            , 'url' => $this->generateUrl('cart', ["action" => "list"])
-        ]);
-        $placeholder('addBreadcrumb')->append([
-            'parentId' => "cart"
-            , 'id' => "checkout"
-            , 'label' => $translator->trans("general.checkout")
+            'parentId' => 'cart',
+            'id' => 'checkout',
+            'label' => $translator->trans('general.checkout')
         ]);
 
         $cart = $this->getCart();
         $this->view->cart = $cart;
     }
-
 
     /**
      * payment page with iframe
@@ -70,12 +68,10 @@ class PaymentController extends AbstractCartAware
         $trackingManager->trackCheckoutStep($paymentStep, $this->getCart(), 3, 'payment');
 
         //needed for sidebar
-        $checkoutManager = Factory::getInstance()->getCheckoutManager( $this->getCart() );
+        $checkoutManager = Factory::getInstance()->getCheckoutManager($this->getCart());
         $deliveryAddress = $checkoutManager->getCheckoutStep('deliveryaddress');
         $this->view->deliveryAddress = $deliveryAddress;
-
     }
-
 
     /**
      * payment iframe
@@ -84,87 +80,78 @@ class PaymentController extends AbstractCartAware
     {
         // init
         $cart = $this->getCart();
-        $checkoutManager = Factory::getInstance()->getCheckoutManager( $cart );
+        $checkoutManager = Factory::getInstance()->getCheckoutManager($cart);
 
-        if($checkoutManager->isCommitted()) {
-            throw new \Exception("Cart already committed");
+        if ($checkoutManager->isCommitted()) {
+            throw new \Exception('Cart already committed');
         }
 
         $paymentInformation = $checkoutManager->startOrderPayment();
         $payment = $checkoutManager->getPayment();
 
-
         $language = substr($request->getLocale(), 0, 2);
 
         // payment config
-        if($payment instanceof WirecardSeamless)
-        {
+        if ($payment instanceof WirecardSeamless) {
             // wirecard seamless
             $config = [
-                'view' => $this->view, 
+                'view' => $this->view,
                 'orderIdent' => $paymentInformation->getInternalPaymentId()
             ];
-        }
-        else if($payment instanceof QPay)
-        {
+        } elseif ($payment instanceof QPay) {
             // wirecard
-            $url = $_SERVER["REQUEST_SCHEME"] . '://'. $_SERVER["HTTP_HOST"] . $this->generateUrl('action', ["controller" => "payment", "action" => "payment-status", "prefix" => $language]) . "?mode=";
+            $url = $_SERVER['REQUEST_SCHEME'] . '://'. $_SERVER['HTTP_HOST'] . $this->generateUrl('action', ['controller' => 'payment', 'action' => 'payment-status', 'prefix' => $language]) . '?mode=';
+
             $config = [
-                'language' => $language
-                , 'successURL' => $url . 'success'
-                , 'cancelURL' => $url . 'cancel'
-                , 'failureURL' => $url . 'failure'
-                , 'serviceURL' => $url . 'service'
-                , 'confirmURL' => $_SERVER["REQUEST_SCHEME"] . '://'. $_SERVER["HTTP_HOST"] . $this->generateUrl('action', ["controller" => "handle-payment", "action" => "server-side-q-pay", "prefix" => $language, 'elementsclientauth' => 'disabled'])
-                , 'confirmMail' => "christian.fasching@pimcore.com"
-                , 'orderDescription' => 'My Order at pimcore.org'
-                , 'imageURL' => 'https://www.pimcore.org/static/css/skins/default/logo.png'
-                , 'orderIdent' => $paymentInformation->getInternalPaymentId()
+                'language' => $language,
+                'successURL' => $url . 'success',
+                'cancelURL' => $url . 'cancel',
+                'failureURL' => $url . 'failure',
+                'serviceURL' => $url . 'service',
+                'confirmURL' => $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $this->generateUrl('action', ['controller' => 'handle-payment', 'action' => 'server-side-q-pay', 'prefix' => $language, 'elementsclientauth' => 'disabled']),
+                'confirmMail' => 'christian.fasching@pimcore.com',
+                'orderDescription' => 'My Order at pimcore.org',
+                'imageURL' => 'https://www.pimcore.org/static/css/skins/default/logo.png',
+                'orderIdent' => $paymentInformation->getInternalPaymentId()
             ];
-        }
-        else if($payment instanceof PayPal)
-        {
+        } elseif ($payment instanceof PayPal) {
             // paypal
-            $returnUrl = $_SERVER["REQUEST_SCHEME"] . '://'. $_SERVER["HTTP_HOST"] . $this->generateUrl('action', ["controller" => "payment", "action" => "payment-status", "mode" => "success", "prefix" => $language]);
-            $cancelUrl = $_SERVER["REQUEST_SCHEME"] . '://'. $_SERVER["HTTP_HOST"] . $this->generateUrl('checkout', ["action" => "payment", "error" => "cancel", "language" => $language]) . "?mode=";
+            $returnUrl = $_SERVER['REQUEST_SCHEME'] . '://'. $_SERVER['HTTP_HOST'] . $this->generateUrl('action', ['controller' => 'payment', 'action' => 'payment-status', 'mode' => 'success', 'prefix' => $language]);
+            $cancelUrl = $_SERVER['REQUEST_SCHEME'] . '://'. $_SERVER['HTTP_HOST'] . $this->generateUrl('checkout', ['action' => 'payment', 'error' => 'cancel', 'language' => $language]) . '?mode=';
+
             $config = [
-                'ReturnURL' => $returnUrl
-                , 'CancelURL' => $cancelUrl . 'payment?error=cancel'
-                , 'OrderDescription' => 'My Order at pimcore.org'
-                , 'cpp-header-image' => '111b25'
-                , 'cpp-header-border-color' => '111b25'
-                , 'cpp-payflow-color' => 'f5f5f5'
-                , 'cpp-cart-border-color' => 'f5f5f5'
-                , 'cpp-logo-image' => $_SERVER["REQUEST_SCHEME"] . '://'. $_SERVER["HTTP_HOST"] . '/static/images/logo_paypal.png'
-                , 'InvoiceID' => $paymentInformation->getInternalPaymentId()
+                'ReturnURL' => $returnUrl,
+                'CancelURL' => $cancelUrl . 'payment?error=cancel',
+                'OrderDescription' => 'My Order at pimcore.org',
+                'cpp-header-image' => '111b25',
+                'cpp-header-border-color' => '111b25',
+                'cpp-payflow-color' => 'f5f5f5',
+                'cpp-cart-border-color' => 'f5f5f5',
+                'cpp-logo-image' => $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . '/static/images/logo_paypal.png',
+                'InvoiceID' => $paymentInformation->getInternalPaymentId()
             ];
-        }
-        else if($payment instanceof Datatrans)
-        {
+        } elseif ($payment instanceof Datatrans) {
             // datatrans
-            $url = $_SERVER["REQUEST_SCHEME"] . '://'. $_SERVER["HTTP_HOST"] . $this->generateUrl('action', ["controller" => "payment", "action" => "payment-status", "prefix" => $language]) . "?mode=";
+            $url = $_SERVER['REQUEST_SCHEME'] . '://'. $_SERVER['HTTP_HOST'] . $this->generateUrl('action', ['controller' => 'payment', 'action' => 'payment-status', 'prefix' => $language]) . '?mode=';
             $config = [
                 // checkout config
-                'language' => $language
-                , 'refno' => $paymentInformation->getInternalPaymentId()
-                , 'useAlias' => true
-                , 'reqtype' => 'CAA'    // payment direkt ausführen
+                'language' => $language,
+                'refno' => $paymentInformation->getInternalPaymentId(),
+                'useAlias' => true,
+                'reqtype' => 'CAA', // payment direkt ausführen
 
                 // system
-                , 'successUrl' => $url . 'success'
-                , 'errorUrl' => $url . 'error'
-                , 'cancelUrl' => $url . 'cancel'
+                'successUrl' => $url . 'success',
+                'errorUrl' => $url . 'error',
+                'cancelUrl' => $url . 'cancel'
             ];
-        }
-        else
-        {
-            throw new \Exception("Unknown Payment configured.");
+        } else {
+            throw new \Exception('Unknown Payment configured.');
         }
 
         // init payment
         $this->view->payment = $payment->initPayment($cart->getPriceCalculator()->getGrandTotal(), $config);
     }
-
 
     /**
      * got response from payment provider
@@ -177,19 +164,20 @@ class PaymentController extends AbstractCartAware
 
         $language = substr($request->getLocale(), 0, 2);
 
-        if($request->get('mode') == "cancel") {
-
+        if ($request->get('mode') == 'cancel') {
             try {
                 $checkoutManager->cancelStartedOrderPayment();
             } catch (\Exception $e) {
                 //it seems that payment already canceled due to server side call.
             }
 
-            $this->view->goto = $this->generateUrl('checkout', ["action" => "confirm", "language" => $language, "error" => strip_tags($request->get('mode'))]);
+            $this->view->goto = $this->generateUrl('checkout', ['action' => 'confirm', 'language' => $language, 'error' => strip_tags($request->get('mode'))]);
+
             return;
         }
-        if($request->get('mode') == "pending") {
-            $this->view->goto = $this->generateUrl('checkout', ["action" => "pending", "language" => $language]);
+        if ($request->get('mode') == 'pending') {
+            $this->view->goto = $this->generateUrl('checkout', ['action' => 'pending', 'language' => $language]);
+
             return;
         }
 
@@ -197,16 +185,14 @@ class PaymentController extends AbstractCartAware
 
         // add additional data for paypal
         $payment = $checkoutManager->getPayment();
-        if($payment instanceof PayPal)
-        {
+        if ($payment instanceof PayPal) {
             $price = $cart->getPriceCalculator()->getGrandTotal();
             $params['amount'] = $price->getAmount();
             $params['currency'] = $price->getCurrency()->getShortName();
         }
 
-        try
-        {
-            $order = $checkoutManager->handlePaymentResponseAndCommitOrderPayment( $params );
+        try {
+            $order = $checkoutManager->handlePaymentResponseAndCommitOrderPayment($params);
 
             // optional to clear payment
             // if this call is necessary depends on payment provider and configuration.
@@ -216,19 +202,15 @@ class PaymentController extends AbstractCartAware
 //            $orderAgent = Factory::getInstance()->getOrderManager()->createOrderAgent($order);
 //            $orderAgent->updatePayment($paymentStatus);
 
-            if($order && $order->getOrderState() == $order::ORDER_STATE_COMMITTED) {
-                $this->view->goto = $this->generateUrl('checkout', ["action" => "completed", "language" => $language, "id" => $order->getId()]);
+            if ($order && $order->getOrderState() == $order::ORDER_STATE_COMMITTED) {
+                $this->view->goto = $this->generateUrl('checkout', ['action' => 'completed', 'language' => $language, 'id' => $order->getId()]);
             } else {
-                $this->view->goto = $this->generateUrl('checkout', ["action" => "confirm", "language" => $language, "error" => strip_tags($request->get('mode'))]);
+                $this->view->goto = $this->generateUrl('checkout', ['action' => 'confirm', 'language' => $language, 'error' => strip_tags($request->get('mode'))]);
             }
+        } catch (\Exception $e) {
+            $this->view->goto = $this->generateUrl('checkout', ['action' => 'confirm', 'language' => $language, 'error' => $e->getMessage()]);
 
-        }
-        catch(\Exception $e)
-        {
-            $this->view->goto = $this->generateUrl('checkout', ["action" => "confirm", "language" => $language, "error" => $e->getMessage()]);
             return;
         }
-
     }
-
 }

@@ -12,33 +12,28 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\Ecommerce\Demo\IndexService\Getter;
-
 
 use Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\IGetter;
 
-class GenderGetter implements IGetter {
-
-    public static function get( $object, $config = null) {
-
-
-        if ( $object->isFemaleProduct() ) {
-            return array('w');
+class GenderGetter implements IGetter
+{
+    public static function get($object, $config = null)
+    {
+        if ($object->isFemaleProduct()) {
+            return ['w'];
         }
 
         $genders = $object->getGender();
-        if ( $genders ){
+        if ($genders) {
             $men = in_array('m', $genders);
-            $women =  in_array('w', $genders);
-            if ( $men && $women){
-                $genders[ array_search('w', $genders)] = 'm';
-
+            $women = in_array('w', $genders);
+            if ($men && $women) {
+                $genders[array_search('w', $genders)] = 'm';
             }
             $genders = array_unique($genders);
+
             return $genders;
         }
-
     }
-
 }

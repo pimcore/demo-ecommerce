@@ -12,14 +12,12 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\EventListener;
 
 use Pimcore\Event\Model\ObjectEvent;
 
 class TestListener
 {
-
     /**
      * @param ObjectEvent $event
      */

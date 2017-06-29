@@ -12,7 +12,6 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\Ecommerce\Order;
 
 use Pimcore\Bundle\EcommerceFrameworkBundle\CheckoutManager\CommitOrderProcessor;
@@ -22,23 +21,24 @@ class Processor extends CommitOrderProcessor
 {
     /**
      * save individually data
+     *
      * @param AbstractOrder $order
      */
     protected function processOrder(AbstractOrder $order)
     {
 
         //nothing to do here
-
     }
 
-    protected function sendConfirmationMail(AbstractOrder $order) {
-        $params = array();
-        $params["order"] = $order;
-        $params["ordernumber"] = $order->getOrdernumber();
+    protected function sendConfirmationMail(AbstractOrder $order)
+    {
+        $params = [];
+        $params['order'] = $order;
+        $params['ordernumber'] = $order->getOrdernumber();
 
         $email = $order->getCustomerEmail();
 
-        $mail = new \Pimcore\Mail(array("document" => $this->confirmationMail, "params" => $params));
+        $mail = new \Pimcore\Mail(['document' => $this->confirmationMail, 'params' => $params]);
         $mail->addTo($email);
         $mail->send();
     }

@@ -12,15 +12,13 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\Ecommerce\Tracking;
-
 
 use Pimcore\Bundle\EcommerceFrameworkBundle\Model\IProduct;
 use Symfony\Component\HttpFoundation\Request;
 
-class TrackingItemBuilder extends \Pimcore\Bundle\EcommerceFrameworkBundle\Tracking\TrackingItemBuilder {
-
+class TrackingItemBuilder extends \Pimcore\Bundle\EcommerceFrameworkBundle\Tracking\TrackingItemBuilder
+{
     /**
      * @var Request
      */
@@ -36,6 +34,7 @@ class TrackingItemBuilder extends \Pimcore\Bundle\EcommerceFrameworkBundle\Track
     }
 
     private static $impressionPosition = 0;
+
     public function buildProductImpressionItem(IProduct $product)
     {
         $item = parent::buildProductImpressionItem($product);
@@ -53,25 +52,29 @@ class TrackingItemBuilder extends \Pimcore\Bundle\EcommerceFrameworkBundle\Track
     /**
      * Get Product Impression list name.
      * i.e.: shop - list, shop - search
+     *
      * @return string
      */
     protected function getImpressionListName()
     {
         $request = $this->getCurrentRequest();
         $controller = $request->attributes->get('_controller');
-        $controller = explode(":", $controller);
-        return $controller[1] . " - " . $controller[2];
+        $controller = explode(':', $controller);
+
+        return $controller[1] . ' - ' . $controller[2];
     }
 
-    public function getCurrentRequest() {
-        if(empty($this->request)) {
-            $this->request = \Pimcore::getContainer()->get("request_stack")->getCurrentRequest();
+    public function getCurrentRequest()
+    {
+        if (empty($this->request)) {
+            $this->request = \Pimcore::getContainer()->get('request_stack')->getCurrentRequest();
         }
+
         return $this->request;
     }
 
-    public function setCurrentRequest(Request $request) {
+    public function setCurrentRequest(Request $request)
+    {
         $this->request = $request;
     }
-
 }

@@ -12,7 +12,6 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\Controller;
 
 use Pimcore\Bundle\EcommerceFrameworkBundle\CartManager\ICart;
@@ -21,7 +20,6 @@ use Symfony\Component\HttpFoundation\Request;
 
 abstract class AbstractCartAware extends AbstractController
 {
-
     /**
      * @param string $cartName
      *
@@ -41,14 +39,12 @@ abstract class AbstractCartAware extends AbstractController
         $cart = $manager->getCartByName($cartName);
 
         // create new cart if not exists
-        if(!$cart)
-        {
-            $cartId = $manager->createCart(array('name' => $cartName));
-            $cart = $manager->getCart( $cartId );
+        if (!$cart) {
+            $cartId = $manager->createCart(['name' => $cartName]);
+            $cart = $manager->getCart($cartId);
         }
 
         // done :-)
         return $cart;
     }
-
 }

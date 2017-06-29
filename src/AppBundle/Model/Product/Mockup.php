@@ -12,14 +12,12 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\Model\Product;
 
 use Pimcore\Bundle\EcommerceFrameworkBundle\Model\DefaultMockup;
 use Pimcore\Bundle\EcommerceFrameworkBundle\Model\ICheckoutable;
 
-class Mockup extends DefaultMockup implements ICheckoutable {
-
+class Mockup extends DefaultMockup implements ICheckoutable
+{
     use \AppBundle\Model\Product\TraitClasses\Checkoutable;
-
 }

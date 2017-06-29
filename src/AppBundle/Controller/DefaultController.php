@@ -12,7 +12,6 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
@@ -25,5 +24,4 @@ class DefaultController extends AbstractController
     public function defaultAction(Request $request)
     {
     }
-
 }

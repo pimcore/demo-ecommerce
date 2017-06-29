@@ -12,7 +12,6 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\Templating\Helper;
 
 use Symfony\Component\Templating\Helper\Helper;

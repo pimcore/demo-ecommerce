@@ -12,55 +12,62 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\Model\Product\TraitClasses;
 
 use Pimcore\Bundle\EcommerceFrameworkBundle\AvailabilitySystem\IAvailability;
 use Pimcore\Bundle\EcommerceFrameworkBundle\Factory;
 
-trait Checkoutable {
-
+trait Checkoutable
+{
     /**
      * @return mixed
      */
-    public function getOSName() {
+    public function getOSName()
+    {
         return $this->getName();
     }
 
     /**
      * @param int $quantityScale
+     *
      * @return \Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\IPrice
      */
-    public function getOSPrice($quantityScale = 1) {
+    public function getOSPrice($quantityScale = 1)
+    {
         return $this->getOSPriceInfo($quantityScale)->getPrice();
     }
 
     /**
      * @return string
      */
-    public function getPriceSystemName() {
+    public function getPriceSystemName()
+    {
         return 'default';
     }
 
     /**
      * @return \Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\IPriceSystem
      */
-    public function getPriceSystemImplementation() {
+    public function getPriceSystemImplementation()
+    {
         return Factory::getInstance()->getPriceSystem($this->getPriceSystemName());
     }
 
     /**
      * @param int $quantityScale
+     *
      * @return \Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\IPriceInfo
      */
-    public function getOSPriceInfo($quantityScale = 1) {
+    public function getOSPriceInfo($quantityScale = 1)
+    {
         return $this->getPriceSystemImplementation()->getPriceInfo($this, $quantityScale, null);
     }
 
     /**
      * @return int
      */
-    public function getOSProductNumber() {
+    public function getOSProductNumber()
+    {
         return $this->getId();
     }
 
@@ -69,19 +76,20 @@ trait Checkoutable {
      */
     public function getAvailabilitySystemName()
     {
-        return "default";
+        return 'default';
     }
 
     /**
      * @param int $quantityScale
+     *
      * @return bool
      */
     public function getOSIsBookable($quantityScale = 1)
     {
         $price = $this->getOSPrice($quantityScale);
+
         return !empty($price) && $this->isActive();
     }
-
 
     /**
      * @return \Pimcore\Bundle\EcommerceFrameworkBundle\AvailabilitySystem\IAvailabilitySystem
@@ -95,13 +103,13 @@ trait Checkoutable {
      * returns availability info based on given quantity
      *
      * @param int $quantity
+     *
      * @return IAvailability
      */
     public function getOSAvailabilityInfo($quantity = null)
     {
         return $this->getAvailabilitySystemImplementation()->getAvailabilityInfo($this, $quantity);
     }
-
 
     /**
      * @param array      $params
@@ -113,83 +121,84 @@ trait Checkoutable {
     public function getDetailUrl(array $params = [], $route = 'shop-detail', $reset = true)
     {
         // add id
-        if(!array_key_exists('product', $params))
-        {
+        if (!array_key_exists('product', $params)) {
             $params['product'] = $this->getId();
         }
 
         //add prefix / by default language/shop
-        if(!array_key_exists('prefix', $params))
-        {
-            if($params["document"]) {
-                $params["prefix"] = substr($params["document"]->getFullPath(), 1);
+        if (!array_key_exists('prefix', $params)) {
+            if ($params['document']) {
+                $params['prefix'] = substr($params['document']->getFullPath(), 1);
             } else {
                 $language = \Pimcore::getContainer()->get('request_stack')->getCurrentRequest()->getLocale();
-                $params['prefix'] =  substr($language, 0, 2) . "/shop";
+                $params['prefix'] = substr($language, 0, 2) . '/shop';
             }
         }
 
         // add name
-        if(!array_key_exists('name', $params))
-        {
+        if (!array_key_exists('name', $params)) {
             // add category path
             $category = $this->getFirstCategory();
-            if($category) {
+            if ($category) {
                 $path = $category->getNavigationPath($params['rootCategory'], $params['document']);
                 $params['name'] = $path;
             }
 
             // add name
-            $name = \Pimcore\File::getValidFilename( $this->getOSName() );
-            $params['name'] .= preg_replace('#-{2,}#','-', $name);
+            $name = \Pimcore\File::getValidFilename($this->getOSName());
+            $params['name'] .= preg_replace('#-{2,}#', '-', $name);
         }
 
-        unset($params["rootCategory"]);
-        unset($params["document"]);
+        unset($params['rootCategory']);
+        unset($params['document']);
 
         // create url
         $urlHelper = \Pimcore::getContainer()->get('pimcore.templating.view_helper.pimcore_url');
+
         return $urlHelper($params, $route, $reset);
     }
 
-
     /**
      * @param string $thumbnail thumbnail name configured in the Pimcore admin
+     *
      * @return string|null
      */
-    public function getFirstImage($thumbnail) {
+    public function getFirstImage($thumbnail)
+    {
         $firstImageAsset = $this->getFirstImageAsset();
-        if($firstImageAsset) {
+        if ($firstImageAsset) {
             return $firstImageAsset->getThumbnail($thumbnail);
         }
+
         return null;
     }
 
-
     /**
      * @param $view
+     *
      * @return array
      */
-    public function getHeroAttributes($view) {
+    public function getHeroAttributes($view)
+    {
         $heroAttributes = [];
-        if($this->getArtno()) {
-            $heroAttributes[] = "<strong>" . $view->translate("shop.sku") . ":</strong> " . $this->getArtno();
+        if ($this->getArtno()) {
+            $heroAttributes[] = '<strong>' . $view->translate('shop.sku') . ':</strong> ' . $this->getArtno();
         }
-        if($this->getEan()) {
-            $heroAttributes[] = "<strong>" . $view->translate("shop.ean") . ":</strong> " . $this->getEan();
+        if ($this->getEan()) {
+            $heroAttributes[] = '<strong>' . $view->translate('shop.ean') . ':</strong> ' . $this->getEan();
         }
-        if($this->getSize() && $this->getSize() != " ") {
-            $heroAttributes[] = "<strong>" . $view->translate("shop.size") . ":</strong> " . $this->getSize();
+        if ($this->getSize() && $this->getSize() != ' ') {
+            $heroAttributes[] = '<strong>' . $view->translate('shop.size') . ':</strong> ' . $this->getSize();
         }
-        if($this->getColor()) {
+        if ($this->getColor()) {
             $colors = $this->getColor();
-            $translatedColors = array();
-            foreach($colors as $c) {
-                $translatedColors[] = $view->translate("optionvalue." . $c);
+            $translatedColors = [];
+            foreach ($colors as $c) {
+                $translatedColors[] = $view->translate('optionvalue.' . $c);
             }
-            $heroAttributes[] = "<strong>" . $view->translate("shop.color") . ":</strong> " .  implode(", ", $translatedColors);
+            $heroAttributes[] = '<strong>' . $view->translate('shop.color') . ':</strong> ' .  implode(', ', $translatedColors);
         }
+
         return $heroAttributes;
     }
-
 }

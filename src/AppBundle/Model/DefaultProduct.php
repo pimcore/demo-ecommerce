@@ -12,49 +12,53 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\Model;
 
+use AppBundle\Model\Product\TraitClasses\Checkoutable;
+use AppBundle\Tool\AdminStyle;
+use AppBundle\Tool\SizeSort;
 use Pimcore\Cache;
 use Pimcore\Model\Object\AbstractObject;
 use Pimcore\Model\Object\Folder;
 use Pimcore\Model\Object\Product;
-use AppBundle\Tool\AdminStyle;
-use AppBundle\Model\Product\TraitClasses\Checkoutable;
-use AppBundle\Tool\SizeSort;
 
-class DefaultProduct extends Product {
-
+class DefaultProduct extends Product
+{
     use Checkoutable;
 
-    public function getElementAdminStyle() {
+    public function getElementAdminStyle()
+    {
         if (!$this->o_elementAdminStyle) {
             $this->o_elementAdminStyle = new AdminStyle($this);
         }
+
         return $this->o_elementAdminStyle;
     }
 
-    public function save() {
+    public function save()
+    {
         parent::save();
 
-        Cache::clearTag("object_" . $this->internalGetBaseProduct()->getId());
+        Cache::clearTag('object_' . $this->internalGetBaseProduct()->getId());
     }
 
-
-    public function isActive($inProductList = false) {
+    public function isActive($inProductList = false)
+    {
         return $this->isPublished();
     }
 
-    public function getOSDoIndexProduct() {
-        if($this->getType() == "object" && $this->getParent() instanceof Product) {
+    public function getOSDoIndexProduct()
+    {
+        if ($this->getType() == 'object' && $this->getParent() instanceof Product) {
             return false;
         } else {
             return true;
         }
     }
 
-    public function getOSParentId() {
-        if($this->getType() == "variant" && $this->getParent()->getParent() instanceof Product) {
+    public function getOSParentId()
+    {
+        if ($this->getType() == 'variant' && $this->getParent()->getParent() instanceof Product) {
             return $this->getParent()->getParent()->getId();
         } elseif ($this->getParent() instanceof Product) {
             return parent::getOSParentId();
@@ -63,52 +67,56 @@ class DefaultProduct extends Product {
         }
     }
 
-    protected $prices = array();
+    protected $prices = [];
 
     /**
      * Returns an array on min and max price for a product based on all it's children
      *
      * @param string $priceType (new|old)
+     *
      * @return array|int|null
      */
-    public function getPriceRange($priceType = 'new') {
-        if(!array_key_exists($priceType, $this->prices)) {
+    public function getPriceRange($priceType = 'new')
+    {
+        if (!array_key_exists($priceType, $this->prices)) {
             $method = $priceType == 'new' ? 'getPrice' : 'getPriceOld';
-            if($this->isVariant()) {
+            if ($this->isVariant()) {
                 return $this->$method();
             } else {
-                $prices = array();
+                $prices = [];
 
                 $colorSizeVariants = $this->internalGetSizeVariants();
-                foreach($colorSizeVariants as $sizeVariants) {
-                    foreach($sizeVariants as $sizeVariant) {
+                foreach ($colorSizeVariants as $sizeVariants) {
+                    foreach ($sizeVariants as $sizeVariant) {
                         $prices[] = $sizeVariant->$method();
                     }
                 }
                 if ($prices) {
                     $min = min($prices);
                     $max = max($prices);
-                    if($min == $max) {
+                    if ($min == $max) {
                         $this->prices[$priceType] = $min;
                     } else {
-                        $this->prices[$priceType] = array('min' => $min, 'max' => $max);
+                        $this->prices[$priceType] = ['min' => $min, 'max' => $max];
                     }
                 } else {
                     $this->prices[$priceType] = null;
                 }
             }
         }
-        return $this->prices[$priceType];
 
+        return $this->prices[$priceType];
     }
 
     /**
      * @return \Pimcore\Model\Asset\Image|null
      */
-    public function getFirstImageAsset() {
+    public function getFirstImageAsset()
+    {
         $images = $this->getImages();
         if ($images->items[0] && $images->items[0]->getImage()) {
             $firstImage = $images->items[0]->getImage();
+
             return $firstImage;
         } elseif (\Pimcore\Config::getWebsiteConfig()->fallbackImage) {
             return \Pimcore\Config::getWebsiteConfig()->fallbackImage;
@@ -122,51 +130,54 @@ class DefaultProduct extends Product {
      *
      * @return \AppBundle\Model\DefaultProduct
      */
-    public function getLinkProduct() {
+    public function getLinkProduct()
+    {
         $firstSizeVariants = $this->getColorVariants(true);
-        if(count($firstSizeVariants) == 0)
-        {
+        if (count($firstSizeVariants) == 0) {
             // no variants
             return $this;
-        }
-        else
-        {
+        } else {
             return $firstSizeVariants[0];
         }
     }
 
-
     /**
      * Returns concatenated category names for product
+     *
      * @param bool $seo to suppress seo name, default is true and returns the seo name if available
+     *
      * @return string
      */
-    public function getCategoriesText( $seo = true) {
+    public function getCategoriesText($seo = true)
+    {
         $categories = $this->getCategories();
-        $categoriesArray = array();
+        $categoriesArray = [];
         foreach ($categories as $item) {
-            $categoriesArray[] = ( $item->getSeoname() && $seo) ? $item->getSeoname() : $item->getName();
+            $categoriesArray[] = ($item->getSeoname() && $seo) ? $item->getSeoname() : $item->getName();
         }
-        return implode(',' , $categoriesArray);
+
+        return implode(',', $categoriesArray);
     }
 
-    public function getMainMaterialText() {
-        $mainMaterials = $this->getMaterialComposition() ? $this->getMaterialComposition() : array();
-        $mainMaterialsArray = array();
+    public function getMainMaterialText()
+    {
+        $mainMaterials = $this->getMaterialComposition() ? $this->getMaterialComposition() : [];
+        $mainMaterialsArray = [];
         foreach ($mainMaterials as $item) {
             if ($item->getPercent()) {
                 $mainMaterialsArray[] = $item->getPercent() . '% ' . $item->getObject()->getName();
             } else {
                 $mainMaterialsArray[] = $item->getObject()->getName();
             }
-
         }
+
         return implode(',', $mainMaterialsArray);
     }
 
-    public function getSecondaryMaterialText() {
-        $secondaryMaterials = $this->getSecondaryMaterialComposition() ? $this->getSecondaryMaterialComposition() : array() ;
-        $secondaryMaterialsArray = array();
+    public function getSecondaryMaterialText()
+    {
+        $secondaryMaterials = $this->getSecondaryMaterialComposition() ? $this->getSecondaryMaterialComposition() : [] ;
+        $secondaryMaterialsArray = [];
         foreach ($secondaryMaterials as $item) {
             if ($item->getPercent()) {
                 $secondaryMaterialsArray[] = $item->getPercent() . '% ' .$item->getObject()->getName();
@@ -174,11 +185,13 @@ class DefaultProduct extends Product {
                 $secondaryMaterialsArray[] = $item->getObject()->getName();
             }
         }
+
         return implode(',', $secondaryMaterialsArray);
     }
 
-    public function getCanonicalId() {
-        if($this->isVariant() ) {
+    public function getCanonicalId()
+    {
+        if ($this->isVariant()) {
             return $this->getParent()->getCanonicalId();
         } else {
             return $this->getId();
@@ -189,25 +202,26 @@ class DefaultProduct extends Product {
      * Returns the first size variant for all color variants (or just the color variants) of a product regardless if it's the main product or already a color variant
      *
      * @param $withSize switch the color with ot without the first size variant
+     *
      * @return \AppBundle\Model\DefaultProduct[]
      */
-    public function getColorVariants($withSize = true) {
-        if($withSize) {
-            $firstSizeVariants = array();
-            foreach($this->internalGetFirstSizeVariants() as $id => $sizeVariant) {
-                if($sizeVariant) {
+    public function getColorVariants($withSize = true)
+    {
+        if ($withSize) {
+            $firstSizeVariants = [];
+            foreach ($this->internalGetFirstSizeVariants() as $id => $sizeVariant) {
+                if ($sizeVariant) {
                     $firstSizeVariants[] = $sizeVariant;
                 } else {
                     $firstSizeVariants[] = AbstractObject::getById($id);
                 }
             }
+
             return $firstSizeVariants;
         } else {
             return $this->internalGetColorVariants();
         }
-
     }
-
 
     public $baseProduct = null;
     public $baseColorVariant = null;
@@ -215,101 +229,109 @@ class DefaultProduct extends Product {
     public $firstSizeVariants = null;
     private $sizeVariants = null;
 
-    protected function fillBaseProducts() {
-        if(!$this->isVariant()) {
+    protected function fillBaseProducts()
+    {
+        if (!$this->isVariant()) {
             $this->baseProduct = $this;
             $this->baseColorVariant = null;
-        } elseif($this->getType() == AbstractObject::OBJECT_TYPE_OBJECT) {
+        } elseif ($this->getType() == AbstractObject::OBJECT_TYPE_OBJECT) {
             $this->baseProduct = $this->getParent();
             $this->baseColorVariant = $this;
-        } elseif($this->getType() == AbstractObject::OBJECT_TYPE_VARIANT && $this->getParent()->getType() == AbstractObject::OBJECT_TYPE_OBJECT) {
+        } elseif ($this->getType() == AbstractObject::OBJECT_TYPE_VARIANT && $this->getParent()->getType() == AbstractObject::OBJECT_TYPE_OBJECT) {
             $this->baseColorVariant = $this->getParent();
             $this->baseProduct = $this->getParent()->getParent();
         } else {
-            throw new \Exception("Invalid Product Tree with object " . $this->getId());
+            throw new \Exception('Invalid Product Tree with object ' . $this->getId());
         }
     }
 
-    protected function fillVariants() {
-
+    protected function fillVariants()
+    {
         $this->fillBaseProducts();
 
         $this->colorVariants = $this->internalGetColorVariants();
-        $this->firstSizeVariants = array();
-        if(!empty($this->colorVariants)) {
-            foreach($this->colorVariants as $colorVariant) {
-                $children = $colorVariant->getChildren((array(AbstractObject::OBJECT_TYPE_VARIANT)));
+        $this->firstSizeVariants = [];
+        if (!empty($this->colorVariants)) {
+            foreach ($this->colorVariants as $colorVariant) {
+                $children = $colorVariant->getChildren(([AbstractObject::OBJECT_TYPE_VARIANT]));
                 $this->firstSizeVariants[$colorVariant->getId()] = $children[0];
             }
         }
     }
 
-    public function internalGetBaseProduct() {
-        if(empty($this->baseProduct)) {
+    public function internalGetBaseProduct()
+    {
+        if (empty($this->baseProduct)) {
             $this->fillVariants();
         }
+
         return $this->baseProduct;
     }
 
-    protected function internalGetColorVariants() {
-        if($this->colorVariants === null) {
-            $this->colorVariants = $this->internalGetBaseProduct()->getChildren(array(AbstractObject::OBJECT_TYPE_OBJECT));
+    protected function internalGetColorVariants()
+    {
+        if ($this->colorVariants === null) {
+            $this->colorVariants = $this->internalGetBaseProduct()->getChildren([AbstractObject::OBJECT_TYPE_OBJECT]);
         }
+
         return $this->colorVariants;
     }
 
-    protected function internalGetSizeVariants() {
-        if($this->sizeVariants === null) {
-            $this->sizeVariants = array();
-            if(!empty($this->colorVariants)) {
-                foreach($this->colorVariants as $colorVariant) {
-                    $this->sizeVariants[$colorVariant->getId()] = $colorVariant->getChildren((array(AbstractObject::OBJECT_TYPE_VARIANT)));
+    protected function internalGetSizeVariants()
+    {
+        if ($this->sizeVariants === null) {
+            $this->sizeVariants = [];
+            if (!empty($this->colorVariants)) {
+                foreach ($this->colorVariants as $colorVariant) {
+                    $this->sizeVariants[$colorVariant->getId()] = $colorVariant->getChildren(([AbstractObject::OBJECT_TYPE_VARIANT]));
                 }
             }
         }
+
         return $this->sizeVariants;
     }
 
-
-    protected function internalGetFirstSizeVariants() {
-        if($this->firstSizeVariants === null) {
+    protected function internalGetFirstSizeVariants()
+    {
+        if ($this->firstSizeVariants === null) {
             $this->fillVariants();
         }
+
         return $this->firstSizeVariants;
     }
 
-    public function getBaseColorVariant() { 
-        if(empty($this->baseColorVariant)) {
+    public function getBaseColorVariant()
+    {
+        if (empty($this->baseColorVariant)) {
             $this->fillVariants();
         }
+
         return $this->baseColorVariant;
     }
-
 
     /**
      * Returns size variants for a product regardless if it's the main product, a color child or a size variant
      *
      * @return \AppBundle\Model\DefaultProduct[]|null
      */
-    public function getSizeVariants() {
-
-        if(empty($this->baseProduct)) {
+    public function getSizeVariants()
+    {
+        if (empty($this->baseProduct)) {
             $this->fillBaseProducts();
         }
 
-        if($this->baseColorVariant) {
+        if ($this->baseColorVariant) {
             $list = new Product\Listing();
-            $list->setCondition("o_parentId = ?", $this->baseColorVariant->getId());
-            $list->setObjectTypes(array(AbstractObject::OBJECT_TYPE_VARIANT));
-            $list->setOrderKey("size");
-            $list->setOrder("ASC");
+            $list->setCondition('o_parentId = ?', $this->baseColorVariant->getId());
+            $list->setObjectTypes([AbstractObject::OBJECT_TYPE_VARIANT]);
+            $list->setOrderKey('size');
+            $list->setOrder('ASC');
+
             return SizeSort::sort($list->load());
         } else {
-            return array();
+            return [];
         }
-
     }
-
 
     protected $isVariant = null;
 
@@ -318,25 +340,28 @@ class DefaultProduct extends Product {
      *
      * @return bool
      */
-    public function isVariant() {
-        if($this->isVariant === null) {
-            if($this->getType() == "object" && $this->getParent() instanceof Folder) {
+    public function isVariant()
+    {
+        if ($this->isVariant === null) {
+            if ($this->getType() == 'object' && $this->getParent() instanceof Folder) {
                 $this->isVariant = false;
             } else {
                 $this->isVariant = true;
             }
         }
+
         return $this->isVariant;
     }
 
-
-    public function hasTechnologyAttributes() {
+    public function hasTechnologyAttributes()
+    {
         return $this->getMainMaterialText() || $this->getSecondaryMaterialText() || $this->getFeatures();
     }
 
-    public function getFirstCategory() {
-        if($categories = $this->getCategories()) {
-            foreach($categories as $cat) {
+    public function getFirstCategory()
+    {
+        if ($categories = $this->getCategories()) {
+            foreach ($categories as $cat) {
                 return $cat;
             }
         }
@@ -346,24 +371,24 @@ class DefaultProduct extends Product {
      * enables inheritance for field collections, if xxxInheritance field is available and set to string 'true'
      *
      * @param string $key
+     *
      * @return mixed|\Pimcore\Model\Object\Fieldcollection
      */
-    public function preGetValue($key) {
-
+    public function preGetValue($key)
+    {
         if ($this->getClass()->getAllowInherit()
             && AbstractObject::doGetInheritedValues()
             && $this->getClass()->getFieldDefinition($key) instanceof \Pimcore\Model\Object\ClassDefinition\Data\Fieldcollections
         ) {
-
-            $checkInheritanceKey = $key . "Inheritance";
+            $checkInheritanceKey = $key . 'Inheritance';
             if ($this->{
                 'get' . $checkInheritanceKey
-                }() == "true"
+                }() == 'true'
             ) {
                 $parentValue = $this->getValueFromParent($key);
                 $data = $this->$key;
-                if(!$data) {
-                    $data = $this->getClass()->getFieldDefinition($key)->preGetData($this);;
+                if (!$data) {
+                    $data = $this->getClass()->getFieldDefinition($key)->preGetData($this);
                 }
                 if (!$data) {
                     return $parentValue;
@@ -374,6 +399,7 @@ class DefaultProduct extends Product {
                             $value->add($entry);
                         }
                     }
+
                     return $value;
                 }
             }
@@ -381,5 +407,4 @@ class DefaultProduct extends Product {
 
         return parent::preGetValue($key);
     }
-
 }

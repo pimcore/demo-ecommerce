@@ -12,7 +12,6 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 namespace AppBundle\Document\Areabrick;
 
 use Pimcore\Model\Document\Tag\Area\Info;
@@ -33,8 +32,7 @@ class Productgrid extends AbstractAreabrick
         /**
          * @var $filterDefinition FilterDefinition
          */
-        $filterDefinition = $this->getDocumentTag($info->getDocument(), 'href', 'productFilter')->getElement();;
+        $filterDefinition = $this->getDocumentTag($info->getDocument(), 'href', 'productFilter')->getElement();
         $info->getView()->filterDefinitionObject = $filterDefinition;
-
     }
 }
