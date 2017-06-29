@@ -1,3 +1,15 @@
-/composer.lock
-vendor
+# PhpStorm / IDEA
 .idea
+
+# temp files
+.DS_Store
+Thumbs.db
+
+# composer
+composer.lock
+/vendor
+
+# code style fixer
+.php_cs
+.php_cs.cache
+
