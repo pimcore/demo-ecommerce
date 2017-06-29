@@ -149,7 +149,7 @@ CREATE TABLE `bundle_web2print_favorite_outputdefinitions` (
   `description` varchar(255) COLLATE utf8_bin NOT NULL,
   `configuration` longtext CHARACTER SET latin1,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 
 
@@ -1309,12 +1309,27 @@ CREATE TABLE `object_collection_PricingRule_8` (
   `index` int(11) NOT NULL DEFAULT '0',
   `fieldname` varchar(255) NOT NULL DEFAULT '',
   `ruleId` double DEFAULT NULL,
-  `name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`o_id`,`index`,`fieldname`),
   KEY `o_id` (`o_id`),
   KEY `index` (`index`),
   KEY `fieldname` (`fieldname`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `object_collection_PricingRule_localized_8`;
+CREATE TABLE `object_collection_PricingRule_localized_8` (
+  `ooo_id` int(11) NOT NULL DEFAULT '0',
+  `index` int(11) NOT NULL DEFAULT '0',
+  `fieldname` varchar(190) NOT NULL DEFAULT '',
+  `language` varchar(10) NOT NULL DEFAULT '',
+  `name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`ooo_id`,`language`,`index`,`fieldname`),
+  KEY `ooo_id` (`ooo_id`),
+  KEY `index` (`index`),
+  KEY `fieldname` (`fieldname`),
+  KEY `language` (`language`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
 
@@ -2723,6 +2738,7 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dum
 LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dumpexport-object_collection_OrderPriceModifications_9.csv' INTO TABLE `object_collection_OrderPriceModifications_9`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dumpexport-object_collection_PaymentInfo_9.csv' INTO TABLE `object_collection_PaymentInfo_9`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dumpexport-object_collection_PricingRule_8.csv' INTO TABLE `object_collection_PricingRule_8`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dumpexport-object_collection_PricingRule_localized_8.csv' INTO TABLE `object_collection_PricingRule_localized_8`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dumpexport-object_collection_SimilarityField_7.csv' INTO TABLE `object_collection_SimilarityField_7`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dumpexport-object_collection_TaxEntry_35.csv' INTO TABLE `object_collection_TaxEntry_35`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dumpexport-object_collection_TaxEntry_localized_35.csv' INTO TABLE `object_collection_TaxEntry_localized_35`;
@@ -2819,6 +2835,7 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dum
 LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dumpexport-users_workspaces_object.csv' INTO TABLE `users_workspaces_object`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dumpexport-uuids.csv' INTO TABLE `uuids`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dumpexport-website_settings.csv' INTO TABLE `website_settings`;
+
 
 DROP VIEW IF EXISTS object_12;
 CREATE ALGORITHM=UNDEFINED  VIEW `object_12` AS select `object_query_12`.`oo_id` AS `oo_id`,`object_query_12`.`oo_classId` AS `oo_classId`,`object_query_12`.`oo_className` AS `oo_className`,`object_query_12`.`artno` AS `artno`,`object_query_12`.`ean` AS `ean`,`object_query_12`.`size` AS `size`,`object_query_12`.`brand__id` AS `brand__id`,`object_query_12`.`brand__type` AS `brand__type`,`object_query_12`.`gender` AS `gender`,`object_query_12`.`categories` AS `categories`,`object_query_12`.`features` AS `features`,`object_query_12`.`technologies` AS `technologies`,`object_query_12`.`attributes` AS `attributes`,`object_query_12`.`collection` AS `collection`,`object_query_12`.`color` AS `color`,`object_query_12`.`materialComposition` AS `materialComposition`,`object_query_12`.`secondaryMaterialComposition` AS `secondaryMaterialComposition`,`object_query_12`.`relatedProducts` AS `relatedProducts`,`object_query_12`.`imagesInheritance` AS `imagesInheritance`,`objects`.`o_id` AS `o_id`,`objects`.`o_parentId` AS `o_parentId`,`objects`.`o_type` AS `o_type`,`objects`.`o_key` AS `o_key`,`objects`.`o_path` AS `o_path`,`objects`.`o_index` AS `o_index`,`objects`.`o_published` AS `o_published`,`objects`.`o_creationDate` AS `o_creationDate`,`objects`.`o_modificationDate` AS `o_modificationDate`,`objects`.`o_userOwner` AS `o_userOwner`,`objects`.`o_userModification` AS `o_userModification`,`objects`.`o_classId` AS `o_classId`,`objects`.`o_className` AS `o_className` from (`object_query_12` join `objects` on((`objects`.`o_id` = `object_query_12`.`oo_id`)));

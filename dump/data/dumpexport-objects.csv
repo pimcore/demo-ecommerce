@@ -6306,11 +6306,11 @@
 11148	11844	object	products	/products/categories/	0	0	1376995673	1460214355	\N	\N	14	ProductCategory
 11235	10961	object	football	/filter-definitions/default/	0	1	1378888060	1383726569	\N	\N	7	FilterDefinition
 11259	10960	object	landingpage	/filter-definitions/	0	1	1380545383	1460217706	\N	\N	7	FilterDefinition
-11265	10961	object	tents	/filter-definitions/default/	0	1	1380712455	1491895693	0	8	7	FilterDefinition
+11265	10961	object	tents	/filter-definitions/default/	0	1	1380712455	1491895693	0	\N	7	FilterDefinition
 11266	10961	object	sleepingbags	/filter-definitions/default/	0	1	1380713859	1383726613	\N	\N	7	FilterDefinition
 11267	10961	object	rucksacks	/filter-definitions/default/	0	1	1380714366	1460217518	\N	\N	7	FilterDefinition
 11268	10961	object	mats	/filter-definitions/default/	0	1	1380716937	1460217388	\N	\N	7	FilterDefinition
-11275	10960	object	landingpage2	/filter-definitions/	0	1	1380786618	1491895613	0	8	7	FilterDefinition
+11275	10960	object	landingpage2	/filter-definitions/	0	1	1380786618	1491895613	0	\N	7	FilterDefinition
 11424	1	folder	voucher-series	/	\N	1	1430222625	1430222625	\N	\N	\N	\N
 11425	11424	object	series1	/voucher-series/	0	1	1430222641	1460647158	\N	\N	33	OnlineShopVoucherSeries
 11426	11424	object	series2	/voucher-series/	0	1	1430222664	1432720173	\N	\N	33	OnlineShopVoucherSeries
