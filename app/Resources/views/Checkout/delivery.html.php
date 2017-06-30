@@ -99,10 +99,12 @@ $cart = $this->cart;
 
                         <?php
                         $shippingCountry = array('AT', 'DE');
+                        $locale = Pimcore::getContainer()->get('pimcore.locale');
+                        $regionArray = $locale->getDisplayRegions();
                         ?>
                         <select name="deliverycountry" class="form-control">
                             <?php foreach($shippingCountry as $country): ?>
-                                <option <?= ($country == $this->getParam('deliverycountry') || $country == $deliveryAddress->country) ? 'selected="selected"' : '' ?> value="<?= $country ?>" > <?= Zend_Locale::getTranslation(strtoupper($country), 'Country') ?></option>
+                                <option <?= ($country == $this->getParam('deliverycountry') || $country == $deliveryAddress->country) ? 'selected="selected"' : '' ?> value="<?= $country ?>" > <?= strtoupper($regionArray[$country]) ?></option>
                             <?php endforeach; ?>
                         </select>
                     </div>

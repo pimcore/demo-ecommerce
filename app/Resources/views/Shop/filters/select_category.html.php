@@ -41,7 +41,7 @@ $subCategories = [];
 if($currentCategory) {
     $parentCategories = $currentCategory->getParentCategoryList($this->rootCategory, $this->document);
 
-    foreach($currentCategory->getChilds() as $subCategory) {
+    foreach($currentCategory->getChildren() as $subCategory) {
         $subCategories[] = $subCategory;
     }
 
@@ -50,9 +50,6 @@ if($currentCategory) {
     $subCategories = \AppBundle\Model\ShopCategory::getTopLevelCategories();
 
 }
-
-$front = Zend_Controller_Front::getInstance();
-$request = $front->getRequest();
 
 ?>
 

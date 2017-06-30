@@ -105,7 +105,8 @@ class ShopCategory extends ProductCategory
             if ($params['document']) {
                 $params['prefix'] = substr($params['document']->getFullPath(), 1);
             } else {
-                $params['prefix'] = \Zend_Registry::get('Zend_Locale')->getLanguage() . '/shop';
+                $request = \Pimcore::getContainer()->get('request');
+                $params['prefix'] = $request->getLocale() . "/shop";
             }
         }
 
@@ -123,3 +124,4 @@ class ShopCategory extends ProductCategory
         return $urlHelper($params, $route, $reset);
     }
 }
+

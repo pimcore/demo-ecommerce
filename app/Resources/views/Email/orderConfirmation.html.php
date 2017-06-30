@@ -25,6 +25,9 @@
      * @var $order \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractOrder
      */
     $order = $this->order;
+
+    $locale = Pimcore::getContainer()->get('pimcore.locale');
+    $regionArray = $locale->getDisplayRegions();
 ?>
 
 <table width="700" class="content-table no-border" border="0" cellpadding="5" cellspacing="0">
@@ -128,7 +131,7 @@
             <?=$order->getDeliveryCompany()?><br/>
             <?=$order->getDeliveryStreet()?><br/>
             <?=$order->getDeliveryZip()?> <?=$order->getDeliveryCity()?><br/>
-            <?=Zend_Locale::getTranslation( $order->getDeliveryCountry(),'Country')?><br/>
+            <?=$regionArray[$order->getDeliveryCountry()]?><br/>
         </td>
     </tr>
     <tr>

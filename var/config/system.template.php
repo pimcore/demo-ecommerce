@@ -87,7 +87,7 @@ return [
         "enabled" => TRUE
     ],
     "httpclient" => [
-        "adapter" => "Zend_Http_Client_Adapter_Socket",
+        "adapter" => "Socket",
         "proxy_host" => "",
         "proxy_port" => "",
         "proxy_user" => "",

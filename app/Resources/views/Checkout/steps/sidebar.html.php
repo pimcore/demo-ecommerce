@@ -102,6 +102,11 @@ $isPhone = $deviceDetector->isPhone() && !$this->showSummary;
         <?php if($this->deliveryAddress) { ?>
             <?php $deliveryAddress = $this->deliveryAddress->getData() ?>
             <?php if($deliveryAddress) { ?>
+                <?php
+                    $locale = Pimcore::getContainer()->get('pimcore.locale');
+                    $regionArray = $locale->getDisplayRegions();
+                ?>
+
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <?= $this->translate("checkout.deliveryaddress") ?>
@@ -111,7 +116,7 @@ $isPhone = $deviceDetector->isPhone() && !$this->showSummary;
                             <strong><?= $deliveryAddress->firstname?> <?= $deliveryAddress->lastname?> </strong><br>
                             <?= $deliveryAddress->address ?><br>
                             <?= $deliveryAddress->zip ?> <?= $deliveryAddress->city ?> <br>
-                            <?= Zend_Locale::getTranslation(strtoupper($deliveryAddress->country), 'Country') ?><br/>
+                            <?= strtoupper($regionArray[$deliveryAddress->country]) ?><br/>
                             <a href="mailto:<?= $deliveryAddress->email ?>"><?= $deliveryAddress->email ?></a>
                         </address>
                     </div>
