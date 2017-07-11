@@ -187,7 +187,7 @@ class PaymentController extends AbstractCartAware
         $payment = $checkoutManager->getPayment();
         if ($payment instanceof PayPal) {
             $price = $cart->getPriceCalculator()->getGrandTotal();
-            $params['amount'] = $price->getAmount();
+            $params['amount'] = $price->getAmount()->asString();
             $params['currency'] = $price->getCurrency()->getShortName();
         }
 

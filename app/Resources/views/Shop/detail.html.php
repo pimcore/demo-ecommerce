@@ -12,6 +12,8 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
+use Pimcore\Bundle\EcommerceFrameworkBundle\Model\Currency;
+use Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\IPrice;
 
 /**
  * @var \Pimcore\Templating\PhpEngine $this
@@ -78,10 +80,15 @@
                 <hr>
                 <?php
                     $priceInfo = $this->product->getOSPriceInfo();
+
+                    /** @var IPrice $originalPrice */
                     $originalPrice = $this->product->getOSPriceInfo()->getOriginalPrice();
+
+                    /** @var IPrice $price */
                     $price = $this->product->getOSPrice();
-                    $hasDiscount = $originalPrice->getAmount() != $price->getAmount();
-                    $currency = new \Pimcore\Bundle\EcommerceFrameworkBundle\Model\Currency($price->getCurrency());
+
+                    $hasDiscount = $originalPrice->getAmount()->notEquals($price->getAmount());
+                    $currency = new Currency($price->getCurrency());
                 ?>
 
                 <?php if($hasDiscount) { ?>

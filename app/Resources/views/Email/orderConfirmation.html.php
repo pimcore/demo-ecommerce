@@ -12,6 +12,8 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
+use Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\Price;
+use Pimcore\Bundle\EcommerceFrameworkBundle\Type\Decimal;
 
 /**
  * @var \Pimcore\Templating\PhpEngine $this
@@ -78,26 +80,26 @@
         <td align="left" style="color: #1FA6E0; font-size: 12px;"><a href="#"><?=$item->getProductName()?></a><br/><span style="color:#252525;"><?= $this->translate("articleno") ?>: <?= $item->getProductnumber() ?></span></td>
         <td align="center"><strong><?= $product->getOSPrice()?></strong></td>
         <td align="center"><strong><?=$item->getAmount()?></strong></td>
-        <td align="center"><strong><?=new \Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\Price($item->getTotalPrice(), $currency) ?></strong></td>
+        <td align="center"><strong><?=new Price(Decimal::create($item->getTotalPrice()), $currency) ?></strong></td>
     </tr>
     <?php } ?>
 
     <tr>
         <td style="border-top: 1px solid #1FA6E0;" align="right" colspan="3"><strong><?=$this->translate('cart.subtotal')?></strong></td>
-        <td style="border-top: 1px solid #1FA6E0;font-size: 12px;" align="center" ><strong><?= new \Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\Price($order->getSubTotalPrice(), $currency); ?></strong></td>
+        <td style="border-top: 1px solid #1FA6E0;font-size: 12px;" align="center" ><strong><?= new Price(Decimal::create($order->getSubTotalPrice()), $currency); ?></strong></td>
     </tr>
 
 
     <?php foreach ($order->getPriceModifications() as $modification) { ?>
         <tr>
             <td style="" align="right" colspan="3"><?=$this->translate('shop.cart.modification' . $modification->getName())?></td>
-            <td style="font-size: 12px;" align="center" ><?= new \Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\Price($modification->getAmount(), $currency);?></td>
+            <td style="font-size: 12px;" align="center" ><?= new Price(Decimal::create($modification->getAmount()), $currency);?></td>
         </tr>
     <?php } ?>
 
     <tr>
         <td style="border-top: 1px solid #1FA6E0;" align="right" colspan="3"><strong><?=$this->translate('cart.grandtotal')?></strong></td>
-        <td style="border-top: 1px solid #1FA6E0;font-size: 18px; color: #596068;" align="center" ><strong><?=new \Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\Price($order->getTotalPrice(), $currency); ?></strong></td>
+        <td style="border-top: 1px solid #1FA6E0;font-size: 18px; color: #596068;" align="center" ><strong><?=new Price(Decimal::create($order->getTotalPrice()), $currency); ?></strong></td>
     </tr>
 
     <?php if($order->getTaxInfo()) { ?>
