@@ -1,4 +1,8 @@
 services:
+    AppBundle\Ecommerce\Tracking\TrackingItemBuilder:
+        public: false
+        arguments: ['@pimcore.http.request_helper']
+
     # Product Detail Specification Template Helper
     app.templating.helper.productDetailSpecification:
         class: AppBundle\Templating\Helper\ProductDetailSpecification

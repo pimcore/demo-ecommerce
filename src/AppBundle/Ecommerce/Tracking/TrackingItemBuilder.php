@@ -15,36 +15,44 @@
 namespace AppBundle\Ecommerce\Tracking;
 
 use Pimcore\Bundle\EcommerceFrameworkBundle\Model\IProduct;
-use Symfony\Component\HttpFoundation\Request;
+use Pimcore\Bundle\EcommerceFrameworkBundle\Tracking\ProductAction;
+use Pimcore\Bundle\EcommerceFrameworkBundle\Tracking\ProductImpression;
+use Pimcore\Bundle\EcommerceFrameworkBundle\Tracking\TrackingItemBuilder as BaseTrackingItemBuilder;
+use Pimcore\Http\RequestHelper;
 
-class TrackingItemBuilder extends \Pimcore\Bundle\EcommerceFrameworkBundle\Tracking\TrackingItemBuilder
+class TrackingItemBuilder extends BaseTrackingItemBuilder
 {
     /**
-     * @var Request
+     * @var RequestHelper
      */
-    protected $request;
+    private $requestHelper;
 
-    public function buildProductViewItem(IProduct $product)
+    /**
+     * @var int
+     */
+    private $impressionPosition = 0;
+
+    public function __construct(RequestHelper $requestHelper)
+    {
+        $this->requestHelper = $requestHelper;
+    }
+
+    public function buildProductViewItem(IProduct $product): ProductAction
     {
         $item = parent::buildProductViewItem($product);
-
         $item->setId($product->getOSProductNumber());
 
         return $item;
     }
 
-    private static $impressionPosition = 0;
-
-    public function buildProductImpressionItem(IProduct $product)
+    public function buildProductImpressionItem(IProduct $product): ProductImpression
     {
+        $this->impressionPosition++;
+
         $item = parent::buildProductImpressionItem($product);
-
         $item->setId($product->getOSProductNumber());
-
         $item->setList($this->getImpressionListName());
-
-        self::$impressionPosition++;
-        $item->setPosition(self::$impressionPosition);
+        $item->setPosition($this->impressionPosition);
 
         return $item;
     }
@@ -55,26 +63,13 @@ class TrackingItemBuilder extends \Pimcore\Bundle\EcommerceFrameworkBundle\Track
      *
      * @return string
      */
-    protected function getImpressionListName()
+    private function getImpressionListName(): string
     {
-        $request = $this->getCurrentRequest();
+        $request = $this->requestHelper->getCurrentRequest();
+
         $controller = $request->attributes->get('_controller');
         $controller = explode(':', $controller);
 
         return $controller[1] . ' - ' . $controller[2];
-    }
-
-    public function getCurrentRequest()
-    {
-        if (empty($this->request)) {
-            $this->request = \Pimcore::getContainer()->get('request_stack')->getCurrentRequest();
-        }
-
-        return $this->request;
-    }
-
-    public function setCurrentRequest(Request $request)
-    {
-        $this->request = $request;
     }
 }
