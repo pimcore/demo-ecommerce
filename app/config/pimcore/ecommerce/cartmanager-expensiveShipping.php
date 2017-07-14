@@ -1,9 +1,9 @@
-<?php 
+<?php
 
 return [
     "tenant" => [
         "pricecalculator" => [
-            "class" => "\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManagerCartPriceCalculator",
+            "class" => "\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\CartPriceCalculator",
             "config" => [
                 "modificators" => [
                     "shipping" => [
