@@ -1,17 +1,31 @@
 <?php 
 
+/** 
+* Generated at: 2017-06-23T13:19:42+02:00
+* IP: 192.168.11.87
+
+
+Fields Summary: 
+ - length [numeric]
+ - width [numeric]
+ - height [numeric]
+ - materialTop [input]
+ - materialBottom [input]
+ - weight [numeric]
+ - isCFCfree [checkbox]
+ - has3partWaveShape [checkbox]
+ - structure [multiselect]
+*/ 
+
 
 return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
    'classDefinitions' => 
   array (
     0 => 
     array (
-      'classname' => 12,
+      'classname' => 'Product',
       'fieldname' => 'specificAttributes',
     ),
-  ),
-   'oldClassDefinitions' => 
-  array (
   ),
    'key' => 'matsSpecs',
    'parentClass' => NULL,
@@ -303,10 +317,12 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
             ),
              'width' => 300,
              'height' => 200,
-             'maxItems' => NULL,
+             'maxItems' => '',
+             'optionsProviderClass' => NULL,
+             'optionsProviderData' => NULL,
              'queryColumnType' => 'text',
              'columnType' => 'text',
-             'phpdocType' => 'string',
+             'phpdocType' => 'array',
              'name' => 'structure',
              'title' => 'Structure',
              'tooltip' => '',

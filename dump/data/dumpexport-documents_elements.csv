@@ -669,10 +669,10 @@
 61	content:1.introtext	wysiwyg	<p>This is a sample Catalog of the E-Commerce Framework Demo</p>\
 
 62	content	areablock	a:1:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:16:"print-title-page";}}
-62	content:1.backgroundimage	image	a:9:{s:2:"id";i:4886;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";N;s:6:"marker";N;}
+62	content:1.backgroundimage	image	a:9:{s:2:"id";i:4886;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
 62	content:1.heading	input	WEB2PRINT DEMO
 62	content:1.subheading	input	Everything is possible.
-62	content:1.titleimage	image	a:9:{s:2:"id";i:4887;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";N;s:6:"marker";N;}
+62	content:1.titleimage	image	a:9:{s:2:"id";i:4887;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
 67	content	areablock	a:4:{i:0;a:2:{s:3:"key";s:1:"1";s:4:"type";s:16:"print-key-visual";}i:1;a:2:{s:3:"key";s:1:"3";s:4:"type";s:17:"print-product-row";}i:2;a:2:{s:3:"key";s:1:"2";s:4:"type";s:17:"print-product-row";}i:3;a:2:{s:3:"key";s:1:"4";s:4:"type";s:17:"print-product-row";}}
 67	content:1.headline	input	Volleyball
 67	content:1.keyvisual	image	a:9:{s:2:"id";i:4890;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";N;s:6:"marker";N;}

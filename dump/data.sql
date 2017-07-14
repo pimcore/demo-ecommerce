@@ -57,6 +57,24 @@ CREATE TABLE `application_logs_archive_06_2016` (
 
 
 
+DROP TABLE IF EXISTS `application_logs_archive_06_2017`;
+CREATE TABLE `application_logs_archive_06_2017` (
+  `id` bigint(20) NOT NULL,
+  `pid` int(11) DEFAULT NULL,
+  `timestamp` datetime NOT NULL,
+  `message` varchar(1024) DEFAULT NULL,
+  `priority` enum('emergency','alert','critical','error','warning','notice','info','debug') DEFAULT NULL,
+  `fileobject` varchar(1024) DEFAULT NULL,
+  `info` varchar(1024) DEFAULT NULL,
+  `component` varchar(255) DEFAULT NULL,
+  `source` varchar(255) DEFAULT NULL,
+  `relatedobject` bigint(20) DEFAULT NULL,
+  `relatedobjecttype` enum('object','document','asset') DEFAULT NULL,
+  `maintenanceChecked` tinyint(4) DEFAULT NULL
+) ENGINE=ARCHIVE DEFAULT CHARSET=utf8mb4;
+
+
+
 DROP TABLE IF EXISTS `application_logs_archive_07_2016`;
 CREATE TABLE `application_logs_archive_07_2016` (
   `id` bigint(20) NOT NULL,
@@ -336,7 +354,7 @@ CREATE TABLE `ecommerceframework_vouchertoolkit_reservations` (
   `timestamp` datetime NOT NULL,
   PRIMARY KEY (`id`),
   KEY `token` (`token`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 
 
@@ -1264,8 +1282,8 @@ CREATE TABLE `object_collection_OrderPriceModifications_9` (
   `index` int(11) NOT NULL DEFAULT '0',
   `fieldname` varchar(255) NOT NULL DEFAULT '',
   `name` varchar(255) DEFAULT NULL,
-  `amount` double DEFAULT NULL,
-  `netAmount` double DEFAULT NULL,
+  `amount` decimal(19,4) DEFAULT NULL,
+  `netAmount` decimal(19,4) DEFAULT NULL,
   PRIMARY KEY (`o_id`,`index`,`fieldname`),
   KEY `o_id` (`o_id`),
   KEY `index` (`index`),
@@ -1309,27 +1327,12 @@ CREATE TABLE `object_collection_PricingRule_8` (
   `index` int(11) NOT NULL DEFAULT '0',
   `fieldname` varchar(255) NOT NULL DEFAULT '',
   `ruleId` double DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`o_id`,`index`,`fieldname`),
   KEY `o_id` (`o_id`),
   KEY `index` (`index`),
   KEY `fieldname` (`fieldname`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
-DROP TABLE IF EXISTS `object_collection_PricingRule_localized_8`;
-CREATE TABLE `object_collection_PricingRule_localized_8` (
-  `ooo_id` int(11) NOT NULL DEFAULT '0',
-  `index` int(11) NOT NULL DEFAULT '0',
-  `fieldname` varchar(190) NOT NULL DEFAULT '',
-  `language` varchar(10) NOT NULL DEFAULT '',
-  `name` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`ooo_id`,`language`,`index`,`fieldname`),
-  KEY `ooo_id` (`ooo_id`),
-  KEY `index` (`index`),
-  KEY `fieldname` (`fieldname`),
-  KEY `language` (`language`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
 
@@ -1436,8 +1439,8 @@ CREATE TABLE `object_localized_data_12` (
   `name` varchar(255) DEFAULT NULL,
   `seoname` varchar(255) DEFAULT NULL,
   `colorName` varchar(255) DEFAULT NULL,
-  `price` double DEFAULT NULL,
-  `priceOld` double DEFAULT NULL,
+  `price` decimal(19,4) DEFAULT NULL,
+  `priceOld` decimal(19,4) DEFAULT NULL,
   `fromPrice` tinyint(1) DEFAULT NULL,
   `description` longtext,
   `material` longtext,
@@ -1533,8 +1536,8 @@ CREATE TABLE `object_localized_query_12_de_AT` (
   `name` varchar(255) DEFAULT NULL,
   `seoname` varchar(255) DEFAULT NULL,
   `colorName` varchar(255) DEFAULT NULL,
-  `price` double DEFAULT NULL,
-  `priceOld` double DEFAULT NULL,
+  `price` decimal(19,4) DEFAULT NULL,
+  `priceOld` decimal(19,4) DEFAULT NULL,
   `fromPrice` tinyint(1) DEFAULT NULL,
   `description` longtext,
   `material` longtext,
@@ -1558,8 +1561,8 @@ CREATE TABLE `object_localized_query_12_en_GB` (
   `name` varchar(255) DEFAULT NULL,
   `seoname` varchar(255) DEFAULT NULL,
   `colorName` varchar(255) DEFAULT NULL,
-  `price` double DEFAULT NULL,
-  `priceOld` double DEFAULT NULL,
+  `price` decimal(19,4) DEFAULT NULL,
+  `priceOld` decimal(19,4) DEFAULT NULL,
   `fromPrice` tinyint(1) DEFAULT NULL,
   `description` longtext,
   `material` longtext,
@@ -1583,8 +1586,8 @@ CREATE TABLE `object_localized_query_12_fr_FR` (
   `name` varchar(255) DEFAULT NULL,
   `seoname` varchar(255) DEFAULT NULL,
   `colorName` varchar(255) DEFAULT NULL,
-  `price` double DEFAULT NULL,
-  `priceOld` double DEFAULT NULL,
+  `price` decimal(19,4) DEFAULT NULL,
+  `priceOld` decimal(19,4) DEFAULT NULL,
   `fromPrice` tinyint(1) DEFAULT NULL,
   `description` longtext,
   `material` longtext,
@@ -1952,16 +1955,16 @@ CREATE TABLE `object_query_30` (
   `oo_id` int(11) NOT NULL DEFAULT '0',
   `oo_classId` int(11) DEFAULT '30',
   `oo_className` varchar(255) DEFAULT 'OfferToolOffer',
-  `totalPrice` double DEFAULT NULL,
+  `totalPrice` decimal(19,4) DEFAULT NULL,
   `items` text,
   `offernumber` varchar(255) DEFAULT NULL,
   `dateCreated` bigint(20) DEFAULT NULL,
   `dateValidUntil` bigint(20) DEFAULT NULL,
-  `discount` double DEFAULT NULL,
+  `discount` decimal(19,4) DEFAULT NULL,
   `customItems` text,
   `discountType` varchar(255) DEFAULT NULL,
   `cartId` varchar(255) DEFAULT NULL,
-  `totalPriceBeforeDiscount` double DEFAULT NULL,
+  `totalPriceBeforeDiscount` decimal(19,4) DEFAULT NULL,
   PRIMARY KEY (`oo_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -1976,12 +1979,12 @@ CREATE TABLE `object_query_31` (
   `product__type` enum('document','asset','object') DEFAULT NULL,
   `productNumber` varchar(255) DEFAULT NULL,
   `productName` varchar(255) DEFAULT NULL,
-  `amount` double DEFAULT NULL,
+  `amount` decimal(19,4) DEFAULT NULL,
   `subItems` text,
   `comment` longtext,
-  `originalTotalPrice` double DEFAULT NULL,
-  `finalTotalPrice` double DEFAULT NULL,
-  `discount` double DEFAULT NULL,
+  `originalTotalPrice` decimal(19,4) DEFAULT NULL,
+  `finalTotalPrice` decimal(19,4) DEFAULT NULL,
+  `discount` decimal(19,4) DEFAULT NULL,
   `DiscountType` varchar(255) DEFAULT NULL,
   `cartItemKey` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`oo_id`)
@@ -1994,7 +1997,7 @@ CREATE TABLE `object_query_32` (
   `oo_id` int(11) NOT NULL DEFAULT '0',
   `oo_classId` int(11) DEFAULT '32',
   `oo_className` varchar(255) DEFAULT 'OfferToolCustomProduct',
-  `price` double DEFAULT NULL,
+  `price` decimal(19,4) DEFAULT NULL,
   `productGroup` varchar(255) DEFAULT NULL,
   `OSproductNumber` varchar(255) DEFAULT NULL,
   `OSName` varchar(255) DEFAULT NULL,
@@ -2070,12 +2073,12 @@ CREATE TABLE `object_query_8` (
   `product__type` enum('document','asset','object') DEFAULT NULL,
   `productNumber` varchar(255) DEFAULT NULL,
   `productName` varchar(255) DEFAULT NULL,
-  `amount` double DEFAULT NULL,
-  `totalPrice` double DEFAULT NULL,
+  `amount` decimal(19,4) DEFAULT NULL,
+  `totalPrice` decimal(19,4) DEFAULT NULL,
   `subItems` text,
   `comment` longtext,
   `orderState` varchar(255) DEFAULT NULL,
-  `totalNetPrice` double DEFAULT NULL,
+  `totalNetPrice` decimal(19,4) DEFAULT NULL,
   `taxInfo` longtext,
   PRIMARY KEY (`oo_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -2088,7 +2091,7 @@ CREATE TABLE `object_query_9` (
   `oo_classId` int(11) DEFAULT '9',
   `oo_className` varchar(255) DEFAULT 'OnlineShopOrder',
   `ordernumber` varchar(255) DEFAULT NULL,
-  `totalPrice` double DEFAULT NULL,
+  `totalPrice` decimal(19,4) DEFAULT NULL,
   `orderdate` bigint(20) DEFAULT NULL,
   `items` text,
   `customer__id` int(11) DEFAULT NULL,
@@ -2111,14 +2114,14 @@ CREATE TABLE `object_query_9` (
   `deliveryCountry` varchar(255) DEFAULT NULL,
   `voucherTokens` text,
   `customerCity` varchar(255) DEFAULT NULL,
-  `subTotalPrice` double DEFAULT NULL,
+  `subTotalPrice` decimal(19,4) DEFAULT NULL,
   `customerFirstname` varchar(255) DEFAULT NULL,
   `customerLastname` varchar(255) DEFAULT NULL,
   `deliveryLastname` varchar(255) DEFAULT NULL,
   `deliveryFirstname` varchar(255) DEFAULT NULL,
   `giftItems` text,
-  `subTotalNetPrice` double DEFAULT NULL,
-  `totalNetPrice` double DEFAULT NULL,
+  `subTotalNetPrice` decimal(19,4) DEFAULT NULL,
+  `totalNetPrice` decimal(19,4) DEFAULT NULL,
   `taxInfo` longtext,
   PRIMARY KEY (`oo_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -2498,14 +2501,14 @@ CREATE TABLE `object_store_23` (
 DROP TABLE IF EXISTS `object_store_30`;
 CREATE TABLE `object_store_30` (
   `oo_id` int(11) NOT NULL DEFAULT '0',
-  `totalPrice` double DEFAULT NULL,
+  `totalPrice` decimal(19,4) DEFAULT NULL,
   `offernumber` varchar(255) DEFAULT NULL,
   `dateCreated` bigint(20) DEFAULT NULL,
   `dateValidUntil` bigint(20) DEFAULT NULL,
-  `discount` double DEFAULT NULL,
+  `discount` decimal(19,4) DEFAULT NULL,
   `discountType` varchar(255) DEFAULT NULL,
   `cartId` varchar(255) DEFAULT NULL,
-  `totalPriceBeforeDiscount` double DEFAULT NULL,
+  `totalPriceBeforeDiscount` decimal(19,4) DEFAULT NULL,
   PRIMARY KEY (`oo_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -2516,11 +2519,11 @@ CREATE TABLE `object_store_31` (
   `oo_id` int(11) NOT NULL DEFAULT '0',
   `productNumber` varchar(255) DEFAULT NULL,
   `productName` varchar(255) DEFAULT NULL,
-  `amount` double DEFAULT NULL,
+  `amount` decimal(19,4) DEFAULT NULL,
   `comment` longtext,
-  `originalTotalPrice` double DEFAULT NULL,
-  `finalTotalPrice` double DEFAULT NULL,
-  `discount` double DEFAULT NULL,
+  `originalTotalPrice` decimal(19,4) DEFAULT NULL,
+  `finalTotalPrice` decimal(19,4) DEFAULT NULL,
+  `discount` decimal(19,4) DEFAULT NULL,
   `DiscountType` varchar(255) DEFAULT NULL,
   `cartItemKey` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`oo_id`)
@@ -2531,7 +2534,7 @@ CREATE TABLE `object_store_31` (
 DROP TABLE IF EXISTS `object_store_32`;
 CREATE TABLE `object_store_32` (
   `oo_id` int(11) NOT NULL DEFAULT '0',
-  `price` double DEFAULT NULL,
+  `price` decimal(19,4) DEFAULT NULL,
   `productGroup` varchar(255) DEFAULT NULL,
   `OSproductNumber` varchar(255) DEFAULT NULL,
   `OSName` varchar(255) DEFAULT NULL,
@@ -2591,11 +2594,11 @@ CREATE TABLE `object_store_8` (
   `oo_id` int(11) NOT NULL DEFAULT '0',
   `productNumber` varchar(255) DEFAULT NULL,
   `productName` varchar(255) DEFAULT NULL,
-  `amount` double DEFAULT NULL,
-  `totalPrice` double DEFAULT NULL,
+  `amount` decimal(19,4) DEFAULT NULL,
+  `totalPrice` decimal(19,4) DEFAULT NULL,
   `comment` longtext,
   `orderState` varchar(255) DEFAULT NULL,
-  `totalNetPrice` double DEFAULT NULL,
+  `totalNetPrice` decimal(19,4) DEFAULT NULL,
   `taxInfo` longtext,
   PRIMARY KEY (`oo_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -2606,7 +2609,7 @@ DROP TABLE IF EXISTS `object_store_9`;
 CREATE TABLE `object_store_9` (
   `oo_id` int(11) NOT NULL DEFAULT '0',
   `ordernumber` varchar(255) DEFAULT NULL,
-  `totalPrice` double DEFAULT NULL,
+  `totalPrice` decimal(19,4) DEFAULT NULL,
   `orderdate` bigint(20) DEFAULT NULL,
   `paymentReference` varchar(255) DEFAULT NULL,
   `orderState` varchar(255) DEFAULT NULL,
@@ -2625,13 +2628,13 @@ CREATE TABLE `object_store_9` (
   `deliveryCity` varchar(255) DEFAULT NULL,
   `deliveryCountry` varchar(255) DEFAULT NULL,
   `customerCity` varchar(255) DEFAULT NULL,
-  `subTotalPrice` double DEFAULT NULL,
+  `subTotalPrice` decimal(19,4) DEFAULT NULL,
   `customerFirstname` varchar(255) DEFAULT NULL,
   `customerLastname` varchar(255) DEFAULT NULL,
   `deliveryLastname` varchar(255) DEFAULT NULL,
   `deliveryFirstname` varchar(255) DEFAULT NULL,
-  `subTotalNetPrice` double DEFAULT NULL,
-  `totalNetPrice` double DEFAULT NULL,
+  `subTotalNetPrice` decimal(19,4) DEFAULT NULL,
+  `totalNetPrice` decimal(19,4) DEFAULT NULL,
   `taxInfo` longtext,
   PRIMARY KEY (`oo_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -2738,7 +2741,6 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dum
 LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dumpexport-object_collection_OrderPriceModifications_9.csv' INTO TABLE `object_collection_OrderPriceModifications_9`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dumpexport-object_collection_PaymentInfo_9.csv' INTO TABLE `object_collection_PaymentInfo_9`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dumpexport-object_collection_PricingRule_8.csv' INTO TABLE `object_collection_PricingRule_8`;
-LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dumpexport-object_collection_PricingRule_localized_8.csv' INTO TABLE `object_collection_PricingRule_localized_8`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dumpexport-object_collection_SimilarityField_7.csv' INTO TABLE `object_collection_SimilarityField_7`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dumpexport-object_collection_TaxEntry_35.csv' INTO TABLE `object_collection_TaxEntry_35`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/dumpexport-object_collection_TaxEntry_localized_35.csv' INTO TABLE `object_collection_TaxEntry_localized_35`;

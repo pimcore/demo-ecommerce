@@ -1,17 +1,26 @@
 <?php 
 
+/** 
+* Generated at: 2017-06-23T13:19:42+02:00
+* IP: 192.168.11.87
+
+
+Fields Summary: 
+ - fifaApproved [checkbox]
+ - fifaInspected [checkbox]
+ - imsChecked [checkbox]
+ - ihfApproved [checkbox]
+*/ 
+
 
 return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
    'classDefinitions' => 
   array (
     0 => 
     array (
-      'classname' => 12,
+      'classname' => 'Product',
       'fieldname' => 'specificAttributes',
     ),
-  ),
-   'oldClassDefinitions' => 
-  array (
   ),
    'key' => 'approvals',
    'parentClass' => NULL,

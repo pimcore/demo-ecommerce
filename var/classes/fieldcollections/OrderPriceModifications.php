@@ -1,8 +1,8 @@
 <?php 
 
 /** 
-* Generated at: 2016-12-23T21:18:54+01:00
-* IP: 10.242.2.2
+* Generated at: 2017-07-13T17:04:44+02:00
+* IP: 192.168.11.5
 
 
 Fields Summary: 
@@ -87,14 +87,15 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
-             'decimalPrecision' => NULL,
+             'decimalSize' => 19,
+             'decimalPrecision' => 4,
              'name' => 'netAmount',
              'title' => 'NetAmount',
              'tooltip' => '',
              'mandatory' => false,
              'noteditable' => true,
              'index' => false,
-             'locked' => NULL,
+             'locked' => false,
              'style' => '',
              'permissions' => NULL,
              'datatype' => 'data',
@@ -115,7 +116,8 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
-             'decimalPrecision' => NULL,
+             'decimalSize' => 19,
+             'decimalPrecision' => 4,
              'name' => 'amount',
              'title' => 'Amount',
              'tooltip' => '',

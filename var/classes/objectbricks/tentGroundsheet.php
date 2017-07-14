@@ -1,17 +1,24 @@
 <?php 
 
+/** 
+* Generated at: 2017-06-23T13:19:43+02:00
+* IP: 192.168.11.87
+
+
+Fields Summary: 
+ - groundSheet1 [image]
+ - groundSheet2 [image]
+*/ 
+
 
 return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
    'classDefinitions' => 
   array (
     0 => 
     array (
-      'classname' => 12,
+      'classname' => 'Product',
       'fieldname' => 'specificAttributes',
     ),
-  ),
-   'oldClassDefinitions' => 
-  array (
   ),
    'key' => 'tentGroundsheet',
    'parentClass' => NULL,
@@ -59,7 +66,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
              'uploadPath' => '',
              'queryColumnType' => 'int(11)',
              'columnType' => 'int(11)',
-             'phpdocType' => 'Asset_Image',
+             'phpdocType' => '\\Pimcore\\Model\\Asset\\Image',
              'name' => 'groundSheet1',
              'title' => 'Groundsheet 1',
              'tooltip' => '',
@@ -83,7 +90,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
              'uploadPath' => '',
              'queryColumnType' => 'int(11)',
              'columnType' => 'int(11)',
-             'phpdocType' => 'Asset_Image',
+             'phpdocType' => '\\Pimcore\\Model\\Asset\\Image',
              'name' => 'groundSheet2',
              'title' => 'Groundsheet 2',
              'tooltip' => '',

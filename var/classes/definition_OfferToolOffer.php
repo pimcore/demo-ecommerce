@@ -1,17 +1,36 @@
 <?php 
 
-/** Generated at 2016-08-08T16:05:50+02:00 */
+/** 
+* Generated at: 2017-07-13T17:03:52+02:00
+* Inheritance: no
+* Variants: no
+* Changed by: admin (8)
+* IP: 192.168.11.5
+
+
+Fields Summary: 
+- offernumber [input]
+- dateCreated [datetime]
+- dateValidUntil [date]
+- totalPriceBeforeDiscount [numeric]
+- totalPrice [numeric]
+- discountType [select]
+- discount [numeric]
+- cartId [input]
+- items [objects]
+- customItems [objects]
+*/ 
 
 
 return Pimcore\Model\Object\ClassDefinition::__set_state(array(
    'name' => 'OfferToolOffer',
    'description' => '',
    'creationDate' => 1376898383,
-   'modificationDate' => 1460041703,
+   'modificationDate' => 1499958232,
    'userOwner' => 2,
-   'userModification' => 2,
+   'userModification' => 8,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\OfferTool\\AbstractOffer',
-   'useTraits' => NULL,
+   'useTraits' => '',
    'allowInherit' => false,
    'allowVariants' => false,
    'showVariants' => false,
@@ -71,6 +90,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
               Pimcore\Model\Object\ClassDefinition\Layout\Text::__set_state(array(
                  'fieldtype' => 'text',
                  'html' => '<b>OfferToolOffer </b>as storage for created offers in the frontend.&nbsp;May be extended for specific use case.&nbsp;',
+                 'renderingClass' => NULL,
+                 'renderingData' => NULL,
                  'name' => 'Layout',
                  'type' => NULL,
                  'region' => NULL,
@@ -133,7 +154,7 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                      'fieldtype' => 'datetime',
                      'queryColumnType' => 'bigint(20)',
                      'columnType' => 'bigint(20)',
-                     'phpdocType' => '\\Pimcore\\Date',
+                     'phpdocType' => '\\Carbon\\Carbon',
                      'defaultValue' => NULL,
                      'useCurrentDate' => false,
                      'name' => 'dateCreated',
@@ -156,7 +177,7 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                      'fieldtype' => 'date',
                      'queryColumnType' => 'bigint(20)',
                      'columnType' => 'bigint(20)',
-                     'phpdocType' => '\\Pimcore\\Date',
+                     'phpdocType' => '\\Carbon\\Carbon',
                      'defaultValue' => NULL,
                      'useCurrentDate' => false,
                      'name' => 'dateValidUntil',
@@ -206,7 +227,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                      'unsigned' => false,
                      'minValue' => NULL,
                      'maxValue' => NULL,
-                     'decimalPrecision' => NULL,
+                     'decimalSize' => 19,
+                     'decimalPrecision' => 4,
                      'name' => 'totalPriceBeforeDiscount',
                      'title' => 'Total Price Before Discount',
                      'tooltip' => '',
@@ -234,7 +256,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                      'unsigned' => false,
                      'minValue' => NULL,
                      'maxValue' => NULL,
-                     'decimalPrecision' => NULL,
+                     'decimalSize' => 19,
+                     'decimalPrecision' => 4,
                      'name' => 'totalPrice',
                      'title' => 'TotalPrice',
                      'tooltip' => '',
@@ -268,6 +291,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                     ),
                      'width' => 400,
                      'defaultValue' => '',
+                     'optionsProviderClass' => NULL,
+                     'optionsProviderData' => NULL,
                      'queryColumnType' => 'varchar(255)',
                      'columnType' => 'varchar(255)',
                      'phpdocType' => 'string',
@@ -298,7 +323,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                      'unsigned' => false,
                      'minValue' => NULL,
                      'maxValue' => NULL,
-                     'decimalPrecision' => NULL,
+                     'decimalSize' => 19,
+                     'decimalPrecision' => 4,
                      'name' => 'discount',
                      'title' => 'Discount',
                      'tooltip' => '',
@@ -399,6 +425,7 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                     'classes' => 'OfferToolOfferItem',
                   ),
                 ),
+                 'pathFormatterClass' => NULL,
                  'name' => 'items',
                  'title' => 'Items',
                  'tooltip' => '',
@@ -431,6 +458,7 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                     'classes' => 'OfferToolOfferItem',
                   ),
                 ),
+                 'pathFormatterClass' => NULL,
                  'name' => 'customItems',
                  'title' => 'Custom Items',
                  'tooltip' => '',
@@ -457,7 +485,9 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
   )),
    'icon' => '',
    'previewUrl' => '',
-   'group' => NULL,
+   'group' => '',
+   'showAppLoggerTab' => false,
+   'linkGeneratorReference' => '',
    'propertyVisibility' => 
   array (
     'grid' => 

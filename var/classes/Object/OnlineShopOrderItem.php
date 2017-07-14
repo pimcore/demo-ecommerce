@@ -1,10 +1,10 @@
 <?php 
 
 /** 
-* Generated at: 2017-01-02T09:00:24+01:00
+* Generated at: 2017-07-13T17:03:19+02:00
 * Inheritance: no
 * Variants: no
-* Changed by: cfasching (6)
+* Changed by: admin (8)
 * IP: 192.168.11.5
 
 
@@ -27,17 +27,17 @@ namespace Pimcore\Model\Object;
 
 
 /**
-* @method static \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByOrderState ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByProduct ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByProductNumber ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByProductName ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByAmount ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByTotalNetPrice ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByTotalPrice ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByTaxInfo ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByPricingRules ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByComment ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrderItem\Listing getBySubItems ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByOrderState ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByProduct ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByProductNumber ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByProductName ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByAmount ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByTotalNetPrice ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByTotalPrice ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByTaxInfo ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByPricingRules ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByComment ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrderItem\Listing getBySubItems ($value, $limit = 0) 
 */
 
 class OnlineShopOrderItem extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractOrderItem {
@@ -161,7 +161,7 @@ public function setProductName ($productName) {
 
 /**
 * Get amount - Amount
-* @return float
+* @return string
 */
 public function getAmount () {
 	$preValue = $this->preGetValue("amount"); 
@@ -174,7 +174,7 @@ public function getAmount () {
 
 /**
 * Set amount - Amount
-* @param float $amount
+* @param string $amount
 * @return \Pimcore\Model\Object\OnlineShopOrderItem
 */
 public function setAmount ($amount) {
@@ -184,7 +184,7 @@ public function setAmount ($amount) {
 
 /**
 * Get totalNetPrice - NetPrice
-* @return float
+* @return string
 */
 public function getTotalNetPrice () {
 	$preValue = $this->preGetValue("totalNetPrice"); 
@@ -197,7 +197,7 @@ public function getTotalNetPrice () {
 
 /**
 * Set totalNetPrice - NetPrice
-* @param float $totalNetPrice
+* @param string $totalNetPrice
 * @return \Pimcore\Model\Object\OnlineShopOrderItem
 */
 public function setTotalNetPrice ($totalNetPrice) {
@@ -207,7 +207,7 @@ public function setTotalNetPrice ($totalNetPrice) {
 
 /**
 * Get totalPrice - Price
-* @return float
+* @return string
 */
 public function getTotalPrice () {
 	$preValue = $this->preGetValue("totalPrice"); 
@@ -220,7 +220,7 @@ public function getTotalPrice () {
 
 /**
 * Set totalPrice - Price
-* @param float $totalPrice
+* @param string $totalPrice
 * @return \Pimcore\Model\Object\OnlineShopOrderItem
 */
 public function setTotalPrice ($totalPrice) {

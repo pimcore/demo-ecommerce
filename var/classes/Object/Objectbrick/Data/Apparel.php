@@ -1,11 +1,15 @@
 <?php 
 
-/** Generated at 2015-03-11T21:34:17+01:00 */
+/** 
+* Generated at: 2017-06-23T13:19:42+02:00
+* IP: 192.168.11.87
 
-/**
-* IP:          10.242.2.6
-*/
 
+Fields Summary: 
+ - styles [multihref]
+ - fittings [multiselect]
+ - zips [select]
+*/ 
 
 namespace Pimcore\Model\Object\Objectbrick\Data;
 
@@ -21,7 +25,7 @@ public $zips;
 
 /**
 * Set styles - Styles
-* @return array
+* @return \Pimcore\Model\Object\productTechnology[]
 */
 public function getStyles () {
 	$data = $this->getDefinition()->getFieldDefinition("styles")->preGetData($this);
@@ -33,7 +37,7 @@ public function getStyles () {
 
 /**
 * Set styles - Styles
-* @param array $styles
+* @param \Pimcore\Model\Object\productTechnology[] $styles
 * @return \Pimcore\Model\Object\Apparel
 */
 public function setStyles ($styles) {
@@ -43,7 +47,7 @@ public function setStyles ($styles) {
 
 /**
 * Set fittings - Fittings
-* @return string
+* @return array
 */
 public function getFittings () {
 	$data = $this->fittings;
@@ -55,7 +59,7 @@ public function getFittings () {
 
 /**
 * Set fittings - Fittings
-* @param string $fittings
+* @param array $fittings
 * @return \Pimcore\Model\Object\Apparel
 */
 public function setFittings ($fittings) {

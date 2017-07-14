@@ -1,11 +1,21 @@
 <?php 
 
-/** Generated at 2015-03-11T21:35:31+01:00 */
+/** 
+* Generated at: 2017-06-23T13:19:42+02:00
+* IP: 192.168.11.87
 
-/**
-* IP:          10.242.2.6
-*/
 
+Fields Summary: 
+ - length [numeric]
+ - width [numeric]
+ - height [numeric]
+ - materialTop [input]
+ - materialBottom [input]
+ - weight [numeric]
+ - isCFCfree [checkbox]
+ - has3partWaveShape [checkbox]
+ - structure [multiselect]
+*/ 
 
 namespace Pimcore\Model\Object\Objectbrick\Data;
 
@@ -203,7 +213,7 @@ public function setHas3partWaveShape ($has3partWaveShape) {
 
 /**
 * Set structure - Structure
-* @return string
+* @return array
 */
 public function getStructure () {
 	$data = $this->structure;
@@ -215,7 +225,7 @@ public function getStructure () {
 
 /**
 * Set structure - Structure
-* @param string $structure
+* @param array $structure
 * @return \Pimcore\Model\Object\MatsSpecs
 */
 public function setStructure ($structure) {

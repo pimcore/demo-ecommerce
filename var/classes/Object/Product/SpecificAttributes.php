@@ -6,8 +6,32 @@ class SpecificAttributes extends \Pimcore\Model\Object\Objectbrick {
 
 
 
-protected $brickGetters = array('apparel','approvals','featuresBenefitsBackpacks','featuresBenefitsMats','featuresBenefitsShoes','featuresBenefitsSleepingbags','featuresBenefitsTents','featuresHeadlamps','matsSpecs','outdoor','rucksackSpecs','shoe','shoeDetails','snowsport','specsSleepingbags','tentGroundsheet','tentSpecifications','weight');
+protected $brickGetters = array('weight','apparel','approvals','featuresBenefitsBackpacks','featuresBenefitsMats','featuresBenefitsShoes','featuresBenefitsSleepingbags','featuresBenefitsTents','featuresHeadlamps','matsSpecs','outdoor','rucksackSpecs','shoe','shoeDetails','snowsport','specsSleepingbags','tentGroundsheet','tentSpecifications');
 
+
+public $weight = null;
+
+/**
+* @return \Pimcore\Model\Object\Objectbrick\Data\weight
+*/
+public function getWeight() { 
+	if(!$this->weight && \Pimcore\Model\Object\AbstractObject::doGetInheritedValues($this->getObject())) { 
+		$brick = $this->getObject()->getValueFromParent("specificAttributes");
+		if(!empty($brick)) {
+			return $this->getObject()->getValueFromParent("specificAttributes")->getWeight(); 
+		}
+	}
+   return $this->weight; 
+}
+
+/**
+* @param \Pimcore\Model\Object\Objectbrick\Data\weight $weight
+* @return void
+*/
+public function setWeight ($weight) {
+	$this->weight = $weight;
+	return $this;;
+}
 
 public $apparel = null;
 
@@ -414,30 +438,6 @@ public function getTentSpecifications() {
 */
 public function setTentSpecifications ($tentSpecifications) {
 	$this->tentSpecifications = $tentSpecifications;
-	return $this;;
-}
-
-public $weight = null;
-
-/**
-* @return \Pimcore\Model\Object\Objectbrick\Data\weight
-*/
-public function getWeight() { 
-	if(!$this->weight && \Pimcore\Model\Object\AbstractObject::doGetInheritedValues($this->getObject())) { 
-		$brick = $this->getObject()->getValueFromParent("specificAttributes");
-		if(!empty($brick)) {
-			return $this->getObject()->getValueFromParent("specificAttributes")->getWeight(); 
-		}
-	}
-   return $this->weight; 
-}
-
-/**
-* @param \Pimcore\Model\Object\Objectbrick\Data\weight $weight
-* @return void
-*/
-public function setWeight ($weight) {
-	$this->weight = $weight;
 	return $this;;
 }
 

@@ -1,8 +1,8 @@
 <?php 
 
 /** 
-* Generated at: 2016-12-23T21:18:54+01:00
-* IP: 10.242.2.2
+* Generated at: 2017-07-13T17:04:44+02:00
+* IP: 192.168.11.5
 
 
 Fields Summary: 
@@ -44,7 +44,7 @@ public function setName ($name) {
 
 /**
 * Get netAmount - NetAmount
-* @return float
+* @return string
 */
 public function getNetAmount () {
 	$data = $this->netAmount;
@@ -53,7 +53,7 @@ public function getNetAmount () {
 
 /**
 * Set netAmount - NetAmount
-* @param float $netAmount
+* @param string $netAmount
 * @return \Pimcore\Model\Object\OrderPriceModifications
 */
 public function setNetAmount ($netAmount) {
@@ -63,7 +63,7 @@ public function setNetAmount ($netAmount) {
 
 /**
 * Get amount - Amount
-* @return float
+* @return string
 */
 public function getAmount () {
 	$data = $this->amount;
@@ -72,7 +72,7 @@ public function getAmount () {
 
 /**
 * Set amount - Amount
-* @param float $amount
+* @param string $amount
 * @return \Pimcore\Model\Object\OrderPriceModifications
 */
 public function setAmount ($amount) {

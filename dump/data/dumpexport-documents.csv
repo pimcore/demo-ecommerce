@@ -4,7 +4,7 @@
 8	4	folder	shared	/en/	6	1	1369995357	1459928330	\N	\N
 9	52	snippet	footer	/en/shared/includes/	0	1	1369995366	1460194951	\N	\N
 11	4	folder	emails	/en/	2	1	1371799762	1371799763	\N	\N
-12	11	email	order-confirmation	/en/emails/	1	1	1371799788	1491546442	0	\N
+12	11	email	order-confirmation	/en/emails/	1	1	1371799788	1491546442	0	8
 14	23	page	landingpage	/en/landingpages/	0	1	1380541348	1460202097	\N	\N
 15	4	page	terms	/en/	3	1	1380614953	1380615346	\N	\N
 16	4	page	special-functions	/en/	5	1	1380704342	1460571746	\N	\N
@@ -23,7 +23,7 @@
 56	57	printcontainer	katalog	/print/	0	1	1481111340	1491566388	0	0
 57	1	folder	print	/	3	1	1481111345	1481111345	\N	\N
 61	56	printpage	toc	/print/katalog/	1	1	1481296005	1482157092	\N	\N
-62	56	printpage	title	/print/katalog/	0	1	1481298535	1482149691	\N	\N
+62	56	printpage	title	/print/katalog/	0	1	1481298535	1500014561	0	8
 63	56	printcontainer	Volleyball	/print/katalog/	5	1	1481532478	1481548448	\N	\N
 64	56	printcontainer	Football	/print/katalog/	2	1	1481532499	1482157000	\N	\N
 65	56	printcontainer	Outdoor	/print/katalog/	3	1	1481532508	1482156998	\N	\N

@@ -1,11 +1,16 @@
 <?php 
 
-/** Generated at 2016-04-07T17:10:14+02:00 */
+/** 
+* Generated at: 2017-06-23T13:19:42+02:00
+* IP: 192.168.11.87
 
-/**
-* IP:          192.168.11.5
-*/
 
+Fields Summary: 
+ - auth_orderNumber [input]
+ - auth_language [input]
+ - auth_amount [input]
+ - auth_currency [input]
+*/ 
 
 namespace Pimcore\Model\Object\Objectbrick\Data;
 

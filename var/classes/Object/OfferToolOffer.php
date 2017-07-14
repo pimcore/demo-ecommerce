@@ -1,29 +1,41 @@
 <?php 
 
-/** Generated at 2016-04-07T17:08:23+02:00 */
-
-/**
+/** 
+* Generated at: 2017-07-13T17:03:52+02:00
 * Inheritance: no
-* Variants   : no
-* Changed by : admin (2)
-* IP:          192.168.11.5
-*/
+* Variants: no
+* Changed by: admin (8)
+* IP: 192.168.11.5
 
+
+Fields Summary: 
+- offernumber [input]
+- dateCreated [datetime]
+- dateValidUntil [date]
+- totalPriceBeforeDiscount [numeric]
+- totalPrice [numeric]
+- discountType [select]
+- discount [numeric]
+- cartId [input]
+- items [objects]
+- customItems [objects]
+*/ 
 
 namespace Pimcore\Model\Object;
 
 
+
 /**
-* @method static \Pimcore\Model\Object\OfferToolOffer\Listing getByOffernumber ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolOffer\Listing getByDateCreated ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolOffer\Listing getByDateValidUntil ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolOffer\Listing getByTotalPriceBeforeDiscount ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolOffer\Listing getByTotalPrice ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolOffer\Listing getByDiscountType ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolOffer\Listing getByDiscount ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolOffer\Listing getByCartId ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolOffer\Listing getByItems ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolOffer\Listing getByCustomItems ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOffer\Listing getByOffernumber ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOffer\Listing getByDateCreated ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOffer\Listing getByDateValidUntil ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOffer\Listing getByTotalPriceBeforeDiscount ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOffer\Listing getByTotalPrice ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOffer\Listing getByDiscountType ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOffer\Listing getByDiscount ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOffer\Listing getByCartId ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOffer\Listing getByItems ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOffer\Listing getByCustomItems ($value, $limit = 0) 
 */
 
 class OfferToolOffer extends \Pimcore\Bundle\EcommerceFrameworkBundle\OfferTool\AbstractOffer {
@@ -77,7 +89,7 @@ public function setOffernumber ($offernumber) {
 
 /**
 * Get dateCreated - CreationDate
-* @return \Pimcore\Date
+* @return \Carbon\Carbon
 */
 public function getDateCreated () {
 	$preValue = $this->preGetValue("dateCreated"); 
@@ -90,7 +102,7 @@ public function getDateCreated () {
 
 /**
 * Set dateCreated - CreationDate
-* @param \Pimcore\Date $dateCreated
+* @param \Carbon\Carbon $dateCreated
 * @return \Pimcore\Model\Object\OfferToolOffer
 */
 public function setDateCreated ($dateCreated) {
@@ -100,7 +112,7 @@ public function setDateCreated ($dateCreated) {
 
 /**
 * Get dateValidUntil - Valid Until
-* @return \Pimcore\Date
+* @return \Carbon\Carbon
 */
 public function getDateValidUntil () {
 	$preValue = $this->preGetValue("dateValidUntil"); 
@@ -113,7 +125,7 @@ public function getDateValidUntil () {
 
 /**
 * Set dateValidUntil - Valid Until
-* @param \Pimcore\Date $dateValidUntil
+* @param \Carbon\Carbon $dateValidUntil
 * @return \Pimcore\Model\Object\OfferToolOffer
 */
 public function setDateValidUntil ($dateValidUntil) {
@@ -123,7 +135,7 @@ public function setDateValidUntil ($dateValidUntil) {
 
 /**
 * Get totalPriceBeforeDiscount - Total Price Before Discount
-* @return float
+* @return string
 */
 public function getTotalPriceBeforeDiscount () {
 	$preValue = $this->preGetValue("totalPriceBeforeDiscount"); 
@@ -136,7 +148,7 @@ public function getTotalPriceBeforeDiscount () {
 
 /**
 * Set totalPriceBeforeDiscount - Total Price Before Discount
-* @param float $totalPriceBeforeDiscount
+* @param string $totalPriceBeforeDiscount
 * @return \Pimcore\Model\Object\OfferToolOffer
 */
 public function setTotalPriceBeforeDiscount ($totalPriceBeforeDiscount) {
@@ -146,7 +158,7 @@ public function setTotalPriceBeforeDiscount ($totalPriceBeforeDiscount) {
 
 /**
 * Get totalPrice - TotalPrice
-* @return float
+* @return string
 */
 public function getTotalPrice () {
 	$preValue = $this->preGetValue("totalPrice"); 
@@ -159,7 +171,7 @@ public function getTotalPrice () {
 
 /**
 * Set totalPrice - TotalPrice
-* @param float $totalPrice
+* @param string $totalPrice
 * @return \Pimcore\Model\Object\OfferToolOffer
 */
 public function setTotalPrice ($totalPrice) {
@@ -192,7 +204,7 @@ public function setDiscountType ($discountType) {
 
 /**
 * Get discount - Discount
-* @return float
+* @return string
 */
 public function getDiscount () {
 	$preValue = $this->preGetValue("discount"); 
@@ -205,7 +217,7 @@ public function getDiscount () {
 
 /**
 * Set discount - Discount
-* @param float $discount
+* @param string $discount
 * @return \Pimcore\Model\Object\OfferToolOffer
 */
 public function setDiscount ($discount) {
@@ -293,7 +305,8 @@ protected static $_relationFields = array (
   ),
 );
 
-public $lazyLoadedFields = NULL;
+public $lazyLoadedFields = array (
+);
 
 }
 

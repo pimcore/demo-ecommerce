@@ -1,11 +1,24 @@
 <?php 
 
-/** Generated at 2015-03-11T21:36:27+01:00 */
+/** 
+* Generated at: 2017-06-23T13:19:43+02:00
+* IP: 192.168.11.87
 
-/**
-* IP:          10.242.2.6
-*/
 
+Fields Summary: 
+ - weight [numeric]
+ - length [numeric]
+ - width [numeric]
+ - bodySize [numeric]
+ - fabricShell [input]
+ - fabricLining [input]
+ - filling [input]
+ - protection [input]
+ - packingSize [input]
+ - temperatureComfort [numeric]
+ - temperatureLimit [numeric]
+ - temperatureExtreme [numeric]
+*/ 
 
 namespace Pimcore\Model\Object\Objectbrick\Data;
 

@@ -1,10 +1,10 @@
 <?php 
 
 /** 
-* Generated at: 2017-01-02T12:17:23+01:00
+* Generated at: 2017-07-13T17:04:26+02:00
 * Inheritance: yes
 * Variants: yes
-* Changed by: cfasching (6)
+* Changed by: admin (8)
 * IP: 192.168.11.5
 
 
@@ -46,9 +46,9 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
    'name' => 'Product',
    'description' => '',
    'creationDate' => 1366282442,
-   'modificationDate' => 1483355843,
+   'modificationDate' => 1499958266,
    'userOwner' => 1,
-   'userModification' => 6,
+   'userModification' => 8,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractProduct',
    'useTraits' => '',
    'allowInherit' => true,
@@ -233,7 +233,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                          'unsigned' => false,
                          'minValue' => NULL,
                          'maxValue' => NULL,
-                         'decimalPrecision' => NULL,
+                         'decimalSize' => 19,
+                         'decimalPrecision' => 4,
                          'name' => 'price',
                          'title' => 'Regular Price',
                          'tooltip' => '',
@@ -261,7 +262,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                          'unsigned' => false,
                          'minValue' => NULL,
                          'maxValue' => NULL,
-                         'decimalPrecision' => NULL,
+                         'decimalSize' => 19,
+                         'decimalPrecision' => 4,
                          'name' => 'priceOld',
                          'title' => 'Price (old)',
                          'tooltip' => '',
@@ -553,6 +555,7 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
              'height' => '',
              'maxTabs' => NULL,
              'labelWidth' => NULL,
+             'hideLabelsWhenTabsReached' => NULL,
              'referencedFields' => 
             array (
             ),
@@ -735,6 +738,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                  'width' => 150,
                  'height' => '',
                  'maxItems' => '',
+                 'optionsProviderClass' => NULL,
+                 'optionsProviderData' => NULL,
                  'queryColumnType' => 'text',
                  'columnType' => 'text',
                  'phpdocType' => 'array',
@@ -1054,6 +1059,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                      'width' => 300,
                      'height' => 350,
                      'maxItems' => '',
+                     'optionsProviderClass' => NULL,
+                     'optionsProviderData' => NULL,
                      'queryColumnType' => 'text',
                      'columnType' => 'text',
                      'phpdocType' => 'array',
@@ -1207,6 +1214,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                     ),
                      'width' => 120,
                      'defaultValue' => '',
+                     'optionsProviderClass' => NULL,
+                     'optionsProviderData' => NULL,
                      'queryColumnType' => 'varchar(255)',
                      'columnType' => 'varchar(255)',
                      'phpdocType' => 'string',
@@ -1305,6 +1314,7 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                   16 => 'tentSpecifications',
                   17 => 'featuresBenefitsBackpacks',
                 ),
+                 'maxItems' => '',
                  'name' => 'specificAttributes',
                  'title' => 'Attributes',
                  'tooltip' => '',
@@ -1388,6 +1398,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
    'icon' => '',
    'previewUrl' => '',
    'group' => '',
+   'showAppLoggerTab' => false,
+   'linkGeneratorReference' => '',
    'propertyVisibility' => 
   array (
     'grid' => 

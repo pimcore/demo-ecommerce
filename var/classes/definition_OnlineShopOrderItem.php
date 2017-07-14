@@ -1,10 +1,10 @@
 <?php 
 
 /** 
-* Generated at: 2017-01-02T09:00:24+01:00
+* Generated at: 2017-07-13T17:03:19+02:00
 * Inheritance: no
 * Variants: no
-* Changed by: cfasching (6)
+* Changed by: admin (8)
 * IP: 192.168.11.5
 
 
@@ -27,9 +27,9 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
    'name' => 'OnlineShopOrderItem',
    'description' => '',
    'creationDate' => 1366279601,
-   'modificationDate' => 1483344024,
+   'modificationDate' => 1499958199,
    'userOwner' => 0,
-   'userModification' => 6,
+   'userModification' => 8,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractOrderItem',
    'useTraits' => '',
    'allowInherit' => false,
@@ -111,6 +111,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
             ),
              'width' => 400,
              'defaultValue' => '',
+             'optionsProviderClass' => NULL,
+             'optionsProviderData' => NULL,
              'queryColumnType' => 'varchar(255)',
              'columnType' => 'varchar(255)',
              'phpdocType' => 'string',
@@ -267,7 +269,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                  'unsigned' => false,
                  'minValue' => NULL,
                  'maxValue' => NULL,
-                 'decimalPrecision' => NULL,
+                 'decimalSize' => 19,
+                 'decimalPrecision' => 4,
                  'name' => 'amount',
                  'title' => 'Amount',
                  'tooltip' => '',
@@ -295,7 +298,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                  'unsigned' => false,
                  'minValue' => NULL,
                  'maxValue' => NULL,
-                 'decimalPrecision' => NULL,
+                 'decimalSize' => 19,
+                 'decimalPrecision' => 4,
                  'name' => 'totalNetPrice',
                  'title' => 'NetPrice',
                  'tooltip' => '',
@@ -323,7 +327,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                  'unsigned' => false,
                  'minValue' => NULL,
                  'maxValue' => NULL,
-                 'decimalPrecision' => NULL,
+                 'decimalSize' => 19,
+                 'decimalPrecision' => 4,
                  'name' => 'totalPrice',
                  'title' => 'Price',
                  'tooltip' => '',
@@ -345,7 +350,9 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                  'width' => '',
                  'height' => '',
                  'cols' => '',
+                 'colsFixed' => false,
                  'rows' => '',
+                 'rowsFixed' => false,
                  'data' => '',
                  'queryColumnType' => 'longtext',
                  'columnType' => 'longtext',
@@ -464,6 +471,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
    'icon' => '',
    'previewUrl' => '',
    'group' => '',
+   'showAppLoggerTab' => false,
+   'linkGeneratorReference' => '',
    'propertyVisibility' => 
   array (
     'grid' => 

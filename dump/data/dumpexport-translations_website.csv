@@ -10,6 +10,9 @@ Start Payment now	fr_FR		1491546356	1491546356
 articleno	de_AT		1477912880	1477912880
 articleno	en_GB		1477912880	1477912880
 articleno	fr_FR		1477912880	1477912880
+attr.Benefits	de_AT		1496911277	1496911277
+attr.Benefits	en_GB		1496911277	1496911277
+attr.Benefits	fr_FR		1496911277	1496911277
 attr.Is main seam taped?	de_AT		1491508556	1491508556
 attr.Is main seam taped?	en_GB		1491508556	1491508556
 attr.Is main seam taped?	fr_FR		1491508556	1491508556
@@ -361,6 +364,9 @@ checkout.error.confirm.failure	de_AT		1460552553	1460552587
 checkout.error.confirm.failure	en_GB	Failure during payment	1460552553	1460552587
 checkout.error.confirm.failure	fr_FR		1460552553	1460552587
 checkout.error.confirm.failure	modificati	1460553	1460552553	1460552587
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_55709322-1~12150 -> current internal status id = payment_3384999107-1~12150	de_AT		1499843277	1499843277
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_55709322-1~12150 -> current internal status id = payment_3384999107-1~12150	en_GB		1499843277	1499843277
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_55709322-1~12150 -> current internal status id = payment_3384999107-1~12150	fr_FR		1499843277	1499843277
 checkout.error.confirm.terms	de_AT		0	1371636896
 checkout.error.confirm.terms	en_GB	Please confirm the terms	0	1371636896
 checkout.error.confirm.terms	fr_FR		0	1371636896
@@ -1731,6 +1737,12 @@ shop.buy	de_AT		1460011973	1460113791
 shop.buy	en_GB	Buy	1460011973	1460113791
 shop.buy	fr_FR		1460011973	1460113791
 shop.buy	modificati	1460012	1460011973	1460113791
+shop.cart.modificationCart Discount 	de_AT		1499957159	1499957159
+shop.cart.modificationCart Discount 	en_GB		1499957159	1499957159
+shop.cart.modificationCart Discount 	fr_FR		1499957159	1499957159
+shop.cart.modificationVoucher 	de_AT		1499957159	1499957159
+shop.cart.modificationVoucher 	en_GB		1499957159	1499957159
+shop.cart.modificationVoucher 	fr_FR		1499957159	1499957159
 shop.cart.modificationcart discount	de_AT		1482525532	1482525532
 shop.cart.modificationcart discount	en_GB		1482525532	1482525532
 shop.cart.modificationcart discount	fr_FR		1482525532	1482525532

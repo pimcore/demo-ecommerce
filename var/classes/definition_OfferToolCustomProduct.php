@@ -1,17 +1,30 @@
 <?php 
 
-/** Generated at 2016-08-08T16:05:50+02:00 */
+/** 
+* Generated at: 2017-07-13T17:03:36+02:00
+* Inheritance: no
+* Variants: no
+* Changed by: admin (8)
+* IP: 192.168.11.5
+
+
+Fields Summary: 
+- OSproductNumber [input]
+- OSName [input]
+- productGroup [select]
+- price [numeric]
+*/ 
 
 
 return Pimcore\Model\Object\ClassDefinition::__set_state(array(
    'name' => 'OfferToolCustomProduct',
    'description' => '',
    'creationDate' => 1376898397,
-   'modificationDate' => 1460041686,
+   'modificationDate' => 1499958216,
    'userOwner' => 2,
-   'userModification' => 2,
+   'userModification' => 8,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\OfferTool\\AbstractOfferToolProduct',
-   'useTraits' => NULL,
+   'useTraits' => '',
    'allowInherit' => false,
    'allowVariants' => false,
    'showVariants' => false,
@@ -55,6 +68,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
           Pimcore\Model\Object\ClassDefinition\Layout\Text::__set_state(array(
              'fieldtype' => 'text',
              'html' => '<b>OfferToolCustomProduct</b>s to be added into an offer. Used e.g. for additional material, service, ...<div>May be extended for specific use case.&nbsp;</div>',
+             'renderingClass' => NULL,
+             'renderingData' => NULL,
              'name' => 'Layout',
              'type' => NULL,
              'region' => NULL,
@@ -137,6 +152,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
             ),
              'width' => 400,
              'defaultValue' => '',
+             'optionsProviderClass' => NULL,
+             'optionsProviderData' => NULL,
              'queryColumnType' => 'varchar(255)',
              'columnType' => 'varchar(255)',
              'phpdocType' => 'string',
@@ -167,7 +184,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
-             'decimalPrecision' => NULL,
+             'decimalSize' => 19,
+             'decimalPrecision' => 4,
              'name' => 'price',
              'title' => 'Price',
              'tooltip' => '',
@@ -191,7 +209,9 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
   )),
    'icon' => '',
    'previewUrl' => '',
-   'group' => NULL,
+   'group' => '',
+   'showAppLoggerTab' => false,
+   'linkGeneratorReference' => '',
    'propertyVisibility' => 
   array (
     'grid' => 

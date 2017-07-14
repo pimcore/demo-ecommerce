@@ -1,17 +1,37 @@
 <?php 
 
-/** Generated at 2016-08-08T16:05:50+02:00 */
+/** 
+* Generated at: 2017-07-13T17:04:10+02:00
+* Inheritance: no
+* Variants: no
+* Changed by: admin (8)
+* IP: 192.168.11.5
+
+
+Fields Summary: 
+- product [href]
+- productNumber [input]
+- productName [input]
+- amount [numeric]
+- originalTotalPrice [numeric]
+- DiscountType [select]
+- discount [numeric]
+- finalTotalPrice [numeric]
+- subItems [objects]
+- comment [textarea]
+- cartItemKey [input]
+*/ 
 
 
 return Pimcore\Model\Object\ClassDefinition::__set_state(array(
    'name' => 'OfferToolOfferItem',
    'description' => '',
    'creationDate' => 1376898390,
-   'modificationDate' => 1460041722,
+   'modificationDate' => 1499958250,
    'userOwner' => 2,
-   'userModification' => 2,
+   'userModification' => 8,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\OfferTool\\AbstractOfferItem',
-   'useTraits' => NULL,
+   'useTraits' => '',
    'allowInherit' => false,
    'allowVariants' => false,
    'showVariants' => false,
@@ -55,6 +75,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
           Pimcore\Model\Object\ClassDefinition\Layout\Text::__set_state(array(
              'fieldtype' => 'text',
              'html' => '<b>OfferToolItem</b>s for items of offers.&nbsp;<div>​May be extended for specific use case.&nbsp;</div>',
+             'renderingClass' => NULL,
+             'renderingData' => NULL,
              'name' => 'Layout',
              'type' => NULL,
              'region' => NULL,
@@ -104,23 +126,16 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                  'assetsAllowed' => false,
                  'assetTypes' => 
                 array (
-                  0 => 
-                  array (
-                    'assetTypes' => '',
-                  ),
                 ),
                  'documentsAllowed' => false,
                  'documentTypes' => 
                 array (
-                  0 => 
-                  array (
-                    'documentTypes' => '',
-                  ),
                 ),
                  'lazyLoading' => false,
                  'classes' => 
                 array (
                 ),
+                 'pathFormatterClass' => NULL,
                  'name' => 'product',
                  'title' => 'Produkt',
                  'tooltip' => '',
@@ -216,7 +231,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                  'unsigned' => false,
                  'minValue' => NULL,
                  'maxValue' => NULL,
-                 'decimalPrecision' => NULL,
+                 'decimalSize' => 19,
+                 'decimalPrecision' => 4,
                  'name' => 'amount',
                  'title' => 'Amount',
                  'tooltip' => '',
@@ -244,7 +260,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                  'unsigned' => false,
                  'minValue' => NULL,
                  'maxValue' => NULL,
-                 'decimalPrecision' => NULL,
+                 'decimalSize' => 19,
+                 'decimalPrecision' => 4,
                  'name' => 'originalTotalPrice',
                  'title' => 'Original Total Price',
                  'tooltip' => '',
@@ -278,6 +295,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                 ),
                  'width' => 400,
                  'defaultValue' => '',
+                 'optionsProviderClass' => NULL,
+                 'optionsProviderData' => NULL,
                  'queryColumnType' => 'varchar(255)',
                  'columnType' => 'varchar(255)',
                  'phpdocType' => 'string',
@@ -308,7 +327,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                  'unsigned' => false,
                  'minValue' => NULL,
                  'maxValue' => NULL,
-                 'decimalPrecision' => NULL,
+                 'decimalSize' => 19,
+                 'decimalPrecision' => 4,
                  'name' => 'discount',
                  'title' => 'Discount',
                  'tooltip' => '',
@@ -336,7 +356,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                  'unsigned' => false,
                  'minValue' => NULL,
                  'maxValue' => NULL,
-                 'decimalPrecision' => NULL,
+                 'decimalSize' => 19,
+                 'decimalPrecision' => 4,
                  'name' => 'finalTotalPrice',
                  'title' => 'Preis',
                  'tooltip' => '',
@@ -372,6 +393,7 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                 'classes' => 'OnlineShopOrderItem',
               ),
             ),
+             'pathFormatterClass' => NULL,
              'name' => 'subItems',
              'title' => 'Subitems',
              'tooltip' => '',
@@ -462,7 +484,9 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
   )),
    'icon' => '',
    'previewUrl' => '',
-   'group' => NULL,
+   'group' => '',
+   'showAppLoggerTab' => false,
+   'linkGeneratorReference' => '',
    'propertyVisibility' => 
   array (
     'grid' => 

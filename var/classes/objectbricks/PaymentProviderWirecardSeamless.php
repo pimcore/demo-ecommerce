@@ -1,17 +1,28 @@
 <?php 
 
+/** 
+* Generated at: 2017-06-23T13:19:42+02:00
+* IP: 192.168.11.87
+
+
+Fields Summary: 
+ - auth_paymentType [input]
+ - auth_orderNumber [input]
+ - auth_paymentState [input]
+ - auth_amount [input]
+ - auth_currency [input]
+ - auth_gatewyReferenceNumber [input]
+*/ 
+
 
 return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
    'classDefinitions' => 
   array (
     0 => 
     array (
-      'classname' => 9,
+      'classname' => 'OnlineShopOrder',
       'fieldname' => 'paymentProvider',
     ),
-  ),
-   'oldClassDefinitions' => 
-  array (
   ),
    'key' => 'PaymentProviderWirecardSeamless',
    'parentClass' => '',
@@ -26,7 +37,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -199,7 +210,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'dao' => NULL,
 ));

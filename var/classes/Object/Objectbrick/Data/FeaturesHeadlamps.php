@@ -1,11 +1,23 @@
 <?php 
 
-/** Generated at 2016-04-14T10:55:01+02:00 */
+/** 
+* Generated at: 2017-06-23T13:19:42+02:00
+* IP: 192.168.11.87
 
-/**
-* IP:          192.168.11.5
-*/
 
+Fields Summary: 
+ - lumen [numeric]
+ - lightDistance [numeric]
+ - lightDuration [numeric]
+ - ledType [input]
+ - ledBoost [input]
+ - ledRed [input]
+ - waterResistant [input]
+ - batteries [input]
+ - weight [input]
+ - hasFlashingMode [checkbox]
+ - isCeApproved [checkbox]
+*/ 
 
 namespace Pimcore\Model\Object\Objectbrick\Data;
 

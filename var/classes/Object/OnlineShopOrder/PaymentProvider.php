@@ -6,26 +6,8 @@ class PaymentProvider extends \Pimcore\Model\Object\Objectbrick {
 
 
 
-protected $brickGetters = array('PaymentProviderWirecardSeamless','PaymentProviderDatatrans','PaymentProviderPayPal','PaymentProviderQpay');
+protected $brickGetters = array('PaymentProviderDatatrans','PaymentProviderPayPal','PaymentProviderQpay','PaymentProviderWirecardSeamless');
 
-
-public $PaymentProviderWirecardSeamless = null;
-
-/**
-* @return \Pimcore\Model\Object\Objectbrick\Data\PaymentProviderWirecardSeamless
-*/
-public function getPaymentProviderWirecardSeamless() { 
-   return $this->PaymentProviderWirecardSeamless; 
-}
-
-/**
-* @param \Pimcore\Model\Object\Objectbrick\Data\PaymentProviderWirecardSeamless $PaymentProviderWirecardSeamless
-* @return void
-*/
-public function setPaymentProviderWirecardSeamless ($PaymentProviderWirecardSeamless) {
-	$this->PaymentProviderWirecardSeamless = $PaymentProviderWirecardSeamless;
-	return $this;;
-}
 
 public $PaymentProviderDatatrans = null;
 
@@ -78,6 +60,24 @@ public function getPaymentProviderQpay() {
 */
 public function setPaymentProviderQpay ($PaymentProviderQpay) {
 	$this->PaymentProviderQpay = $PaymentProviderQpay;
+	return $this;;
+}
+
+public $PaymentProviderWirecardSeamless = null;
+
+/**
+* @return \Pimcore\Model\Object\Objectbrick\Data\PaymentProviderWirecardSeamless
+*/
+public function getPaymentProviderWirecardSeamless() { 
+   return $this->PaymentProviderWirecardSeamless; 
+}
+
+/**
+* @param \Pimcore\Model\Object\Objectbrick\Data\PaymentProviderWirecardSeamless $PaymentProviderWirecardSeamless
+* @return void
+*/
+public function setPaymentProviderWirecardSeamless ($PaymentProviderWirecardSeamless) {
+	$this->PaymentProviderWirecardSeamless = $PaymentProviderWirecardSeamless;
 	return $this;;
 }
 

@@ -1,17 +1,24 @@
 <?php 
 
+/** 
+* Generated at: 2017-06-23T13:19:43+02:00
+* IP: 192.168.11.87
+
+
+Fields Summary: 
+ - footTypes [multiselect]
+ - gaitTypes [multiselect]
+*/ 
+
 
 return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
    'classDefinitions' => 
   array (
     0 => 
     array (
-      'classname' => 12,
+      'classname' => 'Product',
       'fieldname' => 'specificAttributes',
     ),
-  ),
-   'oldClassDefinitions' => 
-  array (
   ),
    'key' => 'shoe',
    'parentClass' => '',
@@ -26,7 +33,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -96,7 +103,9 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
                 ),
                  'width' => 400,
                  'height' => '',
-                 'maxItems' => NULL,
+                 'maxItems' => '',
+                 'optionsProviderClass' => NULL,
+                 'optionsProviderData' => NULL,
                  'queryColumnType' => 'text',
                  'columnType' => 'text',
                  'phpdocType' => 'array',
@@ -143,7 +152,9 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
                 ),
                  'width' => 400,
                  'height' => '',
-                 'maxItems' => NULL,
+                 'maxItems' => '',
+                 'optionsProviderClass' => NULL,
+                 'optionsProviderData' => NULL,
                  'queryColumnType' => 'text',
                  'columnType' => 'text',
                  'phpdocType' => 'array',
@@ -169,7 +180,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'dao' => NULL,
 ));

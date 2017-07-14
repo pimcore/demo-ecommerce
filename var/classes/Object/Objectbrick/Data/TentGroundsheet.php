@@ -1,11 +1,14 @@
 <?php 
 
-/** Generated at 2015-03-11T21:36:37+01:00 */
+/** 
+* Generated at: 2017-06-23T13:19:43+02:00
+* IP: 192.168.11.87
 
-/**
-* IP:          10.242.2.6
-*/
 
+Fields Summary: 
+ - groundSheet1 [image]
+ - groundSheet2 [image]
+*/ 
 
 namespace Pimcore\Model\Object\Objectbrick\Data;
 
@@ -20,7 +23,7 @@ public $groundSheet2;
 
 /**
 * Set groundSheet1 - Groundsheet 1
-* @return Asset_Image
+* @return \Pimcore\Model\Asset\Image
 */
 public function getGroundSheet1 () {
 	$data = $this->groundSheet1;
@@ -32,7 +35,7 @@ public function getGroundSheet1 () {
 
 /**
 * Set groundSheet1 - Groundsheet 1
-* @param Asset_Image $groundSheet1
+* @param \Pimcore\Model\Asset\Image $groundSheet1
 * @return \Pimcore\Model\Object\TentGroundsheet
 */
 public function setGroundSheet1 ($groundSheet1) {
@@ -42,7 +45,7 @@ public function setGroundSheet1 ($groundSheet1) {
 
 /**
 * Set groundSheet2 - Groundsheet 2
-* @return Asset_Image
+* @return \Pimcore\Model\Asset\Image
 */
 public function getGroundSheet2 () {
 	$data = $this->groundSheet2;
@@ -54,7 +57,7 @@ public function getGroundSheet2 () {
 
 /**
 * Set groundSheet2 - Groundsheet 2
-* @param Asset_Image $groundSheet2
+* @param \Pimcore\Model\Asset\Image $groundSheet2
 * @return \Pimcore\Model\Object\TentGroundsheet
 */
 public function setGroundSheet2 ($groundSheet2) {

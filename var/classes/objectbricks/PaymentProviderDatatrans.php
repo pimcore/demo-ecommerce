@@ -1,17 +1,30 @@
 <?php 
 
+/** 
+* Generated at: 2017-06-23T13:19:41+02:00
+* IP: 192.168.11.87
+
+
+Fields Summary: 
+ - auth_aliasCC [input]
+ - auth_expm [input]
+ - auth_expy [input]
+ - auth_reqtype [input]
+ - auth_uppTransactionId [input]
+ - auth_amount [input]
+ - auth_currency [input]
+ - auth_refno [input]
+*/ 
+
 
 return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
    'classDefinitions' => 
   array (
     0 => 
     array (
-      'classname' => 9,
+      'classname' => 'OnlineShopOrder',
       'fieldname' => 'paymentProvider',
     ),
-  ),
-   'oldClassDefinitions' => 
-  array (
   ),
    'key' => 'PaymentProviderDatatrans',
    'parentClass' => '',
@@ -26,7 +39,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -247,7 +260,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'dao' => NULL,
 ));

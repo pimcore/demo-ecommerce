@@ -1,10 +1,10 @@
 <?php 
 
 /** 
-* Generated at: 2017-01-02T09:01:06+01:00
+* Generated at: 2017-07-12T10:28:00+02:00
 * Inheritance: no
 * Variants: no
-* Changed by: cfasching (6)
+* Changed by: admin (8)
 * IP: 192.168.11.5
 
 
@@ -49,42 +49,43 @@ Fields Summary:
 namespace Pimcore\Model\Object;
 
 
+
 /**
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByOrdernumber ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByOrderState ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByOrderdate ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByItems ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByComment ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomerOrderData ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByVoucherTokens ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByGiftItems ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByPriceModifications ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getBySubTotalNetPrice ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getBySubTotalPrice ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByTotalNetPrice ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByTotalPrice ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByTaxInfo ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByCurrency ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByCartId ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomer ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomerFirstname ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomerLastname ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomerCompany ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomerStreet ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomerZip ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomerCity ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomerCountry ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomerEmail ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByDeliveryFirstname ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByDeliveryLastname ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByDeliveryCompany ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByDeliveryStreet ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByDeliveryZip ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByDeliveryCity ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByDeliveryCountry ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByPaymentProvider ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByPaymentInfo ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OnlineShopOrder\Listing getByPaymentReference ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByOrdernumber ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByOrderState ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByOrderdate ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByItems ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByComment ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomerOrderData ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByVoucherTokens ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByGiftItems ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByPriceModifications ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getBySubTotalNetPrice ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getBySubTotalPrice ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByTotalNetPrice ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByTotalPrice ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByTaxInfo ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByCurrency ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByCartId ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomer ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomerFirstname ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomerLastname ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomerCompany ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomerStreet ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomerZip ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomerCity ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomerCountry ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomerEmail ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByDeliveryFirstname ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByDeliveryLastname ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByDeliveryCompany ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByDeliveryStreet ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByDeliveryZip ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByDeliveryCity ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByDeliveryCountry ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByPaymentProvider ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByPaymentInfo ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByPaymentReference ($value, $limit = 0) 
 */
 
 class OnlineShopOrder extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractOrder {
@@ -344,7 +345,7 @@ public function setPriceModifications ($priceModifications) {
 
 /**
 * Get subTotalNetPrice - SubTotalNetPrice
-* @return float
+* @return string
 */
 public function getSubTotalNetPrice () {
 	$preValue = $this->preGetValue("subTotalNetPrice"); 
@@ -357,7 +358,7 @@ public function getSubTotalNetPrice () {
 
 /**
 * Set subTotalNetPrice - SubTotalNetPrice
-* @param float $subTotalNetPrice
+* @param string $subTotalNetPrice
 * @return \Pimcore\Model\Object\OnlineShopOrder
 */
 public function setSubTotalNetPrice ($subTotalNetPrice) {
@@ -367,7 +368,7 @@ public function setSubTotalNetPrice ($subTotalNetPrice) {
 
 /**
 * Get subTotalPrice - SubTotalPrice
-* @return float
+* @return string
 */
 public function getSubTotalPrice () {
 	$preValue = $this->preGetValue("subTotalPrice"); 
@@ -380,7 +381,7 @@ public function getSubTotalPrice () {
 
 /**
 * Set subTotalPrice - SubTotalPrice
-* @param float $subTotalPrice
+* @param string $subTotalPrice
 * @return \Pimcore\Model\Object\OnlineShopOrder
 */
 public function setSubTotalPrice ($subTotalPrice) {
@@ -390,7 +391,7 @@ public function setSubTotalPrice ($subTotalPrice) {
 
 /**
 * Get totalNetPrice - TotalNetPrice
-* @return float
+* @return string
 */
 public function getTotalNetPrice () {
 	$preValue = $this->preGetValue("totalNetPrice"); 
@@ -403,7 +404,7 @@ public function getTotalNetPrice () {
 
 /**
 * Set totalNetPrice - TotalNetPrice
-* @param float $totalNetPrice
+* @param string $totalNetPrice
 * @return \Pimcore\Model\Object\OnlineShopOrder
 */
 public function setTotalNetPrice ($totalNetPrice) {
@@ -413,7 +414,7 @@ public function setTotalNetPrice ($totalNetPrice) {
 
 /**
 * Get totalPrice - TotalPrice
-* @return float
+* @return string
 */
 public function getTotalPrice () {
 	$preValue = $this->preGetValue("totalPrice"); 
@@ -426,7 +427,7 @@ public function getTotalPrice () {
 
 /**
 * Set totalPrice - TotalPrice
-* @param float $totalPrice
+* @param string $totalPrice
 * @return \Pimcore\Model\Object\OnlineShopOrder
 */
 public function setTotalPrice ($totalPrice) {

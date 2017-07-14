@@ -1,31 +1,43 @@
 <?php 
 
-/** Generated at 2016-04-07T17:08:42+02:00 */
-
-/**
+/** 
+* Generated at: 2017-07-13T17:04:10+02:00
 * Inheritance: no
-* Variants   : no
-* Changed by : admin (2)
-* IP:          192.168.11.5
-*/
+* Variants: no
+* Changed by: admin (8)
+* IP: 192.168.11.5
 
+
+Fields Summary: 
+- product [href]
+- productNumber [input]
+- productName [input]
+- amount [numeric]
+- originalTotalPrice [numeric]
+- DiscountType [select]
+- discount [numeric]
+- finalTotalPrice [numeric]
+- subItems [objects]
+- comment [textarea]
+- cartItemKey [input]
+*/ 
 
 namespace Pimcore\Model\Object;
-use Pimcore\Bundle\EcommerceFrameworkBundle\OfferTool\AbstractOfferItem;
+
 
 
 /**
-* @method static \Pimcore\Model\Object\OfferToolOfferItem\Listing getByProduct ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolOfferItem\Listing getByProductNumber ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolOfferItem\Listing getByProductName ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolOfferItem\Listing getByAmount ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolOfferItem\Listing getByOriginalTotalPrice ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolOfferItem\Listing getByDiscountType ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolOfferItem\Listing getByDiscount ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolOfferItem\Listing getByFinalTotalPrice ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolOfferItem\Listing getBySubItems ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolOfferItem\Listing getByComment ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolOfferItem\Listing getByCartItemKey ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOfferItem\Listing getByProduct ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOfferItem\Listing getByProductNumber ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOfferItem\Listing getByProductName ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOfferItem\Listing getByAmount ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOfferItem\Listing getByOriginalTotalPrice ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOfferItem\Listing getByDiscountType ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOfferItem\Listing getByDiscount ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOfferItem\Listing getByFinalTotalPrice ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOfferItem\Listing getBySubItems ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOfferItem\Listing getByComment ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolOfferItem\Listing getByCartItemKey ($value, $limit = 0) 
 */
 
 class OfferToolOfferItem extends \Pimcore\Bundle\EcommerceFrameworkBundle\OfferTool\AbstractOfferItem {
@@ -126,7 +138,7 @@ public function setProductName ($productName) {
 
 /**
 * Get amount - Amount
-* @return float
+* @return string
 */
 public function getAmount () {
 	$preValue = $this->preGetValue("amount"); 
@@ -139,7 +151,7 @@ public function getAmount () {
 
 /**
 * Set amount - Amount
-* @param float $amount
+* @param string $amount
 * @return \Pimcore\Model\Object\OfferToolOfferItem
 */
 public function setAmount ($amount) {
@@ -149,7 +161,7 @@ public function setAmount ($amount) {
 
 /**
 * Get originalTotalPrice - Original Total Price
-* @return float
+* @return string
 */
 public function getOriginalTotalPrice () {
 	$preValue = $this->preGetValue("originalTotalPrice"); 
@@ -162,7 +174,7 @@ public function getOriginalTotalPrice () {
 
 /**
 * Set originalTotalPrice - Original Total Price
-* @param float $originalTotalPrice
+* @param string $originalTotalPrice
 * @return \Pimcore\Model\Object\OfferToolOfferItem
 */
 public function setOriginalTotalPrice ($originalTotalPrice) {
@@ -195,7 +207,7 @@ public function setDiscountType ($DiscountType) {
 
 /**
 * Get discount - Discount
-* @return float
+* @return string
 */
 public function getDiscount () {
 	$preValue = $this->preGetValue("discount"); 
@@ -208,7 +220,7 @@ public function getDiscount () {
 
 /**
 * Set discount - Discount
-* @param float $discount
+* @param string $discount
 * @return \Pimcore\Model\Object\OfferToolOfferItem
 */
 public function setDiscount ($discount) {
@@ -218,7 +230,7 @@ public function setDiscount ($discount) {
 
 /**
 * Get finalTotalPrice - Preis
-* @return float
+* @return string
 */
 public function getFinalTotalPrice () {
 	$preValue = $this->preGetValue("finalTotalPrice"); 
@@ -231,7 +243,7 @@ public function getFinalTotalPrice () {
 
 /**
 * Set finalTotalPrice - Preis
-* @param float $finalTotalPrice
+* @param string $finalTotalPrice
 * @return \Pimcore\Model\Object\OfferToolOfferItem
 */
 public function setFinalTotalPrice ($finalTotalPrice) {

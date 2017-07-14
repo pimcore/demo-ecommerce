@@ -1,23 +1,29 @@
 <?php 
 
-/** Generated at 2016-04-07T17:08:06+02:00 */
-
-/**
+/** 
+* Generated at: 2017-07-13T17:03:36+02:00
 * Inheritance: no
-* Variants   : no
-* Changed by : admin (2)
-* IP:          192.168.11.5
-*/
+* Variants: no
+* Changed by: admin (8)
+* IP: 192.168.11.5
 
+
+Fields Summary: 
+- OSproductNumber [input]
+- OSName [input]
+- productGroup [select]
+- price [numeric]
+*/ 
 
 namespace Pimcore\Model\Object;
 
 
+
 /**
-* @method static \Pimcore\Model\Object\OfferToolCustomProduct\Listing getByOSproductNumber ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolCustomProduct\Listing getByOSName ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolCustomProduct\Listing getByProductGroup ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\OfferToolCustomProduct\Listing getByPrice ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolCustomProduct\Listing getByOSproductNumber ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolCustomProduct\Listing getByOSName ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolCustomProduct\Listing getByProductGroup ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OfferToolCustomProduct\Listing getByPrice ($value, $limit = 0) 
 */
 
 class OfferToolCustomProduct extends \Pimcore\Bundle\EcommerceFrameworkBundle\OfferTool\AbstractOfferToolProduct {
@@ -111,7 +117,7 @@ public function setProductGroup ($productGroup) {
 
 /**
 * Get price - Price
-* @return float
+* @return string
 */
 public function getPrice () {
 	$preValue = $this->preGetValue("price"); 
@@ -124,7 +130,7 @@ public function getPrice () {
 
 /**
 * Set price - Price
-* @param float $price
+* @param string $price
 * @return \Pimcore\Model\Object\OfferToolCustomProduct
 */
 public function setPrice ($price) {
@@ -135,7 +141,8 @@ public function setPrice ($price) {
 protected static $_relationFields = array (
 );
 
-public $lazyLoadedFields = NULL;
+public $lazyLoadedFields = array (
+);
 
 }
 

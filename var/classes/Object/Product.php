@@ -1,10 +1,10 @@
 <?php 
 
 /** 
-* Generated at: 2017-01-02T12:17:23+01:00
+* Generated at: 2017-07-13T17:04:26+02:00
 * Inheritance: yes
 * Variants: yes
-* Changed by: cfasching (6)
+* Changed by: admin (8)
 * IP: 192.168.11.5
 
 
@@ -46,24 +46,24 @@ namespace Pimcore\Model\Object;
 
 
 /**
-* @method static \Pimcore\Model\Object\Product\Listing getByLocalizedfields ($field, $value, $locale = null, $limit = 0) 
-* @method static \Pimcore\Model\Object\Product\Listing getByArtno ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\Product\Listing getByEan ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\Product\Listing getBySize ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\Product\Listing getByBrand ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\Product\Listing getByGender ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\Product\Listing getByCategories ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\Product\Listing getByFeatures ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\Product\Listing getByTechnologies ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\Product\Listing getByAttributes ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\Product\Listing getByCollection ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\Product\Listing getByColor ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\Product\Listing getByMaterialComposition ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\Product\Listing getBySecondaryMaterialComposition ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\Product\Listing getByImagesInheritance ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\Product\Listing getByImages ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\Product\Listing getBySpecificAttributes ($value, $limit = 0) 
-* @method static \Pimcore\Model\Object\Product\Listing getByRelatedProducts ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\Product\Listing getByLocalizedfields ($field, $value, $locale = null, $limit = 0) 
+* @method \Pimcore\Model\Object\Product\Listing getByArtno ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\Product\Listing getByEan ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\Product\Listing getBySize ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\Product\Listing getByBrand ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\Product\Listing getByGender ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\Product\Listing getByCategories ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\Product\Listing getByFeatures ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\Product\Listing getByTechnologies ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\Product\Listing getByAttributes ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\Product\Listing getByCollection ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\Product\Listing getByColor ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\Product\Listing getByMaterialComposition ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\Product\Listing getBySecondaryMaterialComposition ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\Product\Listing getByImagesInheritance ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\Product\Listing getByImages ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\Product\Listing getBySpecificAttributes ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\Product\Listing getByRelatedProducts ($value, $limit = 0) 
 */
 
 class Product extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractProduct {
@@ -157,7 +157,7 @@ public function getColorName ($language = null) {
 
 /**
 * Get price - Regular Price
-* @return float
+* @return string
 */
 public function getPrice ($language = null) {
 	$data = $this->getLocalizedfields()->getLocalizedValue("price", $language);
@@ -170,7 +170,7 @@ public function getPrice ($language = null) {
 
 /**
 * Get priceOld - Price (old)
-* @return float
+* @return string
 */
 public function getPriceOld ($language = null) {
 	$data = $this->getLocalizedfields()->getLocalizedValue("priceOld", $language);
@@ -314,7 +314,7 @@ public function setColorName ($colorName, $language = null) {
 
 /**
 * Set price - Regular Price
-* @param float $price
+* @param string $price
 * @return \Pimcore\Model\Object\Product
 */
 public function setPrice ($price, $language = null) {
@@ -324,7 +324,7 @@ public function setPrice ($price, $language = null) {
 
 /**
 * Set priceOld - Price (old)
-* @param float $priceOld
+* @param string $priceOld
 * @return \Pimcore\Model\Object\Product
 */
 public function setPriceOld ($priceOld, $language = null) {

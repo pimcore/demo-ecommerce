@@ -1,17 +1,25 @@
 <?php 
 
+/** 
+* Generated at: 2017-06-23T13:19:42+02:00
+* IP: 192.168.11.87
+
+
+Fields Summary: 
+ - styles [multihref]
+ - fittings [multiselect]
+ - zips [select]
+*/ 
+
 
 return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
    'classDefinitions' => 
   array (
     0 => 
     array (
-      'classname' => 12,
+      'classname' => 'Product',
       'fieldname' => 'specificAttributes',
     ),
-  ),
-   'oldClassDefinitions' => 
-  array (
   ),
    'key' => 'apparel',
    'parentClass' => NULL,
@@ -78,6 +86,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
                 'classes' => 'productTechnology',
               ),
             ),
+             'pathFormatterClass' => NULL,
              'name' => 'styles',
              'title' => 'Styles',
              'tooltip' => '',
@@ -121,10 +130,12 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
             ),
              'width' => '',
              'height' => '',
-             'maxItems' => NULL,
+             'maxItems' => '',
+             'optionsProviderClass' => NULL,
+             'optionsProviderData' => NULL,
              'queryColumnType' => 'text',
              'columnType' => 'text',
-             'phpdocType' => 'string',
+             'phpdocType' => 'array',
              'name' => 'fittings',
              'title' => 'Fittings',
              'tooltip' => '',
@@ -158,6 +169,8 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
             ),
              'width' => '',
              'defaultValue' => NULL,
+             'optionsProviderClass' => NULL,
+             'optionsProviderData' => NULL,
              'queryColumnType' => 'varchar(255)',
              'columnType' => 'varchar(255)',
              'phpdocType' => 'string',

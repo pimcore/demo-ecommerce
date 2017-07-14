@@ -1,11 +1,14 @@
 <?php 
 
-/** Generated at 2015-03-11T21:35:59+01:00 */
+/** 
+* Generated at: 2017-06-23T13:19:43+02:00
+* IP: 192.168.11.87
 
-/**
-* IP:          10.242.2.6
-*/
 
+Fields Summary: 
+ - footTypes [multiselect]
+ - gaitTypes [multiselect]
+*/ 
 
 namespace Pimcore\Model\Object\Objectbrick\Data;
 

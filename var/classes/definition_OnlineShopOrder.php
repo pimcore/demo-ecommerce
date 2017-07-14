@@ -1,10 +1,10 @@
 <?php 
 
 /** 
-* Generated at: 2017-01-02T09:01:06+01:00
+* Generated at: 2017-07-12T10:28:00+02:00
 * Inheritance: no
 * Variants: no
-* Changed by: cfasching (6)
+* Changed by: admin (8)
 * IP: 192.168.11.5
 
 
@@ -51,9 +51,9 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
    'name' => 'OnlineShopOrder',
    'description' => '',
    'creationDate' => 1366279602,
-   'modificationDate' => 1483344066,
+   'modificationDate' => 1499848080,
    'userOwner' => 0,
-   'userModification' => 6,
+   'userModification' => 8,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractOrder',
    'useTraits' => '',
    'allowInherit' => false,
@@ -202,6 +202,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                     ),
                      'width' => 400,
                      'defaultValue' => '',
+                     'optionsProviderClass' => NULL,
+                     'optionsProviderData' => NULL,
                      'queryColumnType' => 'varchar(255)',
                      'columnType' => 'varchar(255)',
                      'phpdocType' => 'string',
@@ -472,7 +474,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                      'unsigned' => false,
                      'minValue' => NULL,
                      'maxValue' => NULL,
-                     'decimalPrecision' => NULL,
+                     'decimalSize' => 19,
+                     'decimalPrecision' => 4,
                      'name' => 'subTotalNetPrice',
                      'title' => 'SubTotalNetPrice',
                      'tooltip' => '',
@@ -500,7 +503,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                      'unsigned' => false,
                      'minValue' => NULL,
                      'maxValue' => NULL,
-                     'decimalPrecision' => NULL,
+                     'decimalSize' => 19,
+                     'decimalPrecision' => 4,
                      'name' => 'subTotalPrice',
                      'title' => 'SubTotalPrice',
                      'tooltip' => '',
@@ -528,7 +532,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                      'unsigned' => false,
                      'minValue' => NULL,
                      'maxValue' => NULL,
-                     'decimalPrecision' => NULL,
+                     'decimalSize' => 19,
+                     'decimalPrecision' => 4,
                      'name' => 'totalNetPrice',
                      'title' => 'TotalNetPrice',
                      'tooltip' => '',
@@ -556,7 +561,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                      'unsigned' => false,
                      'minValue' => NULL,
                      'maxValue' => NULL,
-                     'decimalPrecision' => NULL,
+                     'decimalSize' => 19,
+                     'decimalPrecision' => 4,
                      'name' => 'totalPrice',
                      'title' => 'TotalPrice',
                      'tooltip' => '',
@@ -578,7 +584,9 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                      'width' => '',
                      'height' => '',
                      'cols' => '',
+                     'colsFixed' => false,
                      'rows' => '',
+                     'rowsFixed' => false,
                      'data' => '',
                      'queryColumnType' => 'longtext',
                      'columnType' => 'longtext',
@@ -2188,6 +2196,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                 ),
                  'width' => '',
                  'defaultValue' => NULL,
+                 'optionsProviderClass' => NULL,
+                 'optionsProviderData' => NULL,
                  'queryColumnType' => 'varchar(255)',
                  'columnType' => 'varchar(255)',
                  'phpdocType' => 'string',
@@ -3704,6 +3714,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                 ),
                  'width' => '',
                  'defaultValue' => NULL,
+                 'optionsProviderClass' => NULL,
+                 'optionsProviderData' => NULL,
                  'queryColumnType' => 'varchar(255)',
                  'columnType' => 'varchar(255)',
                  'phpdocType' => 'string',
@@ -3776,6 +3788,7 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                   2 => 'PaymentProviderDatatrans',
                   3 => 'PaymentProviderWirecardSeamless',
                 ),
+                 'maxItems' => '',
                  'name' => 'paymentProvider',
                  'title' => 'Payment Provider',
                  'tooltip' => '',
@@ -3880,6 +3893,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
    'icon' => '',
    'previewUrl' => '',
    'group' => '',
+   'showAppLoggerTab' => false,
+   'linkGeneratorReference' => '',
    'propertyVisibility' => 
   array (
     'grid' => 

@@ -1,16 +1,17 @@
-11905	0	pricingRules	4
-11912	0	pricingRules	15
-11913	0	pricingRules	15
-11913	1	pricingRules	6
-11919	0	pricingRules	4
-11925	0	pricingRules	6
-11983	0	pricingRules	6
-12011	0	pricingRules	6
-12082	0	pricingRules	6
-12095	0	pricingRules	23
-12102	0	pricingRules	6
-12106	0	pricingRules	24
-12111	0	pricingRules	24
-12112	0	pricingRules	24
-12128	0	pricingRules	4
-12134	0	pricingRules	4
+11905	0	pricingRules	4	discount
+11912	0	pricingRules	15	single
+11913	0	pricingRules	15	single
+11913	1	pricingRules	6	free-shipping
+11919	0	pricingRules	4	discount
+11925	0	pricingRules	6	free-shipping
+11983	0	pricingRules	6	free-shipping
+12011	0	pricingRules	6	free-shipping
+12082	0	pricingRules	6	free-shipping
+12095	0	pricingRules	23	product-gift
+12102	0	pricingRules	6	free-shipping
+12106	0	pricingRules	24	test
+12111	0	pricingRules	24	test
+12112	0	pricingRules	24	test
+12128	0	pricingRules	4	Discount for all Tents
+12134	0	pricingRules	4	Discount for all Tents
+12160	0	pricingRules	4	Discount for all Tents

@@ -1,11 +1,20 @@
 <?php 
 
+/** 
+* Generated at: 2017-06-23T13:19:43+02:00
+* IP: 192.168.11.87
+
+
+Fields Summary: 
+ - data_orderNumber [input]
+ - data_language [input]
+ - data_amount [input]
+ - data_currency [input]
+*/ 
+
 
 return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
    'classDefinitions' => 
-  array (
-  ),
-   'oldClassDefinitions' => 
   array (
   ),
    'key' => 'paymentAuthorizedDataQpay',
@@ -21,7 +30,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -39,7 +48,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
          'title' => NULL,
          'width' => NULL,
          'height' => NULL,
-         'collapsible' => NULL,
+         'collapsible' => false,
          'collapsed' => NULL,
          'bodyStyle' => NULL,
          'datatype' => 'layout',
@@ -61,7 +70,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
              'mandatory' => false,
              'noteditable' => false,
              'index' => false,
-             'locked' => NULL,
+             'locked' => false,
              'style' => '',
              'permissions' => NULL,
              'datatype' => 'data',
@@ -85,7 +94,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
              'mandatory' => false,
              'noteditable' => false,
              'index' => false,
-             'locked' => NULL,
+             'locked' => false,
              'style' => '',
              'permissions' => NULL,
              'datatype' => 'data',
@@ -109,7 +118,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
              'mandatory' => false,
              'noteditable' => false,
              'index' => false,
-             'locked' => NULL,
+             'locked' => false,
              'style' => '',
              'permissions' => NULL,
              'datatype' => 'data',
@@ -133,7 +142,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
              'mandatory' => false,
              'noteditable' => false,
              'index' => false,
-             'locked' => NULL,
+             'locked' => false,
              'style' => '',
              'permissions' => NULL,
              'datatype' => 'data',
@@ -143,10 +152,10 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
         ),
-         'locked' => NULL,
+         'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'dao' => NULL,
 ));
