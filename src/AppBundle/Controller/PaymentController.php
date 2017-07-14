@@ -37,6 +37,7 @@ class PaymentController extends AbstractCartAware
         $translator = $this->get('translator');
         $placeholder = $this->get('pimcore.templating.view_helper.placeholder');
 
+        /** @var callable $placeholder */
         $placeholder('addBreadcrumb')->append([
             'parentId' => $this->document->getId(),
             'id' => 'cart',
