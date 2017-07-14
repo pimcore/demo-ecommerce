@@ -32,6 +32,7 @@ class CheckoutController extends AbstractCartAware
         $this->view->hideNav = true;
 
         $translator = $this->get('translator');
+        /** @var callable $placeholder */
         $placeholder = $this->get('pimcore.templating.view_helper.placeholder');
 
         $placeholder('addBreadcrumb')->append([
@@ -209,7 +210,10 @@ class CheckoutController extends AbstractCartAware
     {
         // init
 
-        $order = \Pimcore\Model\Object\OnlineShopOrder::getById($request->get('id'));
+        $session = $this->get("session");
+        $orderId = $session->get("last_order_id");
+
+        $order = \Pimcore\Model\Object\OnlineShopOrder::getById($orderId);
         $this->view->order = $order;
 
         $trackingManager = Factory::getInstance()->getTrackingManager();

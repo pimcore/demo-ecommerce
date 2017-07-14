@@ -204,7 +204,11 @@ class PaymentController extends AbstractCartAware
 //            $orderAgent->updatePayment($paymentStatus);
 
             if ($order && $order->getOrderState() == $order::ORDER_STATE_COMMITTED) {
-                $this->view->goto = $this->generateUrl('checkout', ['action' => 'completed', 'language' => $language, 'id' => $order->getId()]);
+
+                $session = $this->get("session");
+                $session->set("last_order_id", $order->getId());
+
+                $this->view->goto = $this->generateUrl('checkout', ['action' => 'completed', 'language' => $language]);
             } else {
                 $this->view->goto = $this->generateUrl('checkout', ['action' => 'confirm', 'language' => $language, 'error' => strip_tags($request->get('mode'))]);
             }
