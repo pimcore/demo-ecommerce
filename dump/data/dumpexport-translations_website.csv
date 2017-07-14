@@ -364,6 +364,21 @@ checkout.error.confirm.failure	de_AT		1460552553	1460552587
 checkout.error.confirm.failure	en_GB	Failure during payment	1460552553	1460552587
 checkout.error.confirm.failure	fr_FR		1460552553	1460552587
 checkout.error.confirm.failure	modificati	1460553	1460552553	1460552587
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1619978945-1~12180 -> current internal status id = payment_1995259916-1~12180	de_AT		1500015745	1500015745
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1619978945-1~12180 -> current internal status id = payment_1995259916-1~12180	en_GB		1500015745	1500015745
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1619978945-1~12180 -> current internal status id = payment_1995259916-1~12180	fr_FR		1500015745	1500015745
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1708146372-1~12174 -> current internal status id = payment_208541261-1~12174	de_AT		1500015294	1500015294
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1708146372-1~12174 -> current internal status id = payment_208541261-1~12174	en_GB		1500015294	1500015294
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1708146372-1~12174 -> current internal status id = payment_208541261-1~12174	fr_FR		1500015294	1500015294
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1708146372-2~12174 -> current internal status id = payment_208541261-2~12174	de_AT		1500015331	1500015331
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1708146372-2~12174 -> current internal status id = payment_208541261-2~12174	en_GB		1500015331	1500015331
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1708146372-2~12174 -> current internal status id = payment_208541261-2~12174	fr_FR		1500015331	1500015331
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_2464075641-1~12176 -> current internal status id = payment_2340483418-1~12176	de_AT		1500015391	1500015391
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_2464075641-1~12176 -> current internal status id = payment_2340483418-1~12176	en_GB		1500015391	1500015391
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_2464075641-1~12176 -> current internal status id = payment_2340483418-1~12176	fr_FR		1500015391	1500015391
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_2547751755-1~12178 -> current internal status id = payment_1873982695-1~12178	de_AT		1500015430	1500015430
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_2547751755-1~12178 -> current internal status id = payment_1873982695-1~12178	en_GB		1500015430	1500015430
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_2547751755-1~12178 -> current internal status id = payment_1873982695-1~12178	fr_FR		1500015430	1500015430
 checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_55709322-1~12150 -> current internal status id = payment_3384999107-1~12150	de_AT		1499843277	1499843277
 checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_55709322-1~12150 -> current internal status id = payment_3384999107-1~12150	en_GB		1499843277	1499843277
 checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_55709322-1~12150 -> current internal status id = payment_3384999107-1~12150	fr_FR		1499843277	1499843277
@@ -1615,6 +1630,18 @@ payment.wirecard-seamless.invoice.age-error	fr_FR		1464962411	1470816965
 payment.wirecard-seamless.invoice.birthday-error	de_AT		1477914148	1477920998
 payment.wirecard-seamless.invoice.birthday-error	en_GB	Day of Birth not valid	1477914148	1477920998
 payment.wirecard-seamless.invoice.birthday-error	fr_FR		1477914148	1477920998
+payment.wirecard-seamless.pay-now.INVOICE	de_AT		1500026506	1500026506
+payment.wirecard-seamless.pay-now.INVOICE	en_GB		1500026506	1500026506
+payment.wirecard-seamless.pay-now.INVOICE	fr_FR		1500026506	1500026506
+payment.wirecard-seamless.pay-now.INVOICE.birthdate	de_AT		1500026506	1500026506
+payment.wirecard-seamless.pay-now.INVOICE.birthdate	en_GB		1500026506	1500026506
+payment.wirecard-seamless.pay-now.INVOICE.birthdate	fr_FR		1500026506	1500026506
+payment.wirecard-seamless.pay-now.PAYPAL	de_AT		1500026505	1500026505
+payment.wirecard-seamless.pay-now.PAYPAL	en_GB		1500026505	1500026505
+payment.wirecard-seamless.pay-now.PAYPAL	fr_FR		1500026505	1500026505
+payment.wirecard-seamless.pay-now.SOFORTUEBERWEISUNG	de_AT		1500026505	1500026505
+payment.wirecard-seamless.pay-now.SOFORTUEBERWEISUNG	en_GB		1500026505	1500026505
+payment.wirecard-seamless.pay-now.SOFORTUEBERWEISUNG	fr_FR		1500026505	1500026505
 payment.wirecard-seamless.pay-now.ccard	de_AT	Mit Kreditkarte bezahlen	1444638309	1470816974
 payment.wirecard-seamless.pay-now.ccard	en_GB	Pay by credit-card	1444638309	1470816974
 payment.wirecard-seamless.pay-now.ccard	fr_FR		1444638309	1470816974
@@ -1633,9 +1660,39 @@ payment.wirecard-seamless.pay-now.prepayment	fr_FR		1470649968	1470817220
 payment.wirecard-seamless.pay-now.sofortueberweisung	de_AT	Mit Sofortüberweisung bezahlen	1444638309	1470817024
 payment.wirecard-seamless.pay-now.sofortueberweisung	en_GB	Checkout with Sofortuberweisung	1444638309	1470817024
 payment.wirecard-seamless.pay-now.sofortueberweisung	fr_FR		1444638309	1470817024
+payment.wirecard-seamless.payment-method.CCARD	de_AT		1500026505	1500026505
+payment.wirecard-seamless.payment-method.CCARD	en_GB		1500026505	1500026505
+payment.wirecard-seamless.payment-method.CCARD	fr_FR		1500026505	1500026505
+payment.wirecard-seamless.payment-method.INVOICE	de_AT		1500026505	1500026505
+payment.wirecard-seamless.payment-method.INVOICE	en_GB		1500026505	1500026505
+payment.wirecard-seamless.payment-method.INVOICE	fr_FR		1500026505	1500026505
+payment.wirecard-seamless.payment-method.PAYPAL	de_AT		1500026505	1500026505
+payment.wirecard-seamless.payment-method.PAYPAL	en_GB		1500026505	1500026505
+payment.wirecard-seamless.payment-method.PAYPAL	fr_FR		1500026505	1500026505
+payment.wirecard-seamless.payment-method.PREPAYMENT	de_AT		1500026505	1500026505
+payment.wirecard-seamless.payment-method.PREPAYMENT	en_GB		1500026505	1500026505
+payment.wirecard-seamless.payment-method.PREPAYMENT	fr_FR		1500026505	1500026505
+payment.wirecard-seamless.payment-method.SOFORTUEBERWEISUNG	de_AT		1500026505	1500026505
+payment.wirecard-seamless.payment-method.SOFORTUEBERWEISUNG	en_GB		1500026505	1500026505
+payment.wirecard-seamless.payment-method.SOFORTUEBERWEISUNG	fr_FR		1500026505	1500026505
 payment.wirecard-seamless.payment-method.ccard	de_AT	Kreditkarte	1444635807	1470817030
 payment.wirecard-seamless.payment-method.ccard	en_GB	Credit card	1444635807	1470817030
 payment.wirecard-seamless.payment-method.ccard	fr_FR		1444635807	1470817030
+payment.wirecard-seamless.payment-method.description.CCARD	de_AT		1500026505	1500026505
+payment.wirecard-seamless.payment-method.description.CCARD	en_GB		1500026505	1500026505
+payment.wirecard-seamless.payment-method.description.CCARD	fr_FR		1500026505	1500026505
+payment.wirecard-seamless.payment-method.description.INVOICE	de_AT		1500026505	1500026505
+payment.wirecard-seamless.payment-method.description.INVOICE	en_GB		1500026505	1500026505
+payment.wirecard-seamless.payment-method.description.INVOICE	fr_FR		1500026505	1500026505
+payment.wirecard-seamless.payment-method.description.PAYPAL	de_AT		1500026505	1500026505
+payment.wirecard-seamless.payment-method.description.PAYPAL	en_GB		1500026505	1500026505
+payment.wirecard-seamless.payment-method.description.PAYPAL	fr_FR		1500026505	1500026505
+payment.wirecard-seamless.payment-method.description.PREPAYMENT	de_AT		1500026505	1500026505
+payment.wirecard-seamless.payment-method.description.PREPAYMENT	en_GB		1500026505	1500026505
+payment.wirecard-seamless.payment-method.description.PREPAYMENT	fr_FR		1500026505	1500026505
+payment.wirecard-seamless.payment-method.description.SOFORTUEBERWEISUNG	de_AT		1500026505	1500026505
+payment.wirecard-seamless.payment-method.description.SOFORTUEBERWEISUNG	en_GB		1500026505	1500026505
+payment.wirecard-seamless.payment-method.description.SOFORTUEBERWEISUNG	fr_FR		1500026505	1500026505
 payment.wirecard-seamless.payment-method.description.ccard	de_AT	Mit Kreditkarte können Sie schnell und sicher bezahlen.	1444639443	1470817041
 payment.wirecard-seamless.payment-method.description.ccard	en_GB	With a credit card you can pay quickly and safely .	1444639443	1470817041
 payment.wirecard-seamless.payment-method.description.ccard	fr_FR		1444639443	1470817041
