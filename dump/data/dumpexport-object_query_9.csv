@@ -79,3 +79,7 @@ pimcore tax|5%|2.0224
 pimcore tax|5%|2.8728
 12188	9	OnlineShopOrder	ord_596899a0602b8	51.8500	1500027296	,12189,	\N	\N	\N	paymentPending	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_596898d76367a	\N	EUR	\N	\N	Söllheimerstraße, 16	5020	AT	peter.hugo@pimcore.com	\N	Söllheimerstraße, 16	5020	Salzburg	AT	\N	Salzburg	45.9500	Peter	Hugo	Hugo	Peter	\N	36.7600	41.4800	MwSt 20%|20%|8.2960\
 pimcore tax|5%|2.0740
+12190	9	OnlineShopOrder	ord_5968be300574c	12.7900	1500036656	,12191,	\N	\N	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_5968be0fc03dd	\N	EUR	\N	\N	Söllheimerstraße, 16	5020	AT	peter.hugo@pimcore.com	\N	Söllheimerstraße, 16	5020	Salzburg	AT	\N	Salzburg	12.7900	Peter	Hugo	Hugo	Peter	\N	10.2320	10.2320	MwSt 20%|20%|2.0464\
+pimcore tax|5%|0.5116
+12192	9	OnlineShopOrder	ord_5968be52d8590	40.7000	1500036690	,12193,	\N	\N	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_5968be3e8cc22	\N	EUR	\N	\N	Reininghausstraße 13a	8020	AT	peter.hugo@pimcore.com	\N	Reininghausstraße 13a	8020	Graz	AT	\N	Graz	34.8000	\N	Thomas Muster	Thomas Muster	\N	\N	27.8400	32.5600	MwSt 20%|20%|6.5120\
+pimcore tax|5%|1.6280
