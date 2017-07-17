@@ -1,11 +1,19 @@
 <?php 
 
-/** Generated at 2016-04-07T20:02:02+02:00 */
+/** 
+* Generated at: 2017-07-17T15:06:00+02:00
+* IP: 192.168.11.5
 
-/**
-* IP:          10.242.2.6
-*/
 
+Fields Summary: 
+ - label [input]
+ - field [indexFieldSelection]
+ - ranges [structuredTable]
+ - preSelectFrom [numeric]
+ - preSelectTo [numeric]
+ - scriptPath [input]
+ - unit [input]
+*/ 
 
 namespace Pimcore\Model\Object\Fieldcollection\Data;
 
@@ -44,7 +52,7 @@ public function setLabel ($label) {
 
 /**
 * Get field - Field
-* @return Object_Data_IndexFieldSelection
+* @return \Pimcore\Bundle\EcommerceFrameworkBundle\CoreExtensions\ObjectData\IndexFieldSelection
 */
 public function getField () {
 	$data = $this->field;
@@ -53,7 +61,7 @@ public function getField () {
 
 /**
 * Set field - Field
-* @param Object_Data_IndexFieldSelection $field
+* @param \Pimcore\Bundle\EcommerceFrameworkBundle\CoreExtensions\ObjectData\IndexFieldSelection $field
 * @return \Pimcore\Model\Object\FilterNumberRangeSelection
 */
 public function setField ($field) {
@@ -63,7 +71,7 @@ public function setField ($field) {
 
 /**
 * Get ranges - Ranges
-* @return array
+* @return \Pimcore\Model\Object\Data\StructuredTable
 */
 public function getRanges () {
 	$data = $this->ranges;
@@ -72,7 +80,7 @@ public function getRanges () {
 
 /**
 * Set ranges - Ranges
-* @param array $ranges
+* @param \Pimcore\Model\Object\Data\StructuredTable $ranges
 * @return \Pimcore\Model\Object\FilterNumberRangeSelection
 */
 public function setRanges ($ranges) {

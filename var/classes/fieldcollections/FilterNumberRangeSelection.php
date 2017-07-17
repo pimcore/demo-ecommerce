@@ -1,5 +1,20 @@
 <?php 
 
+/** 
+* Generated at: 2017-07-17T15:06:00+02:00
+* IP: 192.168.11.5
+
+
+Fields Summary: 
+ - label [input]
+ - field [indexFieldSelection]
+ - ranges [structuredTable]
+ - preSelectFrom [numeric]
+ - preSelectTo [numeric]
+ - scriptPath [input]
+ - unit [input]
+*/ 
+
 
 return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
    'key' => 'FilterNumberRangeSelection',
@@ -44,6 +59,8 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
           Pimcore\Model\Object\ClassDefinition\Layout\Text::__set_state(array(
              'fieldtype' => 'text',
              'html' => '<b>Filter Numberrange Selection</b><div><div>Filter for number ranges with predefined ranges.&nbsp;</div><div>- ranges: predefined ranges.&nbsp;</div></div><div>- unit: free textfield with is displayed in frontend if so implemented by view script.&nbsp;</div>',
+             'renderingClass' => NULL,
+             'renderingData' => NULL,
              'name' => 'Layout',
              'type' => NULL,
              'region' => NULL,
@@ -85,7 +102,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           2 => 
-          Pimcore\Model\Object\ClassDefinition\Data\IndexFieldSelection::__set_state(array(
+          Pimcore\Bundle\EcommerceFrameworkBundle\CoreExtensions\ClassDefinition\IndexFieldSelection::__set_state(array(
              'fieldtype' => 'indexFieldSelection',
              'queryColumnType' => 
             array (
@@ -99,7 +116,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
               'field' => 'varchar(200)',
               'preSelect' => 'text',
             ),
-             'phpdocType' => 'Object_Data_IndexFieldSelection',
+             'phpdocType' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\CoreExtensions\\ObjectData\\IndexFieldSelection',
              'width' => 400,
              'considerTenants' => true,
              'multiPreSelect' => 'none',
@@ -187,7 +204,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
             ),
              'queryColumnType' => '',
              'columnType' => '',
-             'phpdocType' => 'array',
+             'phpdocType' => '\\Pimcore\\Model\\Object\\Data\\StructuredTable',
              'name' => 'ranges',
              'title' => 'Ranges',
              'tooltip' => '',
@@ -215,6 +232,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'preSelectFrom',
              'title' => 'Pre Select From',
@@ -243,6 +261,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'preSelectTo',
              'title' => 'Pre Select To',

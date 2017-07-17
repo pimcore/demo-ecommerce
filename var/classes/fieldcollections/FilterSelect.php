@@ -1,5 +1,16 @@
 <?php 
 
+/** 
+* Generated at: 2017-07-17T15:06:12+02:00
+* IP: 192.168.11.5
+
+
+Fields Summary: 
+ - label [input]
+ - field [indexFieldSelection]
+ - scriptPath [input]
+*/ 
+
 
 return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
    'key' => 'FilterSelect',
@@ -44,6 +55,8 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
           Pimcore\Model\Object\ClassDefinition\Layout\Text::__set_state(array(
              'fieldtype' => 'text',
              'html' => '<b>​Filter&nbsp;Select</b><div>Single selection filter for default value fields.&nbsp;<br></div>',
+             'renderingClass' => NULL,
+             'renderingData' => NULL,
              'name' => 'Layout',
              'type' => NULL,
              'region' => NULL,
@@ -85,7 +98,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           2 => 
-          Pimcore\Model\Object\ClassDefinition\Data\IndexFieldSelection::__set_state(array(
+          Pimcore\Bundle\EcommerceFrameworkBundle\CoreExtensions\ClassDefinition\IndexFieldSelection::__set_state(array(
              'fieldtype' => 'indexFieldSelection',
              'queryColumnType' => 
             array (
@@ -99,7 +112,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
               'field' => 'varchar(200)',
               'preSelect' => 'text',
             ),
-             'phpdocType' => 'Object_Data_IndexFieldSelection',
+             'phpdocType' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\CoreExtensions\\ObjectData\\IndexFieldSelection',
              'width' => 400,
              'considerTenants' => true,
              'multiPreSelect' => 'remote_single',

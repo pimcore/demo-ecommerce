@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2017-07-13T17:04:10+02:00
+* Generated at: 2017-07-14T09:03:17+02:00
 * Inheritance: no
 * Variants: no
 * Changed by: admin (8)
@@ -27,7 +27,7 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
    'name' => 'OfferToolOfferItem',
    'description' => '',
    'creationDate' => 1376898390,
-   'modificationDate' => 1499958250,
+   'modificationDate' => 1500015797,
    'userOwner' => 2,
    'userModification' => 8,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\OfferTool\\AbstractOfferItem',
@@ -231,8 +231,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                  'unsigned' => false,
                  'minValue' => NULL,
                  'maxValue' => NULL,
-                 'decimalSize' => 19,
-                 'decimalPrecision' => 4,
+                 'decimalSize' => NULL,
+                 'decimalPrecision' => NULL,
                  'name' => 'amount',
                  'title' => 'Amount',
                  'tooltip' => '',

@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2017-07-12T10:28:00+02:00
+* Generated at: 2017-07-17T12:04:39+02:00
 * Inheritance: no
 * Variants: no
 * Changed by: admin (8)
@@ -44,6 +44,7 @@ Fields Summary:
 - paymentProvider [objectbricks]
 - paymentInfo [fieldcollections]
 - paymentReference [input]
+- customized [objectbricks]
 */ 
 
 namespace Pimcore\Model\Object;
@@ -86,6 +87,7 @@ namespace Pimcore\Model\Object;
 * @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByPaymentProvider ($value, $limit = 0) 
 * @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByPaymentInfo ($value, $limit = 0) 
 * @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByPaymentReference ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrder\Listing getByCustomized ($value, $limit = 0) 
 */
 
 class OnlineShopOrder extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractOrder {
@@ -127,6 +129,7 @@ public $deliveryCountry;
 public $paymentProvider;
 public $paymentInfo;
 public $paymentReference;
+public $customized;
 
 
 /**
@@ -940,6 +943,34 @@ public function getPaymentReference () {
 */
 public function setPaymentReference ($paymentReference) {
 	$this->paymentReference = $paymentReference;
+	return $this;
+}
+
+/**
+* @return \Pimcore\Model\Object\Objectbrick
+*/
+public function getCustomized () {
+	$data = $this->customized;
+	if(!$data) { 
+		if(\Pimcore\Tool::classExists("\\Pimcore\\Model\\Object\\OnlineShopOrder\\Customized")) { 
+			$data = new \Pimcore\Model\Object\OnlineShopOrder\Customized($this, "customized");
+			$this->customized = $data;
+		} else {
+			return null;
+		}
+	}
+	$preValue = $this->preGetValue("customized"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { return $preValue;}
+	 return $data;
+}
+
+/**
+* Set customized - Customized
+* @param \Pimcore\Model\Object\Objectbrick $customized
+* @return \Pimcore\Model\Object\OnlineShopOrder
+*/
+public function setCustomized ($customized) {
+	$this->customized = $this->getClass()->getFieldDefinition("customized")->preSetData($this, $customized);
 	return $this;
 }
 

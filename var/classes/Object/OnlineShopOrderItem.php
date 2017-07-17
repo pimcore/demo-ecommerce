@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2017-07-13T17:03:19+02:00
+* Generated at: 2017-07-17T12:05:26+02:00
 * Inheritance: no
 * Variants: no
 * Changed by: admin (8)
@@ -20,6 +20,7 @@ Fields Summary:
 - pricingRules [fieldcollections]
 - comment [textarea]
 - subItems [objects]
+- customized [objectbricks]
 */ 
 
 namespace Pimcore\Model\Object;
@@ -38,6 +39,7 @@ namespace Pimcore\Model\Object;
 * @method \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByPricingRules ($value, $limit = 0) 
 * @method \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByComment ($value, $limit = 0) 
 * @method \Pimcore\Model\Object\OnlineShopOrderItem\Listing getBySubItems ($value, $limit = 0) 
+* @method \Pimcore\Model\Object\OnlineShopOrderItem\Listing getByCustomized ($value, $limit = 0) 
 */
 
 class OnlineShopOrderItem extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractOrderItem {
@@ -55,6 +57,7 @@ public $taxInfo;
 public $pricingRules;
 public $comment;
 public $subItems;
+public $customized;
 
 
 /**
@@ -161,7 +164,7 @@ public function setProductName ($productName) {
 
 /**
 * Get amount - Amount
-* @return string
+* @return float
 */
 public function getAmount () {
 	$preValue = $this->preGetValue("amount"); 
@@ -174,7 +177,7 @@ public function getAmount () {
 
 /**
 * Set amount - Amount
-* @param string $amount
+* @param float $amount
 * @return \Pimcore\Model\Object\OnlineShopOrderItem
 */
 public function setAmount ($amount) {
@@ -314,6 +317,34 @@ public function getSubItems () {
 */
 public function setSubItems ($subItems) {
 	$this->subItems = $this->getClass()->getFieldDefinition("subItems")->preSetData($this, $subItems);
+	return $this;
+}
+
+/**
+* @return \Pimcore\Model\Object\Objectbrick
+*/
+public function getCustomized () {
+	$data = $this->customized;
+	if(!$data) { 
+		if(\Pimcore\Tool::classExists("\\Pimcore\\Model\\Object\\OnlineShopOrderItem\\Customized")) { 
+			$data = new \Pimcore\Model\Object\OnlineShopOrderItem\Customized($this, "customized");
+			$this->customized = $data;
+		} else {
+			return null;
+		}
+	}
+	$preValue = $this->preGetValue("customized"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { return $preValue;}
+	 return $data;
+}
+
+/**
+* Set customized - Customized
+* @param \Pimcore\Model\Object\Objectbrick $customized
+* @return \Pimcore\Model\Object\OnlineShopOrderItem
+*/
+public function setCustomized ($customized) {
+	$this->customized = $this->getClass()->getFieldDefinition("customized")->preSetData($this, $customized);
 	return $this;
 }
 

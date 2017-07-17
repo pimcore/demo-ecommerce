@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2017-07-12T10:28:00+02:00
+* Generated at: 2017-07-17T12:04:39+02:00
 * Inheritance: no
 * Variants: no
 * Changed by: admin (8)
@@ -44,6 +44,7 @@ Fields Summary:
 - paymentProvider [objectbricks]
 - paymentInfo [fieldcollections]
 - paymentReference [input]
+- customized [objectbricks]
 */ 
 
 
@@ -51,7 +52,7 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
    'name' => 'OnlineShopOrder',
    'description' => '',
    'creationDate' => 1366279602,
-   'modificationDate' => 1499848080,
+   'modificationDate' => 1500285879,
    'userOwner' => 0,
    'userModification' => 8,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractOrder',
@@ -3880,6 +3881,74 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
                   )),
                 ),
                  'locked' => false,
+              )),
+            ),
+             'locked' => false,
+          )),
+          4 => 
+          Pimcore\Model\Object\ClassDefinition\Layout\Panel::__set_state(array(
+             'fieldtype' => 'panel',
+             'labelWidth' => 100,
+             'layout' => NULL,
+             'name' => 'customizations',
+             'type' => NULL,
+             'region' => '',
+             'title' => 'Customizations',
+             'width' => NULL,
+             'height' => NULL,
+             'collapsible' => false,
+             'collapsed' => false,
+             'bodyStyle' => '',
+             'datatype' => 'layout',
+             'permissions' => NULL,
+             'childs' => 
+            array (
+              0 => 
+              Pimcore\Model\Object\ClassDefinition\Layout\Text::__set_state(array(
+                 'fieldtype' => 'text',
+                 'html' => '<b>Customized</b>&nbsp;gives you the possibility to add object bricks with additional data to your orders.',
+                 'renderingClass' => '',
+                 'renderingData' => '',
+                 'name' => 'Layout',
+                 'type' => NULL,
+                 'region' => NULL,
+                 'title' => '',
+                 'width' => NULL,
+                 'height' => NULL,
+                 'collapsible' => false,
+                 'collapsed' => false,
+                 'bodyStyle' => 'padding: 10px; background-color: #d9edf7; border-color: #bce8f1 !important; color: #31708f;',
+                 'datatype' => 'layout',
+                 'permissions' => NULL,
+                 'childs' => 
+                array (
+                ),
+                 'locked' => false,
+              )),
+              1 => 
+              Pimcore\Model\Object\ClassDefinition\Data\Objectbricks::__set_state(array(
+                 'fieldtype' => 'objectbricks',
+                 'phpdocType' => '\\Pimcore\\Model\\Object\\Objectbrick',
+                 'allowedTypes' => 
+                array (
+                ),
+                 'maxItems' => '',
+                 'name' => 'customized',
+                 'title' => 'Customized',
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => false,
+                 'index' => false,
+                 'locked' => false,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'datatype' => 'data',
+                 'columnType' => NULL,
+                 'queryColumnType' => NULL,
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
               )),
             ),
              'locked' => false,

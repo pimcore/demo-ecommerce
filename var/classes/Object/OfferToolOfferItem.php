@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2017-07-13T17:04:10+02:00
+* Generated at: 2017-07-14T09:03:17+02:00
 * Inheritance: no
 * Variants: no
 * Changed by: admin (8)
@@ -138,7 +138,7 @@ public function setProductName ($productName) {
 
 /**
 * Get amount - Amount
-* @return string
+* @return float
 */
 public function getAmount () {
 	$preValue = $this->preGetValue("amount"); 
@@ -151,7 +151,7 @@ public function getAmount () {
 
 /**
 * Set amount - Amount
-* @param string $amount
+* @param float $amount
 * @return \Pimcore\Model\Object\OfferToolOfferItem
 */
 public function setAmount ($amount) {

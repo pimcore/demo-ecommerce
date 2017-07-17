@@ -1,8 +1,8 @@
 <?php 
 
 /** 
-* Generated at: 2017-03-23T20:13:32+01:00
-* IP: 10.242.2.4
+* Generated at: 2017-07-17T15:05:32+02:00
+* IP: 192.168.11.5
 
 
 Fields Summary: 
@@ -114,7 +114,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
               'field' => 'varchar(200)',
               'preSelect' => 'text',
             ),
-             'phpdocType' => 'Pimcore\\Bundle\\EcommerceFrameworkBundle\\CoreExtensions\\ClassDefinition\\IndexFieldSelection',
+             'phpdocType' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\CoreExtensions\\ObjectData\\IndexFieldSelection',
              'width' => 400,
              'considerTenants' => true,
              'multiPreSelect' => 'remote_multi',

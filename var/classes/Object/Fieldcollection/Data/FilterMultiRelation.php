@@ -1,8 +1,8 @@
 <?php 
 
 /** 
-* Generated at: 2017-03-23T20:13:32+01:00
-* IP: 10.242.2.4
+* Generated at: 2017-07-17T15:05:32+02:00
+* IP: 192.168.11.5
 
 
 Fields Summary: 
@@ -48,7 +48,7 @@ public function setLabel ($label) {
 
 /**
 * Get field - Field
-* @return Pimcore\Bundle\PimcoreEcommerceFrameworkBundle\CoreExtensions\ClassDefinition\IndexFieldSelection
+* @return \Pimcore\Bundle\EcommerceFrameworkBundle\CoreExtensions\ObjectData\IndexFieldSelection
 */
 public function getField () {
 	$data = $this->field;
@@ -57,7 +57,7 @@ public function getField () {
 
 /**
 * Set field - Field
-* @param Pimcore\Bundle\PimcoreEcommerceFrameworkBundle\CoreExtensions\ClassDefinition\IndexFieldSelection $field
+* @param \Pimcore\Bundle\EcommerceFrameworkBundle\CoreExtensions\ObjectData\IndexFieldSelection $field
 * @return \Pimcore\Model\Object\FilterMultiRelation
 */
 public function setField ($field) {

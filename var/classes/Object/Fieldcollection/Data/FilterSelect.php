@@ -1,11 +1,15 @@
 <?php 
 
-/** Generated at 2016-04-07T20:02:25+02:00 */
+/** 
+* Generated at: 2017-07-17T15:06:12+02:00
+* IP: 192.168.11.5
 
-/**
-* IP:          10.242.2.6
-*/
 
+Fields Summary: 
+ - label [input]
+ - field [indexFieldSelection]
+ - scriptPath [input]
+*/ 
 
 namespace Pimcore\Model\Object\Fieldcollection\Data;
 
@@ -40,7 +44,7 @@ public function setLabel ($label) {
 
 /**
 * Get field - Field
-* @return Object_Data_IndexFieldSelection
+* @return \Pimcore\Bundle\EcommerceFrameworkBundle\CoreExtensions\ObjectData\IndexFieldSelection
 */
 public function getField () {
 	$data = $this->field;
@@ -49,7 +53,7 @@ public function getField () {
 
 /**
 * Set field - Field
-* @param Object_Data_IndexFieldSelection $field
+* @param \Pimcore\Bundle\EcommerceFrameworkBundle\CoreExtensions\ObjectData\IndexFieldSelection $field
 * @return \Pimcore\Model\Object\FilterSelect
 */
 public function setField ($field) {

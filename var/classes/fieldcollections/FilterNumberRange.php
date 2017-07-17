@@ -1,5 +1,20 @@
 <?php 
 
+/** 
+* Generated at: 2017-07-17T15:05:55+02:00
+* IP: 192.168.11.5
+
+
+Fields Summary: 
+ - label [input]
+ - field [indexFieldSelection]
+ - rangeFrom [numeric]
+ - rangeTo [numeric]
+ - preSelectFrom [numeric]
+ - preSelectTo [numeric]
+ - scriptPath [input]
+*/ 
+
 
 return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
    'key' => 'FilterNumberRange',
@@ -44,6 +59,8 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
           Pimcore\Model\Object\ClassDefinition\Layout\Text::__set_state(array(
              'fieldtype' => 'text',
              'html' => '<b>Filter Numberrange</b><div>Filter for number ranges.&nbsp;</div><div>- rangeFrom/rangeTo: Optionally max and min values for range. Needs to be implemented in frontend.&nbsp;</div>',
+             'renderingClass' => NULL,
+             'renderingData' => NULL,
              'name' => 'Layout',
              'type' => NULL,
              'region' => NULL,
@@ -85,7 +102,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           2 => 
-          Pimcore\Model\Object\ClassDefinition\Data\IndexFieldSelection::__set_state(array(
+          Pimcore\Bundle\EcommerceFrameworkBundle\CoreExtensions\ClassDefinition\IndexFieldSelection::__set_state(array(
              'fieldtype' => 'indexFieldSelection',
              'queryColumnType' => 
             array (
@@ -99,7 +116,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
               'field' => 'varchar(200)',
               'preSelect' => 'text',
             ),
-             'phpdocType' => 'Object_Data_IndexFieldSelection',
+             'phpdocType' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\CoreExtensions\\ObjectData\\IndexFieldSelection',
              'width' => 400,
              'considerTenants' => true,
              'multiPreSelect' => 'none',
@@ -137,6 +154,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'rangeFrom',
              'title' => 'Range From',
@@ -165,6 +183,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'rangeTo',
              'title' => 'Range To',
@@ -193,6 +212,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'preSelectFrom',
              'title' => 'Pre Select From',
@@ -221,6 +241,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'preSelectTo',
              'title' => 'Pre Select To',
