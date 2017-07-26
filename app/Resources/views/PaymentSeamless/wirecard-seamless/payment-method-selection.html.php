@@ -44,7 +44,7 @@
                 <div class="panel-heading" role="tab">
                     <div class=" row">
                         <div class="col col-sm-3">
-                            <?php if ($icon = $options->icon) { ?>
+                            <?php if ($icon = $options['icon']) { ?>
                                 <img src="<?= $icon ?>" width="100" class="wirecard-payment-icon"/>
                             <?php } ?>
                         </div>
@@ -59,8 +59,8 @@
             </a>
 
             <div id="collapse<?= $paymentMethod ?>" class="panel-collapseN collapse" role="tabpanel">
-                <?php if ($options->partial) { ?>
-                    <?= $this->template($options->partial) ?>
+                <?php if ($options['partial']) { ?>
+                    <?= $this->template($options['partial']) ?>
                 <?php } else { ?>
                     <div class="panel-body">
                         <div class="checkout-dropdown wirecard-checkout-dropdown">

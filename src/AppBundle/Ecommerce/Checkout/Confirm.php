@@ -25,7 +25,7 @@ class Confirm extends AbstractStep implements ICheckoutStep
     const PRIVATE_NAMESPACE = 'confirm';
 
     /**
-     * @return string
+     * @inheritdoc
      */
     public function getName()
     {
@@ -33,11 +33,7 @@ class Confirm extends AbstractStep implements ICheckoutStep
     }
 
     /**
-     * commits step and sets delivered data
-     *
-     * @param  $data
-     *
-     * @return bool
+     * @inheritdoc
      */
     public function commit($data)
     {
@@ -47,7 +43,7 @@ class Confirm extends AbstractStep implements ICheckoutStep
     }
 
     /**
-     * @return mixed
+     * @inheritdoc
      */
     public function getData()
     {
