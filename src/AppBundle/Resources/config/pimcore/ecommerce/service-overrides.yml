@@ -1,0 +1,17 @@
+services:
+
+    # define own price system service and configure options for attribute name and price object class
+    app.default_price_system:
+        class: Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\AttributePriceSystem
+        arguments:
+            - '@pimcore_ecommerce.pricing_manager'
+            - '@pimcore_ecommerce.environment'
+            - { attribute_name: price, price_class: Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\Price }
+
+
+    # Custom commit order processor for masterpass
+    AppBundle\Ecommerce\Order\MasterpassProcessor:
+        class: \AppBundle\Ecommerce\Order\MasterpassProcessor
+        arguments:
+            - '@?' # order manager
+            - [] # options

@@ -1,21 +1,14 @@
 pimcore:
-    # CLASS OVERRIDES EXAMPLES
+    # CLASS OVERRIDES
     models:
         class_overrides:
             Pimcore\Model\Object\Product: AppBundle\Model\DefaultProduct
             Pimcore\Model\Object\ProductCategory: AppBundle\Model\ShopCategory
-            # 'Pimcore\Model\Object\News': 'AppBundle\Model\Object\News'
-            # 'Pimcore\Model\Object\News\Listing': 'AppBundle\Model\Object\News\Listing'
-            # 'Pimcore\Model\Object\Folder': 'AppBundle\Model\Object\Folder'
-            # 'Pimcore\Model\Asset\Folder': 'AppBundle\Model\Asset\Folder'
-            # 'Pimcore\Model\Asset\Image': 'AppBundle\Model\Asset\Image'
-            # 'Pimcore\Model\Document\Page': 'AppBundle\Model\Document\Page'
-            # 'Pimcore\Model\Document\Link': 'AppBundle\Model\Document\Link'
-            # 'Pimcore\Model\Document\Listing': 'AppBundle\Model\Document\Listing'
 
-pimcore_ecommerce_framework:
-    tracking_manager:
-        trackers:
-            enhanced_ecommerce:
-                enabled: true
-                item_builder_id: AppBundle\Ecommerce\Tracking\TrackingItemBuilder
+imports:
+
+    # e-commerce framework configuration
+    - { resource: ecommerce/ecommerce-config.yml }
+
+    # optionally include file for overwrite services
+    - { resource: ecommerce/service-overrides.yml }

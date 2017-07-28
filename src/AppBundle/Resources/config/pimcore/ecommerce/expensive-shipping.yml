@@ -1,0 +1,20 @@
+
+pimcore_ecommerce_framework:
+
+    # general settings for cart manager
+    cart_manager:
+
+        # Configuration per tenant.
+        # If a _defaults key is set, it will be merged into every tenant. It needs to be set in every file.
+        # A tenant named "default" is mandatory.
+        tenants:
+            _defaults:
+                order_manager_tenant: default
+
+            expensiveShipping:
+                price_calculator:
+                    modificators:
+                        shipping:
+                            class: Pimcore\Bundle\EcommerceFrameworkBundle\CartManager\CartPriceModificator\Shipping
+                            options:
+                                charge: "500.90"

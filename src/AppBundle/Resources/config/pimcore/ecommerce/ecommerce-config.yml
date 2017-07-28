@@ -1,0 +1,575 @@
+# you can use import statement for including additional files that are merged into the config
+# use console command 'debug:config PimcoreEcommerceFrameworkBundle' to check current (merged) configuration
+imports:
+    - { resource: expensive-shipping.yml }
+# TODO add additional index service configuration for optimized sql
+
+
+# configuration of e-commerce framework
+pimcore_ecommerce_framework:
+
+    # Configuration of environment - following values are default values and could be omitted
+    environment:
+        environment_id: Pimcore\Bundle\EcommerceFrameworkBundle\SessionEnvironment
+        options:
+            defaultCurrency: "EUR"
+
+    # Settings for cart manager
+    cart_manager:
+
+        # Configuration per tenant.
+        # If a _defaults key is set, it will be merged into every tenant. It needs to be set in every file.
+        # A tenant named "default" is mandatory.
+        tenants:
+            _defaults:
+                order_manager_tenant: default
+
+            default:
+                # define service manager id of cart service - following value is default and can be omitted
+#                cart_manager_id: Pimcore\Bundle\EcommerceFrameworkBundle\CartManager\MultiCartManager
+
+                # configuration for carts
+                cart:
+                    # define cart factory and configure it - following values are default and can be omitted
+#                    factory_id: Pimcore\Bundle\EcommerceFrameworkBundle\CartManager\CartFactory
+#                    factory_options:
+#                        cart_class_name: Pimcore\Bundle\EcommerceFrameworkBundle\CartManager\Cart
+#                        guest_cart_class_name: Pimcore\Bundle\EcommerceFrameworkBundle\CartManager\Cart
+                price_calculator:
+                    # list price modificators for cart, e.g. for shipping-cost, special discounts, ...
+                    # key is name of modificator
+                    modificators:
+                        shipping:
+                            class: Pimcore\Bundle\EcommerceFrameworkBundle\CartManager\CartPriceModificator\Shipping
+                            # configuration options for price modificator
+                            options:
+                                charge: "5.90"
+
+            # additional checkout tenant for cart manager
+            #  - for not specified elements the _default configuration is merged into tenant configuration
+            #  - active tenant is set at \Pimcore\Bundle\EcommerceFrameworkBundle\IEnvironment::setCurrentCheckoutTenant()
+            noShipping:
+                price_calculator:
+                    # remove all price modificators
+                    modificators: ~
+
+            # you also can configure additional tenants in additional configuration files which are merged into configuration
+
+
+    # Configuration of price systems - key is name of price system
+    price_systems:
+        default:
+            # price system defined and configured as container service
+            id: app.default_price_system
+
+            # default value for service id would be
+            #id: Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\AttributePriceSystem
+
+    # Configuration of availability systems - key is name of price system
+    # Following values are default values an can be omitted
+#    availability_systems:
+#        default:
+#            id: Pimcore\Bundle\EcommerceFrameworkBundle\AvailabilitySystem\AvailabilitySystem
+
+    # Configuration of index service
+    index_service:
+        # Following two values are default values an can be omitted
+#        index_service_id:     Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\IndexService
+#        default_tenant:       default
+
+        # Configure assortment tenants - at least one tenant has to be configured
+        # If a _defaults key is set, it will be merged into every tenant.
+        tenants:
+            default:
+                # Following values are default values an can be omitted
+#                enabled:              true
+#                config_id:            Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Config\DefaultMysql
+#                config_options:       []
+#                worker_id:            Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Worker\DefaultMysql
+
+                # placeholder values in this tenant attributes definition (locale: '%%locale%%') will be replaced by
+                # the given placeholder value (eg. 'de_AT')
+                placeholders:
+                    '%%locale%%': 'de_AT'
+
+                # add columns for general fulltext search index of product list - they must be part of the column configuration below
+                search_attributes:
+                    - name
+                    - seoname
+                    - color
+
+                # attributes definition for product index
+                attributes:
+                    name:
+                        # type of index attribute (database column or elastic search data type)
+                        type: 'varchar(255)'
+                        # locale for localized fields, can be omitted if not necessary
+                        locale: '%%locale%%'
+                        # defines filter group for filter definition in filter service
+                        filter_group: 'string'
+
+                        # defines object attribute field name, can be omitted if the same like name of index attribute
+                        # like in this case
+                        field_name: name
+
+                        # hides field in field list selection data type of filter service - default to false
+                        hide_in_fieldlist_datatype: false
+
+                    seoname:
+                        type: 'varchar(255)'
+                        filter_group: 'string'
+
+                    color:
+                        type: 'varchar(255)'
+                        filter_group: 'multiselect'
+
+                    gender:
+                        type: 'varchar(100)'
+                        filter_group: 'multiselect'
+
+                    technologies:
+                        # Service id of interpreter for this field
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\DefaultObjects
+                        filter_group: 'relation'
+
+                    features:
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\DefaultObjects
+                        filter_group: 'relation'
+
+                    tentTentPegs:
+                        type: 'varchar(50)'
+                        filtergroup: double
+                        # Service id of getter for this field
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        # Options array for getter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: tentSpecifications
+                            fieldname: tentPegs
+
+
+                    tentWaterproofRain:
+                        type: 'varchar(50)'
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: tentSpecifications
+                            fieldname: waterproofRain
+                        filtergroup: double
+
+                    tentWaterproofGround:
+                        type: 'varchar(50)'
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: tentSpecifications
+                            fieldname: waterproofGround
+                        filtergroup: double
+
+                    rucksacksVolume:
+                        type: 'double'
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\Numeric
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: rucksackSpecs
+                            fieldname: volume
+                        filtergroup: double
+
+                    rucksacksWeight:
+                        type: 'double'
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\Numeric
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: rucksackSpecs
+                            fieldname: weight
+                        filtergroup: double
+
+                    rucksacksLoad:
+                        type: 'double'
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\Numeric
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: rucksackSpecs
+                            fieldname: load
+                        filtergroup: double
+
+                    matsWidth:
+                        type: 'double'
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: matsSpecs
+                            fieldname: width
+                        filtergroup: double
+
+                    matsLength:
+                        type: 'double'
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: matsSpecs
+                            fieldname: length
+                        filtergroup: double
+
+                    matsHeight:
+                        type: 'double'
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: matsSpecs
+                            fieldname: height
+                        filtergroup: double
+
+                    simularity_color:
+                        type: 'INTEGER'
+                        fieldname: color
+                        hide_in_fieldlist_datatype: true
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\Soundex
+
+                    simularity_gender:
+                        type: 'INTEGER'
+                        fieldname: gender
+                        hide_in_fieldlist_datatype: true
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\Soundex
+
+                    simularity_category:
+                        type: 'INTEGER'
+                        fieldname: categories
+                        hide_in_fieldlist_datatype: true
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\ObjectIdSum
+
+                    simularity_feature:
+                        type: 'INTEGER'
+                        fieldname: features
+                        hide_in_fieldlist_datatype: true
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\ObjectIdSum
+
+                    simularity_technolgy:
+                        type: 'INTEGER'
+                        fieldname: technologies
+                        hide_in_fieldlist_datatype: true
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\ObjectIdSum
+
+                    simularity_attributes:
+                        type: 'INTEGER'
+                        fieldname: attributes
+                        hide_in_fieldlist_datatype: true
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\ObjectIdSum
+
+    # Configuration of filter service
+    filter_service:
+
+        # Configure assortment tenants - at least one tenant has to be configured
+        # If a _defaults key is set, it will be merged into every tenant.
+        tenants:
+            default:
+                # Assign backend implementations and views to filter type field collections
+                filter_types:
+                    FilterNumberRange:
+                        # Service id for filter type implementation
+                        filter_type_id: Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\FilterType\NumberRange
+                        # Default template for filter, can be overwritten in filter definition
+                        template: ':Shop/filters:range.html.php'
+
+                    FilterNumberRangeSelection:
+                        filter_type_id: Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\FilterType\NumberRangeSelection
+                        template: ':Shop/filters:numberrange.html.php'
+
+                    FilterSelect:
+                        filter_type_id: Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\FilterType\Select
+                        template: ':Shop/filters:select.html.php'
+
+                    FilterSelectFromMultiSelect:
+                        filter_type_id: Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\FilterType\SelectFromMultiSelect
+                        template: ':Shop/filters:select.html.php'
+
+                    FilterMultiSelect:
+                        filter_type_id: Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\FilterType\MultiSelect
+                        template: ':Shop/filters:multiselect.html.php'
+
+                    FilterMultiSelectFromMultiSelect:
+                        filter_type_id: Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\FilterType\MultiSelectFromMultiSelect
+                        template: ':Shop/filters:multiselect.html.php'
+
+                    FilterMultiRelation:
+                        filter_type_id: Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\FilterType\MultiSelectRelation
+                        template: ':Shop/filters:multiselect-relation.html.php'
+
+                    FilterCategory:
+                        filter_type_id: Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\FilterType\SelectCategory
+                        template: ':Shop/filters:select_category.html.php'
+
+                    FilterRelation:
+                        filter_type_id: Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\FilterType\SelectRelation
+                        template: ':Shop/filters:object_relation.html.php'
+
+
+    # Configuration of Pricing Manager - following values are default values and can be omitted
+    pricing_manager:
+#        # to enable/disable pricing manager
+#        enabled: true
+#        # Service id of pricing manager
+#        pricing_manager_id: Pimcore\Bundle\EcommerceFrameworkBundle\PricingManager\PricingManager
+#        # Options for pricing manager
+#        pricing_manager_options:
+#            rule_class: Pimcore\Bundle\EcommerceFrameworkBundle\PricingManager\Rule
+#            price_info_class: Pimcore\Bundle\EcommerceFrameworkBundle\PricingManager\PriceInfo
+#            environment_class: Pimcore\Bundle\EcommerceFrameworkBundle\PricingManager\Environment
+#        # Configuration of service ids for conditions of pricing manager
+#        conditions:
+#            DateRange: \Pimcore\Bundle\EcommerceFrameworkBundle\PricingManager\Condition\DateRange
+#        # Configuration of service ids for actions of pricing manager
+#        actions:
+#            FreeShipping: \Pimcore\Bundle\EcommerceFrameworkBundle\PricingManager\Action\FreeShipping
+
+
+    # Configuration of checkout manager
+    checkout_manager:
+        tenants:
+
+            # Configuration per tenant.
+            # If a _defaults key is set, it will be merged into every tenant. It needs to be set in every file.
+            # A tenant named "default" is mandatory.
+            _defaults:
+                order_manager_tenant: default
+
+                # Following two values are default values an can be omitted
+#                factory_id: Pimcore\Bundle\EcommerceFrameworkBundle\CheckoutManager\CheckoutManagerFactory
+#                factory_options:
+#                    class: \Pimcore\Bundle\EcommerceFrameworkBundle\CheckoutManager\CheckoutManager
+
+
+                # Define used commit order processor
+                commit_order_processor:
+                    id: Pimcore\Bundle\EcommerceFrameworkBundle\CheckoutManager\CommitOrderProcessor
+                    options:
+
+                        # Settings for confirmation mail sent to customer after order is finished.
+                        # Also could be defined defined directly in commit order processor
+                        # (e.g. when different languages are necessary)
+                        confirmation_mail: /en/emails/order-confirmation
+
+                # Define different checkout steps which need to be committed before commit of order is possible
+                steps:
+                    deliveryaddress:
+                        class: \Pimcore\Bundle\EcommerceFrameworkBundle\CheckoutManager\DeliveryAddress
+                    confirm:
+                        class: \AppBundle\Ecommerce\Checkout\Confirm
+
+            default:
+                # following two values are default values an can be omitted
+#                factory_id: Pimcore\Bundle\EcommerceFrameworkBundle\CheckoutManager\CheckoutManagerFactory
+#                factory_options:
+#                    class: \Pimcore\Bundle\EcommerceFrameworkBundle\CheckoutManager\CheckoutManager
+
+                # define payment provider which should be used for payment.
+                # payment providers are defined in payment_manager section.
+                payment:
+                    provider: qpay
+
+            paypal:
+                payment:
+                    provider: paypal
+
+            datatrans:
+                payment:
+                    provider: datatrans
+
+            seamless:
+                payment:
+                    provider: seamless
+
+
+            masterpass:
+                steps:
+
+                payment:
+                    provider: qpay
+
+                commit_order_processor:
+                    id: AppBundle\Ecommerce\Order\MasterpassProcessor
+                    options:
+                        confirmation_mail: /en/emails/order-confirmation
+
+
+    # Configuration of payment manager and payment providers
+    payment_manager:
+        # Service id of payment manager implementation - following value is default value an can be omitted
+#        payment_manager_id: Pimcore\Bundle\EcommerceFrameworkBundle\PaymentManager\PaymentManager
+
+        # Configuration of payment providers, key is name of provider
+        providers:
+
+            datatrans:
+                # Service id of payment provider implementation
+                provider_id: Pimcore\Bundle\EcommerceFrameworkBundle\PaymentManager\Payment\Datatrans
+
+                # Currently active profile
+                profile: sandbox
+
+                # Available profiles with options
+                profiles:
+                    sandbox:
+                        merchant_id: 1000011011
+                        sign: 30916165706580013
+                        use_digital_signature: false
+                    live:
+                        merchant_id: merchant_id_id
+                        sign: sign_id
+                        use_digital_signature: false
+                        mode: live
+
+            qpay:
+                provider_id: Pimcore\Bundle\EcommerceFrameworkBundle\PaymentManager\Payment\QPay
+                profile: sandbox
+                profiles:
+                    sandbox:
+                        secret: B8AKTPWBRMNBV455FG6M2DANE99WU2
+                        customer: D200001
+                        toolkit_password: jcv45z
+                        # define optional properties which can be used in initPayment (see Wirecard documentation)
+                        optional_payment_properties:
+                            - paymentType
+                            - financialInstitution
+
+                        # set hash algorithm to HMAC-SHA512
+                        hash_algorithm:
+                            hmac_sha512
+
+                    live:
+                        secret: secret
+                        customer: customer
+
+            paypal:
+                provider_id: Pimcore\Bundle\EcommerceFrameworkBundle\PaymentManager\Payment\PayPal
+                profile: sandbox
+                profiles:
+                    sandbox:
+                        api_username: paypal-facilitator_api1.i-2xdream.de
+                        api_password: 1375366858
+                        api_signature: AT2PJj7VTo5Rt.wM6enrwOFBoD1fACBe1RbAEMsSshWFRhpvjAuPR8wD
+                    live:
+                        api_username: username
+                        api_password: password
+                        api_signature: signature
+                        mode: live
+
+
+            seamless:
+                provider_id: Pimcore\Bundle\EcommerceFrameworkBundle\PaymentManager\Payment\WirecardSeamless
+                profile: sandbox
+                profiles:
+                    _defaults:
+                        hash_algorithm: hmac_sha512
+                        paypal_activate_item_level: true
+                        partial: PaymentSeamless/wirecard-seamless/payment-method-selection.html.php
+                        js: /static/js/payment/wirecard-seamless/frontend.js
+                        iframe_css_url: /static/css/payment-iframe.css?elementsclientauth=disabled
+                        payment_methods:
+                            PREPAYMENT:
+                                icon: /static/img/wirecard-seamless/prepayment.png
+                                partial: PaymentSeamless/wirecard-seamless/payment-method/prepayment.html.php
+                            CCARD:
+                                icon: /static/img/wirecard-seamless/ccard.png
+                                partial: PaymentSeamless/wirecard-seamless/payment-method/ccard.html.php
+                            PAYPAL:
+                                icon: /static/img/wirecard-seamless/paypal.png
+                            SOFORTUEBERWEISUNG:
+                                icon: /static/img/wirecard-seamless/sue.png
+                            INVOICE:
+                                icon: /static/img/wirecard-seamless/payolution.png
+                                partial: PaymentSeamless/wirecard-seamless/payment-method/invoice.html.php
+                    sandbox:
+                        customer_id: D200001
+                        shop_id: qmore
+                        secret: B8AKTPWBRMNBV455FG6M2DANE99WU2
+                        password: jcv45z
+                    live:
+                        customer_id: customer_id
+                        shop_id: shop_id
+                        secret: secret
+                        password: password
+
+    # Configuration of Tracking Manager
+    tracking_manager:
+#        # Service id of tracking manager - default value can be omitted
+#        tracking_manager_id: Pimcore\Bundle\EcommerceFrameworkBundle\Tracking\TrackingManager
+
+        # Enable/Disable trackers and configure them
+        trackers:
+            enhanced_ecommerce:
+                # Service id for tracker
+                id: Pimcore\Bundle\EcommerceFrameworkBundle\Tracking\Tracker\Analytics\EnhancedEcommerce
+                # Service id for item builder for tracker
+                item_builder_id: AppBundle\Ecommerce\Tracking\TrackingItemBuilder
+                # additional options
+                options: {  }
+                # enable or disable service
+                enabled: true
+
+    # Configuration of Order Manager
+    order_manager:
+        # Configuration per tenant. If a _defaults key is set, it will be merged into every tenant. A tenant named "default" is mandatory.
+        tenants:
+            # Configuration of default order manager - following values are default values and can be omitted
+#            default:
+#                # Service id for oder manager implementation
+#                order_manager_id: Pimcore\Bundle\EcommerceFrameworkBundle\OrderManager\OrderManager
+#                # Options for oder manager
+#                options:
+#                    # Pimcore object class for orders
+#                    order_class: \Pimcore\Model\Object\OnlineShopOrder
+#                    # Pimcore object class for order items
+#                    order_item_class: \Pimcore\Model\Object\OnlineShopOrderItem
+#                    # Class for order listing
+#                    list_class: Pimcore\Bundle\EcommerceFrameworkBundle\OrderManager\Order\Listing
+#                    # Class for order item listing
+#                    list_item_class: Pimcore\Bundle\EcommerceFrameworkBundle\OrderManager\Order\Listing\Item
+#                    # Default parent folder for new orders
+#                    parent_order_folder: /order/%%Y/%%m/%%d
+#                # Options for oder agent
+#                order_agent:
+#                    # Service id for order agent factory
+#                    factory_id: Pimcore\Bundle\EcommerceFrameworkBundle\OrderManager\Order\AgentFactory
+#                    # Options for order agent factory
+#                    factory_options: {  }
+            otherFolder:
+                options:
+                    parent_order_folder: /order_otherfolder/%%Y/%%m/%%d
+
+    # Configuration of voucher service - following values are default values and can be omitted
+    voucher_service:
+#        # Service id of voucher service implementation
+#        voucher_service_id: Pimcore\Bundle\EcommerceFrameworkBundle\VoucherService\DefaultService
+#
+#        # Configuration of token managers
+#        token_managers:
+#            # Service id of token manager factory
+#            factory_id: Pimcore\Bundle\EcommerceFrameworkBundle\VoucherService\TokenManager\TokenManagerFactory
+#            # Mapping for token manager implementations
+#            mapping:
+#                VoucherTokenTypePattern: \Pimcore\Bundle\EcommerceFrameworkBundle\VoucherService\TokenManager\Pattern
+#                VoucherTokenTypeSingle: \Pimcore\Bundle\EcommerceFrameworkBundle\VoucherService\TokenManager\Single
+#
+#        voucher_service_options:
+#            # Reservations older than x MINUTES get removed by maintenance task
+#            reservation_minutes_threshold: 5
+#            # Statistics older than x DAYS get removed by maintenance task
+#            statistics_days_threshold: 30
+
+
+    # Configuration of offer tool - following values are default values and can be omitted
+#    offer_tool:
+#        # Service id for offer tool service
+#        service_id: Pimcore\Bundle\EcommerceFrameworkBundle\OfferTool\DefaultService
+#        order_storage:
+#            # Pimcore object class for offers
+#            offer_class: Pimcore\Model\Object\OfferToolOffer
+#            # Pimcore object class for offer items
+#            offer_item_class: Pimcore\Model\Object\OfferToolOfferItem
+#            # default path for new offers
+#            parent_folder_path: /offertool/offers/%%Y/%%m
+
