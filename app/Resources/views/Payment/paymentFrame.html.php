@@ -53,6 +53,12 @@ $this->extend('payment-iframe.html.php');
     </script>
 
 <?php } elseif (is_string($this->payment)){ ?>
-    <a href="<?= $this->payment ?>" target="_top"><img
-            src="https://www.paypalobjects.com/webstatic/de_DE/i/de-btn-expresscheckout.gif"/></a>
+
+    <?php if(0 === strpos($this->payment, 'http')) { ?>
+        <a href="<?= $this->payment ?>" target="_top"><img
+                src="https://www.paypalobjects.com/webstatic/de_DE/i/de-btn-expresscheckout.gif"/></a>
+    <?php } else { ?>
+        <?= $this->payment ?>
+    <?php } ?>
+
 <?php } ?>
