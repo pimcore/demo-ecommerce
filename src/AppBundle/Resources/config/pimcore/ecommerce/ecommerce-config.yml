@@ -8,6 +8,14 @@ imports:
 # configuration of e-commerce framework
 pimcore_ecommerce_framework:
 
+    # Configuration of e-commerce framework factory - following values are default values and can be omitted
+#    factory:
+#        # Service Id of factory implementation
+#        factory_id:           Pimcore\Bundle\EcommerceFrameworkBundle\Factory
+#
+#        # If true the factory will not fall back to the default tenant if a tenant is passed but not existing
+#        strict_tenants:       false
+
     # Configuration of environment - following values are default values and could be omitted
     environment:
         environment_id: Pimcore\Bundle\EcommerceFrameworkBundle\SessionEnvironment
@@ -25,18 +33,18 @@ pimcore_ecommerce_framework:
                 order_manager_tenant: default
 
             default:
-                # define service manager id of cart service - following value is default and can be omitted
+                # Service id of cart service - following value is default and can be omitted
 #                cart_manager_id: Pimcore\Bundle\EcommerceFrameworkBundle\CartManager\MultiCartManager
 
-                # configuration for carts
+                # Configuration for carts
                 cart:
-                    # define cart factory and configure it - following values are default and can be omitted
+                    # Service id of cart factory and configuration array - following values are default and can be omitted
 #                    factory_id: Pimcore\Bundle\EcommerceFrameworkBundle\CartManager\CartFactory
 #                    factory_options:
 #                        cart_class_name: Pimcore\Bundle\EcommerceFrameworkBundle\CartManager\Cart
 #                        guest_cart_class_name: Pimcore\Bundle\EcommerceFrameworkBundle\CartManager\Cart
                 price_calculator:
-                    # list price modificators for cart, e.g. for shipping-cost, special discounts, ...
+                    # List price modificators for cart, e.g. for shipping-cost, special discounts, ...
                     # key is name of modificator
                     modificators:
                         shipping:
@@ -59,7 +67,7 @@ pimcore_ecommerce_framework:
     # Configuration of price systems - key is name of price system
     price_systems:
         default:
-            # price system defined and configured as container service
+            # Price system defined and configured as container service
             id: app.default_price_system
 
             # default value for service id would be
@@ -98,21 +106,21 @@ pimcore_ecommerce_framework:
                     - seoname
                     - color
 
-                # attributes definition for product index
+                # attributes definition for product index - key is name of attribute
                 attributes:
                     name:
-                        # type of index attribute (database column or elastic search data type)
+                        # Type of index attribute (database column or elastic search data type)
                         type: 'varchar(255)'
-                        # locale for localized fields, can be omitted if not necessary
+                        # Locale for localized fields, can be omitted if not necessary
                         locale: '%%locale%%'
-                        # defines filter group for filter definition in filter service
+                        # Defines filter group for filter definition in filter service
                         filter_group: 'string'
 
-                        # defines object attribute field name, can be omitted if the same like name of index attribute
+                        # Defines object attribute field name, can be omitted if the same like name of index attribute
                         # like in this case
                         field_name: name
 
-                        # hides field in field list selection data type of filter service - default to false
+                        # Hides field in field list selection data type of filter service - default to false
                         hide_in_fieldlist_datatype: false
 
                     seoname:
@@ -573,3 +581,13 @@ pimcore_ecommerce_framework:
 #            # default path for new offers
 #            parent_folder_path: /offertool/offers/%%Y/%%m
 
+    # Configuration of Pimcore backend menu entries - following values are default values and can be omitted
+    pimcore:
+        menu:
+            # Enabling/Disabling Pricing Rules menu entry. User specific settings can be done via permissions.
+            pricing_rules:
+                enabled: true
+            # Configuring order list menu - enabling/disabling and defining route of order list to inject custom implementations of order backend.
+            order_list:
+                enabled: true
+                route: pimcore_ecommerce_backend_admin-order_list

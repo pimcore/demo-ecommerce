@@ -5,22 +5,24 @@ pimcore_ecommerce_framework:
         tenants:
             OptimizedMysql:
                 enabled: true
+                # Service id of config implementation
                 config_id: AppBundle\Ecommerce\IndexService\Tenant\Config\MyOptimizedMysql
+                # Worker id of worker implementation. Can be omitted, then default worker id of configured config is used.
                 worker_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Worker\OptimizedMysql
 
 
-                # placeholder values in this tenant attributes definition (locale: '%%locale%%') will be replaced by
+                # Placeholder values in this tenant attributes definition (locale: '%%locale%%') will be replaced by
                 # the given placeholder value (eg. 'de_AT')
                 placeholders:
                     '%%locale%%': 'de_AT'
 
-                # add columns for general fulltext search index of product list - they must be part of the column configuration below
+                # Add columns for general fulltext search index of product list - they must be part of the column configuration below
                 search_attributes:
                     - name
                     - seoname
                     - color
 
-                # attributes definition for product index
+                # Attributes definition for product index
                 attributes:
 
                     # additional attributes to cache
