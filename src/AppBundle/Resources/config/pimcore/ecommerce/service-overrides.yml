@@ -15,3 +15,9 @@ services:
         arguments:
             - '@?' # order manager
             - [] # options
+
+
+    # custom service definitions for index service
+    AppBundle\Ecommerce\IndexService\Tenant\Config\MyOptimizedMysql:
+        class: AppBundle\Ecommerce\IndexService\Tenant\Config\MyOptimizedMysql
+        parent: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Config\AbstractConfig

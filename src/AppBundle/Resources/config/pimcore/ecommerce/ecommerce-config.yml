@@ -2,7 +2,7 @@
 # use console command 'debug:config PimcoreEcommerceFrameworkBundle' to check current (merged) configuration
 imports:
     - { resource: expensive-shipping.yml }
-# TODO add additional index service configuration for optimized sql
+    - { resource: optimized-mysql-index.yml }
 
 
 # configuration of e-commerce framework

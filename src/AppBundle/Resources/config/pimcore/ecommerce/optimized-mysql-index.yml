@@ -1,0 +1,188 @@
+# configures additional assortment tenant 'OptimizedMysql'
+
+pimcore_ecommerce_framework:
+    index_service:
+        tenants:
+            OptimizedMysql:
+                enabled: true
+                config_id: AppBundle\Ecommerce\IndexService\Tenant\Config\MyOptimizedMysql
+                worker_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Worker\OptimizedMysql
+
+
+                # placeholder values in this tenant attributes definition (locale: '%%locale%%') will be replaced by
+                # the given placeholder value (eg. 'de_AT')
+                placeholders:
+                    '%%locale%%': 'de_AT'
+
+                # add columns for general fulltext search index of product list - they must be part of the column configuration below
+                search_attributes:
+                    - name
+                    - seoname
+                    - color
+
+                # attributes definition for product index
+                attributes:
+
+                    # additional attributes to cache
+                    description:
+                        type: 'text'
+                        locale: '%%locale%%'
+                        filter_group: 'string'
+
+                    firstImageAsset:
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\DefaultRelations
+
+                    firstCategory:
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\DefaultRelations
+
+                    linkProduct:
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\DefaultRelations
+
+                    name:
+                        type: 'varchar(255)'
+                        locale: '%%locale%%'
+                        filter_group: 'string'
+
+                    seoname:
+                        type: 'varchar(255)'
+                        filter_group: 'string'
+
+                    color:
+                        type: 'varchar(255)'
+                        filter_group: 'multiselect'
+
+                    gender:
+                        type: 'varchar(100)'
+                        filter_group: 'multiselect'
+
+                    technologies:
+                        # Service id of interpreter for this field
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\DefaultObjects
+                        filter_group: 'relation'
+
+                    features:
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\DefaultObjects
+                        filter_group: 'relation'
+
+                    tentTentPegs:
+                        type: 'varchar(50)'
+                        filtergroup: double
+                        # Service id of getter for this field
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        # Options array for getter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: tentSpecifications
+                            fieldname: tentPegs
+
+
+                    tentWaterproofRain:
+                        type: 'varchar(50)'
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: tentSpecifications
+                            fieldname: waterproofRain
+                        filtergroup: double
+
+                    tentWaterproofGround:
+                        type: 'varchar(50)'
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: tentSpecifications
+                            fieldname: waterproofGround
+                        filtergroup: double
+
+                    rucksacksVolume:
+                        type: 'double'
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\Numeric
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: rucksackSpecs
+                            fieldname: volume
+                        filtergroup: double
+
+                    rucksacksWeight:
+                        type: 'double'
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\Numeric
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: rucksackSpecs
+                            fieldname: weight
+                        filtergroup: double
+
+                    rucksacksLoad:
+                        type: 'double'
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\Numeric
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: rucksackSpecs
+                            fieldname: load
+                        filtergroup: double
+
+                    matsWidth:
+                        type: 'double'
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: matsSpecs
+                            fieldname: width
+                        filtergroup: double
+
+                    matsLength:
+                        type: 'double'
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: matsSpecs
+                            fieldname: length
+                        filtergroup: double
+
+                    matsHeight:
+                        type: 'double'
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: matsSpecs
+                            fieldname: height
+                        filtergroup: double
+
+                    simularity_color:
+                        type: 'INTEGER'
+                        fieldname: color
+                        hide_in_fieldlist_datatype: true
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\Soundex
+
+                    simularity_gender:
+                        type: 'INTEGER'
+                        fieldname: gender
+                        hide_in_fieldlist_datatype: true
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\Soundex
+
+                    simularity_category:
+                        type: 'INTEGER'
+                        fieldname: categories
+                        hide_in_fieldlist_datatype: true
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\ObjectIdSum
+
+                    simularity_feature:
+                        type: 'INTEGER'
+                        fieldname: features
+                        hide_in_fieldlist_datatype: true
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\ObjectIdSum
+
+                    simularity_technolgy:
+                        type: 'INTEGER'
+                        fieldname: technologies
+                        hide_in_fieldlist_datatype: true
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\ObjectIdSum
+
+                    simularity_attributes:
+                        type: 'INTEGER'
+                        fieldname: attributes
+                        hide_in_fieldlist_datatype: true
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\ObjectIdSum
