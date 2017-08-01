@@ -8,9 +8,6 @@ pimcore_ecommerce_framework:
         # If a _defaults key is set, it will be merged into every tenant. It needs to be set in every file.
         # A tenant named "default" is mandatory.
         tenants:
-            _defaults:
-                order_manager_tenant: default
-
             expensiveShipping:
                 price_calculator:
                     modificators:

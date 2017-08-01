@@ -29,9 +29,6 @@ pimcore_ecommerce_framework:
         # If a _defaults key is set, it will be merged into every tenant. It needs to be set in every file.
         # A tenant named "default" is mandatory.
         tenants:
-            _defaults:
-                order_manager_tenant: default
-
             default:
                 # Service id of cart service - following value is default and can be omitted
 #                cart_manager_id: Pimcore\Bundle\EcommerceFrameworkBundle\CartManager\MultiCartManager
@@ -342,8 +339,6 @@ pimcore_ecommerce_framework:
             # If a _defaults key is set, it will be merged into every tenant. It needs to be set in every file.
             # A tenant named "default" is mandatory.
             _defaults:
-                order_manager_tenant: default
-
                 # Following two values are default values an can be omitted
 #                factory_id: Pimcore\Bundle\EcommerceFrameworkBundle\CheckoutManager\CheckoutManagerFactory
 #                factory_options:
