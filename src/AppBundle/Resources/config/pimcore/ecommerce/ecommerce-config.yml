@@ -323,10 +323,10 @@ pimcore_ecommerce_framework:
 #            rule_class: Pimcore\Bundle\EcommerceFrameworkBundle\PricingManager\Rule
 #            price_info_class: Pimcore\Bundle\EcommerceFrameworkBundle\PricingManager\PriceInfo
 #            environment_class: Pimcore\Bundle\EcommerceFrameworkBundle\PricingManager\Environment
-#        # Configuration of service ids for conditions of pricing manager
+#        # Condition mapping from name to used class
 #        conditions:
 #            DateRange: \Pimcore\Bundle\EcommerceFrameworkBundle\PricingManager\Condition\DateRange
-#        # Configuration of service ids for actions of pricing manager
+#        # Action mapping from name to used class
 #        actions:
 #            FreeShipping: \Pimcore\Bundle\EcommerceFrameworkBundle\PricingManager\Action\FreeShipping
 
