@@ -9,15 +9,23 @@ services:
             - { attribute_name: price, price_class: Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\Price }
 
 
+    # Custom commit order processor
+    AppBundle\Ecommerce\Order\Processor:
+        autowire: true
+
     # Custom commit order processor for masterpass
     AppBundle\Ecommerce\Order\MasterpassProcessor:
-        class: \AppBundle\Ecommerce\Order\MasterpassProcessor
+        autowire: true
+
+
+    # Order Manager for E-Commerce Demo
+    AppBundle\Ecommerce\Order\OrderManager:
         arguments:
-            - '@?' # order manager
-            - [] # options
+            - '@pimcore_ecommerce.environment'
+            - '@?'
+            - '@pimcore_ecommerce.voucher_service'
+            - []
 
-
-    # custom service definitions for index service
+    # Custom service definitions for index service
     AppBundle\Ecommerce\IndexService\Tenant\Config\MyOptimizedMysql:
-        class: AppBundle\Ecommerce\IndexService\Tenant\Config\MyOptimizedMysql
         parent: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Config\AbstractConfig

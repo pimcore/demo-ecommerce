@@ -347,7 +347,7 @@ pimcore_ecommerce_framework:
 
                 # Define used commit order processor
                 commit_order_processor:
-                    id: Pimcore\Bundle\EcommerceFrameworkBundle\CheckoutManager\CommitOrderProcessor
+                    id: AppBundle\Ecommerce\Order\Processor
                     options:
 
                         # Settings for confirmation mail sent to customer after order is finished.
@@ -517,7 +517,12 @@ pimcore_ecommerce_framework:
     order_manager:
         # Configuration per tenant. If a _defaults key is set, it will be merged into every tenant. A tenant named "default" is mandatory.
         tenants:
+
+            _defaults:
+                order_manager_id: AppBundle\Ecommerce\Order\OrderManager
+
             # Configuration of default order manager - following values are default values and can be omitted
+            default: ~
 #            default:
 #                # Service id for oder manager implementation
 #                order_manager_id: Pimcore\Bundle\EcommerceFrameworkBundle\OrderManager\OrderManager
