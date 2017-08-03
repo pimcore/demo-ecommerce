@@ -7,8 +7,8 @@ E-Commerce Demo Application for Pimcore 5.
 **Important** : in order to install this profile, your DB and DB user needs to support the `LOAD DATA INFILE` command. See
 the following issues for details:
 
-* pimcore/demo-ecommerce#1 
-* pimcore/demo-ecommerce#5
+* https://github.com/pimcore/demo-ecommerce/issues/1 
+* https://github.com/pimcore/demo-ecommerce/issues/5
 
 ## Installation
 
