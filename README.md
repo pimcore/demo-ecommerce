@@ -16,7 +16,7 @@ the following issues for details:
 * Install this package via composer:
 
   ```
-  $ composer require pimcore/demo-ecommerce
+  $ composer require pimcore/demo-ecommerce --no-scripts
   ```
 
 * Install pimcore (via web or CLI installer) - it should now list this install profile as available
