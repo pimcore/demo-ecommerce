@@ -1,0 +1,14 @@
+name: Ecommerce Demo
+files:
+    add:
+        - app/config/pimcore/*
+        - app/config/pimcore/outputdataconfig/*
+        - app/Resources/views
+        - src/AppBundle
+        - var/classes
+        - var/config/*
+        - web/static
+        - web/var/assets
+db:
+    data_files:
+        - dump/data.sql
