@@ -1,12 +1,22 @@
 # Ecommerce-Demo for Pimcore 5
-E-Commerce Demo Application for Pimcore 5
 
+E-Commerce Demo Application for Pimcore 5.
 
-TODOs for install (will we improved)
-- download latest [Pimcore build](https://www.pimcore.org/download-5/pimcore-unstable.zip)
-- download zip and unzip it into `/install-profiles/demo-ecommerce`
-- modify `web/install.php` and add entry in order to be able to select ecommerce-demo during install - to do so 
-  add following line to store in line 434: `["demo-ecommerce", "Ecommerce Demo Applikation"]`
-- install Pimcore
-- run composer update (in order to add additional packages)
-- add `validLanguages` in `var/config/system.php` (`"en_GB,de_AT"`)
+## Caveats (will be improved)
+
+**Important** : in order to install this profile, your DB and DB user needs to support the `LOAD DATA INFILE` command. See
+the following issues for details:
+
+* pimcore/demo-ecommerce#1 
+* pimcore/demo-ecommerce#5
+
+## Installation
+
+* Download latest [Pimcore 5 build](https://www.pimcore.org/download-5/pimcore-unstable.zip)
+* Install this package via composer:
+
+  ```
+  $ composer require pimcore/demo-ecommerce
+  ```
+
+* Install pimcore (via web or CLI installer) - it should now list this install profile as available
