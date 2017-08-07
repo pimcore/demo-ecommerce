@@ -89,16 +89,16 @@ class PaymentSeamlessController extends AbstractCartAware
 
         if ($paymentType = $request->get('paymentType')) {
             $config = [
-                'successURL' => $_SERVER['REQUEST_SCHEME'] . '://' .$_SERVER['HTTP_HOST'] . $this->generateUrl('action', ['action' => 'complete', 'id' => base64_encode($paymentInformation->getObject()->getId()),
+                'successURL' => $request->getSchemeAndHttpHost() . $this->generateUrl('action', ['action' => 'complete', 'id' => base64_encode($paymentInformation->getObject()->getId()),
                     'state' => WirecardSeamless::PAYMENT_RETURN_STATE_SUCCESS, 'prefix' => $language]),
-                'failureURL' => $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $this->generateUrl('action', ['action' => 'complete', 'id' => base64_encode($paymentInformation->getObject()->getId()),
+                'failureURL' => $request->getSchemeAndHttpHost() . $this->generateUrl('action', ['action' => 'complete', 'id' => base64_encode($paymentInformation->getObject()->getId()),
                         'state' => WirecardSeamless::PAYMENT_RETURN_STATE_FAILURE, 'prefix' => $language]),
-                'cancelURL' => $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $this->generateUrl('action', ['action' => 'complete', 'id' => base64_encode($paymentInformation->getObject()->getId()),
+                'cancelURL' => $request->getSchemeAndHttpHost() . $this->generateUrl('action', ['action' => 'complete', 'id' => base64_encode($paymentInformation->getObject()->getId()),
                         'state' => WirecardSeamless::PAYMENT_RETURN_STATE_CANCEL, 'prefix' => $language]),
                 'serviceURL' => Tool::getHostUrl(),
-                'pendingURL' => $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $this->generateUrl('action', ['action' => 'complete', 'id' => base64_encode($paymentInformation->getObject()->getId()),
+                'pendingURL' => $request->getSchemeAndHttpHost() . $this->generateUrl('action', ['action' => 'complete', 'id' => base64_encode($paymentInformation->getObject()->getId()),
                         'state' => WirecardSeamless::PAYMENT_RETURN_STATE_PENDING, 'prefix' => $language]),
-                'confirmURL' => $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $this->generateUrl('action', ['action' => 'confirm-payment-server-side', 'elementsclientauth' => 'disabled']),
+                'confirmURL' => $request->getSchemeAndHttpHost() . $this->generateUrl('action', ['action' => 'confirm-payment-server-side', 'elementsclientauth' => 'disabled']),
                 'paymentInfo' => $paymentInformation,
                 'paymentType' => $request->get('paymentType'),
                 'cart' => $this->getCart(),

@@ -101,7 +101,7 @@ class PaymentController extends AbstractCartAware
             ];
         } elseif ($payment instanceof QPay) {
             // wirecard
-            $url = $_SERVER['REQUEST_SCHEME'] . '://'. $_SERVER['HTTP_HOST'] . $this->generateUrl('action', ['controller' => 'payment', 'action' => 'payment-status', 'prefix' => $language]) . '?mode=';
+            $url = $request->getSchemeAndHttpHost() . $this->generateUrl('action', ['controller' => 'payment', 'action' => 'payment-status', 'prefix' => $language]) . '?mode=';
 
             $config = [
                 'language' => $language,
@@ -109,7 +109,7 @@ class PaymentController extends AbstractCartAware
                 'cancelURL' => $url . 'cancel',
                 'failureURL' => $url . 'failure',
                 'serviceURL' => $url . 'service',
-                'confirmURL' => $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $this->generateUrl('action', ['controller' => 'handle-payment', 'action' => 'server-side-q-pay', 'prefix' => $language, 'elementsclientauth' => 'disabled']),
+                'confirmURL' => $request->getSchemeAndHttpHost() . $this->generateUrl('action', ['controller' => 'handle-payment', 'action' => 'server-side-q-pay', 'prefix' => $language, 'elementsclientauth' => 'disabled']),
                 'confirmMail' => 'christian.fasching@pimcore.com',
                 'orderDescription' => 'My Order at pimcore.org',
                 'imageURL' => 'https://www.pimcore.org/static/css/skins/default/logo.png',
@@ -117,8 +117,8 @@ class PaymentController extends AbstractCartAware
             ];
         } elseif ($payment instanceof PayPal) {
             // paypal
-            $returnUrl = $_SERVER['REQUEST_SCHEME'] . '://'. $_SERVER['HTTP_HOST'] . $this->generateUrl('action', ['controller' => 'payment', 'action' => 'payment-status', 'mode' => 'success', 'prefix' => $language]);
-            $cancelUrl = $_SERVER['REQUEST_SCHEME'] . '://'. $_SERVER['HTTP_HOST'] . $this->generateUrl('checkout', ['action' => 'payment', 'error' => 'cancel', 'language' => $language]) . '?mode=';
+            $returnUrl = $request->getSchemeAndHttpHost() . $this->generateUrl('action', ['controller' => 'payment', 'action' => 'payment-status', 'mode' => 'success', 'prefix' => $language]);
+            $cancelUrl = $request->getSchemeAndHttpHost() . $this->generateUrl('checkout', ['action' => 'payment', 'error' => 'cancel', 'language' => $language]) . '?mode=';
 
             $config = [
                 'ReturnURL' => $returnUrl,
@@ -133,7 +133,7 @@ class PaymentController extends AbstractCartAware
             ];
         } elseif ($payment instanceof Datatrans) {
             // datatrans
-            $url = $_SERVER['REQUEST_SCHEME'] . '://'. $_SERVER['HTTP_HOST'] . $this->generateUrl('action', ['controller' => 'payment', 'action' => 'payment-status', 'prefix' => $language]) . '?mode=';
+            $url = $request->getSchemeAndHttpHost() . $this->generateUrl('action', ['controller' => 'payment', 'action' => 'payment-status', 'prefix' => $language]) . '?mode=';
             $config = [
                 // checkout config
                 'language' => $language,
