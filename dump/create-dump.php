@@ -66,7 +66,7 @@ foreach ($tables as $name) {
     $quotedName = $db->quoteIdentifier($name);
 
     $db->query("SELECT * FROM " . $quotedName . " INTO OUTFILE '" . $fullFilename . "'");
-    $dumpData .= "LOAD DATA INFILE '~~DOCUMENTROOT~~/install-profiles/demo-ecommerce/dump/data/" . $filename . "' INTO TABLE " . $quotedName . ";\n";
+    $dumpData .= "LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/" . $filename . "' INTO TABLE " . $quotedName . ";\n";
 }
 
 foreach($views as $name) {
