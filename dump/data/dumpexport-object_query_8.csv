@@ -110,3 +110,17 @@ pimcore tax|5%|1.8380
 pimcore tax|5%|0.5116
 12193	8	OnlineShopOrderItem	1417	object	1417	MP-LW	1	34.8000	\N	\N	\N	27.8400	MwSt 20%|20%|5.5680\
 pimcore tax|5%|1.3920
+12206	8	OnlineShopOrderItem	1402	object	1402	MP-S	1	92.9600	\N	\N	cancelled	74.3680	MwSt 20%|20%|14.8736\
+pimcore tax|5%|3.7184
+12208	8	OnlineShopOrderItem	1174	object	1174	FORCE HG	1	44.6600	\N	\N	\N	35.7280	MwSt 20%|20%|7.1456\
+pimcore tax|5%|1.7864
+12210	8	OnlineShopOrderItem	1705	object	1705	Supreme Grip	1	33.2300	\N	\N	\N	26.5840	MwSt 20%|20%|5.3168\
+pimcore tax|5%|1.3292
+12212	8	OnlineShopOrderItem	1180	object	1180	Classic FG	1	43.4800	\N	\N	\N	34.7840	MwSt 20%|20%|6.9568\
+pimcore tax|5%|1.7392
+12216	8	OnlineShopOrderItem	1180	object	1180	Classic FG	1	43.4800	\N	\N	cancelled	34.7840	MwSt 20%|20%|6.9568\
+pimcore tax|5%|1.7392
+12240	8	OnlineShopOrderItem	3427	object	3427	FORCE HG	1	44.6600	\N	\N	\N	35.7280	MwSt 20%|20%|7.1456\
+pimcore tax|5%|1.7864
+12243	8	OnlineShopOrderItem	1174	object	1174	FORCE HG	1	44.6600	\N	\N	\N	35.7280	MwSt 20%|20%|7.1456\
+pimcore tax|5%|1.7864

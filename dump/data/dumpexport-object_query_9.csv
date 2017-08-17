@@ -77,9 +77,23 @@ pimcore tax|5%|2.0740
 pimcore tax|5%|2.0224
 12186	9	OnlineShopOrder	ord_596896ad19b76	71.8200	1500026541	,12187,	\N	\N	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_5968969411154	\N	EUR	\N	\N	Söllheimerstraße, 16	5020	AT	peter.hugo@pimcore.com	\N	Söllheimerstraße, 16	5020	Salzburg	AT	\N	Salzburg	65.9200	Peter	Hugo	Hugo	Peter	\N	52.7360	57.4560	MwSt 20%|20%|11.4912\
 pimcore tax|5%|2.8728
-12188	9	OnlineShopOrder	ord_596899a0602b8	51.8500	1500027296	,12189,	\N	\N	\N	paymentPending	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_596898d76367a	\N	EUR	\N	\N	Söllheimerstraße, 16	5020	AT	peter.hugo@pimcore.com	\N	Söllheimerstraße, 16	5020	Salzburg	AT	\N	Salzburg	45.9500	Peter	Hugo	Hugo	Peter	\N	36.7600	41.4800	MwSt 20%|20%|8.2960\
+12188	9	OnlineShopOrder	ord_596899a0602b8	51.8500	1500027296	,12189,	\N	\N	\N	aborted	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_596898d76367a	\N	EUR	\N	\N	Söllheimerstraße, 16	5020	AT	peter.hugo@pimcore.com	\N	Söllheimerstraße, 16	5020	Salzburg	AT	\N	Salzburg	45.9500	Peter	Hugo	Hugo	Peter	\N	36.7600	41.4800	MwSt 20%|20%|8.2960\
 pimcore tax|5%|2.0740
 12190	9	OnlineShopOrder	ord_5968be300574c	12.7900	1500036656	,12191,	\N	\N	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_5968be0fc03dd	\N	EUR	\N	\N	Söllheimerstraße, 16	5020	AT	peter.hugo@pimcore.com	\N	Söllheimerstraße, 16	5020	Salzburg	AT	\N	Salzburg	12.7900	Peter	Hugo	Hugo	Peter	\N	10.2320	10.2320	MwSt 20%|20%|2.0464\
 pimcore tax|5%|0.5116
 12192	9	OnlineShopOrder	ord_5968be52d8590	40.7000	1500036690	,12193,	\N	\N	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_5968be3e8cc22	\N	EUR	\N	\N	Reininghausstraße 13a	8020	AT	peter.hugo@pimcore.com	\N	Reininghausstraße 13a	8020	Graz	AT	\N	Graz	34.8000	\N	Thomas Muster	Thomas Muster	\N	\N	27.8400	32.5600	MwSt 20%|20%|6.5120\
 pimcore tax|5%|1.6280
+12205	9	OnlineShopOrder	ord_597f1df5c17b4	98.8600	1501502969	,12206,	\N	\N	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_597f1d116c312	\N	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	92.9600	\N	\N	\N	\N	\N	74.3680	79.0880	MwSt 20%|20%|15.8176\
+pimcore tax|5%|3.9544
+12207	9	OnlineShopOrder	ord_597f1eae90467	50.5600	1501503151	,12208,	\N	\N	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_597f1e02470f3	\N	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	44.6600	\N	\N	\N	\N	\N	35.7280	40.4480	MwSt 20%|20%|8.0896\
+pimcore tax|5%|2.0224
+12209	9	OnlineShopOrder	ord_597f23179cd84	33.2300	1501504458	,12210,	\N	\N	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_597f1eb7b8935	\N	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	33.2300	\N	\N	\N	\N	\N	26.5840	26.5840	MwSt 20%|20%|5.3168\
+pimcore tax|5%|1.3292
+12211	9	OnlineShopOrder	ord_597f365c2909a	49.3800	1501509212	,12212,	\N	\N	\N	\N	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_597f3640b4a6a	\N	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	43.4800	\N	\N	\N	\N	\N	34.7840	39.5040	MwSt 20%|20%|7.9008\
+pimcore tax|5%|1.9752
+12215	9	OnlineShopOrder	ord_59802a0597e1a	49.3800	1501571589	,12216,	\N	\N	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_598029fd282a8	\N	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	43.4800	\N	\N	\N	\N	\N	34.7840	39.5040	MwSt 20%|20%|7.9008\
+pimcore tax|5%|1.9752
+12239	9	OnlineShopOrder	ord_598072fe73279	22.3300	1501590270	,12240,	\N	\N	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_598072da3f7c8	\N	EUR	\N	\N	Söllheimerstraße, 16	5020	AT	peter.hugo@pimcore.com	\N	Söllheimerstraße, 16	5020	Salzburg	AT	,11604,	Salzburg	44.6600	Peter	Hugo	Hugo	Peter	\N	35.7280	17.8640	MwSt 20%|20%|3.5728\
+pimcore tax|5%|0.8932
+12242	9	OnlineShopOrder	ord_598872358b860	50.5600	1502114357	,12243,	\N	\N	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_5988722c13237	\N	EUR	\N	\N	Söllheimerstraße, 16	5020	AT	peter.hugo@pimcore.com	\N	Söllheimerstraße, 16	5020	Salzburg	AT	\N	Salzburg	44.6600	Peter	Hugo	Hugo	Peter	\N	35.7280	40.4480	MwSt 20%|20%|8.0896\
+pimcore tax|5%|2.0224

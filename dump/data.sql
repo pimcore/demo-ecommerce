@@ -111,6 +111,24 @@ CREATE TABLE `application_logs_archive_08_2016` (
 
 
 
+DROP TABLE IF EXISTS `application_logs_archive_08_2017`;
+CREATE TABLE `application_logs_archive_08_2017` (
+  `id` bigint(20) NOT NULL,
+  `pid` int(11) DEFAULT NULL,
+  `timestamp` datetime NOT NULL,
+  `message` varchar(1024) DEFAULT NULL,
+  `priority` enum('emergency','alert','critical','error','warning','notice','info','debug') DEFAULT NULL,
+  `fileobject` varchar(1024) DEFAULT NULL,
+  `info` varchar(1024) DEFAULT NULL,
+  `component` varchar(255) DEFAULT NULL,
+  `source` varchar(255) DEFAULT NULL,
+  `relatedobject` bigint(20) DEFAULT NULL,
+  `relatedobjecttype` enum('object','document','asset') DEFAULT NULL,
+  `maintenanceChecked` tinyint(4) DEFAULT NULL
+) ENGINE=ARCHIVE DEFAULT CHARSET=utf8mb4;
+
+
+
 DROP TABLE IF EXISTS `application_logs_archive_09_2016`;
 CREATE TABLE `application_logs_archive_09_2016` (
   `id` bigint(20) NOT NULL,
@@ -144,6 +162,33 @@ CREATE TABLE `application_logs_archive_10_2016` (
   `relatedobjecttype` enum('object','document','asset') DEFAULT NULL,
   `maintenanceChecked` tinyint(4) DEFAULT NULL
 ) ENGINE=ARCHIVE DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `bundle_advancedobjectsearch_savedsearch`;
+CREATE TABLE `bundle_advancedobjectsearch_savedsearch` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `category` varchar(255) DEFAULT NULL,
+  `ownerId` int(20) DEFAULT NULL,
+  `config` text CHARACTER SET latin1,
+  `sharedUserIds` varchar(1000) DEFAULT NULL,
+  `shortCutUserIds` text CHARACTER SET latin1,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `bundle_advancedobjectsearch_update_queue`;
+CREATE TABLE `bundle_advancedobjectsearch_update_queue` (
+  `o_id` bigint(10) NOT NULL DEFAULT '0',
+  `classId` int(11) DEFAULT NULL,
+  `in_queue` tinyint(1) DEFAULT NULL,
+  `worker_timestamp` int(20) DEFAULT NULL,
+  `worker_id` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`o_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 
@@ -220,6 +265,7 @@ CREATE TABLE `ecommerceframework_optimized_productindex` (
   `priceSystemName` varchar(50) NOT NULL,
   `active` tinyint(1) NOT NULL,
   `inProductList` tinyint(1) NOT NULL,
+  `description` text,
   `name` varchar(255) DEFAULT NULL,
   `seoname` varchar(255) DEFAULT NULL,
   `color` varchar(255) DEFAULT NULL,
@@ -239,7 +285,6 @@ CREATE TABLE `ecommerceframework_optimized_productindex` (
   `simularity_feature` int(11) DEFAULT NULL,
   `simularity_technolgy` int(11) DEFAULT NULL,
   `simularity_attributes` int(11) DEFAULT NULL,
-  `description` text,
   PRIMARY KEY (`o_id`),
   FULLTEXT KEY `search` (`name`,`seoname`,`color`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -293,12 +338,6 @@ CREATE TABLE `ecommerceframework_productindex` (
   `seoname` varchar(255) DEFAULT NULL,
   `color` varchar(255) DEFAULT NULL,
   `gender` varchar(100) DEFAULT NULL,
-  `simularity_color` int(11) DEFAULT NULL,
-  `simularity_gender` int(11) DEFAULT NULL,
-  `simularity_category` int(11) DEFAULT NULL,
-  `simularity_feature` int(11) DEFAULT NULL,
-  `simularity_technolgy` int(11) DEFAULT NULL,
-  `simularity_attributes` int(11) DEFAULT NULL,
   `tentTentPegs` varchar(50) DEFAULT NULL,
   `tentWaterproofRain` varchar(50) DEFAULT NULL,
   `tentWaterproofGround` varchar(50) DEFAULT NULL,
@@ -308,9 +347,13 @@ CREATE TABLE `ecommerceframework_productindex` (
   `matsWidth` double DEFAULT NULL,
   `matsLength` double DEFAULT NULL,
   `matsHeight` double DEFAULT NULL,
+  `simularity_color` int(11) DEFAULT NULL,
+  `simularity_gender` int(11) DEFAULT NULL,
+  `simularity_category` int(11) DEFAULT NULL,
+  `simularity_feature` int(11) DEFAULT NULL,
+  `simularity_technolgy` int(11) DEFAULT NULL,
+  `simularity_attributes` int(11) DEFAULT NULL,
   PRIMARY KEY (`o_id`),
-  KEY `color` (`color`),
-  KEY `gender` (`gender`),
   FULLTEXT KEY `search` (`name`,`seoname`,`color`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -354,7 +397,7 @@ CREATE TABLE `ecommerceframework_vouchertoolkit_reservations` (
   `timestamp` datetime NOT NULL,
   PRIMARY KEY (`id`),
   KEY `token` (`token`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 
 
@@ -2643,6 +2686,8 @@ CREATE TABLE `object_store_9` (
 
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-assets.csv' INTO TABLE `assets`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-assets_metadata.csv' INTO TABLE `assets_metadata`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-bundle_advancedobjectsearch_savedsearch.csv' INTO TABLE `bundle_advancedobjectsearch_savedsearch`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-bundle_advancedobjectsearch_update_queue.csv' INTO TABLE `bundle_advancedobjectsearch_update_queue`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-bundle_outputdataconfigtoolkit_outputdefinition.csv' INTO TABLE `bundle_outputdataconfigtoolkit_outputdefinition`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-bundle_web2print_favorite_outputdefinitions.csv' INTO TABLE `bundle_web2print_favorite_outputdefinitions`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-classes.csv' INTO TABLE `classes`;
