@@ -5,7 +5,7 @@
   "license": "GPL-3.0",
   "require": {
     "php": ">=7.0",
-    "pimcore/web2print-tools-bundle": "^2.1",
+    "pimcore/web2print-tools-bundle": "^2.0",
     "pimcore/advanced-object-search": "^1.1"
   }
 }
