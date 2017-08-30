@@ -83,7 +83,7 @@ class PaymentSeamlessController extends AbstractCartAware
         $orderNumber = '';
 
         if ($order = $paymentInformation->getObject()) {
-            /* @var $order \Pimcore\Model\Object\OnlineShopOrder */
+            /* @var $order \Pimcore\Model\DataObject\OnlineShopOrder */
             $orderNumber = $order->getOrdernumber();
         }
 
@@ -120,7 +120,7 @@ class PaymentSeamlessController extends AbstractCartAware
      */
     public function completeAction(Request $request)
     {
-        $order = \Pimcore\Model\Object\OnlineShopOrder::getById(base64_decode($request->get('id')));
+        $order = \Pimcore\Model\DataObject\OnlineShopOrder::getById(base64_decode($request->get('id')));
         $this->view->order = $order;
     }
 

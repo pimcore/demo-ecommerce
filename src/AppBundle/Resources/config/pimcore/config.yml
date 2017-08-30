@@ -2,8 +2,8 @@ pimcore:
     # CLASS OVERRIDES
     models:
         class_overrides:
-            Pimcore\Model\Object\Product: AppBundle\Model\DefaultProduct
-            Pimcore\Model\Object\ProductCategory: AppBundle\Model\ShopCategory
+            Pimcore\Model\DataObject\Product: AppBundle\Model\DefaultProduct
+            Pimcore\Model\DataObject\ProductCategory: AppBundle\Model\ShopCategory
 
 imports:
 

@@ -1,21 +1,21 @@
-<?php 
+<?php
 
-/** 
+/**
 * Generated at: 2017-01-03T14:02:15+01:00
 * IP: 192.168.11.5
 
 
-Fields Summary: 
+Fields Summary:
  - localizedfields [localizedfields]
  - percent [numeric]
-*/ 
+*/
 
 
-return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
+return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
    'key' => 'TaxEntry',
    'parentClass' => '',
-   'layoutDefinitions' => 
-  Pimcore\Model\Object\ClassDefinition\Layout\Panel::__set_state(array(
+   'layoutDefinitions' =>
+  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'labelWidth' => 100,
      'layout' => NULL,
@@ -30,10 +30,10 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
      'bodyStyle' => NULL,
      'datatype' => 'layout',
      'permissions' => NULL,
-     'childs' => 
+     'childs' =>
     array (
-      0 => 
-      Pimcore\Model\Object\ClassDefinition\Layout\Panel::__set_state(array(
+      0 =>
+      Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'fieldtype' => 'panel',
          'labelWidth' => 100,
          'layout' => NULL,
@@ -48,16 +48,16 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
          'bodyStyle' => NULL,
          'datatype' => 'layout',
          'permissions' => NULL,
-         'childs' => 
+         'childs' =>
         array (
-          0 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Localizedfields::__set_state(array(
+          0 =>
+          Pimcore\Model\DataObject\ClassDefinition\Data\Localizedfields::__set_state(array(
              'fieldtype' => 'localizedfields',
-             'phpdocType' => '\\Pimcore\\Model\\Object\\Localizedfield',
-             'childs' => 
+             'phpdocType' => '\\Pimcore\\Model\\DataObject\\Localizedfield',
+             'childs' =>
             array (
-              0 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+              0 =>
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'fieldtype' => 'input',
                  'width' => NULL,
                  'queryColumnType' => 'varchar',
@@ -89,7 +89,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'height' => '',
              'maxTabs' => NULL,
              'labelWidth' => NULL,
-             'referencedFields' => 
+             'referencedFields' =>
             array (
             ),
              'fieldDefinitionsCache' => NULL,
@@ -108,8 +108,8 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'visibleGridView' => true,
              'visibleSearch' => true,
           )),
-          1 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Numeric::__set_state(array(
+          1 =>
+          Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
              'fieldtype' => 'numeric',
              'width' => '',
              'defaultValue' => NULL,

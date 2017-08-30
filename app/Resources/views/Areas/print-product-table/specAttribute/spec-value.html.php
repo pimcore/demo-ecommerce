@@ -24,9 +24,9 @@
 <?php if(!is_object($this->outputElement->value)) { ?>
 
     <?php
-        if($this->outputElement->def instanceof \Pimcore\Model\Object\ClassDefinition\Data\Select) {
+        if($this->outputElement->def instanceof \Pimcore\Model\DataObject\ClassDefinition\Data\Select) {
             $value = $this->translateAdmin($this->outputElement->value);
-        } else if($this->outputElement->def instanceof \Pimcore\Model\Object\ClassDefinition\Data\Multiselect) {
+        } else if($this->outputElement->def instanceof \Pimcore\Model\DataObject\ClassDefinition\Data\Multiselect) {
 
             $value = [];
             if($this->outputElement->value) {
@@ -37,7 +37,7 @@
 
             $value = implode(", ", $value);
 
-        } else if($this->outputElement->def instanceof \Pimcore\Model\Object\ClassDefinition\Data\Objects) {
+        } else if($this->outputElement->def instanceof \Pimcore\Model\DataObject\ClassDefinition\Data\Objects) {
 
             $value = [];
             if($this->outputElement->value) {
@@ -61,7 +61,7 @@
 
     <img src="<?= $this->outputElement->value->getThumbnail($this->thumbnailName)?>" alt="image" />
 
-<?php } else if($this->outputElement->value instanceof \Pimcore\Model\Object\ClassDefinition\Data\StructuredTable) { ?>
+<?php } else if($this->outputElement->value instanceof \Pimcore\Model\DataObject\ClassDefinition\Data\StructuredTable) { ?>
     <?php
         $cols = array();
         $colKeys = array();

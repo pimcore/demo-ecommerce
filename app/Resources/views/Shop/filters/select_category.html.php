@@ -33,7 +33,7 @@ $currentCategory = null;
 
 // categories to show
 if($this->currentValue) {
-    $currentCategory = Pimcore\Model\Object\ProductCategory::getById( $this->currentValue );
+    $currentCategory = Pimcore\Model\DataObject\ProductCategory::getById( $this->currentValue );
 }
 
 $parentCategories = [];

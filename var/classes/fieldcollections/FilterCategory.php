@@ -1,11 +1,11 @@
-<?php 
+<?php
 
 
-return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
+return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
    'key' => 'FilterCategory',
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\CategoryFilterDefinitionType',
-   'layoutDefinitions' => 
-  Pimcore\Model\Object\ClassDefinition\Layout\Panel::__set_state(array(
+   'layoutDefinitions' =>
+  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'labelWidth' => 100,
      'layout' => NULL,
@@ -20,10 +20,10 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
      'bodyStyle' => NULL,
      'datatype' => 'layout',
      'permissions' => NULL,
-     'childs' => 
+     'childs' =>
     array (
-      0 => 
-      Pimcore\Model\Object\ClassDefinition\Layout\Panel::__set_state(array(
+      0 =>
+      Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'fieldtype' => 'panel',
          'labelWidth' => 100,
          'layout' => '',
@@ -38,10 +38,10 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
          'bodyStyle' => '',
          'datatype' => 'layout',
          'permissions' => '',
-         'childs' => 
+         'childs' =>
         array (
-          0 => 
-          Pimcore\Model\Object\ClassDefinition\Layout\Text::__set_state(array(
+          0 =>
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
              'fieldtype' => 'text',
              'html' => '<div style="color: rgb(0, 0, 0); font-family: \'Open Sans\', \'Helvetica Neue\', helvetica, arial, verdana, sans-serif; font-size: 13px;"><b>Filter Category</b></div><div><font face="Open Sans, Helvetica Neue, helvetica, arial, verdana, sans-serif"><span style="font-size: 13px;">- RootCategory: can be used as root category when building up category tree.&nbsp;</span></font></div><div><font face="Open Sans, Helvetica Neue, helvetica, arial, verdana, sans-serif"><span style="font-size: 13px;">- Include SubCategories: when active, filter returns product with subcategories assigned too.</span></font></div>',
              'name' => 'Layout',
@@ -55,13 +55,13 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'bodyStyle' => 'padding: 10px; background-color: #d9edf7; border-color: #bce8f1 !important; color: #31708f;',
              'datatype' => 'layout',
              'permissions' => NULL,
-             'childs' => 
+             'childs' =>
             array (
             ),
              'locked' => false,
           )),
-          1 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+          1 =>
+          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 400,
              'queryColumnType' => 'varchar',
@@ -84,39 +84,39 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'visibleGridView' => false,
              'visibleSearch' => false,
           )),
-          2 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Href::__set_state(array(
+          2 =>
+          Pimcore\Model\DataObject\ClassDefinition\Data\Href::__set_state(array(
              'fieldtype' => 'href',
              'width' => 400,
              'assetUploadPath' => '',
              'relationType' => true,
-             'queryColumnType' => 
+             'queryColumnType' =>
             array (
               'id' => 'int(11)',
               'type' => 'enum(\'document\',\'asset\',\'object\')',
             ),
-             'phpdocType' => '\\Pimcore\\Model\\Document\\Page | \\Pimcore\\Model\\Document\\Snippet | \\Pimcore\\Model\\Document | \\Pimcore\\Model\\Asset | \\Pimcore\\Model\\Object\\AbstractObject',
+             'phpdocType' => '\\Pimcore\\Model\\Document\\Page | \\Pimcore\\Model\\Document\\Snippet | \\Pimcore\\Model\\Document | \\Pimcore\\Model\\Asset | \\Pimcore\\Model\\DataObject\\AbstractObject',
              'objectsAllowed' => true,
              'assetsAllowed' => false,
-             'assetTypes' => 
+             'assetTypes' =>
             array (
-              0 => 
+              0 =>
               array (
                 'assetTypes' => '',
               ),
             ),
              'documentsAllowed' => false,
-             'documentTypes' => 
+             'documentTypes' =>
             array (
-              0 => 
+              0 =>
               array (
                 'documentTypes' => '',
               ),
             ),
              'lazyLoading' => true,
-             'classes' => 
+             'classes' =>
             array (
-              0 => 
+              0 =>
               array (
                 'classes' => 'ProductCategory',
               ),
@@ -136,39 +136,39 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'visibleGridView' => false,
              'visibleSearch' => false,
           )),
-          3 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Href::__set_state(array(
+          3 =>
+          Pimcore\Model\DataObject\ClassDefinition\Data\Href::__set_state(array(
              'fieldtype' => 'href',
              'width' => 400,
              'assetUploadPath' => '',
              'relationType' => true,
-             'queryColumnType' => 
+             'queryColumnType' =>
             array (
               'id' => 'int(11)',
               'type' => 'enum(\'document\',\'asset\',\'object\')',
             ),
-             'phpdocType' => '\\Pimcore\\Model\\Document\\Page | \\Pimcore\\Model\\Document\\Snippet | \\Pimcore\\Model\\Document | \\Pimcore\\Model\\Asset | \\Pimcore\\Model\\Object\\AbstractObject',
+             'phpdocType' => '\\Pimcore\\Model\\Document\\Page | \\Pimcore\\Model\\Document\\Snippet | \\Pimcore\\Model\\Document | \\Pimcore\\Model\\Asset | \\Pimcore\\Model\\DataObject\\AbstractObject',
              'objectsAllowed' => true,
              'assetsAllowed' => false,
-             'assetTypes' => 
+             'assetTypes' =>
             array (
-              0 => 
+              0 =>
               array (
                 'assetTypes' => NULL,
               ),
             ),
              'documentsAllowed' => false,
-             'documentTypes' => 
+             'documentTypes' =>
             array (
-              0 => 
+              0 =>
               array (
                 'documentTypes' => NULL,
               ),
             ),
              'lazyLoading' => true,
-             'classes' => 
+             'classes' =>
             array (
-              0 => 
+              0 =>
               array (
                 'classes' => 'ProductCategory',
               ),
@@ -188,8 +188,8 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'visibleGridView' => false,
              'visibleSearch' => false,
           )),
-          4 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Checkbox::__set_state(array(
+          4 =>
+          Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
              'fieldtype' => 'checkbox',
              'defaultValue' => 0,
              'queryColumnType' => 'tinyint(1)',
@@ -210,8 +210,8 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'visibleGridView' => false,
              'visibleSearch' => false,
           )),
-          5 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+          5 =>
+          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 400,
              'queryColumnType' => 'varchar',
@@ -234,8 +234,8 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'visibleGridView' => false,
              'visibleSearch' => false,
           )),
-          6 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Objects::__set_state(array(
+          6 =>
+          Pimcore\Model\DataObject\ClassDefinition\Data\Objects::__set_state(array(
              'fieldtype' => 'objects',
              'width' => '',
              'height' => '',
@@ -244,9 +244,9 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'phpdocType' => 'array',
              'relationType' => true,
              'lazyLoading' => true,
-             'classes' => 
+             'classes' =>
             array (
-              0 => 
+              0 =>
               array (
                 'classes' => 'ProductCategory',
               ),

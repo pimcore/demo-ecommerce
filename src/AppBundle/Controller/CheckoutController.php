@@ -213,7 +213,7 @@ class CheckoutController extends AbstractCartAware
         $session = $this->get("session");
         $orderId = $session->get("last_order_id");
 
-        $order = \Pimcore\Model\Object\OnlineShopOrder::getById($orderId);
+        $order = \Pimcore\Model\DataObject\OnlineShopOrder::getById($orderId);
         $this->view->order = $order;
 
         $trackingManager = Factory::getInstance()->getTrackingManager();

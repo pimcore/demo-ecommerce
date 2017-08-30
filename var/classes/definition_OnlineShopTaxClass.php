@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-/** 
+/**
 * Generated at: 2017-01-02T09:11:37+01:00
 * Inheritance: no
 * Variants: no
@@ -8,13 +8,13 @@
 * IP: 192.168.11.5
 
 
-Fields Summary: 
+Fields Summary:
 - taxEntryCombinationType [select]
 - taxEntries [fieldcollections]
-*/ 
+*/
 
 
-return Pimcore\Model\Object\ClassDefinition::__set_state(array(
+return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'OnlineShopTaxClass',
    'description' => '',
    'creationDate' => 0,
@@ -26,8 +26,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
    'allowInherit' => false,
    'allowVariants' => false,
    'showVariants' => false,
-   'layoutDefinitions' => 
-  Pimcore\Model\Object\ClassDefinition\Layout\Panel::__set_state(array(
+   'layoutDefinitions' =>
+  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'labelWidth' => 100,
      'layout' => NULL,
@@ -42,10 +42,10 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
      'bodyStyle' => NULL,
      'datatype' => 'layout',
      'permissions' => NULL,
-     'childs' => 
+     'childs' =>
     array (
-      0 => 
-      Pimcore\Model\Object\ClassDefinition\Layout\Panel::__set_state(array(
+      0 =>
+      Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'fieldtype' => 'panel',
          'labelWidth' => 200,
          'layout' => NULL,
@@ -60,10 +60,10 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
          'bodyStyle' => '',
          'datatype' => 'layout',
          'permissions' => NULL,
-         'childs' => 
+         'childs' =>
         array (
-          0 => 
-          Pimcore\Model\Object\ClassDefinition\Layout\Text::__set_state(array(
+          0 =>
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
              'fieldtype' => 'text',
              'html' => '<div><font size="2"><b>OnlineShopTaxClass </b>as definition for tax calculation within ecommerce frameworks price systems. Products price system decides which TaxClass to take and does the tax calculation based on it.&nbsp;<br></font></div><div><font size="2"><b><br></b></font></div><div><font size="2"><b>Tax Entry Combination Type</b> defines how tax entry rates are combined:&nbsp;</font></div><div><ul><li><font size="2"><b>Combine:</b> Sum up all tax rates and calculates tax amount afterwards.<br></font></li><li><font size="2"><b>One After Another:</b> For each tax rate calculate tax amount, add it to total sum and then calculate tax amount for next tax rate based on new total sum. </font><b style="font-size: 13px;">&nbsp;</b><br></li></ul></div>',
              'renderingClass' => '',
@@ -79,22 +79,22 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
              'bodyStyle' => 'padding: 10px; background-color: #d9edf7; border-color: #bce8f1 !important; color: #31708f;',
              'datatype' => 'layout',
              'permissions' => NULL,
-             'childs' => 
+             'childs' =>
             array (
             ),
              'locked' => NULL,
           )),
-          1 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Select::__set_state(array(
+          1 =>
+          Pimcore\Model\DataObject\ClassDefinition\Data\Select::__set_state(array(
              'fieldtype' => 'select',
-             'options' => 
+             'options' =>
             array (
-              0 => 
+              0 =>
               array (
                 'key' => 'Combine',
                 'value' => 'combine',
               ),
-              1 => 
+              1 =>
               array (
                 'key' => 'One After Another',
                 'value' => 'oneAfterAnother',
@@ -120,11 +120,11 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
              'visibleGridView' => false,
              'visibleSearch' => false,
           )),
-          2 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Fieldcollections::__set_state(array(
+          2 =>
+          Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections::__set_state(array(
              'fieldtype' => 'fieldcollections',
-             'phpdocType' => '\\Pimcore\\Model\\Object\\Fieldcollection',
-             'allowedTypes' => 
+             'phpdocType' => '\\Pimcore\\Model\\DataObject\\Fieldcollection',
+             'allowedTypes' =>
             array (
               0 => 'TaxEntry',
             ),
@@ -160,9 +160,9 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
    'icon' => '',
    'previewUrl' => '',
    'group' => '',
-   'propertyVisibility' => 
+   'propertyVisibility' =>
   array (
-    'grid' => 
+    'grid' =>
     array (
       'id' => true,
       'path' => true,
@@ -170,7 +170,7 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
       'modificationDate' => true,
       'creationDate' => true,
     ),
-    'search' => 
+    'search' =>
     array (
       'id' => true,
       'path' => true,

@@ -23,12 +23,12 @@
 
     @usort($values, function($left, $right) {
 
-        $object = \Pimcore\Model\Object\AbstractObject::getById($left["value"]);
+        $object = \Pimcore\Model\DataObject\AbstractObject::getById($left["value"]);
         if($object) {
             $nameLeft = $object->getName();
         }
 
-        $object = \Pimcore\Model\Object\AbstractObject::getById($right["value"]);
+        $object = \Pimcore\Model\DataObject\AbstractObject::getById($right["value"]);
         if($object) {
             $nameRight = $object->getName();
         }

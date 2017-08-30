@@ -1,9 +1,9 @@
-<?php 
+<?php
 
 /** Generated at 2016-08-08T16:05:50+02:00 */
 
 
-return Pimcore\Model\Object\ClassDefinition::__set_state(array(
+return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'OnlineShopVoucherToken',
    'description' => '',
    'creationDate' => 1431519559,
@@ -15,8 +15,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
    'allowInherit' => false,
    'allowVariants' => false,
    'showVariants' => false,
-   'layoutDefinitions' => 
-  Pimcore\Model\Object\ClassDefinition\Layout\Panel::__set_state(array(
+   'layoutDefinitions' =>
+  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'labelWidth' => 100,
      'layout' => NULL,
@@ -31,10 +31,10 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
      'bodyStyle' => NULL,
      'datatype' => 'layout',
      'permissions' => NULL,
-     'childs' => 
+     'childs' =>
     array (
-      0 => 
-      Pimcore\Model\Object\ClassDefinition\Layout\Panel::__set_state(array(
+      0 =>
+      Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'fieldtype' => 'panel',
          'labelWidth' => 150,
          'layout' => '',
@@ -49,10 +49,10 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
          'bodyStyle' => '',
          'datatype' => 'layout',
          'permissions' => NULL,
-         'childs' => 
+         'childs' =>
         array (
-          0 => 
-          Pimcore\Model\Object\ClassDefinition\Layout\Text::__set_state(array(
+          0 =>
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
              'fieldtype' => 'text',
              'html' => '<b>VoucherToken </b>that are actually used with orders.&nbsp;',
              'name' => 'Layout',
@@ -66,13 +66,13 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
              'bodyStyle' => 'padding: 10px; background-color: #d9edf7; border-color: #bce8f1 !important; color: #31708f;',
              'datatype' => 'layout',
              'permissions' => NULL,
-             'childs' => 
+             'childs' =>
             array (
             ),
              'locked' => NULL,
           )),
-          1 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Numeric::__set_state(array(
+          1 =>
+          Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
              'fieldtype' => 'numeric',
              'width' => 500,
              'defaultValue' => NULL,
@@ -99,8 +99,8 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
              'visibleGridView' => false,
              'visibleSearch' => false,
           )),
-          2 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+          2 =>
+          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 500,
              'queryColumnType' => 'varchar',
@@ -123,39 +123,39 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
              'visibleGridView' => false,
              'visibleSearch' => false,
           )),
-          3 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Href::__set_state(array(
+          3 =>
+          Pimcore\Model\DataObject\ClassDefinition\Data\Href::__set_state(array(
              'fieldtype' => 'href',
              'width' => 500,
              'assetUploadPath' => '',
              'relationType' => true,
-             'queryColumnType' => 
+             'queryColumnType' =>
             array (
               'id' => 'int(11)',
               'type' => 'enum(\'document\',\'asset\',\'object\')',
             ),
-             'phpdocType' => '\\Pimcore\\Model\\Document\\Page | \\Pimcore\\Model\\Document\\Snippet | \\Pimcore\\Model\\Document | \\Pimcore\\Model\\Asset | \\Pimcore\\Model\\Object\\AbstractObject',
+             'phpdocType' => '\\Pimcore\\Model\\Document\\Page | \\Pimcore\\Model\\Document\\Snippet | \\Pimcore\\Model\\Document | \\Pimcore\\Model\\Asset | \\Pimcore\\Model\\DataObject\\AbstractObject',
              'objectsAllowed' => true,
              'assetsAllowed' => false,
-             'assetTypes' => 
+             'assetTypes' =>
             array (
-              0 => 
+              0 =>
               array (
                 'assetTypes' => '',
               ),
             ),
              'documentsAllowed' => false,
-             'documentTypes' => 
+             'documentTypes' =>
             array (
-              0 => 
+              0 =>
               array (
                 'documentTypes' => '',
               ),
             ),
              'lazyLoading' => false,
-             'classes' => 
+             'classes' =>
             array (
-              0 => 
+              0 =>
               array (
                 'classes' => 'OnlineShopVoucherSeries',
               ),
@@ -184,9 +184,9 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
    'icon' => '',
    'previewUrl' => '',
    'group' => NULL,
-   'propertyVisibility' => 
+   'propertyVisibility' =>
   array (
-    'grid' => 
+    'grid' =>
     array (
       'id' => true,
       'path' => true,
@@ -194,7 +194,7 @@ return Pimcore\Model\Object\ClassDefinition::__set_state(array(
       'modificationDate' => true,
       'creationDate' => true,
     ),
-    'search' => 
+    'search' =>
     array (
       'id' => true,
       'path' => true,

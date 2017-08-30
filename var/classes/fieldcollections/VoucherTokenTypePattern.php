@@ -1,11 +1,11 @@
 <?php 
 
 
-return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
+return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
    'key' => 'VoucherTokenTypePattern',
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractVoucherTokenType',
    'layoutDefinitions' => 
-  Pimcore\Model\Object\ClassDefinition\Layout\Panel::__set_state(array(
+  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'labelWidth' => 100,
      'layout' => NULL,
@@ -23,7 +23,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
      'childs' => 
     array (
       0 => 
-      Pimcore\Model\Object\ClassDefinition\Layout\Panel::__set_state(array(
+      Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'fieldtype' => 'panel',
          'labelWidth' => 100,
          'layout' => '',
@@ -41,7 +41,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
          'childs' => 
         array (
           0 => 
-          Pimcore\Model\Object\ClassDefinition\Layout\Text::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
              'fieldtype' => 'text',
              'html' => 'Generate tokens based on a pattern with specific settings.&nbsp;',
              'name' => 'Layout',
@@ -61,7 +61,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'locked' => false,
           )),
           1 => 
-          Pimcore\Model\Object\ClassDefinition\Layout\Fieldset::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
              'fieldtype' => 'fieldset',
              'labelWidth' => 100,
              'name' => 'general settings',
@@ -78,7 +78,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'childs' => 
             array (
               0 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Numeric::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                  'fieldtype' => 'numeric',
                  'width' => 400,
                  'defaultValue' => NULL,
@@ -106,7 +106,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
                  'visibleSearch' => false,
               )),
               1 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'fieldtype' => 'input',
                  'width' => 400,
                  'queryColumnType' => 'varchar',
@@ -130,7 +130,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
                  'visibleSearch' => false,
               )),
               2 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Numeric::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                  'fieldtype' => 'numeric',
                  'width' => 400,
                  'defaultValue' => NULL,
@@ -158,7 +158,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
                  'visibleSearch' => false,
               )),
               3 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Select::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Select::__set_state(array(
                  'fieldtype' => 'select',
                  'options' => 
                 array (
@@ -202,7 +202,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'locked' => false,
           )),
           2 => 
-          Pimcore\Model\Object\ClassDefinition\Layout\Fieldset::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
              'fieldtype' => 'fieldset',
              'labelWidth' => 100,
              'name' => 'additionals',
@@ -219,7 +219,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'childs' => 
             array (
               0 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'fieldtype' => 'input',
                  'width' => 400,
                  'queryColumnType' => 'varchar',
@@ -243,7 +243,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
                  'visibleSearch' => false,
               )),
               1 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Numeric::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                  'fieldtype' => 'numeric',
                  'width' => 400,
                  'defaultValue' => 4,
@@ -271,7 +271,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
                  'visibleSearch' => false,
               )),
               2 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Checkbox::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
                  'fieldtype' => 'checkbox',
                  'defaultValue' => 0,
                  'queryColumnType' => 'tinyint(1)',
@@ -293,7 +293,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
                  'visibleSearch' => false,
               )),
               3 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Checkbox::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
                  'fieldtype' => 'checkbox',
                  'defaultValue' => 0,
                  'queryColumnType' => 'tinyint(1)',

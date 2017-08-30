@@ -16,8 +16,8 @@ namespace AppBundle\Model;
 
 use AppBundle\Tool\Text;
 use Pimcore\Model\Document;
-use Pimcore\Model\Object\AbstractObject;
-use Pimcore\Model\Object\ProductCategory;
+use Pimcore\Model\DataObject\AbstractObject;
+use Pimcore\Model\DataObject\ProductCategory;
 
 class ShopCategory extends ProductCategory
 {

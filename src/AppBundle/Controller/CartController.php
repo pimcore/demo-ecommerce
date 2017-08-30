@@ -17,7 +17,7 @@ namespace AppBundle\Controller;
 use Pimcore\Bundle\EcommerceFrameworkBundle\CartManager\ICartItem;
 use Pimcore\Bundle\EcommerceFrameworkBundle\Exception\VoucherServiceException;
 use Pimcore\Bundle\EcommerceFrameworkBundle\Factory;
-use Pimcore\Model\Object\Product;
+use Pimcore\Model\DataObject\Product;
 use Symfony\Component\HttpFoundation\Request;
 
 class CartController extends AbstractCartAware

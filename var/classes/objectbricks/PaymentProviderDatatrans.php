@@ -17,7 +17,7 @@ Fields Summary:
 */ 
 
 
-return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
+return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
    'classDefinitions' => 
   array (
     0 => 
@@ -29,7 +29,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
    'key' => 'PaymentProviderDatatrans',
    'parentClass' => '',
    'layoutDefinitions' => 
-  Pimcore\Model\Object\ClassDefinition\Layout\Panel::__set_state(array(
+  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'labelWidth' => 100,
      'layout' => NULL,
@@ -47,7 +47,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
      'childs' => 
     array (
       0 => 
-      Pimcore\Model\Object\ClassDefinition\Layout\Panel::__set_state(array(
+      Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'fieldtype' => 'panel',
          'labelWidth' => 150,
          'layout' => NULL,
@@ -65,7 +65,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
          'childs' => 
         array (
           0 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 400,
              'queryColumnType' => 'varchar',
@@ -89,7 +89,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           1 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 400,
              'queryColumnType' => 'varchar',
@@ -113,7 +113,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           2 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 400,
              'queryColumnType' => 'varchar',
@@ -137,7 +137,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           3 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 400,
              'queryColumnType' => 'varchar',
@@ -161,7 +161,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           4 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 400,
              'queryColumnType' => 'varchar',
@@ -185,7 +185,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           5 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 400,
              'queryColumnType' => 'varchar',
@@ -209,7 +209,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           6 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 400,
              'queryColumnType' => 'varchar',
@@ -233,7 +233,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           7 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 400,
              'queryColumnType' => 'varchar',

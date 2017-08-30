@@ -15,7 +15,7 @@
 namespace AppBundle\Document\Areabrick;
 
 use Pimcore\Model\Document\Tag\Area\Info;
-use Pimcore\Model\Object\FilterDefinition;
+use Pimcore\Model\DataObject\FilterDefinition;
 
 class Productgrid extends AbstractAreabrick
 {

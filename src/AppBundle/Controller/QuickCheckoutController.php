@@ -16,7 +16,7 @@ namespace AppBundle\Controller;
 
 use Pimcore\Bundle\EcommerceFrameworkBundle\Factory;
 use Pimcore\Bundle\EcommerceFrameworkBundle\PaymentManager\Payment\QPay;
-use Pimcore\Model\Object\OnlineShopOrder;
+use Pimcore\Model\DataObject\OnlineShopOrder;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
 

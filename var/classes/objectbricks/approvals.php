@@ -13,7 +13,7 @@ Fields Summary:
 */ 
 
 
-return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
+return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
    'classDefinitions' => 
   array (
     0 => 
@@ -25,7 +25,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
    'key' => 'approvals',
    'parentClass' => NULL,
    'layoutDefinitions' => 
-  Pimcore\Model\Object\ClassDefinition\Layout\Panel::__set_state(array(
+  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'labelWidth' => 100,
      'layout' => NULL,
@@ -43,7 +43,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
      'childs' => 
     array (
       0 => 
-      Pimcore\Model\Object\ClassDefinition\Layout\Panel::__set_state(array(
+      Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'fieldtype' => 'panel',
          'labelWidth' => 100,
          'layout' => '',
@@ -61,7 +61,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
          'childs' => 
         array (
           0 => 
-          Pimcore\Model\Object\ClassDefinition\Layout\Fieldset::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
              'fieldtype' => 'fieldset',
              'labelWidth' => 200,
              'name' => 'Layout',
@@ -78,7 +78,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
              'childs' => 
             array (
               0 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Checkbox::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
                  'fieldtype' => 'checkbox',
                  'defaultValue' => 0,
                  'queryColumnType' => 'tinyint(1)',
@@ -100,7 +100,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
                  'visibleSearch' => false,
               )),
               1 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Checkbox::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
                  'fieldtype' => 'checkbox',
                  'defaultValue' => 0,
                  'queryColumnType' => 'tinyint(1)',
@@ -122,7 +122,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
                  'visibleSearch' => false,
               )),
               2 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Checkbox::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
                  'fieldtype' => 'checkbox',
                  'defaultValue' => 0,
                  'queryColumnType' => 'tinyint(1)',
@@ -144,7 +144,7 @@ return Pimcore\Model\Object\Objectbrick\Definition::__set_state(array(
                  'visibleSearch' => false,
               )),
               3 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Checkbox::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
                  'fieldtype' => 'checkbox',
                  'defaultValue' => 0,
                  'queryColumnType' => 'tinyint(1)',

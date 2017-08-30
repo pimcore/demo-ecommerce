@@ -21,8 +21,8 @@ use OutputDataConfigToolkitBundle\Service;
 use Pimcore\Bundle\EcommerceFrameworkBundle\Factory;
 use Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\Helper;
 use Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\ProductList\IProductList;
-use Pimcore\Model\Object\Product;
-use Pimcore\Model\Object\ProductCategory;
+use Pimcore\Model\DataObject\Product;
+use Pimcore\Model\DataObject\ProductCategory;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
@@ -58,7 +58,7 @@ class ShopController extends AbstractController
             $filterDefinition = $category->getFilterdefinition();
         }
 
-        if ($request->get('filterdefinition') instanceof \Pimcore\Model\Object\FilterDefinition) {
+        if ($request->get('filterdefinition') instanceof \Pimcore\Model\DataObject\FilterDefinition) {
             $filterDefinition = $request->get('filterdefinition');
         }
 
@@ -191,7 +191,7 @@ class ShopController extends AbstractController
         $trackingManager->trackProductView($product);
     }
 
-    private function getSimilarProducts(DefaultProduct $product, \Pimcore\Model\Object\FilterDefinition $filterDefinition = null)
+    private function getSimilarProducts(DefaultProduct $product, \Pimcore\Model\DataObject\FilterDefinition $filterDefinition = null)
     {
         if ($filterDefinition) {
             $productList = Factory::getInstance()->getIndexService()->getProductListForCurrentTenant();
@@ -222,7 +222,7 @@ class ShopController extends AbstractController
     {
         $paramsBag = [];
         if ($request->get('type') == 'object') {
-            $product = \Pimcore\Model\Object\Product::getById($request->get('id'));
+            $product = \Pimcore\Model\DataObject\Product::getById($request->get('id'));
 
             $paramsBag['product'] = $product;
             $paramsBag['col'] = $request->get('editmode') ? 12 : 3;

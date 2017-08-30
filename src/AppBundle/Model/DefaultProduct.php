@@ -18,9 +18,9 @@ use AppBundle\Model\Product\TraitClasses\Checkoutable;
 use AppBundle\Tool\AdminStyle;
 use AppBundle\Tool\SizeSort;
 use Pimcore\Cache;
-use Pimcore\Model\Object\AbstractObject;
-use Pimcore\Model\Object\Folder;
-use Pimcore\Model\Object\Product;
+use Pimcore\Model\DataObject\AbstractObject;
+use Pimcore\Model\DataObject\Folder;
+use Pimcore\Model\DataObject\Product;
 
 class DefaultProduct extends Product
 {
@@ -372,13 +372,13 @@ class DefaultProduct extends Product
      *
      * @param string $key
      *
-     * @return mixed|\Pimcore\Model\Object\Fieldcollection
+     * @return mixed|\Pimcore\Model\DataObject\Fieldcollection
      */
     public function preGetValue($key)
     {
         if ($this->getClass()->getAllowInherit()
             && AbstractObject::doGetInheritedValues()
-            && $this->getClass()->getFieldDefinition($key) instanceof \Pimcore\Model\Object\ClassDefinition\Data\Fieldcollections
+            && $this->getClass()->getFieldDefinition($key) instanceof \Pimcore\Model\DataObject\ClassDefinition\Data\Fieldcollections
         ) {
             $checkInheritanceKey = $key . 'Inheritance';
             if ($this->{
@@ -393,7 +393,7 @@ class DefaultProduct extends Product
                 if (!$data) {
                     return $parentValue;
                 } else {
-                    $value = new \Pimcore\Model\Object\Fieldcollection($data->getItems());
+                    $value = new \Pimcore\Model\DataObject\Fieldcollection($data->getItems());
                     if (!empty($parentValue)) {
                         foreach ($parentValue as $entry) {
                             $value->add($entry);

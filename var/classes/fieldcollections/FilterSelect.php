@@ -12,11 +12,11 @@ Fields Summary:
 */ 
 
 
-return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
+return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
    'key' => 'FilterSelect',
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractFilterDefinitionType',
    'layoutDefinitions' => 
-  Pimcore\Model\Object\ClassDefinition\Layout\Panel::__set_state(array(
+  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'labelWidth' => 100,
      'layout' => NULL,
@@ -34,7 +34,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
      'childs' => 
     array (
       0 => 
-      Pimcore\Model\Object\ClassDefinition\Layout\Panel::__set_state(array(
+      Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'fieldtype' => 'panel',
          'labelWidth' => 100,
          'layout' => '',
@@ -52,7 +52,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
          'childs' => 
         array (
           0 => 
-          Pimcore\Model\Object\ClassDefinition\Layout\Text::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
              'fieldtype' => 'text',
              'html' => '<b>​Filter&nbsp;Select</b><div>Single selection filter for default value fields.&nbsp;<br></div>',
              'renderingClass' => NULL,
@@ -74,7 +74,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'locked' => false,
           )),
           1 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 400,
              'queryColumnType' => 'varchar',
@@ -140,7 +140,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           3 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 400,
              'queryColumnType' => 'varchar',

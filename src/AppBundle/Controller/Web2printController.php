@@ -15,7 +15,7 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Model\DefaultProduct;
-use Pimcore\Model\Object\Product;
+use Pimcore\Model\DataObject\Product;
 use Symfony\Component\HttpFoundation\Request;
 
 class Web2printController extends AbstractController

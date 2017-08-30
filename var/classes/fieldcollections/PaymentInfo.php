@@ -1,11 +1,11 @@
 <?php 
 
 
-return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
+return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
    'key' => 'PaymentInfo',
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractPaymentInformation',
    'layoutDefinitions' => 
-  Pimcore\Model\Object\ClassDefinition\Layout\Panel::__set_state(array(
+  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'labelWidth' => 100,
      'layout' => NULL,
@@ -23,7 +23,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
      'childs' => 
     array (
       0 => 
-      Pimcore\Model\Object\ClassDefinition\Layout\Panel::__set_state(array(
+      Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'fieldtype' => 'panel',
          'labelWidth' => 150,
          'layout' => NULL,
@@ -41,7 +41,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
          'childs' => 
         array (
           0 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Datetime::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Data\Datetime::__set_state(array(
              'fieldtype' => 'datetime',
              'queryColumnType' => 'bigint(20)',
              'columnType' => 'bigint(20)',
@@ -64,7 +64,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           1 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Datetime::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Data\Datetime::__set_state(array(
              'fieldtype' => 'datetime',
              'queryColumnType' => 'bigint(20)',
              'columnType' => 'bigint(20)',
@@ -87,7 +87,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           2 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 500,
              'queryColumnType' => 'varchar',
@@ -111,7 +111,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           3 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Select::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Data\Select::__set_state(array(
              'fieldtype' => 'select',
              'options' => 
             array (
@@ -162,7 +162,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           4 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 500,
              'queryColumnType' => 'varchar',
@@ -186,7 +186,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           5 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Textarea::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Data\Textarea::__set_state(array(
              'fieldtype' => 'textarea',
              'width' => 500,
              'height' => 100,
@@ -209,7 +209,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           6 => 
-          Pimcore\Model\Object\ClassDefinition\Data\Textarea::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Data\Textarea::__set_state(array(
              'fieldtype' => 'textarea',
              'width' => 500,
              'height' => 200,
@@ -232,7 +232,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           7 => 
-          Pimcore\Model\Object\ClassDefinition\Layout\Fieldset::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
              'fieldtype' => 'fieldset',
              'labelWidth' => 150,
              'name' => 'additionalDataWirecard',
@@ -249,7 +249,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'childs' => 
             array (
               0 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'fieldtype' => 'input',
                  'width' => NULL,
                  'queryColumnType' => 'varchar',
@@ -273,7 +273,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
                  'visibleSearch' => false,
               )),
               1 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'fieldtype' => 'input',
                  'width' => 500,
                  'queryColumnType' => 'varchar',
@@ -297,7 +297,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
                  'visibleSearch' => false,
               )),
               2 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'fieldtype' => 'input',
                  'width' => NULL,
                  'queryColumnType' => 'varchar',
@@ -324,7 +324,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'locked' => false,
           )),
           8 => 
-          Pimcore\Model\Object\ClassDefinition\Layout\Fieldset::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
              'fieldtype' => 'fieldset',
              'labelWidth' => 150,
              'name' => 'additionalDataDatatrans',
@@ -341,7 +341,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'childs' => 
             array (
               0 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'fieldtype' => 'input',
                  'width' => 500,
                  'queryColumnType' => 'varchar',
@@ -365,7 +365,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
                  'visibleSearch' => false,
               )),
               1 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'fieldtype' => 'input',
                  'width' => 500,
                  'queryColumnType' => 'varchar',
@@ -389,7 +389,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
                  'visibleSearch' => false,
               )),
               2 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Textarea::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Textarea::__set_state(array(
                  'fieldtype' => 'textarea',
                  'width' => 500,
                  'height' => 300,
@@ -415,7 +415,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'locked' => false,
           )),
           9 => 
-          Pimcore\Model\Object\ClassDefinition\Layout\Fieldset::__set_state(array(
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
              'fieldtype' => 'fieldset',
              'labelWidth' => 150,
              'name' => 'additionalDataPayPal',
@@ -432,7 +432,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
              'childs' => 
             array (
               0 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'fieldtype' => 'input',
                  'width' => NULL,
                  'queryColumnType' => 'varchar',
@@ -456,7 +456,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
                  'visibleSearch' => false,
               )),
               1 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'fieldtype' => 'input',
                  'width' => 500,
                  'queryColumnType' => 'varchar',
@@ -480,7 +480,7 @@ return Pimcore\Model\Object\Fieldcollection\Definition::__set_state(array(
                  'visibleSearch' => false,
               )),
               2 => 
-              Pimcore\Model\Object\ClassDefinition\Data\Input::__set_state(array(
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'fieldtype' => 'input',
                  'width' => 500,
                  'queryColumnType' => 'varchar',

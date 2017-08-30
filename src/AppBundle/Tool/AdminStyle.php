@@ -14,8 +14,8 @@
 
 namespace AppBundle\Tool;
 
-use Pimcore\Model\Object\AbstractObject;
-use Pimcore\Model\Object\Product;
+use Pimcore\Model\DataObject\AbstractObject;
+use Pimcore\Model\DataObject\Product;
 
 class AdminStyle extends \Pimcore\Model\Element\AdminStyle
 {

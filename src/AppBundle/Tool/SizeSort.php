@@ -14,7 +14,7 @@
 
 namespace AppBundle\Tool;
 
-use Pimcore\Model\Object\Product;
+use Pimcore\Model\DataObject\Product;
 
 class SizeSort
 {
