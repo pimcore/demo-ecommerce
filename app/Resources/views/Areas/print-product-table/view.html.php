@@ -45,7 +45,7 @@
     <table class="outputchannel">
         <?= $this->template(":Areas:print-product-table/specAttribute/column-attribute-table.html.php", [
             "configArray" => $configArray,
-            "classname" => "Object_" . $this->outputchanneltable("tableconfig")->getSelectedClass(),
+            "classname" => "Pimcore\\Model\\DataObject\\" . $this->outputchanneltable("tableconfig")->getSelectedClass(),
             "elements" => $this->outputchanneltable("tableconfig"),
             "thumbnailName" => "print_image_small"
         ]); ?>

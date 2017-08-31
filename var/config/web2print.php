@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 return [
     "enableInDefaultView" => TRUE,
@@ -10,7 +10,7 @@ return [
     "pdfreactorProtocol" => "https",
     "pdfreactorServer" => "cloud.pdfreactor.com",
     "pdfreactorServerPort" => "443",
-    "pdfreactorBaseUrl" => "http://ecommercedemo.pimcore.org",
+    "pdfreactorBaseUrl" => "https://demo-advanced.pimcore.org",
     "displayfield-11894-inputEl" => "BaseURL for PDFreactor. This is prefixed to each relative url in print templates when creating PDFs.",
     "pdfreactorLicence" => "",
     "wkhtmltopdfBin" => "",
