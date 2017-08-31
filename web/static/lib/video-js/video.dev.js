@@ -825,7 +825,7 @@ vjs.obj.isPlain = function(obj){
   return !!obj
     && typeof obj === 'object'
     && obj.toString() === '[object Object]'
-    && obj.constructor === DataObject;
+    && obj.constructor === Object;
 };
 
 /**
