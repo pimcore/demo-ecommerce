@@ -1,13 +1,13 @@
 1	0	page		/	999999	1	1366279291	1366981265	1	\N
 3	4	page	shop	/en/	0	1	1366976796	1460186375	\N	\N
-4	1	page	en	/	1	1	1366980952	1460734096	\N	0
+4	1	page	en	/	1	1	1366980952	1504170846	0	8
 8	4	folder	shared	/en/	6	1	1369995357	1459928330	\N	\N
 9	52	snippet	footer	/en/shared/includes/	0	1	1369995366	1460194951	\N	\N
 11	4	folder	emails	/en/	2	1	1371799762	1371799763	\N	\N
 12	11	email	order-confirmation	/en/emails/	1	1	1371799788	1491546442	0	8
 14	23	page	landingpage	/en/landingpages/	0	1	1380541348	1460202097	\N	\N
 15	4	page	terms	/en/	3	1	1380614953	1380615346	\N	\N
-16	4	page	special-functions	/en/	5	1	1380704342	1460571746	\N	\N
+16	4	page	special-functions	/en/	5	1	1380704342	1504081450	0	8
 17	16	page	productmodel	/en/special-functions/	0	1	1380704489	1460201940	\N	\N
 18	16	page	filterdefinitions	/en/special-functions/	1	1	1380704520	1460218225	\N	\N
 19	16	page	marketing-and-pricing-rules	/en/special-functions/	2	1	1380704541	1460734099	\N	0
@@ -30,7 +30,7 @@
 66	56	printcontainer	Running	/print/katalog/	4	1	1481532514	1481728972	\N	\N
 67	63	printpage	highlights	/print/katalog/Volleyball/	1	1	1481532625	1482156735	\N	\N
 68	63	printpage	products	/print/katalog/Volleyball/	2	1	1481532859	1482157719	\N	\N
-69	64	printpage	highlights	/print/katalog/Football/	0	1	1481533218	1482157783	\N	\N
+69	64	printpage	highlights	/print/katalog/Football/	0	1	1481533218	1504118354	0	0
 70	65	printpage	highlights	/print/katalog/Outdoor/	1	1	1481533683	1482156998	\N	\N
 71	66	printpage	highlights	/print/katalog/Running/	1	1	1481533689	1482156766	\N	\N
 72	66	printpage	products	/print/katalog/Running/	2	1	1481533874	1482162919	\N	\N

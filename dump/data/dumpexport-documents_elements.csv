@@ -161,20 +161,17 @@
 4	image_3content2	image	a:9:{s:2:"id";i:4486;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
 4	keywordscontent3	input	The most integrated open-source Multi-Channel  E-Commerce Platform
 4	listcontent4	block	a:2:{i:0;s:1:"1";i:1;s:1:"2";}
-4	persona_-1-_keywordspersona_-1-_content3	input	Welcome protouch Customer
-4	persona_-1-_productteaserpersona_-1-_content_persona_-1-_teaserblockpersona_-1-_content22_1	renderlet	a:3:{s:2:"id";i:1634;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
-4	persona_-1-_productteaserpersona_-1-_content_persona_-1-_teaserblockpersona_-1-_content22_2	renderlet	a:3:{s:2:"id";i:2066;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
-4	persona_-1-_productteaserpersona_-1-_content_persona_-1-_teaserblockpersona_-1-_content22_3	renderlet	a:3:{s:2:"id";i:2057;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
-4	persona_-1-_productteaserpersona_-1-_content_persona_-1-_teaserblockpersona_-1-_content22_4	renderlet	a:3:{s:2:"id";i:1767;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
-4	persona_-2-_keywordspersona_-2-_content3	input	Welcome McKinley Customer
-4	persona_-2-_productteaserpersona_-2-_content_persona_-2-_teaserblockpersona_-2-_content22_1	renderlet	a:3:{s:2:"id";i:6901;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
-4	persona_-2-_productteaserpersona_-2-_content_persona_-2-_teaserblockpersona_-2-_content22_2	renderlet	a:3:{s:2:"id";i:7074;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
-4	persona_-2-_productteaserpersona_-2-_content_persona_-2-_teaserblockpersona_-2-_content22_3	renderlet	a:3:{s:2:"id";i:6986;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
-4	persona_-2-_productteaserpersona_-2-_content_persona_-2-_teaserblockpersona_-2-_content22_4	renderlet	a:3:{s:2:"id";i:9312;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
-4	persona_-3-_productteaserpersona_-3-_content_persona_-3-_teaserblockpersona_-3-_content22_1	renderlet	a:3:{s:2:"id";i:10388;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
-4	persona_-3-_productteaserpersona_-3-_content_persona_-3-_teaserblockpersona_-3-_content22_2	renderlet	a:3:{s:2:"id";i:9260;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
-4	persona_-3-_productteaserpersona_-3-_content_persona_-3-_teaserblockpersona_-3-_content22_3	renderlet	a:3:{s:2:"id";i:6509;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
-4	persona_-3-_productteaserpersona_-3-_content_persona_-3-_teaserblockpersona_-3-_content22_4	renderlet	a:3:{s:2:"id";i:6527;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-3-_content	areablock	a:4:{i:0;a:2:{s:3:"key";s:1:"7";s:4:"type";s:15:"horizontal-line";}i:1;a:2:{s:3:"key";s:1:"4";s:4:"type";s:16:"gallery-carousel";}i:2;a:2:{s:3:"key";s:1:"6";s:4:"type";s:15:"icon-teaser-row";}i:3;a:2:{s:3:"key";s:1:"2";s:4:"type";s:13:"productteaser";}}
+4	persona_-3-_content:2.persona_-3-_teaserblock	block	a:8:{i:0;s:1:"4";i:1;s:1:"1";i:2;s:1:"3";i:3;s:1:"2";i:4;s:1:"5";i:5;s:1:"7";i:6;s:1:"6";i:7;s:1:"8";}
+4	persona_-3-_content:2.persona_-3-_teaserblock:1.persona_-3-_productteaser	renderlet	a:3:{s:2:"id";i:10393;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-3-_content:2.persona_-3-_teaserblock:2.persona_-3-_productteaser	renderlet	a:3:{s:2:"id";i:7162;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-3-_content:2.persona_-3-_teaserblock:3.persona_-3-_productteaser	renderlet	a:3:{s:2:"id";i:9019;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-3-_content:2.persona_-3-_teaserblock:4.persona_-3-_productteaser	renderlet	a:3:{s:2:"id";i:9316;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-3-_content:2.persona_-3-_teaserblock:5.persona_-3-_productteaser	renderlet	a:3:{s:2:"id";i:7080;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-3-_content:2.persona_-3-_teaserblock:6.persona_-3-_productteaser	renderlet	a:3:{s:2:"id";i:7074;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-3-_content:2.persona_-3-_teaserblock:7.persona_-3-_productteaser	renderlet	a:3:{s:2:"id";i:6992;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-3-_content:2.persona_-3-_teaserblock:8.persona_-3-_productteaser	renderlet	a:3:{s:2:"id";i:9001;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
+4	persona_-3-_content:2.teaserblock:1.persona_-3-_teaserblock	block	a:0:{}
 4	quotecontent4	textarea	This is a new way of ecommerce
 4	quotecontent_quotescontent22_1	input	test
 4	quotescontent2	block	a:1:{i:0;s:1:"1";}
