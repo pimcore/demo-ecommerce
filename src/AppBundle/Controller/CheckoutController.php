@@ -209,7 +209,6 @@ class CheckoutController extends AbstractCartAware
     public function completedAction(Request $request)
     {
         // init
-
         $session = $this->get("session");
         $orderId = $session->get("last_order_id");
 

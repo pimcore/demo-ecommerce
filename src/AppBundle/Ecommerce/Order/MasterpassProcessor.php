@@ -60,8 +60,9 @@ class MasterpassProcessor extends CommitOrderProcessor
         if ($paymentType == 'MASTERPASS') {
 
             //APPLY SHIPPING INFORMATION
-//            $order->setCustomerFirstname();
-            $order->setCustomerLastname($data['qpay_response']['cardholder']);
+            $order->setCustomerEMail($data['qpay_response']['masterpassCardEmail']);
+            $order->setCustomerFirstname($data['qpay_response']['masterpassCardFirstname']);
+            $order->setCustomerLastname($data['qpay_response']['masterpassCardLastname']);
             $order->setCustomerStreet($data['qpay_response']['masterpassBillingAddressAddressLine1']);
             $order->setCustomerCity($data['qpay_response']['masterpassBillingAddressCity']);
             $order->setCustomerZip($data['qpay_response']['masterpassBillingAddressPostalCode']);

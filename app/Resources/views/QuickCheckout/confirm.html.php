@@ -50,15 +50,6 @@ $cart = $this->cart;
         </p>
 
         <form method="post" role="form" action="<?= $this->pimcoreUrl(['controller' => 'quickCheckout', 'action' => 'confirm', 'prefix' => $this->language, 'cartName' => $this->cartName], 'action', true) ?>" >
-            <fieldset>
-                <div class="form-group" style="margin-top: 20px">
-                    <label class="col-sm-3 control-label" for="email"><?= $this->translate("checkout.email") ?> *</label>
-                    <div class="col-sm-9">
-                        <input id="email" name="email" type="email" placeholder="<?= $this->translate("checkout.email") ?>" required class="form-control" value="<?= $this->email ? $this->email : $this->escape($this->getParam("email")) ?>">
-                    </div>
-                </div>
-            </fieldset>
-
 
             <div class="agb col-sm-12" style="margin-top: 20px">
 

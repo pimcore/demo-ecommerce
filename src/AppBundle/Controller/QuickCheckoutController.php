@@ -53,11 +53,11 @@ class QuickCheckoutController extends AbstractCartAware
             'label' => $translator->trans('general.checkout')
         ]);
 
-        $this->view->cart = $this->getCart('cart', $event->getRequest());
-
         //setting current checkout tenant to masterpass and saving currently set entry to reset later on
         $environment = Factory::getInstance()->getEnvironment();
         $environment->setCurrentCheckoutTenant('masterpass', false);
+
+        $this->view->cart = $this->getCart('cart', $event->getRequest());
     }
 
     protected function getCart($cartName = 'cart', Request $request = null)
@@ -112,8 +112,8 @@ class QuickCheckoutController extends AbstractCartAware
 
         // go to payment
         if ($request->getMethod() == 'POST') {
-            if ($request->get('agb-accepted') && $request->get('email')) {
-                $checkoutManager->commitStep($confirmStep, strip_tags($request->get('email')));
+            if ($request->get('agb-accepted')) {
+                $checkoutManager->commitStep($confirmStep, []);
 
                 if ($payment) {
                     return $this->redirect($this->generateUrl('action', ['controller' => 'quickCheckout', 'action' => 'payment', 'prefix' => $language, 'cartName' => $this->cartName]));
@@ -122,7 +122,6 @@ class QuickCheckoutController extends AbstractCartAware
                 }
             } else {
                 $this->view->errors[] = 'terms';
-                $this->view->errors[] = 'email';
             }
         }
     }
@@ -216,7 +215,10 @@ class QuickCheckoutController extends AbstractCartAware
 //            $orderAgent->updatePayment($paymentStatus);
 
                 if ($order && $order->getOrderState() == $order::ORDER_STATE_COMMITTED) {
-                    $paramsBag['goto'] = $this->generateUrl('action', ['controller' => 'quickCheckout', 'action' => 'completed', 'prefix' => $language, 'id' => $order->getId()]);
+                    $session = $this->get("session");
+                    $session->set("last_order_id", $order->getId());
+
+                    $paramsBag['goto'] = $this->generateUrl('action', ['controller' => 'quickCheckout', 'action' => 'completed', 'prefix' => $language]);
                 } else {
                     $paramsBag['goto'] = $this->generateUrl('action', ['controller' => 'quickCheckout', 'action' => 'confirm', 'prefix' => $language, 'error' => strip_tags($request->get('mode')), 'cartName' => $this->cartName]);
                 }
@@ -234,7 +236,9 @@ class QuickCheckoutController extends AbstractCartAware
     public function completedAction(Request $request)
     {
         // init
-        $order = OnlineShopOrder::getById($request->get('id'));
+        $session = $this->get("session");
+        $orderId = $session->get("last_order_id");
+        $order = OnlineShopOrder::getById($orderId);
         $this->view->order = $order;
 
         $trackingManager = Factory::getInstance()->getTrackingManager();

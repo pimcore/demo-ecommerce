@@ -335,6 +335,15 @@ pimcore_ecommerce_framework:
     checkout_manager:
         tenants:
 
+            _defaults_checkout_steps:
+                # Define different checkout steps which need to be committed before commit of order is possible
+                steps: &defaults_checkout_steps # define an anchor
+                    deliveryaddress:
+                        class: \Pimcore\Bundle\EcommerceFrameworkBundle\CheckoutManager\DeliveryAddress
+                    confirm:
+                        class: \AppBundle\Ecommerce\Checkout\Confirm
+
+
             # Configuration per tenant.
             # If a _defaults key is set, it will be merged into every tenant. It needs to be set in every file.
             # A tenant named "default" is mandatory.
@@ -355,12 +364,7 @@ pimcore_ecommerce_framework:
                         # (e.g. when different languages are necessary)
                         confirmation_mail: /en/emails/order-confirmation
 
-                # Define different checkout steps which need to be committed before commit of order is possible
-                steps:
-                    deliveryaddress:
-                        class: \Pimcore\Bundle\EcommerceFrameworkBundle\CheckoutManager\DeliveryAddress
-                    confirm:
-                        class: \AppBundle\Ecommerce\Checkout\Confirm
+
 
             default:
                 # following two values are default values an can be omitted
@@ -372,22 +376,32 @@ pimcore_ecommerce_framework:
                 # payment providers are defined in payment_manager section.
                 payment:
                     provider: qpay
+                steps:
+                    <<: *defaults_checkout_steps
 
             paypal:
                 payment:
                     provider: paypal
+                steps:
+                    <<: *defaults_checkout_steps
 
             datatrans:
                 payment:
                     provider: datatrans
+                steps:
+                    <<: *defaults_checkout_steps
 
             seamless:
                 payment:
                     provider: seamless
+                steps:
+                    <<: *defaults_checkout_steps
 
 
             masterpass:
                 steps:
+                    confirm:
+                        class: \AppBundle\Ecommerce\Checkout\Confirm
 
                 payment:
                     provider: qpay
