@@ -157,14 +157,14 @@ class QuickCheckoutController extends AbstractCartAware
         // payment config
         if ($payment instanceof QPay) {
             // qpay masterpass
-            $url = $_SERVER['REQUEST_SCHEME'] . '://'. $_SERVER['HTTP_HOST'] . $this->generateUrl('action', ['controller' => 'quickCheckout', 'action' => 'payment-status', 'prefix' => $language, 'cartName' => $this->cartName]) . '&mode=';
+            $url = $request->getSchemeAndHttpHost() . $this->generateUrl('action', ['controller' => 'quickCheckout', 'action' => 'payment-status', 'prefix' => $language, 'cartName' => $this->cartName]) . '&mode=';
             $config = [
                 'language' => $language,
                 'successURL' => $url . 'success',
                 'cancelURL' => $url . 'cancel',
                 'failureURL' => $url . 'failure',
                 'serviceURL' => $url . 'service',
-                'confirmURL' => $_SERVER['REQUEST_SCHEME'] . '://'. $_SERVER['HTTP_HOST'] . $this->generateUrl('action', ['controller' => 'handle-payment', 'action' => 'server-side-q-pay', 'prefix' => $language, 'checkouttenant' => 'masterpass', 'elementsclientauth' => 'disabled']),
+                'confirmURL' => $request->getSchemeAndHttpHost() . $this->generateUrl('action', ['controller' => 'handle-payment', 'action' => 'server-side-q-pay', 'prefix' => $language, 'checkouttenant' => 'masterpass', 'elementsclientauth' => 'disabled']),
                 'confirmMail' => 'christian.fasching@pimcore.com',
                 'orderDescription' => 'My Order at pimcore.org with MASTERPASS',
                 'imageURL' => 'https://www.pimcore.org/static/css/skins/default/logo.png',
