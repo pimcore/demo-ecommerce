@@ -1,0 +1,4 @@
+# enables legacy class mapping in ecommerce framework as some classes in the demo still
+# rely on mapping
+pimcore_ecommerce_framework:
+    use_legacy_class_mapping: true
