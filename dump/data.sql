@@ -1648,28 +1648,6 @@ CREATE TABLE `object_localized_data_35` (
 
 
 
-DROP TABLE IF EXISTS `object_localized_data_36`;
-CREATE TABLE `object_localized_data_36` (
-  `ooo_id` int(11) NOT NULL DEFAULT '0',
-  `language` varchar(10) NOT NULL DEFAULT '',
-  PRIMARY KEY (`ooo_id`,`language`),
-  KEY `ooo_id` (`ooo_id`),
-  KEY `language` (`language`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-
-
-DROP TABLE IF EXISTS `object_localized_data_41`;
-CREATE TABLE `object_localized_data_41` (
-  `ooo_id` int(11) NOT NULL DEFAULT '0',
-  `language` varchar(10) NOT NULL DEFAULT '',
-  PRIMARY KEY (`ooo_id`,`language`),
-  KEY `ooo_id` (`ooo_id`),
-  KEY `language` (`language`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-
-
 DROP TABLE IF EXISTS `object_localized_data_9`;
 CREATE TABLE `object_localized_data_9` (
   `ooo_id` int(11) NOT NULL DEFAULT '0',
