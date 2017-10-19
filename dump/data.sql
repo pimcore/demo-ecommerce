@@ -3437,7 +3437,6 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpe
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_localized_data_16.csv' INTO TABLE `object_localized_data_16`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_localized_data_23.csv' INTO TABLE `object_localized_data_23`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_localized_data_35.csv' INTO TABLE `object_localized_data_35`;
-LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_localized_data_9.csv' INTO TABLE `object_localized_data_9`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_localized_query_12_de_AT.csv' INTO TABLE `object_localized_query_12_de_AT`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_localized_query_12_en_GB.csv' INTO TABLE `object_localized_query_12_en_GB`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_localized_query_12_fr_FR.csv' INTO TABLE `object_localized_query_12_fr_FR`;
