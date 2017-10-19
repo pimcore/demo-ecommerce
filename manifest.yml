@@ -6,6 +6,7 @@ files:
         - app/config/parameters.yml
         - app/config/pimcore/*
         - app/config/pimcore/outputdataconfig/*
+        - app/config/pimcore/advancedobjectsearch/*
         - app/Resources/views
         - src/AppBundle
         - var/classes
@@ -15,3 +16,4 @@ files:
 db:
     data_files:
         - dump/data.sql
+
