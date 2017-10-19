@@ -1,10 +1,10 @@
 <?php 
 
 /** 
-* Generated at: 2017-10-19T14:18:53+02:00
+* Generated at: 2017-10-19T16:47:14+02:00
 * Inheritance: no
 * Variants: no
-* Changed by: admin (10)
+* Changed by: admin (1)
 * IP: 192.168.11.5
 
 
@@ -31,9 +31,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'Customer',
    'description' => '',
    'creationDate' => 0,
-   'modificationDate' => 1508415533,
+   'modificationDate' => 1508424434,
    'userOwner' => 10,
-   'userModification' => 10,
+   'userModification' => 1,
    'parentClass' => '\\CustomerManagementFrameworkBundle\\Model\\AbstractCustomer\\DefaultAbstractUserawareCustomer',
    'useTraits' => '',
    'allowInherit' => false,
@@ -1654,6 +1654,22 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'visibleFields' => 'id,name',
                  'columns' => 
                 array (
+                  0 => 
+                  array (
+                    'type' => 'number',
+                    'position' => 1,
+                    'key' => 'created_timestamp',
+                    'id' => 'extModel2805-1',
+                    'label' => 'created_timestamp',
+                  ),
+                  1 => 
+                  array (
+                    'type' => 'number',
+                    'position' => 2,
+                    'key' => 'application_counter',
+                    'id' => 'extModel2805-2',
+                    'label' => 'application_counter',
+                  ),
                 ),
                  'fieldtype' => 'objectsMetadata',
                  'phpdocType' => '\\Pimcore\\Model\\DataObject\\Data\\ObjectMetadata[]',
@@ -1683,6 +1699,8 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'visibleSearch' => false,
                  'columnKeys' => 
                 array (
+                  0 => 'created_timestamp',
+                  1 => 'application_counter',
                 ),
               )),
               2 => 

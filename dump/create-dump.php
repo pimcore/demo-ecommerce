@@ -2,9 +2,10 @@
 
 include_once(__DIR__ . "/../../../../pimcore/config/startup_cli.php");
 
+$databaseConfig = Pimcore\Config::getSystemConfig()["database"]["params"];
+
+
 // get tables which are already in install.sql
-
-
 $installSql = file_get_contents(PIMCORE_PROJECT_ROOT . "/pimcore/lib/Pimcore/Install/Resources/install.sql");
 preg_match_all("/CREATE TABLE `(.*)`/", $installSql, $matches);
 $existingTables = $matches[1];
@@ -67,8 +68,27 @@ foreach ($tables as $name) {
 
     $quotedName = $db->quoteIdentifier($name);
 
-    $db->query("SELECT * FROM " . $quotedName . " INTO OUTFILE '" . $fullFilename . "'");
-    $dumpData .= "LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/" . $filename . "' INTO TABLE " . $quotedName . ";\n";
+    if($name == 'plugin_cmf_activities') {
+
+        $mysqldump = sprintf("mysqldump -h %s -u %s -p%s --no-create-info %s %s > %s",
+            $databaseConfig['host'],
+            $databaseConfig['username'],
+            $databaseConfig['password'],
+            $databaseConfig['dbname'],
+            'plugin_cmf_activities',
+            $fullFilename
+        );
+
+
+        \Pimcore\Tool\Console::exec($mysqldump);
+        $dumpData .= "SOURCE ~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/" . $filename . ";\n";
+
+    } else {
+
+        $db->query("SELECT * FROM " . $quotedName . " INTO OUTFILE '" . $fullFilename . "'");
+        $dumpData .= "LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/" . $filename . "' INTO TABLE " . $quotedName . ";\n";
+    }
+
 }
 
 foreach($views as $name) {

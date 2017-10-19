@@ -1,4 +1,1 @@
-0	0	user	system	\N	\N	\N	\N	\N	\N	1	1	\N	\N	\N	\N	\N	1	\N	\N	\N	\N	\N	\N	\N
-3	0	user	demo	$2y$10$N96Dl.sCk6Iqt2MjyImmkuV9HKXz0Xo2FAi5Z4s2SJd2JQqTVk7pS				en	en_GB,de_AT,fr_FR	0	1	assets,bundle_advancedsearch_search,bundle_ecommerce_back-office_order,bundle_ecommerce_pricing_rules,classes,documents,document_types,glossary,http_errors,notes_events,objects,predefined_properties,qr_codes,recyclebin,redirects,reports,robots.txt,routes,seemode,seo_document_editor,system_settings,tags_assignment,tags_configuration,tags_search,tag_snippet_management,targeting,thumbnails,translations,web2print_settings,website_settings		1	1	1	1				default	Katalog,default,PIM,DAM,CMS,Ecommerce		
-9	0	user	test	\N				en	en_GB,de_AT,fr_FR	0	1	bundle_ecommerce_pricing_rules,bundle_outputDataConfigToolkit,bundle_web2print_favourite_output_channels		0	1	1	1				\N			
-10	0	user	admin	$2y$10$PFvLJS6SxvAjHq4TUYdYcuYb4.gJZ3H0.c0Z7CJwWiNoDLMiSRUVe	\N	\N	\N	en	\N	1	1			0	1	1	1			\N	\N			
+1	0	user	admin	$2y$10$1kDP2x0lyVdSilclvPJyIugVUIQErWTIiWLR6RzddCl9msZZjh0GK	\N	\N	\N	en	\N	1	1			0	1	1	1			\N	\N			

@@ -1648,6 +1648,28 @@ CREATE TABLE `object_localized_data_35` (
 
 
 
+DROP TABLE IF EXISTS `object_localized_data_36`;
+CREATE TABLE `object_localized_data_36` (
+  `ooo_id` int(11) NOT NULL DEFAULT '0',
+  `language` varchar(10) NOT NULL DEFAULT '',
+  PRIMARY KEY (`ooo_id`,`language`),
+  KEY `ooo_id` (`ooo_id`),
+  KEY `language` (`language`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_localized_data_9`;
+CREATE TABLE `object_localized_data_9` (
+  `ooo_id` int(11) NOT NULL DEFAULT '0',
+  `language` varchar(10) NOT NULL DEFAULT '',
+  PRIMARY KEY (`ooo_id`,`language`),
+  KEY `ooo_id` (`ooo_id`),
+  KEY `language` (`language`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
 DROP TABLE IF EXISTS `object_localized_query_12_de_AT`;
 CREATE TABLE `object_localized_query_12_de_AT` (
   `ooo_id` int(11) NOT NULL DEFAULT '0',
@@ -3180,7 +3202,7 @@ CREATE TABLE `plugin_cmf_activities` (
   KEY `customerId` (`customerId`),
   KEY `o_id` (`o_id`),
   KEY `a_id` (`a_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 
 
@@ -3426,6 +3448,8 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpe
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_localized_data_16.csv' INTO TABLE `object_localized_data_16`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_localized_data_23.csv' INTO TABLE `object_localized_data_23`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_localized_data_35.csv' INTO TABLE `object_localized_data_35`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_localized_data_36.csv' INTO TABLE `object_localized_data_36`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_localized_data_9.csv' INTO TABLE `object_localized_data_9`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_localized_query_12_de_AT.csv' INTO TABLE `object_localized_query_12_de_AT`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_localized_query_12_en_GB.csv' INTO TABLE `object_localized_query_12_en_GB`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_localized_query_12_fr_FR.csv' INTO TABLE `object_localized_query_12_fr_FR`;
@@ -3510,7 +3534,7 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpe
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_actiontrigger_actions.csv' INTO TABLE `plugin_cmf_actiontrigger_actions`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_actiontrigger_queue.csv' INTO TABLE `plugin_cmf_actiontrigger_queue`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_actiontrigger_rules.csv' INTO TABLE `plugin_cmf_actiontrigger_rules`;
-LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_activities.csv' INTO TABLE `plugin_cmf_activities`;
+SOURCE ~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_activities.csv;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_deletions.csv' INTO TABLE `plugin_cmf_deletions`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_duplicates_false_positives.csv' INTO TABLE `plugin_cmf_duplicates_false_positives`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_duplicatesindex.csv' INTO TABLE `plugin_cmf_duplicatesindex`;

@@ -6541,10 +6541,7 @@
 12331	12271	folder	13	/order/2017/10/	\N	1	1507884010	1507884010	1	0	\N	\N
 12336	12331	object	ord_59e07e0d8405b	/order/2017/10/13/	0	1	1507884557	1507884617	0	0	9	OnlineShopOrder
 12337	12336	object	10393_10393	/order/2017/10/13/ord_59e07e0d8405b/	0	1	1507884557	1507884606	0	0	8	OnlineShopOrderItem
-12356	12361	object	Peter-Hugo	/customermanagement/customers/AT/5020/	0	1	1508403484	1508407679	0	10	41	Customer
-12357	12271	folder	19	/order/2017/10/	\N	1	1508403516	1508403516	1	0	\N	\N
-12358	12357	object	ord_59e8693c02e24	/order/2017/10/19/	0	1	1508403516	1508403527	0	0	9	OnlineShopOrder
-12359	12358	object	7074_7074	/order/2017/10/19/ord_59e8693c02e24/	\N	1	1508403516	1508403516	0	0	8	OnlineShopOrderItem
+12356	12361	object	Peter-Hugo	/customermanagement/customers/AT/5020/	0	1	1508403484	1508424465	0	1	41	Customer
 12360	12246	folder	AT	/customermanagement/customers/	\N	1	1508403516	1508403516	1	0	\N	\N
 12361	12360	folder	5020	/customermanagement/customers/AT/	\N	1	1508403516	1508403516	1	0	\N	\N
 12362	12251	object	Gender	/customermanagement/segments/calculated/	\N	1	1508403928	1508403928	0	0	36	CustomerSegmentGroup
@@ -6553,12 +6550,8 @@
 12365	12362	object	not-set	/customermanagement/segments/calculated/Gender/	\N	1	1508403929	1508403929	0	0	37	CustomerSegment
 12366	12251	object	InterestCategories	/customermanagement/segments/calculated/	0	1	1508405673	1508406823	0	10	36	CustomerSegmentGroup
 12367	12366	object	Outdoor	/customermanagement/segments/calculated/InterestCategories/	0	1	1508405673	1508405892	0	10	37	CustomerSegment
-12368	12357	object	ord_59e872ae8207f	/order/2017/10/19/	0	1	1508405934	1508405946	0	0	9	OnlineShopOrder
-12369	12368	object	6992_6992	/order/2017/10/19/ord_59e872ae8207f/	\N	1	1508405934	1508405934	0	0	8	OnlineShopOrderItem
-12372	12377	object	Anna-Huber	/customermanagement/customers/DE/80539/	0	1	1508406630	1508407576	0	10	41	Customer
+12372	12377	object	Anna-Huber	/customermanagement/customers/DE/80539/	0	1	1508406630	1508424666	0	10	41	Customer
 12373	12372	object	google-105072133371916077860	/customermanagement/customers/DE/80539/Anna-Huber/	\N	1	1508406630	1508406659	0	0	38	SsoIdentity
-12374	12357	object	ord_59e87583ac150	/order/2017/10/19/	0	1	1508406659	1508406670	0	0	9	OnlineShopOrder
-12375	12374	object	1174_1174	/order/2017/10/19/ord_59e87583ac150/	\N	1	1508406659	1508406659	0	0	8	OnlineShopOrderItem
 12376	12246	folder	DE	/customermanagement/customers/	\N	1	1508406659	1508406659	1	0	\N	\N
 12377	12376	folder	80539	/customermanagement/customers/DE/	\N	1	1508406659	1508406659	1	0	\N	\N
 12378	12252	folder	DE	/customermanagement/segments/calculated/State/	\N	1	1508406660	1508406660	1	0	\N	\N
@@ -6568,17 +6561,22 @@
 12382	12381	object	New Customer	/customermanagement/segments/calculated/CustomerType/	0	1	1508406744	1508406751	10	10	37	CustomerSegment
 12383	12381	object	Regular Customer	/customermanagement/segments/calculated/CustomerType/	0	1	1508406795	1508406801	10	10	37	CustomerSegment
 12384	12381	object	VIP Customer	/customermanagement/segments/calculated/CustomerType/	0	1	1508406807	1508406812	10	10	37	CustomerSegment
-12385	12357	object	ord_59e876d351e92	/order/2017/10/19/	0	1	1508406995	1508407006	0	0	9	OnlineShopOrder
-12386	12385	object	1153_1153	/order/2017/10/19/ord_59e876d351e92/	\N	1	1508406995	1508406995	0	0	8	OnlineShopOrderItem
 12387	12366	object	Handball	/customermanagement/segments/calculated/InterestCategories/	\N	1	1508407062	1508407062	0	0	37	CustomerSegment
-12388	12357	object	ord_59e877c4bb341	/order/2017/10/19/	0	1	1508407236	1508407356	0	0	9	OnlineShopOrder
-12389	12388	object	1200_1200	/order/2017/10/19/ord_59e877c4bb341/	\N	1	1508407236	1508407236	0	0	8	OnlineShopOrderItem
-12390	12357	object	ord_59e8791846f45	/order/2017/10/19/	0	1	1508407576	1508407596	0	0	9	OnlineShopOrder
-12391	12390	object	1116_1116	/order/2017/10/19/ord_59e8791846f45/	\N	1	1508407576	1508407576	0	0	8	OnlineShopOrderItem
-12392	12357	object	ord_59e87970d5d49	/order/2017/10/19/	0	1	1508407664	1508407680	0	0	9	OnlineShopOrder
-12393	12392	object	6409_6409	/order/2017/10/19/ord_59e87970d5d49/	\N	1	1508407665	1508407665	0	0	8	OnlineShopOrderItem
-12395	12377	object	Anna-Huberr	/customermanagement/customers/DE/80539/	0	1	1508407793	1508408803	0	10	41	Customer
+12395	12377	object	Anna-Huberr	/customermanagement/customers/DE/80539/	0	1	1508407793	1508424568	0	1	41	Customer
 12396	12395	object	twitter-2805534632	/customermanagement/customers/DE/80539/Anna-Huberr/	\N	1	1508407793	1508408803	0	10	38	SsoIdentity
-12397	12357	object	ord_59e87a170ce54	/order/2017/10/19/	0	1	1508407831	1508407841	0	0	9	OnlineShopOrder
-12398	12397	object	1919_1919	/order/2017/10/19/ord_59e87a170ce54/	\N	1	1508407831	1508407831	0	0	8	OnlineShopOrderItem
 12399	12366	object	Volleyball	/customermanagement/segments/calculated/InterestCategories/	\N	1	1508408085	1508408085	0	0	37	CustomerSegment
+12402	12271	folder	19	/order/2017/10/	\N	1	1508424039	1508424039	1	0	\N	\N
+12403	12402	object	ord_59e8b967ea713	/order/2017/10/19/	0	1	1508424040	1508424088	0	0	9	OnlineShopOrder
+12404	12403	object	9316_9316	/order/2017/10/19/ord_59e8b967ea713/	0	1	1508424040	1508424076	0	0	8	OnlineShopOrderItem
+12405	12402	object	ord_59e8b9ab2b606	/order/2017/10/19/	0	1	1508424107	1508424119	0	0	9	OnlineShopOrder
+12406	12405	object	7074_7074	/order/2017/10/19/ord_59e8b9ab2b606/	\N	1	1508424107	1508424107	0	0	8	OnlineShopOrderItem
+12407	12402	object	ord_59e8b9f465c44	/order/2017/10/19/	0	1	1508424180	1508424192	0	0	9	OnlineShopOrder
+12408	12407	object	6992_6992	/order/2017/10/19/ord_59e8b9f465c44/	\N	1	1508424180	1508424180	0	0	8	OnlineShopOrderItem
+12409	12402	object	ord_59e8ba1792db7	/order/2017/10/19/	0	1	1508424215	1508424477	0	0	9	OnlineShopOrder
+12410	12409	object	1148_1148	/order/2017/10/19/ord_59e8ba1792db7/	0	1	1508424215	1508424465	0	0	8	OnlineShopOrderItem
+12411	12402	object	ord_59e8bb7803faf	/order/2017/10/19/	0	1	1508424568	1508424577	0	0	9	OnlineShopOrder
+12412	12411	object	1417_1417	/order/2017/10/19/ord_59e8bb7803faf/	\N	1	1508424568	1508424568	0	0	8	OnlineShopOrderItem
+12413	12402	object	ord_59e8bbb4ae7b5	/order/2017/10/19/	0	1	1508424628	1508424639	0	0	9	OnlineShopOrder
+12414	12413	object	1200_1200	/order/2017/10/19/ord_59e8bbb4ae7b5/	\N	1	1508424628	1508424628	0	0	8	OnlineShopOrderItem
+12415	12402	object	ord_59e8bbd1dd11c	/order/2017/10/19/	0	1	1508424657	1508424667	0	0	9	OnlineShopOrder
+12416	12415	object	1176_1176	/order/2017/10/19/ord_59e8bbd1dd11c/	\N	1	1508424657	1508424657	0	0	8	OnlineShopOrderItem

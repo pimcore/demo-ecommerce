@@ -49,3 +49,13 @@
 49	cmf.SegmentManager	12395	object	1508408085	10	Segment(s) removed (GenderSegmentBuilder)	/customermanagement/segments/calculated/Gender/not-set
 50	cmf.SegmentManager	12395	object	1508408085	10	Segment(s) added (GenderSegmentBuilder)	/customermanagement/segments/calculated/Gender/female
 51	cmf.SegmentManager	12395	object	1508408085	10	Segment(s) added (ProductCategorySegmentBuilder)	/customermanagement/segments/calculated/InterestCategories/Volleyball
+52	cmf.SegmentManager	12356	object	1508419611	\N	Segment(s) removed (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/VIP Customer
+53	cmf.SegmentManager	12356	object	1508419611	\N	Segment(s) added (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/New Customer
+54	cmf.SegmentManager	12356	object	1508424086	\N	Segment(s) removed (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/New Customer
+55	cmf.SegmentManager	12356	object	1508424086	\N	Segment(s) added (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/Regular Customer
+56	cmf.SegmentManager	12356	object	1508424190	\N	Segment(s) removed (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/Regular Customer
+57	cmf.SegmentManager	12356	object	1508424190	\N	Segment(s) added (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/VIP Customer
+58	cmf.SegmentManager	12372	object	1508424637	\N	Segment(s) removed (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/Regular Customer
+59	cmf.SegmentManager	12372	object	1508424637	\N	Segment(s) added (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/New Customer
+60	cmf.SegmentManager	12372	object	1508424666	\N	Segment(s) removed (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/New Customer
+61	cmf.SegmentManager	12372	object	1508424666	\N	Segment(s) added (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/Regular Customer

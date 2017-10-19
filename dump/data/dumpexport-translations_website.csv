@@ -398,6 +398,9 @@ checkout.deliveryaddress	fr_FR		0	1371633667
 checkout.email	de_AT		0	1380722868
 checkout.email	en_GB	E-Mail	0	1380722868
 checkout.email	fr_FR		0	1380722868
+checkout.error.confirm.Requested data created_timestamp not available	de_AT		1508424051	1508424051
+checkout.error.confirm.Requested data created_timestamp not available	en_GB		1508424051	1508424051
+checkout.error.confirm.Requested data created_timestamp not available	fr_FR		1508424051	1508424051
 checkout.error.confirm.cancel	de_AT		0	1381219604
 checkout.error.confirm.cancel	en_GB	Payment process was canceled. 	0	1381219604
 checkout.error.confirm.cancel	fr_FR		0	1381219604
@@ -412,6 +415,15 @@ checkout.error.confirm.failure	modificati	1460553	1460552553	1460552587
 checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1417386630-2~12336 -> current internal status id = 	de_AT		1507884599	1507884599
 checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1417386630-2~12336 -> current internal status id = 	en_GB		1507884599	1507884599
 checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1417386630-2~12336 -> current internal status id = 	fr_FR		1507884599	1507884599
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_2634286995-2~12409 -> current internal status id = 	de_AT		1508424335	1508424335
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_2634286995-2~12409 -> current internal status id = 	en_GB		1508424335	1508424335
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_2634286995-2~12409 -> current internal status id = 	fr_FR		1508424335	1508424335
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_2634286995-4~12409 -> current internal status id = 	de_AT		1508424456	1508424456
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_2634286995-4~12409 -> current internal status id = 	en_GB		1508424456	1508424456
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_2634286995-4~12409 -> current internal status id = 	fr_FR		1508424456	1508424456
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_3099036496-2~12403 -> current internal status id = 	de_AT		1508424069	1508424069
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_3099036496-2~12403 -> current internal status id = 	en_GB		1508424069	1508424069
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_3099036496-2~12403 -> current internal status id = 	fr_FR		1508424069	1508424069
 checkout.error.confirm.terms	de_AT		0	1371636896
 checkout.error.confirm.terms	en_GB	Please confirm the terms	0	1371636896
 checkout.error.confirm.terms	fr_FR		0	1371636896

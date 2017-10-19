@@ -1,10 +1,35 @@
-1	12356	1508403526	Customer Order	AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity	\N		\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12358-12356-41.8550-ord_59e8693c02e24	6ac7f33119bd5adec6ec3d5d6302360b	1508403526	1508403526
-2	12356	1508403555	Customer Login	AppBundle\\Model\\CustomerManagementFramework\\Activity\\LoginActivity	\N		\0\0\0\0\0\0³\0datecustomer-1508403555-12356	51602be803244461e8bde9068e67a17e	1508403555	1508403555
-3	12356	1508405944	Customer Order	AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity	\N		\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12368-12356-85.8500-ord_59e872ae8207f	0bd87def959751cd262a1a24557784ec	1508405944	1508405944
-4	12372	1508406670	Customer Order	AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity	\N		\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12374-12372-50.5600-ord_59e87583ac150	d8c6798346d8bc2e3a894864700274f7	1508406670	1508406670
-5	12356	1508407005	Customer Order	AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity	\N		\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12385-12356-66.6300-ord_59e876d351e92	e85891b0e4b2dcccf5ca1697c2478327	1508407005	1508407005
-6	12372	1508407247	Customer Order	AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity	\N		\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12388-12372-84.4600-ord_59e877c4bb341	a4457b5eac719371423439834e969f31	1508407247	1508407247
-7	12372	1508407586	Customer Order	AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity	\N		\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12390-12372-85.7300-ord_59e8791846f45	94007c0cc4c9ea1ba73386702163a6d5	1508407586	1508407586
-8	12356	1508407674	Customer Order	AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity	\N		\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12392-12356-51.8500-ord_59e87970d5d49	3c8df3dea6dd649b659cb6e987056fa7	1508407674	1508407674
-9	12395	1508407840	Customer Order	AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity	\N		\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12397-12395-94.4900-ord_59e87a170ce54	54c870d07752fb2da33286feb5d18e0f	1508407840	1508407840
-10	12395	1508415675	Customer Login	AppBundle\\Model\\CustomerManagementFramework\\Activity\\LoginActivity	\N		\0\0\0\0\0\0³\0datecustomer-1508415675-12395	20f1c4cac72645c97223d8d7c06add17	1508415675	1508415675
+-- MySQL dump 10.15  Distrib 10.0.27-MariaDB, for debian-linux-gnu (x86_64)
+--
+-- Host: localhost    Database: pimcore-ecommerce
+-- ------------------------------------------------------
+-- Server version	10.0.27-MariaDB-0+deb8u1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Dumping data for table `plugin_cmf_activities`
+--
+
+LOCK TABLES `plugin_cmf_activities` WRITE;
+/*!40000 ALTER TABLE `plugin_cmf_activities` DISABLE KEYS */;
+INSERT INTO `plugin_cmf_activities` VALUES (1,12356,1508423457,'Customer Login','AppBundle\\Model\\CustomerManagementFramework\\Activity\\LoginActivity',NULL,'','\0\0\0\0\0\0³\0datecustomer-1508423457-12356','bfc89ef07e0be5674ae00460b62c8bfe',1508423457,1508423457),(2,12356,1508424050,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12403-12356-95.8500-ord_59e8b967ea713','73b50eafdaad7b0f7ac72ef695fb6e97',1508424050,1508424050),(3,12356,1508424086,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12403-12356-95.8500-ord_59e8b967ea713','213cb2949a021c9c927cbe34894c3482',1508424086,1508424086),(4,12356,1508424117,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12405-12356-41.8550-ord_59e8b9ab2b606','f6d5ed78a3436d8c4ee69c364c30ed5b',1508424117,1508424117),(5,12356,1508424190,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12407-12356-85.8500-ord_59e8b9f465c44','f9b5346be9dc590be82d9b9e5d1d4810',1508424190,1508424190),(6,12356,1508424225,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12409-12356-51.7400-ord_59e8ba1792db7','7ee8d6e1697da8a2094e393ee8451741',1508424225,1508424225),(7,12356,1508424351,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12409-12356-51.7400-ord_59e8ba1792db7','bd7f024483929541d3e77b6060cfa715',1508424351,1508424351),(8,12356,1508424476,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12409-12356-51.7400-ord_59e8ba1792db7','a54bca4820ff715ec52dd89970c99c36',1508424476,1508424476),(9,12395,1508424545,'Customer Login','AppBundle\\Model\\CustomerManagementFramework\\Activity\\LoginActivity',NULL,'','\0\0\0\0\0\0³\0datecustomer-1508424545-12395','79b401dd2e09a028d3a58bdedc6810e6',1508424545,1508424545),(10,12395,1508424577,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12411-12395-40.7000-ord_59e8bb7803faf','391f29dd613b47721ffc2ec91668ab9f',1508424577,1508424577),(11,12372,1508424607,'Customer Login','AppBundle\\Model\\CustomerManagementFramework\\Activity\\LoginActivity',NULL,'','\0\0\0\0\0\0³\0datecustomer-1508424607-12372','099ebdaf61802c7cd83c0daa7a4a3741',1508424607,1508424607),(12,12372,1508424637,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12413-12372-84.4600-ord_59e8bbb4ae7b5','040474d5f91af8a64f1ee7a39f20d9fd',1508424637,1508424637),(13,12372,1508424666,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12415-12372-69.6200-ord_59e8bbd1dd11c','59cbbf6df0c4c0ddaa417823f4018b89',1508424666,1508424666);
+/*!40000 ALTER TABLE `plugin_cmf_activities` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-10-19 16:51:48

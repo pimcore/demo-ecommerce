@@ -108,5 +108,42 @@ return [
         "priority" => 0,
         "creationDate" => 1470649547,
         "modificationDate" => 1470649633
+    ],
+    10 => [
+        "id" => 10,
+        "name" => "app_login",
+        "pattern" => "#(\\w+)/account/login#",
+        "reverse" => "/%prefix/account/login",
+        "module" => NULL,
+        "controller" => "Account",
+        "action" => "login",
+        "variables" => "prefix",
+        "defaults" => "prefix=/en",
+        "siteId" => [
+
+        ],
+        "priority" => 0,
+        "legacy" => FALSE,
+        "creationDate" => 1507723177,
+        "modificationDate" => 1507801558
+    ],
+    11 => [
+        "id" => 11,
+        "name" => "app_logout",
+        "pattern" => "#(\\w+)/account/logout#",
+        "reverse" => "/%prefix/account/logout",
+        "module" => NULL,
+        "controller" => "Account",
+        "action" => "logout",
+        "variables" => "prefix",
+        "defaults" => "prefix=en",
+        "siteId" => [
+
+        ],
+        "priority" => 0,
+        "legacy" => FALSE,
+        "creationDate" => 1507723278,
+        "modificationDate" => 1507801561
     ]
+
 ];
