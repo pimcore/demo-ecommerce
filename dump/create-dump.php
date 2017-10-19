@@ -81,7 +81,10 @@ foreach ($tables as $name) {
 
 
         \Pimcore\Tool\Console::exec($mysqldump);
-        $dumpData .= "SOURCE ~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/" . $filename . ";\n";
+
+        $dumpData .= file_get_contents($fullFilename) . "\n";
+        
+        unlink($fullFilename);
 
     } else {
 

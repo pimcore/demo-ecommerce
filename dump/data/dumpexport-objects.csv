@@ -6541,7 +6541,7 @@
 12331	12271	folder	13	/order/2017/10/	\N	1	1507884010	1507884010	1	0	\N	\N
 12336	12331	object	ord_59e07e0d8405b	/order/2017/10/13/	0	1	1507884557	1507884617	0	0	9	OnlineShopOrder
 12337	12336	object	10393_10393	/order/2017/10/13/ord_59e07e0d8405b/	0	1	1507884557	1507884606	0	0	8	OnlineShopOrderItem
-12356	12361	object	Peter-Hugo	/customermanagement/customers/AT/5020/	0	1	1508403484	1508424465	0	1	41	Customer
+12356	12361	object	Peter-Hugo	/customermanagement/customers/AT/5020/	0	1	1508403484	1508425522	0	1	41	Customer
 12360	12246	folder	AT	/customermanagement/customers/	\N	1	1508403516	1508403516	1	0	\N	\N
 12361	12360	folder	5020	/customermanagement/customers/AT/	\N	1	1508403516	1508403516	1	0	\N	\N
 12362	12251	object	Gender	/customermanagement/segments/calculated/	\N	1	1508403928	1508403928	0	0	36	CustomerSegmentGroup
