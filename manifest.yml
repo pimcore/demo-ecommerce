@@ -1,7 +1,7 @@
 name: Ecommerce Demo
 files:
     add:
-        - app/AppBundle.php
+        - app/AppKernel.php
         - app/config/local/*
         - app/config/parameters.yml
         - app/config/pimcore/*
