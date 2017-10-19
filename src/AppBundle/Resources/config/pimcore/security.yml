@@ -1,0 +1,49 @@
+# To get started with security, check out the documentation:
+# http://symfony.com/doc/current/security.html
+#
+
+pimcore:
+    security:
+        # the encoder factory as shipped by the CMF
+        encoder_factories:
+            Pimcore\Model\DataObject\Customer: cmf.security.user_password_encoder_factory
+
+security:
+    providers:
+        # we use a custom user provider which loads users from the Customer class
+        # the user provider is provided by the CMF
+        cmf_customer_provider:
+            id: cmf.security.user_provider.oauth
+
+    firewalls:
+        # cmf firewall is valid for the whole site
+        cmf:
+            anonymous: ~
+            # the provider defined above
+            provider: cmf_customer_provider
+            form_login:
+                login_path: app_login
+                check_path: app_login
+                # use custom success handler to also update e-commerce framework environment after successful login
+                success_handler: AppBundle\EventListener\AuthenticationLoginListener
+
+            # configure the OAuth authenticator (HWIOAuthBundle)
+            oauth:
+                resource_owners:
+                    google: app_auth_oauth_check_google
+                    twitter: app_auth_oauth_check_twitter
+                login_path: app_login
+                failure_path: app_login
+
+                # use custom success handler to also update e-commerce framework environment after successful login
+                success_handler: AppBundle\EventListener\AuthenticationLoginListener
+                oauth_user_provider:
+                    service: cmf.security.user_provider.oauth
+
+            logout:
+                path:   app_logout
+
+                # optional: to keep logins of other firewalls (like admin)
+                invalidate_session: false
+                # use custom success handler to also update e-commerce framework environment after successful logout
+                success_handler: AppBundle\EventListener\AuthenticationLogoutListener

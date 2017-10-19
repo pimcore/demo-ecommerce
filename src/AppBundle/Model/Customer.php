@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Pimcore
  *
@@ -12,19 +13,10 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
+namespace AppBundle\Model;
 
-?>
+use CustomerManagementFrameworkBundle\Model\SsoAwareCustomerInterface;
 
-
-
-<?= $this->translate("general.filters.category") ?>
-
-<?php if($this->filterDefinitionObject->getFilters()): ?>
-    <div class="widget">
-        <?php foreach ($this->filterDefinitionObject->getFilters() as $filter): ?>
-        <?= $this->filterService->getFilterFrontend($filter, $this->products, $this->currentFilter);?>
-        <?php endforeach; ?><!-- end widget -->
-    </div>
-<?php endif; ?>
-
-<h3>done</h3>
+class Customer extends \Pimcore\Model\DataObject\Customer implements SsoAwareCustomerInterface
+{
+}

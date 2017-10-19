@@ -14,11 +14,19 @@
 
 namespace AppBundle\Ecommerce\Order;
 
+use AppBundle\Model\CustomerManagementFramework\Activity\OrderActivity;
+use CustomerManagementFrameworkBundle\ActivityManager\ActivityManagerInterface;
 use Pimcore\Bundle\EcommerceFrameworkBundle\CheckoutManager\CommitOrderProcessor;
 use Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractOrder;
 
 class Processor extends CommitOrderProcessor
 {
+
+    /**
+     * @var ActivityManagerInterface
+     */
+    protected $activityManager;
+
     /**
      * save individually data
      *
@@ -27,7 +35,10 @@ class Processor extends CommitOrderProcessor
     protected function processOrder(AbstractOrder $order)
     {
 
-        //nothing to do here
+        if($this->activityManager && $order->getCustomer()) {
+            $this->activityManager->trackActivity(new OrderActivity($order->getCustomer(), $order));
+        }
+
     }
 
     protected function sendConfirmationMail(AbstractOrder $order)
@@ -41,5 +52,10 @@ class Processor extends CommitOrderProcessor
         $mail = new \Pimcore\Mail(['document' => $this->confirmationMail, 'params' => $params]);
         $mail->addTo($email);
         $mail->send();
+    }
+
+
+    public function setActivityManager(ActivityManagerInterface $activityManager) {
+        $this->activityManager = $activityManager;
     }
 }

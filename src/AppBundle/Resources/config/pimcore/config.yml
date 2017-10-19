@@ -4,6 +4,7 @@ pimcore:
         class_overrides:
             Pimcore\Model\DataObject\Product: AppBundle\Model\DefaultProduct
             Pimcore\Model\DataObject\ProductCategory: AppBundle\Model\ShopCategory
+            Pimcore\Model\DataObject\Customer: AppBundle\Model\Customer
 
 imports:
 
@@ -12,3 +13,11 @@ imports:
 
     # optionally include file for overwrite services
     - { resource: ecommerce/service-overrides.yml }
+
+
+    # cmf configuration
+    - { resource: cmf/config.yml }
+    - { resource: cmf/services.yml }
+
+    # security configuration
+    - { resource: security.yml }

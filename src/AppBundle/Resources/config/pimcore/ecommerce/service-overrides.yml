@@ -12,6 +12,8 @@ services:
     # Custom commit order processor
     AppBundle\Ecommerce\Order\Processor:
         autowire: true
+        calls:
+            - [setActivityManager, ['@cmf.activity_manager']]
 
     # Custom commit order processor for masterpass
     AppBundle\Ecommerce\Order\MasterpassProcessor:

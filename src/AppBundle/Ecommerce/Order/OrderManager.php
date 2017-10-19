@@ -46,19 +46,30 @@ class OrderManager extends \Pimcore\Bundle\EcommerceFrameworkBundle\OrderManager
             $order->setCustomerFirstname($deliveryAddress->firstname);
             $order->setCustomerLastname($deliveryAddress->lastname);
             $order->setCustomerCompany($deliveryAddress->company);
-            $order->setCustomerStreet($deliveryAddress->address);
+            $order->setCustomerStreet($deliveryAddress->street);
             $order->setCustomerZip($deliveryAddress->zip);
             $order->setCustomerCity($deliveryAddress->city);
-            $order->setCustomerCountry($deliveryAddress->country);
+            $order->setCustomerCountry($deliveryAddress->countryCode);
             $order->setCustomerEmail($deliveryAddress->email);
 
             $order->setDeliveryFirstname($deliveryAddress->firstname);
             $order->setDeliveryLastname($deliveryAddress->lastname);
             $order->setDeliveryCompany($deliveryAddress->company);
-            $order->setDeliveryStreet($deliveryAddress->address);
+            $order->setDeliveryStreet($deliveryAddress->street);
             $order->setDeliveryZip($deliveryAddress->zip);
             $order->setDeliveryCity($deliveryAddress->city);
-            $order->setDeliveryCountry($deliveryAddress->country);
+            $order->setDeliveryCountry($deliveryAddress->countryCode);
+
+            //updating customer object based on delivery address data
+            $customer = $order->getCustomer();
+            if($customer) {
+                $params = ['email', 'firstname', 'lastname', 'street', 'zip', 'city', 'countryCode'];
+                foreach($params as $param) {
+                    $customer->{'set' . ucfirst($param)}($deliveryAddress->{$param});
+                }
+                $customer->save();
+            }
+
         } elseif ($confirm) {
 
             //in quick checkout - only get email-adress from confirm step

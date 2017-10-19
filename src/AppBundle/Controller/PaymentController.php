@@ -71,7 +71,7 @@ class PaymentController extends AbstractCartAware
         //needed for sidebar
         $checkoutManager = Factory::getInstance()->getCheckoutManager($this->getCart());
         $deliveryAddress = $checkoutManager->getCheckoutStep('deliveryaddress');
-        $this->view->deliveryAddress = $deliveryAddress;
+        $this->view->deliveryAddress = $deliveryAddress->getData();
     }
 
     /**

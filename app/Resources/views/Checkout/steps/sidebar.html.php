@@ -100,28 +100,26 @@ $isPhone = $deviceDetector->isPhone() && !$this->showSummary;
         </div>
 
         <?php if($this->deliveryAddress) { ?>
-            <?php $deliveryAddress = $this->deliveryAddress->getData() ?>
-            <?php if($deliveryAddress) { ?>
-                <?php
-                    $locale = Pimcore::getContainer()->get('pimcore.locale');
-                    $regionArray = $locale->getDisplayRegions();
-                ?>
+            <?php
+                $deliveryAddress = $this->deliveryAddress;
+                $locale = Pimcore::getContainer()->get('pimcore.locale');
+                $regionArray = $locale->getDisplayRegions();
+            ?>
 
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <?= $this->translate("checkout.deliveryaddress") ?>
-                    </div>
-                    <div class="panel-body">
-                        <address>
-                            <strong><?= $deliveryAddress->firstname?> <?= $deliveryAddress->lastname?> </strong><br>
-                            <?= $deliveryAddress->address ?><br>
-                            <?= $deliveryAddress->zip ?> <?= $deliveryAddress->city ?> <br>
-                            <?= strtoupper($regionArray[$deliveryAddress->country]) ?><br/>
-                            <a href="mailto:<?= $deliveryAddress->email ?>"><?= $deliveryAddress->email ?></a>
-                        </address>
-                    </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <?= $this->translate("checkout.deliveryaddress") ?>
                 </div>
-            <?php } ?>
+                <div class="panel-body">
+                    <address>
+                        <strong><?= $deliveryAddress->firstname?> <?= $deliveryAddress->lastname?> </strong><br>
+                        <?= $deliveryAddress->street ?><br>
+                        <?= $deliveryAddress->zip ?> <?= $deliveryAddress->city ?> <br>
+                        <?= strtoupper($regionArray[$deliveryAddress->countryCode]) ?><br/>
+                        <a href="mailto:<?= $deliveryAddress->email ?>"><?= $deliveryAddress->email ?></a>
+                    </address>
+                </div>
+            </div>
         <?php } ?>
     </div>
 </div>

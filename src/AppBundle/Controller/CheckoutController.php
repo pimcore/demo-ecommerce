@@ -14,6 +14,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Form\DeliveryAddressFormType;
 use Pimcore\Bundle\EcommerceFrameworkBundle\Factory;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -84,58 +85,29 @@ class CheckoutController extends AbstractCartAware
         $checkoutManager = Factory::getInstance()->getCheckoutManager($cart);
 
         $deliveryAddress = $checkoutManager->getCheckoutStep('deliveryaddress');
-        $this->view->deliveryAddress = $deliveryAddress;
 
         $trackingManager = Factory::getInstance()->getTrackingManager();
         $trackingManager->trackCheckoutStep($deliveryAddress, $this->getCart(), 1);
 
+        $this->view->deliveryAddress = $deliveryAddress->getData();
+        $deliveryAddressDataArray = $this->fillDeliveryAddressFromCustomer($deliveryAddress->getData());
+
+        $form = $this->createForm(DeliveryAddressFormType::class, $deliveryAddressDataArray, []);
+        $form->handleRequest($request);
+
+        $this->view->form  = $form->createView();
+
+
         // check errors
-        $this->view->errors = $request->get('error') ? explode(',', $request->get('error')) : [];
+        $this->view->errors = $form->getErrors();
 
         // update delivery address
         if ($request->getMethod() == 'POST') {
             $address = new \stdClass();
 
-            if (strlen($request->get('email')) <= 3) {
-                $this->view->errors[] = 'email';
-            } else {
-                $address->email = strip_tags($request->get('email'));
-            }
-
-            if (strlen($request->get('firstname')) <= 2) {
-                $this->view->errors[] = 'firstname';
-            } else {
-                $address->firstname = strip_tags($request->get('firstname'));
-            }
-
-            if (strlen($request->get('lastname')) <= 2) {
-                $this->view->errors[] = 'lastname';
-            } else {
-                $address->lastname = strip_tags($request->get('lastname'));
-            }
-
-            if (strlen($request->get('address')) <= 2) {
-                $this->view->errors[] = 'address';
-            } else {
-                $address->address = strip_tags($request->get('address'));
-            }
-
-            if (strlen($request->get('zip')) <= 2) {
-                $this->view->errors[] = 'zip';
-            } else {
-                $address->zip = strip_tags($request->get('zip'));
-            }
-
-            if (strlen($request->get('city')) <= 2) {
-                $this->view->errors[] = 'city';
-            } else {
-                $address->city = strip_tags($request->get('city'));
-            }
-
-            if (strlen($request->get('deliverycountry')) != 2) {
-                $this->view->errors[] = 'country';
-            } else {
-                $address->country = strip_tags($request->get('deliverycountry'));
+            $formData = $form->getData();
+            foreach($formData as $key => $value) {
+                $address->{$key} = $value;
             }
 
             // save address if we have no errors
@@ -147,6 +119,31 @@ class CheckoutController extends AbstractCartAware
                 return $this->redirect($this->generateUrl('checkout', ['action' => 'confirm']));
             }
         }
+    }
+
+    /**
+     * @param $deliveryAddress
+     * @return array|null
+     */
+    private function fillDeliveryAddressFromCustomer($deliveryAddress) {
+        $user = $this->getUser();
+
+        $deliveryAddress = (array) $deliveryAddress;
+
+        if($user) {
+            if($deliveryAddress === null) {
+                $deliveryAddress = [];
+            }
+
+            $params = ['email', 'firstname', 'lastname', 'street', 'zip', 'city', 'countryCode'];
+            foreach($params as $param) {
+                if(empty($deliveryAddress[$param])) {
+                    $deliveryAddress[$param] = $user->{'get' . ucfirst($param)}();
+                }
+            }
+        }
+
+        return $deliveryAddress;
     }
 
     /**
@@ -168,7 +165,7 @@ class CheckoutController extends AbstractCartAware
 
         //needed for sidebar
         $deliveryAddress = $checkoutManager->getCheckoutStep('deliveryaddress');
-        $this->view->deliveryAddress = $deliveryAddress;
+        $this->view->deliveryAddress = $deliveryAddress->getData();
 
         $payment = $checkoutManager->getPayment();
 

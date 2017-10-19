@@ -1,4 +1,11 @@
 services:
+    _defaults:
+        # automatically injects dependencies in your services
+        autowire: true
+        # automatically registers your services as commands, event subscribers, etc.
+        autoconfigure: true
+
+
     AppBundle\Ecommerce\Tracking\TrackingItemBuilder:
         public: false
         arguments: ['@pimcore.http.request_helper']
@@ -9,3 +16,10 @@ services:
         arguments: ['@translator', '@pimcore.locale.intl_formatter']
         tags:
             - { name: templating.helper, alias: productDetailSpecification }
+
+
+    # auto-register all controllers as services
+    AppBundle\Controller\:
+        resource: '../../Controller'
+        public: true
+        tags: ['controller.service_arguments']

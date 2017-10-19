@@ -12,7 +12,6 @@
  * @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
-
 /**
  * @var \Pimcore\Templating\PhpEngine $this
  * @var \Pimcore\Templating\PhpEngine $view
@@ -127,10 +126,11 @@ use Pimcore\Model\Document\Page;
                         ]);
                     ?>
 
-
                     <ul class="nav navbar-nav navbar-right cart">
-                        <li><a href="<?= $this->pimcoreUrl(["language" => $this->language, "action" => "list"], "cart") ?>"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>  <?= $this->translate("general.mycart") ?></a></li>
+                        <?= $this->template('Includes/login.html.php', ["language" => $this->language]); ?>
+                        <li><a href="<?= $this->url("cart", ["language" => $this->language, "action" => "list"]) ?>"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>  <?= $this->translate("general.mycart") ?></a></li>
                     </ul>
+
 
                     <form class="navbar-form navbar-right" role="search" action="<?= $this->pimcoreUrl(["prefix" => $this->language, "controller" => "shop", "action" => "search"], "action") ?>">
                         <div class="form-group">
@@ -211,10 +211,12 @@ use Pimcore\Model\Document\Page;
     <?php } ?>
 
     <div id="content" class="container">
-        <div class="breadcrumb">
-            <a href="/"><?= $this->translate("Home"); ?></a> &gt;
-            <?= $this->navigation()->breadcrumbs()->setMinDepth(null)->render($mainNavigation); ?>
-        </div>
+        <?php if(!$this->hideBreadcrumb) { ?>
+            <div class="breadcrumb">
+                <a href="/"><?= $this->translate("Home"); ?></a> &gt;
+                <?= $this->navigation()->breadcrumbs()->setMinDepth(null)->render($mainNavigation); ?>
+            </div>
+        <?php } ?>
         <div class="col-md-<?php if(!$document->getProperty("leftNavHide") && !$this->hideNav) { ?>9 col-md-push-3<?php } else { ?>12<?php } ?>">
 
             <?php $this->slots()->output('_content') ?>

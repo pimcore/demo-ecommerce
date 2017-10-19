@@ -1,14 +1,14 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-07-17T12:05:26+02:00
+/** 
+* Generated at: 2017-10-19T11:20:03+02:00
 * Inheritance: no
 * Variants: no
-* Changed by: admin (8)
+* Changed by: admin (10)
 * IP: 192.168.11.5
 
 
-Fields Summary:
+Fields Summary: 
 - orderState [select]
 - product [href]
 - productNumber [input]
@@ -21,25 +21,25 @@ Fields Summary:
 - comment [textarea]
 - subItems [objects]
 - customized [objectbricks]
-*/
+*/ 
 
 namespace Pimcore\Model\DataObject;
 
 
 
 /**
-* @method \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByOrderState ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByProduct ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByProductNumber ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByProductName ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByAmount ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByTotalNetPrice ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByTotalPrice ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByTaxInfo ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByPricingRules ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByComment ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getBySubItems ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByCustomized ($value, $limit = 0)
+* @method static \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByOrderState ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByProduct ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByProductNumber ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByProductName ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByAmount ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByTotalNetPrice ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByTotalPrice ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByTaxInfo ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByPricingRules ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByComment ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getBySubItems ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\OnlineShopOrderItem\Listing getByCustomized ($value, $limit = 0) 
 */
 
 class OnlineShopOrderItem extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractOrderItem {
@@ -75,8 +75,8 @@ public static function create($values = array()) {
 * @return string
 */
 public function getOrderState () {
-	$preValue = $this->preGetValue("orderState");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("orderState"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->orderState;
@@ -94,12 +94,12 @@ public function setOrderState ($orderState) {
 }
 
 /**
-* Get product - Produkt
+* Get product - Product
 * @return \Pimcore\Model\DataObject\AbstractObject
 */
 public function getProduct () {
-	$preValue = $this->preGetValue("product");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("product"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->getClass()->getFieldDefinition("product")->preGetData($this);
@@ -107,7 +107,7 @@ public function getProduct () {
 }
 
 /**
-* Set product - Produkt
+* Set product - Product
 * @param \Pimcore\Model\DataObject\AbstractObject $product
 * @return \Pimcore\Model\DataObject\OnlineShopOrderItem
 */
@@ -117,12 +117,12 @@ public function setProduct ($product) {
 }
 
 /**
-* Get productNumber - Produktnummer
+* Get productNumber - Product Number
 * @return string
 */
 public function getProductNumber () {
-	$preValue = $this->preGetValue("productNumber");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("productNumber"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->productNumber;
@@ -130,7 +130,7 @@ public function getProductNumber () {
 }
 
 /**
-* Set productNumber - Produktnummer
+* Set productNumber - Product Number
 * @param string $productNumber
 * @return \Pimcore\Model\DataObject\OnlineShopOrderItem
 */
@@ -140,12 +140,12 @@ public function setProductNumber ($productNumber) {
 }
 
 /**
-* Get productName - Produktname
+* Get productName - Product Name
 * @return string
 */
 public function getProductName () {
-	$preValue = $this->preGetValue("productName");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("productName"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->productName;
@@ -153,7 +153,7 @@ public function getProductName () {
 }
 
 /**
-* Set productName - Produktname
+* Set productName - Product Name
 * @param string $productName
 * @return \Pimcore\Model\DataObject\OnlineShopOrderItem
 */
@@ -167,8 +167,8 @@ public function setProductName ($productName) {
 * @return float
 */
 public function getAmount () {
-	$preValue = $this->preGetValue("amount");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("amount"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->amount;
@@ -190,8 +190,8 @@ public function setAmount ($amount) {
 * @return string
 */
 public function getTotalNetPrice () {
-	$preValue = $this->preGetValue("totalNetPrice");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("totalNetPrice"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->totalNetPrice;
@@ -213,8 +213,8 @@ public function setTotalNetPrice ($totalNetPrice) {
 * @return string
 */
 public function getTotalPrice () {
-	$preValue = $this->preGetValue("totalPrice");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("totalPrice"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->totalPrice;
@@ -236,8 +236,8 @@ public function setTotalPrice ($totalPrice) {
 * @return array
 */
 public function getTaxInfo () {
-	$preValue = $this->preGetValue("taxInfo");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("taxInfo"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->taxInfo;
@@ -258,7 +258,7 @@ public function setTaxInfo ($taxInfo) {
 * @return \Pimcore\Model\DataObject\Fieldcollection
 */
 public function getPricingRules () {
-	$preValue = $this->preGetValue("pricingRules");
+	$preValue = $this->preGetValue("pricingRules"); 
 	if($preValue !== null && !\Pimcore::inAdmin()) { return $preValue;}
 	$data = $this->getClass()->getFieldDefinition("pricingRules")->preGetData($this);
 	 return $data;
@@ -279,8 +279,8 @@ public function setPricingRules ($pricingRules) {
 * @return string
 */
 public function getComment () {
-	$preValue = $this->preGetValue("comment");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("comment"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->comment;
@@ -302,8 +302,8 @@ public function setComment ($comment) {
 * @return \Pimcore\Model\DataObject\OnlineShopOrderItem[]
 */
 public function getSubItems () {
-	$preValue = $this->preGetValue("subItems");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("subItems"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->getClass()->getFieldDefinition("subItems")->preGetData($this);
@@ -325,15 +325,15 @@ public function setSubItems ($subItems) {
 */
 public function getCustomized () {
 	$data = $this->customized;
-	if(!$data) {
-		if(\Pimcore\Tool::classExists("\\Pimcore\\Model\\DataObject\\OnlineShopOrderItem\\Customized")) {
+	if(!$data) { 
+		if(\Pimcore\Tool::classExists("\\Pimcore\\Model\\DataObject\\OnlineShopOrderItem\\Customized")) { 
 			$data = new \Pimcore\Model\DataObject\OnlineShopOrderItem\Customized($this, "customized");
 			$this->customized = $data;
 		} else {
 			return null;
 		}
 	}
-	$preValue = $this->preGetValue("customized");
+	$preValue = $this->preGetValue("customized"); 
 	if($preValue !== null && !\Pimcore::inAdmin()) { return $preValue;}
 	 return $data;
 }
@@ -349,11 +349,11 @@ public function setCustomized ($customized) {
 }
 
 protected static $_relationFields = array (
-  'product' =>
+  'product' => 
   array (
     'type' => 'href',
   ),
-  'subItems' =>
+  'subItems' => 
   array (
     'type' => 'objects',
   ),

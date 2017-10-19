@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 namespace Pimcore\Model\DataObject\OnlineShopOrderItem;
 
