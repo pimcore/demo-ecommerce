@@ -68,23 +68,12 @@ foreach ($tables as $name) {
 
     $quotedName = $db->quoteIdentifier($name);
 
+    //special hack to export blob column of activities table
     if($name == 'plugin_cmf_activities') {
 
-        $mysqldump = sprintf("mysqldump -h %s -u %s -p%s --no-create-info %s %s > %s",
-            $databaseConfig['host'],
-            $databaseConfig['username'],
-            $databaseConfig['password'],
-            $databaseConfig['dbname'],
-            'plugin_cmf_activities',
-            $fullFilename
-        );
-
-
-        \Pimcore\Tool\Console::exec($mysqldump);
-
-        $dumpData .= file_get_contents($fullFilename) . "\n";
-        
-        unlink($fullFilename);
+        $db->query("SELECT id, customerId, activityDate, type, implementationClass, o_id, a_id, hex(attributes), md5, creationDate, modificationDate FROM " . $quotedName . " INTO OUTFILE '" . $fullFilename . "'");
+        $dumpData .= "LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/" . $filename . "' INTO TABLE " . $quotedName .
+            "(id, customerId, activityDate, type, implementationClass, o_id, a_id, @hexAttributes, md5, creationDate, modificationDate) SET attributes=UNHEX(@hexAttributes);\n";
 
     } else {
 

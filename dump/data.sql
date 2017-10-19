@@ -3546,42 +3546,7 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpe
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_actiontrigger_actions.csv' INTO TABLE `plugin_cmf_actiontrigger_actions`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_actiontrigger_queue.csv' INTO TABLE `plugin_cmf_actiontrigger_queue`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_actiontrigger_rules.csv' INTO TABLE `plugin_cmf_actiontrigger_rules`;
--- MySQL dump 10.15  Distrib 10.0.27-MariaDB, for debian-linux-gnu (x86_64)
---
--- Host: localhost    Database: pimcore-ecommerce
--- ------------------------------------------------------
--- Server version	10.0.27-MariaDB-0+deb8u1
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-
---
--- Dumping data for table `plugin_cmf_activities`
---
-
-LOCK TABLES `plugin_cmf_activities` WRITE;
-/*!40000 ALTER TABLE `plugin_cmf_activities` DISABLE KEYS */;
-INSERT INTO `plugin_cmf_activities` VALUES (1,12356,1508423457,'Customer Login','AppBundle\\Model\\CustomerManagementFramework\\Activity\\LoginActivity',NULL,'','\0\0\0\0\0\0³\0datecustomer-1508423457-12356','bfc89ef07e0be5674ae00460b62c8bfe',1508423457,1508423457),(2,12356,1508424050,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12403-12356-95.8500-ord_59e8b967ea713','73b50eafdaad7b0f7ac72ef695fb6e97',1508424050,1508424050),(3,12356,1508424086,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12403-12356-95.8500-ord_59e8b967ea713','213cb2949a021c9c927cbe34894c3482',1508424086,1508424086),(4,12356,1508424117,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12405-12356-41.8550-ord_59e8b9ab2b606','f6d5ed78a3436d8c4ee69c364c30ed5b',1508424117,1508424117),(5,12356,1508424190,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12407-12356-85.8500-ord_59e8b9f465c44','f9b5346be9dc590be82d9b9e5d1d4810',1508424190,1508424190),(6,12356,1508424225,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12409-12356-51.7400-ord_59e8ba1792db7','7ee8d6e1697da8a2094e393ee8451741',1508424225,1508424225),(7,12356,1508424351,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12409-12356-51.7400-ord_59e8ba1792db7','bd7f024483929541d3e77b6060cfa715',1508424351,1508424351),(8,12356,1508424476,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12409-12356-51.7400-ord_59e8ba1792db7','a54bca4820ff715ec52dd89970c99c36',1508424476,1508424476),(9,12395,1508424545,'Customer Login','AppBundle\\Model\\CustomerManagementFramework\\Activity\\LoginActivity',NULL,'','\0\0\0\0\0\0³\0datecustomer-1508424545-12395','79b401dd2e09a028d3a58bdedc6810e6',1508424545,1508424545),(10,12395,1508424577,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12411-12395-40.7000-ord_59e8bb7803faf','391f29dd613b47721ffc2ec91668ab9f',1508424577,1508424577),(11,12372,1508424607,'Customer Login','AppBundle\\Model\\CustomerManagementFramework\\Activity\\LoginActivity',NULL,'','\0\0\0\0\0\0³\0datecustomer-1508424607-12372','099ebdaf61802c7cd83c0daa7a4a3741',1508424607,1508424607),(12,12372,1508424637,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12413-12372-84.4600-ord_59e8bbb4ae7b5','040474d5f91af8a64f1ee7a39f20d9fd',1508424637,1508424637),(13,12372,1508424666,'Customer Order','AppBundle\\Model\\CustomerManagementFramework\\Activity\\OrderActivity',NULL,'','\0&\0\0\0\0\0c\0\0Ã\0\0CorderIdcustomerIdtotalPriceorderNumber-12415-12372-69.6200-ord_59e8bbd1dd11c','59cbbf6df0c4c0ddaa417823f4018b89',1508424666,1508424666);
-/*!40000 ALTER TABLE `plugin_cmf_activities` ENABLE KEYS */;
-UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2017-10-19 17:06:07
-
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_activities.csv' INTO TABLE `plugin_cmf_activities`(id, customerId, activityDate, type, implementationClass, o_id, a_id, @hexAttributes, md5, creationDate, modificationDate) SET attributes=UNHEX(@hexAttributes);
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_deletions.csv' INTO TABLE `plugin_cmf_deletions`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_duplicates_false_positives.csv' INTO TABLE `plugin_cmf_duplicates_false_positives`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_duplicatesindex.csv' INTO TABLE `plugin_cmf_duplicatesindex`;
