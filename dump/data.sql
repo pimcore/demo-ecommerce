@@ -165,6 +165,24 @@ CREATE TABLE `application_logs_archive_10_2016` (
 
 
 
+DROP TABLE IF EXISTS `application_logs_archive_10_2017`;
+CREATE TABLE `application_logs_archive_10_2017` (
+  `id` bigint(20) NOT NULL,
+  `pid` int(11) DEFAULT NULL,
+  `timestamp` datetime NOT NULL,
+  `message` varchar(1024) DEFAULT NULL,
+  `priority` enum('emergency','alert','critical','error','warning','notice','info','debug') DEFAULT NULL,
+  `fileobject` varchar(1024) DEFAULT NULL,
+  `info` varchar(1024) DEFAULT NULL,
+  `component` varchar(255) DEFAULT NULL,
+  `source` varchar(255) DEFAULT NULL,
+  `relatedobject` bigint(20) DEFAULT NULL,
+  `relatedobjecttype` enum('object','document','asset') DEFAULT NULL,
+  `maintenanceChecked` tinyint(4) DEFAULT NULL
+) ENGINE=ARCHIVE DEFAULT CHARSET=utf8mb4;
+
+
+
 DROP TABLE IF EXISTS `bundle_advancedobjectsearch_savedsearch`;
 CREATE TABLE `bundle_advancedobjectsearch_savedsearch` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
@@ -201,7 +219,7 @@ CREATE TABLE `bundle_outputdataconfigtoolkit_outputdefinition` (
   `configuration` longtext CHARACTER SET latin1,
   PRIMARY KEY (`id`),
   UNIQUE KEY `Unique` (`o_id`,`o_classId`,`channel`)
-) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 
 
@@ -467,6 +485,35 @@ CREATE TABLE `keyvalue_translator_configuration` (
   `name` varchar(200) DEFAULT NULL,
   `translator` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_brick_query_OAuth1Token_38`;
+CREATE TABLE `object_brick_query_OAuth1Token_38` (
+  `o_id` int(11) NOT NULL DEFAULT '0',
+  `fieldname` varchar(190) NOT NULL DEFAULT '',
+  `token` longtext,
+  `tokenSecret` longtext,
+  PRIMARY KEY (`o_id`,`fieldname`),
+  KEY `o_id` (`o_id`),
+  KEY `fieldname` (`fieldname`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_brick_query_OAuth2Token_38`;
+CREATE TABLE `object_brick_query_OAuth2Token_38` (
+  `o_id` int(11) NOT NULL DEFAULT '0',
+  `fieldname` varchar(190) NOT NULL DEFAULT '',
+  `accessToken` longtext,
+  `tokenType` varchar(190) DEFAULT NULL,
+  `expiresAt` varchar(190) DEFAULT NULL,
+  `refreshToken` longtext,
+  `scope` varchar(190) DEFAULT NULL,
+  PRIMARY KEY (`o_id`,`fieldname`),
+  KEY `o_id` (`o_id`),
+  KEY `fieldname` (`fieldname`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
@@ -796,6 +843,35 @@ CREATE TABLE `object_brick_query_weight_12` (
   KEY `o_id` (`o_id`),
   KEY `fieldname` (`fieldname`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `object_brick_store_OAuth1Token_38`;
+CREATE TABLE `object_brick_store_OAuth1Token_38` (
+  `o_id` int(11) NOT NULL DEFAULT '0',
+  `fieldname` varchar(190) NOT NULL DEFAULT '',
+  `token` longtext,
+  `tokenSecret` longtext,
+  PRIMARY KEY (`o_id`,`fieldname`),
+  KEY `o_id` (`o_id`),
+  KEY `fieldname` (`fieldname`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_brick_store_OAuth2Token_38`;
+CREATE TABLE `object_brick_store_OAuth2Token_38` (
+  `o_id` int(11) NOT NULL DEFAULT '0',
+  `fieldname` varchar(190) NOT NULL DEFAULT '',
+  `accessToken` longtext,
+  `tokenType` varchar(190) DEFAULT NULL,
+  `expiresAt` varchar(190) DEFAULT NULL,
+  `refreshToken` longtext,
+  `scope` varchar(190) DEFAULT NULL,
+  PRIMARY KEY (`o_id`,`fieldname`),
+  KEY `o_id` (`o_id`),
+  KEY `fieldname` (`fieldname`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
 
@@ -1923,6 +1999,29 @@ CREATE TABLE `object_metadata_12` (
 
 
 
+DROP TABLE IF EXISTS `object_metadata_41`;
+CREATE TABLE `object_metadata_41` (
+  `o_id` int(11) NOT NULL DEFAULT '0',
+  `dest_id` int(11) NOT NULL DEFAULT '0',
+  `type` varchar(50) NOT NULL DEFAULT '',
+  `fieldname` varchar(71) NOT NULL,
+  `column` varchar(190) NOT NULL,
+  `data` text,
+  `ownertype` enum('object','fieldcollection','localizedfield','objectbrick') NOT NULL DEFAULT 'object',
+  `ownername` varchar(70) NOT NULL DEFAULT '',
+  `position` varchar(70) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`ownertype`,`ownername`,`position`),
+  KEY `o_id` (`o_id`),
+  KEY `dest_id` (`dest_id`),
+  KEY `fieldname` (`fieldname`),
+  KEY `column` (`column`),
+  KEY `ownertype` (`ownertype`),
+  KEY `ownername` (`ownername`),
+  KEY `position` (`position`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
 DROP TABLE IF EXISTS `object_query_12`;
 CREATE TABLE `object_query_12` (
   `oo_id` int(11) NOT NULL DEFAULT '0',
@@ -2081,6 +2180,112 @@ CREATE TABLE `object_query_35` (
   `oo_className` varchar(255) DEFAULT 'OnlineShopTaxClass',
   `taxEntryCombinationType` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`oo_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_query_36`;
+CREATE TABLE `object_query_36` (
+  `oo_id` int(11) NOT NULL DEFAULT '0',
+  `oo_classId` int(11) DEFAULT '36',
+  `oo_className` varchar(255) DEFAULT 'CustomerSegmentGroup',
+  `name` varchar(255) DEFAULT NULL,
+  `reference` varchar(190) DEFAULT NULL,
+  `calculated` tinyint(1) DEFAULT NULL,
+  `showAsFilter` tinyint(1) DEFAULT NULL,
+  `exportNewsletterProvider` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`oo_id`),
+  KEY `p_index_showAsFilter` (`showAsFilter`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_query_37`;
+CREATE TABLE `object_query_37` (
+  `oo_id` int(11) NOT NULL DEFAULT '0',
+  `oo_classId` int(11) DEFAULT '37',
+  `oo_className` varchar(255) DEFAULT 'CustomerSegment',
+  `name` varchar(255) DEFAULT NULL,
+  `group__id` int(11) DEFAULT NULL,
+  `group__type` enum('document','asset','object') DEFAULT NULL,
+  `reference` varchar(255) DEFAULT NULL,
+  `calculated` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`oo_id`),
+  KEY `p_index_reference` (`reference`(191))
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_query_38`;
+CREATE TABLE `object_query_38` (
+  `oo_id` int(11) NOT NULL DEFAULT '0',
+  `oo_classId` int(11) DEFAULT '38',
+  `oo_className` varchar(255) DEFAULT 'SsoIdentity',
+  `provider` varchar(190) DEFAULT NULL,
+  `identifier` varchar(190) DEFAULT NULL,
+  `profileData` longtext,
+  PRIMARY KEY (`oo_id`),
+  KEY `p_index_provider` (`provider`),
+  KEY `p_index_identifier` (`identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_query_39`;
+CREATE TABLE `object_query_39` (
+  `oo_id` int(11) NOT NULL DEFAULT '0',
+  `oo_classId` int(11) DEFAULT '39',
+  `oo_className` varchar(255) DEFAULT 'TermSegmentBuilderDefinition',
+  `name` varchar(190) DEFAULT NULL,
+  `terms` longtext,
+  PRIMARY KEY (`oo_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_query_40`;
+CREATE TABLE `object_query_40` (
+  `oo_id` int(11) NOT NULL DEFAULT '0',
+  `oo_classId` int(11) DEFAULT '40',
+  `oo_className` varchar(255) DEFAULT 'LinkActivityDefinition',
+  `code` varchar(190) DEFAULT NULL,
+  `attributeType` varchar(190) DEFAULT NULL,
+  `label` varchar(190) DEFAULT NULL,
+  `link` text,
+  `active` varchar(190) DEFAULT NULL,
+  `utm_source` varchar(190) DEFAULT NULL,
+  `utm_medium` varchar(190) DEFAULT NULL,
+  `utm_campaign` varchar(190) DEFAULT NULL,
+  `utm_term` varchar(190) DEFAULT NULL,
+  `utm_content` varchar(190) DEFAULT NULL,
+  `attributes` longtext,
+  PRIMARY KEY (`oo_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_query_41`;
+CREATE TABLE `object_query_41` (
+  `oo_id` int(11) NOT NULL DEFAULT '0',
+  `oo_classId` int(11) DEFAULT '41',
+  `oo_className` varchar(255) DEFAULT 'Customer',
+  `active` tinyint(1) DEFAULT NULL,
+  `gender` varchar(190) DEFAULT NULL,
+  `firstname` varchar(190) DEFAULT NULL,
+  `lastname` varchar(190) DEFAULT NULL,
+  `street` varchar(190) DEFAULT NULL,
+  `zip` varchar(190) DEFAULT NULL,
+  `city` varchar(190) DEFAULT NULL,
+  `countryCode` varchar(190) DEFAULT NULL,
+  `email` varchar(190) DEFAULT NULL,
+  `phone` varchar(190) DEFAULT NULL,
+  `manualSegments` text,
+  `calculatedSegments` text,
+  `idEncoded` varchar(190) DEFAULT NULL,
+  `password` varchar(190) DEFAULT NULL,
+  `ssoIdentities` text,
+  PRIMARY KEY (`oo_id`),
+  KEY `p_index_idEncoded` (`idEncoded`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
@@ -2424,6 +2629,144 @@ CREATE TABLE `object_relations_35` (
 
 
 
+DROP TABLE IF EXISTS `object_relations_36`;
+CREATE TABLE `object_relations_36` (
+  `src_id` int(11) NOT NULL DEFAULT '0',
+  `dest_id` int(11) NOT NULL DEFAULT '0',
+  `type` varchar(50) NOT NULL DEFAULT '',
+  `fieldname` varchar(70) NOT NULL DEFAULT '0',
+  `index` int(11) unsigned NOT NULL DEFAULT '0',
+  `ownertype` enum('object','fieldcollection','localizedfield','objectbrick') NOT NULL DEFAULT 'object',
+  `ownername` varchar(70) NOT NULL DEFAULT '',
+  `position` varchar(70) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`src_id`,`dest_id`,`ownertype`,`ownername`,`fieldname`,`type`,`position`),
+  KEY `index` (`index`),
+  KEY `src_id` (`src_id`),
+  KEY `dest_id` (`dest_id`),
+  KEY `fieldname` (`fieldname`),
+  KEY `position` (`position`),
+  KEY `ownertype` (`ownertype`),
+  KEY `type` (`type`),
+  KEY `ownername` (`ownername`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_relations_37`;
+CREATE TABLE `object_relations_37` (
+  `src_id` int(11) NOT NULL DEFAULT '0',
+  `dest_id` int(11) NOT NULL DEFAULT '0',
+  `type` varchar(50) NOT NULL DEFAULT '',
+  `fieldname` varchar(70) NOT NULL DEFAULT '0',
+  `index` int(11) unsigned NOT NULL DEFAULT '0',
+  `ownertype` enum('object','fieldcollection','localizedfield','objectbrick') NOT NULL DEFAULT 'object',
+  `ownername` varchar(70) NOT NULL DEFAULT '',
+  `position` varchar(70) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`src_id`,`dest_id`,`ownertype`,`ownername`,`fieldname`,`type`,`position`),
+  KEY `index` (`index`),
+  KEY `src_id` (`src_id`),
+  KEY `dest_id` (`dest_id`),
+  KEY `fieldname` (`fieldname`),
+  KEY `position` (`position`),
+  KEY `ownertype` (`ownertype`),
+  KEY `type` (`type`),
+  KEY `ownername` (`ownername`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_relations_38`;
+CREATE TABLE `object_relations_38` (
+  `src_id` int(11) NOT NULL DEFAULT '0',
+  `dest_id` int(11) NOT NULL DEFAULT '0',
+  `type` varchar(50) NOT NULL DEFAULT '',
+  `fieldname` varchar(70) NOT NULL DEFAULT '0',
+  `index` int(11) unsigned NOT NULL DEFAULT '0',
+  `ownertype` enum('object','fieldcollection','localizedfield','objectbrick') NOT NULL DEFAULT 'object',
+  `ownername` varchar(70) NOT NULL DEFAULT '',
+  `position` varchar(70) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`src_id`,`dest_id`,`ownertype`,`ownername`,`fieldname`,`type`,`position`),
+  KEY `index` (`index`),
+  KEY `src_id` (`src_id`),
+  KEY `dest_id` (`dest_id`),
+  KEY `fieldname` (`fieldname`),
+  KEY `position` (`position`),
+  KEY `ownertype` (`ownertype`),
+  KEY `type` (`type`),
+  KEY `ownername` (`ownername`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_relations_39`;
+CREATE TABLE `object_relations_39` (
+  `src_id` int(11) NOT NULL DEFAULT '0',
+  `dest_id` int(11) NOT NULL DEFAULT '0',
+  `type` varchar(50) NOT NULL DEFAULT '',
+  `fieldname` varchar(70) NOT NULL DEFAULT '0',
+  `index` int(11) unsigned NOT NULL DEFAULT '0',
+  `ownertype` enum('object','fieldcollection','localizedfield','objectbrick') NOT NULL DEFAULT 'object',
+  `ownername` varchar(70) NOT NULL DEFAULT '',
+  `position` varchar(70) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`src_id`,`dest_id`,`ownertype`,`ownername`,`fieldname`,`type`,`position`),
+  KEY `index` (`index`),
+  KEY `src_id` (`src_id`),
+  KEY `dest_id` (`dest_id`),
+  KEY `fieldname` (`fieldname`),
+  KEY `position` (`position`),
+  KEY `ownertype` (`ownertype`),
+  KEY `type` (`type`),
+  KEY `ownername` (`ownername`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_relations_40`;
+CREATE TABLE `object_relations_40` (
+  `src_id` int(11) NOT NULL DEFAULT '0',
+  `dest_id` int(11) NOT NULL DEFAULT '0',
+  `type` varchar(50) NOT NULL DEFAULT '',
+  `fieldname` varchar(70) NOT NULL DEFAULT '0',
+  `index` int(11) unsigned NOT NULL DEFAULT '0',
+  `ownertype` enum('object','fieldcollection','localizedfield','objectbrick') NOT NULL DEFAULT 'object',
+  `ownername` varchar(70) NOT NULL DEFAULT '',
+  `position` varchar(70) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`src_id`,`dest_id`,`ownertype`,`ownername`,`fieldname`,`type`,`position`),
+  KEY `index` (`index`),
+  KEY `src_id` (`src_id`),
+  KEY `dest_id` (`dest_id`),
+  KEY `fieldname` (`fieldname`),
+  KEY `position` (`position`),
+  KEY `ownertype` (`ownertype`),
+  KEY `type` (`type`),
+  KEY `ownername` (`ownername`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_relations_41`;
+CREATE TABLE `object_relations_41` (
+  `src_id` int(11) NOT NULL DEFAULT '0',
+  `dest_id` int(11) NOT NULL DEFAULT '0',
+  `type` varchar(50) NOT NULL DEFAULT '',
+  `fieldname` varchar(70) NOT NULL DEFAULT '0',
+  `index` int(11) unsigned NOT NULL DEFAULT '0',
+  `ownertype` enum('object','fieldcollection','localizedfield','objectbrick') NOT NULL DEFAULT 'object',
+  `ownername` varchar(70) NOT NULL DEFAULT '',
+  `position` varchar(70) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`src_id`,`dest_id`,`ownertype`,`ownername`,`fieldname`,`type`,`position`),
+  KEY `index` (`index`),
+  KEY `src_id` (`src_id`),
+  KEY `dest_id` (`dest_id`),
+  KEY `fieldname` (`fieldname`),
+  KEY `position` (`position`),
+  KEY `ownertype` (`ownertype`),
+  KEY `type` (`type`),
+  KEY `ownername` (`ownername`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
 DROP TABLE IF EXISTS `object_relations_7`;
 CREATE TABLE `object_relations_7` (
   `src_id` int(11) NOT NULL DEFAULT '0',
@@ -2614,6 +2957,95 @@ CREATE TABLE `object_store_35` (
 
 
 
+DROP TABLE IF EXISTS `object_store_36`;
+CREATE TABLE `object_store_36` (
+  `oo_id` int(11) NOT NULL DEFAULT '0',
+  `name` varchar(255) DEFAULT NULL,
+  `reference` varchar(190) DEFAULT NULL,
+  `calculated` tinyint(1) DEFAULT NULL,
+  `showAsFilter` tinyint(1) DEFAULT NULL,
+  `exportNewsletterProvider` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`oo_id`),
+  KEY `p_index_showAsFilter` (`showAsFilter`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_store_37`;
+CREATE TABLE `object_store_37` (
+  `oo_id` int(11) NOT NULL DEFAULT '0',
+  `name` varchar(255) DEFAULT NULL,
+  `reference` varchar(255) DEFAULT NULL,
+  `calculated` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`oo_id`),
+  KEY `p_index_reference` (`reference`(191))
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_store_38`;
+CREATE TABLE `object_store_38` (
+  `oo_id` int(11) NOT NULL DEFAULT '0',
+  `provider` varchar(190) DEFAULT NULL,
+  `identifier` varchar(190) DEFAULT NULL,
+  `profileData` longtext,
+  PRIMARY KEY (`oo_id`),
+  KEY `p_index_provider` (`provider`),
+  KEY `p_index_identifier` (`identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_store_39`;
+CREATE TABLE `object_store_39` (
+  `oo_id` int(11) NOT NULL DEFAULT '0',
+  `name` varchar(190) DEFAULT NULL,
+  `terms` longtext,
+  PRIMARY KEY (`oo_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_store_40`;
+CREATE TABLE `object_store_40` (
+  `oo_id` int(11) NOT NULL DEFAULT '0',
+  `code` varchar(190) DEFAULT NULL,
+  `attributeType` varchar(190) DEFAULT NULL,
+  `label` varchar(190) DEFAULT NULL,
+  `link` text,
+  `active` varchar(190) DEFAULT NULL,
+  `utm_source` varchar(190) DEFAULT NULL,
+  `utm_medium` varchar(190) DEFAULT NULL,
+  `utm_campaign` varchar(190) DEFAULT NULL,
+  `utm_term` varchar(190) DEFAULT NULL,
+  `utm_content` varchar(190) DEFAULT NULL,
+  `attributes` longtext,
+  PRIMARY KEY (`oo_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_store_41`;
+CREATE TABLE `object_store_41` (
+  `oo_id` int(11) NOT NULL DEFAULT '0',
+  `active` tinyint(1) DEFAULT NULL,
+  `gender` varchar(190) DEFAULT NULL,
+  `firstname` varchar(190) DEFAULT NULL,
+  `lastname` varchar(190) DEFAULT NULL,
+  `street` varchar(190) DEFAULT NULL,
+  `zip` varchar(190) DEFAULT NULL,
+  `city` varchar(190) DEFAULT NULL,
+  `countryCode` varchar(190) DEFAULT NULL,
+  `email` varchar(190) DEFAULT NULL,
+  `phone` varchar(190) DEFAULT NULL,
+  `idEncoded` varchar(190) DEFAULT NULL,
+  `password` varchar(190) DEFAULT NULL,
+  PRIMARY KEY (`oo_id`),
+  KEY `p_index_idEncoded` (`idEncoded`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
 DROP TABLE IF EXISTS `object_store_7`;
 CREATE TABLE `object_store_7` (
   `oo_id` int(11) NOT NULL DEFAULT '0',
@@ -2684,6 +3116,198 @@ CREATE TABLE `object_store_9` (
 
 
 
+DROP TABLE IF EXISTS `plugin_cmf_actiontrigger_actions`;
+CREATE TABLE `plugin_cmf_actiontrigger_actions` (
+  `id` int(20) unsigned NOT NULL AUTO_INCREMENT,
+  `ruleId` int(20) unsigned NOT NULL,
+  `actionDelay` int(20) unsigned NOT NULL,
+  `implementationClass` varchar(255) NOT NULL,
+  `options` text,
+  `creationDate` bigint(20) NOT NULL,
+  `modificationDate` bigint(20) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `ruleId` (`ruleId`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `plugin_cmf_actiontrigger_queue`;
+CREATE TABLE `plugin_cmf_actiontrigger_queue` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `customerId` int(11) unsigned NOT NULL,
+  `actionDate` bigint(20) unsigned DEFAULT NULL,
+  `actionId` int(11) unsigned DEFAULT NULL,
+  `creationDate` bigint(20) unsigned DEFAULT NULL,
+  `modificationDate` bigint(20) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `customerId` (`customerId`),
+  KEY `actionId` (`actionId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `plugin_cmf_actiontrigger_rules`;
+CREATE TABLE `plugin_cmf_actiontrigger_rules` (
+  `id` int(20) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL,
+  `description` text,
+  `active` tinyint(1) unsigned DEFAULT NULL,
+  `trigger` text COMMENT 'configuration of triggers',
+  `condition` text COMMENT 'configuration of conditions',
+  `creationDate` int(11) NOT NULL,
+  `modificationDate` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`),
+  KEY `active` (`active`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `plugin_cmf_activities`;
+CREATE TABLE `plugin_cmf_activities` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `customerId` int(11) unsigned NOT NULL,
+  `activityDate` bigint(20) unsigned DEFAULT NULL,
+  `type` varchar(255) NOT NULL,
+  `implementationClass` varchar(255) NOT NULL,
+  `o_id` int(11) unsigned DEFAULT NULL,
+  `a_id` varchar(255) DEFAULT NULL,
+  `attributes` blob,
+  `md5` char(32) DEFAULT NULL,
+  `creationDate` bigint(20) unsigned DEFAULT NULL,
+  `modificationDate` bigint(20) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `customerId` (`customerId`),
+  KEY `o_id` (`o_id`),
+  KEY `a_id` (`a_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `plugin_cmf_deletions`;
+CREATE TABLE `plugin_cmf_deletions` (
+  `id` int(11) unsigned NOT NULL,
+  `entityType` char(20) NOT NULL,
+  `type` varchar(255) NOT NULL,
+  `creationDate` bigint(20) unsigned DEFAULT NULL,
+  KEY `type` (`entityType`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `plugin_cmf_duplicates_false_positives`;
+CREATE TABLE `plugin_cmf_duplicates_false_positives` (
+  `row1` text NOT NULL,
+  `row2` text NOT NULL,
+  `row1Details` text NOT NULL,
+  `row2Details` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `plugin_cmf_duplicatesindex`;
+CREATE TABLE `plugin_cmf_duplicatesindex` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `duplicateData` text NOT NULL,
+  `duplicateDataMd5` varchar(32) DEFAULT NULL,
+  `fieldCombination` char(255) NOT NULL DEFAULT '',
+  `fieldCombinationCrc` int(11) unsigned NOT NULL,
+  `metaphone` varchar(50) DEFAULT NULL,
+  `soundex` varchar(50) DEFAULT NULL,
+  `creationDate` bigint(20) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `duplicateDataCrc` (`duplicateDataMd5`),
+  KEY `fieldCombination` (`fieldCombination`),
+  KEY `soundex` (`soundex`),
+  KEY `metaphone` (`metaphone`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `plugin_cmf_duplicatesindex_customers`;
+CREATE TABLE `plugin_cmf_duplicatesindex_customers` (
+  `duplicate_id` int(11) unsigned NOT NULL,
+  `customer_id` int(11) unsigned NOT NULL,
+  KEY `duplicate_id` (`duplicate_id`),
+  KEY `customer_id` (`customer_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `plugin_cmf_newsletter_queue`;
+CREATE TABLE `plugin_cmf_newsletter_queue` (
+  `customerId` int(11) unsigned NOT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `operation` varchar(20) DEFAULT NULL,
+  `modificationDate` bigint(20) DEFAULT NULL,
+  UNIQUE KEY `customerId` (`customerId`),
+  KEY `operation` (`operation`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `plugin_cmf_potential_duplicates`;
+CREATE TABLE `plugin_cmf_potential_duplicates` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `duplicateCustomerIds` varchar(255) NOT NULL DEFAULT '',
+  `fieldCombinations` text NOT NULL,
+  `declined` tinyint(1) DEFAULT NULL,
+  `modificationDate` bigint(20) unsigned DEFAULT NULL,
+  `creationDate` bigint(20) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `duplicateIds` (`duplicateCustomerIds`),
+  KEY `declined` (`declined`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `plugin_cmf_segment_assignment`;
+CREATE TABLE `plugin_cmf_segment_assignment` (
+  `elementId` int(11) NOT NULL DEFAULT '0',
+  `elementType` enum('document','asset','object') NOT NULL DEFAULT 'document',
+  `segments` text,
+  `breaksInheritance` tinyint(4) DEFAULT NULL,
+  PRIMARY KEY (`elementId`,`elementType`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `plugin_cmf_segment_assignment_index`;
+CREATE TABLE `plugin_cmf_segment_assignment_index` (
+  `elementId` int(11) NOT NULL DEFAULT '0',
+  `elementType` enum('document','asset','object') NOT NULL DEFAULT 'document',
+  `segmentId` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`elementId`,`elementType`,`segmentId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `plugin_cmf_segment_assignment_queue`;
+CREATE TABLE `plugin_cmf_segment_assignment_queue` (
+  `elementId` int(11) NOT NULL DEFAULT '0',
+  `elementType` enum('document','asset','object') NOT NULL DEFAULT 'document',
+  PRIMARY KEY (`elementId`,`elementType`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `plugin_cmf_segmentbuilder_changes_queue`;
+CREATE TABLE `plugin_cmf_segmentbuilder_changes_queue` (
+  `customerId` int(11) unsigned NOT NULL,
+  UNIQUE KEY `customerId` (`customerId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `plugin_cmf_sequence_numbers`;
+CREATE TABLE `plugin_cmf_sequence_numbers` (
+  `name` char(50) NOT NULL,
+  `number` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-assets.csv' INTO TABLE `assets`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-assets_metadata.csv' INTO TABLE `assets_metadata`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-bundle_advancedobjectsearch_savedsearch.csv' INTO TABLE `bundle_advancedobjectsearch_savedsearch`;
@@ -2729,6 +3353,8 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpe
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-keyvalue_translator_configuration.csv' INTO TABLE `keyvalue_translator_configuration`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-notes.csv' INTO TABLE `notes`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-notes_data.csv' INTO TABLE `notes_data`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_query_OAuth1Token_38.csv' INTO TABLE `object_brick_query_OAuth1Token_38`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_query_OAuth2Token_38.csv' INTO TABLE `object_brick_query_OAuth2Token_38`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_query_PaymentProviderDatatrans_9.csv' INTO TABLE `object_brick_query_PaymentProviderDatatrans_9`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_query_PaymentProviderPayPal_9.csv' INTO TABLE `object_brick_query_PaymentProviderPayPal_9`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_query_PaymentProviderQpay_9.csv' INTO TABLE `object_brick_query_PaymentProviderQpay_9`;
@@ -2751,6 +3377,8 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpe
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_query_tentGroundsheet_12.csv' INTO TABLE `object_brick_query_tentGroundsheet_12`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_query_tentSpecifications_12.csv' INTO TABLE `object_brick_query_tentSpecifications_12`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_query_weight_12.csv' INTO TABLE `object_brick_query_weight_12`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_store_OAuth1Token_38.csv' INTO TABLE `object_brick_store_OAuth1Token_38`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_store_OAuth2Token_38.csv' INTO TABLE `object_brick_store_OAuth2Token_38`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_store_PaymentProviderDatatrans_9.csv' INTO TABLE `object_brick_store_PaymentProviderDatatrans_9`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_store_PaymentProviderPayPal_9.csv' INTO TABLE `object_brick_store_PaymentProviderPayPal_9`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_store_PaymentProviderQpay_9.csv' INTO TABLE `object_brick_store_PaymentProviderQpay_9`;
@@ -2817,6 +3445,7 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpe
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_localized_query_35_en_GB.csv' INTO TABLE `object_localized_query_35_en_GB`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_localized_query_35_fr_FR.csv' INTO TABLE `object_localized_query_35_fr_FR`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_metadata_12.csv' INTO TABLE `object_metadata_12`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_metadata_41.csv' INTO TABLE `object_metadata_41`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_query_12.csv' INTO TABLE `object_query_12`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_query_14.csv' INTO TABLE `object_query_14`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_query_15.csv' INTO TABLE `object_query_15`;
@@ -2828,6 +3457,12 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpe
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_query_33.csv' INTO TABLE `object_query_33`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_query_34.csv' INTO TABLE `object_query_34`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_query_35.csv' INTO TABLE `object_query_35`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_query_36.csv' INTO TABLE `object_query_36`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_query_37.csv' INTO TABLE `object_query_37`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_query_38.csv' INTO TABLE `object_query_38`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_query_39.csv' INTO TABLE `object_query_39`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_query_40.csv' INTO TABLE `object_query_40`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_query_41.csv' INTO TABLE `object_query_41`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_query_7.csv' INTO TABLE `object_query_7`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_query_8.csv' INTO TABLE `object_query_8`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_query_9.csv' INTO TABLE `object_query_9`;
@@ -2842,6 +3477,12 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpe
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_relations_33.csv' INTO TABLE `object_relations_33`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_relations_34.csv' INTO TABLE `object_relations_34`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_relations_35.csv' INTO TABLE `object_relations_35`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_relations_36.csv' INTO TABLE `object_relations_36`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_relations_37.csv' INTO TABLE `object_relations_37`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_relations_38.csv' INTO TABLE `object_relations_38`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_relations_39.csv' INTO TABLE `object_relations_39`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_relations_40.csv' INTO TABLE `object_relations_40`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_relations_41.csv' INTO TABLE `object_relations_41`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_relations_7.csv' INTO TABLE `object_relations_7`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_relations_8.csv' INTO TABLE `object_relations_8`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_relations_9.csv' INTO TABLE `object_relations_9`;
@@ -2856,10 +3497,31 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpe
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_store_33.csv' INTO TABLE `object_store_33`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_store_34.csv' INTO TABLE `object_store_34`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_store_35.csv' INTO TABLE `object_store_35`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_store_36.csv' INTO TABLE `object_store_36`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_store_37.csv' INTO TABLE `object_store_37`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_store_38.csv' INTO TABLE `object_store_38`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_store_39.csv' INTO TABLE `object_store_39`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_store_40.csv' INTO TABLE `object_store_40`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_store_41.csv' INTO TABLE `object_store_41`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_store_7.csv' INTO TABLE `object_store_7`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_store_8.csv' INTO TABLE `object_store_8`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_store_9.csv' INTO TABLE `object_store_9`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-objects.csv' INTO TABLE `objects`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_actiontrigger_actions.csv' INTO TABLE `plugin_cmf_actiontrigger_actions`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_actiontrigger_queue.csv' INTO TABLE `plugin_cmf_actiontrigger_queue`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_actiontrigger_rules.csv' INTO TABLE `plugin_cmf_actiontrigger_rules`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_activities.csv' INTO TABLE `plugin_cmf_activities`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_deletions.csv' INTO TABLE `plugin_cmf_deletions`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_duplicates_false_positives.csv' INTO TABLE `plugin_cmf_duplicates_false_positives`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_duplicatesindex.csv' INTO TABLE `plugin_cmf_duplicatesindex`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_duplicatesindex_customers.csv' INTO TABLE `plugin_cmf_duplicatesindex_customers`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_newsletter_queue.csv' INTO TABLE `plugin_cmf_newsletter_queue`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_potential_duplicates.csv' INTO TABLE `plugin_cmf_potential_duplicates`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_segment_assignment.csv' INTO TABLE `plugin_cmf_segment_assignment`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_segment_assignment_index.csv' INTO TABLE `plugin_cmf_segment_assignment_index`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_segment_assignment_queue.csv' INTO TABLE `plugin_cmf_segment_assignment_queue`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_segmentbuilder_changes_queue.csv' INTO TABLE `plugin_cmf_segmentbuilder_changes_queue`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_sequence_numbers.csv' INTO TABLE `plugin_cmf_sequence_numbers`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-properties.csv' INTO TABLE `properties`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-quantityvalue_units.csv' INTO TABLE `quantityvalue_units`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-recyclebin.csv' INTO TABLE `recyclebin`;
@@ -2916,6 +3578,24 @@ CREATE ALGORITHM=UNDEFINED  VIEW `object_34` AS select `object_query_34`.`oo_id`
 
 DROP VIEW IF EXISTS object_35;
 CREATE ALGORITHM=UNDEFINED  VIEW `object_35` AS select `object_query_35`.`oo_id` AS `oo_id`,`object_query_35`.`oo_classId` AS `oo_classId`,`object_query_35`.`oo_className` AS `oo_className`,`object_query_35`.`taxEntryCombinationType` AS `taxEntryCombinationType`,`objects`.`o_id` AS `o_id`,`objects`.`o_parentId` AS `o_parentId`,`objects`.`o_type` AS `o_type`,`objects`.`o_key` AS `o_key`,`objects`.`o_path` AS `o_path`,`objects`.`o_index` AS `o_index`,`objects`.`o_published` AS `o_published`,`objects`.`o_creationDate` AS `o_creationDate`,`objects`.`o_modificationDate` AS `o_modificationDate`,`objects`.`o_userOwner` AS `o_userOwner`,`objects`.`o_userModification` AS `o_userModification`,`objects`.`o_classId` AS `o_classId`,`objects`.`o_className` AS `o_className` from (`object_query_35` join `objects` on((`objects`.`o_id` = `object_query_35`.`oo_id`)));
+
+DROP VIEW IF EXISTS object_36;
+CREATE ALGORITHM=UNDEFINED  VIEW `object_36` AS select `object_query_36`.`oo_id` AS `oo_id`,`object_query_36`.`oo_classId` AS `oo_classId`,`object_query_36`.`oo_className` AS `oo_className`,`object_query_36`.`name` AS `name`,`object_query_36`.`reference` AS `reference`,`object_query_36`.`calculated` AS `calculated`,`object_query_36`.`showAsFilter` AS `showAsFilter`,`object_query_36`.`exportNewsletterProvider` AS `exportNewsletterProvider`,`objects`.`o_id` AS `o_id`,`objects`.`o_parentId` AS `o_parentId`,`objects`.`o_type` AS `o_type`,`objects`.`o_key` AS `o_key`,`objects`.`o_path` AS `o_path`,`objects`.`o_index` AS `o_index`,`objects`.`o_published` AS `o_published`,`objects`.`o_creationDate` AS `o_creationDate`,`objects`.`o_modificationDate` AS `o_modificationDate`,`objects`.`o_userOwner` AS `o_userOwner`,`objects`.`o_userModification` AS `o_userModification`,`objects`.`o_classId` AS `o_classId`,`objects`.`o_className` AS `o_className` from (`object_query_36` join `objects` on((`objects`.`o_id` = `object_query_36`.`oo_id`)));
+
+DROP VIEW IF EXISTS object_37;
+CREATE ALGORITHM=UNDEFINED  VIEW `object_37` AS select `object_query_37`.`oo_id` AS `oo_id`,`object_query_37`.`oo_classId` AS `oo_classId`,`object_query_37`.`oo_className` AS `oo_className`,`object_query_37`.`name` AS `name`,`object_query_37`.`group__id` AS `group__id`,`object_query_37`.`group__type` AS `group__type`,`object_query_37`.`reference` AS `reference`,`object_query_37`.`calculated` AS `calculated`,`objects`.`o_id` AS `o_id`,`objects`.`o_parentId` AS `o_parentId`,`objects`.`o_type` AS `o_type`,`objects`.`o_key` AS `o_key`,`objects`.`o_path` AS `o_path`,`objects`.`o_index` AS `o_index`,`objects`.`o_published` AS `o_published`,`objects`.`o_creationDate` AS `o_creationDate`,`objects`.`o_modificationDate` AS `o_modificationDate`,`objects`.`o_userOwner` AS `o_userOwner`,`objects`.`o_userModification` AS `o_userModification`,`objects`.`o_classId` AS `o_classId`,`objects`.`o_className` AS `o_className` from (`object_query_37` join `objects` on((`objects`.`o_id` = `object_query_37`.`oo_id`)));
+
+DROP VIEW IF EXISTS object_38;
+CREATE ALGORITHM=UNDEFINED  VIEW `object_38` AS select `object_query_38`.`oo_id` AS `oo_id`,`object_query_38`.`oo_classId` AS `oo_classId`,`object_query_38`.`oo_className` AS `oo_className`,`object_query_38`.`provider` AS `provider`,`object_query_38`.`identifier` AS `identifier`,`object_query_38`.`profileData` AS `profileData`,`objects`.`o_id` AS `o_id`,`objects`.`o_parentId` AS `o_parentId`,`objects`.`o_type` AS `o_type`,`objects`.`o_key` AS `o_key`,`objects`.`o_path` AS `o_path`,`objects`.`o_index` AS `o_index`,`objects`.`o_published` AS `o_published`,`objects`.`o_creationDate` AS `o_creationDate`,`objects`.`o_modificationDate` AS `o_modificationDate`,`objects`.`o_userOwner` AS `o_userOwner`,`objects`.`o_userModification` AS `o_userModification`,`objects`.`o_classId` AS `o_classId`,`objects`.`o_className` AS `o_className` from (`object_query_38` join `objects` on((`objects`.`o_id` = `object_query_38`.`oo_id`)));
+
+DROP VIEW IF EXISTS object_39;
+CREATE ALGORITHM=UNDEFINED  VIEW `object_39` AS select `object_query_39`.`oo_id` AS `oo_id`,`object_query_39`.`oo_classId` AS `oo_classId`,`object_query_39`.`oo_className` AS `oo_className`,`object_query_39`.`name` AS `name`,`object_query_39`.`terms` AS `terms`,`objects`.`o_id` AS `o_id`,`objects`.`o_parentId` AS `o_parentId`,`objects`.`o_type` AS `o_type`,`objects`.`o_key` AS `o_key`,`objects`.`o_path` AS `o_path`,`objects`.`o_index` AS `o_index`,`objects`.`o_published` AS `o_published`,`objects`.`o_creationDate` AS `o_creationDate`,`objects`.`o_modificationDate` AS `o_modificationDate`,`objects`.`o_userOwner` AS `o_userOwner`,`objects`.`o_userModification` AS `o_userModification`,`objects`.`o_classId` AS `o_classId`,`objects`.`o_className` AS `o_className` from (`object_query_39` join `objects` on((`objects`.`o_id` = `object_query_39`.`oo_id`)));
+
+DROP VIEW IF EXISTS object_40;
+CREATE ALGORITHM=UNDEFINED  VIEW `object_40` AS select `object_query_40`.`oo_id` AS `oo_id`,`object_query_40`.`oo_classId` AS `oo_classId`,`object_query_40`.`oo_className` AS `oo_className`,`object_query_40`.`code` AS `code`,`object_query_40`.`attributeType` AS `attributeType`,`object_query_40`.`label` AS `label`,`object_query_40`.`link` AS `link`,`object_query_40`.`active` AS `active`,`object_query_40`.`utm_source` AS `utm_source`,`object_query_40`.`utm_medium` AS `utm_medium`,`object_query_40`.`utm_campaign` AS `utm_campaign`,`object_query_40`.`utm_term` AS `utm_term`,`object_query_40`.`utm_content` AS `utm_content`,`object_query_40`.`attributes` AS `attributes`,`objects`.`o_id` AS `o_id`,`objects`.`o_parentId` AS `o_parentId`,`objects`.`o_type` AS `o_type`,`objects`.`o_key` AS `o_key`,`objects`.`o_path` AS `o_path`,`objects`.`o_index` AS `o_index`,`objects`.`o_published` AS `o_published`,`objects`.`o_creationDate` AS `o_creationDate`,`objects`.`o_modificationDate` AS `o_modificationDate`,`objects`.`o_userOwner` AS `o_userOwner`,`objects`.`o_userModification` AS `o_userModification`,`objects`.`o_classId` AS `o_classId`,`objects`.`o_className` AS `o_className` from (`object_query_40` join `objects` on((`objects`.`o_id` = `object_query_40`.`oo_id`)));
+
+DROP VIEW IF EXISTS object_41;
+CREATE ALGORITHM=UNDEFINED  VIEW `object_41` AS select `object_query_41`.`oo_id` AS `oo_id`,`object_query_41`.`oo_classId` AS `oo_classId`,`object_query_41`.`oo_className` AS `oo_className`,`object_query_41`.`active` AS `active`,`object_query_41`.`gender` AS `gender`,`object_query_41`.`firstname` AS `firstname`,`object_query_41`.`lastname` AS `lastname`,`object_query_41`.`street` AS `street`,`object_query_41`.`zip` AS `zip`,`object_query_41`.`city` AS `city`,`object_query_41`.`countryCode` AS `countryCode`,`object_query_41`.`email` AS `email`,`object_query_41`.`phone` AS `phone`,`object_query_41`.`manualSegments` AS `manualSegments`,`object_query_41`.`calculatedSegments` AS `calculatedSegments`,`object_query_41`.`idEncoded` AS `idEncoded`,`object_query_41`.`password` AS `password`,`object_query_41`.`ssoIdentities` AS `ssoIdentities`,`objects`.`o_id` AS `o_id`,`objects`.`o_parentId` AS `o_parentId`,`objects`.`o_type` AS `o_type`,`objects`.`o_key` AS `o_key`,`objects`.`o_path` AS `o_path`,`objects`.`o_index` AS `o_index`,`objects`.`o_published` AS `o_published`,`objects`.`o_creationDate` AS `o_creationDate`,`objects`.`o_modificationDate` AS `o_modificationDate`,`objects`.`o_userOwner` AS `o_userOwner`,`objects`.`o_userModification` AS `o_userModification`,`objects`.`o_classId` AS `o_classId`,`objects`.`o_className` AS `o_className` from (`object_query_41` join `objects` on((`objects`.`o_id` = `object_query_41`.`oo_id`)));
 
 DROP VIEW IF EXISTS object_7;
 CREATE ALGORITHM=UNDEFINED  VIEW `object_7` AS select `object_query_7`.`oo_id` AS `oo_id`,`object_query_7`.`oo_classId` AS `oo_classId`,`object_query_7`.`oo_className` AS `oo_className`,`object_query_7`.`pageLimit` AS `pageLimit`,`object_query_7`.`ajaxReload` AS `ajaxReload`,`object_query_7`.`limitOnFirstLoad` AS `limitOnFirstLoad`,`object_query_7`.`defaultOrderByInheritance` AS `defaultOrderByInheritance`,`object_query_7`.`conditionsInheritance` AS `conditionsInheritance`,`object_query_7`.`filtersInheritance` AS `filtersInheritance`,`object_query_7`.`crossSellingCategory__id` AS `crossSellingCategory__id`,`object_query_7`.`crossSellingCategory__type` AS `crossSellingCategory__type`,`object_query_7`.`similarityFieldsInheritance` AS `similarityFieldsInheritance`,`object_query_7`.`infiniteScroll` AS `infiniteScroll`,`object_query_7`.`orderByAsc` AS `orderByAsc`,`object_query_7`.`orderByDesc` AS `orderByDesc`,`objects`.`o_id` AS `o_id`,`objects`.`o_parentId` AS `o_parentId`,`objects`.`o_type` AS `o_type`,`objects`.`o_key` AS `o_key`,`objects`.`o_path` AS `o_path`,`objects`.`o_index` AS `o_index`,`objects`.`o_published` AS `o_published`,`objects`.`o_creationDate` AS `o_creationDate`,`objects`.`o_modificationDate` AS `o_modificationDate`,`objects`.`o_userOwner` AS `o_userOwner`,`objects`.`o_userModification` AS `o_userModification`,`objects`.`o_classId` AS `o_classId`,`objects`.`o_className` AS `o_className` from (`object_query_7` join `objects` on((`objects`.`o_id` = `object_query_7`.`oo_id`)));

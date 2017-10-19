@@ -29,3 +29,23 @@
 29	order-agent	12206	object	1501506249	8	itemCancel	\N
 30	order-agent	12216	object	1501590538	8	itemComplaint	\N
 31	order-agent	12216	object	1501590544	8	itemCancel	\N
+32	cmf.SegmentManager	12260	object	1507745187	10	Segment(s) added (StateSegmentBuilder)	/customermanagement/segments/calculated/State/AT/AT - Salzburg
+33	cmf.SegmentManager	12322	object	1507836424	\N	Segment(s) added (StateSegmentBuilder)	/customermanagement/segments/calculated/State/AT/AT - Salzburg
+34	cmf.SegmentManager	12350	object	1508403311	\N	Segment(s) added (StateSegmentBuilder)	/customermanagement/segments/calculated/State/AT/AT - Salzburg
+35	cmf.SegmentManager	12356	object	1508403516	\N	Segment(s) added (StateSegmentBuilder)	/customermanagement/segments/calculated/State/AT/AT - Salzburg
+36	cmf.SegmentManager	12356	object	1508403929	10	Segment(s) added (GenderSegmentBuilder)	/customermanagement/segments/calculated/Gender/male
+37	cmf.SegmentManager	12356	object	1508405676	10	Segment(s) added (ProductCategorySegmentBuilder)	/customermanagement/segments/calculated/InterestCategories/Outdoor
+38	cmf.SegmentManager	12372	object	1508406630	\N	Segment(s) added (GenderSegmentBuilder)	/customermanagement/segments/calculated/Gender/not-set
+39	cmf.SegmentManager	12372	object	1508406660	\N	Segment(s) added (StateSegmentBuilder)	/customermanagement/segments/calculated/State/DE/DE - Bayern
+40	cmf.SegmentManager	12372	object	1508406687	10	Segment(s) removed (GenderSegmentBuilder)	/customermanagement/segments/calculated/Gender/not-set
+41	cmf.SegmentManager	12372	object	1508406687	10	Segment(s) added (GenderSegmentBuilder)	/customermanagement/segments/calculated/Gender/female
+42	cmf.SegmentManager	12372	object	1508406687	10	Segment(s) added (ProductCategorySegmentBuilder)	/customermanagement/segments/calculated/InterestCategories/Football
+43	cmf.SegmentManager	12356	object	1508407063	\N	Segment(s) added (ProductCategorySegmentBuilder)	/customermanagement/segments/calculated/InterestCategories/Handball
+44	cmf.SegmentManager	12372	object	1508407354	\N	Segment(s) added (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/Regular Customer
+45	cmf.SegmentManager	12356	object	1508407679	\N	Segment(s) added (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/VIP Customer
+46	cmf.SegmentManager	12395	object	1508407793	\N	Segment(s) added (GenderSegmentBuilder)	/customermanagement/segments/calculated/Gender/not-set
+47	cmf.SegmentManager	12395	object	1508407831	\N	Segment(s) added (StateSegmentBuilder)	/customermanagement/segments/calculated/State/DE/DE - Bayern
+48	cmf.SegmentManager	12395	object	1508407840	\N	Segment(s) added (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/New Customer
+49	cmf.SegmentManager	12395	object	1508408085	10	Segment(s) removed (GenderSegmentBuilder)	/customermanagement/segments/calculated/Gender/not-set
+50	cmf.SegmentManager	12395	object	1508408085	10	Segment(s) added (GenderSegmentBuilder)	/customermanagement/segments/calculated/Gender/female
+51	cmf.SegmentManager	12395	object	1508408085	10	Segment(s) added (ProductCategorySegmentBuilder)	/customermanagement/segments/calculated/InterestCategories/Volleyball

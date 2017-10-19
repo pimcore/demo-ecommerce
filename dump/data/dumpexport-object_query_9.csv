@@ -97,3 +97,23 @@ pimcore tax|5%|1.9752
 pimcore tax|5%|0.8932
 12242	9	OnlineShopOrder	ord_598872358b860	50.5600	1502114357	,12243,	\N	\N	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_5988722c13237	\N	EUR	\N	\N	Söllheimerstraße, 16	5020	AT	peter.hugo@pimcore.com	\N	Söllheimerstraße, 16	5020	Salzburg	AT	\N	Salzburg	44.6600	Peter	Hugo	Hugo	Peter	\N	35.7280	40.4480	MwSt 20%|20%|8.0896\
 pimcore tax|5%|2.0224
+12273	9	OnlineShopOrder	ord_59de5f6d37911	50.5600	1507745645	,12274,	\N	\N	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_59de5f20db6cd	\N	EUR	\N	\N	Söllheimerstraße, 16	5020	AT	peter.hugo@pimcore.com	\N	Söllheimerstraße, 16	5020	Salzburg	AT	\N	Salzburg	44.6600	Peter	Hugo	Hugo	Peter	\N	35.7280	40.4480	MwSt 20%|20%|8.0896\
+pimcore tax|5%|2.0224
+12336	9	OnlineShopOrder	ord_59e07e0d8405b	95.8500	1507884557	,12337,	\N	\N	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_59e07e029bba6	\N	EUR	\N	pimcore	Söllheimerstraße, 16	5020	AT	peter.hugo@pimcore.com	pimcore	Söllheimerstraße, 16	5020	Salzburg	AT	\N	Salzburg	89.9500	Peter	Hugo	Hugo	Peter	\N	71.9600	76.6800	MwSt 20%|20%|15.3360\
+pimcore tax|5%|3.8340
+12358	9	OnlineShopOrder	ord_59e8693c02e24	41.8550	1508403516	,12359,	12356	object	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_59e8692666fa8	\N	EUR	\N	Pimcore GmbH	Söllheimerstraße, 16	5020	AT	peter.hugo@pimcore.com	Pimcore GmbH	Söllheimerstraße, 16	5020	Salzburg	AT	\N	Salzburg	35.9550	Peter	Hugo	Hugo	Peter	\N	28.7640	33.4840	MwSt 20%|20%|6.6968\
+pimcore tax|5%|1.6742
+12368	9	OnlineShopOrder	ord_59e872ae8207f	85.8500	1508405934	,12369,	12356	object	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_59e872a5a9c03	\N	EUR	\N	\N	Söllheimerstraße, 16	5020	AT	peter.hugo@pimcore.com	\N	Söllheimerstraße, 16	5020	Salzburg	AT	\N	Salzburg	79.9500	Peter	Hugo	Hugo	Peter	\N	63.9600	68.6800	MwSt 20%|20%|13.7360\
+pimcore tax|5%|3.4340
+12374	9	OnlineShopOrder	ord_59e87583ac150	50.5600	1508406659	,12375,	12372	object	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_59e87556bc9c2	\N	EUR	\N	\N	mystreet 88	80539	DE	annahuber1492@gmail.com	\N	mystreet 88	80539	Munich	DE	\N	Munich	44.6600	Anna	Huber	Huber	Anna	\N	35.7280	40.4480	MwSt 20%|20%|8.0896\
+pimcore tax|5%|2.0224
+12385	9	OnlineShopOrder	ord_59e876d351e92	66.6300	1508406995	,12386,	12356	object	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_59e872ba14394	\N	EUR	\N	\N	Söllheimerstraße, 16	5020	AT	peter.hugo@pimcore.com	\N	Söllheimerstraße, 16	5020	Salzburg	AT	\N	Salzburg	66.6300	Peter	Hugo	Hugo	Peter	\N	53.3040	53.3040	MwSt 20%|20%|10.6608\
+pimcore tax|5%|2.6652
+12388	9	OnlineShopOrder	ord_59e877c4bb341	84.4600	1508407236	,12389,	12372	object	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_59e8758edcf29	\N	EUR	\N	\N	mystreet 88	80539	DE	annahuber1492@gmail.com	\N	mystreet 88	80539	Munich	DE	\N	Munich	78.5600	Anna	Huber	Huber	Anna	\N	62.8480	67.5680	MwSt 20%|20%|13.5136\
+pimcore tax|5%|3.3784
+12390	9	OnlineShopOrder	ord_59e8791846f45	85.7300	1508407576	,12391,	12372	object	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_59e8783cacee0	\N	EUR	\N	\N	mystreet 88	80539	DE	annahuber1492@gmail.com	\N	mystreet 88	80539	Munich	DE	\N	Munich	79.8300	Anna	Huber	Huber	Anna	\N	63.8640	68.5840	MwSt 20%|20%|13.7168\
+pimcore tax|5%|3.4292
+12392	9	OnlineShopOrder	ord_59e87970d5d49	51.8500	1508407664	,12393,	12356	object	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_59e876ded4ea4	\N	EUR	\N	\N	Söllheimerstraße, 16	5020	AT	peter.hugo@pimcore.com	\N	Söllheimerstraße, 16	5020	Salzburg	AT	\N	Salzburg	45.9500	Peter	Hugo	Hugo	Peter	\N	36.7600	41.4800	MwSt 20%|20%|8.2960\
+pimcore tax|5%|2.0740
+12397	9	OnlineShopOrder	ord_59e87a170ce54	94.4900	1508407831	,12398,	12395	object	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_59e879d006453	\N	EUR	\N	\N	mystreat 89	80539	DE	twitter.anna.huber@pimcore.com	\N	mystreat 89	80539	Munich	DE	\N	Munich	88.5900	Anna	Hubers	Hubers	Anna	\N	70.8720	75.5920	MwSt 20%|20%|15.1184\
+pimcore tax|5%|3.7796

@@ -1,24 +1,72 @@
-Back to top	de_AT		1491508446	1491508446
-Back to top	en_GB		1491508446	1491508446
-Back to top	fr_FR		1491508446	1491508446
-Home	de_AT		1491508453	1491508453
-Home	en_GB		1491508453	1491508453
-Home	fr_FR		1491508453	1491508453
-Start Payment now	de_AT		1491546356	1491546356
-Start Payment now	en_GB		1491546356	1491546356
-Start Payment now	fr_FR		1491546356	1491546356
-articleno	de_AT		1477912880	1477912880
-articleno	en_GB		1477912880	1477912880
-articleno	fr_FR		1477912880	1477912880
-attr.Benefits	de_AT		1496911277	1496911277
-attr.Benefits	en_GB		1496911277	1496911277
-attr.Benefits	fr_FR		1496911277	1496911277
-attr.Is main seam taped?	de_AT		1491508556	1491508556
-attr.Is main seam taped?	en_GB		1491508556	1491508556
-attr.Is main seam taped?	fr_FR		1491508556	1491508556
-attr.TentSpecs	de_AT		1491508556	1491508556
-attr.TentSpecs	en_GB		1491508556	1491508556
-attr.TentSpecs	fr_FR		1491508556	1491508556
+Array	de_AT		1507803240	1507803240
+Array	en_GB		1507803240	1507803240
+Array	fr_FR		1507803240	1507803240
+Back to top	de_AT		1507802650	1507802650
+Back to top	en_GB		1507802650	1507802650
+Back to top	fr_FR		1507802650	1507802650
+City	de_AT		1507803916	1507803916
+City	en_GB		1507803916	1507803916
+City	fr_FR		1507803916	1507803916
+Company	de_AT		1507803878	1507803878
+Company	en_GB		1507803878	1507803878
+Company	fr_FR		1507803878	1507803878
+Country	de_AT		1507803878	1507803878
+Country	en_GB		1507803878	1507803878
+Country	fr_FR		1507803878	1507803878
+E-Mail	de_AT		1507803875	1507803875
+E-Mail	en_GB		1507803875	1507803875
+E-Mail	fr_FR		1507803875	1507803875
+First Name	de_AT		1507832832	1507832832
+First Name	en_GB		1507832832	1507832832
+First Name	fr_FR		1507832832	1507832832
+Firstname	de_AT		1507803878	1507803878
+Firstname	en_GB		1507803878	1507803878
+Firstname	fr_FR		1507803878	1507803878
+Home	de_AT		1507802650	1507802650
+Home	en_GB		1507802650	1507802650
+Home	fr_FR		1507802650	1507802650
+Last Name	de_AT		1507832832	1507832832
+Last Name	en_GB		1507832832	1507832832
+Last Name	fr_FR		1507832832	1507832832
+Lastname	de_AT		1507803878	1507803878
+Lastname	en_GB		1507803878	1507803878
+Lastname	fr_FR		1507803878	1507803878
+Login	de_AT		1507802650	1507802650
+Login	en_GB		1507802650	1507802650
+Login	fr_FR		1507802650	1507802650
+Password	de_AT		1508402498	1508402498
+Password	en_GB		1508402498	1508402498
+Password	fr_FR		1508402498	1508402498
+Register	de_AT		1507832833	1507832833
+Register	en_GB		1507832833	1507832833
+Register	fr_FR		1507832833	1507832833
+Start Payment now	de_AT		1507832759	1507832759
+Start Payment now	en_GB		1507832759	1507832759
+Start Payment now	fr_FR		1507832759	1507832759
+Street	de_AT		1507837985	1507837985
+Street	en_GB		1507837985	1507837985
+Street	fr_FR		1507837985	1507837985
+Zip	de_AT		1507803928	1507803928
+Zip	en_GB		1507803928	1507803928
+Zip	fr_FR		1507803928	1507803928
+account.connect-sso-profiles	de_AT		1507837535	1507837812
+account.connect-sso-profiles	en_GB	Connect SSO Profiles	1507837535	1507837812
+account.connect-sso-profiles	fr_FR		1507837535	1507837812
+account.data	de_AT		1507837507	1507837814
+account.data	en_GB	Data	1507837507	1507837814
+account.data	fr_FR		1507837507	1507837814
+account.welcome	de_AT		1507837091	1507837121
+account.welcome	en_GB	Welcome %s %s!	1507837091	1507837121
+account.welcome	fr_FR		1507837091	1507837121
+articleno	de_AT		1507832781	1507832781
+articleno	en_GB		1507832781	1507832781
+articleno	fr_FR		1507832781	1507832781
+attr.Benefits	de_AT		1508225796	1508225796
+attr.Benefits	en_GB		1508225796	1508225796
+attr.Benefits	fr_FR		1508225796	1508225796
+attr.Features	de_AT		1508225796	1508225796
+attr.Features	en_GB		1508225796	1508225796
+attr.Features	fr_FR		1508225796	1508225796
 attr.apparel	de_AT		0	1380704607
 attr.apparel	en_GB	Apparel	0	1380704607
 attr.apparel	fr_FR		0	1380704607
@@ -232,9 +280,6 @@ attr.width	fr_FR		0	1380708219
 attr.zips	de_AT		0	1380704662
 attr.zips	en_GB	Zips	0	1380704662
 attr.zips	fr_FR		0	1380704662
-back to top	de_AT		1477910616	1477910616
-back to top	en_GB		1477910616	1477910616
-back to top	fr_FR		1477910616	1477910616
 cart.checkoutnow	de_AT	Jetzt Bestellen	0	1371628264
 cart.checkoutnow	en_GB	Checkout now	0	1371628264
 cart.checkoutnow	fr_FR		0	1371628264
@@ -364,24 +409,9 @@ checkout.error.confirm.failure	de_AT		1460552553	1460552587
 checkout.error.confirm.failure	en_GB	Failure during payment	1460552553	1460552587
 checkout.error.confirm.failure	fr_FR		1460552553	1460552587
 checkout.error.confirm.failure	modificati	1460553	1460552553	1460552587
-checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1619978945-1~12180 -> current internal status id = payment_1995259916-1~12180	de_AT		1500015745	1500015745
-checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1619978945-1~12180 -> current internal status id = payment_1995259916-1~12180	en_GB		1500015745	1500015745
-checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1619978945-1~12180 -> current internal status id = payment_1995259916-1~12180	fr_FR		1500015745	1500015745
-checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1708146372-1~12174 -> current internal status id = payment_208541261-1~12174	de_AT		1500015294	1500015294
-checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1708146372-1~12174 -> current internal status id = payment_208541261-1~12174	en_GB		1500015294	1500015294
-checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1708146372-1~12174 -> current internal status id = payment_208541261-1~12174	fr_FR		1500015294	1500015294
-checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1708146372-2~12174 -> current internal status id = payment_208541261-2~12174	de_AT		1500015331	1500015331
-checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1708146372-2~12174 -> current internal status id = payment_208541261-2~12174	en_GB		1500015331	1500015331
-checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1708146372-2~12174 -> current internal status id = payment_208541261-2~12174	fr_FR		1500015331	1500015331
-checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_2464075641-1~12176 -> current internal status id = payment_2340483418-1~12176	de_AT		1500015391	1500015391
-checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_2464075641-1~12176 -> current internal status id = payment_2340483418-1~12176	en_GB		1500015391	1500015391
-checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_2464075641-1~12176 -> current internal status id = payment_2340483418-1~12176	fr_FR		1500015391	1500015391
-checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_2547751755-1~12178 -> current internal status id = payment_1873982695-1~12178	de_AT		1500015430	1500015430
-checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_2547751755-1~12178 -> current internal status id = payment_1873982695-1~12178	en_GB		1500015430	1500015430
-checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_2547751755-1~12178 -> current internal status id = payment_1873982695-1~12178	fr_FR		1500015430	1500015430
-checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_55709322-1~12150 -> current internal status id = payment_3384999107-1~12150	de_AT		1499843277	1499843277
-checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_55709322-1~12150 -> current internal status id = payment_3384999107-1~12150	en_GB		1499843277	1499843277
-checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_55709322-1~12150 -> current internal status id = payment_3384999107-1~12150	fr_FR		1499843277	1499843277
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1417386630-2~12336 -> current internal status id = 	de_AT		1507884599	1507884599
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1417386630-2~12336 -> current internal status id = 	en_GB		1507884599	1507884599
+checkout.error.confirm.order fingerprint changed since start payment. Old internal status = payment_1417386630-2~12336 -> current internal status id = 	fr_FR		1507884599	1507884599
 checkout.error.confirm.terms	de_AT		0	1371636896
 checkout.error.confirm.terms	en_GB	Please confirm the terms	0	1371636896
 checkout.error.confirm.terms	fr_FR		0	1371636896
@@ -470,6 +500,9 @@ checkout.steps.overview	fr_FR		0	1371633760
 checkout.steps.payment	de_AT		0	1375365910
 checkout.steps.payment	en_GB	Payment	0	1375365910
 checkout.steps.payment	fr_FR		0	1375365910
+checkout.street	de_AT		1507802650	1507837889
+checkout.street	en_GB	Street	1507802650	1507837889
+checkout.street	fr_FR		1507802650	1507837889
 checkout.submit-address	creationDa	1460552	1460552442	1460552458
 checkout.submit-address	de_AT		1460552442	1460552458
 checkout.submit-address	en_GB	Submit Address	1460552442	1460552458
@@ -492,6 +525,9 @@ email.cart	fr_FR		0	1380723790
 email.contact-data	de_AT		0	1380723795
 email.contact-data	en_GB	Contact Data	0	1380723795
 email.contact-data	fr_FR		0	1380723795
+general.account	de_AT		1507712961	1507713159
+general.account	en_GB	Account	1507712961	1507713159
+general.account	fr_FR		1507712961	1507713159
 general.checkout	creationDa	1460553	1460552802	1460552814
 general.checkout	de_AT		1460552802	1460552814
 general.checkout	en_GB	Checkout	1460552802	1460552814
@@ -502,18 +538,18 @@ general.continue-shopping	de_AT		1460552422	1460552434
 general.continue-shopping	en_GB	Continue Shopping	1460552422	1460552434
 general.continue-shopping	fr_FR		1460552422	1460552434
 general.continue-shopping	modificati	1460552	1460552422	1460552434
-general.filters.Category	de_AT		1491483191	1491483191
-general.filters.Category	en_GB		1491483191	1491483191
-general.filters.Category	fr_FR		1491483191	1491483191
+general.filters.Category	de_AT		1491483191	1507728446
+general.filters.Category	en_GB	Category	1491483191	1507728446
+general.filters.Category	fr_FR		1491483191	1507728446
 general.filters.Color	de_AT		1491483191	1501500411
 general.filters.Color	en_GB	Color	1491483191	1501500411
 general.filters.Color	fr_FR		1491483191	1501500411
 general.filters.Gender	de_AT		1491508464	1501571686
 general.filters.Gender	en_GB	Gender	1491508464	1501571686
 general.filters.Gender	fr_FR		1491508464	1501571686
-general.filters.Technologies	de_AT		1491547798	1491547798
-general.filters.Technologies	en_GB		1491547798	1491547798
-general.filters.Technologies	fr_FR		1491547798	1491547798
+general.filters.Technologies	de_AT		1491547798	1507728448
+general.filters.Technologies	en_GB	Technologies	1491547798	1507728448
+general.filters.Technologies	fr_FR		1491547798	1507728448
 general.filters.all	creationDa	1460032	1460032257	1460032623
 general.filters.all	de_AT		1460032257	1460032623
 general.filters.all	en_GB	Show all	1460032257	1460032623
@@ -653,36 +689,36 @@ general.filters.weight	fr_FR		0	1380716921
 general.filters.width	de_AT		0	1380717148
 general.filters.width	en_GB	Width	0	1380717148
 general.filters.width	fr_FR		0	1380717148
+general.logged-in-as	de_AT		1507728431	1507728459
+general.logged-in-as	en_GB	Logged In as	1507728431	1507728459
+general.logged-in-as	fr_FR		1507728431	1507728459
 general.login	de_AT		0	1378811691
 general.login	en_GB	Login	0	1378811691
 general.login	fr_FR		0	1378811691
 general.login.btn	de_AT		0	1378811694
 general.login.btn	en_GB	Login	0	1378811694
 general.login.btn	fr_FR		0	1378811694
-general.login.btn.createaccount	de_AT		0	1380704704
-general.login.btn.createaccount	en_GB	Create Account	0	1380704704
-general.login.btn.createaccount	fr_FR		0	1380704704
-general.login.createaccount.btn	de_AT		0	1380704718
-general.login.createaccount.btn	en_GB	Create Account	0	1380704718
-general.login.createaccount.btn	fr_FR		0	1380704718
-general.login.createaccount.lnk.existingaccount	de_AT		0	1380704747
-general.login.createaccount.lnk.existingaccount	en_GB	Use existing Account	0	1380704747
-general.login.createaccount.lnk.existingaccount	fr_FR		0	1380704747
-general.login.createaccount.ttl	de_AT		0	1380704740
-general.login.createaccount.ttl	en_GB	Create Account	0	1380704740
-general.login.createaccount.ttl	fr_FR		0	1380704740
 general.login.ln.forgotpassword	de_AT		0	1380704733
 general.login.ln.forgotpassword	en_GB	Forgot Password	0	1380704733
 general.login.ln.forgotpassword	fr_FR		0	1380704733
 general.login.ttl	de_AT		0	1380704735
 general.login.ttl	en_GB	Login	0	1380704735
 general.login.ttl	fr_FR		0	1380704735
+general.logout	de_AT		1507728431	1507728464
+general.logout	en_GB	Logout	1507728431	1507728464
+general.logout	fr_FR		1507728431	1507728464
+general.my-account	de_AT		1507728406	1507728467
+general.my-account	en_GB	My Account	1507728406	1507728467
+general.my-account	fr_FR		1507728406	1507728467
 general.mycart	de_AT		0	1379419472
 general.mycart	en_GB	My Cart	0	1379419472
 general.mycart	fr_FR		0	1379419472
 general.password	de_AT		0	1379419476
 general.password	en_GB	Password	0	1379419476
 general.password	fr_FR		0	1379419476
+general.register	de_AT		1507832832	1507837921
+general.register	en_GB	Register	1507832832	1507837921
+general.register	fr_FR		1507832832	1507837921
 general.search.btn	de_AT	Suchen	0	1378811658
 general.search.btn	en_GB	Search	0	1378811658
 general.search.btn	fr_FR		0	1378811658
@@ -692,9 +728,12 @@ general.search.placeholder	fr_FR		0	1378811667
 general.wishlist	de_AT		0	1379419486
 general.wishlist	en_GB	Wishlist	0	1379419486
 general.wishlist	fr_FR		0	1379419486
-home	de_AT		1477910616	1477910616
-home	en_GB		1477910616	1477910616
-home	fr_FR		1477910616	1477910616
+login.no-account	de_AT		1507811191	1507837826
+login.no-account	en_GB	No Account?	1507811191	1507837826
+login.no-account	fr_FR		1507811191	1507837826
+login.register-now	de_AT		1507811191	1507837836
+login.register-now	en_GB	Register Now!	1507811191	1507837836
+login.register-now	fr_FR		1507811191	1507837836
 newsletter signup	de_AT		0	1380704923
 newsletter signup	en_GB	Signup	0	1380704923
 newsletter signup	fr_FR		0	1380704923
@@ -809,9 +848,9 @@ online-shop.back-office.order.set-status.item	fr_FR		1431514573	1431514801
 online-shop.back-office.save	de_AT		1431514815	1431514898
 online-shop.back-office.save	en_GB	Save	1431514815	1431514898
 online-shop.back-office.save	fr_FR		1431514815	1431514898
-optionvalue.Orange	de_AT		1491508464	1491508464
-optionvalue.Orange	en_GB		1491508464	1491508464
-optionvalue.Orange	fr_FR		1491508464	1491508464
+optionvalue.Orange	de_AT		1507883995	1507883995
+optionvalue.Orange	en_GB		1507883995	1507883995
+optionvalue.Orange	fr_FR		1507883995	1507883995
 optionvalue.aqua	de_AT		0	1380705106
 optionvalue.aqua	en_GB	Aqua	0	1380705106
 optionvalue.aqua	fr_FR		0	1380705106
@@ -1549,12 +1588,6 @@ page.next	fr_FR		0	1380717165
 page.previous	de_AT		0	1380717166
 page.previous	en_GB	Prev	0	1380717166
 page.previous	fr_FR		0	1380717166
-payment-method-prepayment.agb	de_AT		1477914148	1477914148
-payment-method-prepayment.agb	en_GB		1477914148	1477914148
-payment-method-prepayment.agb	fr_FR		1477914148	1477914148
-payment-method-prepayment.dataprotection	de_AT		1477914148	1477914148
-payment-method-prepayment.dataprotection	en_GB		1477914148	1477914148
-payment-method-prepayment.dataprotection	fr_FR		1477914148	1477914148
 payment.complete.state.failure	de_AT		1477915410	1477915424
 payment.complete.state.failure	en_GB	Payment not successful!	1477915410	1477915424
 payment.complete.state.failure	fr_FR		1477915410	1477915424
@@ -1585,18 +1618,6 @@ payment.wirecard-seamless.invoice.age-error	fr_FR		1464962411	1470816965
 payment.wirecard-seamless.invoice.birthday-error	de_AT		1477914148	1477920998
 payment.wirecard-seamless.invoice.birthday-error	en_GB	Day of Birth not valid	1477914148	1477920998
 payment.wirecard-seamless.invoice.birthday-error	fr_FR		1477914148	1477920998
-payment.wirecard-seamless.pay-now.INVOICE	de_AT		1500026506	1500026506
-payment.wirecard-seamless.pay-now.INVOICE	en_GB		1500026506	1500026506
-payment.wirecard-seamless.pay-now.INVOICE	fr_FR		1500026506	1500026506
-payment.wirecard-seamless.pay-now.INVOICE.birthdate	de_AT		1500026506	1500026506
-payment.wirecard-seamless.pay-now.INVOICE.birthdate	en_GB		1500026506	1500026506
-payment.wirecard-seamless.pay-now.INVOICE.birthdate	fr_FR		1500026506	1500026506
-payment.wirecard-seamless.pay-now.PAYPAL	de_AT		1500026505	1500026505
-payment.wirecard-seamless.pay-now.PAYPAL	en_GB		1500026505	1500026505
-payment.wirecard-seamless.pay-now.PAYPAL	fr_FR		1500026505	1500026505
-payment.wirecard-seamless.pay-now.SOFORTUEBERWEISUNG	de_AT		1500026505	1500026505
-payment.wirecard-seamless.pay-now.SOFORTUEBERWEISUNG	en_GB		1500026505	1500026505
-payment.wirecard-seamless.pay-now.SOFORTUEBERWEISUNG	fr_FR		1500026505	1500026505
 payment.wirecard-seamless.pay-now.ccard	de_AT	Mit Kreditkarte bezahlen	1444638309	1470816974
 payment.wirecard-seamless.pay-now.ccard	en_GB	Pay by credit-card	1444638309	1470816974
 payment.wirecard-seamless.pay-now.ccard	fr_FR		1444638309	1470816974
@@ -1615,39 +1636,9 @@ payment.wirecard-seamless.pay-now.prepayment	fr_FR		1470649968	1470817220
 payment.wirecard-seamless.pay-now.sofortueberweisung	de_AT	Mit Sofortüberweisung bezahlen	1444638309	1470817024
 payment.wirecard-seamless.pay-now.sofortueberweisung	en_GB	Checkout with Sofortuberweisung	1444638309	1470817024
 payment.wirecard-seamless.pay-now.sofortueberweisung	fr_FR		1444638309	1470817024
-payment.wirecard-seamless.payment-method.CCARD	de_AT		1500026505	1500026505
-payment.wirecard-seamless.payment-method.CCARD	en_GB		1500026505	1500026505
-payment.wirecard-seamless.payment-method.CCARD	fr_FR		1500026505	1500026505
-payment.wirecard-seamless.payment-method.INVOICE	de_AT		1500026505	1500026505
-payment.wirecard-seamless.payment-method.INVOICE	en_GB		1500026505	1500026505
-payment.wirecard-seamless.payment-method.INVOICE	fr_FR		1500026505	1500026505
-payment.wirecard-seamless.payment-method.PAYPAL	de_AT		1500026505	1500026505
-payment.wirecard-seamless.payment-method.PAYPAL	en_GB		1500026505	1500026505
-payment.wirecard-seamless.payment-method.PAYPAL	fr_FR		1500026505	1500026505
-payment.wirecard-seamless.payment-method.PREPAYMENT	de_AT		1500026505	1500026505
-payment.wirecard-seamless.payment-method.PREPAYMENT	en_GB		1500026505	1500026505
-payment.wirecard-seamless.payment-method.PREPAYMENT	fr_FR		1500026505	1500026505
-payment.wirecard-seamless.payment-method.SOFORTUEBERWEISUNG	de_AT		1500026505	1500026505
-payment.wirecard-seamless.payment-method.SOFORTUEBERWEISUNG	en_GB		1500026505	1500026505
-payment.wirecard-seamless.payment-method.SOFORTUEBERWEISUNG	fr_FR		1500026505	1500026505
 payment.wirecard-seamless.payment-method.ccard	de_AT	Kreditkarte	1444635807	1470817030
 payment.wirecard-seamless.payment-method.ccard	en_GB	Credit card	1444635807	1470817030
 payment.wirecard-seamless.payment-method.ccard	fr_FR		1444635807	1470817030
-payment.wirecard-seamless.payment-method.description.CCARD	de_AT		1500026505	1500026505
-payment.wirecard-seamless.payment-method.description.CCARD	en_GB		1500026505	1500026505
-payment.wirecard-seamless.payment-method.description.CCARD	fr_FR		1500026505	1500026505
-payment.wirecard-seamless.payment-method.description.INVOICE	de_AT		1500026505	1500026505
-payment.wirecard-seamless.payment-method.description.INVOICE	en_GB		1500026505	1500026505
-payment.wirecard-seamless.payment-method.description.INVOICE	fr_FR		1500026505	1500026505
-payment.wirecard-seamless.payment-method.description.PAYPAL	de_AT		1500026505	1500026505
-payment.wirecard-seamless.payment-method.description.PAYPAL	en_GB		1500026505	1500026505
-payment.wirecard-seamless.payment-method.description.PAYPAL	fr_FR		1500026505	1500026505
-payment.wirecard-seamless.payment-method.description.PREPAYMENT	de_AT		1500026505	1500026505
-payment.wirecard-seamless.payment-method.description.PREPAYMENT	en_GB		1500026505	1500026505
-payment.wirecard-seamless.payment-method.description.PREPAYMENT	fr_FR		1500026505	1500026505
-payment.wirecard-seamless.payment-method.description.SOFORTUEBERWEISUNG	de_AT		1500026505	1500026505
-payment.wirecard-seamless.payment-method.description.SOFORTUEBERWEISUNG	en_GB		1500026505	1500026505
-payment.wirecard-seamless.payment-method.description.SOFORTUEBERWEISUNG	fr_FR		1500026505	1500026505
 payment.wirecard-seamless.payment-method.description.ccard	de_AT	Mit Kreditkarte können Sie schnell und sicher bezahlen.	1444639443	1470817041
 payment.wirecard-seamless.payment-method.description.ccard	en_GB	With a credit card you can pay quickly and safely .	1444639443	1470817041
 payment.wirecard-seamless.payment-method.description.ccard	fr_FR		1444639443	1470817041
@@ -1749,15 +1740,6 @@ shop.buy	de_AT		1460011973	1460113791
 shop.buy	en_GB	Buy	1460011973	1460113791
 shop.buy	fr_FR		1460011973	1460113791
 shop.buy	modificati	1460012	1460011973	1460113791
-shop.cart.modificationCart Discount 	de_AT		1499957159	1499957159
-shop.cart.modificationCart Discount 	en_GB		1499957159	1499957159
-shop.cart.modificationCart Discount 	fr_FR		1499957159	1499957159
-shop.cart.modificationVoucher 	de_AT		1499957159	1499957159
-shop.cart.modificationVoucher 	en_GB		1499957159	1499957159
-shop.cart.modificationVoucher 	fr_FR		1499957159	1499957159
-shop.cart.modificationcart discount	de_AT		1482525532	1482525532
-shop.cart.modificationcart discount	en_GB		1482525532	1482525532
-shop.cart.modificationcart discount	fr_FR		1482525532	1482525532
 shop.cart.modificationshipping	de_AT		0	1381221326
 shop.cart.modificationshipping	en_GB	Shipping	0	1381221326
 shop.cart.modificationshipping	fr_FR		0	1381221326
@@ -1836,9 +1818,6 @@ shop.technologyname	fr_FR		0	1371646867
 shop.value	de_AT		0	1380705759
 shop.value	en_GB	Value	0	1380705759
 shop.value	fr_FR		0	1380705759
-start payment now	de_AT		1477911398	1477911398
-start payment now	en_GB		1477911398	1477911398
-start payment now	fr_FR		1477911398	1477911398
 top	de_AT		0	1380704773
 top	en_GB	Top	0	1380704773
 top	fr_FR		0	1380704773
@@ -1851,6 +1830,9 @@ user.firstname	fr_FR		0	1372075718
 user.lastname	de_AT	Nachname	0	1372075723
 user.lastname	en_GB	Lastname	0	1372075723
 user.lastname	fr_FR		0	1372075723
+user.password	de_AT		1507801661	1507801668
+user.password	en_GB	Password	1507801661	1507801668
+user.password	fr_FR		1507801661	1507801668
 user.register.email	de_AT	Ihre E-Mail Adresse	0	1372075738
 user.register.email	en_GB	Your email	0	1372075738
 user.register.email	fr_FR		0	1372075738

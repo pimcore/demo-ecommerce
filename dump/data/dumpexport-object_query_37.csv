@@ -1,0 +1,12 @@
+12254	37	CustomerSegment	AT - Salzburg	12252	object	AT - Salzburg	1
+12363	37	CustomerSegment	male	12362	object	male	1
+12364	37	CustomerSegment	female	12362	object	female	1
+12365	37	CustomerSegment	not-set	12362	object	not-set	1
+12367	37	CustomerSegment	Outdoor	12366	object	Outdoor	1
+12379	37	CustomerSegment	DE - Bayern	12252	object	DE - Bayern	1
+12380	37	CustomerSegment	Football	12366	object	Football	1
+12382	37	CustomerSegment	New Customer	12381	object	\N	\N
+12383	37	CustomerSegment	Regular Customer	12381	object	\N	\N
+12384	37	CustomerSegment	VIP Customer	12381	object	\N	\N
+12387	37	CustomerSegment	Handball	12366	object	Handball	1
+12399	37	CustomerSegment	Volleyball	12366	object	Volleyball	1

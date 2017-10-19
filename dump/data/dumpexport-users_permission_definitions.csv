@@ -19,6 +19,10 @@ http_errors
 notes_events
 objects
 plugins
+plugin_customermanagementframework_activityview
+plugin_customermanagementframework_customerview
+plugin_customermanagementframework_customer_automa
+plugin_customermanagementframework_newsletter_enqu
 predefined_properties
 qr_codes
 recyclebin

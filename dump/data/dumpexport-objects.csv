@@ -6306,13 +6306,13 @@
 11148	11844	object	products	/products/categories/	0	0	1376995673	1460214355	\N	\N	14	ProductCategory
 11235	10961	object	football	/filter-definitions/default/	0	1	1378888060	1383726569	\N	\N	7	FilterDefinition
 11259	10960	object	landingpage	/filter-definitions/	0	1	1380545383	1460217706	\N	\N	7	FilterDefinition
-11265	10961	object	tents	/filter-definitions/default/	0	1	1380712455	1491895693	0	8	7	FilterDefinition
+11265	10961	object	tents	/filter-definitions/default/	0	1	1380712455	1491895693	0	\N	7	FilterDefinition
 11266	10961	object	sleepingbags	/filter-definitions/default/	0	1	1380713859	1383726613	\N	\N	7	FilterDefinition
 11267	10961	object	rucksacks	/filter-definitions/default/	0	1	1380714366	1460217518	\N	\N	7	FilterDefinition
 11268	10961	object	mats	/filter-definitions/default/	0	1	1380716937	1460217388	\N	\N	7	FilterDefinition
-11275	10960	object	landingpage2	/filter-definitions/	0	1	1380786618	1491895613	0	8	7	FilterDefinition
+11275	10960	object	landingpage2	/filter-definitions/	0	1	1380786618	1491895613	0	\N	7	FilterDefinition
 11424	1	folder	voucher-series	/	\N	1	1430222625	1430222625	\N	\N	\N	\N
-11425	11424	object	series1	/voucher-series/	0	1	1430222641	1492168304	0	8	33	OnlineShopVoucherSeries
+11425	11424	object	series1	/voucher-series/	0	1	1430222641	1492168304	0	\N	33	OnlineShopVoucherSeries
 11426	11424	object	series2	/voucher-series/	0	1	1430222664	1432720173	\N	\N	33	OnlineShopVoucherSeries
 11516	11426	object	bla.r5g.f	/voucher-series/series2/	\N	1	1431942765	1431942765	\N	\N	34	OnlineShopVoucherToken
 11540	11426	object	kaut_pe_e2	/voucher-series/series2/	\N	1	1431965248	1431965248	\N	\N	34	OnlineShopVoucherToken
@@ -6527,3 +6527,58 @@
 12241	12237	folder	07	/order/2017/08/	\N	1	1502114357	1502114357	1	0	\N	\N
 12242	12241	object	ord_598872358b860	/order/2017/08/07/	0	1	1502114357	1502114365	0	0	9	OnlineShopOrder
 12243	12242	object	1174_1174	/order/2017/08/07/ord_598872358b860/	\N	1	1502114357	1502114357	0	0	8	OnlineShopOrderItem
+12245	1	folder	customermanagement	/	\N	1	1507715450	1507715450	1	0	\N	\N
+12246	12245	folder	customers	/customermanagement/	\N	1	1507715450	1507715450	1	0	\N	\N
+12250	12245	folder	segments	/customermanagement/	\N	1	1507715725	1507715725	1	0	\N	\N
+12251	12250	folder	calculated	/customermanagement/segments/	\N	1	1507715725	1507715725	1	0	\N	\N
+12252	12251	object	State	/customermanagement/segments/calculated/	0	1	1507715725	1508406830	0	10	36	CustomerSegmentGroup
+12253	12252	folder	AT	/customermanagement/segments/calculated/State/	\N	1	1507715726	1507715726	1	0	\N	\N
+12254	12253	object	AT - Salzburg	/customermanagement/segments/calculated/State/AT/	\N	1	1507715726	1507715726	0	0	37	CustomerSegment
+12271	12107	folder	10	/order/2017/	\N	1	1507745645	1507745645	1	0	\N	\N
+12272	12271	folder	11	/order/2017/10/	\N	1	1507745645	1507745645	1	0	\N	\N
+12273	12272	object	ord_59de5f6d37911	/order/2017/10/11/	0	1	1507745645	1508406579	0	0	9	OnlineShopOrder
+12274	12273	object	1174_1174	/order/2017/10/11/ord_59de5f6d37911/	\N	1	1507745645	1507745645	0	0	8	OnlineShopOrderItem
+12331	12271	folder	13	/order/2017/10/	\N	1	1507884010	1507884010	1	0	\N	\N
+12336	12331	object	ord_59e07e0d8405b	/order/2017/10/13/	0	1	1507884557	1507884617	0	0	9	OnlineShopOrder
+12337	12336	object	10393_10393	/order/2017/10/13/ord_59e07e0d8405b/	0	1	1507884557	1507884606	0	0	8	OnlineShopOrderItem
+12356	12361	object	Peter-Hugo	/customermanagement/customers/AT/5020/	0	1	1508403484	1508407679	0	10	41	Customer
+12357	12271	folder	19	/order/2017/10/	\N	1	1508403516	1508403516	1	0	\N	\N
+12358	12357	object	ord_59e8693c02e24	/order/2017/10/19/	0	1	1508403516	1508403527	0	0	9	OnlineShopOrder
+12359	12358	object	7074_7074	/order/2017/10/19/ord_59e8693c02e24/	\N	1	1508403516	1508403516	0	0	8	OnlineShopOrderItem
+12360	12246	folder	AT	/customermanagement/customers/	\N	1	1508403516	1508403516	1	0	\N	\N
+12361	12360	folder	5020	/customermanagement/customers/AT/	\N	1	1508403516	1508403516	1	0	\N	\N
+12362	12251	object	Gender	/customermanagement/segments/calculated/	\N	1	1508403928	1508403928	0	0	36	CustomerSegmentGroup
+12363	12362	object	male	/customermanagement/segments/calculated/Gender/	\N	1	1508403929	1508403929	0	0	37	CustomerSegment
+12364	12362	object	female	/customermanagement/segments/calculated/Gender/	\N	1	1508403929	1508403929	0	0	37	CustomerSegment
+12365	12362	object	not-set	/customermanagement/segments/calculated/Gender/	\N	1	1508403929	1508403929	0	0	37	CustomerSegment
+12366	12251	object	InterestCategories	/customermanagement/segments/calculated/	0	1	1508405673	1508406823	0	10	36	CustomerSegmentGroup
+12367	12366	object	Outdoor	/customermanagement/segments/calculated/InterestCategories/	0	1	1508405673	1508405892	0	10	37	CustomerSegment
+12368	12357	object	ord_59e872ae8207f	/order/2017/10/19/	0	1	1508405934	1508405946	0	0	9	OnlineShopOrder
+12369	12368	object	6992_6992	/order/2017/10/19/ord_59e872ae8207f/	\N	1	1508405934	1508405934	0	0	8	OnlineShopOrderItem
+12372	12377	object	Anna-Huber	/customermanagement/customers/DE/80539/	0	1	1508406630	1508407576	0	10	41	Customer
+12373	12372	object	google-105072133371916077860	/customermanagement/customers/DE/80539/Anna-Huber/	\N	1	1508406630	1508406659	0	0	38	SsoIdentity
+12374	12357	object	ord_59e87583ac150	/order/2017/10/19/	0	1	1508406659	1508406670	0	0	9	OnlineShopOrder
+12375	12374	object	1174_1174	/order/2017/10/19/ord_59e87583ac150/	\N	1	1508406659	1508406659	0	0	8	OnlineShopOrderItem
+12376	12246	folder	DE	/customermanagement/customers/	\N	1	1508406659	1508406659	1	0	\N	\N
+12377	12376	folder	80539	/customermanagement/customers/DE/	\N	1	1508406659	1508406659	1	0	\N	\N
+12378	12252	folder	DE	/customermanagement/segments/calculated/State/	\N	1	1508406660	1508406660	1	0	\N	\N
+12379	12378	object	DE - Bayern	/customermanagement/segments/calculated/State/DE/	\N	1	1508406660	1508406660	0	0	37	CustomerSegment
+12380	12366	object	Football	/customermanagement/segments/calculated/InterestCategories/	\N	1	1508406687	1508406687	0	0	37	CustomerSegment
+12381	12251	object	CustomerType	/customermanagement/segments/calculated/	0	1	1508406727	1508406817	10	10	36	CustomerSegmentGroup
+12382	12381	object	New Customer	/customermanagement/segments/calculated/CustomerType/	0	1	1508406744	1508406751	10	10	37	CustomerSegment
+12383	12381	object	Regular Customer	/customermanagement/segments/calculated/CustomerType/	0	1	1508406795	1508406801	10	10	37	CustomerSegment
+12384	12381	object	VIP Customer	/customermanagement/segments/calculated/CustomerType/	0	1	1508406807	1508406812	10	10	37	CustomerSegment
+12385	12357	object	ord_59e876d351e92	/order/2017/10/19/	0	1	1508406995	1508407006	0	0	9	OnlineShopOrder
+12386	12385	object	1153_1153	/order/2017/10/19/ord_59e876d351e92/	\N	1	1508406995	1508406995	0	0	8	OnlineShopOrderItem
+12387	12366	object	Handball	/customermanagement/segments/calculated/InterestCategories/	\N	1	1508407062	1508407062	0	0	37	CustomerSegment
+12388	12357	object	ord_59e877c4bb341	/order/2017/10/19/	0	1	1508407236	1508407356	0	0	9	OnlineShopOrder
+12389	12388	object	1200_1200	/order/2017/10/19/ord_59e877c4bb341/	\N	1	1508407236	1508407236	0	0	8	OnlineShopOrderItem
+12390	12357	object	ord_59e8791846f45	/order/2017/10/19/	0	1	1508407576	1508407596	0	0	9	OnlineShopOrder
+12391	12390	object	1116_1116	/order/2017/10/19/ord_59e8791846f45/	\N	1	1508407576	1508407576	0	0	8	OnlineShopOrderItem
+12392	12357	object	ord_59e87970d5d49	/order/2017/10/19/	0	1	1508407664	1508407680	0	0	9	OnlineShopOrder
+12393	12392	object	6409_6409	/order/2017/10/19/ord_59e87970d5d49/	\N	1	1508407665	1508407665	0	0	8	OnlineShopOrderItem
+12395	12377	object	Anna-Huberr	/customermanagement/customers/DE/80539/	0	1	1508407793	1508408803	0	10	41	Customer
+12396	12395	object	twitter-2805534632	/customermanagement/customers/DE/80539/Anna-Huberr/	\N	1	1508407793	1508408803	0	10	38	SsoIdentity
+12397	12357	object	ord_59e87a170ce54	/order/2017/10/19/	0	1	1508407831	1508407841	0	0	9	OnlineShopOrder
+12398	12397	object	1919_1919	/order/2017/10/19/ord_59e87a170ce54/	\N	1	1508407831	1508407831	0	0	8	OnlineShopOrderItem
+12399	12366	object	Volleyball	/customermanagement/segments/calculated/InterestCategories/	\N	1	1508408085	1508408085	0	0	37	CustomerSegment

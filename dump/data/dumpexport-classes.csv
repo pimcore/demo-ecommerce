@@ -1,4 +1,8 @@
+41	Customer
+37	CustomerSegment
+36	CustomerSegmentGroup
 7	FilterDefinition
+40	LinkActivityDefinition
 32	OfferToolCustomProduct
 30	OfferToolOffer
 31	OfferToolOfferItem
@@ -12,3 +16,5 @@
 14	ProductCategory
 15	ProductCollection
 16	ProductTechnology
+38	SsoIdentity
+39	TermSegmentBuilderDefinition
