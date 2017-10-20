@@ -19,7 +19,7 @@ the following issues for details:
   $ composer require pimcore/demo-ecommerce --no-scripts
   ```
 
-* Install pimcore (via web or CLI installer) - it should now list this install profile as available
+* Install Pimcore (via web or CLI installer) - it should now list this install profile as available
 * Execute the following command to symlink any assets from bundles into your document root (you can omit the symlink and relative options if that fits your environment better):
 
 ```

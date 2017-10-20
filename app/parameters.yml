@@ -1,0 +1,11 @@
+parameters:
+    secret: ThisTokenIsNotSoSecretChangeIt
+
+    google_client_id: <google_client_id>
+    google_client_secret: <google_client_secret>
+    twitter_client_id: <twitter_client_id>
+    twitter_client_secret: <twitter_client_secret>
+
+    app_encryption_secret: "<your_application_secret_key_change_it"
+
+
