@@ -1,10 +1,10 @@
 <?php 
 
 /** 
-* Generated at: 2017-10-19T16:47:14+02:00
+* Generated at: 2017-10-20T15:23:08+02:00
 * Inheritance: no
 * Variants: no
-* Changed by: admin (1)
+* Changed by: admin (11)
 * IP: 192.168.11.5
 
 
@@ -31,9 +31,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'Customer',
    'description' => '',
    'creationDate' => 0,
-   'modificationDate' => 1508424434,
+   'modificationDate' => 1508505788,
    'userOwner' => 10,
-   'userModification' => 1,
+   'userModification' => 11,
    'parentClass' => '\\CustomerManagementFrameworkBundle\\Model\\AbstractCustomer\\DefaultAbstractUserawareCustomer',
    'useTraits' => '',
    'allowInherit' => false,
@@ -1660,7 +1660,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                     'position' => 1,
                     'key' => 'created_timestamp',
                     'id' => 'extModel2805-1',
-                    'label' => 'created_timestamp',
+                    'label' => 'Segment created (Timestamp)',
                   ),
                   1 => 
                   array (
@@ -1668,7 +1668,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                     'position' => 2,
                     'key' => 'application_counter',
                     'id' => 'extModel2805-2',
-                    'label' => 'application_counter',
+                    'label' => 'Segment application counter',
                   ),
                 ),
                  'fieldtype' => 'objectsMetadata',
@@ -1715,7 +1715,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                     'position' => 1,
                     'key' => 'created_timestamp',
                     'id' => 'extModel1622-1',
-                    'label' => 'created_timestamp',
+                    'label' => 'Segment created (Timestamp)',
                   ),
                   1 => 
                   array (
@@ -1723,7 +1723,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                     'position' => 2,
                     'key' => 'application_counter',
                     'id' => 'extModel1622-2',
-                    'label' => 'application_counter ',
+                    'label' => 'Segment application counter',
                   ),
                 ),
                  'fieldtype' => 'objectsMetadata',
