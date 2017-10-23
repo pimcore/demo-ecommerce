@@ -71,10 +71,10 @@ class CartController extends AbstractCartAware
                 $cart = $this->getCart();
                 $cart->addItem($product, $qty);
                 $cart->save();
-            }
 
-            $trackingManager = Factory::getInstance()->getTrackingManager();
-            $trackingManager->trackProductActionAdd($product, $qty);
+                $trackingManager = Factory::getInstance()->getTrackingManager();
+                $trackingManager->trackCartProductActionAdd($cart, $product, $qty);
+            }
 
             $url = $this->generateUrl('cart', ['action' => 'list']);
 
@@ -91,12 +91,13 @@ class CartController extends AbstractCartAware
     {
         // remove item from cart
         if (($id = $request->get('item'))) {
-            if ($item = $this->getCart()->getItem($id)) {
+            $cart = $this->getCart();
+
+            if ($item = $cart->getItem($id)) {
                 $trackingManager = Factory::getInstance()->getTrackingManager();
-                $trackingManager->trackProductActionRemove($item->getProduct(), $item->getCount());
+                $trackingManager->trackCartProductActionRemove($cart, $item->getProduct(), $item->getCount());
             }
 
-            $cart = $this->getCart();
             $cart->removeItem($id);
             $cart->save();
 
@@ -118,7 +119,7 @@ class CartController extends AbstractCartAware
                 if ($product) {
                     if (intval($qty) <= 0) {
                         $trackingManager = Factory::getInstance()->getTrackingManager();
-                        $trackingManager->trackProductActionRemove($product, $this->getCart()->getItem($key)->getCount());
+                        $trackingManager->trackCartProductActionRemove($cart, $product, $this->getCart()->getItem($key)->getCount());
                     }
                     $cart->updateItem($key, $product, intval($qty), true);
                     $cart->save();
@@ -199,7 +200,7 @@ class CartController extends AbstractCartAware
             }
 
             $trackingManager = Factory::getInstance()->getTrackingManager();
-            $trackingManager->trackProductActionAdd($product, $qty);
+            $trackingManager->trackCartProductActionAdd($cart, $product, $qty);
 
             return $this->redirect($this->generateUrl('action', [
                 'controller' => 'quickCheckout', 'action' => 'confirm', 'prefix' => substr($request->getLocale(), 0, 2), 'cartName' => 'quickCheckout'
