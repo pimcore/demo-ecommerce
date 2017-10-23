@@ -56,6 +56,9 @@ class ShopController extends AbstractController
         // load current filter
         if ($category) {
             $filterDefinition = $category->getFilterdefinition();
+
+            $trackingManager = Factory::getInstance()->getTrackingManager();
+            $trackingManager->trackCategoryPageView($category->getName(), null);
         }
 
         if ($request->get('filterdefinition') instanceof \Pimcore\Model\DataObject\FilterDefinition) {

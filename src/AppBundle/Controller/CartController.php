@@ -53,7 +53,8 @@ class CartController extends AbstractCartAware
         ]);
 
         $trackingManager = Factory::getInstance()->getTrackingManager();
-        $trackingManager->trackCheckout($this->getCart());
+        $trackingManager->trackCartUpdate($cart);
+        $trackingManager->trackCheckout($cart);
     }
 
     /**
