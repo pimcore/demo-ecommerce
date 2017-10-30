@@ -27,8 +27,6 @@ use Symfony\Component\Security\Http\HttpUtils;
 
 /**
  * Authentication listener to set correct user to e-commerce framework environment after login and track login activity
- *
- * Class AuthenticationListener
  */
 class AuthenticationLoginListener extends DefaultAuthenticationSuccessHandler implements AuthenticationSuccessHandlerInterface
 {
@@ -42,16 +40,10 @@ class AuthenticationLoginListener extends DefaultAuthenticationSuccessHandler im
      */
     protected $activityManager;
 
-    /**
-     * AuthenticationLoginListener constructor.
-     * @param HttpUtils $httpUtils
-     * @param array $options
-     * @param IEnvironment $environment
-     * @param ActivityManagerInterface $activityManager
-     */
-    public function __construct(HttpUtils $httpUtils, array $options = array(), IEnvironment $environment, ActivityManagerInterface $activityManager)
+    public function __construct(HttpUtils $httpUtils, array $options = [], IEnvironment $environment, ActivityManagerInterface $activityManager)
     {
         parent::__construct($httpUtils, $options);
+
         $this->environment = $environment;
         $this->activityManager = $activityManager;
     }
@@ -70,7 +62,8 @@ class AuthenticationLoginListener extends DefaultAuthenticationSuccessHandler im
     {
         // save current user to e-commerce framework environment
         $user = $token->getUser();
-        if($user) {
+
+        if ($user) {
             $this->environment->setCurrentUserId($user->getId());
         } else {
             $this->environment->setCurrentUserId(null);
@@ -84,5 +77,4 @@ class AuthenticationLoginListener extends DefaultAuthenticationSuccessHandler im
         // call parent function to create correct redirect
         return parent::onAuthenticationSuccess($request, $token);
     }
-
 }

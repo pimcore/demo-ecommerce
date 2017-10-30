@@ -14,9 +14,6 @@
 
 namespace AppBundle\EventListener;
 
-
-use Pimcore\Bundle\EcommerceFrameworkBundle\CartManager\ICartManager;
-use Pimcore\Bundle\EcommerceFrameworkBundle\Factory;
 use Pimcore\Bundle\EcommerceFrameworkBundle\IEnvironment;
 use Pimcore\Bundle\EcommerceFrameworkBundle\Tools\SessionConfigurator;
 use Symfony\Component\HttpFoundation\Request;
@@ -28,8 +25,6 @@ use Symfony\Component\Security\Http\Logout\LogoutSuccessHandlerInterface;
 
 /**
  * Authentication listener to cleanup user and session in general from e-commerce framework environment after logout
- *
- * Class AuthenticationLogoutListener
  */
 class AuthenticationLogoutListener extends DefaultLogoutSuccessHandler implements LogoutSuccessHandlerInterface
 {
@@ -48,18 +43,20 @@ class AuthenticationLogoutListener extends DefaultLogoutSuccessHandler implement
      */
     protected $session;
 
-    /**
-     * AuthenticationListener constructor.
-     * @param IEnvironment $environment
-     */
-    public function __construct(HttpUtils $httpUtils, $targetUrl = '/', IEnvironment $environment, SessionConfigurator $sessionConfigurator, SessionInterface $session)
+    public function __construct(
+        HttpUtils $httpUtils,
+        string $targetUrl = '/',
+        IEnvironment $environment,
+        SessionConfigurator $sessionConfigurator,
+        SessionInterface $session
+    )
     {
         parent::__construct($httpUtils, $targetUrl);
+
         $this->environment = $environment;
         $this->sessionConfigurator = $sessionConfigurator;
         $this->session = $session;
     }
-
 
     /**
      * Creates a Response object to send upon a successful logout.
@@ -80,5 +77,4 @@ class AuthenticationLogoutListener extends DefaultLogoutSuccessHandler implement
         // call parent in order to return correct redirect
         return parent::onLogoutSuccess($request);
     }
-
 }

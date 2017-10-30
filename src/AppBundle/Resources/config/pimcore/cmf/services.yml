@@ -25,11 +25,14 @@ services:
          tags: [cmf.segment_builder]
 
     # authentication login listener for updating e-commerce framework environment after login
-    AppBundle\EventListener\AuthenticationLoginListener: ~
+    AppBundle\EventListener\AuthenticationLoginListener:
+        arguments:
+            $httpUtils: '@security.http_utils'
 
     # authentication login listener for updating e-commerce framework environment after logout
-    AppBundle\EventListener\AuthenticationLogoutListener: ~
-
+    AppBundle\EventListener\AuthenticationLogoutListener:
+        arguments:
+            $httpUtils: '@security.http_utils'
 
     # services for forms
     AppBundle\Form\RegistrationFormHandler: ~
