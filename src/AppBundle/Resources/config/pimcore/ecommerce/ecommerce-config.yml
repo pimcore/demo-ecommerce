@@ -39,7 +39,7 @@ pimcore_ecommerce_framework:
 #                    factory_id: Pimcore\Bundle\EcommerceFrameworkBundle\CartManager\CartFactory
 #                    factory_options:
 #                        cart_class_name: Pimcore\Bundle\EcommerceFrameworkBundle\CartManager\Cart
-#                        guest_cart_class_name: Pimcore\Bundle\EcommerceFrameworkBundle\CartManager\Cart
+#                        guest_cart_class_name: Pimcore\Bundle\EcommerceFrameworkBundle\CartManager\SessionCart
                 price_calculator:
                     # List price modificators for cart, e.g. for shipping-cost, special discounts, ...
                     # key is name of modificator
