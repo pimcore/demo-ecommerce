@@ -22,6 +22,7 @@ services:
 
     # Order Manager for E-Commerce Demo
     AppBundle\Ecommerce\Order\OrderManager:
+        autowire: true
         arguments:
             - '@pimcore_ecommerce.environment'
             - '@?'
