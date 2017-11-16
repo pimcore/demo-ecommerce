@@ -23,6 +23,7 @@ use CustomerManagementFrameworkBundle\SegmentManager\SegmentManagerInterface;
 use Pimcore\Bundle\EcommerceFrameworkBundle\Factory;
 use Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractOrder;
 use Pimcore\Bundle\EcommerceFrameworkBundle\OrderManager\Order\Listing\Filter\CustomerObject;
+use Pimcore\Model\DataObject\AbstractObject;
 use Pimcore\Model\DataObject\OnlineShopOrderItem;
 
 /**
@@ -61,6 +62,9 @@ class ProductCategorySegmentBuilder extends AbstractSegmentBuilder
      */
     public function calculateSegments(CustomerInterface $customer, SegmentManagerInterface $segmentManager)
     {
+
+        $inheritanceBackup = AbstractObject::getGetInheritedValues();
+        AbstractObject::setGetInheritedValues(true);
 
         $orderManager = Factory::getInstance()->getOrderManager();
 
@@ -103,6 +107,7 @@ class ProductCategorySegmentBuilder extends AbstractSegmentBuilder
             $segmentManager->mergeSegments($customer, [$segment], [],  $this->getName(), null, $count );
         }
 
+        AbstractObject::setGetInheritedValues($inheritanceBackup);
     }
 
     /**
