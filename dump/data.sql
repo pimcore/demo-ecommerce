@@ -183,6 +183,24 @@ CREATE TABLE `application_logs_archive_10_2017` (
 
 
 
+DROP TABLE IF EXISTS `application_logs_archive_11_2017`;
+CREATE TABLE `application_logs_archive_11_2017` (
+  `id` bigint(20) NOT NULL,
+  `pid` int(11) DEFAULT NULL,
+  `timestamp` datetime NOT NULL,
+  `message` varchar(1024) DEFAULT NULL,
+  `priority` enum('emergency','alert','critical','error','warning','notice','info','debug') DEFAULT NULL,
+  `fileobject` varchar(1024) DEFAULT NULL,
+  `info` varchar(1024) DEFAULT NULL,
+  `component` varchar(255) DEFAULT NULL,
+  `source` varchar(255) DEFAULT NULL,
+  `relatedobject` bigint(20) DEFAULT NULL,
+  `relatedobjecttype` enum('object','document','asset') DEFAULT NULL,
+  `maintenanceChecked` tinyint(4) DEFAULT NULL
+) ENGINE=ARCHIVE DEFAULT CHARSET=utf8mb4;
+
+
+
 DROP TABLE IF EXISTS `bundle_advancedobjectsearch_savedsearch`;
 CREATE TABLE `bundle_advancedobjectsearch_savedsearch` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
@@ -194,7 +212,7 @@ CREATE TABLE `bundle_advancedobjectsearch_savedsearch` (
   `sharedUserIds` varchar(1000) DEFAULT NULL,
   `shortCutUserIds` text CHARACTER SET latin1,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 
 
@@ -1648,17 +1666,6 @@ CREATE TABLE `object_localized_data_35` (
 
 
 
-DROP TABLE IF EXISTS `object_localized_data_9`;
-CREATE TABLE `object_localized_data_9` (
-  `ooo_id` int(11) NOT NULL DEFAULT '0',
-  `language` varchar(10) NOT NULL DEFAULT '',
-  PRIMARY KEY (`ooo_id`,`language`),
-  KEY `ooo_id` (`ooo_id`),
-  KEY `language` (`language`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-
-
 DROP TABLE IF EXISTS `object_localized_query_12_de_AT`;
 CREATE TABLE `object_localized_query_12_de_AT` (
   `ooo_id` int(11) NOT NULL DEFAULT '0',
@@ -2053,7 +2060,7 @@ CREATE TABLE `object_query_12` (
   `materialComposition` text,
   `secondaryMaterialComposition` text,
   `relatedProducts` text,
-  `imagesInheritance` varchar(255) DEFAULT NULL,
+  `imagesInheritance` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`oo_id`),
   KEY `p_index_artno` (`artno`),
   KEY `p_index_size` (`size`)
@@ -2115,7 +2122,7 @@ CREATE TABLE `object_query_30` (
   `dateValidUntil` bigint(20) DEFAULT NULL,
   `discount` decimal(19,4) DEFAULT NULL,
   `customItems` text,
-  `discountType` varchar(255) DEFAULT NULL,
+  `discountType` varchar(190) DEFAULT NULL,
   `cartId` varchar(255) DEFAULT NULL,
   `totalPriceBeforeDiscount` decimal(19,4) DEFAULT NULL,
   PRIMARY KEY (`oo_id`)
@@ -2138,7 +2145,7 @@ CREATE TABLE `object_query_31` (
   `originalTotalPrice` decimal(19,4) DEFAULT NULL,
   `finalTotalPrice` decimal(19,4) DEFAULT NULL,
   `discount` decimal(19,4) DEFAULT NULL,
-  `DiscountType` varchar(255) DEFAULT NULL,
+  `DiscountType` varchar(190) DEFAULT NULL,
   `cartItemKey` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`oo_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -2151,7 +2158,7 @@ CREATE TABLE `object_query_32` (
   `oo_classId` int(11) DEFAULT '32',
   `oo_className` varchar(255) DEFAULT 'OfferToolCustomProduct',
   `price` decimal(19,4) DEFAULT NULL,
-  `productGroup` varchar(255) DEFAULT NULL,
+  `productGroup` varchar(190) DEFAULT NULL,
   `OSproductNumber` varchar(255) DEFAULT NULL,
   `OSName` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`oo_id`)
@@ -2309,12 +2316,12 @@ CREATE TABLE `object_query_7` (
   `pageLimit` double DEFAULT NULL,
   `ajaxReload` tinyint(1) DEFAULT NULL,
   `limitOnFirstLoad` double DEFAULT NULL,
-  `defaultOrderByInheritance` varchar(255) DEFAULT NULL,
-  `conditionsInheritance` varchar(255) DEFAULT NULL,
-  `filtersInheritance` varchar(255) DEFAULT NULL,
+  `defaultOrderByInheritance` varchar(190) DEFAULT NULL,
+  `conditionsInheritance` varchar(190) DEFAULT NULL,
+  `filtersInheritance` varchar(190) DEFAULT NULL,
   `crossSellingCategory__id` int(11) DEFAULT NULL,
   `crossSellingCategory__type` enum('document','asset','object') DEFAULT NULL,
-  `similarityFieldsInheritance` varchar(255) DEFAULT NULL,
+  `similarityFieldsInheritance` varchar(190) DEFAULT NULL,
   `infiniteScroll` tinyint(1) DEFAULT NULL,
   `orderByAsc` longtext,
   `orderByDesc` longtext,
@@ -2336,7 +2343,7 @@ CREATE TABLE `object_query_8` (
   `totalPrice` decimal(19,4) DEFAULT NULL,
   `subItems` text,
   `comment` longtext,
-  `orderState` varchar(255) DEFAULT NULL,
+  `orderState` varchar(190) DEFAULT NULL,
   `totalNetPrice` decimal(19,4) DEFAULT NULL,
   `taxInfo` longtext,
   PRIMARY KEY (`oo_id`)
@@ -2356,7 +2363,7 @@ CREATE TABLE `object_query_9` (
   `customer__id` int(11) DEFAULT NULL,
   `customer__type` enum('document','asset','object') DEFAULT NULL,
   `paymentReference` varchar(255) DEFAULT NULL,
-  `orderState` varchar(255) DEFAULT NULL,
+  `orderState` varchar(190) DEFAULT NULL,
   `cartId` varchar(255) DEFAULT NULL,
   `customerOrderData` varchar(255) DEFAULT NULL,
   `currency` varchar(255) DEFAULT NULL,
@@ -2364,13 +2371,13 @@ CREATE TABLE `object_query_9` (
   `customerCompany` varchar(255) DEFAULT NULL,
   `customerStreet` varchar(255) DEFAULT NULL,
   `customerZip` varchar(255) DEFAULT NULL,
-  `customerCountry` varchar(255) DEFAULT NULL,
+  `customerCountry` varchar(190) DEFAULT NULL,
   `customerEmail` varchar(255) DEFAULT NULL,
   `deliveryCompany` varchar(255) DEFAULT NULL,
   `deliveryStreet` varchar(255) DEFAULT NULL,
   `deliveryZip` varchar(255) DEFAULT NULL,
   `deliveryCity` varchar(255) DEFAULT NULL,
-  `deliveryCountry` varchar(255) DEFAULT NULL,
+  `deliveryCountry` varchar(190) DEFAULT NULL,
   `voucherTokens` text,
   `customerCity` varchar(255) DEFAULT NULL,
   `subTotalPrice` decimal(19,4) DEFAULT NULL,
@@ -2855,7 +2862,7 @@ CREATE TABLE `object_store_12` (
   `size` varchar(255) DEFAULT NULL,
   `gender` text,
   `color` text,
-  `imagesInheritance` varchar(255) DEFAULT NULL,
+  `imagesInheritance` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`oo_id`),
   KEY `p_index_artno` (`artno`),
   KEY `p_index_size` (`size`)
@@ -2903,7 +2910,7 @@ CREATE TABLE `object_store_30` (
   `dateCreated` bigint(20) DEFAULT NULL,
   `dateValidUntil` bigint(20) DEFAULT NULL,
   `discount` decimal(19,4) DEFAULT NULL,
-  `discountType` varchar(255) DEFAULT NULL,
+  `discountType` varchar(190) DEFAULT NULL,
   `cartId` varchar(255) DEFAULT NULL,
   `totalPriceBeforeDiscount` decimal(19,4) DEFAULT NULL,
   PRIMARY KEY (`oo_id`)
@@ -2921,7 +2928,7 @@ CREATE TABLE `object_store_31` (
   `originalTotalPrice` decimal(19,4) DEFAULT NULL,
   `finalTotalPrice` decimal(19,4) DEFAULT NULL,
   `discount` decimal(19,4) DEFAULT NULL,
-  `DiscountType` varchar(255) DEFAULT NULL,
+  `DiscountType` varchar(190) DEFAULT NULL,
   `cartItemKey` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`oo_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -2932,7 +2939,7 @@ DROP TABLE IF EXISTS `object_store_32`;
 CREATE TABLE `object_store_32` (
   `oo_id` int(11) NOT NULL DEFAULT '0',
   `price` decimal(19,4) DEFAULT NULL,
-  `productGroup` varchar(255) DEFAULT NULL,
+  `productGroup` varchar(190) DEFAULT NULL,
   `OSproductNumber` varchar(255) DEFAULT NULL,
   `OSName` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`oo_id`)
@@ -3063,10 +3070,10 @@ CREATE TABLE `object_store_7` (
   `pageLimit` double DEFAULT NULL,
   `ajaxReload` tinyint(1) DEFAULT NULL,
   `limitOnFirstLoad` double DEFAULT NULL,
-  `defaultOrderByInheritance` varchar(255) DEFAULT NULL,
-  `conditionsInheritance` varchar(255) DEFAULT NULL,
-  `filtersInheritance` varchar(255) DEFAULT NULL,
-  `similarityFieldsInheritance` varchar(255) DEFAULT NULL,
+  `defaultOrderByInheritance` varchar(190) DEFAULT NULL,
+  `conditionsInheritance` varchar(190) DEFAULT NULL,
+  `filtersInheritance` varchar(190) DEFAULT NULL,
+  `similarityFieldsInheritance` varchar(190) DEFAULT NULL,
   `infiniteScroll` tinyint(1) DEFAULT NULL,
   `orderByAsc` longtext,
   `orderByDesc` longtext,
@@ -3083,7 +3090,7 @@ CREATE TABLE `object_store_8` (
   `amount` double DEFAULT NULL,
   `totalPrice` decimal(19,4) DEFAULT NULL,
   `comment` longtext,
-  `orderState` varchar(255) DEFAULT NULL,
+  `orderState` varchar(190) DEFAULT NULL,
   `totalNetPrice` decimal(19,4) DEFAULT NULL,
   `taxInfo` longtext,
   PRIMARY KEY (`oo_id`)
@@ -3098,7 +3105,7 @@ CREATE TABLE `object_store_9` (
   `totalPrice` decimal(19,4) DEFAULT NULL,
   `orderdate` bigint(20) DEFAULT NULL,
   `paymentReference` varchar(255) DEFAULT NULL,
-  `orderState` varchar(255) DEFAULT NULL,
+  `orderState` varchar(190) DEFAULT NULL,
   `cartId` varchar(255) DEFAULT NULL,
   `customerOrderData` varchar(255) DEFAULT NULL,
   `currency` varchar(255) DEFAULT NULL,
@@ -3106,13 +3113,13 @@ CREATE TABLE `object_store_9` (
   `customerCompany` varchar(255) DEFAULT NULL,
   `customerStreet` varchar(255) DEFAULT NULL,
   `customerZip` varchar(255) DEFAULT NULL,
-  `customerCountry` varchar(255) DEFAULT NULL,
+  `customerCountry` varchar(190) DEFAULT NULL,
   `customerEmail` varchar(255) DEFAULT NULL,
   `deliveryCompany` varchar(255) DEFAULT NULL,
   `deliveryStreet` varchar(255) DEFAULT NULL,
   `deliveryZip` varchar(255) DEFAULT NULL,
   `deliveryCity` varchar(255) DEFAULT NULL,
-  `deliveryCountry` varchar(255) DEFAULT NULL,
+  `deliveryCountry` varchar(190) DEFAULT NULL,
   `customerCity` varchar(255) DEFAULT NULL,
   `subTotalPrice` decimal(19,4) DEFAULT NULL,
   `customerFirstname` varchar(255) DEFAULT NULL,
@@ -3124,6 +3131,16 @@ CREATE TABLE `object_store_9` (
   `taxInfo` longtext,
   PRIMARY KEY (`oo_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `pimcore_migrations`;
+CREATE TABLE `pimcore_migrations` (
+  `migration_set` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `version` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `migrated_at` datetime NOT NULL,
+  PRIMARY KEY (`migration_set`,`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 
@@ -3359,6 +3376,9 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpe
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-element_workflow_state.csv' INTO TABLE `element_workflow_state`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-email_blacklist.csv' INTO TABLE `email_blacklist`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-glossary.csv' INTO TABLE `glossary`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-gridconfig_favourites.csv' INTO TABLE `gridconfig_favourites`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-gridconfig_shares.csv' INTO TABLE `gridconfig_shares`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-gridconfigs.csv' INTO TABLE `gridconfigs`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-keyvalue_groups.csv' INTO TABLE `keyvalue_groups`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-keyvalue_keys.csv' INTO TABLE `keyvalue_keys`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-keyvalue_translator_configuration.csv' INTO TABLE `keyvalue_translator_configuration`;
@@ -3518,6 +3538,7 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpe
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_store_8.csv' INTO TABLE `object_store_8`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_store_9.csv' INTO TABLE `object_store_9`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-objects.csv' INTO TABLE `objects`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-pimcore_migrations.csv' INTO TABLE `pimcore_migrations`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_actiontrigger_actions.csv' INTO TABLE `plugin_cmf_actiontrigger_actions`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_actiontrigger_queue.csv' INTO TABLE `plugin_cmf_actiontrigger_queue`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_actiontrigger_rules.csv' INTO TABLE `plugin_cmf_actiontrigger_rules`;
