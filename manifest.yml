@@ -16,4 +16,7 @@ files:
 db:
     data_files:
         - dump/data.sql
+        - dump/storedFunctionAsset.sql
+        - dump/storedFunctionDocument.sql
+        - dump/storedFunctionObject.sql
 
