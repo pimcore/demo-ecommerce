@@ -464,49 +464,6 @@ CREATE TABLE `ecommerceframework_vouchertoolkit_tokens` (
 ) ENGINE=InnoDB AUTO_INCREMENT=200002 DEFAULT CHARSET=utf8;
 
 
-
-DROP TABLE IF EXISTS `keyvalue_groups`;
-CREATE TABLE `keyvalue_groups` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) NOT NULL DEFAULT '',
-  `description` varchar(255) DEFAULT NULL,
-  `creationDate` bigint(20) unsigned DEFAULT '0',
-  `modificationDate` bigint(20) unsigned DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-
-
-DROP TABLE IF EXISTS `keyvalue_keys`;
-CREATE TABLE `keyvalue_keys` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) NOT NULL DEFAULT '',
-  `description` text,
-  `type` enum('bool','number','select','text','translated','translatedSelect','range') DEFAULT NULL,
-  `unit` varchar(255) DEFAULT NULL,
-  `possiblevalues` text,
-  `group` int(11) DEFAULT NULL,
-  `creationDate` bigint(20) unsigned DEFAULT '0',
-  `modificationDate` bigint(20) unsigned DEFAULT '0',
-  `translator` int(11) DEFAULT NULL,
-  `mandatory` tinyint(1) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `group` (`group`),
-  CONSTRAINT `keyvalue_keys_ibfk_1` FOREIGN KEY (`group`) REFERENCES `keyvalue_groups` (`id`) ON DELETE SET NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-
-
-DROP TABLE IF EXISTS `keyvalue_translator_configuration`;
-CREATE TABLE `keyvalue_translator_configuration` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(200) DEFAULT NULL,
-  `translator` varchar(200) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-
-
 DROP TABLE IF EXISTS `object_brick_query_OAuth1Token_38`;
 CREATE TABLE `object_brick_query_OAuth1Token_38` (
   `o_id` int(11) NOT NULL DEFAULT '0',
@@ -3379,9 +3336,6 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpe
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-gridconfig_favourites.csv' INTO TABLE `gridconfig_favourites`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-gridconfig_shares.csv' INTO TABLE `gridconfig_shares`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-gridconfigs.csv' INTO TABLE `gridconfigs`;
-LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-keyvalue_groups.csv' INTO TABLE `keyvalue_groups`;
-LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-keyvalue_keys.csv' INTO TABLE `keyvalue_keys`;
-LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-keyvalue_translator_configuration.csv' INTO TABLE `keyvalue_translator_configuration`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-notes.csv' INTO TABLE `notes`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-notes_data.csv' INTO TABLE `notes_data`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_query_OAuth1Token_38.csv' INTO TABLE `object_brick_query_OAuth1Token_38`;
