@@ -3734,7 +3734,7 @@ BEGIN
     END WHILE;
 
     RETURN segmentIds;
-  END
+  END ;;
 
 
 DELIMITER ; 
@@ -3761,7 +3761,7 @@ BEGIN
     END WHILE;
 
     RETURN segmentIds;
-  END
+  END ;;
 
 
 DELIMITER ; 

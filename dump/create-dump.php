@@ -108,7 +108,7 @@ foreach($result as $functionData) {
     $string = $functionDefinition['Create Function'];
     $string = preg_replace("/DEFINER(\S*)\sFUNCTION/i", "FUNCTION", $string);
 
-    $dumpData .= "\n" . $string . "\n";
+    $dumpData .= "\n" . $string . " ;; \n";
     $dumpData .= "\n\nDELIMITER ; \n";
 
 }
