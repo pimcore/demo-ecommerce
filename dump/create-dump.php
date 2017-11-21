@@ -98,6 +98,21 @@ foreach($views as $name) {
 }
 
 
+// dump functions
+$result = $db->fetchAll("SHOW FUNCTION STATUS WHERE Db = DATABASE();");
+foreach($result as $functionData) {
+    $functionDefinition = $db->fetchRow("SHOW CREATE FUNCTION " . $functionData['Name']);
+
+    $dumpData .= "\n" . "DROP FUNCTION IF EXISTS " . $functionData['Name'] . ";";
+
+    $string = $functionDefinition['Create Function'];
+    $string = preg_replace("/DEFINER(\S*)\sFUNCTION/i", "FUNCTION", $string);
+
+    $dumpData .= "\n" . $functionDefinition['Create Function'] . "\n";
+}
+
+
+
 // remove user specific data
 $dumpData = preg_replace("/DEFINER(.*)DEFINER/i", "", $dumpData);
 

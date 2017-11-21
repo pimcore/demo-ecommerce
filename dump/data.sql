@@ -3715,3 +3715,65 @@ CREATE ALGORITHM=UNDEFINED  VIEW `object_localized_35_en_GB` AS select `object_q
 
 DROP VIEW IF EXISTS object_localized_35_fr_FR;
 CREATE ALGORITHM=UNDEFINED  VIEW `object_localized_35_fr_FR` AS select `object_query_35`.`oo_id` AS `oo_id`,`object_query_35`.`oo_classId` AS `oo_classId`,`object_query_35`.`oo_className` AS `oo_className`,`object_query_35`.`taxEntryCombinationType` AS `taxEntryCombinationType`,`objects`.`o_id` AS `o_id`,`objects`.`o_parentId` AS `o_parentId`,`objects`.`o_type` AS `o_type`,`objects`.`o_key` AS `o_key`,`objects`.`o_path` AS `o_path`,`objects`.`o_index` AS `o_index`,`objects`.`o_published` AS `o_published`,`objects`.`o_creationDate` AS `o_creationDate`,`objects`.`o_modificationDate` AS `o_modificationDate`,`objects`.`o_userOwner` AS `o_userOwner`,`objects`.`o_userModification` AS `o_userModification`,`objects`.`o_classId` AS `o_classId`,`objects`.`o_className` AS `o_className`,`fr_FR`.`ooo_id` AS `ooo_id`,`fr_FR`.`language` AS `language`,`fr_FR`.`name` AS `name` from ((`object_query_35` join `objects` on((`objects`.`o_id` = `object_query_35`.`oo_id`))) left join `object_localized_query_35_fr_FR` `fr_FR` on((1 and (`object_query_35`.`oo_id` = `fr_FR`.`ooo_id`))));
+DROP FUNCTION IF EXISTS PLUGIN_CMF_COLLECT_ASSET_SEGMENT_ASSIGNMENTS;
+CREATE DEFINER=`root`@`%` FUNCTION `PLUGIN_CMF_COLLECT_ASSET_SEGMENT_ASSIGNMENTS`(elementIdent INT) RETURNS text CHARSET utf8mb4
+BEGIN
+    DECLARE segmentIds TEXT;
+    DECLARE elementExists TINYINT;
+    DECLARE breaks TINYINT;
+
+    SELECT `segments` FROM `plugin_cmf_segment_assignment` WHERE `elementId` = elementIdent AND `elementType` = 'asset' INTO segmentIds;
+    SELECT COUNT(*) FROM `plugin_cmf_segment_assignment` WHERE `elementId` = elementIdent AND `elementType` = 'asset' INTO elementExists;
+    SELECT `breaksInheritance` FROM `plugin_cmf_segment_assignment` WHERE `elementId` = elementIdent AND `elementType` = 'asset' INTO breaks;
+
+    WHILE (elementExists = 0 OR breaks IS NULL OR breaks <> 1) AND elementIdent > 1 DO
+      SELECT `parentId`  FROM `assets` WHERE `id` = elementIdent INTO elementIdent;
+      SELECT CONCAT_WS(',', segmentIds, (SELECT `segments` FROM `plugin_cmf_segment_assignment` WHERE `elementId` = elementIdent AND `elementType` = 'asset')) INTO segmentIds;
+      SELECT COUNT(*) FROM `plugin_cmf_segment_assignment` WHERE `elementId` = elementIdent AND `elementType` = 'asset' INTO elementExists;
+      SELECT `breaksInheritance` INTO breaks FROM `plugin_cmf_segment_assignment` WHERE `elementId` = elementIdent AND `elementType` = 'asset';
+    END WHILE;
+
+    RETURN segmentIds;
+  END
+
+DROP FUNCTION IF EXISTS PLUGIN_CMF_COLLECT_DOCUMENT_SEGMENT_ASSIGNMENTS;
+CREATE DEFINER=`root`@`%` FUNCTION `PLUGIN_CMF_COLLECT_DOCUMENT_SEGMENT_ASSIGNMENTS`(elementIdent INT) RETURNS text CHARSET utf8mb4
+BEGIN
+    DECLARE segmentIds TEXT;
+    DECLARE elementExists TINYINT;
+    DECLARE breaks TINYINT;
+
+    SELECT `segments` FROM `plugin_cmf_segment_assignment` WHERE `elementId` = elementIdent AND `elementType` = 'document' INTO segmentIds;
+    SELECT COUNT(*) FROM `plugin_cmf_segment_assignment` WHERE `elementId` = elementIdent AND `elementType` = 'document' INTO elementExists;
+    SELECT `breaksInheritance` FROM `plugin_cmf_segment_assignment` WHERE `elementId` = elementIdent AND `elementType` = 'document' INTO breaks;
+
+    WHILE (elementExists = 0 OR breaks IS NULL OR breaks <> 1) AND elementIdent > 1 DO
+      SELECT `parentId`  FROM `documents` WHERE `id` = elementIdent INTO elementIdent;
+      SELECT CONCAT_WS(',', segmentIds, (SELECT `segments` FROM `plugin_cmf_segment_assignment` WHERE `elementId` = elementIdent AND `elementType` = 'document')) INTO segmentIds;
+      SELECT COUNT(*) FROM `plugin_cmf_segment_assignment` WHERE `elementId` = elementIdent AND `elementType` = 'document' INTO elementExists;
+      SELECT `breaksInheritance` INTO breaks FROM `plugin_cmf_segment_assignment` WHERE `elementId` = elementIdent AND `elementType` = 'document';
+    END WHILE;
+
+    RETURN segmentIds;
+  END
+
+DROP FUNCTION IF EXISTS PLUGIN_CMF_COLLECT_OBJECT_SEGMENT_ASSIGNMENTS;
+CREATE DEFINER=`root`@`%` FUNCTION `PLUGIN_CMF_COLLECT_OBJECT_SEGMENT_ASSIGNMENTS`(elementIdent INT) RETURNS text CHARSET utf8mb4
+BEGIN
+    DECLARE segmentIds TEXT;
+    DECLARE elementExists TINYINT;
+    DECLARE breaks TINYINT;
+
+    SELECT `segments` FROM `plugin_cmf_segment_assignment` WHERE `elementId` = elementIdent AND `elementType` = 'object' INTO segmentIds;
+    SELECT COUNT(*) FROM `plugin_cmf_segment_assignment` WHERE `elementId` = elementIdent AND `elementType` = 'object' INTO elementExists;
+    SELECT `breaksInheritance` FROM `plugin_cmf_segment_assignment` WHERE `elementId` = elementIdent AND `elementType` = 'object' INTO breaks;
+
+    WHILE (elementExists = 0 OR breaks IS NULL OR breaks <> 1) AND elementIdent > 1 DO
+      SELECT `o_parentId`  FROM `objects` WHERE `o_id` = elementIdent INTO elementIdent;
+      SELECT CONCAT_WS(',', segmentIds, (SELECT `segments` FROM `plugin_cmf_segment_assignment` WHERE `elementId` = elementIdent AND `elementType` = 'object')) INTO segmentIds;
+      SELECT COUNT(*) FROM `plugin_cmf_segment_assignment` WHERE `elementId` = elementIdent AND `elementType` = 'object' INTO elementExists;
+      SELECT `breaksInheritance` INTO breaks FROM `plugin_cmf_segment_assignment` WHERE `elementId` = elementIdent AND `elementType` = 'object';
+    END WHILE;
+
+    RETURN segmentIds;
+  END
