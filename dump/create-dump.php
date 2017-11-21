@@ -104,11 +104,13 @@ foreach($result as $functionData) {
     $functionDefinition = $db->fetchRow("SHOW CREATE FUNCTION " . $functionData['Name']);
 
     $dumpData .= "\n" . "DROP FUNCTION IF EXISTS " . $functionData['Name'] . ";";
-
+    $dumpData .= "\n\nDELIMITER ;; \n";
     $string = $functionDefinition['Create Function'];
     $string = preg_replace("/DEFINER(\S*)\sFUNCTION/i", "FUNCTION", $string);
 
-    $dumpData .= "\n" . $functionDefinition['Create Function'] . "\n";
+    $dumpData .= "\n" . $string . "\n";
+    $dumpData .= "\n\nDELIMITER ; \n";
+
 }
 
 
