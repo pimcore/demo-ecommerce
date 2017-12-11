@@ -4,19 +4,20 @@ services:
         autowire: true
         # automatically registers your services as commands, event subscribers, etc.
         autoconfigure: true
-
+        # this means you cannot fetch services directly from the container via $container->get()
+        # if you need to do this, you can override this setting on individual services
+        public: false
 
     AppBundle\Ecommerce\Tracking\TrackingItemBuilder:
-        public: false
         arguments: ['@pimcore.http.request_helper']
 
     # Product Detail Specification Template Helper
-    app.templating.helper.productDetailSpecification:
-        class: AppBundle\Templating\Helper\ProductDetailSpecification
-        arguments: ['@translator', '@pimcore.locale.intl_formatter']
+    AppBundle\Templating\Helper\ProductDetailSpecification:
+        # templating helpers need to be public as they
+        # are fetched from the container on demand
+        public: true
         tags:
             - { name: templating.helper, alias: productDetailSpecification }
-
 
     # auto-register all controllers as services
     AppBundle\Controller\:

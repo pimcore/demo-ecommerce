@@ -17,29 +17,29 @@ namespace AppBundle\Templating\Helper;
 use OutputDataConfigToolkitBundle\ConfigElement\Operator\Concatenator;
 use OutputDataConfigToolkitBundle\ConfigElement\Operator\Group;
 use OutputDataConfigToolkitBundle\ConfigElement\Value\DefaultValue;
+use Pimcore\Localization\IntlFormatter;
 use Pimcore\Model\DataObject\AbstractObject;
 use Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox;
 use Pimcore\Model\DataObject\ClassDefinition\Data\Image;
 use Pimcore\Model\DataObject\ClassDefinition\Data\Multiselect;
 use Pimcore\Model\DataObject\ClassDefinition\Data\Objects;
 use Pimcore\Model\DataObject\ClassDefinition\Data\Select;
-use Pimcore\Service\IntlFormatterService;
-use Pimcore\Translation\Translator;
 use Symfony\Component\Templating\Helper\Helper;
+use Symfony\Component\Translation\TranslatorInterface;
 
 class ProductDetailSpecification extends Helper
 {
     /**
-     * @var Translator
+     * @var TranslatorInterface
      */
     protected $translator;
 
     /**
-     * @var IntlFormatterService
+     * @var IntlFormatter
      */
     protected $formatter;
 
-    public function __construct(Translator $translator, IntlFormatterService $formatter)
+    public function __construct(TranslatorInterface $translator, IntlFormatter $formatter)
     {
         $this->translator = $translator;
         $this->formatter = $formatter;
