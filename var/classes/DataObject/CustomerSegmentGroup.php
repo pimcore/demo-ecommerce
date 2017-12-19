@@ -1,11 +1,11 @@
 <?php 
 
 /** 
-* Generated at: 2017-10-11T11:24:35+02:00
+* Generated at: 2017-12-19T09:41:33+01:00
 * Inheritance: no
 * Variants: no
-* Changed by: admin (10)
-* IP: 192.168.11.5
+* Changed by: admin (12)
+* IP: 192.168.9.18
 
 
 Fields Summary: 
@@ -13,6 +13,7 @@ Fields Summary:
 - reference [input]
 - calculated [checkbox]
 - showAsFilter [checkbox]
+- filterSortOrder [numeric]
 - exportNewsletterProvider [checkbox]
 */ 
 
@@ -25,6 +26,7 @@ namespace Pimcore\Model\DataObject;
 * @method static \Pimcore\Model\DataObject\CustomerSegmentGroup\Listing getByReference ($value, $limit = 0) 
 * @method static \Pimcore\Model\DataObject\CustomerSegmentGroup\Listing getByCalculated ($value, $limit = 0) 
 * @method static \Pimcore\Model\DataObject\CustomerSegmentGroup\Listing getByShowAsFilter ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\CustomerSegmentGroup\Listing getByFilterSortOrder ($value, $limit = 0) 
 * @method static \Pimcore\Model\DataObject\CustomerSegmentGroup\Listing getByExportNewsletterProvider ($value, $limit = 0) 
 */
 
@@ -36,6 +38,7 @@ public $name;
 public $reference;
 public $calculated;
 public $showAsFilter;
+public $filterSortOrder;
 public $exportNewsletterProvider;
 
 
@@ -138,6 +141,29 @@ public function getShowAsFilter () {
 */
 public function setShowAsFilter ($showAsFilter) {
 	$this->showAsFilter = $showAsFilter;
+	return $this;
+}
+
+/**
+* Get filterSortOrder - Filter sort order
+* @return int
+*/
+public function getFilterSortOrder () {
+	$preValue = $this->preGetValue("filterSortOrder"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
+		return $preValue;
+	}
+	$data = $this->filterSortOrder;
+	return $data;
+}
+
+/**
+* Set filterSortOrder - Filter sort order
+* @param int $filterSortOrder
+* @return \Pimcore\Model\DataObject\CustomerSegmentGroup
+*/
+public function setFilterSortOrder ($filterSortOrder) {
+	$this->filterSortOrder = $filterSortOrder;
 	return $this;
 }
 

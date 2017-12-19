@@ -17,11 +17,12 @@ glossary
 http_errors
 notes_events
 objects
-piwik_settings
 piwik_reports
+piwik_settings
 plugins
 plugin_cmf_perm_activityview
 plugin_cmf_perm_customerview
+plugin_cmf_perm_customerview_admin
 plugin_cmf_perm_customer_automation_rules
 plugin_cmf_perm_newsletter_enqueue_all_customers
 predefined_properties

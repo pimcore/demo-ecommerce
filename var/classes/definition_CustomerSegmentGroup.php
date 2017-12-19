@@ -1,11 +1,11 @@
 <?php 
 
 /** 
-* Generated at: 2017-10-11T11:24:35+02:00
+* Generated at: 2017-12-19T09:41:33+01:00
 * Inheritance: no
 * Variants: no
-* Changed by: admin (10)
-* IP: 192.168.11.5
+* Changed by: admin (12)
+* IP: 192.168.9.18
 
 
 Fields Summary: 
@@ -13,6 +13,7 @@ Fields Summary:
 - reference [input]
 - calculated [checkbox]
 - showAsFilter [checkbox]
+- filterSortOrder [numeric]
 - exportNewsletterProvider [checkbox]
 */ 
 
@@ -20,10 +21,10 @@ Fields Summary:
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'CustomerSegmentGroup',
    'description' => NULL,
-   'creationDate' => NULL,
-   'modificationDate' => 1507713875,
-   'userOwner' => NULL,
-   'userModification' => 10,
+   'creationDate' => 0,
+   'modificationDate' => 1513672893,
+   'userOwner' => 0,
+   'userModification' => 12,
    'parentClass' => NULL,
    'useTraits' => NULL,
    'allowInherit' => false,
@@ -217,6 +218,36 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'visibleSearch' => false,
               )),
               1 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
+                 'fieldtype' => 'numeric',
+                 'width' => '',
+                 'defaultValue' => NULL,
+                 'queryColumnType' => 'double',
+                 'columnType' => 'double',
+                 'phpdocType' => 'float',
+                 'integer' => true,
+                 'unsigned' => false,
+                 'minValue' => NULL,
+                 'maxValue' => NULL,
+                 'unique' => NULL,
+                 'decimalSize' => NULL,
+                 'decimalPrecision' => NULL,
+                 'name' => 'filterSortOrder',
+                 'title' => 'Filter sort order',
+                 'tooltip' => 'Set the sort order for field in customer search. The higher the sort order the higher the priority.',
+                 'mandatory' => false,
+                 'noteditable' => false,
+                 'index' => NULL,
+                 'locked' => false,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'datatype' => 'data',
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => true,
+                 'visibleSearch' => false,
+              )),
+              2 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
                  'fieldtype' => 'checkbox',
                  'defaultValue' => 0,
@@ -250,7 +281,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'icon' => '/bundles/pimcorecustomermanagementframework/icons/segment-group.svg',
    'previewUrl' => NULL,
    'group' => 'CustomerManagement',
-   'showAppLoggerTab' => NULL,
+   'showAppLoggerTab' => false,
    'linkGeneratorReference' => NULL,
    'propertyVisibility' => 
   array (

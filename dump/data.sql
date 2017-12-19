@@ -464,6 +464,7 @@ CREATE TABLE `ecommerceframework_vouchertoolkit_tokens` (
 ) ENGINE=InnoDB AUTO_INCREMENT=200002 DEFAULT CHARSET=utf8;
 
 
+
 DROP TABLE IF EXISTS `object_brick_query_OAuth1Token_38`;
 CREATE TABLE `object_brick_query_OAuth1Token_38` (
   `o_id` int(11) NOT NULL DEFAULT '0',
@@ -2169,6 +2170,7 @@ CREATE TABLE `object_query_36` (
   `calculated` tinyint(1) DEFAULT NULL,
   `showAsFilter` tinyint(1) DEFAULT NULL,
   `exportNewsletterProvider` tinyint(1) DEFAULT NULL,
+  `filterSortOrder` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`oo_id`),
   KEY `p_index_showAsFilter` (`showAsFilter`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -2940,6 +2942,7 @@ CREATE TABLE `object_store_36` (
   `calculated` tinyint(1) DEFAULT NULL,
   `showAsFilter` tinyint(1) DEFAULT NULL,
   `exportNewsletterProvider` tinyint(1) DEFAULT NULL,
+  `filterSortOrder` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`oo_id`),
   KEY `p_index_showAsFilter` (`showAsFilter`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -3169,6 +3172,22 @@ CREATE TABLE `plugin_cmf_activities` (
 
 
 
+DROP TABLE IF EXISTS `plugin_cmf_customer_filter_definition`;
+CREATE TABLE `plugin_cmf_customer_filter_definition` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `ownerId` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `definition` text NOT NULL,
+  `allowedUserIds` text,
+  `readOnly` bit(1) DEFAULT b'0',
+  `shortcutAvailable` bit(1) DEFAULT b'0',
+  `creationDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `modificationDate` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+
+
 DROP TABLE IF EXISTS `plugin_cmf_deletions`;
 CREATE TABLE `plugin_cmf_deletions` (
   `id` int(11) unsigned NOT NULL,
@@ -3336,6 +3355,8 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpe
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-gridconfig_favourites.csv' INTO TABLE `gridconfig_favourites`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-gridconfig_shares.csv' INTO TABLE `gridconfig_shares`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-gridconfigs.csv' INTO TABLE `gridconfigs`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-importconfig_shares.csv' INTO TABLE `importconfig_shares`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-importconfigs.csv' INTO TABLE `importconfigs`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-notes.csv' INTO TABLE `notes`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-notes_data.csv' INTO TABLE `notes_data`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_query_OAuth1Token_38.csv' INTO TABLE `object_brick_query_OAuth1Token_38`;
@@ -3497,6 +3518,7 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpe
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_actiontrigger_queue.csv' INTO TABLE `plugin_cmf_actiontrigger_queue`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_actiontrigger_rules.csv' INTO TABLE `plugin_cmf_actiontrigger_rules`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_activities.csv' INTO TABLE `plugin_cmf_activities`(id, customerId, activityDate, type, implementationClass, o_id, a_id, @hexAttributes, md5, creationDate, modificationDate) SET attributes=UNHEX(@hexAttributes);
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_customer_filter_definition.csv' INTO TABLE `plugin_cmf_customer_filter_definition`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_deletions.csv' INTO TABLE `plugin_cmf_deletions`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_duplicates_false_positives.csv' INTO TABLE `plugin_cmf_duplicates_false_positives`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-plugin_cmf_duplicatesindex.csv' INTO TABLE `plugin_cmf_duplicatesindex`;
@@ -3566,7 +3588,7 @@ DROP VIEW IF EXISTS object_35;
 CREATE ALGORITHM=UNDEFINED  VIEW `object_35` AS select `object_query_35`.`oo_id` AS `oo_id`,`object_query_35`.`oo_classId` AS `oo_classId`,`object_query_35`.`oo_className` AS `oo_className`,`object_query_35`.`taxEntryCombinationType` AS `taxEntryCombinationType`,`objects`.`o_id` AS `o_id`,`objects`.`o_parentId` AS `o_parentId`,`objects`.`o_type` AS `o_type`,`objects`.`o_key` AS `o_key`,`objects`.`o_path` AS `o_path`,`objects`.`o_index` AS `o_index`,`objects`.`o_published` AS `o_published`,`objects`.`o_creationDate` AS `o_creationDate`,`objects`.`o_modificationDate` AS `o_modificationDate`,`objects`.`o_userOwner` AS `o_userOwner`,`objects`.`o_userModification` AS `o_userModification`,`objects`.`o_classId` AS `o_classId`,`objects`.`o_className` AS `o_className` from (`object_query_35` join `objects` on((`objects`.`o_id` = `object_query_35`.`oo_id`)));
 
 DROP VIEW IF EXISTS object_36;
-CREATE ALGORITHM=UNDEFINED  VIEW `object_36` AS select `object_query_36`.`oo_id` AS `oo_id`,`object_query_36`.`oo_classId` AS `oo_classId`,`object_query_36`.`oo_className` AS `oo_className`,`object_query_36`.`name` AS `name`,`object_query_36`.`reference` AS `reference`,`object_query_36`.`calculated` AS `calculated`,`object_query_36`.`showAsFilter` AS `showAsFilter`,`object_query_36`.`exportNewsletterProvider` AS `exportNewsletterProvider`,`objects`.`o_id` AS `o_id`,`objects`.`o_parentId` AS `o_parentId`,`objects`.`o_type` AS `o_type`,`objects`.`o_key` AS `o_key`,`objects`.`o_path` AS `o_path`,`objects`.`o_index` AS `o_index`,`objects`.`o_published` AS `o_published`,`objects`.`o_creationDate` AS `o_creationDate`,`objects`.`o_modificationDate` AS `o_modificationDate`,`objects`.`o_userOwner` AS `o_userOwner`,`objects`.`o_userModification` AS `o_userModification`,`objects`.`o_classId` AS `o_classId`,`objects`.`o_className` AS `o_className` from (`object_query_36` join `objects` on((`objects`.`o_id` = `object_query_36`.`oo_id`)));
+CREATE ALGORITHM=UNDEFINED  VIEW `object_36` AS select `object_query_36`.`oo_id` AS `oo_id`,`object_query_36`.`oo_classId` AS `oo_classId`,`object_query_36`.`oo_className` AS `oo_className`,`object_query_36`.`name` AS `name`,`object_query_36`.`reference` AS `reference`,`object_query_36`.`calculated` AS `calculated`,`object_query_36`.`showAsFilter` AS `showAsFilter`,`object_query_36`.`exportNewsletterProvider` AS `exportNewsletterProvider`,`object_query_36`.`filterSortOrder` AS `filterSortOrder`,`objects`.`o_id` AS `o_id`,`objects`.`o_parentId` AS `o_parentId`,`objects`.`o_type` AS `o_type`,`objects`.`o_key` AS `o_key`,`objects`.`o_path` AS `o_path`,`objects`.`o_index` AS `o_index`,`objects`.`o_published` AS `o_published`,`objects`.`o_creationDate` AS `o_creationDate`,`objects`.`o_modificationDate` AS `o_modificationDate`,`objects`.`o_userOwner` AS `o_userOwner`,`objects`.`o_userModification` AS `o_userModification`,`objects`.`o_classId` AS `o_classId`,`objects`.`o_className` AS `o_className` from (`object_query_36` join `objects` on((`objects`.`o_id` = `object_query_36`.`oo_id`)));
 
 DROP VIEW IF EXISTS object_37;
 CREATE ALGORITHM=UNDEFINED  VIEW `object_37` AS select `object_query_37`.`oo_id` AS `oo_id`,`object_query_37`.`oo_classId` AS `oo_classId`,`object_query_37`.`oo_className` AS `oo_className`,`object_query_37`.`name` AS `name`,`object_query_37`.`group__id` AS `group__id`,`object_query_37`.`group__type` AS `group__type`,`object_query_37`.`reference` AS `reference`,`object_query_37`.`calculated` AS `calculated`,`objects`.`o_id` AS `o_id`,`objects`.`o_parentId` AS `o_parentId`,`objects`.`o_type` AS `o_type`,`objects`.`o_key` AS `o_key`,`objects`.`o_path` AS `o_path`,`objects`.`o_index` AS `o_index`,`objects`.`o_published` AS `o_published`,`objects`.`o_creationDate` AS `o_creationDate`,`objects`.`o_modificationDate` AS `o_modificationDate`,`objects`.`o_userOwner` AS `o_userOwner`,`objects`.`o_userModification` AS `o_userModification`,`objects`.`o_classId` AS `o_classId`,`objects`.`o_className` AS `o_className` from (`object_query_37` join `objects` on((`objects`.`o_id` = `object_query_37`.`oo_id`)));
@@ -3669,4 +3691,3 @@ CREATE ALGORITHM=UNDEFINED  VIEW `object_localized_35_en_GB` AS select `object_q
 
 DROP VIEW IF EXISTS object_localized_35_fr_FR;
 CREATE ALGORITHM=UNDEFINED  VIEW `object_localized_35_fr_FR` AS select `object_query_35`.`oo_id` AS `oo_id`,`object_query_35`.`oo_classId` AS `oo_classId`,`object_query_35`.`oo_className` AS `oo_className`,`object_query_35`.`taxEntryCombinationType` AS `taxEntryCombinationType`,`objects`.`o_id` AS `o_id`,`objects`.`o_parentId` AS `o_parentId`,`objects`.`o_type` AS `o_type`,`objects`.`o_key` AS `o_key`,`objects`.`o_path` AS `o_path`,`objects`.`o_index` AS `o_index`,`objects`.`o_published` AS `o_published`,`objects`.`o_creationDate` AS `o_creationDate`,`objects`.`o_modificationDate` AS `o_modificationDate`,`objects`.`o_userOwner` AS `o_userOwner`,`objects`.`o_userModification` AS `o_userModification`,`objects`.`o_classId` AS `o_classId`,`objects`.`o_className` AS `o_className`,`fr_FR`.`ooo_id` AS `ooo_id`,`fr_FR`.`language` AS `language`,`fr_FR`.`name` AS `name` from ((`object_query_35` join `objects` on((`objects`.`o_id` = `object_query_35`.`oo_id`))) left join `object_localized_query_35_fr_FR` `fr_FR` on((1 and (`object_query_35`.`oo_id` = `fr_FR`.`ooo_id`))));
-
