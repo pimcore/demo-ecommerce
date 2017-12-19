@@ -3,10 +3,13 @@
   "description": "E-Commerce Demo Application for Pimcore 5",
   "type": "pimcore-install-profile",
   "license": "GPL-3.0",
+  "config": {
+    "sort-packages": true
+  },
   "require": {
     "php": ">=7.0",
-    "pimcore/web2print-tools-bundle": "^2.1",
     "pimcore/advanced-object-search": "^1.2",
-    "pimcore/customer-management-framework-bundle": "^1"
+    "pimcore/customer-management-framework-bundle": "^1",
+    "pimcore/web2print-tools-bundle": "^2.1"
   }
 }
