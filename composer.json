@@ -8,9 +8,9 @@
   },
   "require": {
     "php": ">=7.0",
-    "pimcore/advanced-object-search": "^1.2.1",
-    "pimcore/customer-management-framework-bundle": "^1",
-    "pimcore/web2print-tools-bundle": "^2.1",
-    "dpfaffenbauer/workflow-gui": "^2"
+    "pimcore/advanced-object-search": "^1.3",
+    "pimcore/core-version": "~5.1.0",
+    "pimcore/customer-management-framework-bundle": "^1.4",
+    "pimcore/web2print-tools-bundle": "^2.2"
   }
 }
