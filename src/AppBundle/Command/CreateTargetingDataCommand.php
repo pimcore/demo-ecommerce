@@ -435,9 +435,11 @@ EOF;
                     ]
                 ],
                 'actions'    => [
-                    'type'        => 'assign_target_group',
-                    'targetGroup' => $this->targetGroupId('technical-guy'),
-                    'weight'      => 1,
+                    [
+                        'type'        => 'assign_target_group',
+                        'targetGroup' => $this->targetGroupId('technical-guy'),
+                        'weight'      => 1,
+                    ]
                 ]
             ],
 
