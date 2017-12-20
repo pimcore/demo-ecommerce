@@ -136,7 +136,7 @@ header.jumbotron {
 EOF;
 
         $rules = [
-            'new-customer' => [
+            'vip-customer' => [
                 'scope'      => Rule::SCOPE_VISITOR,
                 'conditions' => [
                     [
@@ -146,11 +146,18 @@ EOF;
                         'bracketLeft'  => false,
                         'bracketRight' => false
                     ],
+                    [
+                        'type'         => 'target_group',
+                        'targetGroup'  => $this->targetGroupId('regular-customer'),
+                        'operator'     => 'and',
+                        'bracketLeft'  => false,
+                        'bracketRight' => false
+                    ]
                 ],
                 'actions'    => [
                     [
                         'type'        => 'assign_target_group',
-                        'targetGroup' => $this->targetGroupId('new-customer'),
+                        'targetGroup' => $this->targetGroupId('vip-customer'),
                         'weight'      => 1,
                     ]
                 ]
@@ -183,7 +190,7 @@ EOF;
                 ]
             ],
 
-            'vip-customer' => [
+            'new-customer' => [
                 'scope'      => Rule::SCOPE_VISITOR,
                 'conditions' => [
                     [
@@ -193,18 +200,11 @@ EOF;
                         'bracketLeft'  => false,
                         'bracketRight' => false
                     ],
-                    [
-                        'type'         => 'target_group',
-                        'targetGroup'  => $this->targetGroupId('regular-customer'),
-                        'operator'     => 'and',
-                        'bracketLeft'  => false,
-                        'bracketRight' => false
-                    ]
                 ],
                 'actions'    => [
                     [
                         'type'        => 'assign_target_group',
-                        'targetGroup' => $this->targetGroupId('vip-customer'),
+                        'targetGroup' => $this->targetGroupId('new-customer'),
                         'weight'      => 1,
                     ]
                 ]
@@ -551,6 +551,7 @@ EOF;
             ],
         ];
 
+        $prio = 1;
         foreach ($rules as $name => $data) {
             $rule = Rule::getByName($name);
 
@@ -564,6 +565,7 @@ EOF;
             }
 
             $rule->setActive(true);
+            $rule->setPrio($prio++);
             $rule->setScope($data['scope']);
             $rule->setConditions($data['conditions']);
             $rule->setActions($data['actions']);
