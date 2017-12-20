@@ -141,7 +141,7 @@ EOF;
                 'conditions' => [
                     [
                         'type'         => 'url',
-                        'url'          => '#(en/de)/checkout/completed#',
+                        'url'          => '#/en/checkout/completed#',
                         'operator'     => 'and',
                         'bracketLeft'  => false,
                         'bracketRight' => false
@@ -161,7 +161,7 @@ EOF;
                 'conditions' => [
                     [
                         'type'         => 'url',
-                        'url'          => '#(en/de)/checkout/completed#',
+                        'url'          => '#/en/checkout/completed#',
                         'operator'     => 'and',
                         'bracketLeft'  => false,
                         'bracketRight' => false
@@ -188,7 +188,7 @@ EOF;
                 'conditions' => [
                     [
                         'type'         => 'url',
-                        'url'          => '#(en/de)/checkout/completed#',
+                        'url'          => '#/en/checkout/completed#',
                         'operator'     => 'and',
                         'bracketLeft'  => false,
                         'bracketRight' => false
