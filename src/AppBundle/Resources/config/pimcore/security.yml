@@ -47,3 +47,5 @@ security:
                 invalidate_session: false
                 # use custom success handler to also update e-commerce framework environment after successful logout
                 success_handler: AppBundle\EventListener\AuthenticationLogoutListener
+
+            logout_on_user_change: true
