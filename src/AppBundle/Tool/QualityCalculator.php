@@ -127,7 +127,7 @@ class QualityCalculator {
 
             $htmlTable .= "</table>";
 
-            return "<h1>Data Quality Summary</h1>" . $htmlTable;
+            return "<h2>Data Quality Summary</h2>" . $htmlTable;
         } else {
             return "";
         }
