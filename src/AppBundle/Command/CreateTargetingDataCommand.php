@@ -168,7 +168,7 @@ EOF;
                     ],
                     [
                         'type'         => 'target_group',
-                        'target_group' => $this->targetGroupId('new-customer'),
+                        'targetGroup'  => $this->targetGroupId('new-customer'),
                         'operator'     => 'and',
                         'bracketLeft'  => false,
                         'bracketRight' => false
@@ -195,7 +195,7 @@ EOF;
                     ],
                     [
                         'type'         => 'target_group',
-                        'target_group' => $this->targetGroupId('regular-customer'),
+                        'targetGroup'  => $this->targetGroupId('regular-customer'),
                         'operator'     => 'and',
                         'bracketLeft'  => false,
                         'bracketRight' => false
