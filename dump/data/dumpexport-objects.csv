@@ -624,7 +624,7 @@
 1589	1584	object	black-white	/products/products/apparel/teamsport/fw12_13/short-sonny/	0	1	1331135253	1460214376	1	\N	12	Product
 1591	1586	object	black	/products/products/apparel/running/fw12_13/pavel_juniors/	0	1	1345467421	1460214376	1	\N	12	Product
 1593	59	object	alfons	/products/products/apparel/running/ss13/	0	1	1359457224	1460214376	1	\N	12	Product
-1594	33	object	cedic_men	/products/products/apparel/running/fw12_13/	0	1	1345445465	1513672888	1	12	12	Product
+1594	33	object	cedic_men	/products/products/apparel/running/fw12_13/	0	1	1345445465	1513672888	1	\N	12	Product
 1596	59	object	inez	/products/products/apparel/running/ss13/	0	1	1359368945	1460214376	1	\N	12	Product
 1597	1593	object	black	/products/products/apparel/running/ss13/alfons/	0	1	1359457478	1460214376	1	\N	12	Product
 1598	1596	object	blue	/products/products/apparel/running/ss13/inez/	0	1	1359369228	1460214376	1	\N	12	Product

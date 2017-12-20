@@ -24,3 +24,8 @@ services:
         resource: '../../Controller'
         public: true
         tags: ['controller.service_arguments']
+
+
+    AppBundle\EventListener\PimcoreAdminListener:
+        tags:
+            - { name: kernel.event_listener, event: pimcore.bundle_manager.paths.css, method: addCSSFiles }

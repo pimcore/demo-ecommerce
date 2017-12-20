@@ -33,6 +33,13 @@ class AdminStyle extends \Pimcore\Model\Element\AdminStyle
                 $this->elementIcon = '/pimcore/static6/img/icon/tag_blue.png';
                 $this->elementIconClass = null;
             }
+
+            if($element->getTextsAvailable() == "not completed") {
+                $this->elementCssClass = 'qa-text-not-completed';
+            } else if($element->getAttributesAvailable() == "not completed") {
+                $this->elementCssClass = 'qa-attributes-not-completed';
+            }
+
             AbstractObject::setGetInheritedValues($backup);
         }
     }

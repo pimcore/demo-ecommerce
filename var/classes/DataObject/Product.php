@@ -1,14 +1,14 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-07-13T17:04:26+02:00
+/** 
+* Generated at: 2017-12-20T15:28:45+01:00
 * Inheritance: yes
 * Variants: yes
-* Changed by: admin (8)
-* IP: 192.168.11.5
+* Changed by: admin (13)
+* IP: 192.168.9.18
 
 
-Fields Summary:
+Fields Summary: 
 - localizedfields [localizedfields]
 -- name [input]
 -- seoname [input]
@@ -22,6 +22,7 @@ Fields Summary:
 -- videos [multihref]
 -- rotation [href]
 -- youtubeVideo [input]
+-- textsAvailable [calculatedValue]
 - artno [input]
 - ean [input]
 - size [input]
@@ -39,31 +40,35 @@ Fields Summary:
 - images [fieldcollections]
 - specificAttributes [objectbricks]
 - relatedProducts [objects]
-*/
+- attributesAvailable [calculatedValue]
+- variantsAvailable [calculatedValue]
+*/ 
 
 namespace Pimcore\Model\DataObject;
 
 
 
 /**
-* @method \Pimcore\Model\DataObject\Product\Listing getByLocalizedfields ($field, $value, $locale = null, $limit = 0)
-* @method \Pimcore\Model\DataObject\Product\Listing getByArtno ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\Product\Listing getByEan ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\Product\Listing getBySize ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\Product\Listing getByBrand ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\Product\Listing getByGender ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\Product\Listing getByCategories ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\Product\Listing getByFeatures ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\Product\Listing getByTechnologies ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\Product\Listing getByAttributes ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\Product\Listing getByCollection ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\Product\Listing getByColor ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\Product\Listing getByMaterialComposition ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\Product\Listing getBySecondaryMaterialComposition ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\Product\Listing getByImagesInheritance ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\Product\Listing getByImages ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\Product\Listing getBySpecificAttributes ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\Product\Listing getByRelatedProducts ($value, $limit = 0)
+* @method static \Pimcore\Model\DataObject\Product\Listing getByLocalizedfields ($field, $value, $locale = null, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Product\Listing getByArtno ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Product\Listing getByEan ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Product\Listing getBySize ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Product\Listing getByBrand ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Product\Listing getByGender ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Product\Listing getByCategories ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Product\Listing getByFeatures ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Product\Listing getByTechnologies ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Product\Listing getByAttributes ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Product\Listing getByCollection ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Product\Listing getByColor ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Product\Listing getByMaterialComposition ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Product\Listing getBySecondaryMaterialComposition ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Product\Listing getByImagesInheritance ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Product\Listing getByImages ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Product\Listing getBySpecificAttributes ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Product\Listing getByRelatedProducts ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Product\Listing getByAttributesAvailable ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\Product\Listing getByVariantsAvailable ($value, $limit = 0) 
 */
 
 class Product extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractProduct {
@@ -105,8 +110,8 @@ public static function create($values = array()) {
 * @return \Pimcore\Model\DataObject\Localizedfield
 */
 public function getLocalizedfields () {
-	$preValue = $this->preGetValue("localizedfields");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("localizedfields"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->getClass()->getFieldDefinition("localizedfields")->preGetData($this);
@@ -122,8 +127,8 @@ public function getLocalizedfields () {
 */
 public function getName ($language = null) {
 	$data = $this->getLocalizedfields()->getLocalizedValue("name", $language);
-	$preValue = $this->preGetValue("name");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("name"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	 return $data;
@@ -135,8 +140,8 @@ public function getName ($language = null) {
 */
 public function getSeoname ($language = null) {
 	$data = $this->getLocalizedfields()->getLocalizedValue("seoname", $language);
-	$preValue = $this->preGetValue("seoname");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("seoname"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	 return $data;
@@ -148,8 +153,8 @@ public function getSeoname ($language = null) {
 */
 public function getColorName ($language = null) {
 	$data = $this->getLocalizedfields()->getLocalizedValue("colorName", $language);
-	$preValue = $this->preGetValue("colorName");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("colorName"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	 return $data;
@@ -161,8 +166,8 @@ public function getColorName ($language = null) {
 */
 public function getPrice ($language = null) {
 	$data = $this->getLocalizedfields()->getLocalizedValue("price", $language);
-	$preValue = $this->preGetValue("price");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("price"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	 return $data;
@@ -174,8 +179,8 @@ public function getPrice ($language = null) {
 */
 public function getPriceOld ($language = null) {
 	$data = $this->getLocalizedfields()->getLocalizedValue("priceOld", $language);
-	$preValue = $this->preGetValue("priceOld");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("priceOld"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	 return $data;
@@ -187,8 +192,8 @@ public function getPriceOld ($language = null) {
 */
 public function getFromPrice ($language = null) {
 	$data = $this->getLocalizedfields()->getLocalizedValue("fromPrice", $language);
-	$preValue = $this->preGetValue("fromPrice");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("fromPrice"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	 return $data;
@@ -200,8 +205,8 @@ public function getFromPrice ($language = null) {
 */
 public function getDescription ($language = null) {
 	$data = $this->getLocalizedfields()->getLocalizedValue("description", $language);
-	$preValue = $this->preGetValue("description");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("description"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	 return $data;
@@ -213,8 +218,8 @@ public function getDescription ($language = null) {
 */
 public function getMaterial ($language = null) {
 	$data = $this->getLocalizedfields()->getLocalizedValue("material", $language);
-	$preValue = $this->preGetValue("material");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("material"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	 return $data;
@@ -226,8 +231,8 @@ public function getMaterial ($language = null) {
 */
 public function getDownloads ($language = null) {
 	$data = $this->getLocalizedfields()->getLocalizedValue("downloads", $language);
-	$preValue = $this->preGetValue("downloads");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("downloads"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	 return $data;
@@ -239,8 +244,8 @@ public function getDownloads ($language = null) {
 */
 public function getVideos ($language = null) {
 	$data = $this->getLocalizedfields()->getLocalizedValue("videos", $language);
-	$preValue = $this->preGetValue("videos");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("videos"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	 return $data;
@@ -252,8 +257,8 @@ public function getVideos ($language = null) {
 */
 public function getRotation ($language = null) {
 	$data = $this->getLocalizedfields()->getLocalizedValue("rotation", $language);
-	$preValue = $this->preGetValue("rotation");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("rotation"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	 return $data;
@@ -265,12 +270,35 @@ public function getRotation ($language = null) {
 */
 public function getYoutubeVideo ($language = null) {
 	$data = $this->getLocalizedfields()->getLocalizedValue("youtubeVideo", $language);
-	$preValue = $this->preGetValue("youtubeVideo");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("youtubeVideo"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	 return $data;
 }
+
+/**
+* Get textsAvailable -   Texts Available
+* @return \Pimcore\Model\DataObject\Data\CalculatedValue
+*/
+public function getTextsAvailable ($language = null) {
+	if (!$language) {
+		try {
+			$locale = \Pimcore::getContainer()->get("pimcore.locale")->findLocale();
+			if (\Pimcore\Tool::isValidLanguage($locale)) {
+				$language = (string) $locale;
+			} else {
+				throw new \Exception("Not supported language");
+			}
+		} catch (\Exception $e) {
+			$language = \Pimcore\Tool::getDefaultLanguage();
+		}
+	}
+	$data = new \Pimcore\Model\DataObject\Data\CalculatedValue('textsAvailable');
+	$data->setContextualData("localizedfield", "localizedfields", null, $language);
+	$data = Service::getCalculatedFieldValue($this, $data);
+	return $data;
+	}
 
 /**
 * Set localizedfields - Attributes
@@ -403,12 +431,21 @@ public function setYoutubeVideo ($youtubeVideo, $language = null) {
 }
 
 /**
+* Set textsAvailable -   Texts Available
+* @param \Pimcore\Model\DataObject\Data\CalculatedValue $textsAvailable
+* @return \Pimcore\Model\DataObject\Product
+*/
+public function setTextsAvailable ($textsAvailable, $language = null) {
+	return $this;
+}
+
+/**
 * Get artno - Article Number
 * @return string
 */
 public function getArtno () {
-	$preValue = $this->preGetValue("artno");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("artno"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->artno;
@@ -433,8 +470,8 @@ public function setArtno ($artno) {
 * @return string
 */
 public function getEan () {
-	$preValue = $this->preGetValue("ean");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("ean"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->ean;
@@ -459,8 +496,8 @@ public function setEan ($ean) {
 * @return string
 */
 public function getSize () {
-	$preValue = $this->preGetValue("size");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("size"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->size;
@@ -485,8 +522,8 @@ public function setSize ($size) {
 * @return \Pimcore\Model\DataObject\productBrand
 */
 public function getBrand () {
-	$preValue = $this->preGetValue("brand");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("brand"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->getClass()->getFieldDefinition("brand")->preGetData($this);
@@ -511,8 +548,8 @@ public function setBrand ($brand) {
 * @return array
 */
 public function getGender () {
-	$preValue = $this->preGetValue("gender");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("gender"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->gender;
@@ -537,8 +574,8 @@ public function setGender ($gender) {
 * @return \Pimcore\Model\DataObject\ProductCategory[]
 */
 public function getCategories () {
-	$preValue = $this->preGetValue("categories");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("categories"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->getClass()->getFieldDefinition("categories")->preGetData($this);
@@ -563,8 +600,8 @@ public function setCategories ($categories) {
 * @return \Pimcore\Model\DataObject\ProductAttribute[] | \Pimcore\Model\DataObject\ProductTechnology[]
 */
 public function getFeatures () {
-	$preValue = $this->preGetValue("features");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("features"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->getClass()->getFieldDefinition("features")->preGetData($this);
@@ -589,8 +626,8 @@ public function setFeatures ($features) {
 * @return \Pimcore\Model\DataObject\ProductTechnology[] | \Pimcore\Model\DataObject\ProductAttribute[]
 */
 public function getTechnologies () {
-	$preValue = $this->preGetValue("technologies");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("technologies"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->getClass()->getFieldDefinition("technologies")->preGetData($this);
@@ -615,8 +652,8 @@ public function setTechnologies ($technologies) {
 * @return \Pimcore\Model\DataObject\AbstractObject[]
 */
 public function getAttributes () {
-	$preValue = $this->preGetValue("attributes");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("attributes"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->getClass()->getFieldDefinition("attributes")->preGetData($this);
@@ -641,8 +678,8 @@ public function setAttributes ($attributes) {
 * @return \Pimcore\Model\DataObject\AbstractObject[]
 */
 public function getCollection () {
-	$preValue = $this->preGetValue("collection");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("collection"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->getClass()->getFieldDefinition("collection")->preGetData($this);
@@ -667,8 +704,8 @@ public function setCollection ($collection) {
 * @return array
 */
 public function getColor () {
-	$preValue = $this->preGetValue("color");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("color"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->color;
@@ -693,8 +730,8 @@ public function setColor ($color) {
 * @return \Pimcore\Model\DataObject\AbstractObject[]
 */
 public function getMaterialComposition () {
-	$preValue = $this->preGetValue("materialComposition");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("materialComposition"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->getClass()->getFieldDefinition("materialComposition")->preGetData($this);
@@ -719,8 +756,8 @@ public function setMaterialComposition ($materialComposition) {
 * @return \Pimcore\Model\DataObject\AbstractObject[]
 */
 public function getSecondaryMaterialComposition () {
-	$preValue = $this->preGetValue("secondaryMaterialComposition");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("secondaryMaterialComposition"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->getClass()->getFieldDefinition("secondaryMaterialComposition")->preGetData($this);
@@ -745,8 +782,8 @@ public function setSecondaryMaterialComposition ($secondaryMaterialComposition) 
 * @return string
 */
 public function getImagesInheritance () {
-	$preValue = $this->preGetValue("imagesInheritance");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("imagesInheritance"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->imagesInheritance;
@@ -770,7 +807,7 @@ public function setImagesInheritance ($imagesInheritance) {
 * @return \Pimcore\Model\DataObject\Fieldcollection
 */
 public function getImages () {
-	$preValue = $this->preGetValue("images");
+	$preValue = $this->preGetValue("images"); 
 	if($preValue !== null && !\Pimcore::inAdmin()) { return $preValue;}
 	$data = $this->getClass()->getFieldDefinition("images")->preGetData($this);
 	 return $data;
@@ -791,15 +828,15 @@ public function setImages ($images) {
 */
 public function getSpecificAttributes () {
 	$data = $this->specificAttributes;
-	if(!$data) {
-		if(\Pimcore\Tool::classExists("\\Pimcore\\Model\\DataObject\\Product\\SpecificAttributes")) {
+	if(!$data) { 
+		if(\Pimcore\Tool::classExists("\\Pimcore\\Model\\DataObject\\Product\\SpecificAttributes")) { 
 			$data = new \Pimcore\Model\DataObject\Product\SpecificAttributes($this, "specificAttributes");
 			$this->specificAttributes = $data;
 		} else {
 			return null;
 		}
 	}
-	$preValue = $this->preGetValue("specificAttributes");
+	$preValue = $this->preGetValue("specificAttributes"); 
 	if($preValue !== null && !\Pimcore::inAdmin()) { return $preValue;}
 	 return $data;
 }
@@ -819,8 +856,8 @@ public function setSpecificAttributes ($specificAttributes) {
 * @return \Pimcore\Model\DataObject\Product[]
 */
 public function getRelatedProducts () {
-	$preValue = $this->preGetValue("relatedProducts");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("relatedProducts"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->getClass()->getFieldDefinition("relatedProducts")->preGetData($this);
@@ -840,40 +877,80 @@ public function setRelatedProducts ($relatedProducts) {
 	return $this;
 }
 
+/**
+* Get attributesAvailable -   Attributes Available
+* @return \Pimcore\Model\DataObject\Data\CalculatedValue
+*/
+public function getAttributesAvailable () {
+	$data = new \Pimcore\Model\DataObject\Data\CalculatedValue('attributesAvailable');
+	$data->setContextualData("object", null, null, null);
+	$data = Service::getCalculatedFieldValue($this, $data);
+	return $data;
+	}
+
+/**
+* Set attributesAvailable -   Attributes Available
+* @param \Pimcore\Model\DataObject\Data\CalculatedValue $attributesAvailable
+* @return \Pimcore\Model\DataObject\Product
+*/
+public function setAttributesAvailable ($attributesAvailable) {
+	return $this;
+}
+
+/**
+* Get variantsAvailable -   Variants Available
+* @return \Pimcore\Model\DataObject\Data\CalculatedValue
+*/
+public function getVariantsAvailable () {
+	$data = new \Pimcore\Model\DataObject\Data\CalculatedValue('variantsAvailable');
+	$data->setContextualData("object", null, null, null);
+	$data = Service::getCalculatedFieldValue($this, $data);
+	return $data;
+	}
+
+/**
+* Set variantsAvailable -   Variants Available
+* @param \Pimcore\Model\DataObject\Data\CalculatedValue $variantsAvailable
+* @return \Pimcore\Model\DataObject\Product
+*/
+public function setVariantsAvailable ($variantsAvailable) {
+	return $this;
+}
+
 protected static $_relationFields = array (
-  'brand' =>
+  'brand' => 
   array (
     'type' => 'href',
   ),
-  'categories' =>
+  'categories' => 
   array (
     'type' => 'objects',
   ),
-  'features' =>
+  'features' => 
   array (
     'type' => 'objects',
   ),
-  'technologies' =>
+  'technologies' => 
   array (
     'type' => 'objects',
   ),
-  'attributes' =>
+  'attributes' => 
   array (
     'type' => 'objects',
   ),
-  'collection' =>
+  'collection' => 
   array (
     'type' => 'objects',
   ),
-  'materialComposition' =>
+  'materialComposition' => 
   array (
     'type' => 'objectsMetadata',
   ),
-  'secondaryMaterialComposition' =>
+  'secondaryMaterialComposition' => 
   array (
     'type' => 'objectsMetadata',
   ),
-  'relatedProducts' =>
+  'relatedProducts' => 
   array (
     'type' => 'objects',
   ),
