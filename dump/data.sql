@@ -3337,36 +3337,6 @@ CREATE TABLE `plugin_cmf_sequence_numbers` (
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-
-
-DROP TABLE IF EXISTS `targeting_storage`;
-CREATE TABLE `targeting_storage` (
-  `visitorId` varchar(100) NOT NULL,
-  `scope` varchar(50) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `value` text,
-  `creationDate` datetime DEFAULT NULL,
-  `modificationDate` datetime DEFAULT NULL,
-  PRIMARY KEY (`visitorId`,`scope`,`name`),
-  KEY `targeting_storage_scope_index` (`scope`),
-  KEY `targeting_storage_name_index` (`name`),
-  KEY `targeting_storage_visitorId_index` (`visitorId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-
-
-DROP TABLE IF EXISTS `targeting_target_groups`;
-CREATE TABLE `targeting_target_groups` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) NOT NULL DEFAULT '',
-  `description` text,
-  `threshold` int(11) DEFAULT NULL,
-  `active` tinyint(1) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4;
-
-
-
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-assets.csv' INTO TABLE `assets`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-assets_metadata.csv' INTO TABLE `assets_metadata`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-bundle_advancedobjectsearch_savedsearch.csv' INTO TABLE `bundle_advancedobjectsearch_savedsearch`;
