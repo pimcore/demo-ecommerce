@@ -245,10 +245,10 @@
 1134	1133	object	brown-black	/products/products/basketball/fw12_13/balls/competition-mini/	0	1	1329819065	1460214380	1	\N	12	Product
 1136	1133	object	bluelight-black	/products/products/basketball/fw12_13/balls/competition-mini/	0	1	1329816129	1460214380	1	\N	12	Product
 1139	83	object	supreme-grip	/products/products/handball/fw12_13/balls/	0	1	1329746295	1460214383	1	\N	12	Product
-1141	83	object	game	/products/products/handball/fw12_13/balls/	0	1	1329746295	1513783465	1	13	12	Product
+1141	83	object	game	/products/products/handball/fw12_13/balls/	0	1	1329746295	1513783465	1	\N	12	Product
 1143	6268	object	ss12	/products/seasons/	0	1	1345019104	1460213954	1	\N	15	ProductCollection
 1148	83	object	all-court	/products/products/handball/fw12_13/balls/	0	1	1329746295	1460214383	1	\N	12	Product
-1151	83	object	indoor-court	/products/products/handball/fw12_13/balls/	0	1	1329746295	1513849635	1	13	12	Product
+1151	83	object	indoor-court	/products/products/handball/fw12_13/balls/	0	1	1329746295	1513849635	1	\N	12	Product
 1153	83	object	super-grip	/products/products/handball/fw12_13/balls/	0	1	1329746295	1460214383	1	\N	12	Product
 1155	1141	object	limegreen-black	/products/products/handball/fw12_13/balls/game/	0	1	1329746432	1460214383	1	\N	12	Product
 1157	1141	object	orange-black	/products/products/handball/fw12_13/balls/game/	0	1	1329746432	1460214383	1	\N	12	Product
@@ -471,7 +471,7 @@
 1430	1410	object	red_red_green_lime	/products/products/apparel/running/fw12_13/gerla_wms/	0	1	1345110813	1460214376	1	\N	12	Product
 1431	1395	object	blue-yellow-white	/products/products/volleyball/fw12_13/balls/mp-200/	0	1	1329733439	1460214393	1	\N	12	Product
 1432	87	object	elexir_iii_men	/products/products/shoes/running/fw12_13/	0	1	1345041561	1460214386	1	\N	12	Product
-1433	33	object	gaby_wms	/products/products/apparel/running/fw12_13/	0	0	1345098566	1513849892	1	13	12	Product
+1433	33	object	gaby_wms	/products/products/apparel/running/fw12_13/	0	0	1345098566	1513849892	1	\N	12	Product
 1434	97	object	mp-150	/products/products/volleyball/fw12_13/balls/	0	1	1329733684	1460214393	1	\N	12	Product
 1435	1434	object	blue-yellow	/products/products/volleyball/fw12_13/balls/mp-150/	0	1	1329733784	1460214393	1	\N	12	Product
 1436	1410	object	navy_pink_pink	/products/products/apparel/running/fw12_13/gerla_wms/	0	1	1345110922	1460214376	1	\N	12	Product
@@ -492,7 +492,7 @@
 1452	1433	object	navy_pink	/products/products/apparel/running/fw12_13/gaby_wms/	0	1	1345105502	1460214376	1	\N	12	Product
 1453	1445	object	orange-white-blue	/products/products/volleyball/fw12_13/balls/bv-1000/	0	1	1329736218	1460214393	1	\N	12	Product
 1454	1447	object	blue_pink_white	/products/products/shoes/running/fw12_13/elexir_iii_junior/	0	1	1345043285	1460214386	1	\N	12	Product
-1455	33	object	gade_wms	/products/products/apparel/running/fw12_13/	0	0	1345105754	1513849966	1	13	12	Product
+1455	33	object	gade_wms	/products/products/apparel/running/fw12_13/	0	0	1345105754	1513849966	1	\N	12	Product
 1456	33	object	lilly_wms	/products/products/apparel/running/fw12_13/	0	1	1345115997	1460214376	1	\N	12	Product
 1457	97	object	beach-top	/products/products/volleyball/fw12_13/balls/	0	1	1329735828	1460214393	1	\N	12	Product
 1458	1457	object	bluelight-yellow-white	/products/products/volleyball/fw12_13/balls/beach-top/	0	1	1329735913	1460214393	1	\N	12	Product
@@ -501,7 +501,7 @@
 1461	97	object	beach-tec	/products/products/volleyball/fw12_13/balls/	0	1	1329732419	1460214393	1	\N	12	Product
 1462	1461	object	bluelight-white	/products/products/volleyball/fw12_13/balls/beach-tec/	0	1	1329736218	1460214393	1	\N	12	Product
 1463	1459	object	red_yellow_black	/products/products/shoes/running/fw12_13/oz_pro_men/	0	1	1345043756	1460214386	1	\N	12	Product
-1464	33	object	gali_wms	/products/products/apparel/running/fw12_13/	0	0	1345106306	1513849978	1	13	12	Product
+1464	33	object	gali_wms	/products/products/apparel/running/fw12_13/	0	0	1345106306	1513849978	1	\N	12	Product
 1465	1376	object	purple-white-black	/products/products/volleyball/fw12_13/balls/beachstar/	0	1	1329736218	1460214393	1	\N	12	Product
 1466	1459	object	black_blue	/products/products/shoes/running/fw12_13/oz_pro_men/	0	1	1345043767	1460214386	1	\N	12	Product
 1467	1464	object	green_lime_green_lime_red	/products/products/apparel/running/fw12_13/gali_wms/	0	1	1345106721	1460214376	1	\N	12	Product
@@ -516,14 +516,14 @@
 1476	71	object	courtplayer_junior_velcro	/products/products/shoes/indoor/fw1213/	0	1	1345129774	1460214386	1	\N	12	Product
 1477	1476	object	black_black_silver	/products/products/shoes/indoor/fw1213/courtplayer_junior_velcro/	0	1	1345129940	1460214386	1	\N	12	Product
 1478	71	object	rebel_jr	/products/products/shoes/indoor/fw1213/	0	1	1345125962	1460214386	1	\N	12	Product
-1479	33	object	gavin_men	/products/products/apparel/running/fw12_13/	0	0	1345119611	1513850031	1	13	12	Product
+1479	33	object	gavin_men	/products/products/apparel/running/fw12_13/	0	0	1345119611	1513850031	1	\N	12	Product
 1480	1479	object	black_green_lime	/products/products/apparel/running/fw12_13/gavin_men/	0	1	1345119987	1460214376	1	\N	12	Product
 1481	1456	object	navy_pink	/products/products/apparel/running/fw12_13/lilly_wms/	0	1	1345116328	1460214376	1	\N	12	Product
 1482	33	object	guido_men	/products/products/apparel/running/fw12_13/	0	1	1345122469	1460214376	1	\N	12	Product
 1483	1475	object	black_blue_grey	/products/products/shoes/running/fw12_13/chicago_stability_men/	0	1	1345120069	1460214386	1	\N	12	Product
 1485	71	object	speed_rebel_men	/products/products/shoes/indoor/fw1213/	0	1	1345122515	1460214386	1	\N	12	Product
 1486	33	object	linda_wms	/products/products/apparel/running/fw12_13/	0	1	1345116426	1460214376	1	\N	12	Product
-1488	33	object	gaylor_men	/products/products/apparel/running/fw12_13/	0	0	1345120074	1513850068	1	13	12	Product
+1488	33	object	gaylor_men	/products/products/apparel/running/fw12_13/	0	0	1345120074	1513850068	1	\N	12	Product
 1489	71	object	dropshot	/products/products/shoes/indoor/fw1213/	0	1	1345191053	1460214386	1	\N	12	Product
 1490	1482	object	black_green_lime	/products/products/apparel/running/fw12_13/guido_men/	0	1	1345122833	1460214376	1	\N	12	Product
 1491	87	object	elexir_iii_velcro-lace_junior_copy	/products/products/shoes/running/fw12_13/	0	1	1345042883	1460214386	1	\N	12	Product
@@ -537,7 +537,7 @@
 1499	1485	object	royal-blue_white	/products/products/shoes/indoor/fw1213/speed_rebel_men/	0	1	1345123228	1460214386	1	\N	12	Product
 1500	1478	object	black_black_silver	/products/products/shoes/indoor/fw1213/rebel_jr/	0	1	1345126155	1460214386	1	\N	12	Product
 1501	1491	object	grey_black_orange	/products/products/shoes/running/fw12_13/elexir_iii_velcro-lace_junior_copy/	0	1	1345043202	1460214386	1	\N	12	Product
-1502	33	object	claudia_wms	/products/products/apparel/running/fw12_13/	0	0	1345116857	1513849868	1	13	12	Product
+1502	33	object	claudia_wms	/products/products/apparel/running/fw12_13/	0	0	1345116857	1513849868	1	\N	12	Product
 1503	49	object	alberto_and_alek_juniors	/products/products/apparel/teamsport/fw12_13/	0	1	1345191763	1460214376	1	\N	12	Product
 1504	1491	object	blue_pink_white	/products/products/shoes/running/fw12_13/elexir_iii_velcro-lace_junior_copy/	0	1	1345043285	1460214386	1	\N	12	Product
 1505	1502	object	black	/products/products/apparel/running/fw12_13/claudia_wms/	0	1	1345117098	1460214376	1	\N	12	Product
@@ -586,7 +586,7 @@
 1550	71	object	rebel_men	/products/products/shoes/indoor/fw1213/	0	1	1345124122	1460214386	1	\N	12	Product
 1551	1534	object	blue_green_lime	/products/products/apparel/running/fw12_13/gordon_men/	0	1	1345121201	1460214376	1	\N	12	Product
 1552	33	object	obil_men	/products/products/apparel/running/fw12_13/	0	1	1345124960	1460214376	1	\N	12	Product
-1553	33	object	gareth_men	/products/products/apparel/running/fw12_13/	0	0	1345119075	1513849987	1	13	12	Product
+1553	33	object	gareth_men	/products/products/apparel/running/fw12_13/	0	0	1345119075	1513849987	1	\N	12	Product
 1554	87	object	tokyo-stability-ii-w	/products/products/shoes/running/fw12_13/	0	1	1328879151	1460214386	1	\N	12	Product
 1555	71	object	courtplayer_junior	/products/products/shoes/indoor/fw1213/	0	1	1345126780	1460214386	1	\N	12	Product
 1556	1547	object	navy-dark-red	/products/products/apparel/teamsport/fw12_13/shirt-art-jrs/	0	1	1331204962	1460214376	1	\N	12	Product
@@ -624,7 +624,7 @@
 1589	1584	object	black-white	/products/products/apparel/teamsport/fw12_13/short-sonny/	0	1	1331135253	1460214376	1	\N	12	Product
 1591	1586	object	black	/products/products/apparel/running/fw12_13/pavel_juniors/	0	1	1345467421	1460214376	1	\N	12	Product
 1593	59	object	alfons	/products/products/apparel/running/ss13/	0	1	1359457224	1460214376	1	\N	12	Product
-1594	33	object	cedic_men	/products/products/apparel/running/fw12_13/	0	0	1345445465	1513849761	1	13	12	Product
+1594	33	object	cedic_men	/products/products/apparel/running/fw12_13/	0	0	1345445465	1513849761	1	\N	12	Product
 1596	59	object	inez	/products/products/apparel/running/ss13/	0	1	1359368945	1460214376	1	\N	12	Product
 1597	1593	object	black	/products/products/apparel/running/ss13/alfons/	0	1	1359457478	1460214376	1	\N	12	Product
 1598	1596	object	blue	/products/products/apparel/running/ss13/inez/	0	1	1359369228	1460214376	1	\N	12	Product
@@ -830,7 +830,7 @@
 1822	1798	object	white_navy_red	/products/products/shoes/indoor/ss13-handball/dropshot/	0	1	1345191286	1460214386	1	\N	12	Product
 1823	1799	object	black-red	/products/products/teamsport/ss13/bags/force-gym-bag/	0	1	1330008001	1460214390	1	\N	12	Product
 1824	37	object	force-shoe-bag	/products/products/teamsport/ss13/bags/	0	1	1330007679	1460214390	1	\N	12	Product
-1826	37	object	force-wash-kit-2p	/products/products/teamsport/ss13/bags/	0	0	1330007679	1513850440	1	13	12	Product
+1826	37	object	force-wash-kit-2p	/products/products/teamsport/ss13/bags/	0	0	1330007679	1513850440	1	\N	12	Product
 1827	1826	object	black-limegreen	/products/products/teamsport/ss13/bags/force-wash-kit-2p/	0	1	1330008001	1460214390	1	\N	12	Product
 1828	1784	object	white_light-blue	/products/products/shoes/indoor/ss13-handball/rebel_jr/	0	1	1345126185	1460214386	1	\N	12	Product
 1829	1826	object	black-red	/products/products/teamsport/ss13/bags/force-wash-kit-2p/	0	1	1330008001	1460214390	1	\N	12	Product
@@ -872,7 +872,7 @@
 1869	50	object	force-100	/products/products/teamsport/ss13/hardgods/balls/	0	1	1329830354	1460214390	1	\N	12	Product
 1870	1780	object	white_navy	/products/products/shoes/indoor/ss13-handball/courtplayer_junior/	0	1	1345126960	1460214386	1	\N	12	Product
 1886	1776	object	black-yellow	/products/products/teamsport/ss13/bags/team-bag-l/	0	1	1330008001	1460214390	1	\N	12	Product
-1887	44	object	force-300-hs	/products/products/teamsport/ss13/hardgods/shinguards/	0	0	1329739327	1513850590	1	13	12	Product
+1887	44	object	force-300-hs	/products/products/teamsport/ss13/hardgods/shinguards/	0	0	1329739327	1513850590	1	\N	12	Product
 1888	1887	object	white-limegreen-black	/products/products/teamsport/ss13/hardgods/shinguards/force-300-hs/	0	1	1329740918	1460214390	1	\N	12	Product
 1889	50	object	force-10	/products/products/teamsport/ss13/hardgods/balls/	0	1	1329830354	1460214390	1	\N	12	Product
 1890	1889	object	blue-black-silver	/products/products/teamsport/ss13/hardgods/balls/force-10/	0	1	1329830697	1460214390	1	\N	12	Product
@@ -903,9 +903,9 @@
 1916	1819	object	white-black-blue-silver	/products/products/teamsport/ss13/hardgods/balls/force-300/	0	1	1329830697	1460214390	1	\N	12	Product
 1917	57	object	force-1000-fs	/products/products/teamsport/ss13/hardgods/goalkeeper-gloves/	0	1	1329752144	1460214390	1	\N	12	Product
 1918	1917	object	limegreen-black-white	/products/products/teamsport/ss13/hardgods/goalkeeper-gloves/force-1000-fs/	0	1	1329752241	1460214390	1	\N	12	Product
-1919	62	object	mp-s	/products/products/volleyball/ss13/balls/	0	0	1329734400	1513850450	1	13	12	Product
+1919	62	object	mp-s	/products/products/volleyball/ss13/balls/	0	0	1329734400	1513850450	1	\N	12	Product
 1920	50	object	force-multiground	/products/products/teamsport/ss13/hardgods/balls/	0	1	1329830354	1460214390	1	\N	12	Product
-1921	44	object	force-light	/products/products/teamsport/ss13/hardgods/shinguards/	0	0	1329740518	1513850570	1	13	12	Product
+1921	44	object	force-light	/products/products/teamsport/ss13/hardgods/shinguards/	0	0	1329740518	1513850570	1	\N	12	Product
 1922	1921	object	black-red-white	/products/products/teamsport/ss13/hardgods/shinguards/force-light/	0	1	1329740663	1460214390	1	\N	12	Product
 1923	50	object	indoor-felt	/products/products/teamsport/ss13/hardgods/balls/	0	1	1329830354	1460214390	1	\N	12	Product
 1924	1862	object	white-black-green	/products/products/teamsport/ss13/hardgods/balls/force-mini/	0	1	1329830697	1460214390	1	\N	12	Product
@@ -943,9 +943,9 @@
 1957	1953	object	orange-black-white	/products/products/teamsport/ss13/hardgods/goalkeeper-gloves/force-30-bg-jr./	0	1	1329754991	1460214390	1	\N	12	Product
 1958	1887	object	black-white-sliver	/products/products/teamsport/ss13/hardgods/shinguards/force-300-hs/	0	1	1329740918	1460214390	1	\N	12	Product
 1959	1953	object	limegreen-black-white	/products/products/teamsport/ss13/hardgods/goalkeeper-gloves/force-30-bg-jr./	0	1	1329754992	1460214390	1	\N	12	Product
-1960	44	object	force-100-fs	/products/products/teamsport/ss13/hardgods/shinguards/	0	0	1329739327	1513850412	1	13	12	Product
+1960	44	object	force-100-fs	/products/products/teamsport/ss13/hardgods/shinguards/	0	0	1329739327	1513850412	1	\N	12	Product
 1961	1960	object	black-white-limegreen	/products/products/teamsport/ss13/hardgods/shinguards/force-100-fs/	0	1	1329740918	1460214390	1	\N	12	Product
-1962	62	object	bv-1000	/products/products/volleyball/ss13/balls/	0	0	1329732419	1513850554	1	13	12	Product
+1962	62	object	bv-1000	/products/products/volleyball/ss13/balls/	0	0	1329732419	1513850554	1	\N	12	Product
 1963	1960	object	red-white-black	/products/products/teamsport/ss13/hardgods/shinguards/force-100-fs/	0	1	1329740918	1460214390	1	\N	12	Product
 1964	57	object	force-500-pg-jr.	/products/products/teamsport/ss13/hardgods/goalkeeper-gloves/	0	1	1329754500	1460214390	1	\N	12	Product
 1965	1964	object	limegreen-black-white	/products/products/teamsport/ss13/hardgods/goalkeeper-gloves/force-500-pg-jr./	0	1	1329814001	1460214390	1	\N	12	Product
@@ -955,9 +955,9 @@
 1969	84	object	elexir_ii_m	/products/products/shoes/running/ss13/	0	1	1359554153	1460214386	1	\N	12	Product
 1970	62	object	beachstar	/products/products/volleyball/ss13/balls/	0	1	1329732419	1460214393	1	\N	12	Product
 1971	1923	object	yellow-black	/products/products/teamsport/ss13/hardgods/balls/indoor-felt/	0	1	1329830697	1460214390	1	\N	12	Product
-1972	62	object	mp-50	/products/products/volleyball/ss13/balls/	0	0	1329734157	1513850545	1	13	12	Product
+1972	62	object	mp-50	/products/products/volleyball/ss13/balls/	0	0	1329734157	1513850545	1	\N	12	Product
 1973	1969	object	white_grey_blue	/products/products/shoes/running/ss13/elexir_ii_m/	0	1	1359555054	1460214386	1	\N	12	Product
-1974	62	object	beach-camp	/products/products/volleyball/ss13/balls/	0	0	1329732419	1513850562	1	13	12	Product
+1974	62	object	beach-camp	/products/products/volleyball/ss13/balls/	0	0	1329732419	1513850562	1	\N	12	Product
 1975	1969	object	grey_lime_black	/products/products/shoes/running/ss13/elexir_ii_m/	0	1	1359555054	1460214386	1	\N	12	Product
 1976	62	object	mp-200	/products/products/volleyball/ss13/balls/	0	1	1329733350	1460214393	1	\N	12	Product
 1977	1905	object	orange-blue-silver	/products/products/teamsport/ss13/hardgods/balls/force-fs100/	0	1	1329830697	1460214390	1	\N	12	Product
@@ -4058,7 +4058,7 @@
 6510	6483	object	blue_insignia_grey_ebony	/products/products/outdoor/fw1213/hardware/tents/escape_3/	0	1	1343918527	1460214409	0	\N	12	Product
 6511	6212	object	kreta_5	/products/products/outdoor/fw1213/hardware/tents/	0	1	1344002432	1460734361	0	0	12	Product
 6512	6487	object	green_black	/products/products/outdoor/fw1213/hardware/tents/one_pole_tent/	0	1	1343979782	1460214409	0	\N	12	Product
-6513	6212	object	alpha_4	/products/products/outdoor/fw1213/hardware/tents/	0	0	1344242629	1513785956	0	13	12	Product
+6513	6212	object	alpha_4	/products/products/outdoor/fw1213/hardware/tents/	0	0	1344242629	1513785956	0	\N	12	Product
 6514	6212	object	manitu_3	/products/products/outdoor/fw1213/hardware/tents/	0	1	1343910923	1460734368	0	0	12	Product
 6515	6509	object	orange	/products/products/outdoor/fw1213/hardware/headlamps/headlamp_helium_75/	0	1	1343902853	1460214409	0	\N	12	Product
 6516	6212	object	venture_3	/products/products/outdoor/fw1213/hardware/tents/	0	1	1343919434	1460734371	0	0	12	Product

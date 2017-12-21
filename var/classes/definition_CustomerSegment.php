@@ -1,11 +1,9 @@
 <?php 
 
 /** 
-* Generated at: 2017-10-11T11:24:35+02:00
+* Generated at: 2017-12-21T14:30:49+01:00
 * Inheritance: no
 * Variants: no
-* Changed by: admin (10)
-* IP: 192.168.11.5
 
 
 Fields Summary: 
@@ -19,9 +17,9 @@ Fields Summary:
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'CustomerSegment',
    'description' => NULL,
-   'creationDate' => NULL,
-   'modificationDate' => 1507713875,
-   'userOwner' => NULL,
+   'creationDate' => 0,
+   'modificationDate' => 1513863049,
+   'userOwner' => 0,
    'userModification' => 10,
    'parentClass' => '\\CustomerManagementFrameworkBundle\\Model\\AbstractCustomerSegment',
    'useTraits' => NULL,
@@ -214,6 +212,55 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'visibleGridView' => false,
                  'visibleSearch' => false,
               )),
+              3 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
+                 'fieldtype' => 'checkbox',
+                 'defaultValue' => 0,
+                 'queryColumnType' => 'tinyint(1)',
+                 'columnType' => 'tinyint(1)',
+                 'phpdocType' => 'boolean',
+                 'name' => 'useAsTargetGroup',
+                 'title' => 'Use As Target Group',
+                 'tooltip' => NULL,
+                 'mandatory' => NULL,
+                 'noteditable' => NULL,
+                 'index' => NULL,
+                 'locked' => NULL,
+                 'style' => NULL,
+                 'permissions' => NULL,
+                 'datatype' => 'data',
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
+              )),
+              4 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\TargetGroup::__set_state(array(
+                 'fieldtype' => 'targetGroup',
+                 'options' => NULL,
+                 'width' => NULL,
+                 'defaultValue' => NULL,
+                 'optionsProviderClass' => NULL,
+                 'optionsProviderData' => NULL,
+                 'queryColumnType' => 'varchar',
+                 'columnType' => 'varchar',
+                 'columnLength' => 190,
+                 'phpdocType' => 'string',
+                 'name' => 'targetGroup',
+                 'title' => 'Linked TargetGroup',
+                 'tooltip' => NULL,
+                 'mandatory' => NULL,
+                 'noteditable' => true,
+                 'index' => NULL,
+                 'locked' => NULL,
+                 'style' => NULL,
+                 'permissions' => NULL,
+                 'datatype' => 'data',
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
+              )),
             ),
              'locked' => false,
           )),
@@ -226,7 +273,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'icon' => '/bundles/pimcorecustomermanagementframework/icons/segment.svg',
    'previewUrl' => NULL,
    'group' => 'CustomerManagement',
-   'showAppLoggerTab' => NULL,
+   'showAppLoggerTab' => false,
    'linkGeneratorReference' => NULL,
    'propertyVisibility' => 
   array (

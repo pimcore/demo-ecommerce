@@ -8,8 +8,29 @@ services:
         # if you need to do this, you can override this setting on individual services
         public: false
 
-    AppBundle\Ecommerce\Tracking\TrackingItemBuilder:
-        arguments: ['@pimcore.http.request_helper']
+    #
+    # CONTROLLERS
+    #
+
+    # auto-register all controllers as services
+    AppBundle\Controller\:
+        resource: '../../Controller'
+        public: true
+        tags: ['controller.service_arguments']
+
+
+    #
+    # COMMANDS
+    #
+
+    # auto-register all commands as services
+    AppBundle\Command\:
+        resource: '../../Command'
+
+
+    #
+    # TEMPLATING
+    #
 
     # Product Detail Specification Template Helper
     AppBundle\Templating\Helper\ProductDetailSpecification:
@@ -19,11 +40,12 @@ services:
         tags:
             - { name: templating.helper, alias: productDetailSpecification }
 
-    # auto-register all controllers as services
-    AppBundle\Controller\:
-        resource: '../../Controller'
-        public: true
-        tags: ['controller.service_arguments']
+    #
+    # E-COMMERCE TRACKING
+    #
+
+    AppBundle\Ecommerce\Tracking\TrackingItemBuilder:
+        arguments: ['@pimcore.http.request_helper']
 
 
     AppBundle\EventListener\PimcoreAdminListener:
