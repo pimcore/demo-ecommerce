@@ -14,9 +14,9 @@
 1134	12	Product	117885	\N	 	\N	\N	,m,w,b,g,	,326,	\N	\N	\N	,10700,	,maroon,black,	\N	\N	\N	\N	\N	\N
 1136	12	Product	117885	\N	 	\N	\N	,m,w,b,g,	,326,	\N	\N	\N	,10700,	,aqua,black,	\N	\N	\N	\N	\N	\N
 1139	12	Product	185628	\N	 	\N	\N	,m,w,b,g,	,354,	\N	\N	\N	,10700,	\N	\N	\N	\N	\N	\N	\N
-1141	12	Product	185631	\N	 	\N	\N	,m,w,b,g,	,354,	\N	\N	\N	,10700,	\N	\N	\N	\N	\N	\N	\N
+1141	12	Product	185631	\N	 	\N	\N	,m,w,b,g,	,354,	\N	\N	\N	,10700,	\N	\N	\N	\N	\N	not completed	completed
 1148	12	Product	185630	\N	 	\N	\N	,m,w,b,g,	,354,	\N	\N	\N	,10700,	\N	\N	\N	\N	\N	\N	\N
-1151	12	Product	185632	\N	 	\N	\N	,m,w,b,g,	,354,	\N	\N	\N	,10700,	\N	\N	\N	\N	\N	\N	\N
+1151	12	Product	185632	\N	 	\N	\N	,m,w,b,g,	,354,	\N	\N	\N	,10700,	\N	\N	\N	\N	\N	not completed	completed
 1153	12	Product	185629	\N	 	\N	\N	,m,w,b,g,	,354,	\N	\N	\N	,10700,	\N	\N	\N	\N	\N	\N	\N
 1155	12	Product	185631	\N	 	\N	\N	,m,w,b,g,	,354,	\N	\N	\N	,10700,	,lime,black,	\N	\N	\N	\N	\N	\N
 1157	12	Product	185631	\N	 	\N	\N	,m,w,b,g,	,354,	\N	\N	\N	,10700,	,Orange,black,	\N	\N	\N	\N	\N	\N
@@ -240,7 +240,7 @@
 1430	12	Product	189993	\N	 	\N	\N	,w,	,228,	,567,591,593,513,562,520,528,552,557,560,571,	,110,	\N	,10700,142,	,red,lime,	,168,	\N	\N	\N	\N	\N
 1431	12	Product	67192	\N	 	\N	\N	,m,w,b,g,	,240,	\N	\N	\N	,10700,	,white,blue,yellow,	\N	\N	\N	\N	\N	\N
 1432	12	Product	184830	\N	 	\N	\N	,m,	,103,	,158,172,191,196,	\N	\N	,10700,	\N	,132,140,185,	\N	\N	\N	\N	\N
-1433	12	Product	189818	\N	 	\N	\N	,w,	,228,	,581,591,593,520,525,538,570,580,500,507,537,543,	,110,	\N	,10700,142,	\N	,168,125,	\N	\N	\N	\N	\N
+1433	12	Product	189818	\N	 	\N	\N	,w,	,228,	,581,591,593,520,525,538,570,580,500,507,537,543,	,110,	\N	,10700,142,	\N	,168,125,	\N	\N	\N	not completed	completed
 1434	12	Product	149239	\N	 	\N	\N	,m,w,b,g,	,240,	\N	\N	\N	,10700,	\N	\N	\N	\N	\N	\N	\N
 1435	12	Product	149239	\N	 	\N	\N	,m,w,b,g,	,240,	\N	\N	\N	,10700,	,yellow,blue,	\N	\N	\N	\N	\N	\N
 1436	12	Product	189993	\N	 	\N	\N	,w,	,228,	,567,591,593,513,562,520,528,552,557,560,571,	,110,	\N	,10700,142,	,navy,fuchsia,	,168,	\N	\N	\N	\N	\N
@@ -262,7 +262,7 @@
 1452	12	Product	189818	\N	 	\N	\N	,w,	,228,	,581,591,593,520,525,538,570,580,500,507,537,543,	,110,	\N	,10700,142,	,navy,fuchsia,	,168,125,	\N	\N	\N	\N	\N
 1453	12	Product	62257	\N	 	\N	\N	,g,b,w,m,	,240,	\N	\N	\N	,10700,	,Orange,white,blue,	\N	\N	\N	\N	\N	\N
 1454	12	Product	184833	\N	 	\N	\N	,b,g,	,103,	,158,172,191,196,	\N	\N	,10700,	,blue,fuchsia,white,	,132,140,185,	\N	\N	\N	\N	\N
-1455	12	Product	189936	\N	 	\N	\N	,w,	,228,	,581,591,593,520,525,538,580,507,543,554,	,110,	\N	,10700,142,	\N	,141,168,	\N	\N	\N	\N	\N
+1455	12	Product	189936	\N	 	\N	\N	,w,	,228,	,581,591,593,520,525,538,580,507,543,554,	,110,	\N	,10700,142,	\N	,141,168,	\N	\N	\N	not completed	completed
 1456	12	Product	182163	\N	 	\N	\N	,w,	,224,	,615,618,622,634,636,638,	,110,	\N	,10700,142,	\N	,141,168,	\N	\N	\N	\N	\N
 1457	12	Product	55228	\N	 	\N	\N	,w,m,b,g,	,240,	\N	\N	\N	,10700,	\N	\N	\N	\N	\N	\N	\N
 1458	12	Product	55228	\N	 	\N	\N	,w,m,b,g,	,240,	\N	\N	\N	,10700,	,white,aqua,yellow,	\N	\N	\N	\N	\N	\N
@@ -271,7 +271,7 @@
 1461	12	Product	149237	\N	 	\N	\N	,g,b,w,m,	,240,	\N	\N	\N	,10700,	\N	\N	\N	\N	\N	\N	\N
 1462	12	Product	149237	\N	 	\N	\N	,g,b,w,m,	,240,	\N	\N	\N	,10700,	,aqua,white,	\N	\N	\N	\N	\N	\N
 1463	12	Product	184823	\N	 	\N	\N	,m,	,137,	,172,193,	,113,	\N	,10700,	,red,yellow,black,	,140,144,180,	\N	\N	\N	\N	\N
-1464	12	Product	189940	\N	 	\N	\N	,w,	,228,	,581,591,593,520,525,538,580,507,537,543,554,	\N	\N	,10700,142,	\N	,168,	\N	\N	\N	\N	\N
+1464	12	Product	189940	\N	 	\N	\N	,w,	,228,	,581,591,593,520,525,538,580,507,537,543,554,	\N	\N	,10700,142,	\N	,168,	\N	\N	\N	not completed	completed
 1465	12	Product	149396	\N	 	\N	\N	,g,b,w,m,	,240,	\N	\N	\N	,10700,	,white,black,purple,	\N	\N	\N	\N	\N	\N
 1466	12	Product	184823	\N	 	\N	\N	,m,	,137,	,172,193,	,113,	\N	,10700,	,blue,black,	,140,144,180,	\N	\N	\N	\N	\N
 1467	12	Product	189940	\N	 	\N	\N	,w,	,228,	,581,591,593,520,525,538,580,507,537,543,554,	\N	\N	,10700,142,	,lime,red,	,168,	\N	\N	\N	\N	\N
@@ -286,14 +286,14 @@
 1476	12	Product	193413	\N	 	\N	\N	,b,g,	,1599,	,162,187,193,	\N	\N	,10700,	\N	,132,140,	,166,	\N	\N	\N	\N
 1477	12	Product	193413	\N	 	\N	\N	,b,g,	,1599,	,162,187,193,	\N	\N	,10700,	,black,silver,	,132,140,	,166,	\N	\N	\N	\N
 1478	12	Product	193338	\N	 	\N	\N	,b,g,	,1599,	,158,172,189,196,	\N	\N	,10700,	\N	,132,140,144,	,171,	\N	\N	\N	\N
-1479	12	Product	189534	\N	 	\N	\N	,m,	,228,	,581,591,593,520,525,562,570,580,500,507,537,543,	,110,	\N	,10700,142,	\N	,168,	\N	\N	\N	\N	\N
+1479	12	Product	189534	\N	 	\N	\N	,m,	,228,	,581,591,593,520,525,562,570,580,500,507,537,543,	,110,	\N	,10700,142,	\N	,168,	\N	\N	\N	not completed	completed
 1480	12	Product	189534	\N	 	\N	\N	,m,	,228,	,581,591,593,520,525,562,570,580,500,507,537,543,	,110,	\N	,10700,142,	,black,lime,	,168,	\N	\N	\N	\N	\N
 1481	12	Product	182163	\N	 	\N	\N	,w,	,224,	,615,618,622,634,636,638,	,110,	\N	,10700,142,	,navy,fuchsia,	,141,168,	\N	\N	\N	\N	\N
 1482	12	Product	189706	\N	 	\N	\N	,m,	,224,	,615,618,621,622,632,636,638,603,	,110,	\N	,10700,142,	\N	,141,168,	\N	\N	\N	\N	\N
 1483	12	Product	184828	\N	 	\N	\N	,m,	,103,	,158,167,191,195,	\N	\N	,10700,	,black,blue,gray,	,132,140,185,	\N	\N	\N	\N	\N
 1485	12	Product	193334	\N	 	\N	\N	,m,	,1599,	,154,167,187,189,195,	,113,	\N	,10700,	\N	,132,140,148,	,161,166,934,	\N	\N	\N	\N
 1486	12	Product	182162	\N	 	\N	\N	,w,	,224,	,615,618,621,622,634,636,638,	,110,	\N	,10700,142,	\N	,141,168,	\N	\N	\N	\N	\N
-1488	12	Product	189709	\N	 	\N	\N	,m,	,224,	,615,618,621,632,639,	,110,	\N	,10700,142,	\N	,168,125,	\N	\N	\N	\N	\N
+1488	12	Product	189709	\N	 	\N	\N	,m,	,224,	,615,618,621,632,639,	,110,	\N	,10700,142,	\N	,168,125,	\N	\N	\N	not completed	completed
 1489	12	Product	193340	\N	 	\N	\N	,m,w,	,1599,	,162,189,196,	\N	\N	,10700,	\N	,140,148,	,166,	\N	\N	\N	\N
 1490	12	Product	189706	\N	 	\N	\N	,m,	,224,	,615,618,621,622,632,636,638,603,	,110,	\N	,10700,142,	,black,lime,	,141,168,	\N	\N	\N	\N	\N
 1491	12	Product	184833	\N	 	\N	\N	,b,g,	,103,	,158,172,191,196,	\N	\N	,10700,	\N	,132,140,185,	\N	\N	\N	\N	\N
@@ -307,7 +307,7 @@
 1499	12	Product	193334	\N	 	\N	\N	,m,	,1599,	,154,167,187,189,195,	,113,	\N	,10700,	,blue,white,	,132,140,148,	,161,166,934,	\N	\N	\N	\N
 1500	12	Product	193338	\N	 	\N	\N	,b,g,	,1599,	,158,172,189,196,	\N	\N	,10700,	,black,silver,	,132,140,144,	,171,	\N	\N	\N	\N
 1501	12	Product	184833	\N	 	\N	\N	,b,g,	,103,	,158,172,191,196,	\N	\N	,10700,	,gray,black,Orange,	,132,140,185,	\N	\N	\N	\N	\N
-1502	12	Product	147757	\N	 	\N	\N	,w,	,224,	,615,618,621,632,636,	,110,	\N	,10700,139,	\N	,141,168,	\N	\N	\N	\N	\N
+1502	12	Product	147757	\N	 	\N	\N	,w,	,224,	,615,618,621,632,636,	,110,	\N	,10700,139,	\N	,141,168,	\N	\N	\N	not completed	completed
 1503	12	Product	190638	\N	 	\N	\N	,b,g,	,291,	\N	\N	\N	,10700,	\N	\N	\N	\N	\N	\N	\N
 1504	12	Product	184833	\N	 	\N	\N	,b,g,	,103,	,158,172,191,196,	\N	\N	,10700,	,blue,fuchsia,white,	,132,140,185,	\N	\N	\N	\N	\N
 1505	12	Product	147757	\N	 	\N	\N	,w,	,224,	,615,618,621,632,636,	,110,	\N	,10700,139,	,black,	,141,168,	\N	\N	\N	\N	\N
@@ -356,7 +356,7 @@
 1550	12	Product	193336	\N	 	\N	\N	,m,	,1599,	,158,172,184,187,191,196,	\N	\N	,10700,	\N	,132,140,144,	,161,166,934,	\N	\N	\N	\N
 1551	12	Product	189662	\N	 	\N	\N	,m,	,228,	,591,593,513,520,528,552,557,560,604,	,110,	\N	,10700,142,	,blue,lime,	,141,168,	\N	\N	\N	\N	\N
 1552	12	Product	190060	\N	 	\N	\N	,m,	,228,	,579,589,513,522,528,552,560,	,110,	\N	,10700,	\N	,168,	\N	\N	\N	\N	\N
-1553	12	Product	189673	\N	 	\N	\N	,m,	,228,	,567,579,589,513,519,524,528,552,557,560,	,110,	\N	,10700,142,	\N	,141,168,	\N	\N	\N	\N	\N
+1553	12	Product	189673	\N	 	\N	\N	,m,	,228,	,567,579,589,513,519,524,528,552,557,560,	,110,	\N	,10700,142,	\N	,141,168,	\N	\N	\N	not completed	completed
 1554	12	Product	\N	\N	 	\N	\N	,w,	,103,	,167,191,195,	,113,	\N	,10700,	\N	,132,140,	,180,	\N	\N	\N	\N
 1555	12	Product	193341	\N	 	\N	\N	,b,g,	,1599,	,162,187,193,	\N	\N	,10700,	\N	,132,140,	,166,	\N	\N	\N	\N
 1556	12	Product	190717	\N	 	\N	\N	,b,g,	,218,	,589,531,	,110,	\N	,7820,10700,	,red,navy,	,168,	\N	\N	\N	\N	\N
@@ -394,7 +394,7 @@
 1589	12	Product	182746	\N	 	\N	\N	,m,w,b,g,	,295,	,534,544,588,549,558,597,	,110,	\N	,131,10700,	,black,	,168,	\N	\N	\N	\N	\N
 1591	12	Product	132830	\N	 	\N	\N	,b,g,	,228,	,591,584,593,518,525,562,580,500,507,543,	,110,	\N	,139,10700,	,black,	,168,	\N	\N	\N	\N	\N
 1593	12	Product	\N	\N	 	\N	\N	,m,	,224,	,615,618,624,634,636,599,	,110,	\N	,10727,142,	\N	,141,168,	\N	\N	\N	\N	\N
-1594	12	Product	102997	\N	 	\N	\N	,m,	,224,	,615,618,622,632,636,	,110,	\N	,10700,139,	\N	,141,168,	\N	\N	\N	\N	\N
+1594	12	Product	102997	\N	 	\N	\N	,m,	,224,	,615,618,622,632,636,	,110,	\N	,10700,139,	\N	,141,168,	\N	\N	\N	not completed	completed
 1596	12	Product	\N	\N	 	\N	\N	,w,	,232,275,	,567,589,513,519,524,607,	,110,	\N	,10727,	\N	,141,168,	\N	\N	\N	\N	\N
 1597	12	Product	\N	\N	 	\N	\N	,m,	,224,	,615,618,624,634,636,599,	,110,	\N	,10727,142,	,black,	,141,168,	\N	\N	\N	\N	\N
 1598	12	Product	\N	\N	 	\N	\N	,w,	,232,275,	,567,589,513,519,524,607,	,110,	\N	,10727,	,blue,	,141,168,	\N	\N	\N	\N	\N
@@ -598,7 +598,7 @@
 1822	12	Product	193340	\N	 	\N	\N	,m,w,	,1599,	,162,189,196,	\N	\N	,10727,	,white,navy,red,	,140,148,	,166,	\N	\N	\N	\N
 1823	12	Product	185598	\N	 	\N	\N	,m,w,b,g,	,495,	\N	\N	\N	,127,10727,	,black,red,	\N	\N	\N	\N	\N	\N
 1824	12	Product	185594	\N	 	\N	\N	,m,w,b,g,	,495,	\N	\N	\N	,127,10727,	\N	\N	\N	\N	\N	\N	\N
-1826	12	Product	185596	\N	 	\N	\N	,m,w,b,g,	,495,	\N	\N	\N	,127,10727,	\N	\N	\N	\N	\N	\N	\N
+1826	12	Product	185596	\N	 	\N	\N	,m,w,b,g,	,495,	\N	\N	\N	,127,10727,	\N	\N	\N	\N	\N	not completed	completed
 1827	12	Product	185596	\N	 	\N	\N	,m,w,b,g,	,495,	\N	\N	\N	,127,10727,	,black,lime,	\N	\N	\N	\N	\N	\N
 1828	12	Product	193338	\N	 	\N	\N	,b,g,	,1599,	,158,172,189,196,	\N	\N	,10727,	,white,blue,	,132,140,144,	,171,	\N	\N	\N	\N
 1829	12	Product	185596	\N	 	\N	\N	,m,w,b,g,	,495,	\N	\N	\N	,127,10727,	,black,red,	\N	\N	\N	\N	\N	\N
@@ -640,7 +640,7 @@
 1869	12	Product	185454	\N	 	\N	\N	,w,m,b,g,	,250,	\N	\N	\N	,127,10727,	\N	\N	\N	\N	\N	\N	\N
 1870	12	Product	193341	\N	 	\N	\N	,b,g,	,1599,	,162,187,193,	\N	\N	,10727,	,navy,white,	,132,140,	,166,	\N	\N	\N	\N
 1886	12	Product	185606	\N	 	\N	\N	,m,w,b,g,	,495,	\N	\N	\N	,131,10727,	,black,yellow,	\N	\N	\N	\N	\N	\N
-1887	12	Product	185603	\N	 	\N	\N	,m,	,256,	\N	\N	\N	,127,10727,	\N	\N	\N	\N	\N	\N	\N
+1887	12	Product	185603	\N	 	\N	\N	,m,	,256,	\N	\N	\N	,127,10727,	\N	\N	\N	\N	\N	not completed	completed
 1888	12	Product	185603	\N	 	\N	\N	,m,	,256,	\N	\N	\N	,127,10727,	,white,black,lime,	\N	\N	\N	\N	\N	\N
 1889	12	Product	185566	\N	 	\N	\N	,m,w,b,g,	,250,	\N	\N	\N	,127,10727,	\N	\N	\N	\N	\N	\N	\N
 1890	12	Product	185566	\N	 	\N	\N	,m,w,b,g,	,250,	\N	\N	\N	,127,10727,	,black,blue,	\N	\N	\N	\N	\N	\N
@@ -671,9 +671,9 @@
 1916	12	Product	185451	\N	 	\N	\N	,m,w,b,g,	,250,	\N	\N	\N	,127,10727,	,white,black,blue,silver,	\N	\N	\N	\N	\N	\N
 1917	12	Product	185484	\N	 	\N	\N	,m,	,253,	\N	\N	\N	,127,10727,	\N	\N	\N	\N	\N	\N	\N
 1918	12	Product	185484	\N	 	\N	\N	,m,	,253,	\N	\N	\N	,127,10727,	,black,white,lime,	\N	\N	\N	\N	\N	\N
-1919	12	Product	137212	\N	 	\N	\N	,m,w,b,g,	,240,	\N	\N	\N	,10727,	\N	\N	\N	\N	\N	\N	\N
+1919	12	Product	137212	\N	 	\N	\N	,m,w,b,g,	,240,	\N	\N	\N	,10727,	\N	\N	\N	\N	\N	not completed	completed
 1920	12	Product	185491	\N	 	\N	\N	,m,w,b,g,	,250,	\N	\N	\N	,127,10727,	\N	\N	\N	\N	\N	\N	\N
-1921	12	Product	185595	\N	 	\N	\N	,m,	,256,	\N	\N	\N	,127,10727,	\N	\N	\N	\N	\N	\N	\N
+1921	12	Product	185595	\N	 	\N	\N	,m,	,256,	\N	\N	\N	,127,10727,	\N	\N	\N	\N	\N	not completed	completed
 1922	12	Product	185595	\N	 	\N	\N	,m,	,256,	\N	\N	\N	,127,10727,	,red,black,white,	\N	\N	\N	\N	\N	\N
 1923	12	Product	76893	\N	 	\N	\N	,m,w,b,g,	,250,	\N	\N	\N	,10727,	\N	\N	\N	\N	\N	\N	\N
 1924	12	Product	185573	\N	 	\N	\N	,m,w,b,g,	,250,	\N	\N	\N	,127,10727,	,white,black,green,	\N	\N	\N	\N	\N	\N
@@ -711,9 +711,9 @@
 1957	12	Product	185556	\N	 	\N	\N	,b,	,253,	\N	\N	\N	,127,10727,	,black,Orange,white,	\N	\N	\N	\N	\N	\N
 1958	12	Product	185603	\N	 	\N	\N	,m,	,256,	\N	\N	\N	,127,10727,	,black,white,silver,	\N	\N	\N	\N	\N	\N
 1959	12	Product	185556	\N	 	\N	\N	,b,	,253,	\N	\N	\N	,127,10727,	,lime,black,white,	\N	\N	\N	\N	\N	\N
-1960	12	Product	185608	\N	 	\N	\N	,m,	,256,	\N	\N	\N	,127,10727,	\N	\N	\N	\N	\N	\N	\N
+1960	12	Product	185608	\N	 	\N	\N	,m,	,256,	\N	\N	\N	,127,10727,	\N	\N	\N	\N	\N	not completed	completed
 1961	12	Product	185608	\N	 	\N	\N	,m,	,256,	\N	\N	\N	,127,10727,	,black,white,lime,	\N	\N	\N	\N	\N	\N
-1962	12	Product	62257	\N	 	\N	\N	,g,b,w,m,	,240,	\N	\N	\N	,10727,	\N	\N	\N	\N	\N	\N	\N
+1962	12	Product	62257	\N	 	\N	\N	,g,b,w,m,	,240,	\N	\N	\N	,10727,	\N	\N	\N	\N	\N	not completed	completed
 1963	12	Product	185608	\N	 	\N	\N	,m,	,256,	\N	\N	\N	,127,10727,	,black,red,white,	\N	\N	\N	\N	\N	\N
 1964	12	Product	185524	\N	 	\N	\N	,b,	,253,	\N	\N	\N	,127,10727,	\N	\N	\N	\N	\N	\N	\N
 1965	12	Product	185524	\N	 	\N	\N	,b,	,253,	\N	\N	\N	,127,10727,	,lime,black,white,	\N	\N	\N	\N	\N	\N
@@ -723,9 +723,9 @@
 1969	12	Product	\N	\N	 	\N	\N	,m,	,103,	,158,172,191,196,	\N	\N	,10727,	\N	,132,136,140,144,	,180,	\N	\N	\N	\N
 1970	12	Product	149396	\N	 	\N	\N	,g,b,w,m,	,240,	\N	\N	\N	,10727,	\N	\N	\N	\N	\N	\N	\N
 1971	12	Product	76893	\N	 	\N	\N	,m,w,b,g,	,250,	\N	\N	\N	,10727,	,black,yellow,	\N	\N	\N	\N	\N	\N
-1972	12	Product	75772	\N	 	\N	\N	,w,m,b,g,	,240,	\N	\N	\N	,10727,	\N	\N	\N	\N	\N	\N	\N
+1972	12	Product	75772	\N	 	\N	\N	,w,m,b,g,	,240,	\N	\N	\N	,10727,	\N	\N	\N	\N	\N	not completed	completed
 1973	12	Product	\N	\N	 	\N	\N	,m,	,103,	,158,172,191,196,	\N	\N	,10727,	,gray,blue,white,	,132,136,140,144,	,180,	\N	\N	\N	\N
-1974	12	Product	78331	\N	 	\N	\N	,g,b,w,m,	,240,	\N	\N	\N	,10727,	\N	\N	\N	\N	\N	\N	\N
+1974	12	Product	78331	\N	 	\N	\N	,g,b,w,m,	,240,	\N	\N	\N	,10727,	\N	\N	\N	\N	\N	not completed	completed
 1975	12	Product	\N	\N	 	\N	\N	,m,	,103,	,158,172,191,196,	\N	\N	,10727,	,gray,lime,black,	,132,136,140,144,	,180,	\N	\N	\N	\N
 1976	12	Product	67192	\N	 	\N	\N	,m,w,b,g,	,240,	\N	\N	\N	,10727,	\N	\N	\N	\N	\N	\N	\N
 1977	12	Product	185498	\N	 	\N	\N	,m,w,b,g,	,250,	\N	\N	\N	,127,10727,	,Orange,blue,	\N	\N	\N	\N	\N	\N
@@ -3709,7 +3709,7 @@
 6510	12	Product	55607	\N	3	\N	\N	,m,w,b,g,	,6298,	\N	\N	\N	,10700,10697,	,navy,	\N	\N	\N	\N	\N	\N
 6511	12	Product	186889	\N	5	\N	\N	,m,w,b,g,	,6298,	\N	,6697,	\N	,10700,10705,	\N	\N	\N	\N	\N	\N	\N
 6512	12	Product	171325	\N	2	\N	\N	,m,w,b,g,	,6298,	\N	\N	\N	,10700,10697,	,olive,	\N	\N	\N	\N	\N	\N
-6513	12	Product	135346	\N	4	\N	\N	,m,w,b,g,	,6298,	\N	,6697,	\N	,10700,10705,	\N	\N	\N	\N	\N	\N	\N
+6513	12	Product	135346	\N	4	\N	\N	,m,w,b,g,	,6298,	\N	,6697,	\N	,10700,10705,	\N	\N	\N	\N	\N	completed	completed
 6514	12	Product	100039	\N	3	\N	\N	,m,w,b,g,	\N	\N	\N	\N	,10700,10697,	\N	\N	\N	\N	\N	\N	\N
 6515	12	Product	194771	\N	 	\N	\N	,m,w,b,g,	,6335,	\N	\N	\N	,10700,	,Orange,	\N	\N	\N	\N	\N	\N
 6516	12	Product	118504	\N	3	\N	\N	,m,w,b,g,	,6298,	\N	,6346,	\N	,10700,10697,	\N	\N	\N	\N	\N	\N	\N

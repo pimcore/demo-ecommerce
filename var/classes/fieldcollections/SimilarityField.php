@@ -40,8 +40,8 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
          'permissions' => '',
          'childs' => 
         array (
-          0 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\IndexFieldSelectionCombo::__set_state(array(
+          0 =>
+              Pimcore\Bundle\EcommerceFrameworkBundle\CoreExtensions\ClassDefinition\IndexFieldSelectionCombo::__set_state(array(
              'fieldtype' => 'indexFieldSelectionCombo',
              'specificPriceField' => false,
              'showAllFields' => true,

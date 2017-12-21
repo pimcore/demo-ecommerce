@@ -59,3 +59,35 @@
 59	cmf.SegmentManager	12372	object	1508424637	\N	Segment(s) added (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/New Customer
 60	cmf.SegmentManager	12372	object	1508424666	\N	Segment(s) removed (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/New Customer
 61	cmf.SegmentManager	12372	object	1508424666	\N	Segment(s) added (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/Regular Customer
+62	Worklog	1141	object	1513783417	13	Progress Started	
+63	Status update	1141	object	1513783446	13	In Progress ->In Review	This should be fine and complete
+64	Status update	1141	object	1513783465	13	In Review ->Done	Everything is set. 
+65	Worklog	6513	object	1514334600	13	Time Logged	Did some work
+66	Worklog	1151	object	1513841999	13	Progress Started	
+67	Status update	1151	object	1513842047	13	In Progress ->In Review	Please check
+68	Status update	1151	object	1513842302	13	In Review ->Re-opened	not done yet
+69	Status update	1151	object	1513842320	13	Re-opened ->In Review	and now?
+70	Status update	1151	object	1513842398	13	In Review ->Done	perfect
+71	Status update	1151	object	1513842437	13	Done ->Re-opened	please check again
+72	Status update	1151	object	1513842451	13	Re-opened ->In Review	ok
+73	Status update	1151	object	1513842479	13	In Review ->Done	ok
+74	Status update	1151	object	1513848667	13	Done ->Re-opened	once again
+75	Status update	1151	object	1513848679	13	Re-opened ->In Review	yes
+76	Status update	1151	object	1513849594	13	Done ->Re-opened	dd
+77	Status update	1151	object	1513849621	13	Re-opened ->In Review	have a look
+78	Status update	1151	object	1513849635	13	In Review ->Done	All good
+79	Status update	1594	object	1513849762	13	Done ->Re-opened	 
+80	Worklog	1455	object	1513849966	13	Progress Started	
+81	Worklog	1464	object	1513849979	13	Progress Started	
+82	Worklog	1553	object	1513849988	13	Progress Started	
+83	Worklog	1479	object	1513850013	13	Progress Started	
+84	Status update	1479	object	1513850032	13	In Progress ->In Review	All should be done
+85	Worklog	1488	object	1513850058	13	Progress Started	
+86	Status update	1488	object	1513850069	13	In Progress ->In Review	All should be fine
+87	Worklog	1826	object	1513850422	13	Progress Started	
+88	Status update	1826	object	1513850440	13	In Progress ->In Review	All done
+89	Worklog	1962	object	1513850555	13	Progress Started	
+90	Worklog	1974	object	1513850562	13	Progress Started	
+91	Worklog	1921	object	1513850571	13	Progress Started	
+92	Worklog	1887	object	1513850578	13	Progress Started	
+93	Status update	1887	object	1513850591	13	In Progress ->In Review	All Done

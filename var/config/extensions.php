@@ -19,6 +19,7 @@ return [
         "Web2PrintToolsBundle\\Web2PrintToolsBundle" => TRUE,
         "AdvancedObjectSearchBundle\\AdvancedObjectSearchBundle" => TRUE,
         "CustomerManagementFrameworkBundle\\PimcoreCustomerManagementFrameworkBundle" => TRUE,
-        "Pimcore\\Bundle\\ObjectMergerBundle\\ObjectMergerBundle" => TRUE
+        "Pimcore\\Bundle\\ObjectMergerBundle\\ObjectMergerBundle" => TRUE,
+        "WorkflowGuiBundle\\WorkflowGuiBundle" => TRUE
     ]
 ];

@@ -3,17 +3,29 @@
 2058	2058	1	12	2058	object	,1609,2053,	,1609,198,197,11148,2053,205,100,	default	1	1	Said ux	Said ux, Protouch, Multisport	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	3662	1678	110	0	\N
 2066	2066	1	12	2066	object	,232,2053,	,232,198,197,11148,2053,205,100,	default	1	1	Stanley ux	Stanley ux, Protouch, Multisport	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	2285	3809	110	0	\N
 2069	2069	1	12	2069	object	,214,1103,	,214,205,100,11148,1103,	default	1	1	Capone	Capone, Protouch, multisport	\N	#;#m#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	1317	1560	110	0	\N
-1974	1974	1	12	1974	object	,240,	,240,236,11148,	default	1	1	Beach Camp	Volleyball Balls Beach Camp	\N	#;#g#;#b#;#w#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	240	0	0	0	0
+1974	1974	0	12	1974	object	,240,	,240,236,11148,	default	0	0	<p>\
+\	The Beach Camp has a soft touch PU cover for superior stability and ball control. Double layer backing for best shape retention. Official size and weight.</p>\
+	Beach Camp	Volleyball Balls Beach Camp	\N	#;#g#;#b#;#w#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	240	0	0	0
 1988	1988	1	12	1988	object	,326,	,326,106,11148,	default	1	1	DUNK	Basketball Balls DUNK	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	326	0	0	0	0
 1993	1993	1	12	1993	object	,214,1103,	,214,205,100,11148,1103,	default	1	1	Antoine	Antoine, Protouch, Multisport	\N	#;#m#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	1317	522	0	0	\N
 1990	1990	1	12	1990	object	,214,1103,	,214,205,100,11148,1103,	default	1	1	Cannavaro	Cannavaro, Protouch, Multisport	\N	#;#m#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	1317	2178	110	0	\N
 1970	1970	1	12	1970	object	,240,	,240,236,11148,	default	1	1	Beachstar	Volleyball Balls Beachstar	\N	#;#g#;#b#;#w#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	240	0	0	0	0
 1976	1976	1	12	1976	object	,240,	,240,236,11148,	default	1	1	MP 200	Volleyball Balls MP 200	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	240	0	0	0	0
-1972	1972	1	12	1972	object	,240,	,240,236,11148,	default	1	1	MP 50	Volleyball Balls MP 50	\N	#;#w#;#m#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	240	0	0	0	0
+1972	1972	0	12	1972	object	,240,	,240,236,11148,	default	0	0	<p>\
+\	Soft touch training ball. Nylon wound center. Official size and weight.</p>\
+	MP 50	Volleyball Balls MP 50	\N	#;#w#;#m#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	240	0	0	0
 1964	1964	1	12	1964	object	,253,	,253,247,100,11148,	default	1	1	FORCE 500 PG Jr.	Football Goalkeeper Gloves Junior FORCE 500 PG Jr.	\N	#;#b#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66000	253	0	0	0	0
-1962	1962	1	12	1962	object	,240,	,240,236,11148,	default	1	1	BV-1000	Volleyball Balls BV-1000	\N	#;#g#;#b#;#w#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	240	0	0	0	0
+1962	1962	0	12	1962	object	,240,	,240,236,11148,	default	0	0	<p>\
+\	&nbsp;</p>\
+<div>\
+\	Soft touch beach volleyball. Durable machine stitched construction. Official size and weight.</div>\
+<div>\
+\	&nbsp;</div>\
+	BV-1000	Volleyball Balls BV-1000	\N	#;#g#;#b#;#w#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	240	0	0	0
 1968	1968	1	12	1968	object	,240,	,240,236,11148,	default	1	1	Beachgarden	Volleyball Balls Beachgarden	\N	#;#g#;#b#;#w#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	240	0	0	0	0
-1960	1960	1	12	1960	object	,256,	,256,247,100,11148,	default	1	1	FORCE 100 FS	Football Shinguards FORCE 100 FS	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	256	0	0	0	0
+1960	1960	0	12	1960	object	,256,	,256,247,100,11148,	default	0	0	<p>\
+\	With its soft EVA shield construction the FORCE 100 FS is a flexible and comfortable performance shinguard. Comes with an adjustable single strap closure and ankle guard.</p>\
+	FORCE 100 FS	Football Shinguards FORCE 100 FS	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	256	0	0	0
 1950	1950	1	12	1950	object	,256,	,256,247,100,11148,	default	1	1	FORCE 500 FS	Football Shinguards FORCE 500 FS	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	256	0	0	0	0
 1953	1953	1	12	1953	object	,253,	,253,247,100,11148,	default	1	1	FORCE 30 BG Jr.	Football Goalkeeper Gloves Junior FORCE 30 BG Jr.	\N	#;#b#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66000	253	0	0	0	0
 1966	1966	1	12	1966	object	,240,	,240,236,11148,	default	1	1	Beach Tec	Volleyball Balls Beach Tec	\N	#;#g#;#b#;#w#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	240	0	0	0	0
@@ -137,9 +149,13 @@
 2068	2068	1	12	2068	object	,137,	,137,102,197,11148,	default	1	1	OZ Pro M	Running Shoe OZ Pro Men	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	137	365	113	0	0
 2082	2082	1	12	2082	object	,129,	,129,102,197,11148,	default	1	1	Ridgerunner II M	Trail Running Shoe Ridgerunner II M Men	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	129	630	0	0	0
 2086	2086	1	12	2086	object	,129,	,129,102,197,11148,	default	1	1	Ridgerunner II W	Trail Running Shoe Ridgerunner II Women	\N	#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	87000	129	630	0	0	0
-1919	1919	1	12	1919	object	,240,	,240,236,11148,	default	1	1	MP-S	Volleyball Balls MP-S	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	240	0	0	0	0
+1919	1919	0	12	1919	object	,240,	,240,236,11148,	default	0	0	<p>\
+\	PU cover with soft touch for better ball control. Highly durable and especially recomended for school sport Official size and weight.</p>\
+	MP-S	Volleyball Balls MP-S	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	240	0	0	0
 1920	1920	1	12	1920	object	,250,	,250,100,11148,	default	1	1	FORCE Multiground	Football Balls FORCE Multiground	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	250	0	0	0	0
-1921	1921	1	12	1921	object	,256,	,256,247,100,11148,	default	1	1	FORCE Light	Football Shinguards FORCE Light	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	256	0	0	0	0
+1921	1921	0	12	1921	object	,256,	,256,247,100,11148,	default	0	0	<p>\
+\	The FORCE Light is a pro level super lightweight slip-in shinguard. The shield is based on a durable and flexible &nbsp;three piece sandwich construction - soft on the inside , hard on the outside. To wear it the shield is inserted in the Lycra compression sock - no need for strapping.</p>\
+	FORCE Light	Football Shinguards FORCE Light	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	256	0	0	0
 1923	1923	1	12	1923	object	,250,	,250,100,11148,	default	1	1	Indoor Felt	Football Balls Indoor Felt	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	250	0	0	0	0
 1927	1927	1	12	1927	object	,256,	,256,247,100,11148,	default	1	1	FORCE 30 HS	Football Shinguards FORCE 30 HS	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	256	0	0	0	0
 1929	1929	1	12	1929	object	,253,	,253,247,100,11148,	default	1	1	FORCE 3000 FS	Football Goalkeeper Gloves FORCE 3000 FS	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	253	0	0	0	0
@@ -148,7 +164,13 @@
 1858	1858	1	12	1858	object	,250,	,250,100,11148,	default	1	1	FORCE FS50 LW	Football Balls FORCE FS50 LW	\N	#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66200	250	0	0	0	0
 1862	1862	1	12	1862	object	,250,	,250,100,11148,	default	1	1	FORCE mini	Football Balls FORCE mini	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	250	0	0	0	0
 1869	1869	1	12	1869	object	,250,	,250,100,11148,	default	1	1	FORCE 100	Football Balls FORCE 100	\N	#;#w#;#m#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	250	0	0	0	0
-1887	1887	1	12	1887	object	,256,	,256,247,100,11148,	default	1	1	FORCE 300 HS	Football Shinguards FORCE 300 HS	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	256	0	0	0	0
+1887	1887	0	12	1887	object	,256,	,256,247,100,11148,	default	0	0	<p>\
+\	&nbsp;</p>\
+<div>\
+\	The FORCE 300 HS features an anatomically and asymetrically shaped hardshield for superior fit. The cushioning made from durable soft EVA is backed with a tech mesh. Fully adjustable with single strap closure and ankle guard.</div>\
+<div>\
+\	&nbsp;</div>\
+	FORCE 300 HS	Football Shinguards FORCE 300 HS	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	256	0	0	0
 1889	1889	1	12	1889	object	,250,	,250,100,11148,	default	1	1	FORCE 10	Football Balls FORCE 10	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	250	0	0	0	0
 1893	1893	1	12	1893	object	,250,	,250,100,11148,	default	1	1	FORCE Indoor	Football Balls FORCE Indoor	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	250	0	0	0	0
 1898	1898	1	12	1898	object	,256,	,256,247,100,11148,	default	1	1	FORCE 3000 HS	Football Shinguards FORCE 3000 HS	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	256	0	0	0	0
@@ -196,7 +218,9 @@
 1819	1819	1	12	1819	object	,250,	,250,100,11148,	default	1	1	FORCE 300	Football Balls FORCE 300	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	250	0	0	0	0
 1821	1821	1	12	1821	object	,250,	,250,100,11148,	default	1	1	FORCE FS50	Football Balls FORCE FS50	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	250	0	0	0	0
 1824	1824	1	12	1824	object	,495,	,495,100,11148,	default	1	1	FORCE Shoe Bag	Teamsport Bags FORCE Shoe Bag	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	495	0	0	0	0
-1826	1826	1	12	1826	object	,495,	,495,100,11148,	default	1	1	FORCE Wash Kit 2P	Teamsport Bags FORCE Wash Kit 2P	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	495	0	0	0	0
+1826	1826	0	12	1826	object	,495,	,495,100,11148,	default	0	0	<p>\
+\	The FORCE Wash Kit is a hygienic collapsible wash bag that holds all your toiletries. It is equiped with a hook so that it can be hung open or collapsed. FORCE Wash Kit also features a mirror and many small compartments to keep your things in place.</p>\
+	FORCE Wash Kit 2P	Teamsport Bags FORCE Wash Kit 2P	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	495	0	0	0
 1833	1833	1	12	1833	object	,250,	,250,100,11148,	default	1	1	FORCE 1000	Football Balls FORCE 1000	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	250	0	0	0	0
 1834	1834	1	12	1834	object	,495,	,495,100,11148,	default	1	1	FORCE Ball Bag	Teamsport Bags FORCE Ball Bag	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	495	0	0	0	0
 1836	1836	1	12	1836	object	,495,	,495,100,11148,	default	1	1	FORCE Pro Bag Jr.	Teamsport Bags FORCE Pro Bag Jr.	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	495	0	0	0	0
@@ -213,12 +237,14 @@
 1585	1585	1	12	1585	object	,218,	,218,205,100,11148,	default	1	1	Salima	Teamsport Short leeves Shirt Salima	#;#black#;#	#;#w#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	66420	71000	218	4012	110	0	0
 1578	1578	1	12	1578	object	,295,	,295,205,100,11148,	default	1	1	Scott	Teamsport Short Scott	#;#black#;#	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	66420	66250	295	3370	110	0	0
 1584	1584	1	12	1584	object	,295,	,295,205,100,11148,	default	1	1	Sonny	Teamsport Short Sonny	#;#black#;#	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	66420	66250	295	3370	110	0	0
-1594	1594	1	12	1594	object	,224,	,224,198,197,11148,	default	1	1	\N	Cedic ux	Running Tight Cedic Men	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	224	3123	110	0
+1594	1594	0	12	1594	object	,224,	,224,198,197,11148,	default	0	0	\N	Cedic ux	Running Tight Cedic Men	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	224	3123	110	0
 1521	1521	1	12	1521	object	,224,	,224,198,197,11148,	default	1	1	Leroy ux	Running Tights Leroy men 	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	224	3763	110	0	0
 1547	1547	1	12	1547	object	,218,	,218,205,100,11148,	default	1	1	Art jrs	Multisport Short leeves Shirt Art Junior	#;#red#;#navy#;#	#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	78163	66200	218	1120	110	0	0
 1541	1541	1	12	1541	object	,232,	,232,198,197,11148,	default	1	1	Linus ux	Running Shirts Linus men 	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	232	4409	110	0	0
 1552	1552	1	12	1552	object	,228,	,228,198,197,11148,	default	1	1	Obil ux	Running Jacket Obil men 	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	228	3843	110	0	0
-1553	1553	1	12	1553	object	,228,	,228,198,197,11148,	default	1	1	Gareth ux	Running Jacket Gareth men	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	228	5488	110	0	0
+1553	1553	0	12	1553	object	,228,	,228,198,197,11148,	default	0	0	<p>\
+\	available in:&nbsp;orange/black, blue/green lime, green lime/black, red/green lime, black/orange, black/green lime</p>\
+	Gareth ux	Running Jacket Gareth men	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	228	5488	110	0
 1550	1550	1	12	1550	object	,1599,	,1599,345,11148,	default	1	1	Rebel Men	Indoor Shoe Rebel Men	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	1599	1088	0	0	0
 1558	1558	1	12	1558	object	,218,	,218,205,100,11148,	default	1	1	Franklin ux	Multisport Short leeves Shirt Franklin 	#;#red#;#blue#;#	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	66463	66250	218	3888	110	0	0
 1566	1566	1	12	1566	object	,218,	,218,205,100,11148,	default	1	1	Fuzzy ux	Multisport Short leeves Shirt Fuzzy 	#;#blue#;#	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	66400	66250	218	3888	110	0	0
@@ -231,7 +257,7 @@
 1529	1529	1	12	1529	object	,297,	,297,205,100,11148,	default	1	1	Ferdi	Multisport Long leeves Shirt Ferdi	#;#black#;#red#;#	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	66426	66250	297	10075	110	0	0
 1525	1525	1	12	1525	object	,129,	,129,102,197,11148,	default	1	1	Ridgerunner II PU Junior	Trail Running Shoe Ridgerunner II PU Junior	\N	#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66200	129	458	0	0	0
 1503	1503	1	12	1503	object	,291,	,291,205,100,11148,	default	1	1	Alberto & Alek Juniors	Teamsport Apparel Alberto & Alek Juniors	\N	#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66200	291	0	0	0	\N
-1502	1502	1	12	1502	object	,224,	,224,198,197,11148,	default	1	1	Claudia wms	Running Tights Claudia wms 	\N	#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	87000	224	3122	110	0	\N
+1502	1502	0	12	1502	object	,224,	,224,198,197,11148,	default	0	0	\N	Claudia wms	Running Tights Claudia wms 	\N	#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	87000	224	3122	110	0
 1507	1507	1	12	1507	object	,297,	,297,205,100,11148,	default	1	1	Fidelio	Multisport Long leeves Jacket Fidelio	#;#green#;#black#;#	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	66426	66250	297	1555	110	0	0
 1511	1511	1	12	1511	object	,224,	,224,198,197,11148,	default	1	1	Okan ux	Running Tights Okan men	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	224	4967	110	0	0
 1510	1510	1	12	1510	object	,224,	,224,198,197,11148,	default	1	1	Miranda wms	Running Tights Miranda wms	\N	#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	87000	224	3122	110	0	\N
@@ -271,31 +297,41 @@
 1421	1421	1	12	1421	object	,224,	,224,198,197,11148,	default	1	1	Lulu wms	Running Tights Lula wms	\N	#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	87000	224	5611	110	0	\N
 1427	1427	1	12	1427	object	,240,	,240,236,11148,	default	1	1	MP 100	Volleyball Balls MP 100	\N	#;#g#;#b#;#w#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	240	0	0	0	0
 1434	1434	1	12	1434	object	,240,	,240,236,11148,	default	1	1	MP 150	Volleyball Balls MP 150	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	240	0	0	0	0
-1433	1433	1	12	1433	object	,228,	,228,198,197,11148,	default	1	1	Gaby wms	Running Jacket Gaby wms	\N	#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	87000	228	6585	110	0	0
+1433	1433	0	12	1433	object	,228,	,228,198,197,11148,	default	0	0	<p>\
+\	available in: red/green lime, pink/black, green lime/purple, purple/green lime, green lime/red, navy/pink, black/pink, black/black, green lime/black&nbsp;</p>\
+	Gaby wms	Running Jacket Gaby wms	\N	#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	87000	228	6585	110	0
 1437	1437	1	12	1437	object	,129,	,129,102,197,11148,	default	1	1	Ridge Trail AQM Men	Trail Running Shoe Ridge Trail AQM Men	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	129	472	299	0	0
 1439	1439	1	12	1439	object	,228,	,228,198,197,11148,	default	1	1	Gill wms	Running Jackets Gill wms	\N	#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	87000	228	5519	110	0	0
 1445	1445	1	12	1445	object	,240,	,240,236,11148,	default	1	1	BV-1000	Volleyball Balls BV-1000	\N	#;#g#;#b#;#w#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	240	0	0	0	0
 1442	1442	1	12	1442	object	,103,	,103,102,197,11148,	default	1	1	Elexir III Women	Road Running Shoe Elexir III Women	\N	#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	87000	103	717	0	0	0
 1450	1450	1	12	1450	object	,232,	,232,198,197,11148,	default	1	1	Leandra wms	Running Shirt Leandra wms	\N	#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	87000	232	4980	110	0	0
-1455	1455	1	12	1455	object	,228,	,228,198,197,11148,	default	1	1	Gade wms	Running Jacket Gade wms	\N	#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	87000	228	5532	110	0	0
+1455	1455	0	12	1455	object	,228,	,228,198,197,11148,	default	0	0	<p>\
+\	available in: black/pink, black/red, black/green lime</p>\
+	Gade wms	Running Jacket Gade wms	\N	#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	87000	228	5532	110	0
 1457	1457	1	12	1457	object	,240,	,240,236,11148,	default	1	1	Beach Top	Volleyball Ball Beach Top	\N	#;#w#;#m#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	240	0	0	0	0
 1456	1456	1	12	1456	object	,224,	,224,198,197,11148,	default	1	1	Lilly wms	Running Tights Lilly wms	\N	#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	87000	224	3763	110	0	0
 1447	1447	1	12	1447	object	,103,	,103,102,197,11148,	default	1	1	Elexir III Junior	Road Running Shoe Elexir III Junior	\N	#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66200	103	717	0	0	0
 1459	1459	1	12	1459	object	,137,	,137,102,197,11148,	default	1	1	OZ Pro Men	Road Running Shoe OZ Pro Men	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	137	365	113	0	0
 1461	1461	1	12	1461	object	,240,	,240,236,11148,	default	1	1	Beach Tec	Volleyball Balls Beach Tec	\N	#;#g#;#b#;#w#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	240	0	0	0	0
-1464	1464	1	12	1464	object	,228,	,228,198,197,11148,	default	1	1	Gali wms	Running Jacket Gali wms 	\N	#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	87000	228	6069	0	0	0
+1464	1464	0	12	1464	object	,228,	,228,198,197,11148,	default	0	0	<p>\
+\	available in: black/black, black/pink/pink, purple/purple/green lime, green lime/green lime/red&nbsp;</p>\
+	Gali wms	Running Jacket Gali wms 	\N	#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	87000	228	6069	0	0
 1471	1471	1	12	1471	object	,240,	,240,236,11148,	default	1	1	Beach Volley	Volleyball Balls Beach Volley	\N	#;#g#;#b#;#w#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	240	0	0	0	0
 1473	1473	1	12	1473	object	,1599,	,1599,345,11148,	default	1	1	Rebel Women	Indoor Shoe Rebel Women	\N	#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	87000	1599	1088	0	0	0
 1475	1475	1	12	1475	object	,103,	,103,102,197,11148,	default	1	1	Chicago Stability Men	Road Running Shoe Stability Men	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	103	711	0	0	0
 1476	1476	1	12	1476	object	,1599,	,1599,345,11148,	default	1	1	Courtplayer Junior Velcro	Indoor Shoe Courtplayer Junior Velcro	\N	#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66200	1599	542	0	0	0
-1479	1479	1	12	1479	object	,228,	,228,198,197,11148,	default	1	1	Gavin ux	Running Jacket Gavin men 	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	228	6609	110	0	0
+1479	1479	0	12	1479	object	,228,	,228,198,197,11148,	default	0	0	<p>\
+\	available in:&nbsp;orange/black, blue/green lime, green lime/black, red/green lime, black/orange, black/green lime</p>\
+	Gavin ux	Running Jacket Gavin men 	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	228	6609	110	0
 1482	1482	1	12	1482	object	,224,	,224,198,197,11148,	default	1	1	Guido ux	Running Tights Guido men	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	224	4985	110	0	0
 1478	1478	1	12	1478	object	,1599,	,1599,345,11148,	default	1	1	Rebel Junior	Indoor Shoe Rebel Junior	\N	#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66200	1599	715	0	0	0
 1485	1485	1	12	1485	object	,1599,	,1599,345,11148,	default	1	1	Speed Rebel Men	Indoor Shoe Speed Rebel Men	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	1599	892	113	0	0
 1486	1486	1	12	1486	object	,224,	,224,198,197,11148,	default	1	1	Linda wms	Running Tights Linda wms	\N	#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	87000	224	4384	110	0	0
 1489	1489	1	12	1489	object	,1599,	,1599,345,11148,	default	1	1	Dropshot	Indoor Shoe Dropshot	\N	#;#m#;#w#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	1599	547	0	0	0
 1492	1492	1	12	1492	object	,232,	,232,198,197,11148,	default	1	1	Ohio ux	Running Shirt Ohio men	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	232	2731	110	0	0
-1488	1488	1	12	1488	object	,224,	,224,198,197,11148,	default	1	1	Gaylor ux	Running Pant Gaylor men 	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	224	3125	110	0	0
+1488	1488	0	12	1488	object	,224,	,224,198,197,11148,	default	0	0	<p>\
+\	available in: black/black, black/green lime, black/orange&nbsp;</p>\
+	Gaylor ux	Running Pant Gaylor men 	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	224	3125	110	0
 1494	1494	1	12	1494	object	,228,	,228,198,197,11148,	default	1	1	Gus ux	Running Jacket Gus men 	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	228	4960	110	0	0
 1491	1491	1	12	1491	object	,103,	,103,102,197,11148,	default	1	1	Elexir III Velcro/Lace Junior 	Road Running Shoe Elexir III Velcro/Lace Junior	\N	#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66200	103	717	0	0	0
 1294	1294	1	12	1294	object	,256,	,256,247,100,11148,	default	1	1	FORCE 30 HS	Football Shinguards FORCE 30 HS	\N	#;#m#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	77000	256	0	0	0	0
@@ -330,10 +366,14 @@
 1240	1240	1	12	1240	object	,495,	,495,100,11148,	default	1	1	TEAM Pro Bag Sr.	Teamsport Bags TEAM Pro Bag Sr.	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	495	0	0	0	0
 1139	1139	1	12	1139	object	,354,	,354,345,11148,	default	1	1	Supreme Grip	Handball Balls Supreme Grip	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	354	0	0	0	0
 1153	1153	1	12	1153	object	,354,	,354,345,11148,	default	1	1	Super Grip	Handball Balls Super Grip	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	354	0	0	0	0
-1151	1151	1	12	1151	object	,354,	,354,345,11148,	default	1	1	Indoor Court	Handball Balls Indoor Court	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	354	0	0	0	0
+1151	1151	1	12	1151	object	,354,	,354,345,11148,	default	1	1	<p>\
+\	Outstanding training ball. Durable PU upper material in combination with extra soft SBR foam give good grip and touch. Can be used with or without resin.</p>\
+	Indoor Court	Handball Balls Indoor Court	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	354	0	0	0
 1148	1148	1	12	1148	object	,354,	,354,345,11148,	default	1	1	All Court	Handball Balls All Court	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	354	0	0	0	0
 1158	1158	1	12	1158	object	,326,	,326,106,11148,	default	1	1	DUNK	Basketball Balls DUNK	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	326	0	0	0	0
-1141	1141	1	12	1141	object	,354,	,354,345,11148,	default	1	1	Game	Handball Balls Game	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	354	0	0	0	0
+1141	1141	1	12	1141	object	,354,	,354,345,11148,	default	1	1	<p>\
+\	The GAME is a good allround training ball with a durable and hard-wearing upper. Can be used with or without resin. Available in three colors.</p>\
+	Game	Handball Balls Game	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	354	0	0	0
 1176	1176	1	12	1176	object	,495,	,495,100,11148,	default	1	1	FORCE Equipment Roller	Teamsport Bags FORCE Equipment Roller	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	495	0	0	0	0
 1181	1181	1	12	1181	object	,495,	,495,100,11148,	default	1	1	TEAM Bag	Teamsport Bags TEAM Bag	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	495	0	0	0	0
 1188	1188	1	12	1188	object	,495,	,495,100,11148,	default	1	1	FORCE Pro Bag Jr.	Teamsport Bags FORCE Pro Bag Jr.	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	495	0	0	0	0
@@ -392,7 +432,19 @@
 6508	6508	1	12	6508	object	,6298,	,6298,6291,11147,11148,	default	1	1	Matuka 4	McKINLEY active outdoor camping tent matuka 4	\N	#;#m#;#w#;#b#;#g#;#	Pegs steel	2,000 mm 	10,000 mm	0	0	0	\N	\N	\N	0	66250	6298	0	0	0	0
 6509	6509	1	12	6509	object	,6335,	,6335,6291,11147,11148,	default	1	1	Helium 75	McKINLEY headlamp helium 75 lumen 	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	6335	0	0	0	0
 6511	6511	1	12	6511	object	,6298,	,6298,6291,11147,11148,	default	1	1	Kreta 5	McKINLEY active outdoor camping tent kreta 5	\N	#;#m#;#w#;#b#;#g#;#	Pegs steel	3,000 mm	10,000 mm	0	0	0	\N	\N	\N	0	66250	6298	0	6697	0	0
-6513	6513	1	12	6513	object	,6298,	,6298,6291,11147,11148,	default	1	1	Alpha 4	McKINLEY family tent active outdoor camping alpha 4	\N	#;#m#;#w#;#b#;#g#;#	Pegs steel	3,000 mm	10,000 mm	0	0	0	\N	\N	\N	0	66250	6298	0	6697	0	0
+6513	6513	0	12	6513	object	,6298,	,6298,6291,11147,11148,	default	0	0	<p>\
+\	Classic family tent for weekends and camping holidays. Due to the two adjacent sleeping cabins, the awning offers a spacious interior.</p>\
+<p>\
+\	<strong>Outer tent:</strong> 185T polyester, PU coated, tape-sealed seams, 3,000mm water column;</p>\
+<p>\
+\	<strong>Inner tent:</strong> polyester; floor: polyester 10,000mm water column;</p>\
+<p>\
+\	<strong>Poles:</strong> 9.5mm fibreglass.</p>\
+<p>\
+\	<strong>Pack size</strong><strong>:</strong> 22 x 63 cm</p>\
+<p>\
+\	<strong>ItemNo.:</strong> 135346</p>\
+	Alpha 4	McKINLEY family tent active outdoor camping alpha 4	\N	#;#m#;#w#;#b#;#g#;#	Pegs steel	3,000 mm	10,000 mm	0	0	0	\N	\N	\N	0	66250	6298	0	6697	0
 6514	6514	1	12	6514	object	,,	,,	default	1	1	Manitu 3 	McKINLEY trekking tent manitu 3 	\N	#;#m#;#w#;#b#;#g#;#	17 pcs, Aluminium V-shape	5,000 mm	10,000 mm	0	0	0	\N	\N	\N	0	66250	0	0	0	0	0
 6516	6516	1	12	6516	object	,6298,	,6298,6291,11147,11148,	default	1	1	Venture 3	McKINLEY trekking tent lightweight venture 3	\N	#;#m#;#w#;#b#;#g#;#	19 Pcs, Aluminium V-shape	4,000 mm	5,000 mm	0	0	0	\N	\N	\N	0	66250	6298	0	6346	0	0
 6520	6520	1	12	6520	object	,6335,	,6335,6291,11147,11148,	default	1	1	Spectrum 25	McKINLEY headlamp spectrum 25 lumen	\N	#;#m#;#w#;#b#;#g#;#	\N	\N	\N	0	0	0	\N	\N	\N	0	66250	6335	0	0	0	0

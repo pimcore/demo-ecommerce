@@ -115,3 +115,5 @@ pimcore tax|5%|1.6280
 pimcore tax|5%|3.3784
 12415	9	OnlineShopOrder	ord_59e8bbd1dd11c	69.6200	1508424657	,12416,	12372	object	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_59e8bbbfdabaf	\N	EUR	\N	\N	mystreet 88	80539	DE	annahuber1492@gmail.com	\N	mystreet 88	80539	Munich	DE	\N	Munich	63.7200	Anna	Huber	Huber	Anna	\N	50.9760	55.6960	MwSt 20%|20%|11.1392\
 pimcore tax|5%|2.7848
+12421	9	OnlineShopOrder	ord_5a3b67b2bf731	95.8500	1513842611	,12422,	\N	\N	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_5a3b67a2f37d9	\N	EUR	\N	öö	23423	23423	DE	peter.hugo@elements.at	öö	23423	23423	sdfsadfsadf	DE	\N	sdfsadfsadf	89.9500	hugo	peter	peter	hugo	\N	71.9600	76.6800	MwSt 20%|20%|15.3360\
+pimcore tax|5%|3.8340

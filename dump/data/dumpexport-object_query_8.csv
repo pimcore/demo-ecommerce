@@ -142,3 +142,5 @@ pimcore tax|5%|1.3920
 pimcore tax|5%|3.1424
 12416	8	OnlineShopOrderItem	1176	object	1176	FORCE Equipment Roller	1	63.7200	\N	\N	\N	50.9760	MwSt 20%|20%|10.1952\
 pimcore tax|5%|2.5488
+12422	8	OnlineShopOrderItem	10393	object	10393	Killay ux	1	89.9500	\N	\N	\N	71.9600	MwSt 20%|20%|14.3920\
+pimcore tax|5%|3.5980
