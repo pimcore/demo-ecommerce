@@ -50,13 +50,24 @@ foreach ($tables as $name) {
 
 $dumpData .= "\n\n";
 
-
-
+$tableBlacklist = [
+    'application_logs',
+    'cache',
+    'cache_tags',
+    'edit_lock',
+    'email_log',
+    'http_error_log',
+    'locks',
+    'tmp_store',
+    'targeting_storage',
+    'tracking_events',
+    'versions'
+];
 
 // dump data
 foreach ($tables as $name) {
 
-    if (strstr($name, "application_logs") || in_array($name, ["application_logs", "tracking_events", "cache", "cache_tags", "http_error_log", "versions", "edit_lock", "locks", "email_log", "tmp_store"])) {
+    if (strstr($name, "application_logs") || in_array($name, $tableBlacklist)) {
         continue;
     }
 

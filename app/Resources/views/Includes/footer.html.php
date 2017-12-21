@@ -27,7 +27,19 @@
 
 <!-- FOOTER -->
 <footer>
-    <p class="pull-right"><a href="#"><?= $this->translate("Back to top"); ?></a></p>
+    <p class="pull-right">
+        <?php
+        $footerContent = $this->input('footer_content');
+        ?>
+
+        <?php if ($this->editmode): ?>
+            <?= $footerContent ?>
+        <?php elseif (!$this->editmode && !empty($footerContent->getData())): ?>
+            <?= $footerContent ?> -
+        <?php endif ?>
+
+        <a href="#"><?= $this->translate("Back to top"); ?></a>
+    </p>
     <p class="links">&copy; <?= date("Y"); ?> pimcore GmbH &middot;
         <?php while($this->block("links")->loop()) { ?>
             <?= $this->link("link"); ?>
