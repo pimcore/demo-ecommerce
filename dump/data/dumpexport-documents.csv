@@ -5,7 +5,7 @@
 9	52	snippet	footer	/en/shared/includes/	0	1	1369995366	1460194951	\N	\N
 11	4	folder	emails	/en/	2	1	1371799762	1371799763	\N	\N
 12	11	email	order-confirmation	/en/emails/	1	1	1371799788	1491546442	0	\N
-14	23	page	landingpage	/en/landingpages/	0	1	1380541348	1460202097	\N	\N
+14	23	page	landingpage	/en/landingpages/	0	1	1380541348	1513863068	0	0
 15	4	page	terms	/en/	3	1	1380614953	1380615346	\N	\N
 16	4	page	special-functions	/en/	5	1	1380704342	1504081450	0	\N
 17	16	page	productmodel	/en/special-functions/	0	1	1380704489	1460201940	\N	\N
@@ -15,8 +15,8 @@
 21	16	page	targeting-groups	/en/special-functions/	4	1	1380704575	1460220961	\N	\N
 22	16	page	outputchannels-for-attributes	/en/special-functions/	5	1	1380710303	1460201153	\N	\N
 23	4	page	landingpages	/en/	4	1	1380786250	1460124865	\N	\N
-24	23	page	landingpage-2	/en/landingpages/	1	1	1380786544	1463047311	\N	3
-51	16	page	tenantswitches	/en/special-functions/	8	1	1426239636	1426239862	\N	\N
+24	23	page	landingpage-2	/en/landingpages/	1	1	1380786544	1513863068	0	3
+51	16	page	tenantswitches	/en/special-functions/	8	1	1426239636	1513863068	0	0
 52	8	folder	includes	/en/shared/	3	1	1459927797	1459927797	\N	\N
 54	16	page	vouchers	/en/special-functions/	6	1	1460571223	1460571809	\N	\N
 55	16	page	backoffice	/en/special-functions/	7	1	1460572010	1460572302	\N	\N

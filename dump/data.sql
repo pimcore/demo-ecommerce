@@ -582,7 +582,7 @@ CREATE TABLE `object_brick_query_apparel_12` (
   `fieldname` varchar(255) NOT NULL DEFAULT '',
   `styles` text,
   `fittings` text,
-  `zips` varchar(255) DEFAULT NULL,
+  `zips` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`o_id`,`fieldname`),
   KEY `o_id` (`o_id`),
   KEY `fieldname` (`fieldname`)
@@ -938,7 +938,7 @@ CREATE TABLE `object_brick_store_apparel_12` (
   `o_id` int(11) NOT NULL DEFAULT '0',
   `fieldname` varchar(255) NOT NULL DEFAULT '',
   `fittings` text,
-  `zips` varchar(255) DEFAULT NULL,
+  `zips` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`o_id`,`fieldname`),
   KEY `o_id` (`o_id`),
   KEY `fieldname` (`fieldname`)
@@ -1379,8 +1379,8 @@ CREATE TABLE `object_collection_OrderByFields_7` (
   `o_id` int(11) NOT NULL DEFAULT '0',
   `index` int(11) NOT NULL DEFAULT '0',
   `fieldname` varchar(255) NOT NULL DEFAULT '',
-  `field` varchar(255) DEFAULT NULL,
-  `direction` varchar(255) DEFAULT NULL,
+  `field` varchar(190) DEFAULT NULL,
+  `direction` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`o_id`,`index`,`fieldname`),
   KEY `o_id` (`o_id`),
   KEY `index` (`index`),
@@ -1412,7 +1412,7 @@ CREATE TABLE `object_collection_PaymentInfo_9` (
   `fieldname` varchar(255) NOT NULL DEFAULT '',
   `paymentStart` bigint(20) DEFAULT NULL,
   `paymentReference` varchar(255) DEFAULT NULL,
-  `paymentState` varchar(255) DEFAULT NULL,
+  `paymentState` varchar(190) DEFAULT NULL,
   `internalPaymentId` varchar(255) DEFAULT NULL,
   `paymentFinish` bigint(20) DEFAULT NULL,
   `message` longtext,
@@ -1454,7 +1454,7 @@ CREATE TABLE `object_collection_SimilarityField_7` (
   `o_id` int(11) NOT NULL DEFAULT '0',
   `index` int(11) NOT NULL DEFAULT '0',
   `fieldname` varchar(255) NOT NULL DEFAULT '',
-  `field` varchar(255) DEFAULT NULL,
+  `field` varchar(190) DEFAULT NULL,
   `weight` double DEFAULT NULL,
   PRIMARY KEY (`o_id`,`index`,`fieldname`),
   KEY `o_id` (`o_id`),
@@ -1502,7 +1502,7 @@ CREATE TABLE `object_collection_VoucherTokenTypePattern_33` (
   `prefix` varchar(255) DEFAULT NULL,
   `length` double DEFAULT NULL,
   `count` double DEFAULT NULL,
-  `characterType` varchar(255) DEFAULT NULL,
+  `characterType` varchar(190) DEFAULT NULL,
   `separator` varchar(255) DEFAULT NULL,
   `separatorCount` decimal(64,0) DEFAULT NULL,
   `allowOncePerCart` tinyint(1) DEFAULT NULL,
@@ -1590,7 +1590,7 @@ CREATE TABLE `object_localized_data_15` (
   `name` varchar(255) DEFAULT NULL,
   `description` longtext,
   `icon` int(11) DEFAULT NULL,
-  `usage` varchar(255) DEFAULT NULL,
+  `usage` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`ooo_id`,`language`),
   KEY `ooo_id` (`ooo_id`),
   KEY `language` (`language`)
@@ -1778,7 +1778,7 @@ CREATE TABLE `object_localized_query_15_de_AT` (
   `name` varchar(255) DEFAULT NULL,
   `description` longtext,
   `icon` int(11) DEFAULT NULL,
-  `usage` varchar(255) DEFAULT NULL,
+  `usage` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`ooo_id`,`language`),
   KEY `ooo_id` (`ooo_id`),
   KEY `language` (`language`)
@@ -1793,7 +1793,7 @@ CREATE TABLE `object_localized_query_15_en_GB` (
   `name` varchar(255) DEFAULT NULL,
   `description` longtext,
   `icon` int(11) DEFAULT NULL,
-  `usage` varchar(255) DEFAULT NULL,
+  `usage` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`ooo_id`,`language`),
   KEY `ooo_id` (`ooo_id`),
   KEY `language` (`language`)
@@ -1808,7 +1808,7 @@ CREATE TABLE `object_localized_query_15_fr_FR` (
   `name` varchar(255) DEFAULT NULL,
   `description` longtext,
   `icon` int(11) DEFAULT NULL,
-  `usage` varchar(255) DEFAULT NULL,
+  `usage` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`ooo_id`,`language`),
   KEY `ooo_id` (`ooo_id`),
   KEY `language` (`language`)
@@ -2210,6 +2210,8 @@ CREATE TABLE `object_query_37` (
   `group__type` enum('document','asset','object') DEFAULT NULL,
   `reference` varchar(255) DEFAULT NULL,
   `calculated` tinyint(1) DEFAULT NULL,
+  `useAsTargetGroup` tinyint(1) DEFAULT NULL,
+  `targetGroup` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`oo_id`),
   KEY `p_index_reference` (`reference`(191))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -2978,6 +2980,8 @@ CREATE TABLE `object_store_37` (
   `name` varchar(255) DEFAULT NULL,
   `reference` varchar(255) DEFAULT NULL,
   `calculated` tinyint(1) DEFAULT NULL,
+  `useAsTargetGroup` tinyint(1) DEFAULT NULL,
+  `targetGroup` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`oo_id`),
   KEY `p_index_reference` (`reference`(191))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -3335,6 +3339,34 @@ CREATE TABLE `plugin_cmf_sequence_numbers` (
 
 
 
+DROP TABLE IF EXISTS `targeting_storage`;
+CREATE TABLE `targeting_storage` (
+  `visitorId` varchar(100) NOT NULL,
+  `scope` varchar(50) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `value` text,
+  `creationDate` datetime DEFAULT NULL,
+  `modificationDate` datetime DEFAULT NULL,
+  PRIMARY KEY (`visitorId`,`scope`,`name`),
+  KEY `targeting_storage_scope_index` (`scope`),
+  KEY `targeting_storage_name_index` (`name`),
+  KEY `targeting_storage_visitorId_index` (`visitorId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `targeting_target_groups`;
+CREATE TABLE `targeting_target_groups` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `description` text,
+  `threshold` int(11) DEFAULT NULL,
+  `active` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4;
+
+
+
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-assets.csv' INTO TABLE `assets`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-assets_metadata.csv' INTO TABLE `assets_metadata`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-bundle_advancedobjectsearch_savedsearch.csv' INTO TABLE `bundle_advancedobjectsearch_savedsearch`;
@@ -3563,8 +3595,8 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpe
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-sites.csv' INTO TABLE `sites`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-tags.csv' INTO TABLE `tags`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-tags_assignment.csv' INTO TABLE `tags_assignment`;
-LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-targeting_personas.csv' INTO TABLE `targeting_personas`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-targeting_rules.csv' INTO TABLE `targeting_rules`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-targeting_target_groups.csv' INTO TABLE `targeting_target_groups`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-translations_admin.csv' INTO TABLE `translations_admin`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-translations_website.csv' INTO TABLE `translations_website`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-tree_locks.csv' INTO TABLE `tree_locks`;
@@ -3614,7 +3646,7 @@ DROP VIEW IF EXISTS object_36;
 CREATE ALGORITHM=UNDEFINED  VIEW `object_36` AS select `object_query_36`.`oo_id` AS `oo_id`,`object_query_36`.`oo_classId` AS `oo_classId`,`object_query_36`.`oo_className` AS `oo_className`,`object_query_36`.`name` AS `name`,`object_query_36`.`reference` AS `reference`,`object_query_36`.`calculated` AS `calculated`,`object_query_36`.`showAsFilter` AS `showAsFilter`,`object_query_36`.`exportNewsletterProvider` AS `exportNewsletterProvider`,`object_query_36`.`filterSortOrder` AS `filterSortOrder`,`objects`.`o_id` AS `o_id`,`objects`.`o_parentId` AS `o_parentId`,`objects`.`o_type` AS `o_type`,`objects`.`o_key` AS `o_key`,`objects`.`o_path` AS `o_path`,`objects`.`o_index` AS `o_index`,`objects`.`o_published` AS `o_published`,`objects`.`o_creationDate` AS `o_creationDate`,`objects`.`o_modificationDate` AS `o_modificationDate`,`objects`.`o_userOwner` AS `o_userOwner`,`objects`.`o_userModification` AS `o_userModification`,`objects`.`o_classId` AS `o_classId`,`objects`.`o_className` AS `o_className` from (`object_query_36` join `objects` on((`objects`.`o_id` = `object_query_36`.`oo_id`)));
 
 DROP VIEW IF EXISTS object_37;
-CREATE ALGORITHM=UNDEFINED  VIEW `object_37` AS select `object_query_37`.`oo_id` AS `oo_id`,`object_query_37`.`oo_classId` AS `oo_classId`,`object_query_37`.`oo_className` AS `oo_className`,`object_query_37`.`name` AS `name`,`object_query_37`.`group__id` AS `group__id`,`object_query_37`.`group__type` AS `group__type`,`object_query_37`.`reference` AS `reference`,`object_query_37`.`calculated` AS `calculated`,`objects`.`o_id` AS `o_id`,`objects`.`o_parentId` AS `o_parentId`,`objects`.`o_type` AS `o_type`,`objects`.`o_key` AS `o_key`,`objects`.`o_path` AS `o_path`,`objects`.`o_index` AS `o_index`,`objects`.`o_published` AS `o_published`,`objects`.`o_creationDate` AS `o_creationDate`,`objects`.`o_modificationDate` AS `o_modificationDate`,`objects`.`o_userOwner` AS `o_userOwner`,`objects`.`o_userModification` AS `o_userModification`,`objects`.`o_classId` AS `o_classId`,`objects`.`o_className` AS `o_className` from (`object_query_37` join `objects` on((`objects`.`o_id` = `object_query_37`.`oo_id`)));
+CREATE ALGORITHM=UNDEFINED  VIEW `object_37` AS select `object_query_37`.`oo_id` AS `oo_id`,`object_query_37`.`oo_classId` AS `oo_classId`,`object_query_37`.`oo_className` AS `oo_className`,`object_query_37`.`name` AS `name`,`object_query_37`.`group__id` AS `group__id`,`object_query_37`.`group__type` AS `group__type`,`object_query_37`.`reference` AS `reference`,`object_query_37`.`calculated` AS `calculated`,`object_query_37`.`useAsTargetGroup` AS `useAsTargetGroup`,`object_query_37`.`targetGroup` AS `targetGroup`,`objects`.`o_id` AS `o_id`,`objects`.`o_parentId` AS `o_parentId`,`objects`.`o_type` AS `o_type`,`objects`.`o_key` AS `o_key`,`objects`.`o_path` AS `o_path`,`objects`.`o_index` AS `o_index`,`objects`.`o_published` AS `o_published`,`objects`.`o_creationDate` AS `o_creationDate`,`objects`.`o_modificationDate` AS `o_modificationDate`,`objects`.`o_userOwner` AS `o_userOwner`,`objects`.`o_userModification` AS `o_userModification`,`objects`.`o_classId` AS `o_classId`,`objects`.`o_className` AS `o_className` from (`object_query_37` join `objects` on((`objects`.`o_id` = `object_query_37`.`oo_id`)));
 
 DROP VIEW IF EXISTS object_38;
 CREATE ALGORITHM=UNDEFINED  VIEW `object_38` AS select `object_query_38`.`oo_id` AS `oo_id`,`object_query_38`.`oo_classId` AS `oo_classId`,`object_query_38`.`oo_className` AS `oo_className`,`object_query_38`.`provider` AS `provider`,`object_query_38`.`identifier` AS `identifier`,`object_query_38`.`profileData` AS `profileData`,`objects`.`o_id` AS `o_id`,`objects`.`o_parentId` AS `o_parentId`,`objects`.`o_type` AS `o_type`,`objects`.`o_key` AS `o_key`,`objects`.`o_path` AS `o_path`,`objects`.`o_index` AS `o_index`,`objects`.`o_published` AS `o_published`,`objects`.`o_creationDate` AS `o_creationDate`,`objects`.`o_modificationDate` AS `o_modificationDate`,`objects`.`o_userOwner` AS `o_userOwner`,`objects`.`o_userModification` AS `o_userModification`,`objects`.`o_classId` AS `o_classId`,`objects`.`o_className` AS `o_className` from (`object_query_38` join `objects` on((`objects`.`o_id` = `object_query_38`.`oo_id`)));

@@ -161,6 +161,27 @@
 4	image_3content2	image	a:9:{s:2:"id";i:4486;s:3:"alt";s:0:"";s:11:"cropPercent";N;s:9:"cropWidth";N;s:10:"cropHeight";N;s:7:"cropTop";N;s:8:"cropLeft";N;s:8:"hotspots";a:0:{}s:6:"marker";a:0:{}}
 4	keywordscontent3	input	The most integrated open-source Multi-Channel  E-Commerce Platform
 4	listcontent4	block	a:2:{i:0;s:1:"1";i:1;s:1:"2";}
+4	persona_-10-_content:6.icon_0	select	sunglasses
+4	persona_-10-_content:6.text_0	textarea	This content is specially targeted to outdoor customers.
+4	persona_-10-_content:6.title_0	input	Outdoor Content
+4	persona_-11-_content:6.icon_0	select	forward
+4	persona_-11-_content:6.text_0	textarea	This content is specially targeted to running customers.
+4	persona_-11-_content:6.title_0	input	Running Content
+4	persona_-12-_content:6.icon_0	select	tint
+4	persona_-12-_content:6.text_0	textarea	This content is specially targeted to volleyball customers.
+4	persona_-12-_content:6.title_0	input	Volleyball Content
+4	persona_-13-_content:6.icon_1	select	wrench
+4	persona_-13-_content:6.text_1	textarea	This content is specially targeted to technical people.
+4	persona_-13-_content:6.title_1	input	Technical Content
+4	persona_-14-_content:6.icon_2	select	user
+4	persona_-14-_content:6.text_2	textarea	This content is specially targeted to male customers.
+4	persona_-14-_content:6.title_2	input	Male Content
+4	persona_-15-_content:6.icon_2	select	eye-open
+4	persona_-15-_content:6.text_2	textarea	This content is specially targeted to female customers.
+4	persona_-15-_content:6.title_2	input	Female Content
+4	persona_-16-_content:6.icon_1	select	heart-empty
+4	persona_-16-_content:6.text_1	textarea	This content is specially targeted to blue lovers.
+4	persona_-16-_content:6.title_1	input	Blue Content
 4	persona_-3-_content	areablock	a:4:{i:0;a:2:{s:3:"key";s:1:"7";s:4:"type";s:15:"horizontal-line";}i:1;a:2:{s:3:"key";s:1:"4";s:4:"type";s:16:"gallery-carousel";}i:2;a:2:{s:3:"key";s:1:"6";s:4:"type";s:15:"icon-teaser-row";}i:3;a:2:{s:3:"key";s:1:"2";s:4:"type";s:13:"productteaser";}}
 4	persona_-3-_content:2.persona_-3-_teaserblock	block	a:8:{i:0;s:1:"4";i:1;s:1:"1";i:2;s:1:"3";i:3;s:1:"2";i:4;s:1:"5";i:5;s:1:"7";i:6;s:1:"6";i:7;s:1:"8";}
 4	persona_-3-_content:2.persona_-3-_teaserblock:1.persona_-3-_productteaser	renderlet	a:3:{s:2:"id";i:10393;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
@@ -172,6 +193,15 @@
 4	persona_-3-_content:2.persona_-3-_teaserblock:7.persona_-3-_productteaser	renderlet	a:3:{s:2:"id";i:6992;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
 4	persona_-3-_content:2.persona_-3-_teaserblock:8.persona_-3-_productteaser	renderlet	a:3:{s:2:"id";i:9001;s:4:"type";s:6:"object";s:7:"subtype";s:6:"object";}
 4	persona_-3-_content:2.teaserblock:1.persona_-3-_teaserblock	block	a:0:{}
+4	persona_-7-_content:6.icon_0	select	filter
+4	persona_-7-_content:6.text_0	textarea	This content is specially targeted to basketball customers.
+4	persona_-7-_content:6.title_0	input	Basketball Content
+4	persona_-8-_content:6.icon_0	select	cog
+4	persona_-8-_content:6.text_0	textarea	This content is specially targeted to football customers.
+4	persona_-8-_content:6.title_0	input	Football Content
+4	persona_-9-_content:6.icon_0	select	asterisk
+4	persona_-9-_content:6.text_0	textarea	This content is specially targeted to handball customers.
+4	persona_-9-_content:6.title_0	input	Handball Content
 4	quotecontent4	textarea	This is a new way of ecommerce
 4	quotecontent_quotescontent22_1	input	test
 4	quotescontent2	block	a:1:{i:0;s:1:"1";}
@@ -196,6 +226,11 @@
 9	mySelect	select	\N
 9	myTextarea	textarea	
 9	myWysiwyg	wysiwyg	
+9	persona_-14-_footer_content	input	Hello male customer!
+9	persona_-15-_footer_content	input	Hello female customer!
+9	persona_-4-_footer_content	input	Welcome as new customer!
+9	persona_-5-_footer_content	input	Welcome back as regular customer!
+9	persona_-6-_footer_content	input	VIP customers rule!
 12	introduction	wysiwyg	<div id="cke_pastebin"><span style="color:#000000; font-family:'Times New Roman'; font-size:medium">Dear Customer,</span></div>\
 \
 <div><span style="color:#000000; font-family:'Times New Roman'; font-size:medium">thank you for your order.</span></div>\

@@ -1,11 +1,9 @@
 <?php 
 
 /** 
-* Generated at: 2017-10-11T11:24:35+02:00
+* Generated at: 2017-12-21T14:31:28+01:00
 * Inheritance: no
 * Variants: no
-* Changed by: admin (10)
-* IP: 192.168.11.5
 
 
 Fields Summary: 
@@ -13,6 +11,8 @@ Fields Summary:
 - group [href]
 - reference [input]
 - calculated [checkbox]
+- useAsTargetGroup [checkbox]
+- targetGroup [targetGroup]
 */ 
 
 namespace Pimcore\Model\DataObject;
@@ -24,6 +24,8 @@ namespace Pimcore\Model\DataObject;
 * @method static \Pimcore\Model\DataObject\CustomerSegment\Listing getByGroup ($value, $limit = 0) 
 * @method static \Pimcore\Model\DataObject\CustomerSegment\Listing getByReference ($value, $limit = 0) 
 * @method static \Pimcore\Model\DataObject\CustomerSegment\Listing getByCalculated ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\CustomerSegment\Listing getByUseAsTargetGroup ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\CustomerSegment\Listing getByTargetGroup ($value, $limit = 0) 
 */
 
 class CustomerSegment extends \CustomerManagementFrameworkBundle\Model\AbstractCustomerSegment {
@@ -34,6 +36,8 @@ public $name;
 public $group;
 public $reference;
 public $calculated;
+public $useAsTargetGroup;
+public $targetGroup;
 
 
 /**
@@ -135,6 +139,52 @@ public function getCalculated () {
 */
 public function setCalculated ($calculated) {
 	$this->calculated = $calculated;
+	return $this;
+}
+
+/**
+* Get useAsTargetGroup - Use As Target Group
+* @return boolean
+*/
+public function getUseAsTargetGroup () {
+	$preValue = $this->preGetValue("useAsTargetGroup"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
+		return $preValue;
+	}
+	$data = $this->useAsTargetGroup;
+	return $data;
+}
+
+/**
+* Set useAsTargetGroup - Use As Target Group
+* @param boolean $useAsTargetGroup
+* @return \Pimcore\Model\DataObject\CustomerSegment
+*/
+public function setUseAsTargetGroup ($useAsTargetGroup) {
+	$this->useAsTargetGroup = $useAsTargetGroup;
+	return $this;
+}
+
+/**
+* Get targetGroup - Linked TargetGroup
+* @return string
+*/
+public function getTargetGroup () {
+	$preValue = $this->preGetValue("targetGroup"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
+		return $preValue;
+	}
+	$data = $this->targetGroup;
+	return $data;
+}
+
+/**
+* Set targetGroup - Linked TargetGroup
+* @param string $targetGroup
+* @return \Pimcore\Model\DataObject\CustomerSegment
+*/
+public function setTargetGroup ($targetGroup) {
+	$this->targetGroup = $targetGroup;
 	return $this;
 }
 
