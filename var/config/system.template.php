@@ -69,8 +69,8 @@ return [
         "google" => [
             "client_id" => "",
             "email" => "",
-            "simpleapikey" => "",
-            "browserapikey" => ""
+            "simpleapikey" => "AIzaSyCo9Wj49hYJWW2WgOju4iMYNTvdcBxmyQ8",
+            "browserapikey" => "AIzaSyBJX16kWAmUVEz1c1amzp2iKqAfumbcoQQ"
         ]
     ],
     "cache" => [
