@@ -18,7 +18,6 @@
  * @var \Pimcore\Templating\PhpEngine $view
  * @var \Pimcore\Templating\GlobalVariables $app
  * @var $product \AppBundle\Model\DefaultProduct
- * @var $linkProdukt \AppBundle\Model\DefaultProduct
  */
 
     $product = $this->product;
@@ -51,7 +50,6 @@
         <div class="buttons">
             <div class="row">
                 <div class="col-md-6">
-                    <!--    <a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-thumbs-up"></span> Like</a> -->
                 </div>
                 <div class="col-md-6">
                     <a href="<?= $this->pimcoreUrl(["language" => $language, "action" => "add", "item" => $product->getId()], "cart") ?>" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> <?= $this->translate("shop.buy") ?></a></div>
