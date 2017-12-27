@@ -83,13 +83,13 @@ foreach ($tables as $name) {
     if($name == 'plugin_cmf_activities') {
 
         $db->query("SELECT id, customerId, activityDate, type, implementationClass, o_id, a_id, hex(attributes), md5, creationDate, modificationDate FROM " . $quotedName . " INTO OUTFILE '" . $fullFilename . "'");
-        $dumpData .= "LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/" . $filename . "' INTO TABLE " . $quotedName .
+        $dumpData .= "LOAD DATA LOCAL INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/" . $filename . "' INTO TABLE " . $quotedName .
             "(id, customerId, activityDate, type, implementationClass, o_id, a_id, @hexAttributes, md5, creationDate, modificationDate) SET attributes=UNHEX(@hexAttributes);\n";
 
     } else {
 
         $db->query("SELECT * FROM " . $quotedName . " INTO OUTFILE '" . $fullFilename . "'");
-        $dumpData .= "LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/" . $filename . "' INTO TABLE " . $quotedName . ";\n";
+        $dumpData .= "LOAD DATA LOCAL INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/" . $filename . "' INTO TABLE " . $quotedName . ";\n";
     }
 
 }
