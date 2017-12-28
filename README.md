@@ -25,3 +25,24 @@ the following issues for details:
 ```
 $ bin/console assets:install --symlink --relative
 ```
+
+## Useful Hints
+
+If MySQL cannot acceess your project folder due to permission issues, this might help: https://bbs.archlinux.org/viewtopic.php?id=227181
+``` bash
+ mkdir /etc/systemd/system/mariadb.service.d
+ cd /etc/systemd/system/mariadb.service.d
+ pico -w load_data.conf
+```
+Insert following content
+```
+[Service]
+
+# Override default directive with prevents  accessing /home, /root and /run/user
+ProtectHome=false
+```
+
+```bash
+systemctl daemon-reload
+systemctl restart mysqld
+```
