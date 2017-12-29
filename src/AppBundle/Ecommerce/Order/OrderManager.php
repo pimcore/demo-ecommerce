@@ -29,7 +29,7 @@ class OrderManager extends \Pimcore\Bundle\EcommerceFrameworkBundle\OrderManager
      *
      * @throws InvalidConfigException
      */
-    public function applyCustomCheckoutDataToOrder(ICart $cart, AbstractOrder $order)
+    protected function applyCustomCheckoutDataToOrder(ICart $cart, AbstractOrder $order)
     {
         $order = parent::applyCustomCheckoutDataToOrder($cart, $order);
 
