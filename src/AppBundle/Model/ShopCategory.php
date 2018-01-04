@@ -89,7 +89,7 @@ class ShopCategory extends ProductCategory
      * @param string $route
      * @param bool $reset
      *
-     * @return string|void
+     * @return string
      *
      * @throws \Exception
      */
