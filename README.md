@@ -26,6 +26,10 @@ the following issues for details:
 $ bin/console assets:install --symlink --relative
 ```
 
+* If you want to use the AdvancedObjectSearchBundle, you need to make sure to have an elastic search instance available and update 
+the config file `/app/config/pimcore/advancedobjectsearch/config.php` respectively. If not, you can deactivate the bundle to avoid problems when creating, updating or deleting objects.
+
+
 ## Useful Hints
 
 If MySQL cannot acceess your project folder due to permission issues, this might help: https://bbs.archlinux.org/viewtopic.php?id=227181
