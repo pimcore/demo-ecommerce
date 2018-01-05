@@ -3214,7 +3214,7 @@ CREATE TABLE `plugin_cmf_activities` (
   KEY `customerId` (`customerId`),
   KEY `o_id` (`o_id`),
   KEY `a_id` (`a_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
 
 

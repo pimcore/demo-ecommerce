@@ -1,8 +1,8 @@
 1	0	page		/	999999	1	1366279291	1366981265	1	\N
 3	4	page	shop	/en/	0	1	1366976796	1460186375	\N	\N
-4	1	page	en	/	1	1	1366980952	1504170846	0	\N
+4	1	page	en	/	1	1	1366980952	1515168941	0	14
 8	4	folder	shared	/en/	6	1	1369995357	1459928330	\N	\N
-9	52	snippet	footer	/en/shared/includes/	0	1	1369995366	1460194951	\N	\N
+9	52	snippet	footer	/en/shared/includes/	0	1	1369995366	1515168281	0	14
 11	4	folder	emails	/en/	2	1	1371799762	1371799763	\N	\N
 12	11	email	order-confirmation	/en/emails/	1	1	1371799788	1491546442	0	\N
 14	23	page	landingpage	/en/landingpages/	0	1	1380541348	1515167917	0	0
