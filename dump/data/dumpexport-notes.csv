@@ -91,3 +91,15 @@
 91	Worklog	1921	object	1513850571	13	Progress Started	
 92	Worklog	1887	object	1513850578	13	Progress Started	
 93	Status update	1887	object	1513850591	13	In Progress ->In Review	All Done
+94	cmf.SegmentManager	12356	object	1515178294	\N	Segment(s) added (AddTrackedSegment action trigger action)	/customermanagement/segments/calculated/VisitorCount/at least once
+95	cmf.SegmentManager	12356	object	1515178294	\N	Segment(s) added (AddTrackedSegment action trigger action)	/customermanagement/segments/calculated/VisitorCount/2 times
+96	cmf.SegmentManager	12356	object	1515178294	\N	Segment(s) added (AddTrackedSegment action trigger action)	/customermanagement/segments/calculated/VisitorCount/3 times
+97	cmf.SegmentManager	12356	object	1515178294	\N	Segment(s) added (AddTrackedSegment action trigger action)	/customermanagement/segments/calculated/VisitorCount/4 times
+98	cmf.SegmentManager	12356	object	1515178294	\N	Segment(s) added (AddTrackedSegment action trigger action)	/customermanagement/segments/calculated/VisitorCount/5 times
+99	cmf.SegmentManager	12356	object	1515178992	\N	Segment(s) added (AddTrackedSegment action trigger action)	/customermanagement/segments/calculated/VisitorCount/5 times
+100	cmf.SegmentManager	12356	object	1515178992	\N	Segment(s) added (AddTrackedSegment action trigger action)	/customermanagement/segments/calculated/VisitorCount/4 times
+101	cmf.SegmentManager	12356	object	1515178992	\N	Segment(s) added (AddTrackedSegment action trigger action)	/customermanagement/segments/calculated/VisitorCount/3 times
+102	cmf.SegmentManager	12356	object	1515178992	\N	Segment(s) added (AddTrackedSegment action trigger action)	/customermanagement/segments/calculated/VisitorCount/2 times
+103	cmf.SegmentManager	12356	object	1515178992	\N	Segment(s) added (AddTrackedSegment action trigger action)	/customermanagement/segments/calculated/VisitorCount/at least once
+104	cmf.SegmentManager	12356	object	1515179040	\N	Segment(s) added (AddTrackedSegment action trigger action)	/customermanagement/segments/calculated/VisitorCount/2 times
+105	cmf.SegmentManager	12356	object	1515179040	\N	Segment(s) added (AddTrackedSegment action trigger action)	/customermanagement/segments/calculated/VisitorCount/at least once

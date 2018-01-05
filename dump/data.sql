@@ -3176,7 +3176,7 @@ CREATE TABLE `plugin_cmf_actiontrigger_queue` (
   PRIMARY KEY (`id`),
   KEY `customerId` (`customerId`),
   KEY `actionId` (`actionId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
 
 
 
@@ -3214,7 +3214,7 @@ CREATE TABLE `plugin_cmf_activities` (
   KEY `customerId` (`customerId`),
   KEY `o_id` (`o_id`),
   KEY `a_id` (`a_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
 
 
 

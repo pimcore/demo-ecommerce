@@ -578,7 +578,7 @@ header.jumbotron {
                 [
                     'type'         => 'cmf_has_segment',
                     'condition_operator' => '>=',
-                    'value' => 1,
+                    'value' => 2,
                     'considerCustomerSegments' => true,
                     'considerTrackedSegments' => true,
                     'segment'  => '/customermanagement/segments/calculated/VisitorCount/at least once',
@@ -607,7 +607,7 @@ header.jumbotron {
                 [
                     'type'         => 'cmf_has_segment',
                     'condition_operator' => '>=',
-                    'value' => 1,
+                    'value' => 2,
                     'considerCustomerSegments' => true,
                     'considerTrackedSegments' => true,
                     'segment'  => '/customermanagement/segments/calculated/VisitorCount/2 times',
@@ -636,7 +636,7 @@ header.jumbotron {
                 [
                     'type'         => 'cmf_has_segment',
                     'condition_operator' => '>=',
-                    'value' => 1,
+                    'value' => 2,
                     'considerCustomerSegments' => true,
                     'considerTrackedSegments' => true,
                     'segment'  => '/customermanagement/segments/calculated/VisitorCount/3 times',
@@ -665,7 +665,7 @@ header.jumbotron {
                 [
                     'type'         => 'cmf_has_segment',
                     'condition_operator' => '>=',
-                    'value' => 1,
+                    'value' => 2,
                     'considerCustomerSegments' => true,
                     'considerTrackedSegments' => true,
                     'segment'  => '/customermanagement/segments/calculated/VisitorCount/4 times',

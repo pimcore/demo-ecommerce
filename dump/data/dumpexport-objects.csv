@@ -6541,7 +6541,7 @@
 12331	12271	folder	13	/order/2017/10/	\N	1	1507884010	1507884010	1	0	\N	\N
 12336	12331	object	ord_59e07e0d8405b	/order/2017/10/13/	0	1	1507884557	1507884617	0	0	9	OnlineShopOrder
 12337	12336	object	10393_10393	/order/2017/10/13/ord_59e07e0d8405b/	0	1	1507884557	1507884606	0	0	8	OnlineShopOrderItem
-12356	12361	object	Peter-Hugo	/customermanagement/customers/AT/5020/	0	1	1508403484	1510834105	0	\N	41	Customer
+12356	12361	object	Peter-Hugo	/customermanagement/customers/AT/5020/	0	1	1508403484	1515179040	0	15	41	Customer
 12360	12246	folder	AT	/customermanagement/customers/	\N	1	1508403516	1508403516	1	0	\N	\N
 12361	12360	folder	5020	/customermanagement/customers/AT/	\N	1	1508403516	1508403516	1	0	\N	\N
 12362	12251	object	Gender	/customermanagement/segments/calculated/	\N	1	1508403928	1508403928	0	0	36	CustomerSegmentGroup
@@ -6558,9 +6558,9 @@
 12379	12378	object	DE - Bayern	/customermanagement/segments/calculated/State/DE/	\N	1	1508406660	1508406660	0	0	37	CustomerSegment
 12380	12366	object	Football	/customermanagement/segments/calculated/InterestCategories/	0	1	1508406687	1515167918	0	0	37	CustomerSegment
 12381	12251	object	CustomerType	/customermanagement/segments/calculated/	0	1	1508406727	1508406817	\N	\N	36	CustomerSegmentGroup
-12382	12381	object	New Customer	/customermanagement/segments/calculated/CustomerType/	0	1	1508406744	1515167983	0	14	37	CustomerSegment
-12383	12381	object	Regular Customer	/customermanagement/segments/calculated/CustomerType/	0	1	1508406795	1515168006	0	14	37	CustomerSegment
-12384	12381	object	VIP Customer	/customermanagement/segments/calculated/CustomerType/	0	1	1508406807	1515167992	0	14	37	CustomerSegment
+12382	12381	object	New Customer	/customermanagement/segments/calculated/CustomerType/	0	1	1508406744	1515167983	0	\N	37	CustomerSegment
+12383	12381	object	Regular Customer	/customermanagement/segments/calculated/CustomerType/	0	1	1508406795	1515168006	0	\N	37	CustomerSegment
+12384	12381	object	VIP Customer	/customermanagement/segments/calculated/CustomerType/	0	1	1508406807	1515167992	0	\N	37	CustomerSegment
 12387	12366	object	Handball	/customermanagement/segments/calculated/InterestCategories/	0	1	1508407062	1515167918	0	0	37	CustomerSegment
 12395	12377	object	Anna-Huberr	/customermanagement/customers/DE/80539/	0	1	1508407793	1508424568	0	1	41	Customer
 12396	12395	object	twitter-2805534632	/customermanagement/customers/DE/80539/Anna-Huberr/	\N	1	1508407793	1508408803	0	\N	38	SsoIdentity
