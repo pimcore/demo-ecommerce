@@ -3,6 +3,24 @@ SET NAMES utf8mb4;
 
 
 
+DROP TABLE IF EXISTS `application_logs_archive_01_2018`;
+CREATE TABLE `application_logs_archive_01_2018` (
+  `id` bigint(20) NOT NULL,
+  `pid` int(11) DEFAULT NULL,
+  `timestamp` datetime NOT NULL,
+  `message` varchar(1024) DEFAULT NULL,
+  `priority` enum('emergency','alert','critical','error','warning','notice','info','debug') DEFAULT NULL,
+  `fileobject` varchar(1024) DEFAULT NULL,
+  `info` varchar(1024) DEFAULT NULL,
+  `component` varchar(255) DEFAULT NULL,
+  `source` varchar(255) DEFAULT NULL,
+  `relatedobject` bigint(20) DEFAULT NULL,
+  `relatedobjecttype` enum('object','document','asset') DEFAULT NULL,
+  `maintenanceChecked` tinyint(4) DEFAULT NULL
+) ENGINE=ARCHIVE DEFAULT CHARSET=utf8mb4;
+
+
+
 DROP TABLE IF EXISTS `application_logs_archive_04_2016`;
 CREATE TABLE `application_logs_archive_04_2016` (
   `id` bigint(20) NOT NULL,
@@ -3142,7 +3160,7 @@ CREATE TABLE `plugin_cmf_actiontrigger_actions` (
   `modificationDate` bigint(20) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `ruleId` (`ruleId`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 
 
@@ -3154,6 +3172,7 @@ CREATE TABLE `plugin_cmf_actiontrigger_queue` (
   `actionId` int(11) unsigned DEFAULT NULL,
   `creationDate` bigint(20) unsigned DEFAULT NULL,
   `modificationDate` bigint(20) unsigned DEFAULT NULL,
+  `environment` text,
   PRIMARY KEY (`id`),
   KEY `customerId` (`customerId`),
   KEY `actionId` (`actionId`)
@@ -3174,7 +3193,7 @@ CREATE TABLE `plugin_cmf_actiontrigger_rules` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   KEY `active` (`active`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 
 
@@ -3298,6 +3317,7 @@ CREATE TABLE `plugin_cmf_segment_assignment` (
   `elementType` enum('document','asset','object') NOT NULL DEFAULT 'document',
   `segments` text,
   `breaksInheritance` tinyint(4) DEFAULT NULL,
+  `inPreparation` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`elementId`,`elementType`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -3336,6 +3356,8 @@ CREATE TABLE `plugin_cmf_sequence_numbers` (
   `number` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
 
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-assets.csv' INTO TABLE `assets`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-assets_metadata.csv' INTO TABLE `assets_metadata`;

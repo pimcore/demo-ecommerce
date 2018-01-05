@@ -6549,22 +6549,22 @@
 12364	12362	object	female	/customermanagement/segments/calculated/Gender/	\N	1	1508403929	1508403929	0	0	37	CustomerSegment
 12365	12362	object	not-set	/customermanagement/segments/calculated/Gender/	\N	1	1508403929	1508403929	0	0	37	CustomerSegment
 12366	12251	object	InterestCategories	/customermanagement/segments/calculated/	0	1	1508405673	1508406823	0	\N	36	CustomerSegmentGroup
-12367	12366	object	Outdoor	/customermanagement/segments/calculated/InterestCategories/	0	1	1508405673	1508405892	0	\N	37	CustomerSegment
+12367	12366	object	Outdoor	/customermanagement/segments/calculated/InterestCategories/	0	1	1508405673	1515167918	0	0	37	CustomerSegment
 12372	12377	object	Anna-Huber	/customermanagement/customers/DE/80539/	0	1	1508406630	1508424666	0	\N	41	Customer
 12373	12372	object	google-105072133371916077860	/customermanagement/customers/DE/80539/Anna-Huber/	\N	1	1508406630	1508406659	0	0	38	SsoIdentity
 12376	12246	folder	DE	/customermanagement/customers/	\N	1	1508406659	1508406659	1	0	\N	\N
 12377	12376	folder	80539	/customermanagement/customers/DE/	\N	1	1508406659	1508406659	1	0	\N	\N
 12378	12252	folder	DE	/customermanagement/segments/calculated/State/	\N	1	1508406660	1508406660	1	0	\N	\N
 12379	12378	object	DE - Bayern	/customermanagement/segments/calculated/State/DE/	\N	1	1508406660	1508406660	0	0	37	CustomerSegment
-12380	12366	object	Football	/customermanagement/segments/calculated/InterestCategories/	\N	1	1508406687	1508406687	0	0	37	CustomerSegment
+12380	12366	object	Football	/customermanagement/segments/calculated/InterestCategories/	0	1	1508406687	1515167918	0	0	37	CustomerSegment
 12381	12251	object	CustomerType	/customermanagement/segments/calculated/	0	1	1508406727	1508406817	\N	\N	36	CustomerSegmentGroup
-12382	12381	object	New Customer	/customermanagement/segments/calculated/CustomerType/	0	1	1508406744	1508406751	\N	\N	37	CustomerSegment
-12383	12381	object	Regular Customer	/customermanagement/segments/calculated/CustomerType/	0	1	1508406795	1508406801	\N	\N	37	CustomerSegment
-12384	12381	object	VIP Customer	/customermanagement/segments/calculated/CustomerType/	0	1	1508406807	1508406812	\N	\N	37	CustomerSegment
-12387	12366	object	Handball	/customermanagement/segments/calculated/InterestCategories/	\N	1	1508407062	1508407062	0	0	37	CustomerSegment
+12382	12381	object	New Customer	/customermanagement/segments/calculated/CustomerType/	0	1	1508406744	1515167983	0	14	37	CustomerSegment
+12383	12381	object	Regular Customer	/customermanagement/segments/calculated/CustomerType/	0	1	1508406795	1515168006	0	14	37	CustomerSegment
+12384	12381	object	VIP Customer	/customermanagement/segments/calculated/CustomerType/	0	1	1508406807	1515167992	0	14	37	CustomerSegment
+12387	12366	object	Handball	/customermanagement/segments/calculated/InterestCategories/	0	1	1508407062	1515167918	0	0	37	CustomerSegment
 12395	12377	object	Anna-Huberr	/customermanagement/customers/DE/80539/	0	1	1508407793	1508424568	0	1	41	Customer
 12396	12395	object	twitter-2805534632	/customermanagement/customers/DE/80539/Anna-Huberr/	\N	1	1508407793	1508408803	0	\N	38	SsoIdentity
-12399	12366	object	Volleyball	/customermanagement/segments/calculated/InterestCategories/	\N	1	1508408085	1508408085	0	0	37	CustomerSegment
+12399	12366	object	Volleyball	/customermanagement/segments/calculated/InterestCategories/	0	1	1508408085	1515167919	0	0	37	CustomerSegment
 12402	12271	folder	19	/order/2017/10/	\N	1	1508424039	1508424039	1	0	\N	\N
 12403	12402	object	ord_59e8b967ea713	/order/2017/10/19/	0	1	1508424040	1508424088	0	0	9	OnlineShopOrder
 12404	12403	object	9316_9316	/order/2017/10/19/ord_59e8b967ea713/	0	1	1508424040	1508424076	0	0	8	OnlineShopOrderItem
@@ -6586,3 +6586,33 @@
 12420	12419	folder	21	/order/2017/12/	\N	1	1513842611	1513842611	1	0	\N	\N
 12421	12420	object	ord_5a3b67b2bf731	/order/2017/12/21/	0	1	1513842611	1513842626	0	0	9	OnlineShopOrder
 12422	12421	object	10393_10393	/order/2017/12/21/ord_5a3b67b2bf731/	\N	1	1513842611	1513842611	0	0	8	OnlineShopOrderItem
+12427	12366	object	Basketball	/customermanagement/segments/calculated/InterestCategories/	0	1	1515166890	1515167918	0	0	37	CustomerSegment
+12428	12366	object	Running	/customermanagement/segments/calculated/InterestCategories/	0	1	1515166891	1515167918	0	0	37	CustomerSegment
+12429	12251	object	DetailInterests	/customermanagement/segments/calculated/	\N	1	1515166891	1515166891	0	0	36	CustomerSegmentGroup
+12430	12429	object	Technical	/customermanagement/segments/calculated/DetailInterests/	\N	1	1515166891	1515166891	0	0	37	CustomerSegment
+12431	12429	object	Productmodel	/customermanagement/segments/calculated/DetailInterests/	\N	1	1515166891	1515166891	0	0	37	CustomerSegment
+12432	12429	object	Filter Definitions	/customermanagement/segments/calculated/DetailInterests/	\N	1	1515166892	1515166892	0	0	37	CustomerSegment
+12433	12429	object	Marketing	/customermanagement/segments/calculated/DetailInterests/	\N	1	1515166892	1515166892	0	0	37	CustomerSegment
+12434	12429	object	Cross-Selling	/customermanagement/segments/calculated/DetailInterests/	\N	1	1515166892	1515166892	0	0	37	CustomerSegment
+12435	12429	object	Targeting-Groups	/customermanagement/segments/calculated/DetailInterests/	\N	1	1515166892	1515166892	0	0	37	CustomerSegment
+12436	12429	object	Output	/customermanagement/segments/calculated/DetailInterests/	\N	1	1515166892	1515166892	0	0	37	CustomerSegment
+12437	12429	object	Vouchers	/customermanagement/segments/calculated/DetailInterests/	\N	1	1515166892	1515166892	0	0	37	CustomerSegment
+12438	12429	object	Backoffice	/customermanagement/segments/calculated/DetailInterests/	\N	1	1515166892	1515166892	0	0	37	CustomerSegment
+12439	12429	object	Tenants	/customermanagement/segments/calculated/DetailInterests/	\N	1	1515166892	1515166892	0	0	37	CustomerSegment
+12440	12251	object	VisitorCount	/customermanagement/segments/calculated/	\N	1	1515166892	1515166892	0	0	36	CustomerSegmentGroup
+12441	12440	object	at least once	/customermanagement/segments/calculated/VisitorCount/	\N	1	1515166892	1515166892	0	0	37	CustomerSegment
+12442	12440	object	2 times	/customermanagement/segments/calculated/VisitorCount/	\N	1	1515166892	1515166892	0	0	37	CustomerSegment
+12443	12440	object	3 times	/customermanagement/segments/calculated/VisitorCount/	\N	1	1515166893	1515166893	0	0	37	CustomerSegment
+12444	12440	object	4 times	/customermanagement/segments/calculated/VisitorCount/	\N	1	1515166893	1515166893	0	0	37	CustomerSegment
+12445	12440	object	5 times	/customermanagement/segments/calculated/VisitorCount/	\N	1	1515166893	1515166893	0	0	37	CustomerSegment
+12446	12440	object	10 times	/customermanagement/segments/calculated/VisitorCount/	\N	1	1515166893	1515166893	0	0	37	CustomerSegment
+12447	12251	object	VisitingCountry	/customermanagement/segments/calculated/	\N	1	1515166893	1515166893	0	0	36	CustomerSegmentGroup
+12448	12447	object	Austria	/customermanagement/segments/calculated/VisitingCountry/	\N	1	1515166893	1515166893	0	0	37	CustomerSegment
+12449	12447	object	Germany	/customermanagement/segments/calculated/VisitingCountry/	\N	1	1515166893	1515166893	0	0	37	CustomerSegment
+12450	12251	object	VisitingLanguage	/customermanagement/segments/calculated/	\N	1	1515166893	1515166893	0	0	36	CustomerSegmentGroup
+12451	12450	object	German	/customermanagement/segments/calculated/VisitingLanguage/	\N	1	1515166893	1515166893	0	0	37	CustomerSegment
+12452	12450	object	English	/customermanagement/segments/calculated/VisitingLanguage/	\N	1	1515166893	1515166893	0	0	37	CustomerSegment
+12453	12251	object	VisitingDevice	/customermanagement/segments/calculated/	\N	1	1515166893	1515166893	0	0	36	CustomerSegmentGroup
+12454	12453	object	Mobile	/customermanagement/segments/calculated/VisitingDevice/	\N	1	1515166893	1515166893	0	0	37	CustomerSegment
+12455	12453	object	Desktop	/customermanagement/segments/calculated/VisitingDevice/	\N	1	1515166893	1515166893	0	0	37	CustomerSegment
+12456	12453	object	Tablet	/customermanagement/segments/calculated/VisitingDevice/	\N	1	1515166894	1515166894	0	0	37	CustomerSegment
