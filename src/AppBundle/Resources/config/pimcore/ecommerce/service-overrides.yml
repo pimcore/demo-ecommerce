@@ -1,28 +1,26 @@
 services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
 
     # define own price system service and configure options for attribute name and price object class
     app.default_price_system:
         class: Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\AttributePriceSystem
         arguments:
-            - '@pimcore_ecommerce.pricing_manager'
-            - '@pimcore_ecommerce.environment'
-            - { attribute_name: price, price_class: Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\Price }
-
+            $options:
+                attribute_name: price
+                price_class: Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\Price
 
     # Custom commit order processor
     AppBundle\Ecommerce\Order\Processor:
-        autowire: true
         calls:
             - [setActivityManager, ['@cmf.activity_manager']]
 
     # Custom commit order processor for masterpass
-    AppBundle\Ecommerce\Order\MasterpassProcessor:
-        autowire: true
-
+    AppBundle\Ecommerce\Order\MasterpassProcessor: ~
 
     # Order Manager for E-Commerce Demo
     AppBundle\Ecommerce\Order\OrderManager:
-        autowire: true
         arguments:
             - '@pimcore_ecommerce.environment'
             - '@?'
@@ -32,3 +30,5 @@ services:
     # Custom service definitions for index service
     AppBundle\Ecommerce\IndexService\Tenant\Config\MyOptimizedMysql:
         parent: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Config\AbstractConfig
+        autowire: true
+        autoconfigure: false
