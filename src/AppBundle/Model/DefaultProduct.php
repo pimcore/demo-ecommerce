@@ -35,9 +35,9 @@ class DefaultProduct extends Product
         return $this->o_elementAdminStyle;
     }
 
-    public function save($params = [])
+    public function save()
     {
-        parent::save($params);
+        parent::save();
 
         Cache::clearTag('object_' . $this->internalGetBaseProduct()->getId());
     }
