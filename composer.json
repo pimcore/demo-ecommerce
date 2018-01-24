@@ -2,7 +2,7 @@
   "name": "pimcore/demo-ecommerce",
   "description": "E-Commerce Demo Application for Pimcore 5",
   "type": "pimcore-install-profile",
-  "license": "GPL-3.0",
+  "license": "GPL-3.0-or-later",
   "config": {
     "sort-packages": true
   },
