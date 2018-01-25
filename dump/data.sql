@@ -3598,7 +3598,6 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpe
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-users_workspaces_document.csv' INTO TABLE `users_workspaces_document`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-users_workspaces_object.csv' INTO TABLE `users_workspaces_object`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-uuids.csv' INTO TABLE `uuids`;
-LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-website_settings.csv' INTO TABLE `website_settings`;
 
 
 DROP VIEW IF EXISTS object_12;
