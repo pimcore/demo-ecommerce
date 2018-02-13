@@ -20,12 +20,6 @@ the following issues for details:
   ```
 
 * Install Pimcore (via web or CLI installer) - it should now list this install profile as available
-* Execute the following command to symlink any assets from bundles into your document root (you can omit the symlink and relative options if that fits your environment better):
-
-```
-$ bin/console assets:install --symlink --relative
-```
-
 * If you want to use the AdvancedObjectSearchBundle, you need to make sure to have an elastic search instance available and update 
 the config file `/app/config/pimcore/advancedobjectsearch/config.php` respectively. If not, you can deactivate the bundle to avoid problems when creating, updating or deleting objects.
 
