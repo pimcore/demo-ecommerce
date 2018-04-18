@@ -27,6 +27,9 @@ class AppBundle extends Bundle implements DependentBundleInterface
     public static function registerDependentBundles(BundleCollection $collection)
     {
         // activate bundle for SSO oauth login/register functionality
+        if (class_exists('\Http\HttplugBundle\HttplugBundle')) {
+            $collection->addBundle( new \Http\HttplugBundle\HttplugBundle());
+        }
         $collection->addBundle(HWIOAuthBundle::class);
     }
 }
