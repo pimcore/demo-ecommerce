@@ -8,7 +8,7 @@
   },
   "require": {
     "php": ">=7.0",
-    "pimcore/advanced-object-search": "^1.3",
+    "pimcore/advanced-object-search": "^1.4",
     "pimcore/core-version": "~5.2.0",
     "pimcore/customer-management-framework-bundle": "^1.4",
     "pimcore/web2print-tools-bundle": "^2.2"
