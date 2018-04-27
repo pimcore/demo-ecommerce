@@ -1,11 +1,11 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-06-23T13:19:43+02:00
-* IP: 192.168.11.87
+/** 
+* Generated at: 2018-04-27T11:39:50+02:00
+* IP: 192.168.9.18
 
 
-Fields Summary:
+Fields Summary: 
  - weight [numeric]
  - length [numeric]
  - width [numeric]
@@ -18,7 +18,7 @@ Fields Summary:
  - temperatureComfort [numeric]
  - temperatureLimit [numeric]
  - temperatureExtreme [numeric]
-*/
+*/ 
 
 namespace Pimcore\Model\DataObject\Objectbrick\Data;
 
@@ -50,13 +50,16 @@ public function getWeight () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("weight")->isEmpty($data)) {
 		return $this->getValueFromParent("weight");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set weight - Weight
 * @param float $weight
-* @return \Pimcore\Model\DataObject\SpecsSleepingbags
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\SpecsSleepingbags
 */
 public function setWeight ($weight) {
 	$this->weight = $weight;
@@ -72,13 +75,16 @@ public function getLength () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("length")->isEmpty($data)) {
 		return $this->getValueFromParent("length");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set length - Length
 * @param float $length
-* @return \Pimcore\Model\DataObject\SpecsSleepingbags
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\SpecsSleepingbags
 */
 public function setLength ($length) {
 	$this->length = $length;
@@ -94,13 +100,16 @@ public function getWidth () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("width")->isEmpty($data)) {
 		return $this->getValueFromParent("width");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set width - Width
 * @param float $width
-* @return \Pimcore\Model\DataObject\SpecsSleepingbags
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\SpecsSleepingbags
 */
 public function setWidth ($width) {
 	$this->width = $width;
@@ -116,13 +125,16 @@ public function getBodySize () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("bodySize")->isEmpty($data)) {
 		return $this->getValueFromParent("bodySize");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set bodySize - Max Body Size
 * @param float $bodySize
-* @return \Pimcore\Model\DataObject\SpecsSleepingbags
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\SpecsSleepingbags
 */
 public function setBodySize ($bodySize) {
 	$this->bodySize = $bodySize;
@@ -138,13 +150,16 @@ public function getFabricShell () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("fabricShell")->isEmpty($data)) {
 		return $this->getValueFromParent("fabricShell");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set fabricShell - Shell fabric
 * @param string $fabricShell
-* @return \Pimcore\Model\DataObject\SpecsSleepingbags
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\SpecsSleepingbags
 */
 public function setFabricShell ($fabricShell) {
 	$this->fabricShell = $fabricShell;
@@ -160,13 +175,16 @@ public function getFabricLining () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("fabricLining")->isEmpty($data)) {
 		return $this->getValueFromParent("fabricLining");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set fabricLining - Lining fabric
 * @param string $fabricLining
-* @return \Pimcore\Model\DataObject\SpecsSleepingbags
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\SpecsSleepingbags
 */
 public function setFabricLining ($fabricLining) {
 	$this->fabricLining = $fabricLining;
@@ -182,13 +200,16 @@ public function getFilling () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("filling")->isEmpty($data)) {
 		return $this->getValueFromParent("filling");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set filling - Filling
 * @param string $filling
-* @return \Pimcore\Model\DataObject\SpecsSleepingbags
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\SpecsSleepingbags
 */
 public function setFilling ($filling) {
 	$this->filling = $filling;
@@ -204,13 +225,16 @@ public function getProtection () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("protection")->isEmpty($data)) {
 		return $this->getValueFromParent("protection");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set protection - Protection (Layers)
 * @param string $protection
-* @return \Pimcore\Model\DataObject\SpecsSleepingbags
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\SpecsSleepingbags
 */
 public function setProtection ($protection) {
 	$this->protection = $protection;
@@ -226,13 +250,16 @@ public function getPackingSize () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("packingSize")->isEmpty($data)) {
 		return $this->getValueFromParent("packingSize");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set packingSize - Packing Size
 * @param string $packingSize
-* @return \Pimcore\Model\DataObject\SpecsSleepingbags
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\SpecsSleepingbags
 */
 public function setPackingSize ($packingSize) {
 	$this->packingSize = $packingSize;
@@ -248,13 +275,16 @@ public function getTemperatureComfort () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("temperatureComfort")->isEmpty($data)) {
 		return $this->getValueFromParent("temperatureComfort");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set temperatureComfort - Comfort Temp
 * @param float $temperatureComfort
-* @return \Pimcore\Model\DataObject\SpecsSleepingbags
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\SpecsSleepingbags
 */
 public function setTemperatureComfort ($temperatureComfort) {
 	$this->temperatureComfort = $temperatureComfort;
@@ -270,13 +300,16 @@ public function getTemperatureLimit () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("temperatureLimit")->isEmpty($data)) {
 		return $this->getValueFromParent("temperatureLimit");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set temperatureLimit - Limit Temp
 * @param float $temperatureLimit
-* @return \Pimcore\Model\DataObject\SpecsSleepingbags
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\SpecsSleepingbags
 */
 public function setTemperatureLimit ($temperatureLimit) {
 	$this->temperatureLimit = $temperatureLimit;
@@ -292,13 +325,16 @@ public function getTemperatureExtreme () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("temperatureExtreme")->isEmpty($data)) {
 		return $this->getValueFromParent("temperatureExtreme");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set temperatureExtreme - Extreme Temp
 * @param float $temperatureExtreme
-* @return \Pimcore\Model\DataObject\SpecsSleepingbags
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\SpecsSleepingbags
 */
 public function setTemperatureExtreme ($temperatureExtreme) {
 	$this->temperatureExtreme = $temperatureExtreme;

@@ -1,13 +1,13 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-06-23T13:19:42+02:00
-* IP: 192.168.11.87
+/** 
+* Generated at: 2018-04-27T11:38:45+02:00
+* IP: 192.168.9.18
 
 
-Fields Summary:
+Fields Summary: 
  - specs [multiselect]
-*/
+*/ 
 
 namespace Pimcore\Model\DataObject\Objectbrick\Data;
 
@@ -20,7 +20,7 @@ public $specs;
 
 
 /**
-* Set specs -
+* Set specs - 
 * @return array
 */
 public function getSpecs () {
@@ -28,13 +28,16 @@ public function getSpecs () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("specs")->isEmpty($data)) {
 		return $this->getValueFromParent("specs");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
-* Set specs -
+* Set specs - 
 * @param array $specs
-* @return \Pimcore\Model\DataObject\FeaturesBenefitsShoes
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\FeaturesBenefitsShoes
 */
 public function setSpecs ($specs) {
 	$this->specs = $specs;

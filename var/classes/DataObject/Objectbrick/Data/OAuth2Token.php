@@ -1,8 +1,8 @@
 <?php 
 
 /** 
-* Generated at: 2017-10-11T19:54:00+02:00
-* IP: 10.242.2.2
+* Generated at: 2018-04-27T11:37:57+02:00
+* IP: 192.168.9.18
 
 
 Fields Summary: 
@@ -36,13 +36,16 @@ public function getAccessToken () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("accessToken")->isEmpty($data)) {
 		return $this->getValueFromParent("accessToken");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set accessToken - accessToken
 * @param string $accessToken
-* @return \Pimcore\Model\DataObject\OAuth2Token
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\OAuth2Token
 */
 public function setAccessToken ($accessToken) {
 	$this->accessToken = $accessToken;
@@ -58,13 +61,16 @@ public function getTokenType () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("tokenType")->isEmpty($data)) {
 		return $this->getValueFromParent("tokenType");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set tokenType - tokenType
 * @param string $tokenType
-* @return \Pimcore\Model\DataObject\OAuth2Token
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\OAuth2Token
 */
 public function setTokenType ($tokenType) {
 	$this->tokenType = $tokenType;
@@ -80,13 +86,16 @@ public function getExpiresAt () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("expiresAt")->isEmpty($data)) {
 		return $this->getValueFromParent("expiresAt");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set expiresAt - expiresAt
 * @param string $expiresAt
-* @return \Pimcore\Model\DataObject\OAuth2Token
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\OAuth2Token
 */
 public function setExpiresAt ($expiresAt) {
 	$this->expiresAt = $expiresAt;
@@ -102,13 +111,16 @@ public function getRefreshToken () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("refreshToken")->isEmpty($data)) {
 		return $this->getValueFromParent("refreshToken");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set refreshToken - refreshToken
 * @param string $refreshToken
-* @return \Pimcore\Model\DataObject\OAuth2Token
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\OAuth2Token
 */
 public function setRefreshToken ($refreshToken) {
 	$this->refreshToken = $refreshToken;
@@ -124,13 +136,16 @@ public function getScope () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("scope")->isEmpty($data)) {
 		return $this->getValueFromParent("scope");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set scope - scope
 * @param string $scope
-* @return \Pimcore\Model\DataObject\OAuth2Token
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\OAuth2Token
 */
 public function setScope ($scope) {
 	$this->scope = $scope;

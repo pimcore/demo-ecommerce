@@ -1,15 +1,15 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-06-23T13:19:42+02:00
-* IP: 192.168.11.87
+/** 
+* Generated at: 2018-04-27T11:38:23+02:00
+* IP: 192.168.9.18
 
 
-Fields Summary:
+Fields Summary: 
  - styles [multihref]
  - fittings [multiselect]
  - zips [select]
-*/
+*/ 
 
 namespace Pimcore\Model\DataObject\Objectbrick\Data;
 
@@ -32,13 +32,16 @@ public function getStyles () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("styles")->isEmpty($data)) {
 		return $this->getValueFromParent("styles");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set styles - Styles
 * @param \Pimcore\Model\DataObject\productTechnology[] $styles
-* @return \Pimcore\Model\DataObject\Apparel
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\Apparel
 */
 public function setStyles ($styles) {
 	$this->styles = $this->getDefinition()->getFieldDefinition("styles")->preSetData($this, $styles);
@@ -54,13 +57,16 @@ public function getFittings () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("fittings")->isEmpty($data)) {
 		return $this->getValueFromParent("fittings");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set fittings - Fittings
 * @param array $fittings
-* @return \Pimcore\Model\DataObject\Apparel
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\Apparel
 */
 public function setFittings ($fittings) {
 	$this->fittings = $fittings;
@@ -76,13 +82,16 @@ public function getZips () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("zips")->isEmpty($data)) {
 		return $this->getValueFromParent("zips");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set zips - Zips
 * @param string $zips
-* @return \Pimcore\Model\DataObject\Apparel
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\Apparel
 */
 public function setZips ($zips) {
 	$this->zips = $zips;

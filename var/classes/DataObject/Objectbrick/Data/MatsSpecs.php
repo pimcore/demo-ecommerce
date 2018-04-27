@@ -1,11 +1,11 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-06-23T13:19:42+02:00
-* IP: 192.168.11.87
+/** 
+* Generated at: 2018-04-27T11:39:10+02:00
+* IP: 192.168.9.18
 
 
-Fields Summary:
+Fields Summary: 
  - length [numeric]
  - width [numeric]
  - height [numeric]
@@ -15,7 +15,7 @@ Fields Summary:
  - isCFCfree [checkbox]
  - has3partWaveShape [checkbox]
  - structure [multiselect]
-*/
+*/ 
 
 namespace Pimcore\Model\DataObject\Objectbrick\Data;
 
@@ -44,13 +44,16 @@ public function getLength () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("length")->isEmpty($data)) {
 		return $this->getValueFromParent("length");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set length - Length
 * @param float $length
-* @return \Pimcore\Model\DataObject\MatsSpecs
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\MatsSpecs
 */
 public function setLength ($length) {
 	$this->length = $length;
@@ -66,13 +69,16 @@ public function getWidth () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("width")->isEmpty($data)) {
 		return $this->getValueFromParent("width");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set width - Width
 * @param float $width
-* @return \Pimcore\Model\DataObject\MatsSpecs
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\MatsSpecs
 */
 public function setWidth ($width) {
 	$this->width = $width;
@@ -88,13 +94,16 @@ public function getHeight () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("height")->isEmpty($data)) {
 		return $this->getValueFromParent("height");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set height - Height
 * @param float $height
-* @return \Pimcore\Model\DataObject\MatsSpecs
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\MatsSpecs
 */
 public function setHeight ($height) {
 	$this->height = $height;
@@ -110,13 +119,16 @@ public function getMaterialTop () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("materialTop")->isEmpty($data)) {
 		return $this->getValueFromParent("materialTop");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set materialTop - Material Top
 * @param string $materialTop
-* @return \Pimcore\Model\DataObject\MatsSpecs
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\MatsSpecs
 */
 public function setMaterialTop ($materialTop) {
 	$this->materialTop = $materialTop;
@@ -132,13 +144,16 @@ public function getMaterialBottom () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("materialBottom")->isEmpty($data)) {
 		return $this->getValueFromParent("materialBottom");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set materialBottom - Material Bottom
 * @param string $materialBottom
-* @return \Pimcore\Model\DataObject\MatsSpecs
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\MatsSpecs
 */
 public function setMaterialBottom ($materialBottom) {
 	$this->materialBottom = $materialBottom;
@@ -154,13 +169,16 @@ public function getWeight () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("weight")->isEmpty($data)) {
 		return $this->getValueFromParent("weight");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set weight - Weight
 * @param float $weight
-* @return \Pimcore\Model\DataObject\MatsSpecs
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\MatsSpecs
 */
 public function setWeight ($weight) {
 	$this->weight = $weight;
@@ -176,13 +194,16 @@ public function getIsCFCfree () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("isCFCfree")->isEmpty($data)) {
 		return $this->getValueFromParent("isCFCfree");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set isCFCfree - Fully bonded CFC-free?
 * @param boolean $isCFCfree
-* @return \Pimcore\Model\DataObject\MatsSpecs
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\MatsSpecs
 */
 public function setIsCFCfree ($isCFCfree) {
 	$this->isCFCfree = $isCFCfree;
@@ -198,13 +219,16 @@ public function getHas3partWaveShape () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("has3partWaveShape")->isEmpty($data)) {
 		return $this->getValueFromParent("has3partWaveShape");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set has3partWaveShape - Got 3part Wave Shape?
 * @param boolean $has3partWaveShape
-* @return \Pimcore\Model\DataObject\MatsSpecs
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\MatsSpecs
 */
 public function setHas3partWaveShape ($has3partWaveShape) {
 	$this->has3partWaveShape = $has3partWaveShape;
@@ -220,13 +244,16 @@ public function getStructure () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("structure")->isEmpty($data)) {
 		return $this->getValueFromParent("structure");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set structure - Structure
 * @param array $structure
-* @return \Pimcore\Model\DataObject\MatsSpecs
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\MatsSpecs
 */
 public function setStructure ($structure) {
 	$this->structure = $structure;

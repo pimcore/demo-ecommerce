@@ -1,8 +1,8 @@
 <?php 
 
 /** 
-* Generated at: 2017-10-11T20:10:16+02:00
-* IP: 10.242.2.2
+* Generated at: 2018-04-27T11:37:53+02:00
+* IP: 192.168.9.18
 
 
 Fields Summary: 
@@ -30,13 +30,16 @@ public function getToken () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("token")->isEmpty($data)) {
 		return $this->getValueFromParent("token");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set token - token
 * @param string $token
-* @return \Pimcore\Model\DataObject\OAuth1Token
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\OAuth1Token
 */
 public function setToken ($token) {
 	$this->token = $token;
@@ -52,13 +55,16 @@ public function getTokenSecret () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("tokenSecret")->isEmpty($data)) {
 		return $this->getValueFromParent("tokenSecret");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set tokenSecret - tokenSecret
 * @param string $tokenSecret
-* @return \Pimcore\Model\DataObject\OAuth1Token
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\OAuth1Token
 */
 public function setTokenSecret ($tokenSecret) {
 	$this->tokenSecret = $tokenSecret;

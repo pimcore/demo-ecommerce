@@ -1,17 +1,17 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-06-23T13:19:43+02:00
-* IP: 192.168.11.87
+/** 
+* Generated at: 2018-04-27T11:39:25+02:00
+* IP: 192.168.9.18
 
 
-Fields Summary:
+Fields Summary: 
  - volume [input]
  - weight [input]
  - load [input]
  - material [input]
  - expandTo [input]
-*/
+*/ 
 
 namespace Pimcore\Model\DataObject\Objectbrick\Data;
 
@@ -36,13 +36,16 @@ public function getVolume () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("volume")->isEmpty($data)) {
 		return $this->getValueFromParent("volume");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set volume - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/volume.png"/> Volume
 * @param string $volume
-* @return \Pimcore\Model\DataObject\RucksackSpecs
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\RucksackSpecs
 */
 public function setVolume ($volume) {
 	$this->volume = $volume;
@@ -58,13 +61,16 @@ public function getWeight () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("weight")->isEmpty($data)) {
 		return $this->getValueFromParent("weight");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set weight - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/weight.png"/> Weight
 * @param string $weight
-* @return \Pimcore\Model\DataObject\RucksackSpecs
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\RucksackSpecs
 */
 public function setWeight ($weight) {
 	$this->weight = $weight;
@@ -80,13 +86,16 @@ public function getLoad () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("load")->isEmpty($data)) {
 		return $this->getValueFromParent("load");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set load - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/load.png"/> Load
 * @param string $load
-* @return \Pimcore\Model\DataObject\RucksackSpecs
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\RucksackSpecs
 */
 public function setLoad ($load) {
 	$this->load = $load;
@@ -102,13 +111,16 @@ public function getMaterial () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("material")->isEmpty($data)) {
 		return $this->getValueFromParent("material");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set material - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/material.png"/> Material
 * @param string $material
-* @return \Pimcore\Model\DataObject\RucksackSpecs
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\RucksackSpecs
 */
 public function setMaterial ($material) {
 	$this->material = $material;
@@ -124,13 +136,16 @@ public function getExpandTo () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("expandTo")->isEmpty($data)) {
 		return $this->getValueFromParent("expandTo");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set expandTo - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/expand.png"/> Expand
 * @param string $expandTo
-* @return \Pimcore\Model\DataObject\RucksackSpecs
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\RucksackSpecs
 */
 public function setExpandTo ($expandTo) {
 	$this->expandTo = $expandTo;

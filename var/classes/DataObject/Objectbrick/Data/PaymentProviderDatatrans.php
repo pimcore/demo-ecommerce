@@ -1,11 +1,11 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-06-23T13:19:41+02:00
-* IP: 192.168.11.87
+/** 
+* Generated at: 2018-04-27T11:38:03+02:00
+* IP: 192.168.9.18
 
 
-Fields Summary:
+Fields Summary: 
  - auth_aliasCC [input]
  - auth_expm [input]
  - auth_expy [input]
@@ -14,7 +14,7 @@ Fields Summary:
  - auth_amount [input]
  - auth_currency [input]
  - auth_refno [input]
-*/
+*/ 
 
 namespace Pimcore\Model\DataObject\Objectbrick\Data;
 
@@ -42,13 +42,16 @@ public function getAuth_aliasCC () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("auth_aliasCC")->isEmpty($data)) {
 		return $this->getValueFromParent("auth_aliasCC");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set auth_aliasCC - aliasCC
 * @param string $auth_aliasCC
-* @return \Pimcore\Model\DataObject\PaymentProviderDatatrans
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderDatatrans
 */
 public function setAuth_aliasCC ($auth_aliasCC) {
 	$this->auth_aliasCC = $auth_aliasCC;
@@ -64,13 +67,16 @@ public function getAuth_expm () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("auth_expm")->isEmpty($data)) {
 		return $this->getValueFromParent("auth_expm");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set auth_expm - expm
 * @param string $auth_expm
-* @return \Pimcore\Model\DataObject\PaymentProviderDatatrans
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderDatatrans
 */
 public function setAuth_expm ($auth_expm) {
 	$this->auth_expm = $auth_expm;
@@ -86,13 +92,16 @@ public function getAuth_expy () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("auth_expy")->isEmpty($data)) {
 		return $this->getValueFromParent("auth_expy");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set auth_expy - expy
 * @param string $auth_expy
-* @return \Pimcore\Model\DataObject\PaymentProviderDatatrans
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderDatatrans
 */
 public function setAuth_expy ($auth_expy) {
 	$this->auth_expy = $auth_expy;
@@ -108,13 +117,16 @@ public function getAuth_reqtype () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("auth_reqtype")->isEmpty($data)) {
 		return $this->getValueFromParent("auth_reqtype");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set auth_reqtype - reqtype
 * @param string $auth_reqtype
-* @return \Pimcore\Model\DataObject\PaymentProviderDatatrans
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderDatatrans
 */
 public function setAuth_reqtype ($auth_reqtype) {
 	$this->auth_reqtype = $auth_reqtype;
@@ -130,13 +142,16 @@ public function getAuth_uppTransactionId () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("auth_uppTransactionId")->isEmpty($data)) {
 		return $this->getValueFromParent("auth_uppTransactionId");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set auth_uppTransactionId - uppTransactionId
 * @param string $auth_uppTransactionId
-* @return \Pimcore\Model\DataObject\PaymentProviderDatatrans
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderDatatrans
 */
 public function setAuth_uppTransactionId ($auth_uppTransactionId) {
 	$this->auth_uppTransactionId = $auth_uppTransactionId;
@@ -152,13 +167,16 @@ public function getAuth_amount () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("auth_amount")->isEmpty($data)) {
 		return $this->getValueFromParent("auth_amount");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set auth_amount - amount
 * @param string $auth_amount
-* @return \Pimcore\Model\DataObject\PaymentProviderDatatrans
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderDatatrans
 */
 public function setAuth_amount ($auth_amount) {
 	$this->auth_amount = $auth_amount;
@@ -174,13 +192,16 @@ public function getAuth_currency () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("auth_currency")->isEmpty($data)) {
 		return $this->getValueFromParent("auth_currency");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set auth_currency - currency
 * @param string $auth_currency
-* @return \Pimcore\Model\DataObject\PaymentProviderDatatrans
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderDatatrans
 */
 public function setAuth_currency ($auth_currency) {
 	$this->auth_currency = $auth_currency;
@@ -196,13 +217,16 @@ public function getAuth_refno () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("auth_refno")->isEmpty($data)) {
 		return $this->getValueFromParent("auth_refno");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set auth_refno - refno
 * @param string $auth_refno
-* @return \Pimcore\Model\DataObject\PaymentProviderDatatrans
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderDatatrans
 */
 public function setAuth_refno ($auth_refno) {
 	$this->auth_refno = $auth_refno;

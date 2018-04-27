@@ -1,14 +1,14 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-06-23T13:19:41+02:00
-* IP: 192.168.11.87
+/** 
+* Generated at: 2018-04-27T11:38:08+02:00
+* IP: 192.168.9.18
 
 
-Fields Summary:
+Fields Summary: 
  - auth_token [input]
  - auth_PayerID [input]
-*/
+*/ 
 
 namespace Pimcore\Model\DataObject\Objectbrick\Data;
 
@@ -30,13 +30,16 @@ public function getAuth_token () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("auth_token")->isEmpty($data)) {
 		return $this->getValueFromParent("auth_token");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set auth_token - Token
 * @param string $auth_token
-* @return \Pimcore\Model\DataObject\PaymentProviderPayPal
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderPayPal
 */
 public function setAuth_token ($auth_token) {
 	$this->auth_token = $auth_token;
@@ -52,13 +55,16 @@ public function getAuth_PayerID () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("auth_PayerID")->isEmpty($data)) {
 		return $this->getValueFromParent("auth_PayerID");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set auth_PayerID - PayerID
 * @param string $auth_PayerID
-* @return \Pimcore\Model\DataObject\PaymentProviderPayPal
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderPayPal
 */
 public function setAuth_PayerID ($auth_PayerID) {
 	$this->auth_PayerID = $auth_PayerID;

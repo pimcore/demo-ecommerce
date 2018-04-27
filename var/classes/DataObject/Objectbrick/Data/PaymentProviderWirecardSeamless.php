@@ -1,18 +1,18 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-06-23T13:19:42+02:00
-* IP: 192.168.11.87
+/** 
+* Generated at: 2018-04-27T11:38:18+02:00
+* IP: 192.168.9.18
 
 
-Fields Summary:
+Fields Summary: 
  - auth_paymentType [input]
  - auth_orderNumber [input]
  - auth_paymentState [input]
  - auth_amount [input]
  - auth_currency [input]
  - auth_gatewyReferenceNumber [input]
-*/
+*/ 
 
 namespace Pimcore\Model\DataObject\Objectbrick\Data;
 
@@ -38,13 +38,16 @@ public function getAuth_paymentType () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("auth_paymentType")->isEmpty($data)) {
 		return $this->getValueFromParent("auth_paymentType");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set auth_paymentType - Payment Type
 * @param string $auth_paymentType
-* @return \Pimcore\Model\DataObject\PaymentProviderWirecardSeamless
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderWirecardSeamless
 */
 public function setAuth_paymentType ($auth_paymentType) {
 	$this->auth_paymentType = $auth_paymentType;
@@ -60,13 +63,16 @@ public function getAuth_orderNumber () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("auth_orderNumber")->isEmpty($data)) {
 		return $this->getValueFromParent("auth_orderNumber");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set auth_orderNumber - OrderNumber
 * @param string $auth_orderNumber
-* @return \Pimcore\Model\DataObject\PaymentProviderWirecardSeamless
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderWirecardSeamless
 */
 public function setAuth_orderNumber ($auth_orderNumber) {
 	$this->auth_orderNumber = $auth_orderNumber;
@@ -82,13 +88,16 @@ public function getAuth_paymentState () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("auth_paymentState")->isEmpty($data)) {
 		return $this->getValueFromParent("auth_paymentState");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set auth_paymentState - Payment State
 * @param string $auth_paymentState
-* @return \Pimcore\Model\DataObject\PaymentProviderWirecardSeamless
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderWirecardSeamless
 */
 public function setAuth_paymentState ($auth_paymentState) {
 	$this->auth_paymentState = $auth_paymentState;
@@ -104,13 +113,16 @@ public function getAuth_amount () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("auth_amount")->isEmpty($data)) {
 		return $this->getValueFromParent("auth_amount");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set auth_amount - Amount
 * @param string $auth_amount
-* @return \Pimcore\Model\DataObject\PaymentProviderWirecardSeamless
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderWirecardSeamless
 */
 public function setAuth_amount ($auth_amount) {
 	$this->auth_amount = $auth_amount;
@@ -126,13 +138,16 @@ public function getAuth_currency () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("auth_currency")->isEmpty($data)) {
 		return $this->getValueFromParent("auth_currency");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set auth_currency - Currency
 * @param string $auth_currency
-* @return \Pimcore\Model\DataObject\PaymentProviderWirecardSeamless
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderWirecardSeamless
 */
 public function setAuth_currency ($auth_currency) {
 	$this->auth_currency = $auth_currency;
@@ -148,13 +163,16 @@ public function getAuth_gatewyReferenceNumber () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("auth_gatewyReferenceNumber")->isEmpty($data)) {
 		return $this->getValueFromParent("auth_gatewyReferenceNumber");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set auth_gatewyReferenceNumber - Gateway Reference Number
 * @param string $auth_gatewyReferenceNumber
-* @return \Pimcore\Model\DataObject\PaymentProviderWirecardSeamless
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderWirecardSeamless
 */
 public function setAuth_gatewyReferenceNumber ($auth_gatewyReferenceNumber) {
 	$this->auth_gatewyReferenceNumber = $auth_gatewyReferenceNumber;

@@ -1,14 +1,14 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-06-23T13:19:43+02:00
-* IP: 192.168.11.87
+/** 
+* Generated at: 2018-04-27T11:39:34+02:00
+* IP: 192.168.9.18
 
 
-Fields Summary:
+Fields Summary: 
  - footTypes [multiselect]
  - gaitTypes [multiselect]
-*/
+*/ 
 
 namespace Pimcore\Model\DataObject\Objectbrick\Data;
 
@@ -30,13 +30,16 @@ public function getFootTypes () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("footTypes")->isEmpty($data)) {
 		return $this->getValueFromParent("footTypes");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set footTypes - Foot Type
 * @param array $footTypes
-* @return \Pimcore\Model\DataObject\Shoe
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\Shoe
 */
 public function setFootTypes ($footTypes) {
 	$this->footTypes = $footTypes;
@@ -52,13 +55,16 @@ public function getGaitTypes () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("gaitTypes")->isEmpty($data)) {
 		return $this->getValueFromParent("gaitTypes");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set gaitTypes - Gait Types
 * @param array $gaitTypes
-* @return \Pimcore\Model\DataObject\Shoe
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\Shoe
 */
 public function setGaitTypes ($gaitTypes) {
 	$this->gaitTypes = $gaitTypes;
