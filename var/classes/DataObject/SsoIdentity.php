@@ -1,11 +1,9 @@
 <?php 
 
 /** 
-* Generated at: 2017-10-11T20:10:16+02:00
+* Generated at: 2018-06-07T15:45:45+02:00
 * Inheritance: no
 * Variants: no
-* Changed by: admin (10)
-* IP: 10.242.2.2
 
 
 Fields Summary: 
@@ -56,6 +54,9 @@ public function getProvider () {
 		return $preValue;
 	}
 	$data = $this->provider;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -79,6 +80,9 @@ public function getIdentifier () {
 		return $preValue;
 	}
 	$data = $this->identifier;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -102,6 +106,9 @@ public function getProfileData () {
 		return $preValue;
 	}
 	$data = $this->profileData;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 

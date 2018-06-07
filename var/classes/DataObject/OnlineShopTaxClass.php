@@ -1,25 +1,23 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-01-02T09:11:37+01:00
+/** 
+* Generated at: 2018-06-07T15:45:44+02:00
 * Inheritance: no
 * Variants: no
-* Changed by: cfasching (6)
-* IP: 192.168.11.5
 
 
-Fields Summary:
+Fields Summary: 
 - taxEntryCombinationType [select]
 - taxEntries [fieldcollections]
-*/
+*/ 
 
 namespace Pimcore\Model\DataObject;
 
 
 
 /**
-* @method static \Pimcore\Model\DataObject\OnlineShopTaxClass\Listing getByTaxEntryCombinationType ($value, $limit = 0)
-* @method static \Pimcore\Model\DataObject\OnlineShopTaxClass\Listing getByTaxEntries ($value, $limit = 0)
+* @method static \Pimcore\Model\DataObject\OnlineShopTaxClass\Listing getByTaxEntryCombinationType ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\OnlineShopTaxClass\Listing getByTaxEntries ($value, $limit = 0) 
 */
 
 class OnlineShopTaxClass extends Concrete {
@@ -45,11 +43,14 @@ public static function create($values = array()) {
 * @return string
 */
 public function getTaxEntryCombinationType () {
-	$preValue = $this->preGetValue("taxEntryCombinationType");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("taxEntryCombinationType"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->taxEntryCombinationType;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -67,7 +68,7 @@ public function setTaxEntryCombinationType ($taxEntryCombinationType) {
 * @return \Pimcore\Model\DataObject\Fieldcollection
 */
 public function getTaxEntries () {
-	$preValue = $this->preGetValue("taxEntries");
+	$preValue = $this->preGetValue("taxEntries"); 
 	if($preValue !== null && !\Pimcore::inAdmin()) { return $preValue;}
 	$data = $this->getClass()->getFieldDefinition("taxEntries")->preGetData($this);
 	 return $data;
@@ -86,7 +87,8 @@ public function setTaxEntries ($taxEntries) {
 protected static $_relationFields = array (
 );
 
-public $lazyLoadedFields = NULL;
+public $lazyLoadedFields = array (
+);
 
 }
 

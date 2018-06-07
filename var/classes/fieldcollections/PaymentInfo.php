@@ -1,5 +1,28 @@
 <?php 
 
+/** 
+* Generated at: 2018-06-07T15:45:51+02:00
+
+
+Fields Summary: 
+ - paymentStart [datetime]
+ - paymentFinish [datetime]
+ - paymentReference [input]
+ - paymentState [select]
+ - internalPaymentId [input]
+ - message [textarea]
+ - providerData [textarea]
+ - provider_qpay_amount [input]
+ - provider_qpay_paymentType [input]
+ - provider_qpay_paymentState [input]
+ - provider_datatrans_acqAuthorizationCode [input]
+ - provider_datatrans_amount [input]
+ - provider_datatrans_responseXML [textarea]
+ - provider_paypal_amount [input]
+ - provider_paypal_TransactionType [input]
+ - provider_paypal_PaymentType [input]
+*/ 
+
 
 return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
    'key' => 'PaymentInfo',
@@ -15,7 +38,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -45,7 +68,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'fieldtype' => 'datetime',
              'queryColumnType' => 'bigint(20)',
              'columnType' => 'bigint(20)',
-             'phpdocType' => '\\Pimcore\\Date',
+             'phpdocType' => '\\Carbon\\Carbon',
              'defaultValue' => NULL,
              'useCurrentDate' => false,
              'name' => 'paymentStart',
@@ -68,7 +91,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'fieldtype' => 'datetime',
              'queryColumnType' => 'bigint(20)',
              'columnType' => 'bigint(20)',
-             'phpdocType' => '\\Pimcore\\Date',
+             'phpdocType' => '\\Carbon\\Carbon',
              'defaultValue' => NULL,
              'useCurrentDate' => false,
              'name' => 'paymentFinish',
@@ -95,6 +118,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'paymentReference',
              'title' => 'Payment Reference',
              'tooltip' => '',
@@ -143,8 +167,11 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
             ),
              'width' => 500,
              'defaultValue' => '',
+             'optionsProviderClass' => NULL,
+             'optionsProviderData' => NULL,
              'queryColumnType' => 'varchar(255)',
              'columnType' => 'varchar(255)',
+             'columnLength' => 190,
              'phpdocType' => 'string',
              'name' => 'paymentState',
              'title' => 'Payment State',
@@ -170,6 +197,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'internalPaymentId',
              'title' => 'Internal Payment ID',
              'tooltip' => '',
@@ -257,6 +285,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'columnLength' => 255,
                  'phpdocType' => 'string',
                  'regex' => '',
+                 'unique' => NULL,
                  'name' => 'provider_qpay_amount',
                  'title' => 'Amount',
                  'tooltip' => '',
@@ -281,6 +310,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'columnLength' => 255,
                  'phpdocType' => 'string',
                  'regex' => '',
+                 'unique' => NULL,
                  'name' => 'provider_qpay_paymentType',
                  'title' => 'Payment Type',
                  'tooltip' => '',
@@ -305,6 +335,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'columnLength' => 255,
                  'phpdocType' => 'string',
                  'regex' => '',
+                 'unique' => NULL,
                  'name' => 'provider_qpay_paymentState',
                  'title' => 'Payment State',
                  'tooltip' => '',
@@ -349,6 +380,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'columnLength' => 255,
                  'phpdocType' => 'string',
                  'regex' => '',
+                 'unique' => NULL,
                  'name' => 'provider_datatrans_acqAuthorizationCode',
                  'title' => 'ACQ Authorization Code',
                  'tooltip' => '',
@@ -373,6 +405,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'columnLength' => 255,
                  'phpdocType' => 'string',
                  'regex' => '',
+                 'unique' => NULL,
                  'name' => 'provider_datatrans_amount',
                  'title' => 'Amount',
                  'tooltip' => '',
@@ -440,6 +473,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'columnLength' => 255,
                  'phpdocType' => 'string',
                  'regex' => '',
+                 'unique' => NULL,
                  'name' => 'provider_paypal_amount',
                  'title' => 'Amount',
                  'tooltip' => '',
@@ -464,6 +498,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'columnLength' => 255,
                  'phpdocType' => 'string',
                  'regex' => '',
+                 'unique' => NULL,
                  'name' => 'provider_paypal_TransactionType',
                  'title' => 'Transaction Type',
                  'tooltip' => '',
@@ -488,6 +523,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'columnLength' => 255,
                  'phpdocType' => 'string',
                  'regex' => '',
+                 'unique' => NULL,
                  'name' => 'provider_paypal_PaymentType',
                  'title' => 'Payment Type',
                  'tooltip' => '',
@@ -510,7 +546,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'dao' => NULL,
 ));

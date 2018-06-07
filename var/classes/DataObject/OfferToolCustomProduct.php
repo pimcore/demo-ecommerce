@@ -1,29 +1,27 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-07-13T17:03:36+02:00
+/** 
+* Generated at: 2018-06-07T15:45:44+02:00
 * Inheritance: no
 * Variants: no
-* Changed by: admin (8)
-* IP: 192.168.11.5
 
 
-Fields Summary:
+Fields Summary: 
 - OSproductNumber [input]
 - OSName [input]
 - productGroup [select]
 - price [numeric]
-*/
+*/ 
 
 namespace Pimcore\Model\DataObject;
 
 
 
 /**
-* @method \Pimcore\Model\DataObject\OfferToolCustomProduct\Listing getByOSproductNumber ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\OfferToolCustomProduct\Listing getByOSName ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\OfferToolCustomProduct\Listing getByProductGroup ($value, $limit = 0)
-* @method \Pimcore\Model\DataObject\OfferToolCustomProduct\Listing getByPrice ($value, $limit = 0)
+* @method static \Pimcore\Model\DataObject\OfferToolCustomProduct\Listing getByOSproductNumber ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\OfferToolCustomProduct\Listing getByOSName ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\OfferToolCustomProduct\Listing getByProductGroup ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\OfferToolCustomProduct\Listing getByPrice ($value, $limit = 0) 
 */
 
 class OfferToolCustomProduct extends \Pimcore\Bundle\EcommerceFrameworkBundle\OfferTool\AbstractOfferToolProduct {
@@ -51,11 +49,14 @@ public static function create($values = array()) {
 * @return string
 */
 public function getOSproductNumber () {
-	$preValue = $this->preGetValue("OSproductNumber");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("OSproductNumber"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->OSproductNumber;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -74,11 +75,14 @@ public function setOSproductNumber ($OSproductNumber) {
 * @return string
 */
 public function getOSName () {
-	$preValue = $this->preGetValue("OSName");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("OSName"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->OSName;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -97,11 +101,14 @@ public function setOSName ($OSName) {
 * @return string
 */
 public function getProductGroup () {
-	$preValue = $this->preGetValue("productGroup");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("productGroup"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->productGroup;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -120,11 +127,14 @@ public function setProductGroup ($productGroup) {
 * @return string
 */
 public function getPrice () {
-	$preValue = $this->preGetValue("price");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("price"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->price;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 

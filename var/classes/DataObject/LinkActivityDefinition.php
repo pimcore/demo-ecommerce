@@ -1,11 +1,9 @@
 <?php 
 
 /** 
-* Generated at: 2017-10-11T11:24:36+02:00
+* Generated at: 2018-06-07T15:45:44+02:00
 * Inheritance: yes
 * Variants: no
-* Changed by: admin (10)
-* IP: 192.168.11.5
 
 
 Fields Summary: 
@@ -82,6 +80,9 @@ public function getCode () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("code")->isEmpty($data)) {
 		return $this->getValueFromParent("code");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -107,6 +108,9 @@ public function getAttributeType () {
 	$data = $this->attributeType;
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("attributeType")->isEmpty($data)) {
 		return $this->getValueFromParent("attributeType");
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	return $data;
 }
@@ -134,6 +138,9 @@ public function getLabel () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("label")->isEmpty($data)) {
 		return $this->getValueFromParent("label");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -159,6 +166,9 @@ public function getLink () {
 	$data = $this->link;
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("link")->isEmpty($data)) {
 		return $this->getValueFromParent("link");
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	return $data;
 }
@@ -186,6 +196,9 @@ public function getActive () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("active")->isEmpty($data)) {
 		return $this->getValueFromParent("active");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -211,6 +224,9 @@ public function getUtm_source () {
 	$data = $this->utm_source;
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("utm_source")->isEmpty($data)) {
 		return $this->getValueFromParent("utm_source");
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	return $data;
 }
@@ -238,6 +254,9 @@ public function getUtm_medium () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("utm_medium")->isEmpty($data)) {
 		return $this->getValueFromParent("utm_medium");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -263,6 +282,9 @@ public function getUtm_campaign () {
 	$data = $this->utm_campaign;
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("utm_campaign")->isEmpty($data)) {
 		return $this->getValueFromParent("utm_campaign");
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	return $data;
 }
@@ -290,6 +312,9 @@ public function getUtm_term () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("utm_term")->isEmpty($data)) {
 		return $this->getValueFromParent("utm_term");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -316,6 +341,9 @@ public function getUtm_content () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("utm_content")->isEmpty($data)) {
 		return $this->getValueFromParent("utm_content");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -331,27 +359,30 @@ public function setUtm_content ($utm_content) {
 
 /**
 * Get attributes - Additional attributes
-* @return \Pimcore\Model\DataObject\Data\Block
+* @return \Pimcore\Model\DataObject\Data\BlockElement[][]
 */
 public function getAttributes () {
 	$preValue = $this->preGetValue("attributes"); 
 	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
-	$data = $this->attributes;
+	$data = $this->getClass()->getFieldDefinition("attributes")->preGetData($this);
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("attributes")->isEmpty($data)) {
 		return $this->getValueFromParent("attributes");
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	return $data;
 }
 
 /**
 * Set attributes - Additional attributes
-* @param \Pimcore\Model\DataObject\Data\Block $attributes
+* @param \Pimcore\Model\DataObject\Data\BlockElement[][] $attributes
 * @return \Pimcore\Model\DataObject\LinkActivityDefinition
 */
 public function setAttributes ($attributes) {
-	$this->attributes = $attributes;
+	$this->attributes = $this->getClass()->getFieldDefinition("attributes")->preSetData($this, $attributes);
 	return $this;
 }
 

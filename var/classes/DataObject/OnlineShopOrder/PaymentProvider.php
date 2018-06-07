@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 namespace Pimcore\Model\DataObject\OnlineShopOrder;
 
@@ -14,17 +14,17 @@ public $PaymentProviderDatatrans = null;
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderDatatrans
 */
-public function getPaymentProviderDatatrans() {
-   return $this->PaymentProviderDatatrans;
+public function getPaymentProviderDatatrans() { 
+   return $this->PaymentProviderDatatrans; 
 }
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderDatatrans $PaymentProviderDatatrans
-* @return void
+* @return \Pimcore\Model\DataObject\OnlineShopOrder\PaymentProvider
 */
 public function setPaymentProviderDatatrans ($PaymentProviderDatatrans) {
 	$this->PaymentProviderDatatrans = $PaymentProviderDatatrans;
-	return $this;;
+	return $this;
 }
 
 public $PaymentProviderPayPal = null;
@@ -32,17 +32,17 @@ public $PaymentProviderPayPal = null;
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderPayPal
 */
-public function getPaymentProviderPayPal() {
-   return $this->PaymentProviderPayPal;
+public function getPaymentProviderPayPal() { 
+   return $this->PaymentProviderPayPal; 
 }
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderPayPal $PaymentProviderPayPal
-* @return void
+* @return \Pimcore\Model\DataObject\OnlineShopOrder\PaymentProvider
 */
 public function setPaymentProviderPayPal ($PaymentProviderPayPal) {
 	$this->PaymentProviderPayPal = $PaymentProviderPayPal;
-	return $this;;
+	return $this;
 }
 
 public $PaymentProviderQpay = null;
@@ -50,17 +50,17 @@ public $PaymentProviderQpay = null;
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderQpay
 */
-public function getPaymentProviderQpay() {
-   return $this->PaymentProviderQpay;
+public function getPaymentProviderQpay() { 
+   return $this->PaymentProviderQpay; 
 }
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderQpay $PaymentProviderQpay
-* @return void
+* @return \Pimcore\Model\DataObject\OnlineShopOrder\PaymentProvider
 */
 public function setPaymentProviderQpay ($PaymentProviderQpay) {
 	$this->PaymentProviderQpay = $PaymentProviderQpay;
-	return $this;;
+	return $this;
 }
 
 public $PaymentProviderWirecardSeamless = null;
@@ -68,17 +68,17 @@ public $PaymentProviderWirecardSeamless = null;
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderWirecardSeamless
 */
-public function getPaymentProviderWirecardSeamless() {
-   return $this->PaymentProviderWirecardSeamless;
+public function getPaymentProviderWirecardSeamless() { 
+   return $this->PaymentProviderWirecardSeamless; 
 }
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderWirecardSeamless $PaymentProviderWirecardSeamless
-* @return void
+* @return \Pimcore\Model\DataObject\OnlineShopOrder\PaymentProvider
 */
 public function setPaymentProviderWirecardSeamless ($PaymentProviderWirecardSeamless) {
 	$this->PaymentProviderWirecardSeamless = $PaymentProviderWirecardSeamless;
-	return $this;;
+	return $this;
 }
 
 }

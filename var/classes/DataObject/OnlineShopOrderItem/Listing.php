@@ -6,6 +6,7 @@ use Pimcore\Model\DataObject;
 
 /**
  * @method DataObject\OnlineShopOrderItem current()
+ * @method DataObject\OnlineShopOrderItem[] load()
  */
 
 class Listing extends DataObject\Listing\Concrete {

@@ -6,6 +6,7 @@ use Pimcore\Model\DataObject;
 
 /**
  * @method DataObject\TermSegmentBuilderDefinition current()
+ * @method DataObject\TermSegmentBuilderDefinition[] load()
  */
 
 class Listing extends DataObject\Listing\Concrete {

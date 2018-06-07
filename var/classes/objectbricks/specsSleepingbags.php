@@ -1,8 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2017-06-23T13:19:43+02:00
-* IP: 192.168.11.87
+* Generated at: 2018-06-07T15:45:50+02:00
 
 
 Fields Summary: 
@@ -31,7 +30,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
     ),
   ),
    'key' => 'specsSleepingbags',
-   'parentClass' => NULL,
+   'parentClass' => '',
    'layoutDefinitions' => 
   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
@@ -80,6 +79,8 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'unique' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'weight',
              'title' => 'Weight',
@@ -108,6 +109,8 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'unique' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'length',
              'title' => 'Length',
@@ -136,6 +139,8 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'unique' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'width',
              'title' => 'Width',
@@ -164,6 +169,8 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'unique' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'bodySize',
              'title' => 'Max Body Size',
@@ -189,6 +196,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'fabricShell',
              'title' => 'Shell fabric',
              'tooltip' => '',
@@ -213,6 +221,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'fabricLining',
              'title' => 'Lining fabric',
              'tooltip' => '',
@@ -237,6 +246,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'filling',
              'title' => 'Filling',
              'tooltip' => '',
@@ -261,6 +271,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'protection',
              'title' => 'Protection (Layers)',
              'tooltip' => '',
@@ -285,6 +296,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'packingSize',
              'title' => 'Packing Size',
              'tooltip' => '',
@@ -312,6 +324,8 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'unique' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'temperatureComfort',
              'title' => 'Comfort Temp',
@@ -340,6 +354,8 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'unique' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'temperatureLimit',
              'title' => 'Limit Temp',
@@ -368,6 +384,8 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'unique' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'temperatureExtreme',
              'title' => 'Extreme Temp',

@@ -1,5 +1,13 @@
 <?php 
 
+/** 
+* Generated at: 2018-06-07T15:45:52+02:00
+
+
+Fields Summary: 
+ - image [image]
+*/ 
+
 
 return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
    'key' => 'productImages',
@@ -15,7 +23,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -68,7 +76,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'dao' => NULL,
 ));

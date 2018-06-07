@@ -1,13 +1,24 @@
-<?php
+<?php 
 
-/** Generated at 2016-08-08T16:05:50+02:00 */
+/** 
+* Generated at: 2018-05-24T08:17:53+02:00
+* Inheritance: no
+* Variants: no
+* IP: 192.168.9.18
+
+
+Fields Summary: 
+- tokenId [numeric]
+- token [input]
+- voucherSeries [href]
+*/ 
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'OnlineShopVoucherToken',
    'description' => '',
    'creationDate' => 1431519559,
-   'modificationDate' => 1460041441,
+   'modificationDate' => 1527142673,
    'userOwner' => 2,
    'userModification' => 2,
    'parentClass' => '',
@@ -15,7 +26,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'allowInherit' => false,
    'allowVariants' => false,
    'showVariants' => false,
-   'layoutDefinitions' =>
+   'layoutDefinitions' => 
   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'labelWidth' => 100,
@@ -26,14 +37,14 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
      'permissions' => NULL,
-     'childs' =>
+     'childs' => 
     array (
-      0 =>
+      0 => 
       Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'fieldtype' => 'panel',
          'labelWidth' => 150,
@@ -49,12 +60,14 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'bodyStyle' => '',
          'datatype' => 'layout',
          'permissions' => NULL,
-         'childs' =>
+         'childs' => 
         array (
-          0 =>
+          0 => 
           Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
              'fieldtype' => 'text',
              'html' => '<b>VoucherToken </b>that are actually used with orders.&nbsp;',
+             'renderingClass' => NULL,
+             'renderingData' => NULL,
              'name' => 'Layout',
              'type' => NULL,
              'region' => NULL,
@@ -66,12 +79,12 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'bodyStyle' => 'padding: 10px; background-color: #d9edf7; border-color: #bce8f1 !important; color: #31708f;',
              'datatype' => 'layout',
              'permissions' => NULL,
-             'childs' =>
+             'childs' => 
             array (
             ),
-             'locked' => NULL,
+             'locked' => false,
           )),
-          1 =>
+          1 => 
           Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
              'fieldtype' => 'numeric',
              'width' => 500,
@@ -83,6 +96,8 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'unique' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'tokenId',
              'title' => 'Token ID',
@@ -99,7 +114,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'visibleGridView' => false,
              'visibleSearch' => false,
           )),
-          2 =>
+          2 => 
           Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 500,
@@ -108,6 +123,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'token',
              'title' => 'Token',
              'tooltip' => '',
@@ -123,13 +139,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'visibleGridView' => false,
              'visibleSearch' => false,
           )),
-          3 =>
+          3 => 
           Pimcore\Model\DataObject\ClassDefinition\Data\Href::__set_state(array(
              'fieldtype' => 'href',
              'width' => 500,
              'assetUploadPath' => '',
              'relationType' => true,
-             'queryColumnType' =>
+             'queryColumnType' => 
             array (
               'id' => 'int(11)',
               'type' => 'enum(\'document\',\'asset\',\'object\')',
@@ -137,29 +153,22 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'phpdocType' => '\\Pimcore\\Model\\Document\\Page | \\Pimcore\\Model\\Document\\Snippet | \\Pimcore\\Model\\Document | \\Pimcore\\Model\\Asset | \\Pimcore\\Model\\DataObject\\AbstractObject',
              'objectsAllowed' => true,
              'assetsAllowed' => false,
-             'assetTypes' =>
+             'assetTypes' => 
             array (
-              0 =>
-              array (
-                'assetTypes' => '',
-              ),
             ),
              'documentsAllowed' => false,
-             'documentTypes' =>
+             'documentTypes' => 
             array (
-              0 =>
-              array (
-                'documentTypes' => '',
-              ),
             ),
              'lazyLoading' => false,
-             'classes' =>
+             'classes' => 
             array (
-              0 =>
+              0 => 
               array (
                 'classes' => 'OnlineShopVoucherSeries',
               ),
             ),
+             'pathFormatterClass' => NULL,
              'name' => 'voucherSeries',
              'title' => 'Voucher Series',
              'tooltip' => '',
@@ -179,14 +188,16 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'icon' => '',
    'previewUrl' => '',
    'group' => NULL,
-   'propertyVisibility' =>
+   'showAppLoggerTab' => false,
+   'linkGeneratorReference' => NULL,
+   'propertyVisibility' => 
   array (
-    'grid' =>
+    'grid' => 
     array (
       'id' => true,
       'path' => true,
@@ -194,7 +205,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
       'modificationDate' => true,
       'creationDate' => true,
     ),
-    'search' =>
+    'search' => 
     array (
       'id' => true,
       'path' => true,

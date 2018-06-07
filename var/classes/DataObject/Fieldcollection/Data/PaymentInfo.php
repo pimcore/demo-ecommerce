@@ -1,11 +1,27 @@
-<?php
+<?php 
 
-/** Generated at 2016-04-13T12:12:05+02:00 */
+/** 
+* Generated at: 2018-06-07T15:45:51+02:00
 
-/**
-* IP:          192.168.11.5
-*/
 
+Fields Summary: 
+ - paymentStart [datetime]
+ - paymentFinish [datetime]
+ - paymentReference [input]
+ - paymentState [select]
+ - internalPaymentId [input]
+ - message [textarea]
+ - providerData [textarea]
+ - provider_qpay_amount [input]
+ - provider_qpay_paymentType [input]
+ - provider_qpay_paymentState [input]
+ - provider_datatrans_acqAuthorizationCode [input]
+ - provider_datatrans_amount [input]
+ - provider_datatrans_responseXML [textarea]
+ - provider_paypal_amount [input]
+ - provider_paypal_TransactionType [input]
+ - provider_paypal_PaymentType [input]
+*/ 
 
 namespace Pimcore\Model\DataObject\Fieldcollection\Data;
 
@@ -34,16 +50,19 @@ public $provider_paypal_PaymentType;
 
 /**
 * Get paymentStart - Payment Start
-* @return \Pimcore\Date
+* @return \Carbon\Carbon
 */
 public function getPaymentStart () {
 	$data = $this->paymentStart;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set paymentStart - Payment Start
-* @param \Pimcore\Date $paymentStart
+* @param \Carbon\Carbon $paymentStart
 * @return \Pimcore\Model\DataObject\PaymentInfo
 */
 public function setPaymentStart ($paymentStart) {
@@ -53,16 +72,19 @@ public function setPaymentStart ($paymentStart) {
 
 /**
 * Get paymentFinish - Payment Finish
-* @return \Pimcore\Date
+* @return \Carbon\Carbon
 */
 public function getPaymentFinish () {
 	$data = $this->paymentFinish;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set paymentFinish - Payment Finish
-* @param \Pimcore\Date $paymentFinish
+* @param \Carbon\Carbon $paymentFinish
 * @return \Pimcore\Model\DataObject\PaymentInfo
 */
 public function setPaymentFinish ($paymentFinish) {
@@ -76,6 +98,9 @@ public function setPaymentFinish ($paymentFinish) {
 */
 public function getPaymentReference () {
 	$data = $this->paymentReference;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -95,6 +120,9 @@ public function setPaymentReference ($paymentReference) {
 */
 public function getPaymentState () {
 	$data = $this->paymentState;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -114,6 +142,9 @@ public function setPaymentState ($paymentState) {
 */
 public function getInternalPaymentId () {
 	$data = $this->internalPaymentId;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -133,6 +164,9 @@ public function setInternalPaymentId ($internalPaymentId) {
 */
 public function getMessage () {
 	$data = $this->message;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -152,6 +186,9 @@ public function setMessage ($message) {
 */
 public function getProviderData () {
 	$data = $this->providerData;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -171,6 +208,9 @@ public function setProviderData ($providerData) {
 */
 public function getProvider_qpay_amount () {
 	$data = $this->provider_qpay_amount;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -190,6 +230,9 @@ public function setProvider_qpay_amount ($provider_qpay_amount) {
 */
 public function getProvider_qpay_paymentType () {
 	$data = $this->provider_qpay_paymentType;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -209,6 +252,9 @@ public function setProvider_qpay_paymentType ($provider_qpay_paymentType) {
 */
 public function getProvider_qpay_paymentState () {
 	$data = $this->provider_qpay_paymentState;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -228,6 +274,9 @@ public function setProvider_qpay_paymentState ($provider_qpay_paymentState) {
 */
 public function getProvider_datatrans_acqAuthorizationCode () {
 	$data = $this->provider_datatrans_acqAuthorizationCode;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -247,6 +296,9 @@ public function setProvider_datatrans_acqAuthorizationCode ($provider_datatrans_
 */
 public function getProvider_datatrans_amount () {
 	$data = $this->provider_datatrans_amount;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -266,6 +318,9 @@ public function setProvider_datatrans_amount ($provider_datatrans_amount) {
 */
 public function getProvider_datatrans_responseXML () {
 	$data = $this->provider_datatrans_responseXML;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -285,6 +340,9 @@ public function setProvider_datatrans_responseXML ($provider_datatrans_responseX
 */
 public function getProvider_paypal_amount () {
 	$data = $this->provider_paypal_amount;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -304,6 +362,9 @@ public function setProvider_paypal_amount ($provider_paypal_amount) {
 */
 public function getProvider_paypal_TransactionType () {
 	$data = $this->provider_paypal_TransactionType;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -323,6 +384,9 @@ public function setProvider_paypal_TransactionType ($provider_paypal_Transaction
 */
 public function getProvider_paypal_PaymentType () {
 	$data = $this->provider_paypal_PaymentType;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 

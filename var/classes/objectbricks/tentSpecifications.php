@@ -1,8 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2017-06-23T13:19:43+02:00
-* IP: 192.168.11.87
+* Generated at: 2018-06-07T15:45:51+02:00
 
 
 Fields Summary: 
@@ -74,6 +73,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'outsideMaterial',
              'title' => '<img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/outer-material.jpg"/> Outside Material',
              'tooltip' => '',
@@ -98,6 +98,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'insideMaterial',
              'title' => '<img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/inner-material.png"/> Inside Material',
              'tooltip' => '',
@@ -122,6 +123,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'floorMaterial',
              'title' => '<img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/floor-material.jpg"/> Floor Material',
              'tooltip' => '',
@@ -146,6 +148,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'waterproofRain',
              'title' => '<img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/waterproof.jpg"/> Waterproof Rain',
              'tooltip' => '',
@@ -170,6 +173,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'waterproofGround',
              'title' => '<img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/ground-water.jpg"/> Waterproof Ground ',
              'tooltip' => '',
@@ -194,6 +198,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'construction',
              'title' => '<img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/construction.jpg"/> Construction',
              'tooltip' => '',
@@ -218,6 +223,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'tentPegs',
              'title' => '<img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/tent-pegs.jpg"/> Ten Pegs',
              'tooltip' => '',
@@ -245,6 +251,8 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'unique' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'weight',
              'title' => '<img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/weight.jpg"/> Weight',

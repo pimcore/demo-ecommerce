@@ -1,10 +1,9 @@
 <?php 
 
 /** 
-* Generated at: 2017-12-19T09:41:33+01:00
+* Generated at: 2018-05-24T08:17:53+02:00
 * Inheritance: no
 * Variants: no
-* Changed by: admin (12)
 * IP: 192.168.9.18
 
 
@@ -22,7 +21,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'CustomerSegmentGroup',
    'description' => NULL,
    'creationDate' => 0,
-   'modificationDate' => 1513672893,
+   'modificationDate' => 1527142673,
    'userOwner' => 0,
    'userModification' => 12,
    'parentClass' => NULL,

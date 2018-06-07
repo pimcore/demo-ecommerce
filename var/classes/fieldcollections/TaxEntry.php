@@ -1,20 +1,19 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-01-03T14:02:15+01:00
-* IP: 192.168.11.5
+/** 
+* Generated at: 2018-06-07T15:45:51+02:00
 
 
-Fields Summary:
+Fields Summary: 
  - localizedfields [localizedfields]
  - percent [numeric]
-*/
+*/ 
 
 
 return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
    'key' => 'TaxEntry',
    'parentClass' => '',
-   'layoutDefinitions' =>
+   'layoutDefinitions' => 
   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'labelWidth' => 100,
@@ -25,14 +24,14 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
      'permissions' => NULL,
-     'childs' =>
+     'childs' => 
     array (
-      0 =>
+      0 => 
       Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'fieldtype' => 'panel',
          'labelWidth' => 100,
@@ -48,15 +47,15 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
          'bodyStyle' => NULL,
          'datatype' => 'layout',
          'permissions' => NULL,
-         'childs' =>
+         'childs' => 
         array (
-          0 =>
+          0 => 
           Pimcore\Model\DataObject\ClassDefinition\Data\Localizedfields::__set_state(array(
              'fieldtype' => 'localizedfields',
              'phpdocType' => '\\Pimcore\\Model\\DataObject\\Localizedfield',
-             'childs' =>
+             'childs' => 
             array (
-              0 =>
+              0 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'fieldtype' => 'input',
                  'width' => NULL,
@@ -65,6 +64,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'columnLength' => 190,
                  'phpdocType' => 'string',
                  'regex' => '',
+                 'unique' => NULL,
                  'name' => 'name',
                  'title' => 'Name',
                  'tooltip' => '',
@@ -89,7 +89,8 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'height' => '',
              'maxTabs' => NULL,
              'labelWidth' => NULL,
-             'referencedFields' =>
+             'hideLabelsWhenTabsReached' => NULL,
+             'referencedFields' => 
             array (
             ),
              'fieldDefinitionsCache' => NULL,
@@ -108,7 +109,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'visibleGridView' => true,
              'visibleSearch' => true,
           )),
-          1 =>
+          1 => 
           Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
              'fieldtype' => 'numeric',
              'width' => '',
@@ -120,6 +121,8 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'unique' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'percent',
              'title' => 'Tax Rate in Percent',
@@ -140,7 +143,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'dao' => NULL,
 ));

@@ -1,14 +1,13 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-07-13T17:03:52+02:00
+/** 
+* Generated at: 2018-05-24T08:17:53+02:00
 * Inheritance: no
 * Variants: no
-* Changed by: admin (8)
-* IP: 192.168.11.5
+* IP: 192.168.9.18
 
 
-Fields Summary:
+Fields Summary: 
 - offernumber [input]
 - dateCreated [datetime]
 - dateValidUntil [date]
@@ -19,14 +18,14 @@ Fields Summary:
 - cartId [input]
 - items [objects]
 - customItems [objects]
-*/
+*/ 
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'OfferToolOffer',
    'description' => '',
    'creationDate' => 1376898383,
-   'modificationDate' => 1499958232,
+   'modificationDate' => 1527142673,
    'userOwner' => 2,
    'userModification' => 8,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\OfferTool\\AbstractOffer',
@@ -34,7 +33,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'allowInherit' => false,
    'allowVariants' => false,
    'showVariants' => false,
-   'layoutDefinitions' =>
+   'layoutDefinitions' => 
   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'labelWidth' => 100,
@@ -45,14 +44,14 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
      'permissions' => NULL,
-     'childs' =>
+     'childs' => 
     array (
-      0 =>
+      0 => 
       Pimcore\Model\DataObject\ClassDefinition\Layout\Tabpanel::__set_state(array(
          'fieldtype' => 'tabpanel',
          'name' => 'Layout',
@@ -66,9 +65,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'bodyStyle' => NULL,
          'datatype' => 'layout',
          'permissions' => NULL,
-         'childs' =>
+         'childs' => 
         array (
-          0 =>
+          0 => 
           Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
              'fieldtype' => 'panel',
              'labelWidth' => 100,
@@ -84,9 +83,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'bodyStyle' => '',
              'datatype' => 'layout',
              'permissions' => '',
-             'childs' =>
+             'childs' => 
             array (
-              0 =>
+              0 => 
               Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
                  'fieldtype' => 'text',
                  'html' => '<b>OfferToolOffer </b>as storage for created offers in the frontend.&nbsp;May be extended for specific use case.&nbsp;',
@@ -103,12 +102,12 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'bodyStyle' => 'padding: 10px; background-color: #d9edf7; border-color: #bce8f1 !important; color: #31708f;',
                  'datatype' => 'layout',
                  'permissions' => NULL,
-                 'childs' =>
+                 'childs' => 
                 array (
                 ),
                  'locked' => false,
               )),
-              1 =>
+              1 => 
               Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
                  'fieldtype' => 'fieldset',
                  'labelWidth' => 150,
@@ -123,9 +122,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'bodyStyle' => '',
                  'datatype' => 'layout',
                  'permissions' => NULL,
-                 'childs' =>
+                 'childs' => 
                 array (
-                  0 =>
+                  0 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                      'fieldtype' => 'input',
                      'width' => 400,
@@ -134,6 +133,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'columnLength' => 255,
                      'phpdocType' => 'string',
                      'regex' => '',
+                     'unique' => NULL,
                      'name' => 'offernumber',
                      'title' => 'Offernumber',
                      'tooltip' => '',
@@ -149,7 +149,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'visibleGridView' => false,
                      'visibleSearch' => false,
                   )),
-                  1 =>
+                  1 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Datetime::__set_state(array(
                      'fieldtype' => 'datetime',
                      'queryColumnType' => 'bigint(20)',
@@ -172,7 +172,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'visibleGridView' => false,
                      'visibleSearch' => false,
                   )),
-                  2 =>
+                  2 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Date::__set_state(array(
                      'fieldtype' => 'date',
                      'queryColumnType' => 'bigint(20)',
@@ -198,7 +198,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                 ),
                  'locked' => false,
               )),
-              2 =>
+              2 => 
               Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
                  'fieldtype' => 'fieldset',
                  'labelWidth' => 150,
@@ -213,9 +213,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'bodyStyle' => '',
                  'datatype' => 'layout',
                  'permissions' => NULL,
-                 'childs' =>
+                 'childs' => 
                 array (
-                  0 =>
+                  0 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                      'fieldtype' => 'numeric',
                      'width' => 400,
@@ -227,6 +227,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'unsigned' => false,
                      'minValue' => NULL,
                      'maxValue' => NULL,
+                     'unique' => NULL,
                      'decimalSize' => 19,
                      'decimalPrecision' => 4,
                      'name' => 'totalPriceBeforeDiscount',
@@ -244,7 +245,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'visibleGridView' => false,
                      'visibleSearch' => false,
                   )),
-                  1 =>
+                  1 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                      'fieldtype' => 'numeric',
                      'width' => 400,
@@ -256,6 +257,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'unsigned' => false,
                      'minValue' => NULL,
                      'maxValue' => NULL,
+                     'unique' => NULL,
                      'decimalSize' => 19,
                      'decimalPrecision' => 4,
                      'name' => 'totalPrice',
@@ -273,17 +275,17 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'visibleGridView' => false,
                      'visibleSearch' => false,
                   )),
-                  2 =>
+                  2 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Select::__set_state(array(
                      'fieldtype' => 'select',
-                     'options' =>
+                     'options' => 
                     array (
-                      0 =>
+                      0 => 
                       array (
                         'key' => 'Percent',
                         'value' => 'percent',
                       ),
-                      1 =>
+                      1 => 
                       array (
                         'key' => 'Amount',
                         'value' => 'amount',
@@ -293,8 +295,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'defaultValue' => '',
                      'optionsProviderClass' => NULL,
                      'optionsProviderData' => NULL,
-                     'queryColumnType' => 'varchar(255)',
-                     'columnType' => 'varchar(255)',
+                     'queryColumnType' => 'varchar',
+                     'columnType' => 'varchar',
+                     'columnLength' => 190,
                      'phpdocType' => 'string',
                      'name' => 'discountType',
                      'title' => 'Discount Type',
@@ -311,7 +314,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'visibleGridView' => false,
                      'visibleSearch' => false,
                   )),
-                  3 =>
+                  3 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                      'fieldtype' => 'numeric',
                      'width' => 400,
@@ -323,6 +326,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'unsigned' => false,
                      'minValue' => NULL,
                      'maxValue' => NULL,
+                     'unique' => NULL,
                      'decimalSize' => 19,
                      'decimalPrecision' => 4,
                      'name' => 'discount',
@@ -343,7 +347,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                 ),
                  'locked' => false,
               )),
-              3 =>
+              3 => 
               Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
                  'fieldtype' => 'fieldset',
                  'labelWidth' => 150,
@@ -358,9 +362,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'bodyStyle' => '',
                  'datatype' => 'layout',
                  'permissions' => NULL,
-                 'childs' =>
+                 'childs' => 
                 array (
-                  0 =>
+                  0 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                      'fieldtype' => 'input',
                      'width' => '',
@@ -369,6 +373,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'columnLength' => 255,
                      'phpdocType' => 'string',
                      'regex' => '',
+                     'unique' => NULL,
                      'name' => 'cartId',
                      'title' => 'Cart Id',
                      'tooltip' => '',
@@ -390,7 +395,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
             ),
              'locked' => false,
           )),
-          1 =>
+          1 => 
           Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
              'fieldtype' => 'panel',
              'labelWidth' => 100,
@@ -406,9 +411,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'bodyStyle' => '',
              'datatype' => 'layout',
              'permissions' => NULL,
-             'childs' =>
+             'childs' => 
             array (
-              0 =>
+              0 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Objects::__set_state(array(
                  'fieldtype' => 'objects',
                  'width' => '',
@@ -418,9 +423,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'phpdocType' => 'array',
                  'relationType' => true,
                  'lazyLoading' => false,
-                 'classes' =>
+                 'classes' => 
                 array (
-                  0 =>
+                  0 => 
                   array (
                     'classes' => 'OfferToolOfferItem',
                   ),
@@ -441,7 +446,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'visibleGridView' => false,
                  'visibleSearch' => false,
               )),
-              1 =>
+              1 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Objects::__set_state(array(
                  'fieldtype' => 'objects',
                  'width' => '',
@@ -451,9 +456,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'phpdocType' => 'array',
                  'relationType' => true,
                  'lazyLoading' => false,
-                 'classes' =>
+                 'classes' => 
                 array (
-                  0 =>
+                  0 => 
                   array (
                     'classes' => 'OfferToolOfferItem',
                   ),
@@ -481,16 +486,16 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'icon' => '',
    'previewUrl' => '',
    'group' => '',
    'showAppLoggerTab' => false,
    'linkGeneratorReference' => '',
-   'propertyVisibility' =>
+   'propertyVisibility' => 
   array (
-    'grid' =>
+    'grid' => 
     array (
       'id' => true,
       'path' => true,
@@ -498,7 +503,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
       'modificationDate' => true,
       'creationDate' => true,
     ),
-    'search' =>
+    'search' => 
     array (
       'id' => true,
       'path' => true,

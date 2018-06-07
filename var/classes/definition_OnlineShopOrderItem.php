@@ -1,11 +1,10 @@
 <?php 
 
 /** 
-* Generated at: 2017-10-19T11:20:03+02:00
+* Generated at: 2018-05-24T08:17:52+02:00
 * Inheritance: no
 * Variants: no
-* Changed by: admin (10)
-* IP: 192.168.11.5
+* IP: 192.168.9.18
 
 
 Fields Summary: 
@@ -28,7 +27,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'OnlineShopOrderItem',
    'description' => '',
    'creationDate' => 1366279601,
-   'modificationDate' => 1508404803,
+   'modificationDate' => 1527142672,
    'userOwner' => 0,
    'userModification' => 10,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractOrderItem',
@@ -47,7 +46,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -130,8 +129,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'defaultValue' => '',
                  'optionsProviderClass' => NULL,
                  'optionsProviderData' => NULL,
-                 'queryColumnType' => 'varchar(255)',
-                 'columnType' => 'varchar(255)',
+                 'queryColumnType' => 'varchar',
+                 'columnType' => 'varchar',
+                 'columnLength' => 190,
                  'phpdocType' => 'string',
                  'name' => 'orderState',
                  'title' => 'Order Item State',
@@ -559,7 +559,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'icon' => '',
    'previewUrl' => '',

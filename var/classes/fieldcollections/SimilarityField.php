@@ -1,5 +1,14 @@
 <?php 
 
+/** 
+* Generated at: 2018-06-07T15:45:51+02:00
+
+
+Fields Summary: 
+ - field [indexFieldSelectionCombo]
+ - weight [numeric]
+*/ 
+
 
 return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
    'key' => 'SimilarityField',
@@ -15,7 +24,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -40,8 +49,8 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
          'permissions' => '',
          'childs' => 
         array (
-          0 =>
-              Pimcore\Bundle\EcommerceFrameworkBundle\CoreExtensions\ClassDefinition\IndexFieldSelectionCombo::__set_state(array(
+          0 => 
+          Pimcore\Bundle\EcommerceFrameworkBundle\CoreExtensions\ClassDefinition\IndexFieldSelectionCombo::__set_state(array(
              'fieldtype' => 'indexFieldSelectionCombo',
              'specificPriceField' => false,
              'showAllFields' => true,
@@ -146,8 +155,11 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
             ),
              'width' => 300,
              'defaultValue' => NULL,
+             'optionsProviderClass' => NULL,
+             'optionsProviderData' => NULL,
              'queryColumnType' => 'varchar(255)',
              'columnType' => 'varchar(255)',
+             'columnLength' => 190,
              'phpdocType' => 'string',
              'name' => 'field',
              'title' => 'Field',
@@ -176,6 +188,8 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'unique' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'weight',
              'title' => 'Weight',
@@ -196,7 +210,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'dao' => NULL,
 ));

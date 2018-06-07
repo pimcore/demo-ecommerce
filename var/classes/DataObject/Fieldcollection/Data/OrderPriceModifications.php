@@ -1,15 +1,14 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-07-13T17:04:44+02:00
-* IP: 192.168.11.5
+/** 
+* Generated at: 2018-06-07T15:45:51+02:00
 
 
-Fields Summary:
+Fields Summary: 
  - name [input]
  - netAmount [numeric]
  - amount [numeric]
-*/
+*/ 
 
 namespace Pimcore\Model\DataObject\Fieldcollection\Data;
 
@@ -29,6 +28,9 @@ public $amount;
 */
 public function getName () {
 	$data = $this->name;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -48,6 +50,9 @@ public function setName ($name) {
 */
 public function getNetAmount () {
 	$data = $this->netAmount;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -67,6 +72,9 @@ public function setNetAmount ($netAmount) {
 */
 public function getAmount () {
 	$data = $this->amount;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 

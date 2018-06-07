@@ -20,11 +20,11 @@ public function getOAuth1Token() {
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\OAuth1Token $OAuth1Token
-* @return void
+* @return \Pimcore\Model\DataObject\SsoIdentity\Credentials
 */
 public function setOAuth1Token ($OAuth1Token) {
 	$this->OAuth1Token = $OAuth1Token;
-	return $this;;
+	return $this;
 }
 
 public $OAuth2Token = null;
@@ -38,11 +38,11 @@ public function getOAuth2Token() {
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\OAuth2Token $OAuth2Token
-* @return void
+* @return \Pimcore\Model\DataObject\SsoIdentity\Credentials
 */
 public function setOAuth2Token ($OAuth2Token) {
 	$this->OAuth2Token = $OAuth2Token;
-	return $this;;
+	return $this;
 }
 
 }

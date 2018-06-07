@@ -1,21 +1,25 @@
-<?php
+<?php 
 
-/** Generated at 2016-05-03T20:44:59+02:00 */
-
-/**
+/** 
+* Generated at: 2018-06-07T15:45:44+02:00
 * Inheritance: no
-* Variants   : no
-* Changed by : admin (2)
-* IP:          10.242.2.6
-*/
+* Variants: no
 
+
+Fields Summary: 
+- localizedfields [localizedfields]
+-- name [input]
+-- description [wysiwyg]
+-- icon [image]
+-- usage [select]
+*/ 
 
 namespace Pimcore\Model\DataObject;
 
 
 
 /**
-* @method static \Pimcore\Model\DataObject\ProductCollection\Listing getByLocalizedfields ($field, $value, $locale = null, $limit = 0)
+* @method static \Pimcore\Model\DataObject\ProductCollection\Listing getByLocalizedfields ($field, $value, $locale = null, $limit = 0) 
 */
 
 class ProductCollection extends Concrete {
@@ -36,15 +40,18 @@ public static function create($values = array()) {
 }
 
 /**
-* Get localizedfields -
+* Get localizedfields - 
 * @return \Pimcore\Model\DataObject\Localizedfield
 */
 public function getLocalizedfields () {
-	$preValue = $this->preGetValue("localizedfields");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("localizedfields"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->getClass()->getFieldDefinition("localizedfields")->preGetData($this);
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -54,9 +61,12 @@ public function getLocalizedfields () {
 */
 public function getName ($language = null) {
 	$data = $this->getLocalizedfields()->getLocalizedValue("name", $language);
-	$preValue = $this->preGetValue("name");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("name"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	 return $data;
 }
@@ -67,9 +77,12 @@ public function getName ($language = null) {
 */
 public function getDescription ($language = null) {
 	$data = $this->getLocalizedfields()->getLocalizedValue("description", $language);
-	$preValue = $this->preGetValue("description");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("description"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	 return $data;
 }
@@ -80,9 +93,12 @@ public function getDescription ($language = null) {
 */
 public function getIcon ($language = null) {
 	$data = $this->getLocalizedfields()->getLocalizedValue("icon", $language);
-	$preValue = $this->preGetValue("icon");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("icon"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	 return $data;
 }
@@ -93,15 +109,18 @@ public function getIcon ($language = null) {
 */
 public function getUsage ($language = null) {
 	$data = $this->getLocalizedfields()->getLocalizedValue("usage", $language);
-	$preValue = $this->preGetValue("usage");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("usage"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	 return $data;
 }
 
 /**
-* Set localizedfields -
+* Set localizedfields - 
 * @param \Pimcore\Model\DataObject\Localizedfield $localizedfields
 * @return \Pimcore\Model\DataObject\ProductCollection
 */
@@ -153,7 +172,8 @@ public function setUsage ($usage, $language = null) {
 protected static $_relationFields = array (
 );
 
-public $lazyLoadedFields = NULL;
+public $lazyLoadedFields = array (
+);
 
 }
 

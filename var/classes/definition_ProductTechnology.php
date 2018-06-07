@@ -1,13 +1,31 @@
-<?php
+<?php 
 
-/** Generated at 2016-08-08T16:05:50+02:00 */
+/** 
+* Generated at: 2018-05-24T08:17:53+02:00
+* Inheritance: no
+* Variants: no
+* IP: 192.168.9.18
+
+
+Fields Summary: 
+- localizedfields [localizedfields]
+-- icon [image]
+-- name [input]
+-- seoname [input]
+-- description [wysiwyg]
+-- link [link]
+-- images [multihref]
+-- documents [multihref]
+-- videos [multihref]
+-- downloads [multihref]
+*/ 
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'ProductTechnology',
    'description' => '',
    'creationDate' => 1366282447,
-   'modificationDate' => 1467362847,
+   'modificationDate' => 1527142673,
    'userOwner' => 1,
    'userModification' => 2,
    'parentClass' => '',
@@ -15,7 +33,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'allowInherit' => false,
    'allowVariants' => false,
    'showVariants' => false,
-   'layoutDefinitions' =>
+   'layoutDefinitions' => 
   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'labelWidth' => 100,
@@ -26,20 +44,20 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
      'permissions' => NULL,
-     'childs' =>
+     'childs' => 
     array (
-      0 =>
+      0 => 
       Pimcore\Model\DataObject\ClassDefinition\Data\Localizedfields::__set_state(array(
          'fieldtype' => 'localizedfields',
          'phpdocType' => '\\Pimcore\\Model\\DataObject\\Localizedfield',
-         'childs' =>
+         'childs' => 
         array (
-          0 =>
+          0 => 
           Pimcore\Model\DataObject\ClassDefinition\Layout\Region::__set_state(array(
              'fieldtype' => 'region',
              'name' => 'Layout',
@@ -53,9 +71,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'bodyStyle' => '',
              'datatype' => 'layout',
              'permissions' => '',
-             'childs' =>
+             'childs' => 
             array (
-              0 =>
+              0 => 
               Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
                  'fieldtype' => 'panel',
                  'labelWidth' => 100,
@@ -71,9 +89,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'bodyStyle' => NULL,
                  'datatype' => 'layout',
                  'permissions' => '',
-                 'childs' =>
+                 'childs' => 
                 array (
-                  0 =>
+                  0 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Image::__set_state(array(
                      'fieldtype' => 'image',
                      'width' => 250,
@@ -97,7 +115,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'visibleGridView' => false,
                      'visibleSearch' => false,
                   )),
-                  1 =>
+                  1 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                      'fieldtype' => 'input',
                      'width' => 250,
@@ -106,6 +124,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'columnLength' => 255,
                      'phpdocType' => 'string',
                      'regex' => '',
+                     'unique' => NULL,
                      'name' => 'name',
                      'title' => 'Name',
                      'tooltip' => '',
@@ -121,7 +140,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'visibleGridView' => true,
                      'visibleSearch' => true,
                   )),
-                  2 =>
+                  2 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                      'fieldtype' => 'input',
                      'width' => 250,
@@ -130,6 +149,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'columnLength' => 255,
                      'phpdocType' => 'string',
                      'regex' => '',
+                     'unique' => NULL,
                      'name' => 'seoname',
                      'title' => 'SEO Name',
                      'tooltip' => '',
@@ -145,7 +165,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'visibleGridView' => false,
                      'visibleSearch' => false,
                   )),
-                  3 =>
+                  3 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Wysiwyg::__set_state(array(
                      'fieldtype' => 'wysiwyg',
                      'width' => '',
@@ -169,7 +189,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'visibleGridView' => false,
                      'visibleSearch' => false,
                   )),
-                  4 =>
+                  4 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Link::__set_state(array(
                      'fieldtype' => 'link',
                      'queryColumnType' => 'text',
@@ -193,7 +213,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                 ),
                  'locked' => false,
               )),
-              1 =>
+              1 => 
               Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
                  'fieldtype' => 'panel',
                  'labelWidth' => 100,
@@ -209,9 +229,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'bodyStyle' => '',
                  'datatype' => 'layout',
                  'permissions' => '',
-                 'childs' =>
+                 'childs' => 
                 array (
-                  0 =>
+                  0 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Multihref::__set_state(array(
                      'fieldtype' => 'multihref',
                      'width' => '',
@@ -223,29 +243,22 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'relationType' => true,
                      'objectsAllowed' => false,
                      'assetsAllowed' => true,
-                     'assetTypes' =>
+                     'assetTypes' => 
                     array (
-                      0 =>
+                      0 => 
                       array (
                         'assetTypes' => 'image',
                       ),
                     ),
                      'documentsAllowed' => false,
-                     'documentTypes' =>
+                     'documentTypes' => 
                     array (
-                      0 =>
-                      array (
-                        'documentTypes' => '',
-                      ),
                     ),
                      'lazyLoading' => false,
-                     'classes' =>
+                     'classes' => 
                     array (
-                      0 =>
-                      array (
-                        'classes' => '',
-                      ),
                     ),
+                     'pathFormatterClass' => NULL,
                      'name' => 'images',
                      'title' => 'Images',
                      'tooltip' => '',
@@ -261,7 +274,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'visibleGridView' => false,
                      'visibleSearch' => false,
                   )),
-                  1 =>
+                  1 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Multihref::__set_state(array(
                      'fieldtype' => 'multihref',
                      'width' => '',
@@ -273,29 +286,18 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'relationType' => true,
                      'objectsAllowed' => false,
                      'assetsAllowed' => false,
-                     'assetTypes' =>
+                     'assetTypes' => 
                     array (
-                      0 =>
-                      array (
-                        'assetTypes' => '',
-                      ),
                     ),
                      'documentsAllowed' => true,
-                     'documentTypes' =>
+                     'documentTypes' => 
                     array (
-                      0 =>
-                      array (
-                        'documentTypes' => '',
-                      ),
                     ),
                      'lazyLoading' => false,
-                     'classes' =>
+                     'classes' => 
                     array (
-                      0 =>
-                      array (
-                        'classes' => '',
-                      ),
                     ),
+                     'pathFormatterClass' => NULL,
                      'name' => 'documents',
                      'title' => 'Documents',
                      'tooltip' => 'Link to Documents',
@@ -311,7 +313,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'visibleGridView' => false,
                      'visibleSearch' => false,
                   )),
-                  2 =>
+                  2 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Multihref::__set_state(array(
                      'fieldtype' => 'multihref',
                      'width' => '',
@@ -323,17 +325,18 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'relationType' => true,
                      'objectsAllowed' => false,
                      'assetsAllowed' => true,
-                     'assetTypes' =>
+                     'assetTypes' => 
                     array (
                     ),
                      'documentsAllowed' => false,
-                     'documentTypes' =>
+                     'documentTypes' => 
                     array (
                     ),
                      'lazyLoading' => false,
-                     'classes' =>
+                     'classes' => 
                     array (
                     ),
+                     'pathFormatterClass' => NULL,
                      'name' => 'videos',
                      'title' => 'Videos',
                      'tooltip' => '',
@@ -349,7 +352,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'visibleGridView' => false,
                      'visibleSearch' => false,
                   )),
-                  3 =>
+                  3 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\Multihref::__set_state(array(
                      'fieldtype' => 'multihref',
                      'width' => '',
@@ -361,17 +364,18 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'relationType' => true,
                      'objectsAllowed' => '',
                      'assetsAllowed' => '1',
-                     'assetTypes' =>
+                     'assetTypes' => 
                     array (
                     ),
                      'documentsAllowed' => '',
-                     'documentTypes' =>
+                     'documentTypes' => 
                     array (
                     ),
                      'lazyLoading' => '',
-                     'classes' =>
+                     'classes' => 
                     array (
                     ),
+                     'pathFormatterClass' => NULL,
                      'name' => 'downloads',
                      'title' => 'Downloads',
                      'tooltip' => '',
@@ -402,10 +406,10 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'height' => '',
          'maxTabs' => NULL,
          'labelWidth' => NULL,
-         'referencedFields' =>
+         'hideLabelsWhenTabsReached' => NULL,
+         'referencedFields' => 
         array (
         ),
-         'fieldDefinitionsCache' => NULL,
          'tooltip' => '',
          'mandatory' => false,
          'noteditable' => false,
@@ -422,14 +426,16 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'visibleSearch' => true,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'icon' => '',
    'previewUrl' => '',
    'group' => '',
-   'propertyVisibility' =>
+   'showAppLoggerTab' => false,
+   'linkGeneratorReference' => NULL,
+   'propertyVisibility' => 
   array (
-    'grid' =>
+    'grid' => 
     array (
       'id' => true,
       'path' => true,
@@ -437,7 +443,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
       'modificationDate' => false,
       'creationDate' => false,
     ),
-    'search' =>
+    'search' => 
     array (
       'id' => true,
       'path' => true,

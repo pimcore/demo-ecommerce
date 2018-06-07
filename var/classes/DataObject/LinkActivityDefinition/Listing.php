@@ -6,6 +6,7 @@ use Pimcore\Model\DataObject;
 
 /**
  * @method DataObject\LinkActivityDefinition current()
+ * @method DataObject\LinkActivityDefinition[] load()
  */
 
 class Listing extends DataObject\Listing\Concrete {

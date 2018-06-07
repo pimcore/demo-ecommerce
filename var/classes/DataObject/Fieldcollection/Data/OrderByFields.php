@@ -1,14 +1,13 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-03-15T12:20:58+01:00
-* IP: 192.168.11.5
+/** 
+* Generated at: 2018-06-07T15:45:51+02:00
 
 
-Fields Summary:
+Fields Summary: 
  - field [indexFieldSelectionCombo]
  - direction [select]
-*/
+*/ 
 
 namespace Pimcore\Model\DataObject\Fieldcollection\Data;
 
@@ -27,6 +26,9 @@ public $direction;
 */
 public function getField () {
 	$data = $this->field;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -46,6 +48,9 @@ public function setField ($field) {
 */
 public function getDirection () {
 	$data = $this->direction;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 

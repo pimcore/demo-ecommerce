@@ -1,11 +1,9 @@
 <?php 
 
 /** 
-* Generated at: 2017-10-11T11:24:35+02:00
+* Generated at: 2018-06-07T15:45:44+02:00
 * Inheritance: no
 * Variants: no
-* Changed by: admin (10)
-* IP: 192.168.11.5
 
 
 Fields Summary: 
@@ -52,6 +50,9 @@ public function getName () {
 		return $preValue;
 	}
 	$data = $this->name;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -67,24 +68,27 @@ public function setName ($name) {
 
 /**
 * Get terms - Terms
-* @return \Pimcore\Model\DataObject\Data\Block
+* @return \Pimcore\Model\DataObject\Data\BlockElement[][]
 */
 public function getTerms () {
 	$preValue = $this->preGetValue("terms"); 
 	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
-	$data = $this->terms;
+	$data = $this->getClass()->getFieldDefinition("terms")->preGetData($this);
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
 /**
 * Set terms - Terms
-* @param \Pimcore\Model\DataObject\Data\Block $terms
+* @param \Pimcore\Model\DataObject\Data\BlockElement[][] $terms
 * @return \Pimcore\Model\DataObject\TermSegmentBuilderDefinition
 */
 public function setTerms ($terms) {
-	$this->terms = $terms;
+	$this->terms = $this->getClass()->getFieldDefinition("terms")->preSetData($this, $terms);
 	return $this;
 }
 

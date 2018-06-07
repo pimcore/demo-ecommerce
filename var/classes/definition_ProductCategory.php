@@ -1,13 +1,29 @@
-<?php
+<?php 
 
-/** Generated at 2016-08-08T16:05:50+02:00 */
+/** 
+* Generated at: 2018-05-24T08:17:53+02:00
+* Inheritance: yes
+* Variants: no
+* Changed by: demo (3)
+* IP: 192.168.9.18
+
+
+Fields Summary: 
+- localizedfields [localizedfields]
+-- image [image]
+-- name [input]
+-- seoname [input]
+-- seotext [wysiwyg]
+-- sortkey [numeric]
+- filterdefinition [href]
+*/ 
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'ProductCategory',
    'description' => '',
    'creationDate' => 1366282445,
-   'modificationDate' => 1462374031,
+   'modificationDate' => 1527142673,
    'userOwner' => 1,
    'userModification' => 3,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractCategory',
@@ -15,7 +31,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'allowInherit' => true,
    'allowVariants' => false,
    'showVariants' => false,
-   'layoutDefinitions' =>
+   'layoutDefinitions' => 
   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'labelWidth' => 100,
@@ -26,14 +42,14 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
      'permissions' => NULL,
-     'childs' =>
+     'childs' => 
     array (
-      0 =>
+      0 => 
       Pimcore\Model\DataObject\ClassDefinition\Layout\Tabpanel::__set_state(array(
          'fieldtype' => 'tabpanel',
          'name' => 'Layout',
@@ -47,15 +63,15 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'bodyStyle' => '',
          'datatype' => 'layout',
          'permissions' => '',
-         'childs' =>
+         'childs' => 
         array (
-          0 =>
+          0 => 
           Pimcore\Model\DataObject\ClassDefinition\Data\Localizedfields::__set_state(array(
              'fieldtype' => 'localizedfields',
              'phpdocType' => '\\Pimcore\\Model\\DataObject\\Localizedfield',
-             'childs' =>
+             'childs' => 
             array (
-              0 =>
+              0 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Image::__set_state(array(
                  'fieldtype' => 'image',
                  'width' => 500,
@@ -79,7 +95,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'visibleGridView' => false,
                  'visibleSearch' => false,
               )),
-              1 =>
+              1 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'fieldtype' => 'input',
                  'width' => 300,
@@ -88,6 +104,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'columnLength' => 255,
                  'phpdocType' => 'string',
                  'regex' => '',
+                 'unique' => NULL,
                  'name' => 'name',
                  'title' => 'Name',
                  'tooltip' => '',
@@ -103,7 +120,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'visibleGridView' => true,
                  'visibleSearch' => true,
               )),
-              2 =>
+              2 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'fieldtype' => 'input',
                  'width' => 300,
@@ -112,6 +129,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'columnLength' => 255,
                  'phpdocType' => 'string',
                  'regex' => '',
+                 'unique' => NULL,
                  'name' => 'seoname',
                  'title' => 'SEO Name',
                  'tooltip' => '',
@@ -127,7 +145,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'visibleGridView' => false,
                  'visibleSearch' => false,
               )),
-              3 =>
+              3 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Wysiwyg::__set_state(array(
                  'fieldtype' => 'wysiwyg',
                  'width' => 600,
@@ -151,7 +169,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'visibleGridView' => false,
                  'visibleSearch' => false,
               )),
-              4 =>
+              4 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
                  'fieldtype' => 'numeric',
                  'width' => '',
@@ -163,6 +181,8 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'unsigned' => false,
                  'minValue' => NULL,
                  'maxValue' => NULL,
+                 'unique' => NULL,
+                 'decimalSize' => NULL,
                  'decimalPrecision' => NULL,
                  'name' => 'sortkey',
                  'title' => 'Sort Key',
@@ -188,10 +208,10 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'height' => '',
              'maxTabs' => NULL,
              'labelWidth' => NULL,
-             'referencedFields' =>
+             'hideLabelsWhenTabsReached' => NULL,
+             'referencedFields' => 
             array (
             ),
-             'fieldDefinitionsCache' => NULL,
              'tooltip' => '',
              'mandatory' => false,
              'noteditable' => false,
@@ -207,7 +227,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'visibleGridView' => true,
              'visibleSearch' => true,
           )),
-          1 =>
+          1 => 
           Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
              'fieldtype' => 'panel',
              'labelWidth' => 100,
@@ -223,15 +243,15 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'bodyStyle' => '',
              'datatype' => 'layout',
              'permissions' => NULL,
-             'childs' =>
+             'childs' => 
             array (
-              0 =>
+              0 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Href::__set_state(array(
                  'fieldtype' => 'href',
                  'width' => '',
                  'assetUploadPath' => '',
                  'relationType' => true,
-                 'queryColumnType' =>
+                 'queryColumnType' => 
                 array (
                   'id' => 'int(11)',
                   'type' => 'enum(\'document\',\'asset\',\'object\')',
@@ -239,29 +259,22 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'phpdocType' => '\\Pimcore\\Model\\Document\\Page | \\Pimcore\\Model\\Document\\Snippet | \\Pimcore\\Model\\Document | \\Pimcore\\Model\\Asset | \\Pimcore\\Model\\DataObject\\AbstractObject',
                  'objectsAllowed' => true,
                  'assetsAllowed' => false,
-                 'assetTypes' =>
+                 'assetTypes' => 
                 array (
-                  0 =>
-                  array (
-                    'assetTypes' => '',
-                  ),
                 ),
                  'documentsAllowed' => false,
-                 'documentTypes' =>
+                 'documentTypes' => 
                 array (
-                  0 =>
-                  array (
-                    'documentTypes' => '',
-                  ),
                 ),
                  'lazyLoading' => false,
-                 'classes' =>
+                 'classes' => 
                 array (
-                  0 =>
+                  0 => 
                   array (
                     'classes' => 'FilterDefinition',
                   ),
                 ),
+                 'pathFormatterClass' => NULL,
                  'name' => 'filterdefinition',
                  'title' => 'Filterdefinition',
                  'tooltip' => '',
@@ -284,14 +297,16 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'icon' => '',
    'previewUrl' => '',
    'group' => NULL,
-   'propertyVisibility' =>
+   'showAppLoggerTab' => false,
+   'linkGeneratorReference' => NULL,
+   'propertyVisibility' => 
   array (
-    'grid' =>
+    'grid' => 
     array (
       'id' => true,
       'path' => true,
@@ -299,7 +314,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
       'modificationDate' => false,
       'creationDate' => false,
     ),
-    'search' =>
+    'search' => 
     array (
       'id' => true,
       'path' => true,

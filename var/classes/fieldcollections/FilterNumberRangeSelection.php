@@ -1,11 +1,10 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-07-17T15:06:00+02:00
-* IP: 192.168.11.5
+/** 
+* Generated at: 2018-06-07T15:45:51+02:00
 
 
-Fields Summary:
+Fields Summary: 
  - label [input]
  - field [indexFieldSelection]
  - ranges [structuredTable]
@@ -13,13 +12,13 @@ Fields Summary:
  - preSelectTo [numeric]
  - scriptPath [input]
  - unit [input]
-*/
+*/ 
 
 
 return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
    'key' => 'FilterNumberRangeSelection',
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractFilterDefinitionType',
-   'layoutDefinitions' =>
+   'layoutDefinitions' => 
   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'labelWidth' => 100,
@@ -30,14 +29,14 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
      'permissions' => NULL,
-     'childs' =>
+     'childs' => 
     array (
-      0 =>
+      0 => 
       Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'fieldtype' => 'panel',
          'labelWidth' => 100,
@@ -53,9 +52,9 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
          'bodyStyle' => '',
          'datatype' => 'layout',
          'permissions' => '',
-         'childs' =>
+         'childs' => 
         array (
-          0 =>
+          0 => 
           Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
              'fieldtype' => 'text',
              'html' => '<b>Filter Numberrange Selection</b><div><div>Filter for number ranges with predefined ranges.&nbsp;</div><div>- ranges: predefined ranges.&nbsp;</div></div><div>- unit: free textfield with is displayed in frontend if so implemented by view script.&nbsp;</div>',
@@ -72,12 +71,12 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'bodyStyle' => 'padding: 10px; background-color: #d9edf7; border-color: #bce8f1 !important; color: #31708f;',
              'datatype' => 'layout',
              'permissions' => NULL,
-             'childs' =>
+             'childs' => 
             array (
             ),
              'locked' => false,
           )),
-          1 =>
+          1 => 
           Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 400,
@@ -86,6 +85,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'label',
              'title' => 'Label',
              'tooltip' => '',
@@ -101,16 +101,16 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'visibleGridView' => false,
              'visibleSearch' => false,
           )),
-          2 =>
+          2 => 
           Pimcore\Bundle\EcommerceFrameworkBundle\CoreExtensions\ClassDefinition\IndexFieldSelection::__set_state(array(
              'fieldtype' => 'indexFieldSelection',
-             'queryColumnType' =>
+             'queryColumnType' => 
             array (
               'tenant' => 'varchar(100)',
               'field' => 'varchar(200)',
               'preSelect' => 'text',
             ),
-             'columnType' =>
+             'columnType' => 
             array (
               'tenant' => 'varchar(100)',
               'field' => 'varchar(200)',
@@ -120,11 +120,11 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'width' => 400,
              'considerTenants' => true,
              'multiPreSelect' => 'none',
-             'filterGroups' =>
+             'filterGroups' => 
             array (
               0 => 'double',
             ),
-             'predefinedPreSelectOptions' =>
+             'predefinedPreSelectOptions' => 
             array (
             ),
              'name' => 'field',
@@ -142,16 +142,16 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'visibleGridView' => false,
              'visibleSearch' => false,
           )),
-          3 =>
+          3 => 
           Pimcore\Model\DataObject\ClassDefinition\Data\StructuredTable::__set_state(array(
              'fieldtype' => 'structuredTable',
              'width' => 650,
              'height' => 200,
              'labelWidth' => NULL,
              'labelFirstCell' => '',
-             'cols' =>
+             'cols' => 
             array (
-              0 =>
+              0 => 
               array (
                 'position' => '1',
                 'key' => 'from',
@@ -161,7 +161,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                 'id' => 'extModel3155-1',
                 'length' => NULL,
               ),
-              1 =>
+              1 => 
               array (
                 'position' => 2,
                 'key' => 'to',
@@ -171,30 +171,30 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                 'id' => 'extModel3155-2',
               ),
             ),
-             'rows' =>
+             'rows' => 
             array (
-              0 =>
+              0 => 
               array (
                 'position' => '1',
                 'key' => 'range1',
                 'label' => '1',
                 'id' => 'extModel3131-1',
               ),
-              1 =>
+              1 => 
               array (
                 'position' => '2',
                 'key' => 'range2',
                 'label' => '2',
                 'id' => 'extModel3131-2',
               ),
-              2 =>
+              2 => 
               array (
                 'position' => '3',
                 'key' => 'range3',
                 'label' => '3',
                 'id' => 'extModel3131-3',
               ),
-              3 =>
+              3 => 
               array (
                 'position' => '4',
                 'key' => 'range4',
@@ -220,7 +220,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'visibleGridView' => false,
              'visibleSearch' => false,
           )),
-          4 =>
+          4 => 
           Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
              'fieldtype' => 'numeric',
              'width' => 400,
@@ -232,6 +232,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'unique' => NULL,
              'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'preSelectFrom',
@@ -249,7 +250,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'visibleGridView' => false,
              'visibleSearch' => false,
           )),
-          5 =>
+          5 => 
           Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
              'fieldtype' => 'numeric',
              'width' => 400,
@@ -261,6 +262,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'unique' => NULL,
              'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'preSelectTo',
@@ -278,7 +280,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'visibleGridView' => false,
              'visibleSearch' => false,
           )),
-          6 =>
+          6 => 
           Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 400,
@@ -287,6 +289,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'scriptPath',
              'title' => 'Script Path',
              'tooltip' => '',
@@ -302,7 +305,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'visibleGridView' => false,
              'visibleSearch' => false,
           )),
-          7 =>
+          7 => 
           Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 400,
@@ -311,6 +314,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'unit',
              'title' => 'Unit',
              'tooltip' => '',
@@ -330,7 +334,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'dao' => NULL,
 ));

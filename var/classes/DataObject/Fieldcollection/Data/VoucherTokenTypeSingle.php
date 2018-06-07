@@ -1,11 +1,14 @@
-<?php
+<?php 
 
-/** Generated at 2016-04-07T20:04:00+02:00 */
+/** 
+* Generated at: 2018-06-07T15:45:51+02:00
 
-/**
-* IP:          10.242.2.6
-*/
 
+Fields Summary: 
+ - token [input]
+ - usages [numeric]
+ - onlyTokenPerCart [checkbox]
+*/ 
 
 namespace Pimcore\Model\DataObject\Fieldcollection\Data;
 
@@ -25,6 +28,9 @@ public $onlyTokenPerCart;
 */
 public function getToken () {
 	$data = $this->token;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -40,16 +46,19 @@ public function setToken ($token) {
 
 /**
 * Get usages - Usage count
-* @return float
+* @return string
 */
 public function getUsages () {
 	$data = $this->usages;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
 * Set usages - Usage count
-* @param float $usages
+* @param string $usages
 * @return \Pimcore\Model\DataObject\VoucherTokenTypeSingle
 */
 public function setUsages ($usages) {
@@ -63,6 +72,9 @@ public function setUsages ($usages) {
 */
 public function getOnlyTokenPerCart () {
 	$data = $this->onlyTokenPerCart;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 

@@ -1,11 +1,10 @@
 <?php 
 
 /** 
-* Generated at: 2017-10-11T11:24:36+02:00
+* Generated at: 2018-05-24T08:17:54+02:00
 * Inheritance: yes
 * Variants: no
-* Changed by: admin (10)
-* IP: 192.168.11.5
+* IP: 192.168.9.18
 
 
 Fields Summary: 
@@ -28,9 +27,9 @@ Fields Summary:
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'LinkActivityDefinition',
    'description' => NULL,
-   'creationDate' => NULL,
-   'modificationDate' => 1507713875,
-   'userOwner' => NULL,
+   'creationDate' => 0,
+   'modificationDate' => 1527142674,
+   'userOwner' => 0,
    'userModification' => 10,
    'parentClass' => NULL,
    'useTraits' => NULL,
@@ -244,8 +243,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'defaultValue' => '1',
                      'optionsProviderClass' => '',
                      'optionsProviderData' => '',
-                     'queryColumnType' => 'varchar(190)',
-                     'columnType' => 'varchar(190)',
+                     'queryColumnType' => 'varchar',
+                     'columnType' => 'varchar',
+                     'columnLength' => '190',
                      'phpdocType' => 'string',
                      'name' => 'active',
                      'title' => 'active',
@@ -417,13 +417,16 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
           2 => 
           Pimcore\Model\DataObject\ClassDefinition\Data\Block::__set_state(array(
              'fieldtype' => 'block',
+             'lazyLoading' => NULL,
              'disallowAddRemove' => NULL,
              'disallowReorder' => NULL,
              'collapsible' => false,
              'collapsed' => false,
+             'maxItems' => NULL,
              'queryColumnType' => 'longtext',
              'columnType' => 'longtext',
-             'phpdocType' => '\\Pimcore\\Model\\DataObject\\Data\\Block',
+             'styleElement' => '',
+             'phpdocType' => '\\Pimcore\\Model\\DataObject\\Data\\BlockElement[][]',
              'childs' => 
             array (
               0 => 
@@ -526,7 +529,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'icon' => '/pimcore/static6/img/flat-color-icons/sports_mode.svg',
    'previewUrl' => '/__customermanagementframework/object-preview/link-activity-definition-preview',
    'group' => 'CustomerManagement',
-   'showAppLoggerTab' => NULL,
+   'showAppLoggerTab' => false,
    'linkGeneratorReference' => NULL,
    'propertyVisibility' => 
   array (

@@ -1,11 +1,10 @@
 <?php 
 
 /** 
-* Generated at: 2017-10-20T15:23:08+02:00
+* Generated at: 2018-05-24T08:17:54+02:00
 * Inheritance: no
 * Variants: no
-* Changed by: admin (11)
-* IP: 192.168.11.5
+* IP: 192.168.9.18
 
 
 Fields Summary: 
@@ -31,7 +30,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'Customer',
    'description' => '',
    'creationDate' => 0,
-   'modificationDate' => 1508505788,
+   'modificationDate' => 1527142674,
    'userOwner' => 10,
    'userModification' => 11,
    'parentClass' => '\\CustomerManagementFrameworkBundle\\Model\\AbstractCustomer\\DefaultAbstractUserawareCustomer',
@@ -50,7 +49,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -138,8 +137,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'defaultValue' => NULL,
                  'optionsProviderClass' => NULL,
                  'optionsProviderData' => NULL,
-                 'queryColumnType' => 'varchar(190)',
-                 'columnType' => 'varchar(190)',
+                 'queryColumnType' => 'varchar',
+                 'columnType' => 'varchar',
+                 'columnLength' => '190',
                  'phpdocType' => 'string',
                  'name' => 'gender',
                  'title' => 'Gender',
@@ -1537,8 +1537,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'defaultValue' => NULL,
                  'optionsProviderClass' => NULL,
                  'optionsProviderData' => NULL,
-                 'queryColumnType' => 'varchar(190)',
-                 'columnType' => 'varchar(190)',
+                 'queryColumnType' => 'varchar',
+                 'columnType' => 'varchar',
+                 'columnLength' => '190',
                  'phpdocType' => 'string',
                  'name' => 'countryCode',
                  'title' => 'Country',
@@ -1866,7 +1867,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'icon' => '/bundles/pimcorecustomermanagementframework/icons/customer.svg',
    'previewUrl' => '',

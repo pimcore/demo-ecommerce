@@ -1,11 +1,19 @@
-<?php
+<?php 
 
-/** Generated at 2016-04-07T20:03:47+02:00 */
+/** 
+* Generated at: 2018-06-07T15:45:51+02:00
 
-/**
-* IP:          10.242.2.6
-*/
 
+Fields Summary: 
+ - count [numeric]
+ - prefix [input]
+ - length [numeric]
+ - characterType [select]
+ - separator [input]
+ - separatorCount [numeric]
+ - allowOncePerCart [checkbox]
+ - onlyTokenPerCart [checkbox]
+*/ 
 
 namespace Pimcore\Model\DataObject\Fieldcollection\Data;
 
@@ -30,6 +38,9 @@ public $onlyTokenPerCart;
 */
 public function getCount () {
 	$data = $this->count;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -49,6 +60,9 @@ public function setCount ($count) {
 */
 public function getPrefix () {
 	$data = $this->prefix;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -68,6 +82,9 @@ public function setPrefix ($prefix) {
 */
 public function getLength () {
 	$data = $this->length;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -87,6 +104,9 @@ public function setLength ($length) {
 */
 public function getCharacterType () {
 	$data = $this->characterType;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -106,6 +126,9 @@ public function setCharacterType ($characterType) {
 */
 public function getSeparator () {
 	$data = $this->separator;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -120,17 +143,20 @@ public function setSeparator ($separator) {
 }
 
 /**
-* Get separatorCount - Every x character
-* @return float
+* Get separatorCount - Every x character 
+* @return string
 */
 public function getSeparatorCount () {
 	$data = $this->separatorCount;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
 /**
-* Set separatorCount - Every x character
-* @param float $separatorCount
+* Set separatorCount - Every x character 
+* @param string $separatorCount
 * @return \Pimcore\Model\DataObject\VoucherTokenTypePattern
 */
 public function setSeparatorCount ($separatorCount) {
@@ -144,6 +170,9 @@ public function setSeparatorCount ($separatorCount) {
 */
 public function getAllowOncePerCart () {
 	$data = $this->allowOncePerCart;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -163,6 +192,9 @@ public function setAllowOncePerCart ($allowOncePerCart) {
 */
 public function getOnlyTokenPerCart () {
 	$data = $this->onlyTokenPerCart;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 

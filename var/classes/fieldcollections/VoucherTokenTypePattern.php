@@ -1,5 +1,20 @@
 <?php 
 
+/** 
+* Generated at: 2018-06-07T15:45:51+02:00
+
+
+Fields Summary: 
+ - count [numeric]
+ - prefix [input]
+ - length [numeric]
+ - characterType [select]
+ - separator [input]
+ - separatorCount [numeric]
+ - allowOncePerCart [checkbox]
+ - onlyTokenPerCart [checkbox]
+*/ 
+
 
 return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
    'key' => 'VoucherTokenTypePattern',
@@ -15,7 +30,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -44,6 +59,8 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
           Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
              'fieldtype' => 'text',
              'html' => 'Generate tokens based on a pattern with specific settings.&nbsp;',
+             'renderingClass' => NULL,
+             'renderingData' => NULL,
              'name' => 'Layout',
              'type' => NULL,
              'region' => NULL,
@@ -89,6 +106,8 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'unsigned' => false,
                  'minValue' => NULL,
                  'maxValue' => NULL,
+                 'unique' => NULL,
+                 'decimalSize' => NULL,
                  'decimalPrecision' => NULL,
                  'name' => 'count',
                  'title' => 'Token Count',
@@ -114,6 +133,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'columnLength' => 255,
                  'phpdocType' => 'string',
                  'regex' => '',
+                 'unique' => NULL,
                  'name' => 'prefix',
                  'title' => 'Prefix',
                  'tooltip' => '',
@@ -141,6 +161,8 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'unsigned' => false,
                  'minValue' => NULL,
                  'maxValue' => NULL,
+                 'unique' => NULL,
+                 'decimalSize' => NULL,
                  'decimalPrecision' => NULL,
                  'name' => 'length',
                  'title' => 'Length',
@@ -180,8 +202,11 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                 ),
                  'width' => 400,
                  'defaultValue' => '',
+                 'optionsProviderClass' => NULL,
+                 'optionsProviderData' => NULL,
                  'queryColumnType' => 'varchar(255)',
                  'columnType' => 'varchar(255)',
+                 'columnLength' => 190,
                  'phpdocType' => 'string',
                  'name' => 'characterType',
                  'title' => 'Character Type',
@@ -227,6 +252,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'columnLength' => 255,
                  'phpdocType' => 'string',
                  'regex' => '^[\\-|\\.|\\#|\\,|\\/|\\+\\_]{1}$',
+                 'unique' => NULL,
                  'name' => 'separator',
                  'title' => 'Separator',
                  'tooltip' => '',
@@ -254,6 +280,8 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'unsigned' => true,
                  'minValue' => 1,
                  'maxValue' => NULL,
+                 'unique' => NULL,
+                 'decimalSize' => NULL,
                  'decimalPrecision' => 0,
                  'name' => 'separatorCount',
                  'title' => 'Every x character ',
@@ -321,7 +349,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'dao' => NULL,
 ));

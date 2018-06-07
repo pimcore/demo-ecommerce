@@ -1,17 +1,16 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-07-17T15:05:32+02:00
-* IP: 192.168.11.5
+/** 
+* Generated at: 2018-06-07T15:45:51+02:00
 
 
-Fields Summary:
+Fields Summary: 
  - label [input]
  - field [indexFieldSelection]
  - useAndCondition [checkbox]
  - scriptPath [input]
  - availableRelations [objects]
-*/
+*/ 
 
 namespace Pimcore\Model\DataObject\Fieldcollection\Data;
 
@@ -33,6 +32,9 @@ public $availableRelations;
 */
 public function getLabel () {
 	$data = $this->label;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -52,6 +54,9 @@ public function setLabel ($label) {
 */
 public function getField () {
 	$data = $this->field;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -71,6 +76,9 @@ public function setField ($field) {
 */
 public function getUseAndCondition () {
 	$data = $this->useAndCondition;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -90,6 +98,9 @@ public function setUseAndCondition ($useAndCondition) {
 */
 public function getScriptPath () {
 	$data = $this->scriptPath;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -111,6 +122,9 @@ public function getAvailableRelations () {
 	$container = $this;
 	$fd = $this->getDefinition()->getFieldDefinition("availableRelations");
 	$data = $fd->preGetData($container);
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 

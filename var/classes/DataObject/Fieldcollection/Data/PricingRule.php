@@ -1,11 +1,13 @@
-<?php
+<?php 
 
-/** Generated at 2016-04-07T19:58:48+02:00 */
+/** 
+* Generated at: 2018-06-07T15:45:51+02:00
 
-/**
-* IP:          10.242.2.6
-*/
 
+Fields Summary: 
+ - ruleId [numeric]
+ - name [input]
+*/ 
 
 namespace Pimcore\Model\DataObject\Fieldcollection\Data;
 
@@ -24,6 +26,9 @@ public $name;
 */
 public function getRuleId () {
 	$data = $this->ruleId;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -43,6 +48,9 @@ public function setRuleId ($ruleId) {
 */
 public function getName () {
 	$data = $this->name;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 

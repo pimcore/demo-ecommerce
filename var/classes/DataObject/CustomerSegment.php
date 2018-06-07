@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2017-12-21T14:31:28+01:00
+* Generated at: 2018-06-07T15:45:44+02:00
 * Inheritance: no
 * Variants: no
 
@@ -60,6 +60,9 @@ public function getName () {
 		return $preValue;
 	}
 	$data = $this->name;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -83,6 +86,9 @@ public function getGroup () {
 		return $preValue;
 	}
 	$data = $this->getClass()->getFieldDefinition("group")->preGetData($this);
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -106,6 +112,9 @@ public function getReference () {
 		return $preValue;
 	}
 	$data = $this->reference;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -129,6 +138,9 @@ public function getCalculated () {
 		return $preValue;
 	}
 	$data = $this->calculated;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -152,6 +164,9 @@ public function getUseAsTargetGroup () {
 		return $preValue;
 	}
 	$data = $this->useAsTargetGroup;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -175,6 +190,9 @@ public function getTargetGroup () {
 		return $preValue;
 	}
 	$data = $this->targetGroup;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 

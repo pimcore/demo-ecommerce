@@ -1,11 +1,13 @@
-<?php
+<?php 
 
-/** Generated at 2016-04-07T19:59:28+02:00 */
+/** 
+* Generated at: 2018-06-07T15:45:51+02:00
 
-/**
-* IP:          10.242.2.6
-*/
 
+Fields Summary: 
+ - field [indexFieldSelectionCombo]
+ - weight [numeric]
+*/ 
 
 namespace Pimcore\Model\DataObject\Fieldcollection\Data;
 
@@ -24,6 +26,9 @@ public $weight;
 */
 public function getField () {
 	$data = $this->field;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -43,6 +48,9 @@ public function setField ($field) {
 */
 public function getWeight () {
 	$data = $this->weight;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 

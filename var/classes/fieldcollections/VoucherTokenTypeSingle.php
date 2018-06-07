@@ -1,5 +1,15 @@
 <?php 
 
+/** 
+* Generated at: 2018-06-07T15:45:51+02:00
+
+
+Fields Summary: 
+ - token [input]
+ - usages [numeric]
+ - onlyTokenPerCart [checkbox]
+*/ 
+
 
 return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
    'key' => 'VoucherTokenTypeSingle',
@@ -15,7 +25,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -44,6 +54,8 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
           Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
              'fieldtype' => 'text',
              'html' => 'Specify one single token and allow usage of this token multiple times.&nbsp;',
+             'renderingClass' => NULL,
+             'renderingData' => NULL,
              'name' => 'Layout',
              'type' => NULL,
              'region' => NULL,
@@ -69,6 +81,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '^((?!\\s).)*$',
+             'unique' => NULL,
              'name' => 'token',
              'title' => 'Token',
              'tooltip' => '',
@@ -96,6 +109,8 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'unsigned' => true,
              'minValue' => 1,
              'maxValue' => NULL,
+             'unique' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => 0,
              'name' => 'usages',
              'title' => 'Usage count',
@@ -138,7 +153,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'dao' => NULL,
 ));

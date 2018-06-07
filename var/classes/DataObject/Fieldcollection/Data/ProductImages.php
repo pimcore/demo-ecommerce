@@ -1,11 +1,12 @@
-<?php
+<?php 
 
-/** Generated at 2016-05-03T20:40:33+02:00 */
+/** 
+* Generated at: 2018-06-07T15:45:52+02:00
 
-/**
-* IP:          10.242.2.6
-*/
 
+Fields Summary: 
+ - image [image]
+*/ 
 
 namespace Pimcore\Model\DataObject\Fieldcollection\Data;
 
@@ -23,6 +24,9 @@ public $image;
 */
 public function getImage () {
 	$data = $this->image;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 

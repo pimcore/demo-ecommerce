@@ -1,11 +1,9 @@
 <?php 
 
 /** 
-* Generated at: 2017-12-19T09:41:33+01:00
+* Generated at: 2018-06-07T15:45:44+02:00
 * Inheritance: no
 * Variants: no
-* Changed by: admin (12)
-* IP: 192.168.9.18
 
 
 Fields Summary: 
@@ -62,6 +60,9 @@ public function getName () {
 		return $preValue;
 	}
 	$data = $this->name;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -85,6 +86,9 @@ public function getReference () {
 		return $preValue;
 	}
 	$data = $this->reference;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -108,6 +112,9 @@ public function getCalculated () {
 		return $preValue;
 	}
 	$data = $this->calculated;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -131,6 +138,9 @@ public function getShowAsFilter () {
 		return $preValue;
 	}
 	$data = $this->showAsFilter;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -154,6 +164,9 @@ public function getFilterSortOrder () {
 		return $preValue;
 	}
 	$data = $this->filterSortOrder;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -177,6 +190,9 @@ public function getExportNewsletterProvider () {
 		return $preValue;
 	}
 	$data = $this->exportNewsletterProvider;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 

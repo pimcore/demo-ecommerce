@@ -1,9 +1,10 @@
 <?php 
 
 /** 
-* Generated at: 2017-12-21T14:30:49+01:00
+* Generated at: 2018-05-24T08:17:54+02:00
 * Inheritance: no
 * Variants: no
+* IP: 192.168.9.18
 
 
 Fields Summary: 
@@ -11,6 +12,8 @@ Fields Summary:
 - group [href]
 - reference [input]
 - calculated [checkbox]
+- useAsTargetGroup [checkbox]
+- targetGroup [targetGroup]
 */ 
 
 
@@ -18,7 +21,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'CustomerSegment',
    'description' => NULL,
    'creationDate' => 0,
-   'modificationDate' => 1513863049,
+   'modificationDate' => 1527142673,
    'userOwner' => 0,
    'userModification' => 10,
    'parentClass' => '\\CustomerManagementFrameworkBundle\\Model\\AbstractCustomerSegment',
@@ -221,12 +224,12 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'phpdocType' => 'boolean',
                  'name' => 'useAsTargetGroup',
                  'title' => 'Use As Target Group',
-                 'tooltip' => NULL,
-                 'mandatory' => NULL,
-                 'noteditable' => NULL,
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => false,
                  'index' => NULL,
-                 'locked' => NULL,
-                 'style' => NULL,
+                 'locked' => false,
+                 'style' => '',
                  'permissions' => NULL,
                  'datatype' => 'data',
                  'relationType' => false,
@@ -237,8 +240,75 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
               4 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\TargetGroup::__set_state(array(
                  'fieldtype' => 'targetGroup',
-                 'options' => NULL,
-                 'width' => NULL,
+                 'options' => 
+                array (
+                  0 => 
+                  array (
+                    'value' => 4,
+                    'key' => 'basketball',
+                  ),
+                  1 => 
+                  array (
+                    'value' => 13,
+                    'key' => 'blue-lover',
+                  ),
+                  2 => 
+                  array (
+                    'value' => 12,
+                    'key' => 'female-interested',
+                  ),
+                  3 => 
+                  array (
+                    'value' => 5,
+                    'key' => 'football',
+                  ),
+                  4 => 
+                  array (
+                    'value' => 6,
+                    'key' => 'handball',
+                  ),
+                  5 => 
+                  array (
+                    'value' => 11,
+                    'key' => 'male-interested',
+                  ),
+                  6 => 
+                  array (
+                    'value' => 16,
+                    'key' => 'new-customer',
+                  ),
+                  7 => 
+                  array (
+                    'value' => 7,
+                    'key' => 'outdoor',
+                  ),
+                  8 => 
+                  array (
+                    'value' => 17,
+                    'key' => 'regular-customer',
+                  ),
+                  9 => 
+                  array (
+                    'value' => 8,
+                    'key' => 'running',
+                  ),
+                  10 => 
+                  array (
+                    'value' => 10,
+                    'key' => 'technical-guy',
+                  ),
+                  11 => 
+                  array (
+                    'value' => 18,
+                    'key' => 'vip-customer',
+                  ),
+                  12 => 
+                  array (
+                    'value' => 9,
+                    'key' => 'volleyball',
+                  ),
+                ),
+                 'width' => '',
                  'defaultValue' => NULL,
                  'optionsProviderClass' => NULL,
                  'optionsProviderData' => NULL,
@@ -248,12 +318,12 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'phpdocType' => 'string',
                  'name' => 'targetGroup',
                  'title' => 'Linked TargetGroup',
-                 'tooltip' => NULL,
-                 'mandatory' => NULL,
+                 'tooltip' => '',
+                 'mandatory' => false,
                  'noteditable' => true,
                  'index' => NULL,
-                 'locked' => NULL,
-                 'style' => NULL,
+                 'locked' => false,
+                 'style' => '',
                  'permissions' => NULL,
                  'datatype' => 'data',
                  'relationType' => false,

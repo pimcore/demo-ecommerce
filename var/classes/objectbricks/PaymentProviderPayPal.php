@@ -1,8 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2017-06-23T13:19:41+02:00
-* IP: 192.168.11.87
+* Generated at: 2018-06-07T15:45:45+02:00
 
 
 Fields Summary: 
@@ -67,6 +66,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'auth_token',
              'title' => 'Token',
              'tooltip' => '',
@@ -91,6 +91,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'auth_PayerID',
              'title' => 'PayerID',
              'tooltip' => '',

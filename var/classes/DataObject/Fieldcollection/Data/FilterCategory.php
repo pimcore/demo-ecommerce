@@ -1,11 +1,17 @@
-<?php
+<?php 
 
-/** Generated at 2016-04-07T20:00:52+02:00 */
+/** 
+* Generated at: 2018-06-07T15:45:51+02:00
 
-/**
-* IP:          10.242.2.6
-*/
 
+Fields Summary: 
+ - label [input]
+ - preSelect [href]
+ - rootCategory [href]
+ - includeParentCategories [checkbox]
+ - scriptPath [input]
+ - availableCategories [objects]
+*/ 
 
 namespace Pimcore\Model\DataObject\Fieldcollection\Data;
 
@@ -28,6 +34,9 @@ public $availableCategories;
 */
 public function getLabel () {
 	$data = $this->label;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -49,6 +58,9 @@ public function getPreSelect () {
 	$container = $this;
 	$fd = $this->getDefinition()->getFieldDefinition("preSelect");
 	$data = $fd->preGetData($container);
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -70,6 +82,9 @@ public function getRootCategory () {
 	$container = $this;
 	$fd = $this->getDefinition()->getFieldDefinition("rootCategory");
 	$data = $fd->preGetData($container);
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -89,6 +104,9 @@ public function setRootCategory ($rootCategory) {
 */
 public function getIncludeParentCategories () {
 	$data = $this->includeParentCategories;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -108,6 +126,9 @@ public function setIncludeParentCategories ($includeParentCategories) {
 */
 public function getScriptPath () {
 	$data = $this->scriptPath;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -129,6 +150,9 @@ public function getAvailableCategories () {
 	$container = $this;
 	$fd = $this->getDefinition()->getFieldDefinition("availableCategories");
 	$data = $fd->preGetData($container);
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 

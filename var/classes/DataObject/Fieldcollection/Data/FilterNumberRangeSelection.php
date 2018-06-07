@@ -1,11 +1,10 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-07-17T15:06:00+02:00
-* IP: 192.168.11.5
+/** 
+* Generated at: 2018-06-07T15:45:51+02:00
 
 
-Fields Summary:
+Fields Summary: 
  - label [input]
  - field [indexFieldSelection]
  - ranges [structuredTable]
@@ -13,7 +12,7 @@ Fields Summary:
  - preSelectTo [numeric]
  - scriptPath [input]
  - unit [input]
-*/
+*/ 
 
 namespace Pimcore\Model\DataObject\Fieldcollection\Data;
 
@@ -37,6 +36,9 @@ public $unit;
 */
 public function getLabel () {
 	$data = $this->label;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -56,6 +58,9 @@ public function setLabel ($label) {
 */
 public function getField () {
 	$data = $this->field;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -75,6 +80,9 @@ public function setField ($field) {
 */
 public function getRanges () {
 	$data = $this->ranges;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -94,6 +102,9 @@ public function setRanges ($ranges) {
 */
 public function getPreSelectFrom () {
 	$data = $this->preSelectFrom;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -113,6 +124,9 @@ public function setPreSelectFrom ($preSelectFrom) {
 */
 public function getPreSelectTo () {
 	$data = $this->preSelectTo;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -132,6 +146,9 @@ public function setPreSelectTo ($preSelectTo) {
 */
 public function getScriptPath () {
 	$data = $this->scriptPath;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -151,6 +168,9 @@ public function setScriptPath ($scriptPath) {
 */
 public function getUnit () {
 	$data = $this->unit;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 

@@ -1,8 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2017-07-17T15:06:12+02:00
-* IP: 192.168.11.5
+* Generated at: 2018-06-07T15:45:51+02:00
 
 
 Fields Summary: 
@@ -26,7 +25,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -82,6 +81,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'label',
              'title' => 'Label',
              'tooltip' => '',
@@ -148,6 +148,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'scriptPath',
              'title' => 'Script Path',
              'tooltip' => '',
@@ -167,7 +168,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'dao' => NULL,
 ));

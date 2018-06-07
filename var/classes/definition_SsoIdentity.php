@@ -1,11 +1,9 @@
 <?php 
 
 /** 
-* Generated at: 2017-10-11T20:10:16+02:00
+* Generated at: 2018-06-07T15:45:45+02:00
 * Inheritance: no
 * Variants: no
-* Changed by: admin (10)
-* IP: 10.242.2.2
 
 
 Fields Summary: 
@@ -20,7 +18,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'SsoIdentity',
    'description' => NULL,
    'creationDate' => 0,
-   'modificationDate' => 1507745416,
+   'modificationDate' => 1528379145,
    'userOwner' => 0,
    'userModification' => 10,
    'parentClass' => '\\CustomerManagementFrameworkBundle\\Model\\AbstractSsoIdentity',
@@ -143,8 +141,8 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'phpdocType' => '\\Pimcore\\Model\\DataObject\\Objectbrick',
              'allowedTypes' => 
             array (
-              0 => 'OAuth2Token',
-              1 => 'OAuth1Token',
+              0 => 'OAuth1Token',
+              1 => 'OAuth2Token',
             ),
              'maxItems' => '',
              'name' => 'credentials',

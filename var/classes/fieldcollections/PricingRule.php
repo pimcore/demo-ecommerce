@@ -1,5 +1,14 @@
 <?php 
 
+/** 
+* Generated at: 2018-06-07T15:45:51+02:00
+
+
+Fields Summary: 
+ - ruleId [numeric]
+ - name [input]
+*/ 
+
 
 return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
    'key' => 'PricingRule',
@@ -15,7 +24,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -52,6 +61,8 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'unique' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'ruleId',
              'title' => 'Rule Id',
@@ -77,6 +88,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'name',
              'title' => 'Name',
              'tooltip' => '',
@@ -96,7 +108,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'dao' => NULL,
 ));

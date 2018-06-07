@@ -1,11 +1,10 @@
 <?php 
 
 /** 
-* Generated at: 2017-12-20T15:28:45+01:00
+* Generated at: 2018-06-07T15:45:51+02:00
 * Inheritance: yes
 * Variants: yes
-* Changed by: admin (13)
-* IP: 192.168.9.18
+* Changed by: admin (16)
 
 
 Fields Summary: 
@@ -118,6 +117,9 @@ public function getLocalizedfields () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("localizedfields")->isEmpty($data)) {
 		return $this->getValueFromParent("localizedfields");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -130,6 +132,9 @@ public function getName ($language = null) {
 	$preValue = $this->preGetValue("name"); 
 	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	 return $data;
 }
@@ -144,6 +149,9 @@ public function getSeoname ($language = null) {
 	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -156,6 +164,9 @@ public function getColorName ($language = null) {
 	$preValue = $this->preGetValue("colorName"); 
 	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	 return $data;
 }
@@ -170,6 +181,9 @@ public function getPrice ($language = null) {
 	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -182,6 +196,9 @@ public function getPriceOld ($language = null) {
 	$preValue = $this->preGetValue("priceOld"); 
 	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	 return $data;
 }
@@ -196,6 +213,9 @@ public function getFromPrice ($language = null) {
 	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -208,6 +228,9 @@ public function getDescription ($language = null) {
 	$preValue = $this->preGetValue("description"); 
 	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	 return $data;
 }
@@ -222,6 +245,9 @@ public function getMaterial ($language = null) {
 	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -234,6 +260,9 @@ public function getDownloads ($language = null) {
 	$preValue = $this->preGetValue("downloads"); 
 	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	 return $data;
 }
@@ -248,6 +277,9 @@ public function getVideos ($language = null) {
 	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -261,6 +293,9 @@ public function getRotation ($language = null) {
 	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -273,6 +308,9 @@ public function getYoutubeVideo ($language = null) {
 	$preValue = $this->preGetValue("youtubeVideo"); 
 	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	 return $data;
 }
@@ -452,6 +490,9 @@ public function getArtno () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("artno")->isEmpty($data)) {
 		return $this->getValueFromParent("artno");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -477,6 +518,9 @@ public function getEan () {
 	$data = $this->ean;
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("ean")->isEmpty($data)) {
 		return $this->getValueFromParent("ean");
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	return $data;
 }
@@ -504,6 +548,9 @@ public function getSize () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("size")->isEmpty($data)) {
 		return $this->getValueFromParent("size");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -529,6 +576,9 @@ public function getBrand () {
 	$data = $this->getClass()->getFieldDefinition("brand")->preGetData($this);
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("brand")->isEmpty($data)) {
 		return $this->getValueFromParent("brand");
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	return $data;
 }
@@ -556,6 +606,9 @@ public function getGender () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("gender")->isEmpty($data)) {
 		return $this->getValueFromParent("gender");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -581,6 +634,9 @@ public function getCategories () {
 	$data = $this->getClass()->getFieldDefinition("categories")->preGetData($this);
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("categories")->isEmpty($data)) {
 		return $this->getValueFromParent("categories");
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	return $data;
 }
@@ -608,6 +664,9 @@ public function getFeatures () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("features")->isEmpty($data)) {
 		return $this->getValueFromParent("features");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -633,6 +692,9 @@ public function getTechnologies () {
 	$data = $this->getClass()->getFieldDefinition("technologies")->preGetData($this);
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("technologies")->isEmpty($data)) {
 		return $this->getValueFromParent("technologies");
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	return $data;
 }
@@ -660,6 +722,9 @@ public function getAttributes () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("attributes")->isEmpty($data)) {
 		return $this->getValueFromParent("attributes");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -685,6 +750,9 @@ public function getCollection () {
 	$data = $this->getClass()->getFieldDefinition("collection")->preGetData($this);
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("collection")->isEmpty($data)) {
 		return $this->getValueFromParent("collection");
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	return $data;
 }
@@ -712,6 +780,9 @@ public function getColor () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("color")->isEmpty($data)) {
 		return $this->getValueFromParent("color");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -737,6 +808,9 @@ public function getMaterialComposition () {
 	$data = $this->getClass()->getFieldDefinition("materialComposition")->preGetData($this);
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("materialComposition")->isEmpty($data)) {
 		return $this->getValueFromParent("materialComposition");
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	return $data;
 }
@@ -764,6 +838,9 @@ public function getSecondaryMaterialComposition () {
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("secondaryMaterialComposition")->isEmpty($data)) {
 		return $this->getValueFromParent("secondaryMaterialComposition");
 	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -789,6 +866,9 @@ public function getImagesInheritance () {
 	$data = $this->imagesInheritance;
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("imagesInheritance")->isEmpty($data)) {
 		return $this->getValueFromParent("imagesInheritance");
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	return $data;
 }
@@ -863,6 +943,9 @@ public function getRelatedProducts () {
 	$data = $this->getClass()->getFieldDefinition("relatedProducts")->preGetData($this);
 	if(\Pimcore\Model\DataObject::doGetInheritedValues() && $this->getClass()->getFieldDefinition("relatedProducts")->isEmpty($data)) {
 		return $this->getValueFromParent("relatedProducts");
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
 	}
 	return $data;
 }

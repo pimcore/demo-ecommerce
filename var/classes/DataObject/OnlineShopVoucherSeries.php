@@ -1,22 +1,23 @@
-<?php
+<?php 
 
-/** Generated at 2016-05-03T20:45:22+02:00 */
-
-/**
+/** 
+* Generated at: 2018-06-07T15:45:44+02:00
 * Inheritance: no
-* Variants   : no
-* Changed by : admin (2)
-* IP:          10.242.2.6
-*/
+* Variants: no
 
+
+Fields Summary: 
+- name [input]
+- tokenSettings [fieldcollections]
+*/ 
 
 namespace Pimcore\Model\DataObject;
 
 
 
 /**
-* @method static \Pimcore\Model\DataObject\OnlineShopVoucherSeries\Listing getByName ($value, $limit = 0)
-* @method static \Pimcore\Model\DataObject\OnlineShopVoucherSeries\Listing getByTokenSettings ($value, $limit = 0)
+* @method static \Pimcore\Model\DataObject\OnlineShopVoucherSeries\Listing getByName ($value, $limit = 0) 
+* @method static \Pimcore\Model\DataObject\OnlineShopVoucherSeries\Listing getByTokenSettings ($value, $limit = 0) 
 */
 
 class OnlineShopVoucherSeries extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractVoucherSeries {
@@ -42,11 +43,14 @@ public static function create($values = array()) {
 * @return string
 */
 public function getName () {
-	$preValue = $this->preGetValue("name");
-	if($preValue !== null && !\Pimcore::inAdmin()) {
+	$preValue = $this->preGetValue("name"); 
+	if($preValue !== null && !\Pimcore::inAdmin()) { 
 		return $preValue;
 	}
 	$data = $this->name;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -64,7 +68,7 @@ public function setName ($name) {
 * @return \Pimcore\Model\DataObject\Fieldcollection
 */
 public function getTokenSettings () {
-	$preValue = $this->preGetValue("tokenSettings");
+	$preValue = $this->preGetValue("tokenSettings"); 
 	if($preValue !== null && !\Pimcore::inAdmin()) { return $preValue;}
 	$data = $this->getClass()->getFieldDefinition("tokenSettings")->preGetData($this);
 	 return $data;
@@ -83,7 +87,8 @@ public function setTokenSettings ($tokenSettings) {
 protected static $_relationFields = array (
 );
 
-public $lazyLoadedFields = NULL;
+public $lazyLoadedFields = array (
+);
 
 }
 

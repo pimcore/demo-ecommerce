@@ -1,16 +1,15 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-07-17T15:05:47+02:00
-* IP: 192.168.11.5
+/** 
+* Generated at: 2018-06-07T15:45:51+02:00
 
 
-Fields Summary:
+Fields Summary: 
  - label [input]
  - field [indexFieldSelection]
  - scriptPath [input]
  - UseAndCondition [checkbox]
-*/
+*/ 
 
 namespace Pimcore\Model\DataObject\Fieldcollection\Data;
 
@@ -31,6 +30,9 @@ public $UseAndCondition;
 */
 public function getLabel () {
 	$data = $this->label;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -50,6 +52,9 @@ public function setLabel ($label) {
 */
 public function getField () {
 	$data = $this->field;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -69,6 +74,9 @@ public function setField ($field) {
 */
 public function getScriptPath () {
 	$data = $this->scriptPath;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 
@@ -88,6 +96,9 @@ public function setScriptPath ($scriptPath) {
 */
 public function getUseAndCondition () {
 	$data = $this->UseAndCondition;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	 return $data;
 }
 

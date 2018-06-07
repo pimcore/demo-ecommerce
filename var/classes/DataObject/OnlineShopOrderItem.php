@@ -1,11 +1,9 @@
 <?php 
 
 /** 
-* Generated at: 2017-10-19T11:20:03+02:00
+* Generated at: 2018-06-07T15:45:43+02:00
 * Inheritance: no
 * Variants: no
-* Changed by: admin (10)
-* IP: 192.168.11.5
 
 
 Fields Summary: 
@@ -80,6 +78,9 @@ public function getOrderState () {
 		return $preValue;
 	}
 	$data = $this->orderState;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -103,6 +104,9 @@ public function getProduct () {
 		return $preValue;
 	}
 	$data = $this->getClass()->getFieldDefinition("product")->preGetData($this);
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -126,6 +130,9 @@ public function getProductNumber () {
 		return $preValue;
 	}
 	$data = $this->productNumber;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -149,6 +156,9 @@ public function getProductName () {
 		return $preValue;
 	}
 	$data = $this->productName;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -172,6 +182,9 @@ public function getAmount () {
 		return $preValue;
 	}
 	$data = $this->amount;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -195,6 +208,9 @@ public function getTotalNetPrice () {
 		return $preValue;
 	}
 	$data = $this->totalNetPrice;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -218,6 +234,9 @@ public function getTotalPrice () {
 		return $preValue;
 	}
 	$data = $this->totalPrice;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -241,6 +260,9 @@ public function getTaxInfo () {
 		return $preValue;
 	}
 	$data = $this->taxInfo;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -284,6 +306,9 @@ public function getComment () {
 		return $preValue;
 	}
 	$data = $this->comment;
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 
@@ -307,6 +332,9 @@ public function getSubItems () {
 		return $preValue;
 	}
 	$data = $this->getClass()->getFieldDefinition("subItems")->preGetData($this);
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
 	return $data;
 }
 

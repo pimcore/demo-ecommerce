@@ -1,8 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2017-06-23T13:19:42+02:00
-* IP: 192.168.11.87
+* Generated at: 2018-06-07T15:45:45+02:00
 
 
 Fields Summary: 
@@ -10,6 +9,14 @@ Fields Summary:
  - auth_language [input]
  - auth_amount [input]
  - auth_currency [input]
+ - auth_paymentType [input]
+ - paymentFinished [datetime]
+ - sourceOrder [href]
+ - auth_anonymousPan [input]
+ - auth_maskedPan [input]
+ - auth_expiry [input]
+ - auth_bankAccountOwner [input]
+ - auth_bankAccountIBAN [input]
 */ 
 
 
@@ -69,6 +76,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'auth_orderNumber',
              'title' => 'OrderNumber',
              'tooltip' => '',
@@ -93,6 +101,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => false,
              'name' => 'auth_language',
              'title' => 'Language',
              'tooltip' => '',
@@ -117,6 +126,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'auth_amount',
              'title' => 'Amount',
              'tooltip' => '',
@@ -141,6 +151,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => false,
              'name' => 'auth_currency',
              'title' => 'Currency',
              'tooltip' => '',
@@ -155,6 +166,285 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'invisible' => false,
              'visibleGridView' => false,
              'visibleSearch' => false,
+          )),
+          4 => 
+          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+             'fieldtype' => 'input',
+             'width' => 400,
+             'queryColumnType' => 'varchar',
+             'columnType' => 'varchar',
+             'columnLength' => 255,
+             'phpdocType' => 'string',
+             'regex' => '',
+             'unique' => false,
+             'name' => 'auth_paymentType',
+             'title' => 'Method',
+             'tooltip' => 'auth_paymentType',
+             'mandatory' => false,
+             'noteditable' => true,
+             'index' => true,
+             'locked' => false,
+             'style' => '',
+             'permissions' => NULL,
+             'datatype' => 'data',
+             'relationType' => false,
+             'invisible' => false,
+             'visibleGridView' => false,
+             'visibleSearch' => false,
+          )),
+          5 => 
+          Pimcore\Model\DataObject\ClassDefinition\Data\Datetime::__set_state(array(
+             'fieldtype' => 'datetime',
+             'queryColumnType' => 'bigint(20)',
+             'columnType' => 'bigint(20)',
+             'phpdocType' => '\\Carbon\\Carbon',
+             'defaultValue' => NULL,
+             'useCurrentDate' => false,
+             'name' => 'paymentFinished',
+             'title' => 'Date and Time',
+             'tooltip' => 'paymentFinished',
+             'mandatory' => false,
+             'noteditable' => true,
+             'index' => false,
+             'locked' => false,
+             'style' => '',
+             'permissions' => NULL,
+             'datatype' => 'data',
+             'relationType' => false,
+             'invisible' => false,
+             'visibleGridView' => false,
+             'visibleSearch' => false,
+          )),
+          6 => 
+          Pimcore\Model\DataObject\ClassDefinition\Data\Href::__set_state(array(
+             'fieldtype' => 'href',
+             'width' => 500,
+             'assetUploadPath' => '',
+             'relationType' => true,
+             'queryColumnType' => 
+            array (
+              'id' => 'int(11)',
+              'type' => 'enum(\'document\',\'asset\',\'object\')',
+            ),
+             'phpdocType' => '\\Pimcore\\Model\\Document\\Page | \\Pimcore\\Model\\Document\\Snippet | \\Pimcore\\Model\\Document | \\Pimcore\\Model\\Asset | \\Pimcore\\Model\\DataObject\\AbstractObject',
+             'objectsAllowed' => true,
+             'assetsAllowed' => false,
+             'assetTypes' => 
+            array (
+            ),
+             'documentsAllowed' => false,
+             'documentTypes' => 
+            array (
+            ),
+             'lazyLoading' => false,
+             'classes' => 
+            array (
+              0 => 
+              array (
+                'classes' => 'OnlineShopOrder',
+              ),
+            ),
+             'pathFormatterClass' => '',
+             'name' => 'sourceOrder',
+             'title' => 'Source Order',
+             'tooltip' => 'sourceOrder',
+             'mandatory' => false,
+             'noteditable' => true,
+             'index' => false,
+             'locked' => false,
+             'style' => '',
+             'permissions' => NULL,
+             'datatype' => 'data',
+             'columnType' => NULL,
+             'invisible' => false,
+             'visibleGridView' => false,
+             'visibleSearch' => false,
+          )),
+          7 => 
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Tabpanel::__set_state(array(
+             'fieldtype' => 'tabpanel',
+             'name' => 'payment-types',
+             'type' => NULL,
+             'region' => NULL,
+             'title' => '',
+             'width' => NULL,
+             'height' => NULL,
+             'collapsible' => false,
+             'collapsed' => false,
+             'bodyStyle' => '',
+             'datatype' => 'layout',
+             'permissions' => NULL,
+             'childs' => 
+            array (
+              0 => 
+              Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+                 'fieldtype' => 'panel',
+                 'labelWidth' => 150,
+                 'layout' => NULL,
+                 'name' => 'ccard',
+                 'type' => NULL,
+                 'region' => NULL,
+                 'title' => 'Credit-Card',
+                 'width' => NULL,
+                 'height' => NULL,
+                 'collapsible' => false,
+                 'collapsed' => false,
+                 'bodyStyle' => '',
+                 'datatype' => 'layout',
+                 'permissions' => NULL,
+                 'childs' => 
+                array (
+                  0 => 
+                  Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                     'fieldtype' => 'input',
+                     'width' => NULL,
+                     'queryColumnType' => 'varchar',
+                     'columnType' => 'varchar',
+                     'columnLength' => 190,
+                     'phpdocType' => 'string',
+                     'regex' => '',
+                     'unique' => false,
+                     'name' => 'auth_anonymousPan',
+                     'title' => 'Anonymous Pan',
+                     'tooltip' => 'auth_anonymousPan',
+                     'mandatory' => false,
+                     'noteditable' => true,
+                     'index' => false,
+                     'locked' => false,
+                     'style' => '',
+                     'permissions' => NULL,
+                     'datatype' => 'data',
+                     'relationType' => false,
+                     'invisible' => false,
+                     'visibleGridView' => false,
+                     'visibleSearch' => false,
+                  )),
+                  1 => 
+                  Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                     'fieldtype' => 'input',
+                     'width' => NULL,
+                     'queryColumnType' => 'varchar',
+                     'columnType' => 'varchar',
+                     'columnLength' => 190,
+                     'phpdocType' => 'string',
+                     'regex' => '',
+                     'unique' => false,
+                     'name' => 'auth_maskedPan',
+                     'title' => 'Masked Pan',
+                     'tooltip' => 'auth_maskedPan',
+                     'mandatory' => false,
+                     'noteditable' => true,
+                     'index' => false,
+                     'locked' => false,
+                     'style' => '',
+                     'permissions' => NULL,
+                     'datatype' => 'data',
+                     'relationType' => false,
+                     'invisible' => false,
+                     'visibleGridView' => false,
+                     'visibleSearch' => false,
+                  )),
+                  2 => 
+                  Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                     'fieldtype' => 'input',
+                     'width' => NULL,
+                     'queryColumnType' => 'varchar',
+                     'columnType' => 'varchar',
+                     'columnLength' => 190,
+                     'phpdocType' => 'string',
+                     'regex' => '',
+                     'unique' => false,
+                     'name' => 'auth_expiry',
+                     'title' => 'Expiry',
+                     'tooltip' => 'auth_expiry',
+                     'mandatory' => false,
+                     'noteditable' => true,
+                     'index' => false,
+                     'locked' => false,
+                     'style' => '',
+                     'permissions' => NULL,
+                     'datatype' => 'data',
+                     'relationType' => false,
+                     'invisible' => false,
+                     'visibleGridView' => false,
+                     'visibleSearch' => false,
+                  )),
+                ),
+                 'locked' => false,
+              )),
+              1 => 
+              Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+                 'fieldtype' => 'panel',
+                 'labelWidth' => 150,
+                 'layout' => NULL,
+                 'name' => 'sepa',
+                 'type' => NULL,
+                 'region' => NULL,
+                 'title' => 'SEPA',
+                 'width' => NULL,
+                 'height' => NULL,
+                 'collapsible' => false,
+                 'collapsed' => false,
+                 'bodyStyle' => '',
+                 'datatype' => 'layout',
+                 'permissions' => NULL,
+                 'childs' => 
+                array (
+                  0 => 
+                  Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                     'fieldtype' => 'input',
+                     'width' => NULL,
+                     'queryColumnType' => 'varchar',
+                     'columnType' => 'varchar',
+                     'columnLength' => 190,
+                     'phpdocType' => 'string',
+                     'regex' => '',
+                     'unique' => false,
+                     'name' => 'auth_bankAccountOwner',
+                     'title' => 'Bank Account Owner',
+                     'tooltip' => 'auth_bankAccountOwner',
+                     'mandatory' => false,
+                     'noteditable' => true,
+                     'index' => false,
+                     'locked' => false,
+                     'style' => '',
+                     'permissions' => NULL,
+                     'datatype' => 'data',
+                     'relationType' => false,
+                     'invisible' => false,
+                     'visibleGridView' => false,
+                     'visibleSearch' => false,
+                  )),
+                  1 => 
+                  Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                     'fieldtype' => 'input',
+                     'width' => NULL,
+                     'queryColumnType' => 'varchar',
+                     'columnType' => 'varchar',
+                     'columnLength' => 190,
+                     'phpdocType' => 'string',
+                     'regex' => '',
+                     'unique' => false,
+                     'name' => 'auth_bankAccountIBAN',
+                     'title' => 'IBAN',
+                     'tooltip' => 'auth_bankAccountIBAN',
+                     'mandatory' => false,
+                     'noteditable' => true,
+                     'index' => false,
+                     'locked' => false,
+                     'style' => '',
+                     'permissions' => NULL,
+                     'datatype' => 'data',
+                     'relationType' => false,
+                     'invisible' => false,
+                     'visibleGridView' => false,
+                     'visibleSearch' => false,
+                  )),
+                ),
+                 'locked' => false,
+              )),
+            ),
+             'locked' => false,
           )),
         ),
          'locked' => false,

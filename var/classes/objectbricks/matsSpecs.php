@@ -1,8 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2017-06-23T13:19:42+02:00
-* IP: 192.168.11.87
+* Generated at: 2018-06-07T15:45:48+02:00
 
 
 Fields Summary: 
@@ -28,7 +27,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
     ),
   ),
    'key' => 'matsSpecs',
-   'parentClass' => NULL,
+   'parentClass' => '',
    'layoutDefinitions' => 
   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
@@ -77,6 +76,8 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'unique' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'length',
              'title' => 'Length',
@@ -105,6 +106,8 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'unique' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'width',
              'title' => 'Width',
@@ -133,6 +136,8 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'unique' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'height',
              'title' => 'Height',
@@ -158,6 +163,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'materialTop',
              'title' => 'Material Top',
              'tooltip' => '',
@@ -182,6 +188,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'materialBottom',
              'title' => 'Material Bottom',
              'tooltip' => '',
@@ -209,6 +216,8 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'unique' => NULL,
+             'decimalSize' => NULL,
              'decimalPrecision' => NULL,
              'name' => 'weight',
              'title' => 'Weight',

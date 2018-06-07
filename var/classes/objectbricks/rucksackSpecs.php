@@ -1,8 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2017-06-23T13:19:43+02:00
-* IP: 192.168.11.87
+* Generated at: 2018-06-07T15:45:49+02:00
 
 
 Fields Summary: 
@@ -70,6 +69,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'volume',
              'title' => '<img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/volume.png"/> Volume',
              'tooltip' => '',
@@ -94,6 +94,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'weight',
              'title' => '<img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/weight.png"/> Weight',
              'tooltip' => '',
@@ -118,6 +119,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'load',
              'title' => '<img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/load.png"/> Load',
              'tooltip' => '',
@@ -142,6 +144,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'material',
              'title' => '<img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/material.png"/> Material',
              'tooltip' => '',
@@ -166,6 +169,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'expandTo',
              'title' => '<img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/expand.png"/> Expand',
              'tooltip' => '',

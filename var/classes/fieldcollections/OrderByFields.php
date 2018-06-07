@@ -1,8 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2017-03-15T12:20:58+01:00
-* IP: 192.168.11.5
+* Generated at: 2018-06-07T15:45:51+02:00
 
 
 Fields Summary: 
@@ -25,7 +24,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -156,8 +155,11 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
             ),
              'width' => 300,
              'defaultValue' => NULL,
+             'optionsProviderClass' => NULL,
+             'optionsProviderData' => NULL,
              'queryColumnType' => 'varchar(255)',
              'columnType' => 'varchar(255)',
+             'columnLength' => 190,
              'phpdocType' => 'string',
              'name' => 'field',
              'title' => 'Field',
@@ -192,8 +194,11 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
             ),
              'width' => 500,
              'defaultValue' => '',
+             'optionsProviderClass' => NULL,
+             'optionsProviderData' => NULL,
              'queryColumnType' => 'varchar(255)',
              'columnType' => 'varchar(255)',
+             'columnLength' => 190,
              'phpdocType' => 'string',
              'name' => 'direction',
              'title' => 'Direction',
@@ -214,7 +219,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'dao' => NULL,
 ));

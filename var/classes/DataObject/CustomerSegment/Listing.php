@@ -6,6 +6,7 @@ use Pimcore\Model\DataObject;
 
 /**
  * @method DataObject\CustomerSegment current()
+ * @method DataObject\CustomerSegment[] load()
  */
 
 class Listing extends DataObject\Listing\Concrete {

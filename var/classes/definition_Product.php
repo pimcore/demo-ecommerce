@@ -1,11 +1,10 @@
 <?php 
 
 /** 
-* Generated at: 2017-12-20T15:28:45+01:00
+* Generated at: 2018-06-07T15:45:51+02:00
 * Inheritance: yes
 * Variants: yes
-* Changed by: admin (13)
-* IP: 192.168.9.18
+* Changed by: admin (16)
 
 
 Fields Summary: 
@@ -49,9 +48,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'Product',
    'description' => '',
    'creationDate' => 1366282442,
-   'modificationDate' => 1513780125,
+   'modificationDate' => 1528379151,
    'userOwner' => 1,
-   'userModification' => 13,
+   'userModification' => 16,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractProduct',
    'useTraits' => '',
    'allowInherit' => true,
@@ -68,7 +67,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -1369,22 +1368,22 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                 array (
                   0 => 'apparel',
                   1 => 'approvals',
-                  2 => 'matsSpecs',
-                  3 => 'shoe',
-                  4 => 'specsSleepingbags',
-                  5 => 'tentGroundsheet',
-                  6 => 'weight',
-                  7 => 'featuresBenefitsMats',
-                  8 => 'featuresBenefitsShoes',
-                  9 => 'featuresBenefitsSleepingbags',
-                  10 => 'featuresBenefitsTents',
-                  11 => 'featuresHeadlamps',
-                  12 => 'outdoor',
-                  13 => 'rucksackSpecs',
-                  14 => 'shoeDetails',
-                  15 => 'snowsport',
+                  2 => 'featuresBenefitsBackpacks',
+                  3 => 'featuresBenefitsMats',
+                  4 => 'featuresBenefitsShoes',
+                  5 => 'featuresBenefitsSleepingbags',
+                  6 => 'featuresBenefitsTents',
+                  7 => 'featuresHeadlamps',
+                  8 => 'matsSpecs',
+                  9 => 'outdoor',
+                  10 => 'rucksackSpecs',
+                  11 => 'shoe',
+                  12 => 'shoeDetails',
+                  13 => 'snowsport',
+                  14 => 'specsSleepingbags',
+                  15 => 'tentGroundsheet',
                   16 => 'tentSpecifications',
-                  17 => 'featuresBenefitsBackpacks',
+                  17 => 'weight',
                 ),
                  'maxItems' => '',
                  'name' => 'specificAttributes',
@@ -1615,7 +1614,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'icon' => '',
    'previewUrl' => '',

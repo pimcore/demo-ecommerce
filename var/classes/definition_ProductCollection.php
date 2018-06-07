@@ -1,13 +1,26 @@
-<?php
+<?php 
 
-/** Generated at 2016-08-08T16:05:50+02:00 */
+/** 
+* Generated at: 2018-05-24T08:17:53+02:00
+* Inheritance: no
+* Variants: no
+* IP: 192.168.9.18
+
+
+Fields Summary: 
+- localizedfields [localizedfields]
+-- name [input]
+-- description [wysiwyg]
+-- icon [image]
+-- usage [select]
+*/ 
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'ProductCollection',
    'description' => '',
    'creationDate' => 1366282446,
-   'modificationDate' => 1462301098,
+   'modificationDate' => 1527142673,
    'userOwner' => 1,
    'userModification' => 2,
    'parentClass' => '',
@@ -15,7 +28,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'allowInherit' => false,
    'allowVariants' => false,
    'showVariants' => false,
-   'layoutDefinitions' =>
+   'layoutDefinitions' => 
   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'labelWidth' => 100,
@@ -26,14 +39,14 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
      'permissions' => NULL,
-     'childs' =>
+     'childs' => 
     array (
-      0 =>
+      0 => 
       Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'fieldtype' => 'panel',
          'labelWidth' => 100,
@@ -49,15 +62,15 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'bodyStyle' => NULL,
          'datatype' => 'layout',
          'permissions' => NULL,
-         'childs' =>
+         'childs' => 
         array (
-          0 =>
+          0 => 
           Pimcore\Model\DataObject\ClassDefinition\Data\Localizedfields::__set_state(array(
              'fieldtype' => 'localizedfields',
              'phpdocType' => '\\Pimcore\\Model\\DataObject\\Localizedfield',
-             'childs' =>
+             'childs' => 
             array (
-              0 =>
+              0 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'fieldtype' => 'input',
                  'width' => NULL,
@@ -66,6 +79,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'columnLength' => 255,
                  'phpdocType' => 'string',
                  'regex' => '',
+                 'unique' => NULL,
                  'name' => 'name',
                  'title' => 'Name',
                  'tooltip' => '',
@@ -81,7 +95,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'visibleGridView' => true,
                  'visibleSearch' => true,
               )),
-              1 =>
+              1 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Wysiwyg::__set_state(array(
                  'fieldtype' => 'wysiwyg',
                  'width' => 450,
@@ -105,7 +119,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'visibleGridView' => false,
                  'visibleSearch' => false,
               )),
-              2 =>
+              2 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Image::__set_state(array(
                  'fieldtype' => 'image',
                  'width' => '',
@@ -129,17 +143,17 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'visibleGridView' => false,
                  'visibleSearch' => false,
               )),
-              3 =>
+              3 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\Select::__set_state(array(
                  'fieldtype' => 'select',
-                 'options' =>
+                 'options' => 
                 array (
-                  0 =>
+                  0 => 
                   array (
                     'key' => 'Type Collection',
                     'value' => 'type',
                   ),
-                  1 =>
+                  1 => 
                   array (
                     'key' => 'Season Collection',
                     'value' => 'season',
@@ -147,8 +161,11 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                 ),
                  'width' => 300,
                  'defaultValue' => NULL,
+                 'optionsProviderClass' => NULL,
+                 'optionsProviderData' => NULL,
                  'queryColumnType' => 'varchar(255)',
                  'columnType' => 'varchar(255)',
+                 'columnLength' => 190,
                  'phpdocType' => 'string',
                  'name' => 'usage',
                  'title' => 'Type (usage)',
@@ -174,10 +191,10 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'height' => '',
              'maxTabs' => NULL,
              'labelWidth' => NULL,
-             'referencedFields' =>
+             'hideLabelsWhenTabsReached' => NULL,
+             'referencedFields' => 
             array (
             ),
-             'fieldDefinitionsCache' => NULL,
              'tooltip' => '',
              'mandatory' => false,
              'noteditable' => false,
@@ -197,14 +214,16 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'icon' => '',
    'previewUrl' => '',
    'group' => NULL,
-   'propertyVisibility' =>
+   'showAppLoggerTab' => false,
+   'linkGeneratorReference' => NULL,
+   'propertyVisibility' => 
   array (
-    'grid' =>
+    'grid' => 
     array (
       'id' => true,
       'path' => true,
@@ -212,7 +231,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
       'modificationDate' => false,
       'creationDate' => false,
     ),
-    'search' =>
+    'search' => 
     array (
       'id' => true,
       'path' => true,

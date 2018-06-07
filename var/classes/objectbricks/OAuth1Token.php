@@ -1,8 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2017-10-11T20:10:16+02:00
-* IP: 10.242.2.2
+* Generated at: 2018-06-07T15:45:44+02:00
 
 
 Fields Summary: 
@@ -33,7 +32,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -108,7 +107,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'dao' => NULL,
 ));

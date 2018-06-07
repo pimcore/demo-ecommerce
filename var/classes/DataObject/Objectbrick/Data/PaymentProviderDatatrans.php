@@ -1,12 +1,13 @@
 <?php 
 
 /** 
-* Generated at: 2018-04-27T11:38:03+02:00
-* IP: 192.168.9.18
+* Generated at: 2018-06-07T15:45:45+02:00
 
 
 Fields Summary: 
  - auth_aliasCC [input]
+ - auth_maskedCC [input]
+ - auth_pmethod [input]
  - auth_expm [input]
  - auth_expy [input]
  - auth_reqtype [input]
@@ -14,6 +15,8 @@ Fields Summary:
  - auth_amount [input]
  - auth_currency [input]
  - auth_refno [input]
+ - paymentFinished [datetime]
+ - sourceOrder [href]
 */ 
 
 namespace Pimcore\Model\DataObject\Objectbrick\Data;
@@ -24,6 +27,8 @@ class PaymentProviderDatatrans extends DataObject\Objectbrick\Data\AbstractData 
 
 public $type = "PaymentProviderDatatrans";
 public $auth_aliasCC;
+public $auth_maskedCC;
+public $auth_pmethod;
 public $auth_expm;
 public $auth_expy;
 public $auth_reqtype;
@@ -31,6 +36,8 @@ public $auth_uppTransactionId;
 public $auth_amount;
 public $auth_currency;
 public $auth_refno;
+public $paymentFinished;
+public $sourceOrder;
 
 
 /**
@@ -55,6 +62,56 @@ public function getAuth_aliasCC () {
 */
 public function setAuth_aliasCC ($auth_aliasCC) {
 	$this->auth_aliasCC = $auth_aliasCC;
+	return $this;
+}
+
+/**
+* Set auth_maskedCC - maskedCC
+* @return string
+*/
+public function getAuth_maskedCC () {
+	$data = $this->auth_maskedCC;
+	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("auth_maskedCC")->isEmpty($data)) {
+		return $this->getValueFromParent("auth_maskedCC");
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
+	 return $data;
+}
+
+/**
+* Set auth_maskedCC - maskedCC
+* @param string $auth_maskedCC
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderDatatrans
+*/
+public function setAuth_maskedCC ($auth_maskedCC) {
+	$this->auth_maskedCC = $auth_maskedCC;
+	return $this;
+}
+
+/**
+* Set auth_pmethod - pmethod
+* @return string
+*/
+public function getAuth_pmethod () {
+	$data = $this->auth_pmethod;
+	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("auth_pmethod")->isEmpty($data)) {
+		return $this->getValueFromParent("auth_pmethod");
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
+	 return $data;
+}
+
+/**
+* Set auth_pmethod - pmethod
+* @param string $auth_pmethod
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderDatatrans
+*/
+public function setAuth_pmethod ($auth_pmethod) {
+	$this->auth_pmethod = $auth_pmethod;
 	return $this;
 }
 
@@ -230,6 +287,56 @@ public function getAuth_refno () {
 */
 public function setAuth_refno ($auth_refno) {
 	$this->auth_refno = $auth_refno;
+	return $this;
+}
+
+/**
+* Set paymentFinished - Date and Time
+* @return \Carbon\Carbon
+*/
+public function getPaymentFinished () {
+	$data = $this->paymentFinished;
+	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("paymentFinished")->isEmpty($data)) {
+		return $this->getValueFromParent("paymentFinished");
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
+	 return $data;
+}
+
+/**
+* Set paymentFinished - Date and Time
+* @param \Carbon\Carbon $paymentFinished
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderDatatrans
+*/
+public function setPaymentFinished ($paymentFinished) {
+	$this->paymentFinished = $paymentFinished;
+	return $this;
+}
+
+/**
+* Set sourceOrder - Source Order
+* @return \Pimcore\Model\DataObject\OnlineShopOrder
+*/
+public function getSourceOrder () {
+	$data = $this->getDefinition()->getFieldDefinition("sourceOrder")->preGetData($this);
+	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("sourceOrder")->isEmpty($data)) {
+		return $this->getValueFromParent("sourceOrder");
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
+	 return $data;
+}
+
+/**
+* Set sourceOrder - Source Order
+* @param \Pimcore\Model\DataObject\OnlineShopOrder $sourceOrder
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderDatatrans
+*/
+public function setSourceOrder ($sourceOrder) {
+	$this->sourceOrder = $this->getDefinition()->getFieldDefinition("sourceOrder")->preSetData($this, $sourceOrder);
 	return $this;
 }
 

@@ -6,8 +6,32 @@ class SpecificAttributes extends \Pimcore\Model\DataObject\Objectbrick {
 
 
 
-protected $brickGetters = array('apparel','approvals','featuresBenefitsBackpacks','featuresBenefitsMats','featuresBenefitsShoes','featuresBenefitsSleepingbags','featuresBenefitsTents','featuresHeadlamps','matsSpecs','outdoor','rucksackSpecs','shoe','shoeDetails','snowsport','specsSleepingbags','tentGroundsheet','tentSpecifications','weight');
+protected $brickGetters = array('weight','apparel','approvals','featuresBenefitsBackpacks','featuresBenefitsMats','featuresBenefitsShoes','featuresBenefitsSleepingbags','featuresBenefitsTents','featuresHeadlamps','matsSpecs','outdoor','rucksackSpecs','shoe','shoeDetails','snowsport','specsSleepingbags','tentGroundsheet','tentSpecifications');
 
+
+public $weight = null;
+
+/**
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\weight
+*/
+public function getWeight() { 
+	if(!$this->weight && \Pimcore\Model\DataObject\AbstractObject::doGetInheritedValues($this->getObject())) { 
+		$brick = $this->getObject()->getValueFromParent("specificAttributes");
+		if(!empty($brick)) {
+			return $this->getObject()->getValueFromParent("specificAttributes")->getWeight(); 
+		}
+	}
+   return $this->weight; 
+}
+
+/**
+* @param \Pimcore\Model\DataObject\Objectbrick\Data\weight $weight
+* @return \Pimcore\Model\DataObject\Product\SpecificAttributes
+*/
+public function setWeight ($weight) {
+	$this->weight = $weight;
+	return $this;
+}
 
 public $apparel = null;
 
@@ -26,11 +50,11 @@ public function getApparel() {
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\apparel $apparel
-* @return void
+* @return \Pimcore\Model\DataObject\Product\SpecificAttributes
 */
 public function setApparel ($apparel) {
 	$this->apparel = $apparel;
-	return $this;;
+	return $this;
 }
 
 public $approvals = null;
@@ -50,11 +74,11 @@ public function getApprovals() {
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\approvals $approvals
-* @return void
+* @return \Pimcore\Model\DataObject\Product\SpecificAttributes
 */
 public function setApprovals ($approvals) {
 	$this->approvals = $approvals;
-	return $this;;
+	return $this;
 }
 
 public $featuresBenefitsBackpacks = null;
@@ -74,11 +98,11 @@ public function getFeaturesBenefitsBackpacks() {
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\featuresBenefitsBackpacks $featuresBenefitsBackpacks
-* @return void
+* @return \Pimcore\Model\DataObject\Product\SpecificAttributes
 */
 public function setFeaturesBenefitsBackpacks ($featuresBenefitsBackpacks) {
 	$this->featuresBenefitsBackpacks = $featuresBenefitsBackpacks;
-	return $this;;
+	return $this;
 }
 
 public $featuresBenefitsMats = null;
@@ -98,11 +122,11 @@ public function getFeaturesBenefitsMats() {
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\featuresBenefitsMats $featuresBenefitsMats
-* @return void
+* @return \Pimcore\Model\DataObject\Product\SpecificAttributes
 */
 public function setFeaturesBenefitsMats ($featuresBenefitsMats) {
 	$this->featuresBenefitsMats = $featuresBenefitsMats;
-	return $this;;
+	return $this;
 }
 
 public $featuresBenefitsShoes = null;
@@ -122,11 +146,11 @@ public function getFeaturesBenefitsShoes() {
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\featuresBenefitsShoes $featuresBenefitsShoes
-* @return void
+* @return \Pimcore\Model\DataObject\Product\SpecificAttributes
 */
 public function setFeaturesBenefitsShoes ($featuresBenefitsShoes) {
 	$this->featuresBenefitsShoes = $featuresBenefitsShoes;
-	return $this;;
+	return $this;
 }
 
 public $featuresBenefitsSleepingbags = null;
@@ -146,11 +170,11 @@ public function getFeaturesBenefitsSleepingbags() {
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\featuresBenefitsSleepingbags $featuresBenefitsSleepingbags
-* @return void
+* @return \Pimcore\Model\DataObject\Product\SpecificAttributes
 */
 public function setFeaturesBenefitsSleepingbags ($featuresBenefitsSleepingbags) {
 	$this->featuresBenefitsSleepingbags = $featuresBenefitsSleepingbags;
-	return $this;;
+	return $this;
 }
 
 public $featuresBenefitsTents = null;
@@ -170,11 +194,11 @@ public function getFeaturesBenefitsTents() {
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\featuresBenefitsTents $featuresBenefitsTents
-* @return void
+* @return \Pimcore\Model\DataObject\Product\SpecificAttributes
 */
 public function setFeaturesBenefitsTents ($featuresBenefitsTents) {
 	$this->featuresBenefitsTents = $featuresBenefitsTents;
-	return $this;;
+	return $this;
 }
 
 public $featuresHeadlamps = null;
@@ -194,11 +218,11 @@ public function getFeaturesHeadlamps() {
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\featuresHeadlamps $featuresHeadlamps
-* @return void
+* @return \Pimcore\Model\DataObject\Product\SpecificAttributes
 */
 public function setFeaturesHeadlamps ($featuresHeadlamps) {
 	$this->featuresHeadlamps = $featuresHeadlamps;
-	return $this;;
+	return $this;
 }
 
 public $matsSpecs = null;
@@ -218,11 +242,11 @@ public function getMatsSpecs() {
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\matsSpecs $matsSpecs
-* @return void
+* @return \Pimcore\Model\DataObject\Product\SpecificAttributes
 */
 public function setMatsSpecs ($matsSpecs) {
 	$this->matsSpecs = $matsSpecs;
-	return $this;;
+	return $this;
 }
 
 public $outdoor = null;
@@ -242,11 +266,11 @@ public function getOutdoor() {
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\outdoor $outdoor
-* @return void
+* @return \Pimcore\Model\DataObject\Product\SpecificAttributes
 */
 public function setOutdoor ($outdoor) {
 	$this->outdoor = $outdoor;
-	return $this;;
+	return $this;
 }
 
 public $rucksackSpecs = null;
@@ -266,11 +290,11 @@ public function getRucksackSpecs() {
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\rucksackSpecs $rucksackSpecs
-* @return void
+* @return \Pimcore\Model\DataObject\Product\SpecificAttributes
 */
 public function setRucksackSpecs ($rucksackSpecs) {
 	$this->rucksackSpecs = $rucksackSpecs;
-	return $this;;
+	return $this;
 }
 
 public $shoe = null;
@@ -290,11 +314,11 @@ public function getShoe() {
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\shoe $shoe
-* @return void
+* @return \Pimcore\Model\DataObject\Product\SpecificAttributes
 */
 public function setShoe ($shoe) {
 	$this->shoe = $shoe;
-	return $this;;
+	return $this;
 }
 
 public $shoeDetails = null;
@@ -314,11 +338,11 @@ public function getShoeDetails() {
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\shoeDetails $shoeDetails
-* @return void
+* @return \Pimcore\Model\DataObject\Product\SpecificAttributes
 */
 public function setShoeDetails ($shoeDetails) {
 	$this->shoeDetails = $shoeDetails;
-	return $this;;
+	return $this;
 }
 
 public $snowsport = null;
@@ -338,11 +362,11 @@ public function getSnowsport() {
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\snowsport $snowsport
-* @return void
+* @return \Pimcore\Model\DataObject\Product\SpecificAttributes
 */
 public function setSnowsport ($snowsport) {
 	$this->snowsport = $snowsport;
-	return $this;;
+	return $this;
 }
 
 public $specsSleepingbags = null;
@@ -362,11 +386,11 @@ public function getSpecsSleepingbags() {
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\specsSleepingbags $specsSleepingbags
-* @return void
+* @return \Pimcore\Model\DataObject\Product\SpecificAttributes
 */
 public function setSpecsSleepingbags ($specsSleepingbags) {
 	$this->specsSleepingbags = $specsSleepingbags;
-	return $this;;
+	return $this;
 }
 
 public $tentGroundsheet = null;
@@ -386,11 +410,11 @@ public function getTentGroundsheet() {
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\tentGroundsheet $tentGroundsheet
-* @return void
+* @return \Pimcore\Model\DataObject\Product\SpecificAttributes
 */
 public function setTentGroundsheet ($tentGroundsheet) {
 	$this->tentGroundsheet = $tentGroundsheet;
-	return $this;;
+	return $this;
 }
 
 public $tentSpecifications = null;
@@ -410,35 +434,11 @@ public function getTentSpecifications() {
 
 /**
 * @param \Pimcore\Model\DataObject\Objectbrick\Data\tentSpecifications $tentSpecifications
-* @return void
+* @return \Pimcore\Model\DataObject\Product\SpecificAttributes
 */
 public function setTentSpecifications ($tentSpecifications) {
 	$this->tentSpecifications = $tentSpecifications;
-	return $this;;
-}
-
-public $weight = null;
-
-/**
-* @return \Pimcore\Model\DataObject\Objectbrick\Data\weight
-*/
-public function getWeight() { 
-	if(!$this->weight && \Pimcore\Model\DataObject\AbstractObject::doGetInheritedValues($this->getObject())) { 
-		$brick = $this->getObject()->getValueFromParent("specificAttributes");
-		if(!empty($brick)) {
-			return $this->getObject()->getValueFromParent("specificAttributes")->getWeight(); 
-		}
-	}
-   return $this->weight; 
-}
-
-/**
-* @param \Pimcore\Model\DataObject\Objectbrick\Data\weight $weight
-* @return void
-*/
-public function setWeight ($weight) {
-	$this->weight = $weight;
-	return $this;;
+	return $this;
 }
 
 }

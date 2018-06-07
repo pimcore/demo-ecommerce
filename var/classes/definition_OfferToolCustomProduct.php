@@ -1,26 +1,25 @@
-<?php
+<?php 
 
-/**
-* Generated at: 2017-07-13T17:03:36+02:00
+/** 
+* Generated at: 2018-05-24T08:17:53+02:00
 * Inheritance: no
 * Variants: no
-* Changed by: admin (8)
-* IP: 192.168.11.5
+* IP: 192.168.9.18
 
 
-Fields Summary:
+Fields Summary: 
 - OSproductNumber [input]
 - OSName [input]
 - productGroup [select]
 - price [numeric]
-*/
+*/ 
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'OfferToolCustomProduct',
    'description' => '',
    'creationDate' => 1376898397,
-   'modificationDate' => 1499958216,
+   'modificationDate' => 1527142673,
    'userOwner' => 2,
    'userModification' => 8,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\OfferTool\\AbstractOfferToolProduct',
@@ -28,7 +27,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'allowInherit' => false,
    'allowVariants' => false,
    'showVariants' => false,
-   'layoutDefinitions' =>
+   'layoutDefinitions' => 
   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
      'labelWidth' => 100,
@@ -39,14 +38,14 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
      'permissions' => NULL,
-     'childs' =>
+     'childs' => 
     array (
-      0 =>
+      0 => 
       Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'fieldtype' => 'panel',
          'labelWidth' => 100,
@@ -62,9 +61,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'bodyStyle' => '',
          'datatype' => 'layout',
          'permissions' => NULL,
-         'childs' =>
+         'childs' => 
         array (
-          0 =>
+          0 => 
           Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
              'fieldtype' => 'text',
              'html' => '<b>OfferToolCustomProduct</b>s to be added into an offer. Used e.g. for additional material, service, ...<div>May be extended for specific use case.&nbsp;</div>',
@@ -81,12 +80,12 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'bodyStyle' => 'padding: 10px; background-color: #d9edf7; border-color: #bce8f1 !important; color: #31708f;',
              'datatype' => 'layout',
              'permissions' => NULL,
-             'childs' =>
+             'childs' => 
             array (
             ),
              'locked' => false,
           )),
-          1 =>
+          1 => 
           Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 400,
@@ -95,6 +94,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'OSproductNumber',
              'title' => 'Product Number',
              'tooltip' => '',
@@ -110,7 +110,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'visibleGridView' => false,
              'visibleSearch' => false,
           )),
-          2 =>
+          2 => 
           Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'fieldtype' => 'input',
              'width' => 400,
@@ -119,6 +119,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'columnLength' => 255,
              'phpdocType' => 'string',
              'regex' => '',
+             'unique' => NULL,
              'name' => 'OSName',
              'title' => 'Product Name',
              'tooltip' => '',
@@ -134,17 +135,17 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'visibleGridView' => false,
              'visibleSearch' => false,
           )),
-          3 =>
+          3 => 
           Pimcore\Model\DataObject\ClassDefinition\Data\Select::__set_state(array(
              'fieldtype' => 'select',
-             'options' =>
+             'options' => 
             array (
-              0 =>
+              0 => 
               array (
                 'key' => 'Material',
                 'value' => 'material',
               ),
-              1 =>
+              1 => 
               array (
                 'key' => 'Service',
                 'value' => 'service',
@@ -154,8 +155,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'defaultValue' => '',
              'optionsProviderClass' => NULL,
              'optionsProviderData' => NULL,
-             'queryColumnType' => 'varchar(255)',
-             'columnType' => 'varchar(255)',
+             'queryColumnType' => 'varchar',
+             'columnType' => 'varchar',
+             'columnLength' => 190,
              'phpdocType' => 'string',
              'name' => 'productGroup',
              'title' => 'Product Group',
@@ -172,7 +174,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'visibleGridView' => false,
              'visibleSearch' => false,
           )),
-          4 =>
+          4 => 
           Pimcore\Model\DataObject\ClassDefinition\Data\Numeric::__set_state(array(
              'fieldtype' => 'numeric',
              'width' => 400,
@@ -184,6 +186,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'unsigned' => false,
              'minValue' => NULL,
              'maxValue' => NULL,
+             'unique' => NULL,
              'decimalSize' => 19,
              'decimalPrecision' => 4,
              'name' => 'price',
@@ -205,16 +208,16 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'icon' => '',
    'previewUrl' => '',
    'group' => '',
    'showAppLoggerTab' => false,
    'linkGeneratorReference' => '',
-   'propertyVisibility' =>
+   'propertyVisibility' => 
   array (
-    'grid' =>
+    'grid' => 
     array (
       'id' => true,
       'path' => true,
@@ -222,7 +225,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
       'modificationDate' => true,
       'creationDate' => true,
     ),
-    'search' =>
+    'search' => 
     array (
       'id' => true,
       'path' => true,
