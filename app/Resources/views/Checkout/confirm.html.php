@@ -36,10 +36,9 @@ $cart = $this->cart;
 
         <legend><?= $this->translate("checkout.confirm-order") ?></legend>
 
-
-        <?php if(count($this->errors)) { ?>
+        <?php if (count($this->errors)) { ?>
             <div class="alert alert-danger" role="alert">
-                <?php foreach($this->errors as $error): ?>
+                <?php foreach ($this->errors as $error): ?>
                     <p><?= $this->translate("checkout.error.confirm." . $error) ?></p>
                 <?php endforeach; ?>
             </div>
@@ -49,16 +48,91 @@ $cart = $this->cart;
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea.
         </p>
 
-        <form method="post" action="<?= $this->pimcoreUrl(array('action' => 'confirm'), 'checkout', true) ?>" >
+        <form method="post" action="<?= $this->pimcoreUrl(array('action' => 'confirm'), 'checkout', true) ?>">
 
             <div class="agb">
 
-                <input type="checkbox" value="true" name="agb-accepted" id="agb-accept" />
+                <input type="checkbox" value="true" name="agb-accepted" id="agb-accept"/>
                 <?php
                 $agbLink = "<a href='" . $this->document->getProperty("terms") . "' target='_blank'>" . $this->document->getProperty("terms")->getTitle() . "</a>";
                 ?>
-                <label for="agb-accept" class="<?= in_array('agb', $this->errors) ? 'text-error':'' ?>"><?= $this->translate("checkout.confirm.agbs", array($agbLink)) ?></label>
+                <label for="agb-accept" class="<?= in_array('agb', $this->errors) ? 'text-error' : '' ?>"><?= $this->translate("checkout.confirm.agbs", array($agbLink)) ?></label>
             </div>
+
+            <?php if (!empty($this->sourceOrders)): ?>
+
+                <br>
+                <legend><?= $this->t("checkout.use-recurring-payment"); ?></legend>
+
+                <?php
+                foreach ($this->paymentMethods as $paymentMethod) :
+                    /* @var \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractOrder $sourceOrder */
+                    $sourceOrder = $this->sourceOrders[$paymentMethod];
+                    $sourceOrderId = $sourceOrder ? $sourceOrder->getId() : "";
+
+                    if (!$sourceOrder) {
+                        continue;
+                    }
+
+                    if (!$paymentProviderBrick = $sourceOrder->getPaymentProvider()) {
+                        continue;
+                    }
+
+                    if ($paymentProvider = $paymentProviderBrick->getPaymentProviderQpay()) :
+                        $currentPaymentMethod = $paymentProvider->getAuth_paymentType();
+                        ?>
+                        <p>
+                            <input name="recurring-payment" value="<?= $sourceOrderId ?>" type="radio">
+                            <strong><?= $currentPaymentMethod ?></strong>
+
+                            <?php
+                            switch ($currentPaymentMethod) {
+                                case "SEPA-DD":
+                                    echo $paymentProvider->getAuth_bankAccountOwner();
+                                    echo "&nbsp;&nbsp;";
+                                    echo $paymentProvider->getAuth_bankAccountIBAN();
+                                    break;
+                                case "CCARD":
+                                    echo $paymentProvider->getAuth_maskedPan();
+                                    echo "&nbsp;&nbsp;";
+                                    echo $paymentProvider->getAuth_expiry();
+                                    break;
+                            }
+                            ?>
+                        </p>
+                        <?
+                    elseif ($paymentProvider = $paymentProviderBrick->getPaymentProviderDatatrans()) :
+                        $currentPaymentMethod = $paymentProvider->getAuth_pmethod();
+                        ?>
+                        <p>
+                            <input name="recurring-payment" value="<?= $sourceOrderId ?>" type="radio">
+                            <strong><?= $currentPaymentMethod ?></strong>
+
+                            <?php
+                            switch ($currentPaymentMethod) {
+                                case "SEPA-DD":
+                                    echo $paymentProvider->getAuth_bankAccountOwner();
+                                    echo "&nbsp;&nbsp;";
+                                    echo $paymentProvider->getAuth_bankAccountIBAN();
+                                    break;
+                                case "VIS":
+                                case "ECA":
+                                case "AMX":
+                                case "DIN":
+                                case "JCB":
+                                    echo $paymentProvider->getAuth_maskedCC();
+                                    echo "&nbsp;&nbsp;";
+                                    echo $paymentProvider->getAuth_expm() . "/" . $paymentProvider->getAuth_expy();
+                                    break;
+                            }
+                            ?>
+                        </p>
+                        <?
+                    endif;
+                endforeach;
+                ?>
+                <hr>
+            <?php endif; ?>
 
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">

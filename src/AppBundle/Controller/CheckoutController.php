@@ -16,6 +16,9 @@ namespace AppBundle\Controller;
 
 use AppBundle\Form\DeliveryAddressFormType;
 use Pimcore\Bundle\EcommerceFrameworkBundle\Factory;
+use Pimcore\Bundle\EcommerceFrameworkBundle\OrderManager\OrderManager;
+use Pimcore\Bundle\EcommerceFrameworkBundle\PaymentManager\Payment\Datatrans;
+use Pimcore\Bundle\EcommerceFrameworkBundle\PaymentManager\Payment\QPay;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
@@ -153,6 +156,8 @@ class CheckoutController extends AbstractCartAware
     {
         // init
         $cart = $this->getCart();
+        $user = $this->getUser();
+
         $this->view->currentStep = 'confirm';
         $this->view->showSummary = true;
 
@@ -160,6 +165,7 @@ class CheckoutController extends AbstractCartAware
         if (count($cart->getItems()) == 0) {
             return $this->redirect($this->generateUrl('cart', ['action' => 'list']));
         }
+        $language = substr($request->getLocale(), 0, 2);
 
         $checkoutManager = Factory::getInstance()->getCheckoutManager($cart);
 
@@ -180,20 +186,67 @@ class CheckoutController extends AbstractCartAware
         $trackingManager = Factory::getInstance()->getTrackingManager();
         $trackingManager->trackCheckoutStep($confirmStep, $this->getCart(), 2);
 
-        // go to payment
+        // go to payment or submit recurring payment
         if ($request->getMethod() == 'POST') {
-            if ($request->get('agb-accepted')) {
+            if (!$request->get('agb-accepted')) {
+                $this->view->errors[] = 'terms';
+            } else {
                 $checkoutManager->commitStep($confirmStep, true);
+
+                if($sourceOrderId = $request->get("recurring-payment")){
+
+                    /* Recurring Payment */
+                    if ($user && $sourceOrderId) {
+                        $sourceOrderList = \Pimcore\Model\DataObject\OnlineShopOrder::getList();
+                        $sourceOrderList->addConditionParam("o_id = ?", $sourceOrderId);
+                        $sourceOrderList->addConditionParam("customer__id = ?", $user->getId());
+                        $sourceOrderList->setLimit(1);
+                        $sourceOrder = $sourceOrderList->current();
+
+                        try {
+                            $targetOrder = $checkoutManager->startAndCommitRecurringOrderPayment($sourceOrder, $user->getId());
+                            return $this->redirect($this->generateUrl('checkout', ['action' => 'completed', 'language' => $language]));
+                        } catch (\Exception $exception) {
+                            // TODO: show warning
+                        }
+
+                    }
+                }
 
                 if ($payment) {
                     return $this->redirect($this->generateUrl('action', ['controller' => 'payment', 'action' => 'payment', 'prefix' => substr($request->getLocale(), 0, 2)]));
                 } else {
                     $order = $checkoutManager->commitOrder();
                 }
-            } else {
-                $this->view->errors[] = 'terms';
             }
         }
+
+        $factory = \Pimcore\Bundle\EcommerceFrameworkBundle\Factory::getInstance();
+        $checkoutManager = $factory->getCheckoutManager($cart);
+        $paymentProvider = $checkoutManager->getPayment();
+
+        /* recurring payment data load */
+        if ($paymentProvider instanceof QPay) {
+            $paymentMethods = ["SEPA-DD", "CCARD"];
+        } elseif ($paymentProvider instanceof Datatrans) {
+            $paymentMethods = ["VIS", "ECA", "AMX", "DIN", "JCB"];
+        }
+
+        if ($paymentProvider->isRecurringPaymentEnabled() && $user) {
+            $sourceOrders = [];
+
+            foreach ($paymentMethods as $paymentMethod) {
+                /* @var OrderManager $orderManager */
+                $orderManager = $factory->getOrderManager();
+                if ($sourceOrder = $orderManager->getRecurringPaymentSourceOrder($user->getId(), $paymentProvider, $paymentMethod)) {
+                    $sourceOrders[$paymentMethod] = $sourceOrder;
+                }
+            }
+            $this->view->sourceOrders = $sourceOrders;
+        }
+
+        $this->view->paymentMethods = $paymentMethods;
+        /* recurring payment end */
     }
 
     public function pendingAction()

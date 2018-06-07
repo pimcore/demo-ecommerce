@@ -88,7 +88,7 @@ use Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\IPrice;
                     $price = $this->product->getOSPrice();
 
                     $hasDiscount = $originalPrice->getAmount()->notEquals($price->getAmount());
-                    $currency = new Currency($price->getCurrency());
+                    $currency = $price->getCurrency();
                 ?>
 
                 <?php if($hasDiscount) { ?>

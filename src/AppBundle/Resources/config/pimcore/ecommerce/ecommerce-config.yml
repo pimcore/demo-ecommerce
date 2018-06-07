@@ -433,6 +433,7 @@ pimcore_ecommerce_framework:
                         merchant_id: 1000011011
                         sign: 30916165706580013
                         use_digital_signature: false
+                        recurring_payment_enabled: true
                     live:
                         merchant_id: merchant_id_id
                         sign: sign_id
@@ -451,6 +452,8 @@ pimcore_ecommerce_framework:
                         optional_payment_properties:
                             - paymentType
                             - financialInstitution
+                            - transactionIdentifier # necessary for recurPayment based on SEPA DIRECT DEBIT
+                        recurring_payment_enabled: true
 
                         # set hash algorithm to HMAC-SHA512
                         hash_algorithm:

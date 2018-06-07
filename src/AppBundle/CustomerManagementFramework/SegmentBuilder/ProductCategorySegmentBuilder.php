@@ -89,11 +89,13 @@ class ProductCategorySegmentBuilder extends AbstractSegmentBuilder
              */
 
             $product = $orderItem->getProduct();
-            $category = $product->getFirstCategory();
+            if($product) {
+                $category = $product->getFirstCategory();
 
-            $mainCategory = $this->getMainCategory($category);
+                $mainCategory = $this->getMainCategory($category);
 
-            $mainCategories[$mainCategory->getName('en_GB')]++;
+                $mainCategories[$mainCategory->getName('en_GB')]++;
+            }
 
         }
 
