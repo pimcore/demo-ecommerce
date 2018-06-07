@@ -103,3 +103,8 @@
 103	cmf.SegmentManager	12356	object	1515178992	\N	Segment(s) added (AddTrackedSegment action trigger action)	/customermanagement/segments/calculated/VisitorCount/at least once
 104	cmf.SegmentManager	12356	object	1515179040	\N	Segment(s) added (AddTrackedSegment action trigger action)	/customermanagement/segments/calculated/VisitorCount/2 times
 105	cmf.SegmentManager	12356	object	1515179040	\N	Segment(s) added (AddTrackedSegment action trigger action)	/customermanagement/segments/calculated/VisitorCount/at least once
+106	cmf.SegmentManager	12356	object	1528381568	\N	Segment(s) added (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/VIP Customer
+107	cmf.SegmentManager	12356	object	1528381569	\N	Segment(s) added (AssignPersonGroupAndSegment action trigger action based on rule profiling_new-customer)	/customermanagement/segments/calculated/CustomerType/New Customer
+108	cmf.SegmentManager	12356	object	1528381586	\N	Segment(s) added (ProductCategorySegmentBuilder)	/customermanagement/segments/calculated/InterestCategories/Football
+109	cmf.SegmentManager	12356	object	1528381587	\N	Segment(s) removed (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/New Customer
+110	cmf.SegmentManager	12356	object	1528381717	\N	Segment(s) added (AssignPersonGroupAndSegment action trigger action based on rule profiling_regular-customer)	/customermanagement/segments/calculated/CustomerType/Regular Customer

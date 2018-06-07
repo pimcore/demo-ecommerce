@@ -1,6 +1,6 @@
-1	0	folder		/	999999	1	1366279291	1366279291	1	1	\N	\N	\N	\N
-9	11842	folder	materials	/products/	0	1	1325677690	1460214136	1	\N	\N	\N	\N	\N
-10	11843	folder	teamsport	/products/products/	0	1	1329739269	1460214390	1	\N	\N	\N	\N	\N
+1	0	folder		/	999999	1	1366279291	1366279291	1	1	\N	\N	\N
+9	11842	folder	materials	/products/	0	1	1325677690	1460214136	1	\N	\N	\N	\N
+10	11843	folder	teamsport	/products/products/	0	1	1329739269	1460214390	1	\N	\N	\N	\N
 11	10	folder	fw12_13	/products/products/teamsport/	\N	1	1338965874	1460214390	1	\N	\N	\N	\N
 15	6235	folder	shoe-features	/products/specifications/	0	1	1325679512	1460214112	1	\N	\N	\N	\N
 16	11843	folder	basketball	/products/products/	0	1	1329815347	1460214380	1	\N	\N	\N	\N
@@ -6541,7 +6541,7 @@
 12331	12271	folder	13	/order/2017/10/	\N	1	1507884010	1507884010	1	0	\N	\N	\N
 12336	12331	object	ord_59e07e0d8405b	/order/2017/10/13/	0	1	1507884557	1507884617	0	0	9	OnlineShopOrder	\N
 12337	12336	object	10393_10393	/order/2017/10/13/ord_59e07e0d8405b/	0	1	1507884557	1507884606	0	0	8	OnlineShopOrderItem	\N
-12356	12361	object	Peter-Hugo	/customermanagement/customers/AT/5020/	0	1	1508403484	1515179040	0	15	41	Customer	\N
+12356	12361	object	Peter-Hugo	/customermanagement/customers/AT/5020/	0	1	1508403484	1528381717	0	0	41	Customer	\N
 12360	12246	folder	AT	/customermanagement/customers/	\N	1	1508403516	1508403516	1	0	\N	\N	\N
 12361	12360	folder	5020	/customermanagement/customers/AT/	\N	1	1508403516	1508403516	1	0	\N	\N	\N
 12362	12251	object	Gender	/customermanagement/segments/calculated/	\N	1	1508403928	1508403928	0	0	36	CustomerSegmentGroup	\N
@@ -6616,3 +6616,10 @@
 12454	12453	object	Mobile	/customermanagement/segments/calculated/VisitingDevice/	\N	1	1515166893	1515166893	0	0	37	CustomerSegment	\N
 12455	12453	object	Desktop	/customermanagement/segments/calculated/VisitingDevice/	\N	1	1515166893	1515166893	0	0	37	CustomerSegment	\N
 12456	12453	object	Tablet	/customermanagement/segments/calculated/VisitingDevice/	\N	1	1515166894	1515166894	0	0	37	CustomerSegment	\N
+12457	11846	folder	2018	/order/	\N	1	1528381550	1528381550	1	0	\N	\N	\N
+12458	12457	folder	06	/order/2018/	\N	1	1528381550	1528381550	1	0	\N	\N	\N
+12459	12458	folder	07	/order/2018/06/	\N	1	1528381550	1528381550	1	0	\N	\N	\N
+12460	12459	object	ord_5b19406e2386f	/order/2018/06/07/	0	1	1528381550	1528381569	0	0	9	OnlineShopOrder	\N
+12461	12460	object	3308_3308	/order/2018/06/07/ord_5b19406e2386f/	\N	1	1528381550	1528381550	0	0	8	OnlineShopOrderItem	\N
+12464	12459	object	ord_5b19411359488	/order/2018/06/07/	0	1	1528381715	1528381716	0	0	9	OnlineShopOrder	\N
+12465	12464	object	10396_10396	/order/2018/06/07/ord_5b19411359488/	\N	1	1528381715	1528381715	0	0	8	OnlineShopOrderItem	\N

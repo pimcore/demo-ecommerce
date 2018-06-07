@@ -144,3 +144,7 @@ pimcore tax|5%|3.1424
 pimcore tax|5%|2.5488
 12422	8	OnlineShopOrderItem	10393	object	10393	Killay ux	1	89.9500	\N	\N	\N	71.9600	MwSt 20%|20%|14.3920\
 pimcore tax|5%|3.5980
+12461	8	OnlineShopOrderItem	3308	object	3308	Classic FG	1	43.4800	\N	\N	\N	34.7840	MwSt 20%|20%|6.9568\
+pimcore tax|5%|1.7392
+12465	8	OnlineShopOrderItem	10396	object	10396	Melor ux	1	74.7900	\N	\N	\N	59.8320	MwSt 20%|20%|11.9664\
+pimcore tax|5%|2.9916

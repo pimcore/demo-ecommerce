@@ -520,6 +520,9 @@ checkout.submit-address	de_AT		1460552442	1460552458
 checkout.submit-address	en_GB	Submit Address	1460552442	1460552458
 checkout.submit-address	fr_FR		1460552442	1460552458
 checkout.submit-address	modificati	1460552	1460552442	1460552458
+checkout.use-recurring-payment	de_AT		1528381582	1528381582
+checkout.use-recurring-payment	en_GB		1528381582	1528381582
+checkout.use-recurring-payment	fr_FR		1528381582	1528381582
 checkout.your-ordernumber	de_AT		0	1380723849
 checkout.your-ordernumber	en_GB	Your Ordernumber	0	1380723849
 checkout.your-ordernumber	fr_FR		0	1380723849

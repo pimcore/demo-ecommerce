@@ -117,3 +117,7 @@ pimcore tax|5%|3.3784
 pimcore tax|5%|2.7848
 12421	9	OnlineShopOrder	ord_5a3b67b2bf731	95.8500	1513842611	,12422,	\N	\N	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_5a3b67a2f37d9	\N	EUR	\N	öö	23423	23423	DE	peter.hugo@elements.at	öö	23423	23423	sdfsadfsadf	DE	\N	sdfsadfsadf	89.9500	hugo	peter	peter	hugo	\N	71.9600	76.6800	MwSt 20%|20%|15.3360\
 pimcore tax|5%|3.8340
+12460	9	OnlineShopOrder	ord_5b19406e2386f	49.3800	1528381550	,12461,	12356	object	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_5b1940400ee2a	\N	EUR	\N	\N	Söllheimerstraße, 16	5020	AT	peter.hugo@pimcore.com	\N	Söllheimerstraße, 16	5020	Salzburg	AT	\N	Salzburg	43.4800	Peter	Hugo	Hugo	Peter	\N	34.7840	39.5040	MwSt 20%|20%|7.9008\
+pimcore tax|5%|1.9752
+12464	9	OnlineShopOrder	ord_5b19411359488	80.6900	1528381715	,12465,	12356	object	\N	committed	Pimcore\\Bundle\\EcommerceFrameworkBundle\\CartManager\\SessionCart_sesscart_5b1940f98473b	\N	EUR	\N	\N	Söllheimerstraße, 16	5020	AT	peter.hugo@pimcore.com	\N	Söllheimerstraße, 16	5020	Salzburg	AT	\N	Salzburg	74.7900	Peter	Hugo	Hugo	Peter	\N	59.8320	64.5520	MwSt 20%|20%|12.9104\
+pimcore tax|5%|3.2276
