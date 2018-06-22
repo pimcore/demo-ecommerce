@@ -1,10 +1,12 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:45+02:00
+* Generated at: 2018-06-22T10:42:26+02:00
+* IP: 192.168.9.18
 
 
 Fields Summary: 
+ - configurationKey [input]
  - auth_orderNumber [input]
  - auth_language [input]
  - auth_amount [input]
@@ -26,6 +28,7 @@ use Pimcore\Model\DataObject;
 class PaymentProviderQpay extends DataObject\Objectbrick\Data\AbstractData  {
 
 public $type = "PaymentProviderQpay";
+public $configurationKey;
 public $auth_orderNumber;
 public $auth_language;
 public $auth_amount;
@@ -39,6 +42,31 @@ public $auth_expiry;
 public $auth_bankAccountOwner;
 public $auth_bankAccountIBAN;
 
+
+/**
+* Set configurationKey - Configuration Key
+* @return string
+*/
+public function getConfigurationKey () {
+	$data = $this->configurationKey;
+	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("configurationKey")->isEmpty($data)) {
+		return $this->getValueFromParent("configurationKey");
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
+	 return $data;
+}
+
+/**
+* Set configurationKey - Configuration Key
+* @param string $configurationKey
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderQpay
+*/
+public function setConfigurationKey ($configurationKey) {
+	$this->configurationKey = $configurationKey;
+	return $this;
+}
 
 /**
 * Set auth_orderNumber - OrderNumber

@@ -108,3 +108,4 @@
 108	cmf.SegmentManager	12356	object	1528381586	\N	Segment(s) added (ProductCategorySegmentBuilder)	/customermanagement/segments/calculated/InterestCategories/Football
 109	cmf.SegmentManager	12356	object	1528381587	\N	Segment(s) removed (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/New Customer
 110	cmf.SegmentManager	12356	object	1528381717	\N	Segment(s) added (AssignPersonGroupAndSegment action trigger action based on rule profiling_regular-customer)	/customermanagement/segments/calculated/CustomerType/Regular Customer
+111	cmf.SegmentManager	12356	object	1529660005	\N	Segment(s) removed (AddSegment action trigger action)	/customermanagement/segments/calculated/CustomerType/Regular Customer

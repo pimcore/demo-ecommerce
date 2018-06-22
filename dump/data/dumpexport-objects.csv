@@ -6541,7 +6541,7 @@
 12331	12271	folder	13	/order/2017/10/	\N	1	1507884010	1507884010	1	0	\N	\N	\N
 12336	12331	object	ord_59e07e0d8405b	/order/2017/10/13/	0	1	1507884557	1507884617	0	0	9	OnlineShopOrder	\N
 12337	12336	object	10393_10393	/order/2017/10/13/ord_59e07e0d8405b/	0	1	1507884557	1507884606	0	0	8	OnlineShopOrderItem	\N
-12356	12361	object	Peter-Hugo	/customermanagement/customers/AT/5020/	0	1	1508403484	1528381717	0	0	41	Customer	\N
+12356	12361	object	Peter-Hugo	/customermanagement/customers/AT/5020/	0	1	1508403484	1529660055	0	0	41	Customer	\N
 12360	12246	folder	AT	/customermanagement/customers/	\N	1	1508403516	1508403516	1	0	\N	\N	\N
 12361	12360	folder	5020	/customermanagement/customers/AT/	\N	1	1508403516	1508403516	1	0	\N	\N	\N
 12362	12251	object	Gender	/customermanagement/segments/calculated/	\N	1	1508403928	1508403928	0	0	36	CustomerSegmentGroup	\N
@@ -6623,3 +6623,8 @@
 12461	12460	object	3308_3308	/order/2018/06/07/ord_5b19406e2386f/	\N	1	1528381550	1528381550	0	0	8	OnlineShopOrderItem	\N
 12464	12459	object	ord_5b19411359488	/order/2018/06/07/	0	1	1528381715	1528381716	0	0	9	OnlineShopOrder	\N
 12465	12464	object	10396_10396	/order/2018/06/07/ord_5b19411359488/	\N	1	1528381715	1528381715	0	0	8	OnlineShopOrderItem	\N
+12466	12458	folder	22	/order/2018/06/	\N	1	1529659645	1529659645	1	0	\N	\N	\N
+12467	12466	object	ord_5b2cc0fd0a03e	/order/2018/06/22/	0	1	1529659645	1529660007	0	0	9	OnlineShopOrder	\N
+12468	12467	object	1148_1148	/order/2018/06/22/ord_5b2cc0fd0a03e/	0	1	1529659645	1529659798	0	0	8	OnlineShopOrderItem	\N
+12469	12466	object	ord_5b2cc296ad028	/order/2018/06/22/	0	1	1529660054	1529660058	0	0	9	OnlineShopOrder	\N
+12470	12469	object	1402_1402	/order/2018/06/22/ord_5b2cc296ad028/	\N	1	1529660054	1529660054	0	0	8	OnlineShopOrderItem	\N

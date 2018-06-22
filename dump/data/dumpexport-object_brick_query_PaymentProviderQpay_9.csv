@@ -1,101 +1,103 @@
-11705	paymentProvider	12836296	en	90.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11707	paymentProvider	1296379	en	26.74	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11709	paymentProvider	6322291	en	26.74	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11722	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11726	paymentProvider	6753601	en	90.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11728	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11730	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11731	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11733	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11735	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11737	paymentProvider	1875085	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11743	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11748	paymentProvider	8855920	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11750	paymentProvider	1784312	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11752	paymentProvider	3376169	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11754	paymentProvider	11954190	en	90.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11756	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11758	paymentProvider	9382547	en	90.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11760	paymentProvider	15092769	en	90.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11762	paymentProvider	3548492	en	60.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11764	paymentProvider	646546	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11766	paymentProvider	3639783	en	60.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11768	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11770	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11772	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11774	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11776	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11778	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11780	paymentProvider	4236813	en	26.74	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11782	paymentProvider	8944596	en	26.74	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11784	paymentProvider	11181729	en	26.74	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11786	paymentProvider	6369960	en	60.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11788	paymentProvider	13153048	en	60.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11790	paymentProvider	11921297	en	60.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11792	paymentProvider	5566352	en	26.74	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11798	paymentProvider	4046514	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11799	paymentProvider	4046514	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11802	paymentProvider	5594542	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11803	paymentProvider	5594542	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11805	paymentProvider	4539417	en	60.09	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11806	paymentProvider	4539417	en	60.09	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11807	paymentProvider	4539417	en	60.09	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11810	paymentProvider	16378054	en	817.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11813	paymentProvider	10642364	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11816	paymentProvider	9419537	en	35.56	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11821	paymentProvider	7184636	en	90.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11904	paymentProvider	16063012	en	95.86	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11906	paymentProvider	14343792	en	263.99	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11911	paymentProvider	15357283	en	142.21	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11915	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11920	paymentProvider	2585142	en	105.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11922	paymentProvider	4967305	en	186.07	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11933	paymentProvider	8624188	en	49.38	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-11939	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12014	paymentProvider	10904451	en	55.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12067	paymentProvider	5750025	en	45.77	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12069	paymentProvider	9209700	en	86.24	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12081	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12085	paymentProvider	1174098	en	37.91	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12094	paymentProvider	7574692	en	75.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12101	paymentProvider	8685808	en	12.79	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12105	paymentProvider	9317839	en	815.9	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12110	paymentProvider	9299023	en	136.09	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12113	paymentProvider	10477425	en	85.73	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12115	paymentProvider	2680494	en	37.91	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12117	paymentProvider	12197607	en	39.6	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12119	paymentProvider	2347549	en	51.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12124	paymentProvider	7216111	en	83.84	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12126	paymentProvider	2950570	en	140.52	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12133	paymentProvider	10970357	en	95.86	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12137	paymentProvider	8856334	en	37.91	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12139	paymentProvider	10773966	en	49.38	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12143	paymentProvider	15440284	en	51.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12145	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12150	paymentProvider	11111779	en	85.73	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12152	paymentProvider	2555970	en	50.56	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12155	paymentProvider	8927294	en	2078.92	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12162	paymentProvider	4809791	en	51.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12176	paymentProvider	6614006	en	50.56	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12180	paymentProvider	6243242	en	50.56	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12182	paymentProvider	10543460	en	51.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12190	paymentProvider	2914986	en	12.79	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12192	paymentProvider	6384462	en	40.7	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12205	paymentProvider	15249135	en	98.86	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12207	paymentProvider	11992891	en	50.56	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12209	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12215	paymentProvider	3496826	en	49.38	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12239	paymentProvider	11326757	en	22.33	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12242	paymentProvider	2358228	en	50.56	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12273	paymentProvider	12225824	en	50.56	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12336	paymentProvider	12874352	en	95.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12403	paymentProvider	14895032	en	95.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12405	paymentProvider	14829202	en	41.86	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12407	paymentProvider	4032314	en	85.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12409	paymentProvider	5628651	en	51.74	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12411	paymentProvider	5550309	en	40.7	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12413	paymentProvider	4602957	en	84.46	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12415	paymentProvider	5497991	en	69.62	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12421	paymentProvider	6157475	en	95.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N
-12460	paymentProvider	5940234	en	49.38	EUR	CCARD	1528381568	\N	\N	0002	950000******0002	01/2020	\N	\N
-12464	paymentProvider	14247776	en	49.38	EUR	CCARD	1528381716	\N	\N	0002	950000******0002	01/2020	\N	\N
+11705	paymentProvider	12836296	en	90.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11707	paymentProvider	1296379	en	26.74	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11709	paymentProvider	6322291	en	26.74	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11722	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11726	paymentProvider	6753601	en	90.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11728	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11730	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11731	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11733	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11735	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11737	paymentProvider	1875085	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11743	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11748	paymentProvider	8855920	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11750	paymentProvider	1784312	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11752	paymentProvider	3376169	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11754	paymentProvider	11954190	en	90.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11756	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11758	paymentProvider	9382547	en	90.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11760	paymentProvider	15092769	en	90.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11762	paymentProvider	3548492	en	60.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11764	paymentProvider	646546	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11766	paymentProvider	3639783	en	60.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11768	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11770	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11772	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11774	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11776	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11778	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11780	paymentProvider	4236813	en	26.74	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11782	paymentProvider	8944596	en	26.74	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11784	paymentProvider	11181729	en	26.74	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11786	paymentProvider	6369960	en	60.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11788	paymentProvider	13153048	en	60.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11790	paymentProvider	11921297	en	60.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11792	paymentProvider	5566352	en	26.74	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11798	paymentProvider	4046514	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11799	paymentProvider	4046514	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11802	paymentProvider	5594542	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11803	paymentProvider	5594542	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11805	paymentProvider	4539417	en	60.09	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11806	paymentProvider	4539417	en	60.09	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11807	paymentProvider	4539417	en	60.09	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11810	paymentProvider	16378054	en	817.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11813	paymentProvider	10642364	en	39.25	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11816	paymentProvider	9419537	en	35.56	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11821	paymentProvider	7184636	en	90.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11904	paymentProvider	16063012	en	95.86	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11906	paymentProvider	14343792	en	263.99	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11911	paymentProvider	15357283	en	142.21	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11915	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11920	paymentProvider	2585142	en	105.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11922	paymentProvider	4967305	en	186.07	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11933	paymentProvider	8624188	en	49.38	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+11939	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12014	paymentProvider	10904451	en	55.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12067	paymentProvider	5750025	en	45.77	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12069	paymentProvider	9209700	en	86.24	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12081	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12085	paymentProvider	1174098	en	37.91	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12094	paymentProvider	7574692	en	75.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12101	paymentProvider	8685808	en	12.79	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12105	paymentProvider	9317839	en	815.9	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12110	paymentProvider	9299023	en	136.09	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12113	paymentProvider	10477425	en	85.73	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12115	paymentProvider	2680494	en	37.91	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12117	paymentProvider	12197607	en	39.6	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12119	paymentProvider	2347549	en	51.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12124	paymentProvider	7216111	en	83.84	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12126	paymentProvider	2950570	en	140.52	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12133	paymentProvider	10970357	en	95.86	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12137	paymentProvider	8856334	en	37.91	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12139	paymentProvider	10773966	en	49.38	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12143	paymentProvider	15440284	en	51.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12145	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12150	paymentProvider	11111779	en	85.73	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12152	paymentProvider	2555970	en	50.56	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12155	paymentProvider	8927294	en	2078.92	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12162	paymentProvider	4809791	en	51.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12176	paymentProvider	6614006	en	50.56	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12180	paymentProvider	6243242	en	50.56	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12182	paymentProvider	10543460	en	51.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12190	paymentProvider	2914986	en	12.79	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12192	paymentProvider	6384462	en	40.7	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12205	paymentProvider	15249135	en	98.86	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12207	paymentProvider	11992891	en	50.56	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12209	paymentProvider	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12215	paymentProvider	3496826	en	49.38	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12239	paymentProvider	11326757	en	22.33	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12242	paymentProvider	2358228	en	50.56	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12273	paymentProvider	12225824	en	50.56	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12336	paymentProvider	12874352	en	95.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12403	paymentProvider	14895032	en	95.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12405	paymentProvider	14829202	en	41.86	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12407	paymentProvider	4032314	en	85.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12409	paymentProvider	5628651	en	51.74	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12411	paymentProvider	5550309	en	40.7	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12413	paymentProvider	4602957	en	84.46	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12415	paymentProvider	5497991	en	69.62	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12421	paymentProvider	6157475	en	95.85	EUR	\N	\N	\N	\N	\N	\N	\N	\N	\N	\N
+12460	paymentProvider	5940234	en	49.38	EUR	CCARD	1528381568	\N	\N	0002	950000******0002	01/2020	\N	\N	\N
+12464	paymentProvider	14247776	en	49.38	EUR	CCARD	1528381716	\N	\N	0002	950000******0002	01/2020	\N	\N	\N
+12467	paymentProvider	147079	en	51.74	EUR	CCARD	1529660005	\N	\N	0002	950000******0002	02/2031	\N	\N	qpay
+12469	paymentProvider	4585935	en	51.74	EUR	CCARD	1529660056	12467	object	0002	950000******0002	02/2031	\N	\N	qpay

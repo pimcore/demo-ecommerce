@@ -565,10 +565,53 @@ CREATE TABLE `object_brick_query_PaymentProviderDatatrans_9` (
   `paymentFinished` bigint(20) DEFAULT NULL,
   `sourceOrder__id` int(11) DEFAULT NULL,
   `sourceOrder__type` enum('document','asset','object') DEFAULT NULL,
+  `configurationKey` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`o_id`,`fieldname`),
   KEY `o_id` (`o_id`),
   KEY `fieldname` (`fieldname`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `object_brick_query_PaymentProviderMpay24_9`;
+CREATE TABLE `object_brick_query_PaymentProviderMpay24_9` (
+  `o_id` int(11) NOT NULL DEFAULT '0',
+  `fieldname` varchar(190) NOT NULL DEFAULT '',
+  `configurationKey` varchar(190) DEFAULT NULL,
+  `auth_OPERATION` varchar(255) DEFAULT NULL,
+  `auth_TID` varchar(255) DEFAULT NULL,
+  `auth_STATUS` varchar(255) DEFAULT NULL,
+  `auth_PRICE` varchar(255) DEFAULT NULL,
+  `auth_CURRENCY` varchar(255) DEFAULT NULL,
+  `auth_P_TYPE` varchar(255) DEFAULT NULL,
+  `auth_BRAND` varchar(255) DEFAULT NULL,
+  `auth_MPAYTID` varchar(255) DEFAULT NULL,
+  `auth_APPR_CODE` varchar(255) DEFAULT NULL,
+  `auth_PROFILE_STATUS` varchar(255) DEFAULT NULL,
+  `auth_FILTER_STATUS` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`o_id`,`fieldname`),
+  KEY `o_id` (`o_id`),
+  KEY `fieldname` (`fieldname`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_brick_query_PaymentProviderOGone_9`;
+CREATE TABLE `object_brick_query_PaymentProviderOGone_9` (
+  `o_id` int(11) NOT NULL DEFAULT '0',
+  `fieldname` varchar(190) NOT NULL DEFAULT '',
+  `configurationKey` varchar(190) DEFAULT NULL,
+  `auth_orderNumber` varchar(255) DEFAULT NULL,
+  `auth_paymentMethod` varchar(255) DEFAULT NULL,
+  `auth_amount` varchar(255) DEFAULT NULL,
+  `auth_currency` varchar(255) DEFAULT NULL,
+  `auth_ip` varchar(255) DEFAULT NULL,
+  `auth_paymentId` varchar(255) DEFAULT NULL,
+  `auth_customerName` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`o_id`,`fieldname`),
+  KEY `o_id` (`o_id`),
+  KEY `fieldname` (`fieldname`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
 
@@ -578,6 +621,7 @@ CREATE TABLE `object_brick_query_PaymentProviderPayPal_9` (
   `fieldname` varchar(255) NOT NULL DEFAULT '',
   `auth_token` varchar(255) DEFAULT NULL,
   `auth_PayerID` varchar(255) DEFAULT NULL,
+  `configurationKey` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`o_id`,`fieldname`),
   KEY `o_id` (`o_id`),
   KEY `fieldname` (`fieldname`)
@@ -602,6 +646,7 @@ CREATE TABLE `object_brick_query_PaymentProviderQpay_9` (
   `auth_expiry` varchar(190) DEFAULT NULL,
   `auth_bankAccountOwner` varchar(190) DEFAULT NULL,
   `auth_bankAccountIBAN` varchar(190) DEFAULT NULL,
+  `configurationKey` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`o_id`,`fieldname`),
   KEY `o_id` (`o_id`),
   KEY `fieldname` (`fieldname`),
@@ -620,6 +665,7 @@ CREATE TABLE `object_brick_query_PaymentProviderWirecardSeamless_9` (
   `auth_amount` varchar(255) DEFAULT NULL,
   `auth_currency` varchar(255) DEFAULT NULL,
   `auth_gatewyReferenceNumber` varchar(255) DEFAULT NULL,
+  `configurationKey` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`o_id`,`fieldname`),
   KEY `o_id` (`o_id`),
   KEY `fieldname` (`fieldname`)
@@ -935,10 +981,53 @@ CREATE TABLE `object_brick_store_PaymentProviderDatatrans_9` (
   `auth_maskedCC` varchar(255) DEFAULT NULL,
   `auth_pmethod` varchar(255) DEFAULT NULL,
   `paymentFinished` bigint(20) DEFAULT NULL,
+  `configurationKey` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`o_id`,`fieldname`),
   KEY `o_id` (`o_id`),
   KEY `fieldname` (`fieldname`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+DROP TABLE IF EXISTS `object_brick_store_PaymentProviderMpay24_9`;
+CREATE TABLE `object_brick_store_PaymentProviderMpay24_9` (
+  `o_id` int(11) NOT NULL DEFAULT '0',
+  `fieldname` varchar(190) NOT NULL DEFAULT '',
+  `configurationKey` varchar(190) DEFAULT NULL,
+  `auth_OPERATION` varchar(255) DEFAULT NULL,
+  `auth_TID` varchar(255) DEFAULT NULL,
+  `auth_STATUS` varchar(255) DEFAULT NULL,
+  `auth_PRICE` varchar(255) DEFAULT NULL,
+  `auth_CURRENCY` varchar(255) DEFAULT NULL,
+  `auth_P_TYPE` varchar(255) DEFAULT NULL,
+  `auth_BRAND` varchar(255) DEFAULT NULL,
+  `auth_MPAYTID` varchar(255) DEFAULT NULL,
+  `auth_APPR_CODE` varchar(255) DEFAULT NULL,
+  `auth_PROFILE_STATUS` varchar(255) DEFAULT NULL,
+  `auth_FILTER_STATUS` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`o_id`,`fieldname`),
+  KEY `o_id` (`o_id`),
+  KEY `fieldname` (`fieldname`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+DROP TABLE IF EXISTS `object_brick_store_PaymentProviderOGone_9`;
+CREATE TABLE `object_brick_store_PaymentProviderOGone_9` (
+  `o_id` int(11) NOT NULL DEFAULT '0',
+  `fieldname` varchar(190) NOT NULL DEFAULT '',
+  `configurationKey` varchar(190) DEFAULT NULL,
+  `auth_orderNumber` varchar(255) DEFAULT NULL,
+  `auth_paymentMethod` varchar(255) DEFAULT NULL,
+  `auth_amount` varchar(255) DEFAULT NULL,
+  `auth_currency` varchar(255) DEFAULT NULL,
+  `auth_ip` varchar(255) DEFAULT NULL,
+  `auth_paymentId` varchar(255) DEFAULT NULL,
+  `auth_customerName` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`o_id`,`fieldname`),
+  KEY `o_id` (`o_id`),
+  KEY `fieldname` (`fieldname`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
 
@@ -948,6 +1037,7 @@ CREATE TABLE `object_brick_store_PaymentProviderPayPal_9` (
   `fieldname` varchar(255) NOT NULL DEFAULT '',
   `auth_token` varchar(255) DEFAULT NULL,
   `auth_PayerID` varchar(255) DEFAULT NULL,
+  `configurationKey` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`o_id`,`fieldname`),
   KEY `o_id` (`o_id`),
   KEY `fieldname` (`fieldname`)
@@ -970,6 +1060,7 @@ CREATE TABLE `object_brick_store_PaymentProviderQpay_9` (
   `auth_expiry` varchar(190) DEFAULT NULL,
   `auth_bankAccountOwner` varchar(190) DEFAULT NULL,
   `auth_bankAccountIBAN` varchar(190) DEFAULT NULL,
+  `configurationKey` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`o_id`,`fieldname`),
   KEY `o_id` (`o_id`),
   KEY `fieldname` (`fieldname`),
@@ -988,6 +1079,7 @@ CREATE TABLE `object_brick_store_PaymentProviderWirecardSeamless_9` (
   `auth_amount` varchar(255) DEFAULT NULL,
   `auth_currency` varchar(255) DEFAULT NULL,
   `auth_gatewyReferenceNumber` varchar(255) DEFAULT NULL,
+  `configurationKey` varchar(190) DEFAULT NULL,
   PRIMARY KEY (`o_id`,`fieldname`),
   KEY `o_id` (`o_id`),
   KEY `fieldname` (`fieldname`)
@@ -3220,7 +3312,7 @@ CREATE TABLE `plugin_cmf_actiontrigger_queue` (
   PRIMARY KEY (`id`),
   KEY `customerId` (`customerId`),
   KEY `actionId` (`actionId`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
 
 
 
@@ -3258,7 +3350,7 @@ CREATE TABLE `plugin_cmf_activities` (
   KEY `customerId` (`customerId`),
   KEY `o_id` (`o_id`),
   KEY `a_id` (`a_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 
 
 
@@ -3453,6 +3545,8 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpe
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_query_OAuth1Token_38.csv' INTO TABLE `object_brick_query_OAuth1Token_38`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_query_OAuth2Token_38.csv' INTO TABLE `object_brick_query_OAuth2Token_38`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_query_PaymentProviderDatatrans_9.csv' INTO TABLE `object_brick_query_PaymentProviderDatatrans_9`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_query_PaymentProviderMpay24_9.csv' INTO TABLE `object_brick_query_PaymentProviderMpay24_9`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_query_PaymentProviderOGone_9.csv' INTO TABLE `object_brick_query_PaymentProviderOGone_9`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_query_PaymentProviderPayPal_9.csv' INTO TABLE `object_brick_query_PaymentProviderPayPal_9`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_query_PaymentProviderQpay_9.csv' INTO TABLE `object_brick_query_PaymentProviderQpay_9`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_query_PaymentProviderWirecardSeamless_9.csv' INTO TABLE `object_brick_query_PaymentProviderWirecardSeamless_9`;
@@ -3477,6 +3571,8 @@ LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpe
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_store_OAuth1Token_38.csv' INTO TABLE `object_brick_store_OAuth1Token_38`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_store_OAuth2Token_38.csv' INTO TABLE `object_brick_store_OAuth2Token_38`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_store_PaymentProviderDatatrans_9.csv' INTO TABLE `object_brick_store_PaymentProviderDatatrans_9`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_store_PaymentProviderMpay24_9.csv' INTO TABLE `object_brick_store_PaymentProviderMpay24_9`;
+LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_store_PaymentProviderOGone_9.csv' INTO TABLE `object_brick_store_PaymentProviderOGone_9`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_store_PaymentProviderPayPal_9.csv' INTO TABLE `object_brick_store_PaymentProviderPayPal_9`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_store_PaymentProviderQpay_9.csv' INTO TABLE `object_brick_store_PaymentProviderQpay_9`;
 LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/dumpexport-object_brick_store_PaymentProviderWirecardSeamless_9.csv' INTO TABLE `object_brick_store_PaymentProviderWirecardSeamless_9`;

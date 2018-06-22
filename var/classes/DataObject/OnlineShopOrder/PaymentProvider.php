@@ -6,8 +6,26 @@ class PaymentProvider extends \Pimcore\Model\DataObject\Objectbrick {
 
 
 
-protected $brickGetters = array('PaymentProviderDatatrans','PaymentProviderPayPal','PaymentProviderQpay','PaymentProviderWirecardSeamless');
+protected $brickGetters = array('PaymentProviderOGone','PaymentProviderDatatrans','PaymentProviderMpay24','PaymentProviderPayPal','PaymentProviderQpay','PaymentProviderWirecardSeamless');
 
+
+public $PaymentProviderOGone = null;
+
+/**
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderOGone
+*/
+public function getPaymentProviderOGone() { 
+   return $this->PaymentProviderOGone; 
+}
+
+/**
+* @param \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderOGone $PaymentProviderOGone
+* @return \Pimcore\Model\DataObject\OnlineShopOrder\PaymentProvider
+*/
+public function setPaymentProviderOGone ($PaymentProviderOGone) {
+	$this->PaymentProviderOGone = $PaymentProviderOGone;
+	return $this;
+}
 
 public $PaymentProviderDatatrans = null;
 
@@ -24,6 +42,24 @@ public function getPaymentProviderDatatrans() {
 */
 public function setPaymentProviderDatatrans ($PaymentProviderDatatrans) {
 	$this->PaymentProviderDatatrans = $PaymentProviderDatatrans;
+	return $this;
+}
+
+public $PaymentProviderMpay24 = null;
+
+/**
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderMpay24
+*/
+public function getPaymentProviderMpay24() { 
+   return $this->PaymentProviderMpay24; 
+}
+
+/**
+* @param \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderMpay24 $PaymentProviderMpay24
+* @return \Pimcore\Model\DataObject\OnlineShopOrder\PaymentProvider
+*/
+public function setPaymentProviderMpay24 ($PaymentProviderMpay24) {
+	$this->PaymentProviderMpay24 = $PaymentProviderMpay24;
 	return $this;
 }
 

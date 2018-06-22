@@ -205,6 +205,8 @@ class CheckoutController extends AbstractCartAware
 
                         try {
                             $targetOrder = $checkoutManager->startAndCommitRecurringOrderPayment($sourceOrder, $user->getId());
+                            $session = $this->get("session");
+                            $session->set("last_order_id", $targetOrder->getId());
                             return $this->redirect($this->generateUrl('checkout', ['action' => 'completed', 'language' => $language]));
                         } catch (\Exception $exception) {
                             // TODO: show warning

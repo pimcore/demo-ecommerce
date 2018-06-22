@@ -1,10 +1,12 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:45+02:00
+* Generated at: 2018-06-22T10:42:16+02:00
+* IP: 192.168.9.18
 
 
 Fields Summary: 
+ - configurationKey [input]
  - auth_aliasCC [input]
  - auth_maskedCC [input]
  - auth_pmethod [input]
@@ -26,6 +28,7 @@ use Pimcore\Model\DataObject;
 class PaymentProviderDatatrans extends DataObject\Objectbrick\Data\AbstractData  {
 
 public $type = "PaymentProviderDatatrans";
+public $configurationKey;
 public $auth_aliasCC;
 public $auth_maskedCC;
 public $auth_pmethod;
@@ -39,6 +42,31 @@ public $auth_refno;
 public $paymentFinished;
 public $sourceOrder;
 
+
+/**
+* Set configurationKey - Configuration Key
+* @return string
+*/
+public function getConfigurationKey () {
+	$data = $this->configurationKey;
+	if(\Pimcore\Model\DataObject::doGetInheritedValues($this->getObject()) && $this->getDefinition()->getFieldDefinition("configurationKey")->isEmpty($data)) {
+		return $this->getValueFromParent("configurationKey");
+	}
+	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
+		    return $data->getPlain();
+	}
+	 return $data;
+}
+
+/**
+* Set configurationKey - Configuration Key
+* @param string $configurationKey
+* @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderDatatrans
+*/
+public function setConfigurationKey ($configurationKey) {
+	$this->configurationKey = $configurationKey;
+	return $this;
+}
 
 /**
 * Set auth_aliasCC - aliasCC
