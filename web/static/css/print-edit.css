@@ -50,7 +50,7 @@ body {
 	padding-left: -6.5mm;
 }
 
-.pimcore_area_print_keyvisual h1 {
+.pimcore_area_print-key-visual h1 {
 	text-align: center;
 	background-color: #000000;
 	display: block;
@@ -66,26 +66,26 @@ body {
 	height: 10px;
 }
 
-.pimcore_area_print_productrow .element {
+.pimcore_area_print-product-row .element {
 	height: 350px;
 }
 
 
-.pimcore_area_print_productrow .element.small {
+.pimcore_area_print-product-row .element.small {
 	padding-right: 5mm;
 }
 
 
-.pimcore_area_print_productrow .productCell {
+.pimcore_area_print-product-row .productCell {
 	height: 300px;
 }
 
-.pimcore_area_print_productrow .displaymode {
+.pimcore_area_print-product-row .displaymode {
 	padding-bottom: 20px;
 	vertical-align: middle;
 }
 
-.pimcore_area_print_productrow .wide.first .mainImage, .pimcore_area_print_productrow .small.first .colorvariants {
+.pimcore_area_print-product-row .wide.first .mainImage, .pimcore_area_print-product-row .small.first .colorvariants {
 	right: 10mm;
 }
 

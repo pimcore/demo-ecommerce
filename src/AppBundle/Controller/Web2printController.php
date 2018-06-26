@@ -44,7 +44,7 @@ class Web2printController extends AbstractController
         if ($product instanceof DefaultProduct) {
             $this->view->product = $product->internalGetBaseProduct();
 
-            $colorVariants = $product->getColorVariants();
+            $colorVariants = $product->getColorVariants(false);
             $sizes = [];
             foreach ($colorVariants as $colorVariant) {
                 $sizeVariants = $colorVariant->getSizeVariants();
