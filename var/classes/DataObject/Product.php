@@ -1,10 +1,11 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:51+02:00
+* Generated at: 2018-07-16T21:14:18+02:00
 * Inheritance: yes
 * Variants: yes
-* Changed by: admin (16)
+* Changed by: admin (18)
+* IP: 10.242.2.5
 
 
 Fields Summary: 
@@ -72,7 +73,7 @@ namespace Pimcore\Model\DataObject;
 
 class Product extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractProduct {
 
-public $o_classId = 12;
+public $o_classId = "12";
 public $o_className = "Product";
 public $localizedfields;
 public $artno;

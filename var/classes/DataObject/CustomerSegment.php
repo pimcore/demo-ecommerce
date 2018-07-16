@@ -1,9 +1,10 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:44+02:00
+* Generated at: 2018-07-16T21:14:18+02:00
 * Inheritance: no
 * Variants: no
+* IP: 10.242.2.5
 
 
 Fields Summary: 
@@ -30,7 +31,7 @@ namespace Pimcore\Model\DataObject;
 
 class CustomerSegment extends \CustomerManagementFrameworkBundle\Model\AbstractCustomerSegment {
 
-public $o_classId = 37;
+public $o_classId = "37";
 public $o_className = "CustomerSegment";
 public $name;
 public $group;

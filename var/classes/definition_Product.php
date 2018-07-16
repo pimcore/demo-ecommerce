@@ -1,10 +1,11 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:51+02:00
+* Generated at: 2018-07-16T21:14:18+02:00
 * Inheritance: yes
 * Variants: yes
-* Changed by: admin (16)
+* Changed by: admin (18)
+* IP: 10.242.2.5
 
 
 Fields Summary: 
@@ -45,12 +46,13 @@ Fields Summary:
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+   'id' => '12',
    'name' => 'Product',
    'description' => '',
    'creationDate' => 1366282442,
-   'modificationDate' => 1528379151,
+   'modificationDate' => 1531768458,
    'userOwner' => 1,
-   'userModification' => 16,
+   'userModification' => 18,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractProduct',
    'useTraits' => '',
    'allowInherit' => true,
@@ -808,6 +810,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'width' => 150,
                  'height' => '',
                  'maxItems' => '',
+                 'renderType' => NULL,
                  'optionsProviderClass' => NULL,
                  'optionsProviderData' => NULL,
                  'queryColumnType' => 'text',
@@ -1129,6 +1132,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'width' => 300,
                      'height' => 350,
                      'maxItems' => '',
+                     'renderType' => NULL,
                      'optionsProviderClass' => NULL,
                      'optionsProviderData' => NULL,
                      'queryColumnType' => 'text',
@@ -1151,7 +1155,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                   )),
                   1 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\ObjectsMetadata::__set_state(array(
-                     'allowedClassId' => 16,
+                     'allowedClassId' => 'ProductTechnology',
                      'visibleFields' => 'name',
                      'columns' => 
                     array (
@@ -1199,7 +1203,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                   )),
                   2 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\ObjectsMetadata::__set_state(array(
-                     'allowedClassId' => 16,
+                     'allowedClassId' => 'ProductTechnology',
                      'visibleFields' => 'name',
                      'columns' => 
                     array (
@@ -1626,6 +1630,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
     'grid' => 
     array (
       'id' => true,
+      'key' => false,
       'path' => false,
       'published' => true,
       'modificationDate' => false,
@@ -1634,6 +1639,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
     'search' => 
     array (
       'id' => true,
+      'key' => false,
       'path' => false,
       'published' => true,
       'modificationDate' => false,

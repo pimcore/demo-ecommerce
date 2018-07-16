@@ -1,10 +1,10 @@
 <?php 
 
 /** 
-* Generated at: 2018-05-24T08:17:54+02:00
+* Generated at: 2018-07-16T21:14:18+02:00
 * Inheritance: no
 * Variants: no
-* IP: 192.168.9.18
+* IP: 10.242.2.5
 
 
 Fields Summary: 
@@ -18,10 +18,11 @@ Fields Summary:
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+   'id' => '37',
    'name' => 'CustomerSegment',
    'description' => NULL,
    'creationDate' => 0,
-   'modificationDate' => 1527142673,
+   'modificationDate' => 1531768458,
    'userOwner' => 0,
    'userModification' => 10,
    'parentClass' => '\\CustomerManagementFrameworkBundle\\Model\\AbstractCustomerSegment',
