@@ -1651,7 +1651,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
               )),
               1 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\ObjectsMetadata::__set_state(array(
-                 'allowedClassId' => 37,
+                 'allowedClassId' => 'CustomerSegment',
                  'visibleFields' => 'id,name',
                  'columns' => 
                 array (
@@ -1706,7 +1706,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
               )),
               2 => 
               Pimcore\Model\DataObject\ClassDefinition\Data\ObjectsMetadata::__set_state(array(
-                 'allowedClassId' => 37,
+                 'allowedClassId' => 'CustomerSegment',
                  'visibleFields' => 'name,id',
                  'columns' => 
                 array (
