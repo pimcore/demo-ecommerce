@@ -11,9 +11,9 @@
     "php": ">=7.0",
     "pimcore/pimcore": "dev-v5.4.0-dev",
     "pimcore/advanced-object-search": "^1.5",
-    "pimcore/core-version": "~5.3.0",
     "pimcore/customer-management-framework-bundle": "^1.8",
-    "pimcore/web2print-tools-bundle": "^2.3"
+    "pimcore/web2print-tools-bundle": "^2.3",
+    "wikimedia/composer-merge-plugin": "^1.4"
   },
   "require-dev": {
     "cache/integration-tests": "^0.15.0",
