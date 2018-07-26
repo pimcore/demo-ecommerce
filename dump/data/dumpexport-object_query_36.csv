@@ -1,9 +1,0 @@
-12252	36	CustomerSegmentGroup	State	State	1	1	\N	\N
-12362	36	CustomerSegmentGroup	Gender	Gender	1	\N	\N	\N
-12366	36	CustomerSegmentGroup	InterestCategories	InterestCategories	1	1	\N	\N
-12381	36	CustomerSegmentGroup	Customer Type	\N	\N	1	\N	\N
-12429	36	CustomerSegmentGroup	Detail Interests	DetailInterests	1	\N	\N	\N
-12440	36	CustomerSegmentGroup	Visitor Count	VisitorCount	1	\N	\N	\N
-12447	36	CustomerSegmentGroup	Visiting Country	VisitingCountry	1	\N	\N	\N
-12450	36	CustomerSegmentGroup	Visiting Language	VisitingLanguage	1	\N	\N	\N
-12453	36	CustomerSegmentGroup	Visiting Device	VisitingDevice	1	\N	\N	\N

@@ -1,35 +1,41 @@
 <?php
 
-include_once(__DIR__ . "/../../../../pimcore/config/startup_cli.php");
+include __DIR__ . "/../vendor/autoload.php";
 
-$databaseConfig = Pimcore\Config::getSystemConfig()["database"]["params"];
+\Pimcore\Bootstrap::setProjectRoot();
+\Pimcore\Bootstrap::boostrap();
+\Pimcore\Bootstrap::startupCli();
 
 
 // get tables which are already in install.sql
-$installSql = file_get_contents(PIMCORE_PROJECT_ROOT . "/pimcore/lib/Pimcore/Install/Resources/install.sql");
-preg_match_all("/CREATE TABLE `(.*)`/", $installSql, $matches);
+$installSql = file_get_contents(PIMCORE_PATH . '/bundles/InstallBundle/Resources/install.sql');
+preg_match_all('/CREATE TABLE `(.*)`/', $installSql, $matches);
 $existingTables = $matches[1];
 
+if (isset($_SERVER['argv'][1])) {
+    $config = new \Doctrine\DBAL\Configuration();
+    $connectionParams = [
+        'url' => $_SERVER['argv'][1],
+        'wrapperClass' => '\Pimcore\Db\Connection'
+    ];
+    $db = \Doctrine\DBAL\DriverManager::getConnection($connectionParams, $config);
+}
 
-$db = \Pimcore\Db::get();
-$databaseName = $db->getDatabase();
 
-$tablesRaw = $db->fetchAll("SHOW FULL TABLES");
+$tablesRaw = $db->fetchAll('SHOW FULL TABLES');
 
 $views = [];
 $tables = [];
 
-foreach($tablesRaw as $table) {
-    if($table["Table_type"] == "VIEW") {
+foreach ($tablesRaw as $table) {
+    if ($table['Table_type'] == 'VIEW') {
         $views[]  = current($table);
     } else {
         $tables[] = current($table);
     }
 }
 
-
 $dumpData = "\nSET NAMES utf8mb4;\n\n";
-
 
 // dump table schema, without the tables in install.sql
 foreach ($tables as $name) {
@@ -38,12 +44,12 @@ foreach ($tables as $name) {
     }
 
     $dumpData .= "\n\n";
-    $dumpData .= "DROP TABLE IF EXISTS `" . $name . "`;";
+    $dumpData .= 'DROP TABLE IF EXISTS `' . $name . '`;';
     $dumpData .= "\n";
 
-    $tableData = $db->fetchRow("SHOW CREATE TABLE " . $name);
+    $tableData = $db->fetchRow('SHOW CREATE TABLE ' . $name);
 
-    $dumpData .= $tableData["Create Table"] . ";";
+    $dumpData .= $tableData['Create Table'] . ';';
 
     $dumpData .= "\n\n";
 }
@@ -71,48 +77,55 @@ foreach ($tables as $name) {
         continue;
     }
 
-    $filename = "dumpexport-" . $name . ".csv";
-    $fullFilename = __DIR__ . "/data/" . $filename;
-    if(file_exists($fullFilename)) {
-        unlink($fullFilename);
+    $tableColumns = [];
+    $data = $db->fetchAll('SHOW COLUMNS FROM ' . $name);
+    foreach ($data as $dataRow) {
+        $tableColumns[] = $db->quoteIdentifier($dataRow['Field']);
     }
 
-    $quotedName = $db->quoteIdentifier($name);
+    $tableData = $db->fetchAll('SELECT * FROM ' . $name);
 
-    //special hack to export blob column of activities table
-    if($name == 'plugin_cmf_activities') {
+    foreach ($tableData as $row) {
+        $cells = [];
+        foreach ($row as $cell) {
+            if (is_string($cell)) {
+                $cell = $db->quote($cell);
+            } elseif ($cell === null) {
+                $cell = 'NULL';
+            }
 
-        $db->query("SELECT id, customerId, activityDate, type, implementationClass, o_id, a_id, hex(attributes), md5, creationDate, modificationDate FROM " . $quotedName . " INTO OUTFILE '" . $fullFilename . "'");
-        $dumpData .= "LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/" . $filename . "' INTO TABLE " . $quotedName .
-            "(id, customerId, activityDate, type, implementationClass, o_id, a_id, @hexAttributes, md5, creationDate, modificationDate) SET attributes=UNHEX(@hexAttributes);\n";
+            $cells[] = $cell;
+        }
 
-    } else {
-
-        $db->query("SELECT * FROM " . $quotedName . " INTO OUTFILE '" . $fullFilename . "'");
-        $dumpData .= "LOAD DATA INFILE '~~DOCUMENTROOT~~/vendor/pimcore/demo-ecommerce/dump/data/" . $filename . "' INTO TABLE " . $quotedName . ";\n";
+        $dumpData .= sprintf(
+            "INSERT INTO %s (%s) VALUES (%s);\n",
+            $name,
+            implode(',', $tableColumns),
+            implode(',', $cells)
+        );
     }
 
 }
 
-foreach($views as $name) {
+foreach ($views as $name) {
     // dump view structure
     $dumpData .= "\n\n";
-    $dumpData .= "DROP VIEW IF EXISTS " . $name . ";";
+    $dumpData .= 'DROP VIEW IF EXISTS `' . $name . '`;';
     $dumpData .= "\n";
 
     try {
-        $viewData = $db->fetchRow("SHOW CREATE VIEW " . $name);
-        $dumpData .= $viewData["Create View"] . ";";
+        $viewData = $db->fetchRow('SHOW CREATE VIEW ' . $name);
+        $dumpData .= $viewData['Create View'] . ';';
     } catch (\Exception $e) {
         echo $e->getMessage() . "\n";
     }
 }
 
-
 // remove user specific data
-$dumpData = preg_replace("/DEFINER(.*)DEFINER/i", "", $dumpData);
+$dumpData = preg_replace('/DEFINER(.*)DEFINER/i', '', $dumpData);
+$dumpData .= "\n";
 
-$finalDest = __DIR__ . "/data.sql";
+$finalDest = __DIR__ . '/data.sql';
 file_put_contents($finalDest, $dumpData);
 
-echo "Dump is here: " . $finalDest . "\n";
+echo 'Dump is here: ' . $finalDest . "\n";
