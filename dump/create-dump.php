@@ -12,6 +12,8 @@ $installSql = file_get_contents(PIMCORE_PATH . '/bundles/InstallBundle/Resources
 preg_match_all('/CREATE TABLE `(.*)`/', $installSql, $matches);
 $existingTables = $matches[1];
 
+$db = \Pimcore\Db::get();
+
 if (isset($_SERVER['argv'][1])) {
     $config = new \Doctrine\DBAL\Configuration();
     $connectionParams = [
@@ -54,7 +56,9 @@ foreach ($tables as $name) {
     $dumpData .= "\n\n";
 }
 
-$dumpData .= "\n\n";
+$finalDest = __DIR__ . '/data-0-bootstrap.sql';
+file_put_contents($finalDest, $dumpData);
+$dumpFiles[] = $finalDest;
 
 $tableBlacklist = [
     'application_logs',
@@ -72,6 +76,8 @@ $tableBlacklist = [
 
 // dump data
 foreach ($tables as $name) {
+
+    $dumpData = "\nSET NAMES utf8mb4;\n\n";
 
     if (strstr($name, "application_logs") || in_array($name, $tableBlacklist)) {
         continue;
@@ -105,7 +111,13 @@ foreach ($tables as $name) {
         );
     }
 
+    $finalDest = __DIR__ . '/data-1-' . $name . '.sql';
+    file_put_contents($finalDest, $dumpData);
+    $dumpFiles[] = $finalDest;
+
 }
+
+$dumpData = "\nSET NAMES utf8mb4;\n\n";
 
 foreach ($views as $name) {
     // dump view structure
@@ -125,7 +137,8 @@ foreach ($views as $name) {
 $dumpData = preg_replace('/DEFINER(.*)DEFINER/i', '', $dumpData);
 $dumpData .= "\n";
 
-$finalDest = __DIR__ . '/data.sql';
+$finalDest = __DIR__ . '/data-2-views.sql';
 file_put_contents($finalDest, $dumpData);
+$dumpFiles[] = $finalDest;
 
-echo 'Dump is here: ' . $finalDest . "\n";
+echo "Dumps are here: \n" . implode("\n", $dumpFiles) . "\n";

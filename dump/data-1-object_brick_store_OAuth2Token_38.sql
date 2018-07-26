@@ -1,0 +1,4 @@
+
+SET NAMES utf8mb4;
+
+INSERT INTO object_brick_store_OAuth2Token_38 (`o_id`,`fieldname`,`accessToken`,`tokenType`,`expiresAt`,`refreshToken`,`scope`) VALUES ('12373','credentials','def50200b92f1c97a8514bf1273303749c3ce7588b361d384355b3c1b58169cd85169584fdc1459c39795f4f2dffadfee96ca4b75b55fa74afab05f7b78d6e519ffe50a27fa9cdff650a4f9646386fc291d0e21850147ada505b8e51f9cbf9eb6b330ff1df81ec49c894a1ac90ccd594343c62f4bf6579000db04a3488cfd87cea10afe78b5376104a70d7011cdc042982be3450fc4ef9cacf7a9439e4210be4d82379ae96af02007db730b047158701b3d5bd5a55bec3a3cb3f498c2c7bc04f411c096660059982b7e2602c27b87579daee02dff0','Bearer','1508410230','','openid email profile');
