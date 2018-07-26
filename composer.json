@@ -9,7 +9,7 @@
   },
   "require": {
     "php": ">=7.1",
-    "pimcore/pimcore": "dev-v5.4.0-dev",
+    "pimcore/pimcore": "dev-master",
     "pimcore/advanced-object-search": "^1.5",
     "pimcore/customer-management-framework-bundle": "^1.8",
     "pimcore/web2print-tools-bundle": "^2.3",
