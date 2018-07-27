@@ -13,7 +13,7 @@
     "pimcore/advanced-object-search": "^1.6",
     "pimcore/customer-management-framework-bundle": "^1.9",
     "pimcore/web2print-tools-bundle": "^2.4",
-    "wikimedia/composer-merge-plugin": "^1.5"
+    "wikimedia/composer-merge-plugin": "^1.4"
   },
   "require-dev": {
     "cache/integration-tests": "^0.15.0",
