@@ -1,0 +1,7 @@
+
+SET NAMES utf8mb4;
+
+INSERT INTO plugin_cmf_actiontrigger_actions (`id`,`ruleId`,`actionDelay`,`implementationClass`,`options`,`creationDate`,`modificationDate`) VALUES ('1','2','0','\\CustomerManagementFrameworkBundle\\ActionTrigger\\Action\\AddSegment','{\"removeOtherSegmentsFromGroup\":true,\"actionDelayGuiValue\":0,\"actionDelayGuiType\":\"m\",\"segmentId\":12382}','1508406898','0');
+INSERT INTO plugin_cmf_actiontrigger_actions (`id`,`ruleId`,`actionDelay`,`implementationClass`,`options`,`creationDate`,`modificationDate`) VALUES ('2','3','0','\\CustomerManagementFrameworkBundle\\ActionTrigger\\Action\\AddSegment','{\"removeOtherSegmentsFromGroup\":true,\"actionDelayGuiValue\":0,\"actionDelayGuiType\":\"m\",\"segmentId\":12383}','1508406931','0');
+INSERT INTO plugin_cmf_actiontrigger_actions (`id`,`ruleId`,`actionDelay`,`implementationClass`,`options`,`creationDate`,`modificationDate`) VALUES ('3','4','0','\\CustomerManagementFrameworkBundle\\ActionTrigger\\Action\\AddSegment','{\"removeOtherSegmentsFromGroup\":true,\"actionDelayGuiValue\":0,\"actionDelayGuiType\":\"m\",\"segmentId\":12384}','1508406964','0');
+INSERT INTO plugin_cmf_actiontrigger_actions (`id`,`ruleId`,`actionDelay`,`implementationClass`,`options`,`creationDate`,`modificationDate`) VALUES ('4','5','1','\\CustomerManagementFrameworkBundle\\ActionTrigger\\Action\\AddTrackedSegment','{\"removeOtherSegmentsFromGroup\":false,\"increaseSegmentApplicationCounter\":false,\"actionDelayGuiValue\":1,\"actionDelayGuiType\":\"m\"}','1515167577','0');

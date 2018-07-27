@@ -1,0 +1,37 @@
+
+SET NAMES utf8mb4;
+
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12356','12254','object','calculatedSegments','application_counter',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12356','12254','object','calculatedSegments','created_timestamp',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12356','12363','object','calculatedSegments','application_counter',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12356','12363','object','calculatedSegments','created_timestamp',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12356','12367','object','calculatedSegments','application_counter','4','object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12356','12367','object','calculatedSegments','created_timestamp',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12356','12380','object','calculatedSegments','application_counter','1','object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12356','12380','object','calculatedSegments','created_timestamp',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12356','12384','object','calculatedSegments','application_counter',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12356','12384','object','calculatedSegments','created_timestamp',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12356','12384','object','manualSegments','application_counter',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12356','12384','object','manualSegments','created_timestamp',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12356','12387','object','calculatedSegments','application_counter','2','object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12356','12387','object','calculatedSegments','created_timestamp',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12356','12441','object','calculatedSegments','application_counter',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12356','12441','object','calculatedSegments','created_timestamp',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12356','12442','object','calculatedSegments','application_counter',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12356','12442','object','calculatedSegments','created_timestamp',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12372','12364','object','calculatedSegments','application_counter',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12372','12364','object','calculatedSegments','created_timestamp',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12372','12379','object','calculatedSegments','application_counter',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12372','12379','object','calculatedSegments','created_timestamp',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12372','12380','object','calculatedSegments','application_counter','1','object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12372','12380','object','calculatedSegments','created_timestamp',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12372','12383','object','manualSegments','application_counter',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12372','12383','object','manualSegments','created_timestamp',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12395','12364','object','calculatedSegments','application_counter',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12395','12364','object','calculatedSegments','created_timestamp',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12395','12379','object','calculatedSegments','application_counter',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12395','12379','object','calculatedSegments','created_timestamp',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12395','12382','object','manualSegments','application_counter',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12395','12382','object','manualSegments','created_timestamp',NULL,'object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12395','12399','object','calculatedSegments','application_counter','1','object','','0');
+INSERT INTO object_metadata_41 (`o_id`,`dest_id`,`type`,`fieldname`,`column`,`data`,`ownertype`,`ownername`,`position`) VALUES ('12395','12399','object','calculatedSegments','created_timestamp',NULL,'object','','0');

@@ -1,0 +1,4 @@
+
+SET NAMES utf8mb4;
+
+INSERT INTO object_brick_query_featuresBenefitsSleepingbags_12 (`o_id`,`fieldname`,`specs`) VALUES ('4846','specificAttributes',',fB_SB.thermal-hood-with-face-warmer,fB_SB.ergonomic-ood,fB_SB.shoulder-extension,fB_SB.thermal-footbox,fB_SB.thermal-collar,fB_SB.double-draft-tube-with-zip-protection,fB_SB.pillow-cover,fB_SB.inside-pocket,fB_SB.thermal-hood,fB_SB.draft-tube-with-zip-protection,fB_SB.extra-thermal-layer-torso-area,fB_SB.extra-thermal-footbox,fB_SB.zip-protection,fB_SB.outside-pocket,fB_SB.shoulder-knee-extension,fB_SB.extension,fB_SB.women-specific-tailored-to-fit-womens-body,fB_SB.increased-comfort-of-movement-and-sufficient-space-for-the-feet,fB_SB.continuous-zipper-allows-the-sleepingbag-to-be-turned-into-a-blanket,fB_SB.two-bags-can-be-connected-together,');

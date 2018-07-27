@@ -1,0 +1,6 @@
+
+SET NAMES utf8mb4;
+
+INSERT INTO object_brick_store_PaymentProviderDatatrans_9 (`o_id`,`fieldname`,`auth_aliasCC`,`auth_expm`,`auth_expy`,`auth_reqtype`,`auth_uppTransactionId`,`auth_amount`,`auth_currency`,`auth_refno`,`auth_maskedCC`,`auth_pmethod`,`paymentFinished`,`configurationKey`) VALUES ('11928','paymentProvider','424242SKMPRI4242','12','18','CAA','160624125101968660','8580','EUR','payment_4066085197-1~11928',NULL,NULL,NULL,NULL);
+INSERT INTO object_brick_store_PaymentProviderDatatrans_9 (`o_id`,`fieldname`,`auth_aliasCC`,`auth_expm`,`auth_expy`,`auth_reqtype`,`auth_uppTransactionId`,`auth_amount`,`auth_currency`,`auth_refno`,`auth_maskedCC`,`auth_pmethod`,`paymentFinished`,`configurationKey`) VALUES ('12018','paymentProvider',NULL,'12','18','CAA','161014150302785010','5056','EUR','payment_963921977-1~12018',NULL,NULL,NULL,NULL);
+INSERT INTO object_brick_store_PaymentProviderDatatrans_9 (`o_id`,`fieldname`,`auth_aliasCC`,`auth_expm`,`auth_expy`,`auth_reqtype`,`auth_uppTransactionId`,`auth_amount`,`auth_currency`,`auth_refno`,`auth_maskedCC`,`auth_pmethod`,`paymentFinished`,`configurationKey`) VALUES ('12186','paymentProvider',NULL,'12','18','CAA','170714121024823235','7182','EUR','payment_1273049064-1~12186',NULL,NULL,NULL,NULL);

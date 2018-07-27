@@ -27,10 +27,10 @@ class AdminStyle extends \Pimcore\Model\Element\AdminStyle
             $backup = AbstractObject::doGetInheritedValues($element);
             AbstractObject::setGetInheritedValues(true);
             if ($element->getParent() instanceof Product) {
-                $this->elementIcon = '/pimcore/static6/img/icon/tag_green.png';
+                $this->elementIcon = '/bundles/pimcoreadmin/img/icon/tag_green.png';
                 $this->elementIconClass = null;
             } else {
-                $this->elementIcon = '/pimcore/static6/img/icon/tag_blue.png';
+                $this->elementIcon = '/bundles/pimcoreadmin/img/icon/tag_blue.png';
                 $this->elementIconClass = null;
             }
 
