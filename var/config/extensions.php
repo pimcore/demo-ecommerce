@@ -17,7 +17,6 @@ return [
         "Pimcore\\Bundle\\EcommerceFrameworkBundle\\PimcoreEcommerceFrameworkBundle" => TRUE,
         "OutputDataConfigToolkitBundle\\OutputDataConfigToolkitBundle" => TRUE,
         "Web2PrintToolsBundle\\Web2PrintToolsBundle" => TRUE,
-        "AdvancedObjectSearchBundle\\AdvancedObjectSearchBundle" => TRUE,
         "CustomerManagementFrameworkBundle\\PimcoreCustomerManagementFrameworkBundle" => TRUE,
         "Pimcore\\Bundle\\ObjectMergerBundle\\ObjectMergerBundle" => TRUE,
         "WorkflowGuiBundle\\WorkflowGuiBundle" => TRUE
