@@ -19009,6 +19009,14 @@ INSERT INTO translations_admin (`key`,`language`,`text`,`creationDate`,`modifica
 INSERT INTO translations_admin (`key`,`language`,`text`,`creationDate`,`modificationDate`) VALUES ('tentSpecifications','uk','','1491568490','1491568490');
 INSERT INTO translations_admin (`key`,`language`,`text`,`creationDate`,`modificationDate`) VALUES ('tentSpecifications','zh_Hans','','1491568490','1491568490');
 INSERT INTO translations_admin (`key`,`language`,`text`,`creationDate`,`modificationDate`) VALUES ('tentSpecifications','zh_Hant','','1491568490','1491568490');
+INSERT INTO translations_admin (`key`,`language`,`text`,`creationDate`,`modificationDate`) VALUES ('translation','cs','','1533044735','1533044735');
+INSERT INTO translations_admin (`key`,`language`,`text`,`creationDate`,`modificationDate`) VALUES ('translation','de','','1533044735','1533044735');
+INSERT INTO translations_admin (`key`,`language`,`text`,`creationDate`,`modificationDate`) VALUES ('translation','en','','1533044735','1533044735');
+INSERT INTO translations_admin (`key`,`language`,`text`,`creationDate`,`modificationDate`) VALUES ('translation','es','','1533044735','1533044735');
+INSERT INTO translations_admin (`key`,`language`,`text`,`creationDate`,`modificationDate`) VALUES ('translation','fr','','1533044735','1533044735');
+INSERT INTO translations_admin (`key`,`language`,`text`,`creationDate`,`modificationDate`) VALUES ('translation','it','','1533044735','1533044735');
+INSERT INTO translations_admin (`key`,`language`,`text`,`creationDate`,`modificationDate`) VALUES ('translation','nl','','1533044735','1533044735');
+INSERT INTO translations_admin (`key`,`language`,`text`,`creationDate`,`modificationDate`) VALUES ('translation','sk','','1533044735','1533044735');
 INSERT INTO translations_admin (`key`,`language`,`text`,`creationDate`,`modificationDate`) VALUES ('uppTransactionId','ca','','1500285463','1500285463');
 INSERT INTO translations_admin (`key`,`language`,`text`,`creationDate`,`modificationDate`) VALUES ('uppTransactionId','cs','','1500285463','1500285463');
 INSERT INTO translations_admin (`key`,`language`,`text`,`creationDate`,`modificationDate`) VALUES ('uppTransactionId','de','','1500285463','1500285463');
