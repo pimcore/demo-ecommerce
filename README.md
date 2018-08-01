@@ -7,7 +7,7 @@ Applications built with Pimcore.
 
 ## Getting started 
 ```bash
-composer create-project pimcore/demo-advanced my-project
+composer create-project pimcore/demo-ecommerce my-project
 cd ./my-project
 ./vendor/bin/pimcore-install
 ```
