@@ -79,7 +79,7 @@ return [
     8 => [
         "id" => 8,
         "name" => "action",
-        "pattern" => "#(.*?)/action/([a-zA-Z\\-\\_]+)/([a-z\\-]+)#",
+        "pattern" => "#/(.*?)/action/([a-zA-Z\\-\\_]+)/([a-z\\-]+)#",
         "reverse" => "/%prefix/action/%controller/%action",
         "module" => "",
         "controller" => "%controller",
@@ -92,7 +92,7 @@ return [
         "priority" => 1,
         "legacy" => FALSE,
         "creationDate" => 1460199088,
-        "modificationDate" => 1491896303
+        "modificationDate" => 1534249455
     ],
     9 => [
         "id" => 9,
@@ -145,5 +145,4 @@ return [
         "creationDate" => 1507723278,
         "modificationDate" => 1507801561
     ]
-
 ];
