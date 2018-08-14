@@ -28,7 +28,7 @@
     <link rel="stylesheet" type="text/css" href="/static/css/print-preview.css" media="screen" />
 
     <?php if($this->printermarks) { ?>
-        <link rel="stylesheet" type="text/css" href="/pimcore/static6/css/print/print-printermarks.css" media="print" />
+        <link rel="stylesheet" type="text/css" href="/bundles/pimcoreadmin/css/print/print-printermarks.css" media="print" />
     <?php } ?>
 
 
