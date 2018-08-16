@@ -526,7 +526,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
     ),
      'locked' => false,
   )),
-   'icon' => '/pimcore/static6/img/flat-color-icons/sports_mode.svg',
+   'icon' => '/bundles/pimcoreadmin/img/flat-color-icons/sports_mode.svg',
    'previewUrl' => '/__customermanagementframework/object-preview/link-activity-definition-preview',
    'group' => 'CustomerManagement',
    'showAppLoggerTab' => false,

@@ -6,7 +6,7 @@ return [
             "treetype" => "object",
             "name" => "Products",
             "condition" => NULL,
-            "icon" => "/pimcore/static6/img/flat-color-icons/camera_addon.svg",
+            "icon" => "/bundles/pimcoreadmin/img/flat-color-icons/camera_addon.svg",
             "id" => 1,
             "rootfolder" => "/products",
             "showroot" => FALSE,
@@ -18,7 +18,7 @@ return [
         [
             "treetype" => "object",
             "name" => "Orders",
-            "icon" => "/pimcore/static6/img/flat-color-icons/shopping-cart.svg",
+            "icon" => "/bundles/pimcoreadmin/img/flat-color-icons/shopping-cart.svg",
             "id" => 2,
             "showroot" => FALSE,
             "rootfolder" => "/",
@@ -31,7 +31,7 @@ return [
         [
             "treetype" => "object",
             "name" => "Products",
-            "icon" => "/pimcore/static6/img/flat-color-icons/camera_addon.svg",
+            "icon" => "/bundles/pimcoreadmin/img/flat-color-icons/camera_addon.svg",
             "id" => 3,
             "showroot" => FALSE,
             "rootfolder" => "/products/products",
@@ -43,7 +43,7 @@ return [
         [
             "treetype" => "object",
             "name" => "Categories",
-            "icon" => "/pimcore/static6/img/flat-color-icons/opened_folder.svg",
+            "icon" => "/bundles/pimcoreadmin/img/flat-color-icons/opened_folder.svg",
             "id" => 4,
             "showroot" => false,
             "rootfolder" => "/products/categories/products",
@@ -55,7 +55,7 @@ return [
         [
             "treetype" => "object",
             "name" => "Product Attributes",
-            "icon" => "/pimcore/static6/img/flat-color-icons/engineering.svg",
+            "icon" => "/bundles/pimcoreadmin/img/flat-color-icons/engineering.svg",
             "id" => 5,
             "showroot" => FALSE,
             "rootfolder" => "/products",
@@ -68,7 +68,7 @@ return [
         [
             "treetype" => "document",
             "name" => "Katalog",
-            "icon" => "/pimcore/static6/img/flat-color-icons/book.svg",
+            "icon" => "/bundles/pimcoreadmin/img/flat-color-icons/book.svg",
             "id" => 6,
             "showroot" => FALSE,
             "rootfolder" => "/print",
