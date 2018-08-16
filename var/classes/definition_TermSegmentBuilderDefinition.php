@@ -182,7 +182,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
     ),
      'locked' => false,
   )),
-   'icon' => '/pimcore/static6/img/flat-color-icons/data_configuration.svg',
+   'icon' => '/bundles/pimcoreadmin/img/flat-color-icons/data_configuration.svg',
    'previewUrl' => NULL,
    'group' => 'CustomerManagement',
    'showAppLoggerTab' => false,

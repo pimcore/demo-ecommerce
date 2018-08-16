@@ -245,7 +245,7 @@ return [
     ],
 
     "Ecommerce" => [
-        "icon" => "/pimcore/static6/img/flat-color-icons/shopping-cart.svg",
+        "icon" => "/bundles/pimcoreadmin/img/flat-color-icons/shopping-cart.svg",
         "toolbar" => [
             "file" => true,
             "extras" => false,
@@ -296,7 +296,7 @@ return [
     ],
 
     "Katalog" => [
-        "icon" => "/pimcore/static6/img/flat-color-icons/book.svg",
+        "icon" => "/bundles/pimcoreadmin/img/flat-color-icons/book.svg",
         "iconCls" => "pimcore_icon_pimcore",
         "toolbar" => [
             "file" => true,
