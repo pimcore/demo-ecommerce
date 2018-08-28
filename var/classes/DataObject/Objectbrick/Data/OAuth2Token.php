@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:45+02:00
+* Generated at: 2018-08-28T12:12:20+02:00
 
 
 Fields Summary: 
@@ -27,7 +27,7 @@ public $scope;
 
 
 /**
-* Set accessToken - accessToken
+* Get accessToken - accessToken
 * @return string
 */
 public function getAccessToken () {
@@ -36,7 +36,7 @@ public function getAccessToken () {
 		return $this->getValueFromParent("accessToken");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -52,7 +52,7 @@ public function setAccessToken ($accessToken) {
 }
 
 /**
-* Set tokenType - tokenType
+* Get tokenType - tokenType
 * @return string
 */
 public function getTokenType () {
@@ -61,7 +61,7 @@ public function getTokenType () {
 		return $this->getValueFromParent("tokenType");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -77,7 +77,7 @@ public function setTokenType ($tokenType) {
 }
 
 /**
-* Set expiresAt - expiresAt
+* Get expiresAt - expiresAt
 * @return string
 */
 public function getExpiresAt () {
@@ -86,7 +86,7 @@ public function getExpiresAt () {
 		return $this->getValueFromParent("expiresAt");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -102,7 +102,7 @@ public function setExpiresAt ($expiresAt) {
 }
 
 /**
-* Set refreshToken - refreshToken
+* Get refreshToken - refreshToken
 * @return string
 */
 public function getRefreshToken () {
@@ -111,7 +111,7 @@ public function getRefreshToken () {
 		return $this->getValueFromParent("refreshToken");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -127,7 +127,7 @@ public function setRefreshToken ($refreshToken) {
 }
 
 /**
-* Set scope - scope
+* Get scope - scope
 * @return string
 */
 public function getScope () {
@@ -136,7 +136,7 @@ public function getScope () {
 		return $this->getValueFromParent("scope");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }

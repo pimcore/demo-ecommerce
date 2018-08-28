@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:48+02:00
+* Generated at: 2018-08-28T12:12:19+02:00
 
 
 Fields Summary: 
@@ -39,7 +39,7 @@ public $isCeApproved;
 
 
 /**
-* Set lumen - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/lumen.png"/> Lumen
+* Get lumen - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/lumen.png"/> Lumen
 * @return float
 */
 public function getLumen () {
@@ -48,7 +48,7 @@ public function getLumen () {
 		return $this->getValueFromParent("lumen");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -64,7 +64,7 @@ public function setLumen ($lumen) {
 }
 
 /**
-* Set lightDistance - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/light_distance.png"/> Light Distance
+* Get lightDistance - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/light_distance.png"/> Light Distance
 * @return float
 */
 public function getLightDistance () {
@@ -73,7 +73,7 @@ public function getLightDistance () {
 		return $this->getValueFromParent("lightDistance");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -89,7 +89,7 @@ public function setLightDistance ($lightDistance) {
 }
 
 /**
-* Set lightDuration - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/light_duration.png"/> Light Duration
+* Get lightDuration - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/light_duration.png"/> Light Duration
 * @return float
 */
 public function getLightDuration () {
@@ -98,7 +98,7 @@ public function getLightDuration () {
 		return $this->getValueFromParent("lightDuration");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -114,7 +114,7 @@ public function setLightDuration ($lightDuration) {
 }
 
 /**
-* Set ledType - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/led_power.png"/> LED Types
+* Get ledType - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/led_power.png"/> LED Types
 * @return string
 */
 public function getLedType () {
@@ -123,7 +123,7 @@ public function getLedType () {
 		return $this->getValueFromParent("ledType");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -139,7 +139,7 @@ public function setLedType ($ledType) {
 }
 
 /**
-* Set ledBoost - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/led_boost.png"/> LED Boost
+* Get ledBoost - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/led_boost.png"/> LED Boost
 * @return string
 */
 public function getLedBoost () {
@@ -148,7 +148,7 @@ public function getLedBoost () {
 		return $this->getValueFromParent("ledBoost");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -164,7 +164,7 @@ public function setLedBoost ($ledBoost) {
 }
 
 /**
-* Set ledRed - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/led_red.png"/> Red LED
+* Get ledRed - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/led_red.png"/> Red LED
 * @return string
 */
 public function getLedRed () {
@@ -173,7 +173,7 @@ public function getLedRed () {
 		return $this->getValueFromParent("ledRed");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -189,7 +189,7 @@ public function setLedRed ($ledRed) {
 }
 
 /**
-* Set waterResistant - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/water_resistant.png"/> Water Resistant
+* Get waterResistant - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/water_resistant.png"/> Water Resistant
 * @return string
 */
 public function getWaterResistant () {
@@ -198,7 +198,7 @@ public function getWaterResistant () {
 		return $this->getValueFromParent("waterResistant");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -214,7 +214,7 @@ public function setWaterResistant ($waterResistant) {
 }
 
 /**
-* Set batteries - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/batteries.png"/> Battery Information
+* Get batteries - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/batteries.png"/> Battery Information
 * @return string
 */
 public function getBatteries () {
@@ -223,7 +223,7 @@ public function getBatteries () {
 		return $this->getValueFromParent("batteries");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -239,7 +239,7 @@ public function setBatteries ($batteries) {
 }
 
 /**
-* Set weight - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/weight_with_batteries.png"/> Weight with Batteries
+* Get weight - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/weight_with_batteries.png"/> Weight with Batteries
 * @return string
 */
 public function getWeight () {
@@ -248,7 +248,7 @@ public function getWeight () {
 		return $this->getValueFromParent("weight");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -264,7 +264,7 @@ public function setWeight ($weight) {
 }
 
 /**
-* Set hasFlashingMode - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/flashing_mode.png"/> Has Flashing Mode
+* Get hasFlashingMode - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/flashing_mode.png"/> Has Flashing Mode
 * @return boolean
 */
 public function getHasFlashingMode () {
@@ -273,7 +273,7 @@ public function getHasFlashingMode () {
 		return $this->getValueFromParent("hasFlashingMode");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -289,7 +289,7 @@ public function setHasFlashingMode ($hasFlashingMode) {
 }
 
 /**
-* Set isCeApproved - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/ce.png"/> Is CE Approved
+* Get isCeApproved - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/headlamps/ce.png"/> Is CE Approved
 * @return boolean
 */
 public function getIsCeApproved () {
@@ -298,7 +298,7 @@ public function getIsCeApproved () {
 		return $this->getValueFromParent("isCeApproved");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }

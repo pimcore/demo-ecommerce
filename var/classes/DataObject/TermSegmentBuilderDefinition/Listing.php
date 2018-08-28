@@ -11,7 +11,7 @@ use Pimcore\Model\DataObject;
 
 class Listing extends DataObject\Listing\Concrete {
 
-public $classId = 39;
+public $classId = "39";
 public $className = "TermSegmentBuilderDefinition";
 
 

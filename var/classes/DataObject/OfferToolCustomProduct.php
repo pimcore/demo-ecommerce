@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:44+02:00
+* Generated at: 2018-08-28T12:12:17+02:00
 * Inheritance: no
 * Variants: no
 
@@ -26,7 +26,7 @@ namespace Pimcore\Model\DataObject;
 
 class OfferToolCustomProduct extends \Pimcore\Bundle\EcommerceFrameworkBundle\OfferTool\AbstractOfferToolProduct {
 
-public $o_classId = 32;
+public $o_classId = "32";
 public $o_className = "OfferToolCustomProduct";
 public $OSproductNumber;
 public $OSName;

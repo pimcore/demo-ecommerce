@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:51+02:00
+* Generated at: 2018-08-28T12:12:23+02:00
 
 
 Fields Summary: 
@@ -19,7 +19,7 @@ public $weight;
 
 
 /**
-* Set weight - Weight
+* Get weight - Weight
 * @return float
 */
 public function getWeight () {
@@ -28,7 +28,7 @@ public function getWeight () {
 		return $this->getValueFromParent("weight");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }

@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:47+02:00
+* Generated at: 2018-08-28T12:12:19+02:00
 
 
 Fields Summary: 
@@ -18,6 +18,8 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
       'fieldname' => 'specificAttributes',
     ),
   ),
+   'title' => NULL,
+   'group' => NULL,
    'key' => 'featuresBenefitsShoes',
    'parentClass' => '',
    'layoutDefinitions' => 
@@ -125,6 +127,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'width' => 800,
              'height' => 400,
              'maxItems' => '',
+             'renderType' => NULL,
              'optionsProviderClass' => NULL,
              'optionsProviderData' => NULL,
              'queryColumnType' => 'text',

@@ -1,8 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-22T10:47:57+02:00
-* IP: 192.168.9.18
+* Generated at: 2018-08-28T12:12:20+02:00
 
 
 Fields Summary: 
@@ -42,7 +41,7 @@ public $auth_FILTER_STATUS;
 
 
 /**
-* Set configurationKey - Configuration Key
+* Get configurationKey - Configuration Key
 * @return string
 */
 public function getConfigurationKey () {
@@ -51,7 +50,7 @@ public function getConfigurationKey () {
 		return $this->getValueFromParent("configurationKey");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -67,7 +66,7 @@ public function setConfigurationKey ($configurationKey) {
 }
 
 /**
-* Set auth_OPERATION - OPERATION
+* Get auth_OPERATION - OPERATION
 * @return string
 */
 public function getAuth_OPERATION () {
@@ -76,7 +75,7 @@ public function getAuth_OPERATION () {
 		return $this->getValueFromParent("auth_OPERATION");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -92,7 +91,7 @@ public function setAuth_OPERATION ($auth_OPERATION) {
 }
 
 /**
-* Set auth_TID - TID
+* Get auth_TID - TID
 * @return string
 */
 public function getAuth_TID () {
@@ -101,7 +100,7 @@ public function getAuth_TID () {
 		return $this->getValueFromParent("auth_TID");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -117,7 +116,7 @@ public function setAuth_TID ($auth_TID) {
 }
 
 /**
-* Set auth_STATUS - STATUS
+* Get auth_STATUS - STATUS
 * @return string
 */
 public function getAuth_STATUS () {
@@ -126,7 +125,7 @@ public function getAuth_STATUS () {
 		return $this->getValueFromParent("auth_STATUS");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -142,7 +141,7 @@ public function setAuth_STATUS ($auth_STATUS) {
 }
 
 /**
-* Set auth_PRICE - PRICE
+* Get auth_PRICE - PRICE
 * @return string
 */
 public function getAuth_PRICE () {
@@ -151,7 +150,7 @@ public function getAuth_PRICE () {
 		return $this->getValueFromParent("auth_PRICE");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -167,7 +166,7 @@ public function setAuth_PRICE ($auth_PRICE) {
 }
 
 /**
-* Set auth_CURRENCY - CURRENCY
+* Get auth_CURRENCY - CURRENCY
 * @return string
 */
 public function getAuth_CURRENCY () {
@@ -176,7 +175,7 @@ public function getAuth_CURRENCY () {
 		return $this->getValueFromParent("auth_CURRENCY");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -192,7 +191,7 @@ public function setAuth_CURRENCY ($auth_CURRENCY) {
 }
 
 /**
-* Set auth_P_TYPE - P_TYPE
+* Get auth_P_TYPE - P_TYPE
 * @return string
 */
 public function getAuth_P_TYPE () {
@@ -201,7 +200,7 @@ public function getAuth_P_TYPE () {
 		return $this->getValueFromParent("auth_P_TYPE");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -217,7 +216,7 @@ public function setAuth_P_TYPE ($auth_P_TYPE) {
 }
 
 /**
-* Set auth_BRAND - BRAND
+* Get auth_BRAND - BRAND
 * @return string
 */
 public function getAuth_BRAND () {
@@ -226,7 +225,7 @@ public function getAuth_BRAND () {
 		return $this->getValueFromParent("auth_BRAND");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -242,7 +241,7 @@ public function setAuth_BRAND ($auth_BRAND) {
 }
 
 /**
-* Set auth_MPAYTID - MPAYTID
+* Get auth_MPAYTID - MPAYTID
 * @return string
 */
 public function getAuth_MPAYTID () {
@@ -251,7 +250,7 @@ public function getAuth_MPAYTID () {
 		return $this->getValueFromParent("auth_MPAYTID");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -267,7 +266,7 @@ public function setAuth_MPAYTID ($auth_MPAYTID) {
 }
 
 /**
-* Set auth_APPR_CODE - APPR_CODE
+* Get auth_APPR_CODE - APPR_CODE
 * @return string
 */
 public function getAuth_APPR_CODE () {
@@ -276,7 +275,7 @@ public function getAuth_APPR_CODE () {
 		return $this->getValueFromParent("auth_APPR_CODE");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -292,7 +291,7 @@ public function setAuth_APPR_CODE ($auth_APPR_CODE) {
 }
 
 /**
-* Set auth_PROFILE_STATUS - PROFILE_STATUS
+* Get auth_PROFILE_STATUS - PROFILE_STATUS
 * @return string
 */
 public function getAuth_PROFILE_STATUS () {
@@ -301,7 +300,7 @@ public function getAuth_PROFILE_STATUS () {
 		return $this->getValueFromParent("auth_PROFILE_STATUS");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -317,7 +316,7 @@ public function setAuth_PROFILE_STATUS ($auth_PROFILE_STATUS) {
 }
 
 /**
-* Set auth_FILTER_STATUS - FILTER_STATUS
+* Get auth_FILTER_STATUS - FILTER_STATUS
 * @return string
 */
 public function getAuth_FILTER_STATUS () {
@@ -326,7 +325,7 @@ public function getAuth_FILTER_STATUS () {
 		return $this->getValueFromParent("auth_FILTER_STATUS");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }

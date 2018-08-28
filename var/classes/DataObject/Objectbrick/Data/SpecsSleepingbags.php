@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:50+02:00
+* Generated at: 2018-08-28T12:12:22+02:00
 
 
 Fields Summary: 
@@ -41,7 +41,7 @@ public $temperatureExtreme;
 
 
 /**
-* Set weight - Weight
+* Get weight - Weight
 * @return float
 */
 public function getWeight () {
@@ -50,7 +50,7 @@ public function getWeight () {
 		return $this->getValueFromParent("weight");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -66,7 +66,7 @@ public function setWeight ($weight) {
 }
 
 /**
-* Set length - Length
+* Get length - Length
 * @return float
 */
 public function getLength () {
@@ -75,7 +75,7 @@ public function getLength () {
 		return $this->getValueFromParent("length");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -91,7 +91,7 @@ public function setLength ($length) {
 }
 
 /**
-* Set width - Width
+* Get width - Width
 * @return float
 */
 public function getWidth () {
@@ -100,7 +100,7 @@ public function getWidth () {
 		return $this->getValueFromParent("width");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -116,7 +116,7 @@ public function setWidth ($width) {
 }
 
 /**
-* Set bodySize - Max Body Size
+* Get bodySize - Max Body Size
 * @return float
 */
 public function getBodySize () {
@@ -125,7 +125,7 @@ public function getBodySize () {
 		return $this->getValueFromParent("bodySize");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -141,7 +141,7 @@ public function setBodySize ($bodySize) {
 }
 
 /**
-* Set fabricShell - Shell fabric
+* Get fabricShell - Shell fabric
 * @return string
 */
 public function getFabricShell () {
@@ -150,7 +150,7 @@ public function getFabricShell () {
 		return $this->getValueFromParent("fabricShell");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -166,7 +166,7 @@ public function setFabricShell ($fabricShell) {
 }
 
 /**
-* Set fabricLining - Lining fabric
+* Get fabricLining - Lining fabric
 * @return string
 */
 public function getFabricLining () {
@@ -175,7 +175,7 @@ public function getFabricLining () {
 		return $this->getValueFromParent("fabricLining");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -191,7 +191,7 @@ public function setFabricLining ($fabricLining) {
 }
 
 /**
-* Set filling - Filling
+* Get filling - Filling
 * @return string
 */
 public function getFilling () {
@@ -200,7 +200,7 @@ public function getFilling () {
 		return $this->getValueFromParent("filling");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -216,7 +216,7 @@ public function setFilling ($filling) {
 }
 
 /**
-* Set protection - Protection (Layers)
+* Get protection - Protection (Layers)
 * @return string
 */
 public function getProtection () {
@@ -225,7 +225,7 @@ public function getProtection () {
 		return $this->getValueFromParent("protection");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -241,7 +241,7 @@ public function setProtection ($protection) {
 }
 
 /**
-* Set packingSize - Packing Size
+* Get packingSize - Packing Size
 * @return string
 */
 public function getPackingSize () {
@@ -250,7 +250,7 @@ public function getPackingSize () {
 		return $this->getValueFromParent("packingSize");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -266,7 +266,7 @@ public function setPackingSize ($packingSize) {
 }
 
 /**
-* Set temperatureComfort - Comfort Temp
+* Get temperatureComfort - Comfort Temp
 * @return float
 */
 public function getTemperatureComfort () {
@@ -275,7 +275,7 @@ public function getTemperatureComfort () {
 		return $this->getValueFromParent("temperatureComfort");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -291,7 +291,7 @@ public function setTemperatureComfort ($temperatureComfort) {
 }
 
 /**
-* Set temperatureLimit - Limit Temp
+* Get temperatureLimit - Limit Temp
 * @return float
 */
 public function getTemperatureLimit () {
@@ -300,7 +300,7 @@ public function getTemperatureLimit () {
 		return $this->getValueFromParent("temperatureLimit");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -316,7 +316,7 @@ public function setTemperatureLimit ($temperatureLimit) {
 }
 
 /**
-* Set temperatureExtreme - Extreme Temp
+* Get temperatureExtreme - Extreme Temp
 * @return float
 */
 public function getTemperatureExtreme () {
@@ -325,7 +325,7 @@ public function getTemperatureExtreme () {
 		return $this->getValueFromParent("temperatureExtreme");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }

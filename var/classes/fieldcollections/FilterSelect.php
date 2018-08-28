@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:51+02:00
+* Generated at: 2018-08-28T12:12:24+02:00
 
 
 Fields Summary: 
@@ -14,6 +14,8 @@ Fields Summary:
 return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
    'key' => 'FilterSelect',
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractFilterDefinitionType',
+   'title' => NULL,
+   'group' => NULL,
    'layoutDefinitions' => 
   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',

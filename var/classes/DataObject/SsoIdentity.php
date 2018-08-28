@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:45+02:00
+* Generated at: 2018-08-28T12:12:20+02:00
 * Inheritance: no
 * Variants: no
 
@@ -26,7 +26,7 @@ namespace Pimcore\Model\DataObject;
 
 class SsoIdentity extends \CustomerManagementFrameworkBundle\Model\AbstractSsoIdentity {
 
-public $o_classId = 38;
+public $o_classId = "38";
 public $o_className = "SsoIdentity";
 public $provider;
 public $identifier;

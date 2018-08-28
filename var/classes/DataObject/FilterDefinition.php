@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:43+02:00
+* Generated at: 2018-08-28T14:23:21+02:00
 * Inheritance: yes
 * Variants: no
 
@@ -48,7 +48,7 @@ namespace Pimcore\Model\DataObject;
 
 class FilterDefinition extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractFilterDefinition {
 
-public $o_classId = 7;
+public $o_classId = "7";
 public $o_className = "FilterDefinition";
 public $pageLimit;
 public $defaultOrderByInheritance;

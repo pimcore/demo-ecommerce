@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:49+02:00
+* Generated at: 2018-08-28T12:12:22+02:00
 
 
 Fields Summary: 
@@ -21,7 +21,7 @@ public $gaitTypes;
 
 
 /**
-* Set footTypes - Foot Type
+* Get footTypes - Foot Type
 * @return array
 */
 public function getFootTypes () {
@@ -30,7 +30,7 @@ public function getFootTypes () {
 		return $this->getValueFromParent("footTypes");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -46,7 +46,7 @@ public function setFootTypes ($footTypes) {
 }
 
 /**
-* Set gaitTypes - Gait Types
+* Get gaitTypes - Gait Types
 * @return array
 */
 public function getGaitTypes () {
@@ -55,7 +55,7 @@ public function getGaitTypes () {
 		return $this->getValueFromParent("gaitTypes");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }

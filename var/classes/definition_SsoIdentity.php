@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:45+02:00
+* Generated at: 2018-08-28T12:12:20+02:00
 * Inheritance: no
 * Variants: no
 
@@ -15,14 +15,17 @@ Fields Summary:
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+   'id' => '38',
    'name' => 'SsoIdentity',
    'description' => NULL,
    'creationDate' => 0,
-   'modificationDate' => 1528379145,
+   'modificationDate' => 1535451140,
    'userOwner' => 0,
    'userModification' => 10,
    'parentClass' => '\\CustomerManagementFrameworkBundle\\Model\\AbstractSsoIdentity',
+   'listingParentClass' => NULL,
    'useTraits' => NULL,
+   'listingUseTraits' => NULL,
    'allowInherit' => false,
    'allowVariants' => false,
    'showVariants' => false,

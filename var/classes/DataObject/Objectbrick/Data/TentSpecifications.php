@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:51+02:00
+* Generated at: 2018-08-28T12:12:23+02:00
 
 
 Fields Summary: 
@@ -35,7 +35,7 @@ public $isMainSeamTaped;
 
 
 /**
-* Set outsideMaterial - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/outer-material.jpg"/> Outside Material
+* Get outsideMaterial - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/outer-material.jpg"/> Outside Material
 * @return string
 */
 public function getOutsideMaterial () {
@@ -44,7 +44,7 @@ public function getOutsideMaterial () {
 		return $this->getValueFromParent("outsideMaterial");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -60,7 +60,7 @@ public function setOutsideMaterial ($outsideMaterial) {
 }
 
 /**
-* Set insideMaterial - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/inner-material.png"/> Inside Material
+* Get insideMaterial - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/inner-material.png"/> Inside Material
 * @return string
 */
 public function getInsideMaterial () {
@@ -69,7 +69,7 @@ public function getInsideMaterial () {
 		return $this->getValueFromParent("insideMaterial");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -85,7 +85,7 @@ public function setInsideMaterial ($insideMaterial) {
 }
 
 /**
-* Set floorMaterial - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/floor-material.jpg"/> Floor Material
+* Get floorMaterial - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/floor-material.jpg"/> Floor Material
 * @return string
 */
 public function getFloorMaterial () {
@@ -94,7 +94,7 @@ public function getFloorMaterial () {
 		return $this->getValueFromParent("floorMaterial");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -110,7 +110,7 @@ public function setFloorMaterial ($floorMaterial) {
 }
 
 /**
-* Set waterproofRain - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/waterproof.jpg"/> Waterproof Rain
+* Get waterproofRain - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/waterproof.jpg"/> Waterproof Rain
 * @return string
 */
 public function getWaterproofRain () {
@@ -119,7 +119,7 @@ public function getWaterproofRain () {
 		return $this->getValueFromParent("waterproofRain");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -135,7 +135,7 @@ public function setWaterproofRain ($waterproofRain) {
 }
 
 /**
-* Set waterproofGround - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/ground-water.jpg"/> Waterproof Ground 
+* Get waterproofGround - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/ground-water.jpg"/> Waterproof Ground 
 * @return string
 */
 public function getWaterproofGround () {
@@ -144,7 +144,7 @@ public function getWaterproofGround () {
 		return $this->getValueFromParent("waterproofGround");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -160,7 +160,7 @@ public function setWaterproofGround ($waterproofGround) {
 }
 
 /**
-* Set construction - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/construction.jpg"/> Construction
+* Get construction - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/construction.jpg"/> Construction
 * @return string
 */
 public function getConstruction () {
@@ -169,7 +169,7 @@ public function getConstruction () {
 		return $this->getValueFromParent("construction");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -185,7 +185,7 @@ public function setConstruction ($construction) {
 }
 
 /**
-* Set tentPegs - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/tent-pegs.jpg"/> Ten Pegs
+* Get tentPegs - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/tent-pegs.jpg"/> Ten Pegs
 * @return string
 */
 public function getTentPegs () {
@@ -194,7 +194,7 @@ public function getTentPegs () {
 		return $this->getValueFromParent("tentPegs");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -210,7 +210,7 @@ public function setTentPegs ($tentPegs) {
 }
 
 /**
-* Set weight - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/weight.jpg"/> Weight
+* Get weight - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/tent-specs/weight.jpg"/> Weight
 * @return float
 */
 public function getWeight () {
@@ -219,7 +219,7 @@ public function getWeight () {
 		return $this->getValueFromParent("weight");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -235,7 +235,7 @@ public function setWeight ($weight) {
 }
 
 /**
-* Set isMainSeamTaped - Is main seam taped?
+* Get isMainSeamTaped - Is main seam taped?
 * @return boolean
 */
 public function getIsMainSeamTaped () {
@@ -244,7 +244,7 @@ public function getIsMainSeamTaped () {
 		return $this->getValueFromParent("isMainSeamTaped");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }

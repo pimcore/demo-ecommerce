@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:49+02:00
+* Generated at: 2018-08-28T12:12:21+02:00
 
 
 Fields Summary: 
@@ -22,6 +22,8 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
       'fieldname' => 'specificAttributes',
     ),
   ),
+   'title' => NULL,
+   'group' => NULL,
    'key' => 'rucksackSpecs',
    'parentClass' => '',
    'layoutDefinitions' => 

@@ -1,8 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-22T10:42:45+02:00
-* IP: 192.168.9.18
+* Generated at: 2018-08-28T12:12:21+02:00
 
 
 Fields Summary: 
@@ -24,7 +23,7 @@ public $auth_PayerID;
 
 
 /**
-* Set configurationKey - Configuration Key
+* Get configurationKey - Configuration Key
 * @return string
 */
 public function getConfigurationKey () {
@@ -33,7 +32,7 @@ public function getConfigurationKey () {
 		return $this->getValueFromParent("configurationKey");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -49,7 +48,7 @@ public function setConfigurationKey ($configurationKey) {
 }
 
 /**
-* Set auth_token - Token
+* Get auth_token - Token
 * @return string
 */
 public function getAuth_token () {
@@ -58,7 +57,7 @@ public function getAuth_token () {
 		return $this->getValueFromParent("auth_token");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -74,7 +73,7 @@ public function setAuth_token ($auth_token) {
 }
 
 /**
-* Set auth_PayerID - PayerID
+* Get auth_PayerID - PayerID
 * @return string
 */
 public function getAuth_PayerID () {
@@ -83,7 +82,7 @@ public function getAuth_PayerID () {
 		return $this->getValueFromParent("auth_PayerID");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }

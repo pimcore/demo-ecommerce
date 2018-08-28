@@ -1,10 +1,11 @@
 <?php 
 
 /** 
-* Generated at: 2018-05-24T08:17:52+02:00
+* Generated at: 2018-08-28T14:23:21+02:00
 * Inheritance: yes
 * Variants: no
-* IP: 192.168.9.18
+* Changed by: admin (19)
+* IP: 192.168.9.95
 
 
 Fields Summary: 
@@ -27,14 +28,17 @@ Fields Summary:
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+   'id' => '7',
    'name' => 'FilterDefinition',
    'description' => '',
    'creationDate' => 1366279599,
-   'modificationDate' => 1527142672,
+   'modificationDate' => 1535459001,
    'userOwner' => 0,
-   'userModification' => 6,
+   'userModification' => 19,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractFilterDefinition',
+   'listingParentClass' => '',
    'useTraits' => '',
+   'listingUseTraits' => '',
    'allowInherit' => true,
    'allowVariants' => false,
    'showVariants' => false,
@@ -49,7 +53,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => false,
+     'collapsible' => NULL,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -85,7 +89,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'height' => NULL,
              'collapsible' => false,
              'collapsed' => false,
-             'bodyStyle' => '',
+             'bodyStyle' => 'border: none !important',
              'datatype' => 'layout',
              'permissions' => '',
              'childs' => 
@@ -480,7 +484,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'height' => NULL,
              'collapsible' => false,
              'collapsed' => false,
-             'bodyStyle' => '',
+             'bodyStyle' => 'border: none !important',
              'datatype' => 'layout',
              'permissions' => '',
              'childs' => 
@@ -489,8 +493,8 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
               Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
                  'fieldtype' => 'text',
                  'html' => 'Preconditions are applied to the product list without being shown at the filters list in the frontend. Therefore preconditions cannot be changed by the user in the frontend.<div>In order to filter for specific value use the pre select attribute in the entries.&nbsp;</div>',
-                 'renderingClass' => NULL,
-                 'renderingData' => NULL,
+                 'renderingClass' => '',
+                 'renderingData' => '',
                  'name' => 'Layout',
                  'type' => NULL,
                  'region' => NULL,
@@ -525,8 +529,8 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                 ),
                  'width' => 300,
                  'defaultValue' => '',
-                 'optionsProviderClass' => NULL,
-                 'optionsProviderData' => NULL,
+                 'optionsProviderClass' => '',
+                 'optionsProviderData' => '',
                  'queryColumnType' => 'varchar',
                  'columnType' => 'varchar',
                  'columnLength' => 190,
@@ -601,7 +605,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'height' => NULL,
              'collapsible' => false,
              'collapsed' => false,
-             'bodyStyle' => '',
+             'bodyStyle' => 'border: none !important',
              'datatype' => 'layout',
              'permissions' => '',
              'childs' => 
@@ -722,7 +726,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'height' => NULL,
              'collapsible' => false,
              'collapsed' => false,
-             'bodyStyle' => '',
+             'bodyStyle' => 'border: none !important',
              'datatype' => 'layout',
              'permissions' => '',
              'childs' => 
@@ -891,18 +895,19 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => false,
+     'locked' => NULL,
   )),
    'icon' => '',
    'previewUrl' => '',
    'group' => '',
    'showAppLoggerTab' => false,
-   'linkGeneratorReference' => NULL,
+   'linkGeneratorReference' => '',
    'propertyVisibility' => 
   array (
     'grid' => 
     array (
       'id' => true,
+      'key' => false,
       'path' => true,
       'published' => true,
       'modificationDate' => true,
@@ -911,6 +916,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
     'search' => 
     array (
       'id' => true,
+      'key' => false,
       'path' => true,
       'published' => true,
       'modificationDate' => true,

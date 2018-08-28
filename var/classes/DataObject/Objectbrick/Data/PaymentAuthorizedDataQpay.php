@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:49+02:00
+* Generated at: 2018-08-28T12:12:20+02:00
 
 
 Fields Summary: 
@@ -25,7 +25,7 @@ public $data_currency;
 
 
 /**
-* Set data_orderNumber - OrderNumber
+* Get data_orderNumber - OrderNumber
 * @return string
 */
 public function getData_orderNumber () {
@@ -34,7 +34,7 @@ public function getData_orderNumber () {
 		return $this->getValueFromParent("data_orderNumber");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -50,7 +50,7 @@ public function setData_orderNumber ($data_orderNumber) {
 }
 
 /**
-* Set data_language - Language
+* Get data_language - Language
 * @return string
 */
 public function getData_language () {
@@ -59,7 +59,7 @@ public function getData_language () {
 		return $this->getValueFromParent("data_language");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -75,7 +75,7 @@ public function setData_language ($data_language) {
 }
 
 /**
-* Set data_amount - Amount
+* Get data_amount - Amount
 * @return string
 */
 public function getData_amount () {
@@ -84,7 +84,7 @@ public function getData_amount () {
 		return $this->getValueFromParent("data_amount");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -100,7 +100,7 @@ public function setData_amount ($data_amount) {
 }
 
 /**
-* Set data_currency - Currency
+* Get data_currency - Currency
 * @return string
 */
 public function getData_currency () {
@@ -109,7 +109,7 @@ public function getData_currency () {
 		return $this->getValueFromParent("data_currency");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }

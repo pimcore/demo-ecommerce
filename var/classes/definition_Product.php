@@ -1,11 +1,9 @@
 <?php 
 
 /** 
-* Generated at: 2018-07-16T21:14:18+02:00
+* Generated at: 2018-08-28T12:12:23+02:00
 * Inheritance: yes
 * Variants: yes
-* Changed by: admin (18)
-* IP: 10.242.2.5
 
 
 Fields Summary: 
@@ -50,11 +48,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'Product',
    'description' => '',
    'creationDate' => 1366282442,
-   'modificationDate' => 1531768458,
+   'modificationDate' => 1535451143,
    'userOwner' => 1,
    'userModification' => 18,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractProduct',
+   'listingParentClass' => NULL,
    'useTraits' => '',
+   'listingUseTraits' => NULL,
    'allowInherit' => true,
    'allowVariants' => true,
    'showVariants' => false,
@@ -1381,8 +1381,8 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                   8 => 'matsSpecs',
                   9 => 'outdoor',
                   10 => 'rucksackSpecs',
-                  11 => 'shoe',
-                  12 => 'shoeDetails',
+                  11 => 'shoeDetails',
+                  12 => 'shoe',
                   13 => 'snowsport',
                   14 => 'specsSleepingbags',
                   15 => 'tentGroundsheet',

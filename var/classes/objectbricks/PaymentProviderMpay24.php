@@ -1,8 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-22T10:47:57+02:00
-* IP: 192.168.9.18
+* Generated at: 2018-08-28T12:12:20+02:00
 
 
 Fields Summary: 
@@ -30,6 +29,8 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
       'fieldname' => 'paymentProvider',
     ),
   ),
+   'title' => NULL,
+   'group' => NULL,
    'key' => 'PaymentProviderMpay24',
    'parentClass' => '',
    'layoutDefinitions' => 
@@ -43,7 +44,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => NULL,
+     'collapsible' => false,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -372,7 +373,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => NULL,
+     'locked' => false,
   )),
    'dao' => NULL,
 ));

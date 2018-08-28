@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:46+02:00
+* Generated at: 2018-08-28T12:12:18+02:00
 
 
 Fields Summary: 
@@ -23,7 +23,7 @@ public $zips;
 
 
 /**
-* Set styles - Styles
+* Get styles - Styles
 * @return \Pimcore\Model\DataObject\productTechnology[]
 */
 public function getStyles () {
@@ -32,7 +32,7 @@ public function getStyles () {
 		return $this->getValueFromParent("styles");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -48,7 +48,7 @@ public function setStyles ($styles) {
 }
 
 /**
-* Set fittings - Fittings
+* Get fittings - Fittings
 * @return array
 */
 public function getFittings () {
@@ -57,7 +57,7 @@ public function getFittings () {
 		return $this->getValueFromParent("fittings");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -73,7 +73,7 @@ public function setFittings ($fittings) {
 }
 
 /**
-* Set zips - Zips
+* Get zips - Zips
 * @return string
 */
 public function getZips () {
@@ -82,7 +82,7 @@ public function getZips () {
 		return $this->getValueFromParent("zips");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }

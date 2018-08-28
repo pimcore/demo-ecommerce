@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:45+02:00
+* Generated at: 2018-08-28T12:12:21+02:00
 * Inheritance: no
 * Variants: no
 
@@ -47,14 +47,17 @@ Fields Summary:
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+   'id' => '9',
    'name' => 'OnlineShopOrder',
    'description' => '',
    'creationDate' => 1366279602,
-   'modificationDate' => 1528379145,
+   'modificationDate' => 1535451141,
    'userOwner' => 0,
    'userModification' => 8,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractOrder',
+   'listingParentClass' => NULL,
    'useTraits' => '',
+   'listingUseTraits' => NULL,
    'allowInherit' => false,
    'allowVariants' => false,
    'showVariants' => false,
@@ -3807,9 +3810,11 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'allowedTypes' => 
                 array (
                   0 => 'PaymentProviderDatatrans',
-                  1 => 'PaymentProviderPayPal',
-                  2 => 'PaymentProviderQpay',
-                  3 => 'PaymentProviderWirecardSeamless',
+                  1 => 'PaymentProviderMpay24',
+                  2 => 'PaymentProviderOGone',
+                  3 => 'PaymentProviderPayPal',
+                  4 => 'PaymentProviderQpay',
+                  5 => 'PaymentProviderWirecardSeamless',
                 ),
                  'maxItems' => '',
                  'name' => 'paymentProvider',

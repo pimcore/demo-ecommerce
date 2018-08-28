@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:43+02:00
+* Generated at: 2018-08-28T12:12:17+02:00
 * Inheritance: no
 * Variants: no
 
@@ -42,7 +42,7 @@ namespace Pimcore\Model\DataObject;
 
 class OnlineShopOrderItem extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractOrderItem {
 
-public $o_classId = 8;
+public $o_classId = "8";
 public $o_className = "OnlineShopOrderItem";
 public $orderState;
 public $product;

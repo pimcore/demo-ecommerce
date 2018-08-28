@@ -1,8 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-22T10:42:26+02:00
-* IP: 192.168.9.18
+* Generated at: 2018-08-28T12:12:21+02:00
 
 
 Fields Summary: 
@@ -44,7 +43,7 @@ public $auth_bankAccountIBAN;
 
 
 /**
-* Set configurationKey - Configuration Key
+* Get configurationKey - Configuration Key
 * @return string
 */
 public function getConfigurationKey () {
@@ -53,7 +52,7 @@ public function getConfigurationKey () {
 		return $this->getValueFromParent("configurationKey");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -69,7 +68,7 @@ public function setConfigurationKey ($configurationKey) {
 }
 
 /**
-* Set auth_orderNumber - OrderNumber
+* Get auth_orderNumber - OrderNumber
 * @return string
 */
 public function getAuth_orderNumber () {
@@ -78,7 +77,7 @@ public function getAuth_orderNumber () {
 		return $this->getValueFromParent("auth_orderNumber");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -94,7 +93,7 @@ public function setAuth_orderNumber ($auth_orderNumber) {
 }
 
 /**
-* Set auth_language - Language
+* Get auth_language - Language
 * @return string
 */
 public function getAuth_language () {
@@ -103,7 +102,7 @@ public function getAuth_language () {
 		return $this->getValueFromParent("auth_language");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -119,7 +118,7 @@ public function setAuth_language ($auth_language) {
 }
 
 /**
-* Set auth_amount - Amount
+* Get auth_amount - Amount
 * @return string
 */
 public function getAuth_amount () {
@@ -128,7 +127,7 @@ public function getAuth_amount () {
 		return $this->getValueFromParent("auth_amount");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -144,7 +143,7 @@ public function setAuth_amount ($auth_amount) {
 }
 
 /**
-* Set auth_currency - Currency
+* Get auth_currency - Currency
 * @return string
 */
 public function getAuth_currency () {
@@ -153,7 +152,7 @@ public function getAuth_currency () {
 		return $this->getValueFromParent("auth_currency");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -169,7 +168,7 @@ public function setAuth_currency ($auth_currency) {
 }
 
 /**
-* Set auth_paymentType - Method
+* Get auth_paymentType - Method
 * @return string
 */
 public function getAuth_paymentType () {
@@ -178,7 +177,7 @@ public function getAuth_paymentType () {
 		return $this->getValueFromParent("auth_paymentType");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -194,7 +193,7 @@ public function setAuth_paymentType ($auth_paymentType) {
 }
 
 /**
-* Set paymentFinished - Date and Time
+* Get paymentFinished - Date and Time
 * @return \Carbon\Carbon
 */
 public function getPaymentFinished () {
@@ -203,7 +202,7 @@ public function getPaymentFinished () {
 		return $this->getValueFromParent("paymentFinished");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -219,7 +218,7 @@ public function setPaymentFinished ($paymentFinished) {
 }
 
 /**
-* Set sourceOrder - Source Order
+* Get sourceOrder - Source Order
 * @return \Pimcore\Model\DataObject\OnlineShopOrder
 */
 public function getSourceOrder () {
@@ -228,7 +227,7 @@ public function getSourceOrder () {
 		return $this->getValueFromParent("sourceOrder");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -244,7 +243,7 @@ public function setSourceOrder ($sourceOrder) {
 }
 
 /**
-* Set auth_anonymousPan - Anonymous Pan
+* Get auth_anonymousPan - Anonymous Pan
 * @return string
 */
 public function getAuth_anonymousPan () {
@@ -253,7 +252,7 @@ public function getAuth_anonymousPan () {
 		return $this->getValueFromParent("auth_anonymousPan");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -269,7 +268,7 @@ public function setAuth_anonymousPan ($auth_anonymousPan) {
 }
 
 /**
-* Set auth_maskedPan - Masked Pan
+* Get auth_maskedPan - Masked Pan
 * @return string
 */
 public function getAuth_maskedPan () {
@@ -278,7 +277,7 @@ public function getAuth_maskedPan () {
 		return $this->getValueFromParent("auth_maskedPan");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -294,7 +293,7 @@ public function setAuth_maskedPan ($auth_maskedPan) {
 }
 
 /**
-* Set auth_expiry - Expiry
+* Get auth_expiry - Expiry
 * @return string
 */
 public function getAuth_expiry () {
@@ -303,7 +302,7 @@ public function getAuth_expiry () {
 		return $this->getValueFromParent("auth_expiry");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -319,7 +318,7 @@ public function setAuth_expiry ($auth_expiry) {
 }
 
 /**
-* Set auth_bankAccountOwner - Bank Account Owner
+* Get auth_bankAccountOwner - Bank Account Owner
 * @return string
 */
 public function getAuth_bankAccountOwner () {
@@ -328,7 +327,7 @@ public function getAuth_bankAccountOwner () {
 		return $this->getValueFromParent("auth_bankAccountOwner");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -344,7 +343,7 @@ public function setAuth_bankAccountOwner ($auth_bankAccountOwner) {
 }
 
 /**
-* Set auth_bankAccountIBAN - IBAN
+* Get auth_bankAccountIBAN - IBAN
 * @return string
 */
 public function getAuth_bankAccountIBAN () {
@@ -353,7 +352,7 @@ public function getAuth_bankAccountIBAN () {
 		return $this->getValueFromParent("auth_bankAccountIBAN");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }

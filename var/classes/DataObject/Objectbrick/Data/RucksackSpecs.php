@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:49+02:00
+* Generated at: 2018-08-28T12:12:21+02:00
 
 
 Fields Summary: 
@@ -27,7 +27,7 @@ public $expandTo;
 
 
 /**
-* Set volume - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/volume.png"/> Volume
+* Get volume - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/volume.png"/> Volume
 * @return string
 */
 public function getVolume () {
@@ -36,7 +36,7 @@ public function getVolume () {
 		return $this->getValueFromParent("volume");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -52,7 +52,7 @@ public function setVolume ($volume) {
 }
 
 /**
-* Set weight - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/weight.png"/> Weight
+* Get weight - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/weight.png"/> Weight
 * @return string
 */
 public function getWeight () {
@@ -61,7 +61,7 @@ public function getWeight () {
 		return $this->getValueFromParent("weight");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -77,7 +77,7 @@ public function setWeight ($weight) {
 }
 
 /**
-* Set load - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/load.png"/> Load
+* Get load - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/load.png"/> Load
 * @return string
 */
 public function getLoad () {
@@ -86,7 +86,7 @@ public function getLoad () {
 		return $this->getValueFromParent("load");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -102,7 +102,7 @@ public function setLoad ($load) {
 }
 
 /**
-* Set material - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/material.png"/> Material
+* Get material - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/material.png"/> Material
 * @return string
 */
 public function getMaterial () {
@@ -111,7 +111,7 @@ public function getMaterial () {
 		return $this->getValueFromParent("material");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -127,7 +127,7 @@ public function setMaterial ($material) {
 }
 
 /**
-* Set expandTo - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/expand.png"/> Expand
+* Get expandTo - <img style="height:40px; float:left; margin:-10px 10px 0 0" src="/static/backend/img/bricks/rucksacks-specs/expand.png"/> Expand
 * @return string
 */
 public function getExpandTo () {
@@ -136,7 +136,7 @@ public function getExpandTo () {
 		return $this->getValueFromParent("expandTo");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }

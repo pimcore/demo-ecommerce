@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:44+02:00
+* Generated at: 2018-08-28T12:12:17+02:00
 * Inheritance: yes
 * Variants: no
 * Changed by: demo (3)
@@ -28,7 +28,7 @@ namespace Pimcore\Model\DataObject;
 
 class ProductCategory extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractCategory {
 
-public $o_classId = 14;
+public $o_classId = "14";
 public $o_className = "ProductCategory";
 public $localizedfields;
 public $filterdefinition;

@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:44+02:00
+* Generated at: 2018-08-28T12:12:20+02:00
 
 
 Fields Summary: 
@@ -19,6 +19,8 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
       'fieldname' => 'credentials',
     ),
   ),
+   'title' => NULL,
+   'group' => NULL,
    'key' => 'OAuth1Token',
    'parentClass' => 'CustomerManagementFrameworkBundle\\Model\\Objectbrick\\AbstractOAuth1Token',
    'layoutDefinitions' => 

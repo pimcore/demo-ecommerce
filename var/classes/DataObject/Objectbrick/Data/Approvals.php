@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:46+02:00
+* Generated at: 2018-08-28T12:12:18+02:00
 
 
 Fields Summary: 
@@ -25,7 +25,7 @@ public $ihfApproved;
 
 
 /**
-* Set fifaApproved - Product is FIFA approved?
+* Get fifaApproved - Product is FIFA approved?
 * @return boolean
 */
 public function getFifaApproved () {
@@ -34,7 +34,7 @@ public function getFifaApproved () {
 		return $this->getValueFromParent("fifaApproved");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -50,7 +50,7 @@ public function setFifaApproved ($fifaApproved) {
 }
 
 /**
-* Set fifaInspected - Product is FIFA inspected?
+* Get fifaInspected - Product is FIFA inspected?
 * @return boolean
 */
 public function getFifaInspected () {
@@ -59,7 +59,7 @@ public function getFifaInspected () {
 		return $this->getValueFromParent("fifaInspected");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -75,7 +75,7 @@ public function setFifaInspected ($fifaInspected) {
 }
 
 /**
-* Set imsChecked - Product is IMS approved?
+* Get imsChecked - Product is IMS approved?
 * @return boolean
 */
 public function getImsChecked () {
@@ -84,7 +84,7 @@ public function getImsChecked () {
 		return $this->getValueFromParent("imsChecked");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -100,7 +100,7 @@ public function setImsChecked ($imsChecked) {
 }
 
 /**
-* Set ihfApproved - Product is IHF appoved?
+* Get ihfApproved - Product is IHF appoved?
 * @return boolean
 */
 public function getIhfApproved () {
@@ -109,7 +109,7 @@ public function getIhfApproved () {
 		return $this->getValueFromParent("ihfApproved");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }

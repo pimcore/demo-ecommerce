@@ -1,8 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-22T10:49:06+02:00
-* IP: 192.168.9.18
+* Generated at: 2018-08-28T12:12:21+02:00
 
 
 Fields Summary: 
@@ -34,7 +33,7 @@ public $auth_customerName;
 
 
 /**
-* Set configurationKey - Configuration Key
+* Get configurationKey - Configuration Key
 * @return string
 */
 public function getConfigurationKey () {
@@ -43,7 +42,7 @@ public function getConfigurationKey () {
 		return $this->getValueFromParent("configurationKey");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -59,7 +58,7 @@ public function setConfigurationKey ($configurationKey) {
 }
 
 /**
-* Set auth_orderNumber - OrderNumber
+* Get auth_orderNumber - OrderNumber
 * @return string
 */
 public function getAuth_orderNumber () {
@@ -68,7 +67,7 @@ public function getAuth_orderNumber () {
 		return $this->getValueFromParent("auth_orderNumber");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -84,7 +83,7 @@ public function setAuth_orderNumber ($auth_orderNumber) {
 }
 
 /**
-* Set auth_paymentMethod - Payment Method
+* Get auth_paymentMethod - Payment Method
 * @return string
 */
 public function getAuth_paymentMethod () {
@@ -93,7 +92,7 @@ public function getAuth_paymentMethod () {
 		return $this->getValueFromParent("auth_paymentMethod");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -109,7 +108,7 @@ public function setAuth_paymentMethod ($auth_paymentMethod) {
 }
 
 /**
-* Set auth_amount - Amount
+* Get auth_amount - Amount
 * @return string
 */
 public function getAuth_amount () {
@@ -118,7 +117,7 @@ public function getAuth_amount () {
 		return $this->getValueFromParent("auth_amount");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -134,7 +133,7 @@ public function setAuth_amount ($auth_amount) {
 }
 
 /**
-* Set auth_currency - Currency
+* Get auth_currency - Currency
 * @return string
 */
 public function getAuth_currency () {
@@ -143,7 +142,7 @@ public function getAuth_currency () {
 		return $this->getValueFromParent("auth_currency");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -159,7 +158,7 @@ public function setAuth_currency ($auth_currency) {
 }
 
 /**
-* Set auth_ip - IP
+* Get auth_ip - IP
 * @return string
 */
 public function getAuth_ip () {
@@ -168,7 +167,7 @@ public function getAuth_ip () {
 		return $this->getValueFromParent("auth_ip");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -184,7 +183,7 @@ public function setAuth_ip ($auth_ip) {
 }
 
 /**
-* Set auth_paymentId - Ogone Payment Id
+* Get auth_paymentId - Ogone Payment Id
 * @return string
 */
 public function getAuth_paymentId () {
@@ -193,7 +192,7 @@ public function getAuth_paymentId () {
 		return $this->getValueFromParent("auth_paymentId");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -209,7 +208,7 @@ public function setAuth_paymentId ($auth_paymentId) {
 }
 
 /**
-* Set auth_customerName - Customer Name
+* Get auth_customerName - Customer Name
 * @return string
 */
 public function getAuth_customerName () {
@@ -218,7 +217,7 @@ public function getAuth_customerName () {
 		return $this->getValueFromParent("auth_customerName");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }

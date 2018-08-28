@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:47+02:00
+* Generated at: 2018-08-28T12:12:19+02:00
 
 
 Fields Summary: 
@@ -19,7 +19,7 @@ public $specs;
 
 
 /**
-* Set specs - 
+* Get specs - 
 * @return array
 */
 public function getSpecs () {
@@ -28,7 +28,7 @@ public function getSpecs () {
 		return $this->getValueFromParent("specs");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }

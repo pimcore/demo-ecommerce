@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:44+02:00
+* Generated at: 2018-08-28T12:12:20+02:00
 
 
 Fields Summary: 
@@ -21,7 +21,7 @@ public $tokenSecret;
 
 
 /**
-* Set token - token
+* Get token - token
 * @return string
 */
 public function getToken () {
@@ -30,7 +30,7 @@ public function getToken () {
 		return $this->getValueFromParent("token");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -46,7 +46,7 @@ public function setToken ($token) {
 }
 
 /**
-* Set tokenSecret - tokenSecret
+* Get tokenSecret - tokenSecret
 * @return string
 */
 public function getTokenSecret () {
@@ -55,7 +55,7 @@ public function getTokenSecret () {
 		return $this->getValueFromParent("tokenSecret");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }

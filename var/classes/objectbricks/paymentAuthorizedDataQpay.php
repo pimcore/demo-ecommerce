@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:49+02:00
+* Generated at: 2018-08-28T12:12:20+02:00
 
 
 Fields Summary: 
@@ -16,6 +16,8 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
    'classDefinitions' => 
   array (
   ),
+   'title' => NULL,
+   'group' => NULL,
    'key' => 'paymentAuthorizedDataQpay',
    'parentClass' => '',
    'layoutDefinitions' => 

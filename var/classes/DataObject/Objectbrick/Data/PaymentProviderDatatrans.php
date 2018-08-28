@@ -1,8 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-22T10:42:16+02:00
-* IP: 192.168.9.18
+* Generated at: 2018-08-28T12:12:20+02:00
 
 
 Fields Summary: 
@@ -44,7 +43,7 @@ public $sourceOrder;
 
 
 /**
-* Set configurationKey - Configuration Key
+* Get configurationKey - Configuration Key
 * @return string
 */
 public function getConfigurationKey () {
@@ -53,7 +52,7 @@ public function getConfigurationKey () {
 		return $this->getValueFromParent("configurationKey");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -69,7 +68,7 @@ public function setConfigurationKey ($configurationKey) {
 }
 
 /**
-* Set auth_aliasCC - aliasCC
+* Get auth_aliasCC - aliasCC
 * @return string
 */
 public function getAuth_aliasCC () {
@@ -78,7 +77,7 @@ public function getAuth_aliasCC () {
 		return $this->getValueFromParent("auth_aliasCC");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -94,7 +93,7 @@ public function setAuth_aliasCC ($auth_aliasCC) {
 }
 
 /**
-* Set auth_maskedCC - maskedCC
+* Get auth_maskedCC - maskedCC
 * @return string
 */
 public function getAuth_maskedCC () {
@@ -103,7 +102,7 @@ public function getAuth_maskedCC () {
 		return $this->getValueFromParent("auth_maskedCC");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -119,7 +118,7 @@ public function setAuth_maskedCC ($auth_maskedCC) {
 }
 
 /**
-* Set auth_pmethod - pmethod
+* Get auth_pmethod - pmethod
 * @return string
 */
 public function getAuth_pmethod () {
@@ -128,7 +127,7 @@ public function getAuth_pmethod () {
 		return $this->getValueFromParent("auth_pmethod");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -144,7 +143,7 @@ public function setAuth_pmethod ($auth_pmethod) {
 }
 
 /**
-* Set auth_expm - expm
+* Get auth_expm - expm
 * @return string
 */
 public function getAuth_expm () {
@@ -153,7 +152,7 @@ public function getAuth_expm () {
 		return $this->getValueFromParent("auth_expm");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -169,7 +168,7 @@ public function setAuth_expm ($auth_expm) {
 }
 
 /**
-* Set auth_expy - expy
+* Get auth_expy - expy
 * @return string
 */
 public function getAuth_expy () {
@@ -178,7 +177,7 @@ public function getAuth_expy () {
 		return $this->getValueFromParent("auth_expy");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -194,7 +193,7 @@ public function setAuth_expy ($auth_expy) {
 }
 
 /**
-* Set auth_reqtype - reqtype
+* Get auth_reqtype - reqtype
 * @return string
 */
 public function getAuth_reqtype () {
@@ -203,7 +202,7 @@ public function getAuth_reqtype () {
 		return $this->getValueFromParent("auth_reqtype");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -219,7 +218,7 @@ public function setAuth_reqtype ($auth_reqtype) {
 }
 
 /**
-* Set auth_uppTransactionId - uppTransactionId
+* Get auth_uppTransactionId - uppTransactionId
 * @return string
 */
 public function getAuth_uppTransactionId () {
@@ -228,7 +227,7 @@ public function getAuth_uppTransactionId () {
 		return $this->getValueFromParent("auth_uppTransactionId");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -244,7 +243,7 @@ public function setAuth_uppTransactionId ($auth_uppTransactionId) {
 }
 
 /**
-* Set auth_amount - amount
+* Get auth_amount - amount
 * @return string
 */
 public function getAuth_amount () {
@@ -253,7 +252,7 @@ public function getAuth_amount () {
 		return $this->getValueFromParent("auth_amount");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -269,7 +268,7 @@ public function setAuth_amount ($auth_amount) {
 }
 
 /**
-* Set auth_currency - currency
+* Get auth_currency - currency
 * @return string
 */
 public function getAuth_currency () {
@@ -278,7 +277,7 @@ public function getAuth_currency () {
 		return $this->getValueFromParent("auth_currency");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -294,7 +293,7 @@ public function setAuth_currency ($auth_currency) {
 }
 
 /**
-* Set auth_refno - refno
+* Get auth_refno - refno
 * @return string
 */
 public function getAuth_refno () {
@@ -303,7 +302,7 @@ public function getAuth_refno () {
 		return $this->getValueFromParent("auth_refno");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -319,7 +318,7 @@ public function setAuth_refno ($auth_refno) {
 }
 
 /**
-* Set paymentFinished - Date and Time
+* Get paymentFinished - Date and Time
 * @return \Carbon\Carbon
 */
 public function getPaymentFinished () {
@@ -328,7 +327,7 @@ public function getPaymentFinished () {
 		return $this->getValueFromParent("paymentFinished");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -344,7 +343,7 @@ public function setPaymentFinished ($paymentFinished) {
 }
 
 /**
-* Set sourceOrder - Source Order
+* Get sourceOrder - Source Order
 * @return \Pimcore\Model\DataObject\OnlineShopOrder
 */
 public function getSourceOrder () {
@@ -353,7 +352,7 @@ public function getSourceOrder () {
 		return $this->getValueFromParent("sourceOrder");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }

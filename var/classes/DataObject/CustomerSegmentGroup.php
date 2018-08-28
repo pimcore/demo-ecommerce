@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:44+02:00
+* Generated at: 2018-08-28T12:12:17+02:00
 * Inheritance: no
 * Variants: no
 
@@ -30,7 +30,7 @@ namespace Pimcore\Model\DataObject;
 
 class CustomerSegmentGroup extends Concrete {
 
-public $o_classId = 36;
+public $o_classId = "36";
 public $o_className = "CustomerSegmentGroup";
 public $name;
 public $reference;

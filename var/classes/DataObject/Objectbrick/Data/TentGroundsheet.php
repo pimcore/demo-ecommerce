@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:50+02:00
+* Generated at: 2018-08-28T12:12:23+02:00
 
 
 Fields Summary: 
@@ -21,7 +21,7 @@ public $groundSheet2;
 
 
 /**
-* Set groundSheet1 - Groundsheet 1
+* Get groundSheet1 - Groundsheet 1
 * @return \Pimcore\Model\Asset\Image
 */
 public function getGroundSheet1 () {
@@ -30,7 +30,7 @@ public function getGroundSheet1 () {
 		return $this->getValueFromParent("groundSheet1");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -46,7 +46,7 @@ public function setGroundSheet1 ($groundSheet1) {
 }
 
 /**
-* Set groundSheet2 - Groundsheet 2
+* Get groundSheet2 - Groundsheet 2
 * @return \Pimcore\Model\Asset\Image
 */
 public function getGroundSheet2 () {
@@ -55,7 +55,7 @@ public function getGroundSheet2 () {
 		return $this->getValueFromParent("groundSheet2");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }

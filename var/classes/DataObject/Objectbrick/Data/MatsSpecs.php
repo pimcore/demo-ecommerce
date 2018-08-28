@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:48+02:00
+* Generated at: 2018-08-28T12:12:20+02:00
 
 
 Fields Summary: 
@@ -35,7 +35,7 @@ public $structure;
 
 
 /**
-* Set length - Length
+* Get length - Length
 * @return float
 */
 public function getLength () {
@@ -44,7 +44,7 @@ public function getLength () {
 		return $this->getValueFromParent("length");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -60,7 +60,7 @@ public function setLength ($length) {
 }
 
 /**
-* Set width - Width
+* Get width - Width
 * @return float
 */
 public function getWidth () {
@@ -69,7 +69,7 @@ public function getWidth () {
 		return $this->getValueFromParent("width");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -85,7 +85,7 @@ public function setWidth ($width) {
 }
 
 /**
-* Set height - Height
+* Get height - Height
 * @return float
 */
 public function getHeight () {
@@ -94,7 +94,7 @@ public function getHeight () {
 		return $this->getValueFromParent("height");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -110,7 +110,7 @@ public function setHeight ($height) {
 }
 
 /**
-* Set materialTop - Material Top
+* Get materialTop - Material Top
 * @return string
 */
 public function getMaterialTop () {
@@ -119,7 +119,7 @@ public function getMaterialTop () {
 		return $this->getValueFromParent("materialTop");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -135,7 +135,7 @@ public function setMaterialTop ($materialTop) {
 }
 
 /**
-* Set materialBottom - Material Bottom
+* Get materialBottom - Material Bottom
 * @return string
 */
 public function getMaterialBottom () {
@@ -144,7 +144,7 @@ public function getMaterialBottom () {
 		return $this->getValueFromParent("materialBottom");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -160,7 +160,7 @@ public function setMaterialBottom ($materialBottom) {
 }
 
 /**
-* Set weight - Weight
+* Get weight - Weight
 * @return float
 */
 public function getWeight () {
@@ -169,7 +169,7 @@ public function getWeight () {
 		return $this->getValueFromParent("weight");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -185,7 +185,7 @@ public function setWeight ($weight) {
 }
 
 /**
-* Set isCFCfree - Fully bonded CFC-free?
+* Get isCFCfree - Fully bonded CFC-free?
 * @return boolean
 */
 public function getIsCFCfree () {
@@ -194,7 +194,7 @@ public function getIsCFCfree () {
 		return $this->getValueFromParent("isCFCfree");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -210,7 +210,7 @@ public function setIsCFCfree ($isCFCfree) {
 }
 
 /**
-* Set has3partWaveShape - Got 3part Wave Shape?
+* Get has3partWaveShape - Got 3part Wave Shape?
 * @return boolean
 */
 public function getHas3partWaveShape () {
@@ -219,7 +219,7 @@ public function getHas3partWaveShape () {
 		return $this->getValueFromParent("has3partWaveShape");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
@@ -235,7 +235,7 @@ public function setHas3partWaveShape ($has3partWaveShape) {
 }
 
 /**
-* Set structure - Structure
+* Get structure - Structure
 * @return array
 */
 public function getStructure () {
@@ -244,7 +244,7 @@ public function getStructure () {
 		return $this->getValueFromParent("structure");
 	}
 	if ($data instanceof \Pimcore\Model\DataObject\Data\EncryptedField) {
-		    return $data->getPlain();
+		return $data->getPlain();
 	}
 	 return $data;
 }
