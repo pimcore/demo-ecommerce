@@ -143,7 +143,7 @@ pimcore_ecommerce_framework:
 
                     tentTentPegs:
                         type: 'varchar(50)'
-                        filtergroup: double
+                        filtergroup: 'string'
                         # Service id of getter for this field
                         getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
                         # Options array for getter
@@ -160,7 +160,7 @@ pimcore_ecommerce_framework:
                             brickfield: specificAttributes
                             bricktype: tentSpecifications
                             fieldname: waterproofRain
-                        filtergroup: double
+                        filtergroup: 'string'
 
                     tentWaterproofGround:
                         type: 'varchar(50)'
@@ -169,7 +169,7 @@ pimcore_ecommerce_framework:
                             brickfield: specificAttributes
                             bricktype: tentSpecifications
                             fieldname: waterproofGround
-                        filtergroup: double
+                        filtergroup: 'string'
 
                     rucksacksVolume:
                         type: 'double'
