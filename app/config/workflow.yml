@@ -1,0 +1,116 @@
+pimcore:
+    workflows:
+
+        product_lifecycle:
+
+            label: 'Product Lifecycle'
+
+            type: 'state_machine'
+
+            support_strategy:
+                type: "expression"
+                arguments:
+                    - \Pimcore\Model\DataObject\Product
+                    - 'is_fully_authenticated()'
+
+            initial_place: todo
+
+            places:
+                todo:
+                    label: 'ToDo'
+                    title: 'Content Creation has to be started'
+                    color: '#3572b0'
+                    colorInverted: true
+                    visibleInHeader: true
+                    permissions:
+                        - modify: true
+
+                inProgress:
+                    label: 'In Progress'
+                    title: 'Content Creation in Progress'
+                    color: '#ff9933'
+
+                inReview:
+                    label: 'In Review'
+                    title: 'Review of Content'
+                    color: '#ff9933'
+                    permissions:
+                        - objectLayout: 1
+
+                done:
+                    label: 'Done'
+                    color: '#009900'
+                    permissions:
+                        - condition: "is_fully_authenticated() and 'ROLE_PIMCORE_ADMIN' in roles"
+                          modify: true
+                          objectLayout: 2
+
+                        - objectLayout: 2
+                          modify: false
+
+                reopened:
+                    label: 'Reopened'
+                    color: '#ff9933'
+                    permissions:
+                        -   objectLayout: 1
+
+            transitions:
+                start_progress:
+                    from: [todo, reopened]
+                    to: inProgress
+                    options:
+                        label: 'Start Progress'
+                        changePublishedState: force_unpublished
+
+                stop_progress:
+                    from: inProgress
+                    to: todo
+                    options:
+                        label: 'Stop Progress'
+                        changePublishedState: force_unpublished
+
+                mark_as_in_review:
+                    from: [inProgress, todo, reopened]
+                    to: inReview
+                    options:
+                        label: 'Send to Review'
+                        changePublishedState: force_unpublished
+                        notificationSettings:
+                            - notifyUsers: ['admin']
+                              notifyRoles: ['projectmanagers', 'admins']
+                        notes:
+                            commentEnabled: true
+
+                mark_as_done:
+                    from: inReview
+                    to: done
+                    guard: "is_fully_authenticated() and 'ROLE_PIMCORE_ADMIN' in roles"
+                    options:
+                        label: 'Mark as Done'
+                        changePublishedState: force_published
+                        notes:
+                            commentEnabled: true
+
+                reopen_issue:
+                    from: [done, inReview]
+                    to: reopened
+                    options:
+                        label: 'Reopen Issue'
+                        changePublishedState: force_unpublished
+                        notes:
+                            commentEnabled: true
+                            commentRequired: true
+            globalActions:
+                log_time:
+                    label: 'Log Time'
+                    guard: "is_fully_authenticated()"
+                    notes:
+                        commentEnabled: true
+                        commentRequired: true
+                        type: 'Worklog'
+                        title: 'Time Logged'
+                        additionalFields:
+                            - name: 'timeWorked'
+                              fieldType: 'input'
+                              title: 'Time spent'
+                              required: true
