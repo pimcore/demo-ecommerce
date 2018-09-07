@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:17+02:00
+* Generated at: 2018-09-07T16:07:17+02:00
 * Inheritance: no
 * Variants: no
 
@@ -30,14 +30,14 @@ namespace Pimcore\Model\DataObject;
 
 class CustomerSegmentGroup extends Concrete {
 
-public $o_classId = "36";
-public $o_className = "CustomerSegmentGroup";
-public $name;
-public $reference;
-public $calculated;
-public $showAsFilter;
-public $filterSortOrder;
-public $exportNewsletterProvider;
+protected $o_classId = "36";
+protected $o_className = "CustomerSegmentGroup";
+protected $name;
+protected $reference;
+protected $calculated;
+protected $showAsFilter;
+protected $filterSortOrder;
+protected $exportNewsletterProvider;
 
 
 /**
@@ -209,7 +209,7 @@ public function setExportNewsletterProvider ($exportNewsletterProvider) {
 protected static $_relationFields = array (
 );
 
-public $lazyLoadedFields = array (
+protected $lazyLoadedFields = array (
 );
 
 }

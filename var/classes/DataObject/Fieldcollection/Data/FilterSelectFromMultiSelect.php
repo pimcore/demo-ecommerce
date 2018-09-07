@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:51+02:00
+* Generated at: 2018-09-07T16:07:23+02:00
 
 
 Fields Summary: 
@@ -16,10 +16,10 @@ use Pimcore\Model\DataObject;
 
 class FilterSelectFromMultiSelect extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractFilterDefinitionType  {
 
-public $type = "FilterSelectFromMultiSelect";
-public $label;
-public $field;
-public $scriptPath;
+protected $type = "FilterSelectFromMultiSelect";
+protected $label;
+protected $field;
+protected $scriptPath;
 
 
 /**

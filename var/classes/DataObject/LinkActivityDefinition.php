@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:17+02:00
+* Generated at: 2018-09-07T16:07:17+02:00
 * Inheritance: yes
 * Variants: no
 
@@ -42,19 +42,19 @@ namespace Pimcore\Model\DataObject;
 
 class LinkActivityDefinition extends Concrete {
 
-public $o_classId = "40";
-public $o_className = "LinkActivityDefinition";
-public $code;
-public $attributeType;
-public $label;
-public $link;
-public $active;
-public $utm_source;
-public $utm_medium;
-public $utm_campaign;
-public $utm_term;
-public $utm_content;
-public $attributes;
+protected $o_classId = "40";
+protected $o_className = "LinkActivityDefinition";
+protected $code;
+protected $attributeType;
+protected $label;
+protected $link;
+protected $active;
+protected $utm_source;
+protected $utm_medium;
+protected $utm_campaign;
+protected $utm_term;
+protected $utm_content;
+protected $attributes;
 
 
 /**
@@ -389,7 +389,7 @@ public function setAttributes ($attributes) {
 protected static $_relationFields = array (
 );
 
-public $lazyLoadedFields = array (
+protected $lazyLoadedFields = array (
 );
 
 }

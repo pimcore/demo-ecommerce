@@ -11,8 +11,8 @@ use Pimcore\Model\DataObject;
 
 class Listing extends DataObject\Listing\Concrete {
 
-public $classId = "38";
-public $className = "SsoIdentity";
+protected $classId = "38";
+protected $className = "SsoIdentity";
 
 
 }

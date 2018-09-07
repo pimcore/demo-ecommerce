@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:20+02:00
+* Generated at: 2018-09-07T16:07:20+02:00
 
 
 Fields Summary: 
@@ -18,12 +18,12 @@ use Pimcore\Model\DataObject;
 
 class OAuth2Token extends \CustomerManagementFrameworkBundle\Model\Objectbrick\AbstractOAuth2Token  {
 
-public $type = "OAuth2Token";
-public $accessToken;
-public $tokenType;
-public $expiresAt;
-public $refreshToken;
-public $scope;
+protected $type = "OAuth2Token";
+protected $accessToken;
+protected $tokenType;
+protected $expiresAt;
+protected $refreshToken;
+protected $scope;
 
 
 /**

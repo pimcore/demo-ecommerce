@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:17+02:00
+* Generated at: 2018-09-07T16:07:17+02:00
 * Inheritance: no
 * Variants: no
 
@@ -24,10 +24,10 @@ namespace Pimcore\Model\DataObject;
 
 class TermSegmentBuilderDefinition extends \CustomerManagementFrameworkBundle\Model\AbstractTermSegmentBuilderDefinition {
 
-public $o_classId = "39";
-public $o_className = "TermSegmentBuilderDefinition";
-public $name;
-public $terms;
+protected $o_classId = "39";
+protected $o_className = "TermSegmentBuilderDefinition";
+protected $name;
+protected $terms;
 
 
 /**
@@ -95,7 +95,7 @@ public function setTerms ($terms) {
 protected static $_relationFields = array (
 );
 
-public $lazyLoadedFields = array (
+protected $lazyLoadedFields = array (
 );
 
 }

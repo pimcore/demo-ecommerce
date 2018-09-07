@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:21+02:00
+* Generated at: 2018-09-07T16:07:21+02:00
 * Inheritance: no
 * Variants: no
 
@@ -90,44 +90,44 @@ namespace Pimcore\Model\DataObject;
 
 class OnlineShopOrder extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractOrder {
 
-public $o_classId = "9";
-public $o_className = "OnlineShopOrder";
-public $ordernumber;
-public $orderState;
-public $orderdate;
-public $items;
-public $comment;
-public $customerOrderData;
-public $voucherTokens;
-public $giftItems;
-public $priceModifications;
-public $subTotalNetPrice;
-public $subTotalPrice;
-public $totalNetPrice;
-public $totalPrice;
-public $taxInfo;
-public $currency;
-public $cartId;
-public $customer;
-public $customerFirstname;
-public $customerLastname;
-public $customerCompany;
-public $customerStreet;
-public $customerZip;
-public $customerCity;
-public $customerCountry;
-public $customerEmail;
-public $deliveryFirstname;
-public $deliveryLastname;
-public $deliveryCompany;
-public $deliveryStreet;
-public $deliveryZip;
-public $deliveryCity;
-public $deliveryCountry;
-public $paymentProvider;
-public $paymentInfo;
-public $paymentReference;
-public $customized;
+protected $o_classId = "9";
+protected $o_className = "OnlineShopOrder";
+protected $ordernumber;
+protected $orderState;
+protected $orderdate;
+protected $items;
+protected $comment;
+protected $customerOrderData;
+protected $voucherTokens;
+protected $giftItems;
+protected $priceModifications;
+protected $subTotalNetPrice;
+protected $subTotalPrice;
+protected $totalNetPrice;
+protected $totalPrice;
+protected $taxInfo;
+protected $currency;
+protected $cartId;
+protected $customer;
+protected $customerFirstname;
+protected $customerLastname;
+protected $customerCompany;
+protected $customerStreet;
+protected $customerZip;
+protected $customerCity;
+protected $customerCountry;
+protected $customerEmail;
+protected $deliveryFirstname;
+protected $deliveryLastname;
+protected $deliveryCompany;
+protected $deliveryStreet;
+protected $deliveryZip;
+protected $deliveryCity;
+protected $deliveryCountry;
+protected $paymentProvider;
+protected $paymentInfo;
+protected $paymentReference;
+protected $customized;
 
 
 /**
@@ -1087,7 +1087,7 @@ protected static $_relationFields = array (
   ),
 );
 
-public $lazyLoadedFields = array (
+protected $lazyLoadedFields = array (
   0 => 'giftItems',
   1 => 'customer',
 );

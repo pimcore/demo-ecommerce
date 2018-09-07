@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:51+02:00
+* Generated at: 2018-09-07T16:07:23+02:00
 
 
 Fields Summary: 
@@ -29,23 +29,23 @@ use Pimcore\Model\DataObject;
 
 class PaymentInfo extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractPaymentInformation  {
 
-public $type = "PaymentInfo";
-public $paymentStart;
-public $paymentFinish;
-public $paymentReference;
-public $paymentState;
-public $internalPaymentId;
-public $message;
-public $providerData;
-public $provider_qpay_amount;
-public $provider_qpay_paymentType;
-public $provider_qpay_paymentState;
-public $provider_datatrans_acqAuthorizationCode;
-public $provider_datatrans_amount;
-public $provider_datatrans_responseXML;
-public $provider_paypal_amount;
-public $provider_paypal_TransactionType;
-public $provider_paypal_PaymentType;
+protected $type = "PaymentInfo";
+protected $paymentStart;
+protected $paymentFinish;
+protected $paymentReference;
+protected $paymentState;
+protected $internalPaymentId;
+protected $message;
+protected $providerData;
+protected $provider_qpay_amount;
+protected $provider_qpay_paymentType;
+protected $provider_qpay_paymentState;
+protected $provider_datatrans_acqAuthorizationCode;
+protected $provider_datatrans_amount;
+protected $provider_datatrans_responseXML;
+protected $provider_paypal_amount;
+protected $provider_paypal_TransactionType;
+protected $provider_paypal_PaymentType;
 
 
 /**

@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:23+02:00
+* Generated at: 2018-09-07T16:07:23+02:00
 * Inheritance: yes
 * Variants: yes
 
@@ -48,7 +48,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'Product',
    'description' => '',
    'creationDate' => 1366282442,
-   'modificationDate' => 1535451143,
+   'modificationDate' => 1536329243,
    'userOwner' => 1,
    'userModification' => 18,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractProduct',

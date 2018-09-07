@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:51+02:00
+* Generated at: 2018-09-07T16:07:23+02:00
 
 
 Fields Summary: 
@@ -15,9 +15,9 @@ use Pimcore\Model\DataObject;
 
 class OrderByFields extends DataObject\Fieldcollection\Data\AbstractData  {
 
-public $type = "OrderByFields";
-public $field;
-public $direction;
+protected $type = "OrderByFields";
+protected $field;
+protected $direction;
 
 
 /**

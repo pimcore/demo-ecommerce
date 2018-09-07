@@ -9,7 +9,7 @@ class SpecificAttributes extends \Pimcore\Model\DataObject\Objectbrick {
 protected $brickGetters = array('weight','apparel','approvals','featuresBenefitsBackpacks','featuresBenefitsMats','featuresBenefitsShoes','featuresBenefitsSleepingbags','featuresBenefitsTents','featuresHeadlamps','matsSpecs','outdoor','rucksackSpecs','shoeDetails','shoe','snowsport','specsSleepingbags','tentGroundsheet','tentSpecifications');
 
 
-public $weight = null;
+protected $weight = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\weight
@@ -33,7 +33,7 @@ public function setWeight ($weight) {
 	return $this;
 }
 
-public $apparel = null;
+protected $apparel = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\apparel
@@ -57,7 +57,7 @@ public function setApparel ($apparel) {
 	return $this;
 }
 
-public $approvals = null;
+protected $approvals = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\approvals
@@ -81,7 +81,7 @@ public function setApprovals ($approvals) {
 	return $this;
 }
 
-public $featuresBenefitsBackpacks = null;
+protected $featuresBenefitsBackpacks = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\featuresBenefitsBackpacks
@@ -105,7 +105,7 @@ public function setFeaturesBenefitsBackpacks ($featuresBenefitsBackpacks) {
 	return $this;
 }
 
-public $featuresBenefitsMats = null;
+protected $featuresBenefitsMats = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\featuresBenefitsMats
@@ -129,7 +129,7 @@ public function setFeaturesBenefitsMats ($featuresBenefitsMats) {
 	return $this;
 }
 
-public $featuresBenefitsShoes = null;
+protected $featuresBenefitsShoes = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\featuresBenefitsShoes
@@ -153,7 +153,7 @@ public function setFeaturesBenefitsShoes ($featuresBenefitsShoes) {
 	return $this;
 }
 
-public $featuresBenefitsSleepingbags = null;
+protected $featuresBenefitsSleepingbags = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\featuresBenefitsSleepingbags
@@ -177,7 +177,7 @@ public function setFeaturesBenefitsSleepingbags ($featuresBenefitsSleepingbags) 
 	return $this;
 }
 
-public $featuresBenefitsTents = null;
+protected $featuresBenefitsTents = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\featuresBenefitsTents
@@ -201,7 +201,7 @@ public function setFeaturesBenefitsTents ($featuresBenefitsTents) {
 	return $this;
 }
 
-public $featuresHeadlamps = null;
+protected $featuresHeadlamps = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\featuresHeadlamps
@@ -225,7 +225,7 @@ public function setFeaturesHeadlamps ($featuresHeadlamps) {
 	return $this;
 }
 
-public $matsSpecs = null;
+protected $matsSpecs = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\matsSpecs
@@ -249,7 +249,7 @@ public function setMatsSpecs ($matsSpecs) {
 	return $this;
 }
 
-public $outdoor = null;
+protected $outdoor = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\outdoor
@@ -273,7 +273,7 @@ public function setOutdoor ($outdoor) {
 	return $this;
 }
 
-public $rucksackSpecs = null;
+protected $rucksackSpecs = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\rucksackSpecs
@@ -297,7 +297,7 @@ public function setRucksackSpecs ($rucksackSpecs) {
 	return $this;
 }
 
-public $shoeDetails = null;
+protected $shoeDetails = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\shoeDetails
@@ -321,7 +321,7 @@ public function setShoeDetails ($shoeDetails) {
 	return $this;
 }
 
-public $shoe = null;
+protected $shoe = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\shoe
@@ -345,7 +345,7 @@ public function setShoe ($shoe) {
 	return $this;
 }
 
-public $snowsport = null;
+protected $snowsport = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\snowsport
@@ -369,7 +369,7 @@ public function setSnowsport ($snowsport) {
 	return $this;
 }
 
-public $specsSleepingbags = null;
+protected $specsSleepingbags = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\specsSleepingbags
@@ -393,7 +393,7 @@ public function setSpecsSleepingbags ($specsSleepingbags) {
 	return $this;
 }
 
-public $tentGroundsheet = null;
+protected $tentGroundsheet = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\tentGroundsheet
@@ -417,7 +417,7 @@ public function setTentGroundsheet ($tentGroundsheet) {
 	return $this;
 }
 
-public $tentSpecifications = null;
+protected $tentSpecifications = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\tentSpecifications

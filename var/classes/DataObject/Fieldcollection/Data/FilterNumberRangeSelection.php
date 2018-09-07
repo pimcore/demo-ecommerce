@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:51+02:00
+* Generated at: 2018-09-07T16:07:23+02:00
 
 
 Fields Summary: 
@@ -20,14 +20,14 @@ use Pimcore\Model\DataObject;
 
 class FilterNumberRangeSelection extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractFilterDefinitionType  {
 
-public $type = "FilterNumberRangeSelection";
-public $label;
-public $field;
-public $ranges;
-public $preSelectFrom;
-public $preSelectTo;
-public $scriptPath;
-public $unit;
+protected $type = "FilterNumberRangeSelection";
+protected $label;
+protected $field;
+protected $ranges;
+protected $preSelectFrom;
+protected $preSelectTo;
+protected $scriptPath;
+protected $unit;
 
 
 /**

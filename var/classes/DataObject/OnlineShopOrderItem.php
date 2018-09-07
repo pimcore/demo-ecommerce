@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:17+02:00
+* Generated at: 2018-09-07T16:07:17+02:00
 * Inheritance: no
 * Variants: no
 
@@ -42,20 +42,20 @@ namespace Pimcore\Model\DataObject;
 
 class OnlineShopOrderItem extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractOrderItem {
 
-public $o_classId = "8";
-public $o_className = "OnlineShopOrderItem";
-public $orderState;
-public $product;
-public $productNumber;
-public $productName;
-public $amount;
-public $totalNetPrice;
-public $totalPrice;
-public $taxInfo;
-public $pricingRules;
-public $comment;
-public $subItems;
-public $customized;
+protected $o_classId = "8";
+protected $o_className = "OnlineShopOrderItem";
+protected $orderState;
+protected $product;
+protected $productNumber;
+protected $productName;
+protected $amount;
+protected $totalNetPrice;
+protected $totalPrice;
+protected $taxInfo;
+protected $pricingRules;
+protected $comment;
+protected $subItems;
+protected $customized;
 
 
 /**
@@ -387,7 +387,7 @@ protected static $_relationFields = array (
   ),
 );
 
-public $lazyLoadedFields = array (
+protected $lazyLoadedFields = array (
   0 => 'pricingRules',
 );
 

@@ -9,7 +9,7 @@ class PaymentProvider extends \Pimcore\Model\DataObject\Objectbrick {
 protected $brickGetters = array('PaymentProviderDatatrans','PaymentProviderMpay24','PaymentProviderOGone','PaymentProviderPayPal','PaymentProviderQpay','PaymentProviderWirecardSeamless');
 
 
-public $PaymentProviderDatatrans = null;
+protected $PaymentProviderDatatrans = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderDatatrans
@@ -27,7 +27,7 @@ public function setPaymentProviderDatatrans ($PaymentProviderDatatrans) {
 	return $this;
 }
 
-public $PaymentProviderMpay24 = null;
+protected $PaymentProviderMpay24 = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderMpay24
@@ -45,7 +45,7 @@ public function setPaymentProviderMpay24 ($PaymentProviderMpay24) {
 	return $this;
 }
 
-public $PaymentProviderOGone = null;
+protected $PaymentProviderOGone = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderOGone
@@ -63,7 +63,7 @@ public function setPaymentProviderOGone ($PaymentProviderOGone) {
 	return $this;
 }
 
-public $PaymentProviderPayPal = null;
+protected $PaymentProviderPayPal = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderPayPal
@@ -81,7 +81,7 @@ public function setPaymentProviderPayPal ($PaymentProviderPayPal) {
 	return $this;
 }
 
-public $PaymentProviderQpay = null;
+protected $PaymentProviderQpay = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderQpay
@@ -99,7 +99,7 @@ public function setPaymentProviderQpay ($PaymentProviderQpay) {
 	return $this;
 }
 
-public $PaymentProviderWirecardSeamless = null;
+protected $PaymentProviderWirecardSeamless = null;
 
 /**
 * @return \Pimcore\Model\DataObject\Objectbrick\Data\PaymentProviderWirecardSeamless

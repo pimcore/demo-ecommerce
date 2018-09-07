@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:17+02:00
+* Generated at: 2018-09-07T16:07:17+02:00
 * Inheritance: no
 * Variants: no
 
@@ -40,19 +40,19 @@ namespace Pimcore\Model\DataObject;
 
 class OfferToolOfferItem extends \Pimcore\Bundle\EcommerceFrameworkBundle\OfferTool\AbstractOfferItem {
 
-public $o_classId = "31";
-public $o_className = "OfferToolOfferItem";
-public $product;
-public $productNumber;
-public $productName;
-public $amount;
-public $originalTotalPrice;
-public $DiscountType;
-public $discount;
-public $finalTotalPrice;
-public $subItems;
-public $comment;
-public $cartItemKey;
+protected $o_classId = "31";
+protected $o_className = "OfferToolOfferItem";
+protected $product;
+protected $productNumber;
+protected $productName;
+protected $amount;
+protected $originalTotalPrice;
+protected $DiscountType;
+protected $discount;
+protected $finalTotalPrice;
+protected $subItems;
+protected $comment;
+protected $cartItemKey;
 
 
 /**
@@ -362,7 +362,7 @@ protected static $_relationFields = array (
   ),
 );
 
-public $lazyLoadedFields = array (
+protected $lazyLoadedFields = array (
   0 => 'subItems',
 );
 

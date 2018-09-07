@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:20+02:00
+* Generated at: 2018-09-07T16:07:20+02:00
 
 
 Fields Summary: 
@@ -26,20 +26,20 @@ use Pimcore\Model\DataObject;
 
 class PaymentProviderDatatrans extends DataObject\Objectbrick\Data\AbstractData  {
 
-public $type = "PaymentProviderDatatrans";
-public $configurationKey;
-public $auth_aliasCC;
-public $auth_maskedCC;
-public $auth_pmethod;
-public $auth_expm;
-public $auth_expy;
-public $auth_reqtype;
-public $auth_uppTransactionId;
-public $auth_amount;
-public $auth_currency;
-public $auth_refno;
-public $paymentFinished;
-public $sourceOrder;
+protected $type = "PaymentProviderDatatrans";
+protected $configurationKey;
+protected $auth_aliasCC;
+protected $auth_maskedCC;
+protected $auth_pmethod;
+protected $auth_expm;
+protected $auth_expy;
+protected $auth_reqtype;
+protected $auth_uppTransactionId;
+protected $auth_amount;
+protected $auth_currency;
+protected $auth_refno;
+protected $paymentFinished;
+protected $sourceOrder;
 
 
 /**

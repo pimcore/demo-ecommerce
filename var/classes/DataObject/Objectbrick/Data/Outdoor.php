@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:20+02:00
+* Generated at: 2018-09-07T16:07:20+02:00
 
 
 Fields Summary: 
@@ -14,8 +14,8 @@ use Pimcore\Model\DataObject;
 
 class Outdoor extends DataObject\Objectbrick\Data\AbstractData  {
 
-public $type = "outdoor";
-public $specs;
+protected $type = "outdoor";
+protected $specs;
 
 
 /**

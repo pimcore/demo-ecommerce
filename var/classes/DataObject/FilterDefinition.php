@@ -1,9 +1,10 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T14:23:21+02:00
+* Generated at: 2018-09-07T16:07:17+02:00
 * Inheritance: yes
 * Variants: no
+* Changed by: admin (19)
 
 
 Fields Summary: 
@@ -48,23 +49,23 @@ namespace Pimcore\Model\DataObject;
 
 class FilterDefinition extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractFilterDefinition {
 
-public $o_classId = "7";
-public $o_className = "FilterDefinition";
-public $pageLimit;
-public $defaultOrderByInheritance;
-public $defaultOrderBy;
-public $orderByAsc;
-public $orderByDesc;
-public $ajaxReload;
-public $infiniteScroll;
-public $limitOnFirstLoad;
-public $conditionsInheritance;
-public $conditions;
-public $filtersInheritance;
-public $filters;
-public $crossSellingCategory;
-public $similarityFieldsInheritance;
-public $similarityFields;
+protected $o_classId = "7";
+protected $o_className = "FilterDefinition";
+protected $pageLimit;
+protected $defaultOrderByInheritance;
+protected $defaultOrderBy;
+protected $orderByAsc;
+protected $orderByDesc;
+protected $ajaxReload;
+protected $infiniteScroll;
+protected $limitOnFirstLoad;
+protected $conditionsInheritance;
+protected $conditions;
+protected $filtersInheritance;
+protected $filters;
+protected $crossSellingCategory;
+protected $similarityFieldsInheritance;
+protected $similarityFields;
 
 
 /**
@@ -483,7 +484,7 @@ protected static $_relationFields = array (
   ),
 );
 
-public $lazyLoadedFields = array (
+protected $lazyLoadedFields = array (
   0 => 'similarityFields',
 );
 

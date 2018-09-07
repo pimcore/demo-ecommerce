@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:23+02:00
+* Generated at: 2018-09-07T16:07:23+02:00
 
 
 Fields Summary: 
@@ -14,8 +14,8 @@ use Pimcore\Model\DataObject;
 
 class Weight extends DataObject\Objectbrick\Data\AbstractData  {
 
-public $type = "weight";
-public $weight;
+protected $type = "weight";
+protected $weight;
 
 
 /**

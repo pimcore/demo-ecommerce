@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:17+02:00
+* Generated at: 2018-09-07T16:07:17+02:00
 * Inheritance: no
 * Variants: no
 
@@ -29,9 +29,9 @@ namespace Pimcore\Model\DataObject;
 
 class ProductTechnology extends Concrete {
 
-public $o_classId = "16";
-public $o_className = "ProductTechnology";
-public $localizedfields;
+protected $o_classId = "16";
+protected $o_className = "ProductTechnology";
+protected $localizedfields;
 
 
 /**
@@ -307,7 +307,7 @@ public function setDownloads ($downloads, $language = null) {
 protected static $_relationFields = array (
 );
 
-public $lazyLoadedFields = array (
+protected $lazyLoadedFields = array (
 );
 
 }

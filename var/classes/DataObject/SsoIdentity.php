@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:20+02:00
+* Generated at: 2018-09-07T16:07:20+02:00
 * Inheritance: no
 * Variants: no
 
@@ -26,12 +26,12 @@ namespace Pimcore\Model\DataObject;
 
 class SsoIdentity extends \CustomerManagementFrameworkBundle\Model\AbstractSsoIdentity {
 
-public $o_classId = "38";
-public $o_className = "SsoIdentity";
-public $provider;
-public $identifier;
-public $profileData;
-public $credentials;
+protected $o_classId = "38";
+protected $o_className = "SsoIdentity";
+protected $provider;
+protected $identifier;
+protected $profileData;
+protected $credentials;
 
 
 /**
@@ -153,7 +153,7 @@ public function setCredentials ($credentials) {
 protected static $_relationFields = array (
 );
 
-public $lazyLoadedFields = array (
+protected $lazyLoadedFields = array (
 );
 
 }

@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:22+02:00
+* Generated at: 2018-09-07T16:07:22+02:00
 
 
 Fields Summary: 
@@ -25,19 +25,19 @@ use Pimcore\Model\DataObject;
 
 class SpecsSleepingbags extends DataObject\Objectbrick\Data\AbstractData  {
 
-public $type = "specsSleepingbags";
-public $weight;
-public $length;
-public $width;
-public $bodySize;
-public $fabricShell;
-public $fabricLining;
-public $filling;
-public $protection;
-public $packingSize;
-public $temperatureComfort;
-public $temperatureLimit;
-public $temperatureExtreme;
+protected $type = "specsSleepingbags";
+protected $weight;
+protected $length;
+protected $width;
+protected $bodySize;
+protected $fabricShell;
+protected $fabricLining;
+protected $filling;
+protected $protection;
+protected $packingSize;
+protected $temperatureComfort;
+protected $temperatureLimit;
+protected $temperatureExtreme;
 
 
 /**

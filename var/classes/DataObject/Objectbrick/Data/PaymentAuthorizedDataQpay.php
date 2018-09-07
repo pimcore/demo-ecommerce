@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:20+02:00
+* Generated at: 2018-09-07T16:07:20+02:00
 
 
 Fields Summary: 
@@ -17,11 +17,11 @@ use Pimcore\Model\DataObject;
 
 class PaymentAuthorizedDataQpay extends DataObject\Objectbrick\Data\AbstractData  {
 
-public $type = "paymentAuthorizedDataQpay";
-public $data_orderNumber;
-public $data_language;
-public $data_amount;
-public $data_currency;
+protected $type = "paymentAuthorizedDataQpay";
+protected $data_orderNumber;
+protected $data_language;
+protected $data_amount;
+protected $data_currency;
 
 
 /**

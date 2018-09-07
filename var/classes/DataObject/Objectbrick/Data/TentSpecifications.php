@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:23+02:00
+* Generated at: 2018-09-07T16:07:23+02:00
 
 
 Fields Summary: 
@@ -22,16 +22,16 @@ use Pimcore\Model\DataObject;
 
 class TentSpecifications extends DataObject\Objectbrick\Data\AbstractData  {
 
-public $type = "tentSpecifications";
-public $outsideMaterial;
-public $insideMaterial;
-public $floorMaterial;
-public $waterproofRain;
-public $waterproofGround;
-public $construction;
-public $tentPegs;
-public $weight;
-public $isMainSeamTaped;
+protected $type = "tentSpecifications";
+protected $outsideMaterial;
+protected $insideMaterial;
+protected $floorMaterial;
+protected $waterproofRain;
+protected $waterproofGround;
+protected $construction;
+protected $tentPegs;
+protected $weight;
+protected $isMainSeamTaped;
 
 
 /**

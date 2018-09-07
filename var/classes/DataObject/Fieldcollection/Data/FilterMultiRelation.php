@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:51+02:00
+* Generated at: 2018-09-07T16:07:23+02:00
 
 
 Fields Summary: 
@@ -18,12 +18,12 @@ use Pimcore\Model\DataObject;
 
 class FilterMultiRelation extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractFilterDefinitionType  {
 
-public $type = "FilterMultiRelation";
-public $label;
-public $field;
-public $useAndCondition;
-public $scriptPath;
-public $availableRelations;
+protected $type = "FilterMultiRelation";
+protected $label;
+protected $field;
+protected $useAndCondition;
+protected $scriptPath;
+protected $availableRelations;
 
 
 /**

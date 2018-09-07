@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:21+02:00
+* Generated at: 2018-09-07T16:07:21+02:00
 
 
 Fields Summary: 
@@ -26,20 +26,20 @@ use Pimcore\Model\DataObject;
 
 class PaymentProviderQpay extends DataObject\Objectbrick\Data\AbstractData  {
 
-public $type = "PaymentProviderQpay";
-public $configurationKey;
-public $auth_orderNumber;
-public $auth_language;
-public $auth_amount;
-public $auth_currency;
-public $auth_paymentType;
-public $paymentFinished;
-public $sourceOrder;
-public $auth_anonymousPan;
-public $auth_maskedPan;
-public $auth_expiry;
-public $auth_bankAccountOwner;
-public $auth_bankAccountIBAN;
+protected $type = "PaymentProviderQpay";
+protected $configurationKey;
+protected $auth_orderNumber;
+protected $auth_language;
+protected $auth_amount;
+protected $auth_currency;
+protected $auth_paymentType;
+protected $paymentFinished;
+protected $sourceOrder;
+protected $auth_anonymousPan;
+protected $auth_maskedPan;
+protected $auth_expiry;
+protected $auth_bankAccountOwner;
+protected $auth_bankAccountIBAN;
 
 
 /**

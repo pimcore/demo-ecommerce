@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:19+02:00
+* Generated at: 2018-09-07T16:07:19+02:00
 
 
 Fields Summary: 
@@ -14,8 +14,8 @@ use Pimcore\Model\DataObject;
 
 class FeaturesBenefitsTents extends DataObject\Objectbrick\Data\AbstractData  {
 
-public $type = "featuresBenefitsTents";
-public $specs;
+protected $type = "featuresBenefitsTents";
+protected $specs;
 
 
 /**

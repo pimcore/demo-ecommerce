@@ -11,8 +11,8 @@ use Pimcore\Model\DataObject;
 
 class Listing extends DataObject\Listing\Concrete {
 
-public $classId = "40";
-public $className = "LinkActivityDefinition";
+protected $classId = "40";
+protected $className = "LinkActivityDefinition";
 
 
 }

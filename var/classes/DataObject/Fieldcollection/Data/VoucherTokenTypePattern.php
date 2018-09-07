@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:51+02:00
+* Generated at: 2018-09-07T16:07:23+02:00
 
 
 Fields Summary: 
@@ -21,15 +21,15 @@ use Pimcore\Model\DataObject;
 
 class VoucherTokenTypePattern extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractVoucherTokenType  {
 
-public $type = "VoucherTokenTypePattern";
-public $count;
-public $prefix;
-public $length;
-public $characterType;
-public $separator;
-public $separatorCount;
-public $allowOncePerCart;
-public $onlyTokenPerCart;
+protected $type = "VoucherTokenTypePattern";
+protected $count;
+protected $prefix;
+protected $length;
+protected $characterType;
+protected $separator;
+protected $separatorCount;
+protected $allowOncePerCart;
+protected $onlyTokenPerCart;
 
 
 /**

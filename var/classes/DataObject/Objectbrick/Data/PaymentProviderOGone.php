@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:21+02:00
+* Generated at: 2018-09-07T16:07:20+02:00
 
 
 Fields Summary: 
@@ -21,15 +21,15 @@ use Pimcore\Model\DataObject;
 
 class PaymentProviderOGone extends DataObject\Objectbrick\Data\AbstractData  {
 
-public $type = "PaymentProviderOGone";
-public $configurationKey;
-public $auth_orderNumber;
-public $auth_paymentMethod;
-public $auth_amount;
-public $auth_currency;
-public $auth_ip;
-public $auth_paymentId;
-public $auth_customerName;
+protected $type = "PaymentProviderOGone";
+protected $configurationKey;
+protected $auth_orderNumber;
+protected $auth_paymentMethod;
+protected $auth_amount;
+protected $auth_currency;
+protected $auth_ip;
+protected $auth_paymentId;
+protected $auth_customerName;
 
 
 /**

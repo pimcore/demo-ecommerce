@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:20+02:00
+* Generated at: 2018-09-07T16:07:20+02:00
 
 
 Fields Summary: 
@@ -15,9 +15,9 @@ use Pimcore\Model\DataObject;
 
 class OAuth1Token extends \CustomerManagementFrameworkBundle\Model\Objectbrick\AbstractOAuth1Token  {
 
-public $type = "OAuth1Token";
-public $token;
-public $tokenSecret;
+protected $type = "OAuth1Token";
+protected $token;
+protected $tokenSecret;
 
 
 /**

@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:17+02:00
+* Generated at: 2018-09-07T16:07:17+02:00
 * Inheritance: no
 * Variants: no
 
@@ -30,14 +30,14 @@ namespace Pimcore\Model\DataObject;
 
 class CustomerSegment extends \CustomerManagementFrameworkBundle\Model\AbstractCustomerSegment {
 
-public $o_classId = "37";
-public $o_className = "CustomerSegment";
-public $name;
-public $group;
-public $reference;
-public $calculated;
-public $useAsTargetGroup;
-public $targetGroup;
+protected $o_classId = "37";
+protected $o_className = "CustomerSegment";
+protected $name;
+protected $group;
+protected $reference;
+protected $calculated;
+protected $useAsTargetGroup;
+protected $targetGroup;
 
 
 /**
@@ -213,7 +213,7 @@ protected static $_relationFields = array (
   ),
 );
 
-public $lazyLoadedFields = array (
+protected $lazyLoadedFields = array (
   0 => 'group',
 );
 

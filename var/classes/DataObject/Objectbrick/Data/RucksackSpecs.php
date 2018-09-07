@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:21+02:00
+* Generated at: 2018-09-07T16:07:21+02:00
 
 
 Fields Summary: 
@@ -18,12 +18,12 @@ use Pimcore\Model\DataObject;
 
 class RucksackSpecs extends DataObject\Objectbrick\Data\AbstractData  {
 
-public $type = "rucksackSpecs";
-public $volume;
-public $weight;
-public $load;
-public $material;
-public $expandTo;
+protected $type = "rucksackSpecs";
+protected $volume;
+protected $weight;
+protected $load;
+protected $material;
+protected $expandTo;
 
 
 /**

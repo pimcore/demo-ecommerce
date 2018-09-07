@@ -11,8 +11,8 @@ use Pimcore\Model\DataObject;
 
 class Listing extends DataObject\Listing\Concrete {
 
-public $classId = "8";
-public $className = "OnlineShopOrderItem";
+protected $classId = "8";
+protected $className = "OnlineShopOrderItem";
 
 
 }

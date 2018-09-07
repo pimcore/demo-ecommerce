@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:23+02:00
+* Generated at: 2018-09-07T16:07:23+02:00
 * Inheritance: yes
 * Variants: yes
 
@@ -71,26 +71,26 @@ namespace Pimcore\Model\DataObject;
 
 class Product extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\AbstractProduct {
 
-public $o_classId = "12";
-public $o_className = "Product";
-public $localizedfields;
-public $artno;
-public $ean;
-public $size;
-public $brand;
-public $gender;
-public $categories;
-public $features;
-public $technologies;
-public $attributes;
-public $collection;
-public $color;
-public $materialComposition;
-public $secondaryMaterialComposition;
-public $imagesInheritance;
-public $images;
-public $specificAttributes;
-public $relatedProducts;
+protected $o_classId = "12";
+protected $o_className = "Product";
+protected $localizedfields;
+protected $artno;
+protected $ean;
+protected $size;
+protected $brand;
+protected $gender;
+protected $categories;
+protected $features;
+protected $technologies;
+protected $attributes;
+protected $collection;
+protected $color;
+protected $materialComposition;
+protected $secondaryMaterialComposition;
+protected $imagesInheritance;
+protected $images;
+protected $specificAttributes;
+protected $relatedProducts;
 
 
 /**
@@ -1038,7 +1038,7 @@ protected static $_relationFields = array (
   ),
 );
 
-public $lazyLoadedFields = array (
+protected $lazyLoadedFields = array (
   0 => 'brand',
   1 => 'features',
   2 => 'technologies',

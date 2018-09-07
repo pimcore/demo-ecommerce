@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:51+02:00
+* Generated at: 2018-09-07T16:07:23+02:00
 
 
 Fields Summary: 
@@ -19,13 +19,13 @@ use Pimcore\Model\DataObject;
 
 class FilterCategory extends \Pimcore\Bundle\EcommerceFrameworkBundle\Model\CategoryFilterDefinitionType  {
 
-public $type = "FilterCategory";
-public $label;
-public $preSelect;
-public $rootCategory;
-public $includeParentCategories;
-public $scriptPath;
-public $availableCategories;
+protected $type = "FilterCategory";
+protected $label;
+protected $preSelect;
+protected $rootCategory;
+protected $includeParentCategories;
+protected $scriptPath;
+protected $availableCategories;
 
 
 /**

@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:20+02:00
+* Generated at: 2018-09-07T16:07:20+02:00
 
 
 Fields Summary: 
@@ -25,19 +25,19 @@ use Pimcore\Model\DataObject;
 
 class PaymentProviderMpay24 extends DataObject\Objectbrick\Data\AbstractData  {
 
-public $type = "PaymentProviderMpay24";
-public $configurationKey;
-public $auth_OPERATION;
-public $auth_TID;
-public $auth_STATUS;
-public $auth_PRICE;
-public $auth_CURRENCY;
-public $auth_P_TYPE;
-public $auth_BRAND;
-public $auth_MPAYTID;
-public $auth_APPR_CODE;
-public $auth_PROFILE_STATUS;
-public $auth_FILTER_STATUS;
+protected $type = "PaymentProviderMpay24";
+protected $configurationKey;
+protected $auth_OPERATION;
+protected $auth_TID;
+protected $auth_STATUS;
+protected $auth_PRICE;
+protected $auth_CURRENCY;
+protected $auth_P_TYPE;
+protected $auth_BRAND;
+protected $auth_MPAYTID;
+protected $auth_APPR_CODE;
+protected $auth_PROFILE_STATUS;
+protected $auth_FILTER_STATUS;
 
 
 /**

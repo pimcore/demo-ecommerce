@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:18+02:00
+* Generated at: 2018-09-07T16:07:18+02:00
 
 
 Fields Summary: 
@@ -17,11 +17,11 @@ use Pimcore\Model\DataObject;
 
 class Approvals extends DataObject\Objectbrick\Data\AbstractData  {
 
-public $type = "approvals";
-public $fifaApproved;
-public $fifaInspected;
-public $imsChecked;
-public $ihfApproved;
+protected $type = "approvals";
+protected $fifaApproved;
+protected $fifaInspected;
+protected $imsChecked;
+protected $ihfApproved;
 
 
 /**

@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:20+02:00
+* Generated at: 2018-09-07T16:07:19+02:00
 
 
 Fields Summary: 
@@ -22,16 +22,16 @@ use Pimcore\Model\DataObject;
 
 class MatsSpecs extends DataObject\Objectbrick\Data\AbstractData  {
 
-public $type = "matsSpecs";
-public $length;
-public $width;
-public $height;
-public $materialTop;
-public $materialBottom;
-public $weight;
-public $isCFCfree;
-public $has3partWaveShape;
-public $structure;
+protected $type = "matsSpecs";
+protected $length;
+protected $width;
+protected $height;
+protected $materialTop;
+protected $materialBottom;
+protected $weight;
+protected $isCFCfree;
+protected $has3partWaveShape;
+protected $structure;
 
 
 /**

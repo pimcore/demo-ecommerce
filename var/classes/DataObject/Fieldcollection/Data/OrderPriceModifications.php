@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-06-07T15:45:51+02:00
+* Generated at: 2018-09-07T16:07:23+02:00
 
 
 Fields Summary: 
@@ -16,10 +16,10 @@ use Pimcore\Model\DataObject;
 
 class OrderPriceModifications extends DataObject\Fieldcollection\Data\AbstractData  {
 
-public $type = "OrderPriceModifications";
-public $name;
-public $netAmount;
-public $amount;
+protected $type = "OrderPriceModifications";
+protected $name;
+protected $netAmount;
+protected $amount;
 
 
 /**

@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:21+02:00
+* Generated at: 2018-09-07T16:07:21+02:00
 
 
 Fields Summary: 
@@ -16,10 +16,10 @@ use Pimcore\Model\DataObject;
 
 class PaymentProviderPayPal extends DataObject\Objectbrick\Data\AbstractData  {
 
-public $type = "PaymentProviderPayPal";
-public $configurationKey;
-public $auth_token;
-public $auth_PayerID;
+protected $type = "PaymentProviderPayPal";
+protected $configurationKey;
+protected $auth_token;
+protected $auth_PayerID;
 
 
 /**

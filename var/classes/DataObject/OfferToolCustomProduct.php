@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:17+02:00
+* Generated at: 2018-09-07T16:07:17+02:00
 * Inheritance: no
 * Variants: no
 
@@ -26,12 +26,12 @@ namespace Pimcore\Model\DataObject;
 
 class OfferToolCustomProduct extends \Pimcore\Bundle\EcommerceFrameworkBundle\OfferTool\AbstractOfferToolProduct {
 
-public $o_classId = "32";
-public $o_className = "OfferToolCustomProduct";
-public $OSproductNumber;
-public $OSName;
-public $productGroup;
-public $price;
+protected $o_classId = "32";
+protected $o_className = "OfferToolCustomProduct";
+protected $OSproductNumber;
+protected $OSName;
+protected $productGroup;
+protected $price;
 
 
 /**
@@ -151,7 +151,7 @@ public function setPrice ($price) {
 protected static $_relationFields = array (
 );
 
-public $lazyLoadedFields = array (
+protected $lazyLoadedFields = array (
 );
 
 }

@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:17+02:00
+* Generated at: 2018-09-07T16:07:17+02:00
 * Inheritance: no
 * Variants: no
 
@@ -48,23 +48,23 @@ namespace Pimcore\Model\DataObject;
 
 class Customer extends \CustomerManagementFrameworkBundle\Model\AbstractCustomer\DefaultAbstractUserawareCustomer {
 
-public $o_classId = "41";
-public $o_className = "Customer";
-public $active;
-public $gender;
-public $firstname;
-public $lastname;
-public $email;
-public $street;
-public $zip;
-public $city;
-public $countryCode;
-public $phone;
-public $idEncoded;
-public $manualSegments;
-public $calculatedSegments;
-public $password;
-public $ssoIdentities;
+protected $o_classId = "41";
+protected $o_className = "Customer";
+protected $active;
+protected $gender;
+protected $firstname;
+protected $lastname;
+protected $email;
+protected $street;
+protected $zip;
+protected $city;
+protected $countryCode;
+protected $phone;
+protected $idEncoded;
+protected $manualSegments;
+protected $calculatedSegments;
+protected $password;
+protected $ssoIdentities;
 
 
 /**
@@ -482,7 +482,7 @@ protected static $_relationFields = array (
   ),
 );
 
-public $lazyLoadedFields = array (
+protected $lazyLoadedFields = array (
   0 => 'manualSegments',
   1 => 'calculatedSegments',
   2 => 'ssoIdentities',

@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:17+02:00
+* Generated at: 2018-09-07T16:07:17+02:00
 * Inheritance: no
 * Variants: no
 
@@ -24,11 +24,11 @@ namespace Pimcore\Model\DataObject;
 
 class OnlineShopVoucherToken extends Concrete {
 
-public $o_classId = "34";
-public $o_className = "OnlineShopVoucherToken";
-public $tokenId;
-public $token;
-public $voucherSeries;
+protected $o_classId = "34";
+protected $o_className = "OnlineShopVoucherToken";
+protected $tokenId;
+protected $token;
+protected $voucherSeries;
 
 
 /**
@@ -126,7 +126,7 @@ protected static $_relationFields = array (
   ),
 );
 
-public $lazyLoadedFields = array (
+protected $lazyLoadedFields = array (
 );
 
 }

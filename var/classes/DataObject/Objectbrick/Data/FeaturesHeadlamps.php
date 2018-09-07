@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-08-28T12:12:19+02:00
+* Generated at: 2018-09-07T16:07:19+02:00
 
 
 Fields Summary: 
@@ -24,18 +24,18 @@ use Pimcore\Model\DataObject;
 
 class FeaturesHeadlamps extends DataObject\Objectbrick\Data\AbstractData  {
 
-public $type = "featuresHeadlamps";
-public $lumen;
-public $lightDistance;
-public $lightDuration;
-public $ledType;
-public $ledBoost;
-public $ledRed;
-public $waterResistant;
-public $batteries;
-public $weight;
-public $hasFlashingMode;
-public $isCeApproved;
+protected $type = "featuresHeadlamps";
+protected $lumen;
+protected $lightDistance;
+protected $lightDuration;
+protected $ledType;
+protected $ledBoost;
+protected $ledRed;
+protected $waterResistant;
+protected $batteries;
+protected $weight;
+protected $hasFlashingMode;
+protected $isCeApproved;
 
 
 /**
