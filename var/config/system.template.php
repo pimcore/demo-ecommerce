@@ -111,7 +111,7 @@ return [
             "name" => "",
             "email" => ""
         ],
-        "method" => "mail",
+        "method" => "sendmail",
         "smtp" => [
             "host" => "",
             "port" => "",
