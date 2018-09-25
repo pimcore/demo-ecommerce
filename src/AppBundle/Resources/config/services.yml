@@ -51,3 +51,10 @@ services:
     AppBundle\EventListener\PimcoreAdminListener:
         tags:
             - { name: kernel.event_listener, event: pimcore.bundle_manager.paths.css, method: addCSSFiles }
+
+
+    #
+    # LINK GENERATOR
+    #
+    AppBundle\Model\Product\LinkGenerator:
+        public: true

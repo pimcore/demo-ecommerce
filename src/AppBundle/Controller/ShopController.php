@@ -21,6 +21,7 @@ use OutputDataConfigToolkitBundle\Service;
 use Pimcore\Bundle\EcommerceFrameworkBundle\Factory;
 use Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\Helper;
 use Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\ProductList\IProductList;
+use Pimcore\Http\RequestHelper;
 use Pimcore\Model\DataObject\Product;
 use Pimcore\Model\DataObject\ProductCategory;
 use Symfony\Component\HttpFoundation\Request;
@@ -116,7 +117,7 @@ class ShopController extends AbstractController
     /**
      * show product detail page
      */
-    public function detailAction(Request $request)
+    public function detailAction(Request $request, RequestHelper $requestHelper)
     {
 
         // load product
@@ -124,7 +125,9 @@ class ShopController extends AbstractController
          * @var $product Product
          */
         $product = DefaultProduct::getById($request->get('product'));
-        if (!$product || !$product->isActive()) {
+
+
+        if (!$product || (!$product->isActive() && !$requestHelper->isFrontendRequestByAdmin($request))) {
             throw new NotFoundHttpException('die gewünschte Seite existiert nicht mehr');
         }
         $this->view->product = $product;
