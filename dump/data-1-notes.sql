@@ -112,3 +112,18 @@ INSERT INTO notes (`id`,`type`,`cid`,`ctype`,`date`,`user`,`title`,`description`
 INSERT INTO notes (`id`,`type`,`cid`,`ctype`,`date`,`user`,`title`,`description`) VALUES ('109','cmf.SegmentManager','12356','object','1528381587',NULL,'Segment(s) removed (AddSegment action trigger action)','/customermanagement/segments/calculated/CustomerType/New Customer');
 INSERT INTO notes (`id`,`type`,`cid`,`ctype`,`date`,`user`,`title`,`description`) VALUES ('110','cmf.SegmentManager','12356','object','1528381717',NULL,'Segment(s) added (AssignPersonGroupAndSegment action trigger action based on rule profiling_regular-customer)','/customermanagement/segments/calculated/CustomerType/Regular Customer');
 INSERT INTO notes (`id`,`type`,`cid`,`ctype`,`date`,`user`,`title`,`description`) VALUES ('111','cmf.SegmentManager','12356','object','1529660005',NULL,'Segment(s) removed (AddSegment action trigger action)','/customermanagement/segments/calculated/CustomerType/Regular Customer');
+INSERT INTO notes (`id`,`type`,`cid`,`ctype`,`date`,`user`,`title`,`description`) VALUES ('112','Status update','1530','object','1536326204','19','Reopen Issue','This is not quite right');
+INSERT INTO notes (`id`,`type`,`cid`,`ctype`,`date`,`user`,`title`,`description`) VALUES ('113','Status update','1530','object','1536326220','19','Start Progress','');
+INSERT INTO notes (`id`,`type`,`cid`,`ctype`,`date`,`user`,`title`,`description`) VALUES ('114','Status update','1530','object','1536326235','19','Send to Review','');
+INSERT INTO notes (`id`,`type`,`cid`,`ctype`,`date`,`user`,`title`,`description`) VALUES ('115','Status update','1530','object','1536326312','19','Reopen Issue','Still not ok');
+INSERT INTO notes (`id`,`type`,`cid`,`ctype`,`date`,`user`,`title`,`description`) VALUES ('116','Status update','1530','object','1536326365','19','Send to Review','');
+INSERT INTO notes (`id`,`type`,`cid`,`ctype`,`date`,`user`,`title`,`description`) VALUES ('117','Status update','1530','object','1536326457','19','Reopen Issue','no still not good');
+INSERT INTO notes (`id`,`type`,`cid`,`ctype`,`date`,`user`,`title`,`description`) VALUES ('118','Status update','1530','object','1536326498','19','Send to Review','But now it should be good!');
+INSERT INTO notes (`id`,`type`,`cid`,`ctype`,`date`,`user`,`title`,`description`) VALUES ('119','Status update','1530','object','1536326595','19','Mark as Done','');
+INSERT INTO notes (`id`,`type`,`cid`,`ctype`,`date`,`user`,`title`,`description`) VALUES ('120','Status update','1530','object','1536326851','19','Reopen Issue','another error occured');
+INSERT INTO notes (`id`,`type`,`cid`,`ctype`,`date`,`user`,`title`,`description`) VALUES ('121','Status update','1530','object','1536326869','19','Send to Review','');
+INSERT INTO notes (`id`,`type`,`cid`,`ctype`,`date`,`user`,`title`,`description`) VALUES ('122','Status update','1530','object','1536326876','19','Mark as Done','');
+INSERT INTO notes (`id`,`type`,`cid`,`ctype`,`date`,`user`,`title`,`description`) VALUES ('123','Status update','1568','object','1536326885','19','Reopen Issue','not good');
+INSERT INTO notes (`id`,`type`,`cid`,`ctype`,`date`,`user`,`title`,`description`) VALUES ('124','Status update','1698','object','1536328147','19','Reopen Issue','There is a wrong price online');
+INSERT INTO notes (`id`,`type`,`cid`,`ctype`,`date`,`user`,`title`,`description`) VALUES ('125','Status update','1698','object','1536328255','19','Send to Review','fixed now');
+INSERT INTO notes (`id`,`type`,`cid`,`ctype`,`date`,`user`,`title`,`description`) VALUES ('126','Status update','1698','object','1536328264','19','Mark as Done','');

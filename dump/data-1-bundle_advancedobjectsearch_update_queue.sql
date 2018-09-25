@@ -2436,7 +2436,7 @@ INSERT INTO bundle_advancedobjectsearch_update_queue (`o_id`,`classId`,`in_queue
 INSERT INTO bundle_advancedobjectsearch_update_queue (`o_id`,`classId`,`in_queue`,`worker_timestamp`,`worker_id`) VALUES ('12460','37',NULL,NULL,NULL);
 INSERT INTO bundle_advancedobjectsearch_update_queue (`o_id`,`classId`,`in_queue`,`worker_timestamp`,`worker_id`) VALUES ('12461','8','0','0',NULL);
 INSERT INTO bundle_advancedobjectsearch_update_queue (`o_id`,`classId`,`in_queue`,`worker_timestamp`,`worker_id`) VALUES ('12462','9',NULL,NULL,NULL);
-INSERT INTO bundle_advancedobjectsearch_update_queue (`o_id`,`classId`,`in_queue`,`worker_timestamp`,`worker_id`) VALUES ('12463','8','1','1532606401','5b59b7c1d9dc8');
+INSERT INTO bundle_advancedobjectsearch_update_queue (`o_id`,`classId`,`in_queue`,`worker_timestamp`,`worker_id`) VALUES ('12463','8','1','1536326701','5b927c2dc6606');
 INSERT INTO bundle_advancedobjectsearch_update_queue (`o_id`,`classId`,`in_queue`,`worker_timestamp`,`worker_id`) VALUES ('12464','9',NULL,NULL,NULL);
 INSERT INTO bundle_advancedobjectsearch_update_queue (`o_id`,`classId`,`in_queue`,`worker_timestamp`,`worker_id`) VALUES ('12465','8','0','0',NULL);
 INSERT INTO bundle_advancedobjectsearch_update_queue (`o_id`,`classId`,`in_queue`,`worker_timestamp`,`worker_id`) VALUES ('12467','9',NULL,NULL,NULL);
