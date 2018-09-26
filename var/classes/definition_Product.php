@@ -1624,7 +1624,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'previewUrl' => '',
    'group' => '',
    'showAppLoggerTab' => false,
-   'linkGeneratorReference' => '',
+   'linkGeneratorReference' => '@AppBundle\\Model\\Product\\LinkGenerator',
    'propertyVisibility' => 
   array (
     'grid' => 
