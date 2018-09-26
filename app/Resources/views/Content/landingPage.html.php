@@ -25,4 +25,14 @@ $this->extend('layout.html.php');
 
 <?= $this->template(":Includes:content-headline.html.php"); ?>
 
-<?= $this->areablock("content", array("allowed"=>array("productgrid"))) ?>
+<?= $this->areablock("precontent",
+    array(
+        "allowed" => array(
+            "gallery-carousel",
+            "wysiwyg",
+            "horizontal-line",
+            "icon-teaser-row",
+            "productteaser"
+        ))) ?>
+
+<?= $this->areablock("content", array("allowed"=>array("productgrid", "limit" => 1))) ?>
