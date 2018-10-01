@@ -114,8 +114,8 @@ class DefaultProduct extends Product
     public function getFirstImageAsset()
     {
         $images = $this->getImages();
-        if ($images->items[0] && $images->items[0]->getImage()) {
-            $firstImage = $images->items[0]->getImage();
+        if ($images->get(0) && $images->get(0)->getImage()) {
+            $firstImage = $images->get(0)->getImage();
 
             return $firstImage;
         } elseif (\Pimcore\Config::getWebsiteConfig()->fallbackImage) {
