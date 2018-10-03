@@ -26,7 +26,7 @@ use Pimcore\Bundle\EcommerceFrameworkBundle\PriceSystem\IPrice;
     $this->placeholder('object_seotitle')->set( $this->product->getSeoName() );
     $this->placeholder('object_seodescription')->set( $this->product->getDescription() );
 
-    $this->placeholder('canonical')->append('<link rel="canonical" href="' . $_SERVER["REQUEST_SCHEME"] . '://'.$_SERVER['HTTP_HOST'].$this->product->internalGetBaseProduct()->getDetailUrl().'"/>');
+    $this->placeholder('canonical')->append('<link rel="canonical" href="' . Pimcore\Tool::getHostUrl() . $this->product->internalGetBaseProduct()->getDetailUrl().'"/>');
 
     $this->headLink()->appendStylesheet('/static/css/shop-homepage.css', "screen");
 ?>

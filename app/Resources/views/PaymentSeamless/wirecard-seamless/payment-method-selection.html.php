@@ -30,7 +30,7 @@
 
 
 <div class="panel-group payment-accordion"
-     data-generate-redirect-url="<?= $_SERVER["REQUEST_SCHEME"] ?>://<?=$_SERVER["HTTP_HOST"]?>/<?= ltrim($this->pimcoreUrl(['controller' => "paymentSeamless",'action'=>'get-wirecard-redirect-url'],'action',true),'/')?>"
+     data-generate-redirect-url="<?= Pimcore\Tool::getHostUrl()?><?= ltrim($this->pimcoreUrl(['controller' => "paymentSeamless",'action'=>'get-wirecard-redirect-url'],'action',true),'/')?>"
      id="checkout-accordion" role="tablist" aria-multiselectable="true">
     <?php foreach ($this->paymentMethods as $paymentMethod => $options) {
         if (is_array($this->config['disabledPaymentMethods']) and in_array($paymentMethod, $this->config['disabledPaymentMethods'])) {
