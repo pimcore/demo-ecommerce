@@ -28,7 +28,7 @@ $state = $this->getParam('state');
 
 <script type="text/javascript">
     <?php if($isCommited) {?>
-    window.open('<?= $_SERVER["REQUEST_SCHEME"] ?>://<?=$_SERVER['HTTP_HOST']?><?= $this->pimcoreUrl(['action' => 'completed', 'controller' => 'checkout', 'id' => $this->order->getId(),'prefix'=>$this->language], 'action', true)?>', '_top');
+    window.open('<?= Pimcore\Tool::getHostUrl() ?><?= $this->pimcoreUrl(['action' => 'completed', 'controller' => 'checkout', 'id' => $this->order->getId(),'prefix'=>$this->language], 'action', true)?>', '_top');
     <?php } ?>
 </script>
 
@@ -69,7 +69,7 @@ $state = $this->getParam('state');
     <?php } ?>
 
     <a class="btn btn-default"
-       href="<?= $_SERVER["REQUEST_SCHEME"] ?>://<?=$_SERVER['HTTP_HOST']?><?= $this->pimcoreUrl(['action' => 'payment', 'controller' => 'payment', 'prefix'=>$this->language], 'action', true) ?>"
+       href="<?= Pimcore\Tool::getHostUrl() ?><?= $this->pimcoreUrl(['action' => 'payment', 'controller' => 'payment', 'prefix'=>$this->language], 'action', true) ?>"
        target="_top"><?= $this->translate('payment.retry') ?></a>
 
 <?php } elseif ($state == \Pimcore\Bundle\EcommerceFrameworkBundle\PaymentManager\Payment\WirecardSeamless::PAYMENT_RETURN_STATE_PENDING) { ?>
