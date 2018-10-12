@@ -6,11 +6,11 @@ return [
         "sql" => "",
         "dataSourceConfig" => [
             [
-                "sql" => "o_id, o_key, name, artno FROM object_localized_12_en_GB WHERE o_id IN (SELECT cid FROM element_workflow_state WHERE status = 'todo' OR status = 'reopened')",
+                "sql" => "o_id, o_key, name, artno FROM object_localized_12_en_GB WHERE o_id IN (SELECT cid FROM element_workflow_state WHERE place = 'todo' OR place = 'reopened')",
                 "from" => "",
                 "where" => "",
                 "groupby" => "",
-                "sqlText" => "SELECT o_id, o_key, name, artno FROM object_localized_12_en_GB WHERE o_id IN (SELECT cid FROM element_workflow_state WHERE status = 'todo' OR status = 'reopened')",
+                "sqlText" => "SELECT o_id, o_key, name, artno FROM object_localized_12_en_GB WHERE o_id IN (SELECT cid FROM element_workflow_state WHERE place = 'todo' OR place = 'reopened')",
                 "type" => "sql"
             ]
         ],
@@ -23,7 +23,7 @@ return [
                 "width" => "",
                 "label" => "ID",
                 "columnAction" => "openObject",
-                "id" => "extModel1041-1"
+                "id" => "extModel4526-1"
             ],
             [
                 "name" => "o_key",
@@ -32,7 +32,7 @@ return [
                 "order" => TRUE,
                 "width" => "",
                 "label" => "Key",
-                "id" => "extModel1041-2"
+                "id" => "extModel4526-2"
             ],
             [
                 "name" => "name",
@@ -41,7 +41,7 @@ return [
                 "order" => TRUE,
                 "width" => "",
                 "label" => "Name",
-                "id" => "extModel1041-3"
+                "id" => "extModel4526-3"
             ],
             [
                 "name" => "artno",
@@ -50,7 +50,7 @@ return [
                 "order" => TRUE,
                 "width" => "",
                 "label" => "Art-No",
-                "id" => "extModel1041-4"
+                "id" => "extModel4526-4"
             ]
         ],
         "niceName" => "[Workflow] TODO",
@@ -66,7 +66,7 @@ return [
         "yAxis" => [
 
         ],
-        "modificationDate" => 1513850254,
+        "modificationDate" => 1539346244,
         "creationDate" => 1513848303,
         "id" => "Workflow-TODO"
     ],
@@ -75,52 +75,16 @@ return [
         "sql" => "",
         "dataSourceConfig" => [
             [
-                "sql" => "o_id, o_key, name, artno FROM object_localized_12_en_GB WHERE o_id IN (SELECT cid FROM element_workflow_state WHERE status = 'in_review')",
+                "sql" => "o_id, o_key, name, artno FROM object_localized_12_en_GB WHERE o_id IN (SELECT cid FROM element_workflow_state WHERE place = 'in_review')",
                 "from" => "",
                 "where" => "",
                 "groupby" => "",
-                "sqlText" => "SELECT o_id, o_key, name, artno FROM object_localized_12_en_GB WHERE o_id IN (SELECT cid FROM element_workflow_state WHERE status = 'in_review')",
+                "sqlText" => "SELECT o_id, o_key, name, artno FROM object_localized_12_en_GB WHERE o_id IN (SELECT cid FROM element_workflow_state WHERE place = 'in_review')",
                 "type" => "sql"
             ]
         ],
         "columnConfiguration" => [
-            [
-                "name" => "o_id",
-                "display" => TRUE,
-                "export" => TRUE,
-                "order" => TRUE,
-                "width" => "",
-                "label" => "ID",
-                "columnAction" => "openObject",
-                "id" => "extModel1035-1"
-            ],
-            [
-                "name" => "o_key",
-                "display" => TRUE,
-                "export" => TRUE,
-                "order" => TRUE,
-                "width" => "",
-                "label" => "Key",
-                "id" => "extModel1035-2"
-            ],
-            [
-                "name" => "name",
-                "display" => TRUE,
-                "export" => TRUE,
-                "order" => TRUE,
-                "width" => "",
-                "label" => "Name",
-                "id" => "extModel1035-3"
-            ],
-            [
-                "name" => "artno",
-                "display" => TRUE,
-                "export" => TRUE,
-                "order" => TRUE,
-                "width" => "",
-                "label" => "Art-No",
-                "id" => "extModel1035-4"
-            ]
+
         ],
         "niceName" => "[Workflow] In Review",
         "group" => "Workflow",
@@ -135,7 +99,7 @@ return [
         "yAxis" => [
 
         ],
-        "modificationDate" => 1513850199,
+        "modificationDate" => 1539346254,
         "creationDate" => 1513848310,
         "id" => "Workflow-In-Review"
     ],
@@ -144,11 +108,11 @@ return [
         "sql" => "",
         "dataSourceConfig" => [
             [
-                "sql" => "o_id, o_key, name, artno FROM object_localized_12_en_GB WHERE o_id IN (SELECT cid FROM element_workflow_state WHERE status = 'in_progress')",
+                "sql" => "o_id, o_key, name, artno FROM object_localized_12_en_GB WHERE o_id IN (SELECT cid FROM element_workflow_state WHERE place = 'in_progress')",
                 "from" => "",
                 "where" => "",
                 "groupby" => "",
-                "sqlText" => "SELECT o_id, o_key, name, artno FROM object_localized_12_en_GB WHERE o_id IN (SELECT cid FROM element_workflow_state WHERE status = 'in_progress')",
+                "sqlText" => "SELECT o_id, o_key, name, artno FROM object_localized_12_en_GB WHERE o_id IN (SELECT cid FROM element_workflow_state WHERE place = 'in_progress')",
                 "type" => "sql"
             ]
         ],
@@ -161,7 +125,7 @@ return [
                 "width" => NULL,
                 "label" => "ID",
                 "columnAction" => "openObject",
-                "id" => "extModel6487-1"
+                "id" => "extModel4815-1"
             ],
             [
                 "name" => "o_key",
@@ -170,7 +134,7 @@ return [
                 "order" => TRUE,
                 "width" => "",
                 "label" => "Key",
-                "id" => "extModel6487-2"
+                "id" => "extModel4815-2"
             ],
             [
                 "name" => "name",
@@ -179,7 +143,7 @@ return [
                 "order" => TRUE,
                 "width" => "",
                 "label" => "Name",
-                "id" => "extModel6487-3"
+                "id" => "extModel4815-3"
             ],
             [
                 "name" => "artno",
@@ -188,7 +152,7 @@ return [
                 "order" => TRUE,
                 "width" => "",
                 "label" => "Art-No",
-                "id" => "extModel6487-4"
+                "id" => "extModel4815-4"
             ]
         ],
         "niceName" => "[Workflow] In Progress",
@@ -204,7 +168,7 @@ return [
         "yAxis" => [
 
         ],
-        "modificationDate" => 1513850622,
+        "modificationDate" => 1539346261,
         "creationDate" => 1513850471,
         "id" => "Workflow-In-Progress"
     ]
