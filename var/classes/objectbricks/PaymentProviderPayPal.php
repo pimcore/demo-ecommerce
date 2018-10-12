@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-09-07T16:07:21+02:00
+* Generated at: 2018-10-12T14:05:37+02:00
 
 
 Fields Summary: 
@@ -36,7 +36,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
      'width' => NULL,
      'height' => NULL,
      'collapsible' => false,
-     'collapsed' => NULL,
+     'collapsed' => false,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
      'permissions' => NULL,

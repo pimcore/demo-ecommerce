@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-09-07T16:07:21+02:00
+* Generated at: 2018-08-28T12:12:21+02:00
 * Inheritance: no
 * Variants: no
 
@@ -51,7 +51,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'OnlineShopOrder',
    'description' => '',
    'creationDate' => 1366279602,
-   'modificationDate' => 1536329241,
+   'modificationDate' => 1535451141,
    'userOwner' => 0,
    'userModification' => 8,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractOrder',

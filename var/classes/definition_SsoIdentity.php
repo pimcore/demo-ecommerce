@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-09-07T16:07:20+02:00
+* Generated at: 2018-08-28T12:12:20+02:00
 * Inheritance: no
 * Variants: no
 
@@ -19,7 +19,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'SsoIdentity',
    'description' => NULL,
    'creationDate' => 0,
-   'modificationDate' => 1536329240,
+   'modificationDate' => 1535451140,
    'userOwner' => 0,
    'userModification' => 10,
    'parentClass' => '\\CustomerManagementFrameworkBundle\\Model\\AbstractSsoIdentity',

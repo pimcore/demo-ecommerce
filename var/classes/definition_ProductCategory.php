@@ -1,11 +1,11 @@
 <?php 
 
 /** 
-* Generated at: 2018-05-24T08:17:53+02:00
+* Generated at: 2018-10-03T09:15:46+02:00
 * Inheritance: yes
 * Variants: no
-* Changed by: demo (3)
-* IP: 192.168.9.18
+* Changed by: admin (19)
+* IP: 192.168.9.95
 
 
 Fields Summary: 
@@ -16,18 +16,22 @@ Fields Summary:
 -- seotext [wysiwyg]
 -- sortkey [numeric]
 - filterdefinition [href]
+- priorityProducts [objects]
 */ 
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+   'id' => '14',
    'name' => 'ProductCategory',
    'description' => '',
    'creationDate' => 1366282445,
-   'modificationDate' => 1527142673,
+   'modificationDate' => 1538550946,
    'userOwner' => 1,
-   'userModification' => 3,
+   'userModification' => 19,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractCategory',
-   'useTraits' => NULL,
+   'listingParentClass' => '',
+   'useTraits' => '',
+   'listingUseTraits' => '',
    'allowInherit' => true,
    'allowVariants' => false,
    'showVariants' => false,
@@ -42,7 +46,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'title' => NULL,
      'width' => NULL,
      'height' => NULL,
-     'collapsible' => false,
+     'collapsible' => NULL,
      'collapsed' => NULL,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
@@ -290,6 +294,39 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'visibleGridView' => false,
                  'visibleSearch' => false,
               )),
+              1 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Objects::__set_state(array(
+                 'fieldtype' => 'objects',
+                 'width' => '',
+                 'height' => '',
+                 'maxItems' => '',
+                 'queryColumnType' => 'text',
+                 'phpdocType' => 'array',
+                 'relationType' => true,
+                 'lazyLoading' => true,
+                 'classes' => 
+                array (
+                  0 => 
+                  array (
+                    'classes' => 'Product',
+                  ),
+                ),
+                 'pathFormatterClass' => '',
+                 'name' => 'priorityProducts',
+                 'title' => 'priorityProducts',
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => false,
+                 'index' => false,
+                 'locked' => NULL,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'datatype' => 'data',
+                 'columnType' => NULL,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
+              )),
             ),
              'locked' => false,
           )),
@@ -297,18 +334,19 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'locked' => false,
       )),
     ),
-     'locked' => false,
+     'locked' => NULL,
   )),
    'icon' => '',
    'previewUrl' => '',
-   'group' => NULL,
+   'group' => '',
    'showAppLoggerTab' => false,
-   'linkGeneratorReference' => NULL,
+   'linkGeneratorReference' => '',
    'propertyVisibility' => 
   array (
     'grid' => 
     array (
       'id' => true,
+      'key' => false,
       'path' => true,
       'published' => true,
       'modificationDate' => false,
@@ -317,6 +355,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
     'search' => 
     array (
       'id' => true,
+      'key' => false,
       'path' => true,
       'published' => true,
       'modificationDate' => false,

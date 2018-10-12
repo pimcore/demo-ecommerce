@@ -1,9 +1,11 @@
 <?php 
 
 /** 
-* Generated at: 2018-09-07T16:07:23+02:00
+* Generated at: 2018-10-12T14:02:48+02:00
 * Inheritance: yes
 * Variants: yes
+* Changed by: admin (19)
+* IP: 192.168.9.95
 
 
 Fields Summary: 
@@ -40,6 +42,7 @@ Fields Summary:
 - relatedProducts [objects]
 - attributesAvailable [calculatedValue]
 - variantsAvailable [calculatedValue]
+- wfstate [multiselect]
 */ 
 
 
@@ -48,13 +51,13 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'name' => 'Product',
    'description' => '',
    'creationDate' => 1366282442,
-   'modificationDate' => 1536329243,
+   'modificationDate' => 1539345768,
    'userOwner' => 1,
-   'userModification' => 18,
+   'userModification' => 19,
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractProduct',
-   'listingParentClass' => NULL,
+   'listingParentClass' => '',
    'useTraits' => '',
-   'listingUseTraits' => NULL,
+   'listingUseTraits' => '',
    'allowInherit' => true,
    'allowVariants' => true,
    'showVariants' => false,
@@ -70,7 +73,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'width' => NULL,
      'height' => NULL,
      'collapsible' => false,
-     'collapsed' => NULL,
+     'collapsed' => false,
      'bodyStyle' => NULL,
      'datatype' => 'layout',
      'permissions' => NULL,
@@ -110,7 +113,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'width' => NULL,
                  'height' => NULL,
                  'collapsible' => false,
-                 'collapsed' => NULL,
+                 'collapsed' => false,
                  'bodyStyle' => NULL,
                  'datatype' => 'layout',
                  'permissions' => NULL,
@@ -810,9 +813,9 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'width' => 150,
                  'height' => '',
                  'maxItems' => '',
-                 'renderType' => NULL,
-                 'optionsProviderClass' => NULL,
-                 'optionsProviderData' => NULL,
+                 'renderType' => 'list',
+                 'optionsProviderClass' => '',
+                 'optionsProviderData' => '',
                  'queryColumnType' => 'text',
                  'columnType' => 'text',
                  'phpdocType' => 'array',
@@ -1156,7 +1159,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                   1 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\ObjectsMetadata::__set_state(array(
                      'allowedClassId' => 'ProductTechnology',
-                     'visibleFields' => 'name',
+                     'visibleFields' => '',
                      'columns' => 
                     array (
                       0 => 
@@ -1204,7 +1207,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                   2 => 
                   Pimcore\Model\DataObject\ClassDefinition\Data\ObjectsMetadata::__set_state(array(
                      'allowedClassId' => 'ProductTechnology',
-                     'visibleFields' => 'name',
+                     'visibleFields' => '',
                      'columns' => 
                     array (
                       0 => 
@@ -1606,6 +1609,66 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'permissions' => NULL,
                  'datatype' => 'data',
                  'columnType' => NULL,
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
+              )),
+              4 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Multiselect::__set_state(array(
+                 'fieldtype' => 'multiselect',
+                 'options' => 
+                array (
+                  0 => 
+                  array (
+                    'key' => '<div class="pimcore-workflow-place-indicator" style="background-color: #bfdadc; color:#000000">Start Product Magic</div>',
+                    'value' => 'in_progress',
+                  ),
+                  1 => 
+                  array (
+                    'key' => '<div class="pimcore-workflow-place-indicator" style="background-color: green; color:#ffffff">Edit Texts</div>',
+                    'value' => 'edit_text',
+                  ),
+                  2 => 
+                  array (
+                    'key' => '<div class="pimcore-workflow-place-indicator" style="background-color: red; color:#ffffff">Edit Images</div>',
+                    'value' => 'edit_images',
+                  ),
+                  3 => 
+                  array (
+                    'key' => '<div class="pimcore-workflow-place-indicator" style="background-color: #bfdadc; color:#000000">Done Edit Texts</div>',
+                    'value' => 'done_text',
+                  ),
+                  4 => 
+                  array (
+                    'key' => '<div class="pimcore-workflow-place-indicator" style="background-color: #bfdadc; color:#000000">Done Edit Images</div>',
+                    'value' => 'done_images',
+                  ),
+                  5 => 
+                  array (
+                    'key' => '<div class="pimcore-workflow-place-indicator" style="background-color: #bfdadc; color:#000000">Product completed and Done</div>',
+                    'value' => 'done_all',
+                  ),
+                ),
+                 'width' => '',
+                 'height' => '',
+                 'maxItems' => '',
+                 'renderType' => 'tags',
+                 'optionsProviderClass' => '',
+                 'optionsProviderData' => '',
+                 'queryColumnType' => 'text',
+                 'columnType' => 'text',
+                 'phpdocType' => 'array',
+                 'name' => 'wfstate',
+                 'title' => 'wfstate',
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => false,
+                 'index' => false,
+                 'locked' => false,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'datatype' => 'data',
                  'relationType' => false,
                  'invisible' => false,
                  'visibleGridView' => false,
