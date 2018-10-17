@@ -12,6 +12,7 @@
     "pimcore/pimcore": "~5.5.0",
     "pimcore/customer-management-framework-bundle": "^1.9",
     "pimcore/web2print-tools-bundle": "^2.4",
+    "pimcore/server-side-matomo-tracking": "^0.0.12",
     "wikimedia/composer-merge-plugin": "^1.4"
   },
   "require-dev": {

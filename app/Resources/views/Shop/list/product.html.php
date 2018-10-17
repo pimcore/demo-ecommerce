@@ -31,6 +31,9 @@
 ?>
 
 <div class="col-sm-<?= $col ?> col-lg-<?= $col ?> col-md-<?= $col ?>">
+    <?php
+        $this->matomoServersideTracker()->doTrackContentImpressionForAllTrackers("product-cell", $product->getOSName() . " (" . $product->getId() . ")");
+    ?>
     <div class="thumbnail product-list-item" data-track-content data-content-name="product-cell" data-content-piece="<?= $product->getOSName() ?> (<?= $product->getId() ?>)">
         <a href="<?= $link ?>">
             <?=$product->getFirstImage('productList')->getHtml(['class' => 'product-image'])?>

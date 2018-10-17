@@ -18,6 +18,7 @@
  * @var \Pimcore\Templating\PhpEngine $view
  * @var \Pimcore\Templating\GlobalVariables $app
  */
+
 ?>
 
 <section class="area-gallery-carousel">
@@ -77,6 +78,11 @@
 
         <div class="carousel-inner">
             <?php for($i=0; $i<$slides; $i++) { ?>
+
+                <?php
+                    $this->matomoServersideTracker()->doTrackContentImpressionForAllTrackers("gallery-slider", (string)$this->image("image_" . $i)->getImage());
+                ?>
+
                 <div class="item <?= ($i==0 ? "active" : "") ?> <?= $id . "-" . $i ?>" data-track-content data-content-name="gallery-slider" data-content-piece="<?= $this->image("image_" . $i)->getImage() ?>">
                     <?= $this->image("image_" . $i, [
                         "thumbnail" => "galleryCarousel",
