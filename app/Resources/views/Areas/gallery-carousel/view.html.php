@@ -77,7 +77,7 @@
 
         <div class="carousel-inner">
             <?php for($i=0; $i<$slides; $i++) { ?>
-                <div class="item <?= ($i==0 ? "active" : "") ?> <?= $id . "-" . $i ?>">
+                <div class="item <?= ($i==0 ? "active" : "") ?> <?= $id . "-" . $i ?>" data-track-content data-content-name="gallery-slider" data-content-piece="<?= $this->image("image_" . $i)->getImage() ?>">
                     <?= $this->image("image_" . $i, [
                         "thumbnail" => "galleryCarousel",
                         "dropClass" => $id . "-" . $i,
