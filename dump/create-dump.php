@@ -63,6 +63,7 @@ $dumpFiles[] = $finalDest;
 $tableBlacklist = [
     'application_logs',
     'cache',
+    'classes',
     'cache_tags',
     'edit_lock',
     'email_log',
