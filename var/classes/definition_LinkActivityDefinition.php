@@ -25,6 +25,7 @@ Fields Summary:
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+   'id' => '40',
    'name' => 'LinkActivityDefinition',
    'description' => NULL,
    'creationDate' => 0,

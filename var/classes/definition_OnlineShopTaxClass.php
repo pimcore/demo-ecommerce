@@ -14,6 +14,7 @@ Fields Summary:
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+   'id' => '35',
    'name' => 'OnlineShopTaxClass',
    'description' => '',
    'creationDate' => 0,

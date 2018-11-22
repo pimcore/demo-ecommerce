@@ -27,6 +27,7 @@ Fields Summary:
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+   'id' => '41',
    'name' => 'Customer',
    'description' => '',
    'creationDate' => 0,

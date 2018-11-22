@@ -18,6 +18,7 @@ Fields Summary:
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+   'id' => '36',
    'name' => 'CustomerSegmentGroup',
    'description' => NULL,
    'creationDate' => 0,

@@ -15,6 +15,7 @@ Fields Summary:
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+   'id' => '34',
    'name' => 'OnlineShopVoucherToken',
    'description' => '',
    'creationDate' => 1431519559,

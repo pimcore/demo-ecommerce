@@ -22,6 +22,7 @@ Fields Summary:
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+   'id' => '16',
    'name' => 'ProductTechnology',
    'description' => '',
    'creationDate' => 1366282447,

@@ -23,6 +23,7 @@ Fields Summary:
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+   'id' => '31',
    'name' => 'OfferToolOfferItem',
    'description' => '',
    'creationDate' => 1376898390,

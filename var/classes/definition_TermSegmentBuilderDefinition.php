@@ -16,6 +16,7 @@ Fields Summary:
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+   'id' => '39',
    'name' => 'TermSegmentBuilderDefinition',
    'description' => NULL,
    'creationDate' => 0,

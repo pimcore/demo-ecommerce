@@ -16,6 +16,7 @@ Fields Summary:
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+   'id' => '32',
    'name' => 'OfferToolCustomProduct',
    'description' => '',
    'creationDate' => 1376898397,

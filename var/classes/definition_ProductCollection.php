@@ -17,6 +17,7 @@ Fields Summary:
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+   'id' => '15',
    'name' => 'ProductCollection',
    'description' => '',
    'creationDate' => 1366282446,

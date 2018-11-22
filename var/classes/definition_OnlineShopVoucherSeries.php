@@ -14,6 +14,7 @@ Fields Summary:
 
 
 return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+   'id' => '33',
    'name' => 'OnlineShopVoucherSeries',
    'description' => '',
    'creationDate' => 1430222406,
