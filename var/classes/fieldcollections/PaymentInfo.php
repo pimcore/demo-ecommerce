@@ -1,7 +1,8 @@
 <?php 
 
 /** 
-* Generated at: 2018-10-12T14:05:37+02:00
+* Generated at: 2018-11-28T12:27:58+01:00
+* IP: 192.168.9.95
 
 
 Fields Summary: 
@@ -21,14 +22,19 @@ Fields Summary:
  - provider_paypal_amount [input]
  - provider_paypal_TransactionType [input]
  - provider_paypal_PaymentType [input]
+ - provider_payu_amount [input]
+ - provider_payu_PaymentType [input]
+ - provider_ogone_amount [input]
+ - provider_ogone_PaymentId [input]
+ - provider_ogone_PaymentType [input]
 */ 
 
 
 return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
    'key' => 'PaymentInfo',
    'parentClass' => '\\Pimcore\\Bundle\\EcommerceFrameworkBundle\\Model\\AbstractPaymentInformation',
-   'title' => NULL,
-   'group' => NULL,
+   'title' => '',
+   'group' => '',
    'layoutDefinitions' => 
   Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'fieldtype' => 'panel',
@@ -153,18 +159,28 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
               ),
               2 => 
               array (
+                'key' => 'Payment Init',
+                'value' => 'paymentInit',
+              ),
+              3 => 
+              array (
                 'key' => 'Payment Pending',
                 'value' => 'paymentPending',
               ),
-              3 => 
+              4 => 
               array (
                 'key' => 'Payment Authorized',
                 'value' => 'paymentAuthorized',
               ),
-              4 => 
+              5 => 
               array (
                 'key' => 'Aborted',
                 'value' => 'aborted',
+              ),
+              6 => 
+              array (
+                'key' => 'Aborted but Response Received',
+                'value' => 'abortedButResponseReceived',
               ),
             ),
              'width' => 500,
@@ -527,6 +543,171 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
                  'regex' => '',
                  'unique' => NULL,
                  'name' => 'provider_paypal_PaymentType',
+                 'title' => 'Payment Type',
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => true,
+                 'index' => false,
+                 'locked' => false,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'datatype' => 'data',
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
+              )),
+            ),
+             'locked' => false,
+          )),
+          10 => 
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
+             'fieldtype' => 'fieldset',
+             'labelWidth' => 150,
+             'name' => 'additionalDataPayU',
+             'type' => NULL,
+             'region' => '',
+             'title' => 'Additional PayU Data',
+             'width' => NULL,
+             'height' => NULL,
+             'collapsible' => true,
+             'collapsed' => true,
+             'bodyStyle' => '',
+             'datatype' => 'layout',
+             'permissions' => NULL,
+             'childs' => 
+            array (
+              0 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                 'fieldtype' => 'input',
+                 'width' => NULL,
+                 'queryColumnType' => 'varchar',
+                 'columnType' => 'varchar',
+                 'columnLength' => 255,
+                 'phpdocType' => 'string',
+                 'regex' => '',
+                 'unique' => NULL,
+                 'name' => 'provider_payu_amount',
+                 'title' => 'Amount',
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => true,
+                 'index' => false,
+                 'locked' => false,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'datatype' => 'data',
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
+              )),
+              1 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                 'fieldtype' => 'input',
+                 'width' => 500,
+                 'queryColumnType' => 'varchar',
+                 'columnType' => 'varchar',
+                 'columnLength' => 255,
+                 'phpdocType' => 'string',
+                 'regex' => '',
+                 'unique' => NULL,
+                 'name' => 'provider_payu_PaymentType',
+                 'title' => 'Payment Type',
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => true,
+                 'index' => false,
+                 'locked' => false,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'datatype' => 'data',
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
+              )),
+            ),
+             'locked' => false,
+          )),
+          11 => 
+          Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
+             'fieldtype' => 'fieldset',
+             'labelWidth' => 150,
+             'name' => 'additionalDataOGone',
+             'type' => NULL,
+             'region' => '',
+             'title' => 'Additional OGone Data',
+             'width' => NULL,
+             'height' => NULL,
+             'collapsible' => true,
+             'collapsed' => true,
+             'bodyStyle' => '',
+             'datatype' => 'layout',
+             'permissions' => NULL,
+             'childs' => 
+            array (
+              0 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                 'fieldtype' => 'input',
+                 'width' => NULL,
+                 'queryColumnType' => 'varchar',
+                 'columnType' => 'varchar',
+                 'columnLength' => 255,
+                 'phpdocType' => 'string',
+                 'regex' => '',
+                 'unique' => NULL,
+                 'name' => 'provider_ogone_amount',
+                 'title' => 'Amount',
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => true,
+                 'index' => false,
+                 'locked' => false,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'datatype' => 'data',
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
+              )),
+              1 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                 'fieldtype' => 'input',
+                 'width' => 500,
+                 'queryColumnType' => 'varchar',
+                 'columnType' => 'varchar',
+                 'columnLength' => 255,
+                 'phpdocType' => 'string',
+                 'regex' => '',
+                 'unique' => NULL,
+                 'name' => 'provider_ogone_PaymentId',
+                 'title' => 'Payment Id',
+                 'tooltip' => '',
+                 'mandatory' => false,
+                 'noteditable' => true,
+                 'index' => false,
+                 'locked' => false,
+                 'style' => '',
+                 'permissions' => NULL,
+                 'datatype' => 'data',
+                 'relationType' => false,
+                 'invisible' => false,
+                 'visibleGridView' => false,
+                 'visibleSearch' => false,
+              )),
+              2 => 
+              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                 'fieldtype' => 'input',
+                 'width' => 500,
+                 'queryColumnType' => 'varchar',
+                 'columnType' => 'varchar',
+                 'columnLength' => 255,
+                 'phpdocType' => 'string',
+                 'regex' => '',
+                 'unique' => NULL,
+                 'name' => 'provider_ogone_PaymentType',
                  'title' => 'Payment Type',
                  'tooltip' => '',
                  'mandatory' => false,

@@ -1,14 +1,14 @@
 <?php 
 
 /** 
-* Generated at: 2018-10-12T14:05:37+02:00
+* Generated at: 2018-11-26T16:58:37+01:00
 
 
 Fields Summary: 
  - label [input]
  - field [indexFieldSelection]
  - scriptPath [input]
- - availableRelations [multihref]
+ - availableRelations [manyToManyRelation]
 */ 
 
 
@@ -167,8 +167,8 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           4 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Multihref::__set_state(array(
-             'fieldtype' => 'multihref',
+          Pimcore\Model\DataObject\ClassDefinition\Data\ManyToManyRelation::__set_state(array(
+             'fieldtype' => 'manyToManyRelation',
              'width' => '',
              'height' => '',
              'maxItems' => '',

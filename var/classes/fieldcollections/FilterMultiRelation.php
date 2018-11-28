@@ -1,7 +1,7 @@
 <?php 
 
 /** 
-* Generated at: 2018-10-12T14:05:37+02:00
+* Generated at: 2018-11-26T16:58:37+01:00
 
 
 Fields Summary: 
@@ -9,7 +9,7 @@ Fields Summary:
  - field [indexFieldSelection]
  - useAndCondition [checkbox]
  - scriptPath [input]
- - availableRelations [objects]
+ - availableRelations [manyToManyObjectRelation]
 */ 
 
 
@@ -190,8 +190,8 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'visibleSearch' => false,
           )),
           5 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Objects::__set_state(array(
-             'fieldtype' => 'objects',
+          Pimcore\Model\DataObject\ClassDefinition\Data\ManyToManyObjectRelation::__set_state(array(
+             'fieldtype' => 'manyToManyObjectRelation',
              'width' => '',
              'height' => '',
              'maxItems' => '',
