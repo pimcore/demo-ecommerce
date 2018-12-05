@@ -23,7 +23,7 @@ $this->extend('payment-iframe.html.php');
 
 ?>
 
-<?php if (count($this->errors)): ?>
+<?php if ($this->errors && count($this->errors)): ?>
     <div class="alert alert-error">
         <?php foreach ($this->errors as $error): ?>
             <p><?= $error ?></p>

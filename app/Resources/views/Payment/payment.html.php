@@ -38,14 +38,14 @@ $cart = $this->cart;
         <legend><?= $this->translate("checkout.payment") ?></legend>
 
 
-        <?php if (count($this->errors)) { ?>
+        <?php if ($this->errors && count($this->errors)) { ?>
             <div class="alert alert-danger" role="alert">
                 <?php foreach ($this->errors as $error) { ?>
                     <p><?= $this->translate("checkout.error.delivery." . $error) ?></p>
                 <?php } ?>
             </div>
         <?php } ?>
-        <?php if (count($this->paymentErrors)) { ?>
+        <?php if ($this->paymentErrors && count($this->paymentErrors)) { ?>
             <div class="alert alert-danger" role="alert">
                 <?php foreach ($this->paymentErrors as $error) { ?>
                     <p><?= $error ?></p>
