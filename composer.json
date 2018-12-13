@@ -9,7 +9,7 @@
   },
   "require": {
     "php": ">=7.1",
-    "pimcore/pimcore": "~5.5.0",
+    "pimcore/pimcore": "~5.6-dev",
     "pimcore/customer-management-framework-bundle": "^1.9",
     "pimcore/web2print-tools-bundle": "^2.4",
     "pimcore/server-side-matomo-tracking": "^0.0.12",
