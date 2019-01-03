@@ -7,7 +7,7 @@ Applications built with Pimcore.
 
 ## Getting started 
 ```bash
-composer create-project pimcore/demo-ecommerce my-project
+COMPOSER_MEMORY_LIMIT=-1 composer create-project pimcore/demo-ecommerce my-project
 cd ./my-project
 ./vendor/bin/pimcore-install
 ```
