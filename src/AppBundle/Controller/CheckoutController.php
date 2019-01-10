@@ -161,8 +161,17 @@ class CheckoutController extends AbstractCartAware
         $this->view->currentStep = 'confirm';
         $this->view->showSummary = true;
 
+        // check errors
+        $this->view->errors = [];
+        if ($request->get('error') != '') {
+            $this->view->errors = explode(',', $request->get('error'));
+        }
+
         //if cart empty, redirect to cart list
         if (count($cart->getItems()) == 0) {
+            if($request->get('error') != '') {
+                $this->addFlash('danger', $request->get('error'));
+            }
             return $this->redirect($this->generateUrl('cart', ['action' => 'list']));
         }
         $language = substr($request->getLocale(), 0, 2);
@@ -174,12 +183,6 @@ class CheckoutController extends AbstractCartAware
         $this->view->deliveryAddress = $deliveryAddress->getData();
 
         $payment = $checkoutManager->getPayment();
-
-        // check errors
-        $this->view->errors = [];
-        if ($request->get('error') != '') {
-            $this->view->errors = explode(',', $request->get('error'));
-        }
 
         $confirmStep = $checkoutManager->getCheckoutStep('confirm');
 

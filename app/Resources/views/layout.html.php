@@ -217,7 +217,19 @@ use Pimcore\Model\Document\Page;
                 <?= $this->navigation()->breadcrumbs()->setMinDepth(null)->render($mainNavigation); ?>
             </div>
         <?php } ?>
+
         <div class="col-md-<?php if(!$document->getProperty("leftNavHide") && !$this->hideNav) { ?>9 col-md-push-3<?php } else { ?>12<?php } ?>">
+
+            <?php if($this->app->getSession() && $this->app->getSession()->getFlashBag()) { ?>
+
+                <?php foreach($this->app->getSession()->getFlashBag()->all() as $type => $flashMessage) { ?>
+                    <div class="alert alert-<?= $type ?> alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                        <?= implode("<br/>", $flashMessage) ?>
+                    </div>
+                <?php } ?>
+            <?php } ?>
+
 
             <?php $this->slots()->output('_content') ?>
         </div>
