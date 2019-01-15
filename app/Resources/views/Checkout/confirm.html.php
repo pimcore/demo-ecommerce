@@ -100,7 +100,7 @@ $cart = $this->cart;
                             }
                             ?>
                         </p>
-                        <?
+                        <?php
                     elseif ($paymentProvider = $paymentProviderBrick->getPaymentProviderDatatrans()) :
                         $currentPaymentMethod = $paymentProvider->getAuth_pmethod();
                         ?>
@@ -127,7 +127,7 @@ $cart = $this->cart;
                             }
                             ?>
                         </p>
-                        <?
+                        <?php
                     endif;
                 endforeach;
                 ?>
