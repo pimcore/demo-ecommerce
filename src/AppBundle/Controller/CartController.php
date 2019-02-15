@@ -121,8 +121,10 @@ class CartController extends AbstractCartAware
                     if (intval($qty) <= 0) {
                         $trackingManager = Factory::getInstance()->getTrackingManager();
                         $trackingManager->trackCartProductActionRemove($cart, $product, $this->getCart()->getItem($key)->getCount());
+                        $cart->removeItem($key);
+                    } else {
+                        $cart->updateItem($key, $product, intval($qty), true);
                     }
-                    $cart->updateItem($key, $product, intval($qty), true);
                     $cart->save();
                 }
             }
