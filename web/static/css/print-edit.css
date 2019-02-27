@@ -40,24 +40,21 @@ body {
 	display: none;
 }
 
+.keyvisual {
+	margin: 0;
+}
 
 .keyvisual img {
 	max-width: 199mm;
 	max-height: 120mm;
 	width: auto;
 	height: auto;
-	padding-top: -20mm;
-	padding-left: -6.5mm;
+	margin-left: -5mm;
+	margin-top: 0;
 }
 
-.pimcore_area_print-key-visual h1 {
-	text-align: center;
-	background-color: #000000;
-	display: block;
-	font-size: 35pt;
-	margin: 0 40mm 0 40mm;
-	font-family: "Open Sans Light";
-	text-transform: uppercase;
+.pimcore_area_print-key-visual .headline {
+	top: 64mm;
 }
 
 .pagebreak-force-page-break {

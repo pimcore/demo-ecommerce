@@ -89,22 +89,23 @@
     size: A4 portrait;
 }
 
+@page title {
+    margin: 0;
+}
+
 @page:right {
-    margin:15mm 5mm 14mm 14mm;  /* ACHTUNG: Veränderung des margins ändert den register rechts!! */
+    margin:15mm 5mm 14mm 14mm;
     @bottom-left {
         content: element(footerElementRight);
         text-align: left;
     }
 }
+
 @page:left {
-    margin:15mm 14mm 14mm 5mm;  /* ACHTUNG: Veränderung des margins ändert den register rechts!! */
+    margin:15mm 14mm 14mm 5mm;
     @bottom-right {
         content: element(footerElementLeft);
     }
-}
-
-@page title {
-    margin: 0;
 }
 
 @page toc {
@@ -112,18 +113,19 @@
     color: #ffffff;
 }
 @page toc:right {
-    margin:15mm 5mm 14mm 14mm;  /* ACHTUNG: Veränderung des margins ändert den register rechts!! */
+    margin:15mm 5mm 14mm 14mm;
     @bottom-left {
         content: element(tocFooterElementRight);
         text-align: left;
     }
 }
 @page toc:left {
-    margin:15mm 14mm 14mm 5mm;  /* ACHTUNG: Veränderung des margins ändert den register rechts!! */
+    margin:15mm 14mm 14mm 5mm;
     @bottom-right {
         content: element(tocFooterElementLeft);
     }
 }
+
 
 .register {
     font-size: 12pt;
@@ -183,16 +185,13 @@
 }
 
 /* Layout Tabs */
-.title-page-container {
-    page: default;
-}
 #toc-wrapper {
     page: toc;
 }
 .page.Basketball {
     page: Basketball;
 }
-.page.Basketball h1 {
+.page.Basketball h1, .page.Basketball .headline {
     color: #ec6e1e;
 }
 .page.Basketball .pimcore_area_print-product-row h4:after {
@@ -206,7 +205,7 @@
 .page.Football {
     page: Football;
 }
-.page.Football h1 {
+.page.Football h1, .page.Football .headline {
     color: #cf120f;
 }
 .page.Football .pimcore_area_print-product-row h4:after {
@@ -220,7 +219,7 @@
 .page.Handball {
     page: Handball;
 }
-.page.Handball h1 {
+.page.Handball h1, .page.Handball .headline {
     color: #a52774;
 }
 .page.Handball .pimcore_area_print-product-row h4:after {
@@ -234,7 +233,7 @@
 .page.Outdoor {
     page: Outdoor;
 }
-.page.Outdoor h1 {
+.page.Outdoor h1, .page.Outdoor .headline {
     color: #177f17;
 }
 .page.Outdoor .pimcore_area_print-product-row h4:after {
@@ -248,7 +247,7 @@
 .page.Running {
     page: Running;
 }
-.page.Running h1 {
+.page.Running h1, .page.Running .headline {
     color: #28ABE1;
 }
 .page.Running .pimcore_area_print-product-row h4:after {
@@ -262,7 +261,7 @@
 .page.Volleyball {
     page: Volleyball;
 }
-.page.Volleyball h1 {
+.page.Volleyball h1, .page.Volleyball .headline {
     color: #f2e552
 }
 .page.Volleyball .pimcore_area_print-product-row h4:after {
@@ -280,11 +279,11 @@ body {
     font-size: 10pt;
 }
 
-.page {
+/*.page {
     page-break-after: always;
-}
+}*/
 
-.site h1 {
+.site h1, .site .headline {
     font-family: 'Open Sans Bold';
     /*border-bottom: 1px solid #7F7F7F;*/
     line-height: 120%;
@@ -315,25 +314,33 @@ body {
 }
 
 
-
+.keyvisual {
+    position: relative;
+    padding-bottom: 10mm;
+}
 
 .keyvisual img {
     max-width: 208mm;
     max-height: 130mm;
+    margin-top: -18mm;
+    margin-left: -10mm;
     width: auto;
     height: auto;
-    padding-top: -20mm;
-    padding-left: -10mm;
 }
 
-.pimcore_area_print-key-visual h1 {
+.pimcore_area_print-key-visual .headline {
     text-align: center;
-    background-color: #000000;
+    background: #000000;
     display: block;
     font-size: 35pt;
-    margin: -14.8mm 40mm 8mm 40mm;
+    margin: 0 40mm 0 40mm;
     font-family: "Open Sans Light";
     text-transform: uppercase;
+    width: 115mm;
+    position: absolute;
+    left: 0;
+    top: 45mm;
+    z-index: 2000;
 }
 
 .pagebreak-force-page-break {
@@ -482,16 +489,16 @@ body {
 }
 
 .pimcore_area_print-title-page {
+    page: title;
     position: relative;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
 .pimcore_area_print-title-page .title-page-container  {
-    page: title;
     position: absolute;
     top: -3mm;
-    left: -5mm;
+    left: -3mm;
     width: 216mm;
     height: 303mm;
 }
@@ -518,11 +525,9 @@ body {
     margin-bottom: -30mm;
 }
 
-.pimcore_area_print-title-page .title-page-container img.title {
-    max-width: 60mm;
-    max-height: 60mm;
-    width: auto;
-    height: auto;
+.pimcore_area_print-title-page .title-page-container .img-container .title {
+    width: 60mm;
+    height: 60mm;
     z-index: 2000;
 }
 

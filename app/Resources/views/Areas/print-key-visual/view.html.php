@@ -26,9 +26,9 @@
     ]) ?>
 </div>
 
-<h1>
+<p class="headline">
     <?= $this->input("headline"); ?>
-</h1>
+</p>
 
 
 <?php if(!$this->editmode) { ?>
