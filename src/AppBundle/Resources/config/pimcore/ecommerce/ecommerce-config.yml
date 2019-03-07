@@ -4,6 +4,10 @@ imports:
     - { resource: expensive-shipping.yml }
     - { resource: optimized-mysql-index.yml }
 
+    # add one of these configuration files to use elastic search as search backend
+    # - { resource: elastic-search-index-5.yml }
+    # - { resource: elastic-search-index-6.yml }
+
 
 # configuration of e-commerce framework
 pimcore_ecommerce_framework:

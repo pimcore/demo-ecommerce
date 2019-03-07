@@ -1,0 +1,235 @@
+pimcore_ecommerce_framework:
+    index_service:
+        tenants:
+            ElasticSearch:
+                enabled: true
+                worker_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Worker\ElasticSearch\DefaultElasticSearch5
+                config_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Config\ElasticSearch
+
+                placeholders:
+                    '%%locale%%': 'de_AT'
+
+                config_options:
+                    client_config:
+                        logging: true
+                        indexName: 'ecommerce-demo-elasticsearch'
+
+                    es_client_params:
+                        hosts:
+                            - 'my-host-1'
+
+                    index_settings:
+                        number_of_shards: 5
+                        number_of_replicas: 0
+
+                search_attributes:
+                    - name
+                    - seoname
+                    - color
+
+                attributes:
+                    # additional attributes to cache
+                    description:
+                        type: string
+                        locale: '%%locale%%'
+                        filter_group: 'string'
+
+                    firstImageAsset:
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\DefaultRelations
+
+                    firstCategory:
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\DefaultRelations
+
+                    linkProduct:
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\DefaultRelations
+
+                    name:
+                        type: string
+                        locale: '%%locale%%'
+                        filter_group: 'string'
+
+                    seoname:
+                        type: string
+                        filter_group: 'string'
+
+                    color:
+                        type: string
+                        filter_group: 'multiselect'
+
+                    gender:
+                        type: string
+                        filter_group: 'multiselect'
+
+                    technologies:
+                        # Service id of interpreter for this field
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\DefaultObjects
+                        filter_group: 'relation'
+
+                    features:
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\DefaultObjects
+                        filter_group: 'relation'
+
+                    tentTentPegs:
+                        type: string
+                        filtergroup: 'string'
+                        # Service id of getter for this field
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        # Options array for getter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: tentSpecifications
+                            fieldname: tentPegs
+
+
+                    tentWaterproofRain:
+                        type: string
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: tentSpecifications
+                            fieldname: waterproofRain
+                        filtergroup: 'string'
+
+                    tentWaterproofGround:
+                        type: string
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: tentSpecifications
+                            fieldname: waterproofGround
+                        filtergroup: 'string'
+
+                    rucksacksVolume:
+                        type: double
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\Numeric
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: rucksackSpecs
+                            fieldname: volume
+                        filtergroup: double
+
+                    rucksacksWeight:
+                        type: double
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\Numeric
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: rucksackSpecs
+                            fieldname: weight
+                        filtergroup: double
+
+                    rucksacksLoad:
+                        type: double
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\Numeric
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: rucksackSpecs
+                            fieldname: load
+                        filtergroup: double
+
+                    matsWidth:
+                        type: double
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: matsSpecs
+                            fieldname: width
+                        filtergroup: double
+
+                    matsLength:
+                        type: double
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: matsSpecs
+                            fieldname: length
+                        filtergroup: double
+
+                    matsHeight:
+                        type: double
+                        getter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Getter\DefaultBrickGetter
+                        getter_options:
+                            brickfield: specificAttributes
+                            bricktype: matsSpecs
+                            fieldname: height
+                        filtergroup: double
+
+                    simularity_color:
+                        type: integer
+                        fieldname: color
+                        hide_in_fieldlist_datatype: true
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\Soundex
+
+                    simularity_gender:
+                        type: integer
+                        fieldname: gender
+                        hide_in_fieldlist_datatype: true
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\Soundex
+
+                    simularity_category:
+                        type: integer
+                        fieldname: categories
+                        hide_in_fieldlist_datatype: true
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\ObjectIdSum
+
+                    simularity_feature:
+                        type: integer
+                        fieldname: features
+                        hide_in_fieldlist_datatype: true
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\ObjectIdSum
+
+                    simularity_technolgy:
+                        type: integer
+                        fieldname: technologies
+                        hide_in_fieldlist_datatype: true
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\ObjectIdSum
+
+                    simularity_attributes:
+                        type: integer
+                        fieldname: attributes
+                        hide_in_fieldlist_datatype: true
+                        interpreter_id: Pimcore\Bundle\EcommerceFrameworkBundle\IndexService\Interpreter\ObjectIdSum
+
+    filter_service:
+        tenants:
+            ElasticSearch:
+                filter_types:
+                    FilterNumberRange:
+                        # Service id for filter type implementation
+                        filter_type_id: Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\FilterType\ElasticSearch\NumberRange
+                        # Default template for filter, can be overwritten in filter definition
+                        template: ':Shop/filters:range.html.php'
+
+                    FilterNumberRangeSelection:
+                        filter_type_id: Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\FilterType\ElasticSearch\NumberRangeSelection
+                        template: ':Shop/filters:numberrange.html.php'
+
+                    FilterSelect:
+                        filter_type_id: Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\FilterType\ElasticSearch\Select
+                        template: ':Shop/filters:select.html.php'
+
+                    FilterSelectFromMultiSelect:
+                        filter_type_id: Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\FilterType\ElasticSearch\SelectFromMultiSelect
+                        template: ':Shop/filters:select.html.php'
+
+                    FilterMultiSelect:
+                        filter_type_id: Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\FilterType\ElasticSearch\MultiSelect
+                        template: ':Shop/filters:multiselect.html.php'
+
+                    FilterMultiSelectFromMultiSelect:
+                        filter_type_id: Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\FilterType\ElasticSearch\MultiSelectFromMultiSelect
+                        template: ':Shop/filters:multiselect.html.php'
+
+                    FilterMultiRelation:
+                        filter_type_id: Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\FilterType\ElasticSearch\MultiSelectRelation
+                        template: ':Shop/filters:multiselect-relation.html.php'
+
+                    FilterCategory:
+                        filter_type_id: Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\FilterType\ElasticSearch\SelectCategory
+                        template: ':Shop/filters:select_category.html.php'
+
+                    FilterRelation:
+                        filter_type_id: Pimcore\Bundle\EcommerceFrameworkBundle\FilterService\FilterType\ElasticSearch\SelectRelation
+                        template: ':Shop/filters:object_relation.html.php'
