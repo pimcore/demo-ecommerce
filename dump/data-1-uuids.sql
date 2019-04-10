@@ -1,6 +1,20 @@
 
 SET NAMES utf8mb4;
 
+INSERT INTO uuids (`uuid`,`itemId`,`type`,`instanceIdentifier`) VALUES ('66502dab-d6a5-54a3-bed9-ecca020dc887','7','class','demo-ecommerce');
+INSERT INTO uuids (`uuid`,`itemId`,`type`,`instanceIdentifier`) VALUES ('3478b52f-75e7-5e4b-886f-832466d0a98a','8','class','demo-ecommerce');
+INSERT INTO uuids (`uuid`,`itemId`,`type`,`instanceIdentifier`) VALUES ('7e5ff751-83ce-595a-88f3-e16eb9281d8d','9','class','demo-ecommerce');
+INSERT INTO uuids (`uuid`,`itemId`,`type`,`instanceIdentifier`) VALUES ('237133c4-5e4a-5b68-bc03-d73540ddf738','12','class','demo-ecommerce');
+INSERT INTO uuids (`uuid`,`itemId`,`type`,`instanceIdentifier`) VALUES ('7d97eaf4-25b9-5b74-b01f-325f8b7ac46a','14','class','demo-ecommerce');
+INSERT INTO uuids (`uuid`,`itemId`,`type`,`instanceIdentifier`) VALUES ('44f3864b-e720-5de6-a7b5-4415ec74fb25','15','class','demo-ecommerce');
+INSERT INTO uuids (`uuid`,`itemId`,`type`,`instanceIdentifier`) VALUES ('d94678fd-0a2f-5e1a-9eb3-6191a590f7b8','16','class','demo-ecommerce');
+INSERT INTO uuids (`uuid`,`itemId`,`type`,`instanceIdentifier`) VALUES ('dfdc5f94-9f17-5f45-8ff4-60a266384f9b','23','class','demo-ecommerce');
+INSERT INTO uuids (`uuid`,`itemId`,`type`,`instanceIdentifier`) VALUES ('7da00532-c170-53e8-9d89-75b7205d7234','30','class','demo-ecommerce');
+INSERT INTO uuids (`uuid`,`itemId`,`type`,`instanceIdentifier`) VALUES ('a367b723-339a-540c-a565-781d60e26690','31','class','demo-ecommerce');
+INSERT INTO uuids (`uuid`,`itemId`,`type`,`instanceIdentifier`) VALUES ('41e3362c-905d-5463-9f2c-df6b087c090d','32','class','demo-ecommerce');
+INSERT INTO uuids (`uuid`,`itemId`,`type`,`instanceIdentifier`) VALUES ('5036e923-75bf-516c-941b-96a07f503b5b','33','class','demo-ecommerce');
+INSERT INTO uuids (`uuid`,`itemId`,`type`,`instanceIdentifier`) VALUES ('8ca9e9f3-254f-577a-9fa2-641804b089bb','34','class','demo-ecommerce');
+INSERT INTO uuids (`uuid`,`itemId`,`type`,`instanceIdentifier`) VALUES ('010a4316-d17f-57c9-835e-cc0386a97d5c','35','class','demo-ecommerce');
 INSERT INTO uuids (`uuid`,`itemId`,`type`,`instanceIdentifier`) VALUES ('5ae032ea-1e48-5142-8cad-f5cd5ef0d97e','36','class','demo-ecommerce');
 INSERT INTO uuids (`uuid`,`itemId`,`type`,`instanceIdentifier`) VALUES ('1aadf7f1-d0cb-5c4e-b558-a359c82e22b2','37','class','demo-ecommerce');
 INSERT INTO uuids (`uuid`,`itemId`,`type`,`instanceIdentifier`) VALUES ('c300495d-c4dc-5e1c-981f-ab63a8b598be','38','class','demo-ecommerce');
