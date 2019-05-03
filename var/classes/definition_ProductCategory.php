@@ -224,8 +224,6 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'style' => '',
              'permissions' => '',
              'datatype' => 'data',
-             'columnType' => '',
-             'queryColumnType' => '',
              'relationType' => false,
              'invisible' => false,
              'visibleGridView' => true,
@@ -255,7 +253,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'width' => '',
                  'assetUploadPath' => '',
                  'relationType' => true,
-                 'queryColumnType' => 
+                 'queryColumnType' =>
                 array (
                   'id' => 'int(11)',
                   'type' => 'enum(\'document\',\'asset\',\'object\')',
@@ -289,7 +287,6 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'style' => '',
                  'permissions' => NULL,
                  'datatype' => 'data',
-                 'columnType' => NULL,
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,
@@ -322,7 +319,6 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'style' => '',
                  'permissions' => NULL,
                  'datatype' => 'data',
-                 'columnType' => NULL,
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,

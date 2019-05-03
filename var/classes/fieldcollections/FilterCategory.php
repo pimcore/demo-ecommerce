@@ -108,7 +108,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'width' => 400,
              'assetUploadPath' => '',
              'relationType' => true,
-             'queryColumnType' => 
+             'queryColumnType' =>
             array (
               'id' => 'int(11)',
               'type' => 'enum(\'document\',\'asset\',\'object\')',
@@ -142,7 +142,6 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'style' => '',
              'permissions' => '',
              'datatype' => 'data',
-             'columnType' => '',
              'invisible' => false,
              'visibleGridView' => false,
              'visibleSearch' => false,
@@ -153,7 +152,7 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'width' => 400,
              'assetUploadPath' => '',
              'relationType' => true,
-             'queryColumnType' => 
+             'queryColumnType' =>
             array (
               'id' => 'int(11)',
               'type' => 'enum(\'document\',\'asset\',\'object\')',
@@ -187,7 +186,6 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'style' => '',
              'permissions' => NULL,
              'datatype' => 'data',
-             'columnType' => NULL,
              'invisible' => false,
              'visibleGridView' => false,
              'visibleSearch' => false,
@@ -267,7 +265,6 @@ return Pimcore\Model\DataObject\Fieldcollection\Definition::__set_state(array(
              'style' => '',
              'permissions' => '',
              'datatype' => 'data',
-             'columnType' => '',
              'invisible' => false,
              'visibleGridView' => false,
              'visibleSearch' => false,
