@@ -164,7 +164,6 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'style' => '',
                  'permissions' => NULL,
                  'datatype' => 'data',
-                 'columnType' => NULL,
                  'invisible' => false,
                  'visibleGridView' => false,
                  'visibleSearch' => false,

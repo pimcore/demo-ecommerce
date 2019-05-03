@@ -214,7 +214,7 @@ class AccountController extends AbstractController
             }
         }
 
-        if(!$form->isValid()) {
+        if($form->isSubmitted() && !$form->isValid()) {
             foreach($form->getErrors() as $error) {
                 $errors[] = $error->getMessage();
             }
