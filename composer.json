@@ -8,7 +8,7 @@
     "sort-packages": true
   },
   "require": {
-    "php": ">=7.1",
+    "php": ">=7.2",
     "pimcore/pimcore": "~5.8.0",
     "pimcore/customer-management-framework-bundle": "^1.9",
     "pimcore/web2print-tools-bundle": "^2.4",
