@@ -111,7 +111,7 @@ use Pimcore\Model\Document\Page;
                     <?php
                         $mainNavigation = $this->navigation()->buildNavigation($document, $mainNavStartNode, null, function($page, $document) {
                             if($document->getProperty("templateType") == "shop" && $document->getProperty("globalRootCategory")) {
-                                foreach($document->getProperty("globalRootCategory")->getChilds() as $category) {
+                                foreach($document->getProperty("globalRootCategory")->getChildren() as $category) {
                                     $page->addPage(new Pimcore\Navigation\Page\Document([
                                         "label" => $category->getName(),
                                         "id" => "category-" . $category->getId(),
