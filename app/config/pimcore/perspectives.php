@@ -2,7 +2,7 @@
 
 return [
     "default" => [
-        "iconCls" => "pimcore_icon_perspective",
+        "iconCls" => "pimcore_nav_icon_perspective",
         "elementTree" => [
             [
                 "type" => "documents",
@@ -61,7 +61,7 @@ return [
     ],
 
     "PIM" => [
-        "iconCls" => "pimcore_icon_object",
+        "iconCls" => "pimcore_nav_icon_object",
         "toolbar" => [
             "file" => 1
             ,
@@ -140,7 +140,7 @@ return [
     ],
 
     "DAM" => [
-        "iconCls" => "pimcore_icon_asset",
+        "iconCls" => "pimcore_nav_icon_asset",
         "toolbar" => [
             "file" => 1
             ,
@@ -208,7 +208,7 @@ return [
     ],
 
     "CMS" => [
-        "iconCls" => "pimcore_icon_pimcore",
+        "iconCls" => "pimcore_nav_icon_document",
         "elementTree" => [
             [
                 "type" => "documents",
@@ -244,8 +244,8 @@ return [
         ],
     ],
 
-    "Ecommerce" => [
-        "icon" => "/bundles/pimcoreadmin/img/flat-color-icons/shopping-cart.svg",
+    "Commerce" => [
+        "icon" => "/bundles/pimcoreadmin/img/flat-white-icons/shopping-cart.svg",
         "toolbar" => [
             "file" => true,
             "extras" => false,
@@ -295,9 +295,8 @@ return [
         ]
     ],
 
-    "Katalog" => [
-        "icon" => "/bundles/pimcoreadmin/img/flat-color-icons/book.svg",
-        "iconCls" => "pimcore_icon_pimcore",
+    "Catalog" => [
+        "icon" => "/bundles/pimcoreadmin/img/flat-white-icons/book.svg",
         "toolbar" => [
             "file" => true,
             "extras" => false,
