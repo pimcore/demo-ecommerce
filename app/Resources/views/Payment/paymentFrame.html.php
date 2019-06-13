@@ -42,8 +42,7 @@ $this->extend('payment-iframe.html.php');
         $form->remove('submitbutton');
         $form->add('submitbutton', \Symfony\Component\Form\Extension\Core\Type\SubmitType::class, ['attr' => ['class' => 'btn btn-primary'], 'label' => $this->translate('checkout.payment.paynow')]);
 
-        $container = $this->app->getContainer();
-        echo $container->get('templating.helper.form')->form($form->getForm()->createView());
+        echo $this->form()->form($form->getForm()->createView());
     ?>
 
     <script type="text/javascript">

@@ -16,7 +16,7 @@ declare(strict_types=1);
 
 namespace AppBundle\Form;
 
-use Pimcore\Localization\Locale;
+use Pimcore\Localization\LocaleService;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
@@ -27,13 +27,12 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class DeliveryAddressFormType extends AbstractType
 {
-
     /**
-     * @var Locale
+     * @var LocaleService
      */
     protected $locale;
 
-    public function __construct(Locale $locale)
+    public function __construct(LocaleService $locale)
     {
         $this->locale = $locale;
     }
@@ -93,6 +92,7 @@ class DeliveryAddressFormType extends AbstractType
         // of the box
         return '';
     }
+
     /**
      * @inheritDoc
      */

@@ -20,9 +20,10 @@ use AppBundle\Tool\SizeSort;
 use Pimcore\Cache;
 use Pimcore\Model\DataObject\AbstractObject;
 use Pimcore\Model\DataObject\Folder;
+use Pimcore\Model\DataObject\PreGetValueHookInterface;
 use Pimcore\Model\DataObject\Product;
 
-class DefaultProduct extends Product
+class DefaultProduct extends Product implements PreGetValueHookInterface
 {
     use Checkoutable;
 
@@ -405,6 +406,6 @@ class DefaultProduct extends Product
             }
         }
 
-        return parent::preGetValue($key);
+        return null; //parent::preGetValue($key);
     }
 }
