@@ -514,16 +514,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.6.1",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "53120e0eb10355388d6ccbe462f1fea34ddadb24"
+                "reference": "fa4c4e861e809d6a1103bd620cce63ed91aedfeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/53120e0eb10355388d6ccbe462f1fea34ddadb24",
-                "reference": "53120e0eb10355388d6ccbe462f1fea34ddadb24",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/fa4c4e861e809d6a1103bd620cce63ed91aedfeb",
+                "reference": "fa4c4e861e809d6a1103bd620cce63ed91aedfeb",
                 "shasum": ""
             },
             "require": {
@@ -532,12 +532,12 @@
             },
             "require-dev": {
                 "doctrine/cache": "1.*",
-                "phpunit/phpunit": "^6.4"
+                "phpunit/phpunit": "^7.5@dev"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6.x-dev"
+                    "dev-master": "1.7.x-dev"
                 }
             },
             "autoload": {
@@ -551,16 +551,16 @@
             ],
             "authors": [
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
                 {
                     "name": "Benjamin Eberlei",
                     "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
                 },
                 {
                     "name": "Jonathan Wage",
@@ -578,7 +578,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2019-03-25T19:12:02+00:00"
+            "time": "2019-08-08T18:11:40+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -4925,16 +4925,16 @@
         },
         {
             "name": "pimcore/pimcore",
-            "version": "v6.1.0",
+            "version": "v6.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/pimcore.git",
-                "reference": "de8cca9b2094876f586daf2a9c0b2efe4ec03758"
+                "reference": "a296bfebae97628113e0f71eab2240b0cc50303f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/de8cca9b2094876f586daf2a9c0b2efe4ec03758",
-                "reference": "de8cca9b2094876f586daf2a9c0b2efe4ec03758",
+                "url": "https://api.github.com/repos/pimcore/pimcore/zipball/a296bfebae97628113e0f71eab2240b0cc50303f",
+                "reference": "a296bfebae97628113e0f71eab2240b0cc50303f",
                 "shasum": ""
             },
             "require": {
@@ -5026,7 +5026,7 @@
                 "symfony-tests-dir": "tests",
                 "symfony-assets-install": "relative",
                 "branch-alias": {
-                    "dev-master": "6.0-dev"
+                    "dev-master": "6.1-dev"
                 }
             },
             "autoload": {
@@ -5069,7 +5069,7 @@
                 "e-commerce",
                 "rad"
             ],
-            "time": "2019-08-08T08:51:58+00:00"
+            "time": "2019-08-09T07:30:42+00:00"
         },
         {
             "name": "pimcore/search-query-parser",
@@ -5115,20 +5115,20 @@
         },
         {
             "name": "pimcore/server-side-matomo-tracking",
-            "version": "v0.3.0",
+            "version": "v0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pimcore/server-side-matomo-tracking.git",
-                "reference": "e1f195d478c1ab61516a9d9645f8b6fec877d952"
+                "reference": "f525b646f854e737b2a806aebcb1edf35a6fb7cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pimcore/server-side-matomo-tracking/zipball/e1f195d478c1ab61516a9d9645f8b6fec877d952",
-                "reference": "e1f195d478c1ab61516a9d9645f8b6fec877d952",
+                "url": "https://api.github.com/repos/pimcore/server-side-matomo-tracking/zipball/f525b646f854e737b2a806aebcb1edf35a6fb7cd",
+                "reference": "f525b646f854e737b2a806aebcb1edf35a6fb7cd",
                 "shasum": ""
             },
             "require": {
-                "pimcore/core-version": ">=5.4 <6.1",
+                "pimcore/core-version": ">=5.4 <6.2",
                 "piwik/piwik-php-tracker": "~1.4.0"
             },
             "type": "pimcore-bundle",
@@ -5148,7 +5148,7 @@
             "license": [
                 "GPL-3.0-or-later"
             ],
-            "time": "2019-06-13T09:56:32+00:00"
+            "time": "2019-08-08T09:08:44+00:00"
         },
         {
             "name": "pimcore/web2print-tools-bundle",
