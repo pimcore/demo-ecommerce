@@ -11,7 +11,7 @@ Fields Summary:
  - auth_paymentState [input]
  - auth_amount [input]
  - auth_currency [input]
- - auth_gatewyReferenceNumber [input]
+ - auth_gatewayReferenceNumber [input]
 */ 
 
 
@@ -224,7 +224,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'phpdocType' => 'string',
              'regex' => '',
              'unique' => NULL,
-             'name' => 'auth_gatewyReferenceNumber',
+             'name' => 'auth_gatewayReferenceNumber',
              'title' => 'Gateway Reference Number',
              'tooltip' => 'auth_gatewayReferenceNumber',
              'mandatory' => false,
